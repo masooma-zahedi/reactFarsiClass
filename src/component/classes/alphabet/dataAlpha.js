@@ -385,3 +385,120 @@ export let testBody = {
         },
     ]
 }
+
+export let testWear = {
+    
+    wordCarousel:{
+        title:"پوشیدنی ها",
+        targetCarouselId :"wearPart-1",
+        idLetter :"wear1",
+        imageCarousel :"imgwear"
+        },
+    alphaWear : [
+        {
+            image :"./images/assetAlpha/clothes-exa/12-18-1-clothes.png",
+            sylabelWord : "پو + شی + دَ + نی + ها --> پوشیدنی ها",
+            active :"active"
+        },
+        {
+            image :"./images/assetAlpha/clothes-exa/12-18-2-clothes.png",
+            sylabelWord : "تی + شِرت --> تی شرت",
+            active :""
+        },
+        {
+            image :"./images/assetAlpha/clothes-exa/12-18-3-clothes.png",
+            sylabelWord : "بُ + لوز --> بُلوز",
+            active :""
+        },
+        {
+            image :"./images/assetAlpha/clothes-exa/12-18-4-clothes.png",
+            sylabelWord : "دا + مَن",
+            active :""
+        },
+        {
+            image :"./images/assetAlpha/clothes-exa/12-18-5-clothes.png",
+            sylabelWord : "شَل + وار --> شَلوار",
+            active :""
+        },
+        {
+            image :"./images/assetAlpha/clothes-exa/12-18-6-clothes.png",
+            sylabelWord : "شَل + وا + رَک --> شَلوارَک",
+            active :""
+        },
+        {
+            image :"./images/assetAlpha/clothes-exa/12-18-7-clothes.png",
+            sylabelWord : "جِ + لی + قِه --> جِلیقه",
+            active :""
+        },
+        {
+            image :"./images/assetAlpha/clothes-exa/12-18-8-clothes.png",
+            sylabelWord : "پال + تو --> پالتو",
+            active :""
+        },
+        {
+            image :"./images/assetAlpha/clothes-exa/12-18-9-clothes.png",
+            sylabelWord : "پُ + لی + وِر --> پُلیوِر ",
+            active :""
+        },
+        {
+            image :"./images/assetAlpha/clothes-exa/12-18-10-clothes.png",
+            sylabelWord : "پی + را + هَن --> پیراهَن",
+            active :""
+        },
+        {
+            image :"./images/assetAlpha/clothes-exa/12-18-11-clothes.png",
+            sylabelWord : "کِ + را + وات --> کِراوات",
+            active :""
+        },
+        {
+            image :"./images/assetAlpha/clothes-exa/12-18-12-clothes.png",
+            sylabelWord : "مان + تو --> مانتو",
+            active :""
+        },
+        {
+            image :"./images/assetAlpha/clothes-exa/12-18-13-clothes.png",
+            sylabelWord : "جو + راب --> جوراب",
+            active :""
+        },
+        {
+            image :"./images/assetAlpha/clothes-exa/12-18-14-clothes.png",
+            sylabelWord : "کُ + لاه --> کُلاه ",
+            active :""
+        },
+        {
+            image :"./images/assetAlpha/clothes-exa/12-18-15-clothes.png",
+            sylabelWord : "عِی + نَک --> عِینَک ",
+            active :""
+        },
+        {
+            image :"./images/assetAlpha/clothes-exa/12-18-16-clothes.png",
+            sylabelWord : "پی + را + هَن --> پیراهَن",
+            active :""
+        },
+        {
+            image :"./images/assetAlpha/clothes-exa/12-18-17-clothes.png",
+            sylabelWord : "شال + گَر + دَن --> شال گَردَن",
+            active :""
+        },
+        {
+            image :"./images/assetAlpha/clothes-exa/12-18-18-clothes.png",
+            sylabelWord : "دَم + پا + یی --> دَمپایی",
+            active :""
+        },
+        {
+            image :"./images/assetAlpha/clothes-exa/12-18-19-clothes.png",
+            sylabelWord : "کَفش + زَ + نا + نِه--> کفش زنانه",
+            active :""
+        },
+        {
+            image :"./images/assetAlpha/clothes-exa/12-18-20-clothes.png",
+            sylabelWord : "کَ + مَر + بَند --> کَمَربَند",
+            active :""
+        },
+        {
+            image :"./images/assetAlpha/clothes-exa/12-18-21-clothes.png",
+            sylabelWord : "کَفش + مَر + دا + نِه",
+            active :""
+        },
+    ]
+}
