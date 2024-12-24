@@ -67,12 +67,12 @@ export let testColor = {
     };
 
 
-    export let testFruit = {
+export let testFruit = {
     
         wordCarousel:{
-            title:"میوه ها و سبزیجات",
+        title:"میوه ها و سبزیجات",
         targetCarouselId :"carouselExampleControlsNoTouching1",
-        idLetter :"h2",
+        idLetter :"h8",
         imageCarousel :"imgcarousel2"
         },
     alphaImage : [
