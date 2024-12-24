@@ -283,3 +283,105 @@ export let testFruit = {
         },
     ]
 }
+
+export let testBody = {
+    
+    wordCarousel:{
+        title:"اعضای بدن",
+        targetCarouselId :"bodyPart-1",
+        idLetter :"body1",
+        imageCarousel :"imgbody"
+        },
+    alphaBody : [
+        {
+            image : "./images/assetAlpha/body-exa/12-6-1.png" ,
+            sylabelWord : "اَعضای بَدَن",
+            active :"active"
+        },
+        {
+            image : "./images/assetAlpha/body-exa/12-6-2.png",
+            sylabelWord : "چِشم",
+            active :""
+        },
+        {
+            image : "./images/assetAlpha/body-exa/12-6-3.png",
+            sylabelWord : "اَب + رو --> اَبرو",
+            active :""
+        },
+        {
+            image : "./images/assetAlpha/body-exa/12-6-4.png",
+            sylabelWord : "دَست",
+            active :""
+        },
+        {
+            image : "./images/assetAlpha/body-exa/12-6-5.png",
+            sylabelWord : "پا",
+            active :""
+        },
+        {
+            image : "./images/assetAlpha/body-exa/12-6-6.png",
+            sylabelWord : "لَب",
+            active :""
+        },
+        {
+            image : "./images/assetAlpha/body-exa/12-6-7.png",
+            sylabelWord : "دَن + دان --> دَندان",
+            active :""
+        },
+        {
+            image : "./images/assetAlpha/body-exa/12-6-8.png",
+            sylabelWord : "مو",
+            active :""
+        },
+        {
+            image : "./images/assetAlpha/body-exa/12-6-9.png",
+            sylabelWord : "اَن + گُش + تان --> اَنگُشتان",
+            active :""
+        },
+        {
+            image : "./images/assetAlpha/body-exa/12-6-10.png",
+            sylabelWord : "شَست",
+            active :""
+        },
+        {
+            image : "./images/assetAlpha/body-exa/12-6-11.png",
+            sylabelWord : "بی + نی --> بینی",
+            active :""
+        },
+        {
+            image : "./images/assetAlpha/body-exa/12-6-12.png",
+            sylabelWord : "گوش",
+            active :""
+        },
+        {
+            image : "./images/assetAlpha/body-exa/12-6-13.png",
+            sylabelWord : "زا + نو --> زانو",
+            active :""
+        },
+        {
+            image : "./images/assetAlpha/body-exa/12-6-14.png",
+            sylabelWord : "زَ + بان --> زَبان",
+            active :""
+        },
+        {
+            image : "./images/assetAlpha/body-exa/12-6-15.png",
+            sylabelWord : "گَر + دَن --> گَردَن",
+            active :""
+        },
+        {
+            image : "./images/assetAlpha/body-exa/12-6-16.png",
+            sylabelWord : "شِ + کَم --> شِکَم",
+            active :""
+        },
+        {
+            image : "./images/assetAlpha/body-exa/12-6-17.png",
+            sylabelWord : "نا + خُن --> ناخُن",
+            active :""
+        },
+        {
+            image : "./images/assetAlpha/body-exa/12-6-18.png",
+            sylabelWord : "صو + رَت --> صورَت",
+            active :""
+        },
+    ]
+}

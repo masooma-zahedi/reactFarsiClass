@@ -50,8 +50,8 @@ export const MakeWordCarousel = (props) => {
                         
                        return( 
                         <div key={index} className= {`${index == 0 ? "carousel-item active" : " carousel-item"}`}>
-                            <div className="d-flex justify-content-center  pb-5 mb-5" style={{textDecoration:'center'}}>
-                                    <img src={item.image} className="d-block h-75 w-75"  alt={item.sylabelWord}/>
+                            <div className="d-flex justify-content-center  pb-5 mb-5" style={{textDecoration:'center',height:'600px'}}>
+                                    <img src={item.image} className="d-block h-100 w-75"  alt={item.sylabelWord}/>
                             </div>
                             <div className="carousel-caption  p-4 text-primary " onMouseOver={bobMouseOver} style={bobStyle}>
                                 <img src="./images/webPic/bob2.png" className="w-100 h-100 rounded "   alt="" srcSet=""/>
