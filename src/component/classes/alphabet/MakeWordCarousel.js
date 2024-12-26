@@ -57,6 +57,7 @@ export const MakeWordCarousel = (props) => {
                                 <img src="./images/webPic/bob2.png" className="w-100 h-100 rounded "   alt="" srcSet=""/>
                             </div>
                         </div>
+                        
                        )
                     })}
 
