@@ -425,21 +425,21 @@ export let testWear = {
             sylabelWord : "شَل + وا + رَک --> شَلوارَک",
             active :""
         },
-        {
-            image :"./images/assetAlpha/clothes-exa/12-18-7-clothes.png",
-            sylabelWord : "جِ + لی + قِه --> جِلیقه",
-            active :""
-        },
+        // {
+        //     image :"./images/assetAlpha/clothes-exa/12-18-7-clothes.png",
+        //     sylabelWord : "جِ + لی + قِه --> جِلیقه",
+        //     active :""
+        // },
         {
             image :"./images/assetAlpha/clothes-exa/12-18-8-clothes.png",
             sylabelWord : "پال + تو --> پالتو",
             active :""
         },
-        {
-            image :"./images/assetAlpha/clothes-exa/12-18-9-clothes.png",
-            sylabelWord : "پُ + لی + وِر --> پُلیوِر ",
-            active :""
-        },
+        // {
+        //     image :"./images/assetAlpha/clothes-exa/12-18-9-clothes.png",
+        //     sylabelWord : "پُ + لی + وِر --> پُلیوِر ",
+        //     active :""
+        // },
         {
             image :"./images/assetAlpha/clothes-exa/12-18-10-clothes.png",
             sylabelWord : "پی + را + هَن --> پیراهَن",
@@ -480,11 +480,11 @@ export let testWear = {
             sylabelWord : "شال + گَر + دَن --> شال گَردَن",
             active :""
         },
-        {
-            image :"./images/assetAlpha/clothes-exa/12-18-18-clothes.png",
-            sylabelWord : "دَم + پا + یی --> دَمپایی",
-            active :""
-        },
+        // {
+        //     image :"./images/assetAlpha/clothes-exa/12-18-18-clothes.png",
+        //     sylabelWord : "دَم + پا + یی --> دَمپایی",
+        //     active :""
+        // },
         {
             image :"./images/assetAlpha/clothes-exa/12-18-19-clothes.png",
             sylabelWord : "کَفش + زَ + نا + نِه--> کفش زنانه",
