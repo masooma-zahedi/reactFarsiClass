@@ -70,24 +70,124 @@ export let infoCard = [
         longSoundId:"letterCh-2"
     },
     {
-        mainPic:"./images/assetAlpha/cardAlpha/",
-        title:"حرف ",
-        examplePic:["./images/assetAlpha/cardAlpha/exampleAlpha/","./images/assetAlpha/cardAlpha/exampleAlpha/","./images/assetAlpha/cardAlpha/exampleAlpha/","./images/assetAlpha/cardAlpha/exampleAlpha/",],
-        examplePicId:"",
-        shortSoundPic:"./images/assetAlpha/cardAlpha/",
-        shortSoundId:"",
-        longSoundPic:"./images/assetAlpha/cardAlpha/",
-        longSoundId:""
+        mainPic:"./images/assetAlpha/cardAlpha/ح-03-10-1.jpg",
+        title:"حرف ح",
+        examplePic:["./images/assetAlpha/cardAlpha/exampleAlpha/08-10-ح-1.png","./images/assetAlpha/cardAlpha/exampleAlpha/08-10-ح-2.png","./images/assetAlpha/cardAlpha/exampleAlpha/08-10-ح-3.png","./images/assetAlpha/cardAlpha/exampleAlpha/08-10-ح-4.png",],
+        examplePicId:"exampleL-H1",
+        shortSoundPic:"./images/assetAlpha/cardAlpha/ح-03-10-2.jpg",
+        shortSoundId:"letterH1-1",
+        longSoundPic:"./images/assetAlpha/cardAlpha/ح-long-2.jpg",
+        longSoundId:"letterH1-2"
     },
     {
-        mainPic:"./images/assetAlpha/cardAlpha/",
-        title:"حرف ",
-        examplePic:["./images/assetAlpha/cardAlpha/exampleAlpha/","./images/assetAlpha/cardAlpha/exampleAlpha/","./images/assetAlpha/cardAlpha/exampleAlpha/","./images/assetAlpha/cardAlpha/exampleAlpha/",],
-        examplePicId:"",
-        shortSoundPic:"./images/assetAlpha/cardAlpha/",
-        shortSoundId:"",
-        longSoundPic:"./images/assetAlpha/cardAlpha/",
-        longSoundId:""
+        mainPic:"./images/assetAlpha/cardAlpha/خ-03-10-1.jpg",
+        title:"حرف خ ",
+        examplePic:["./images/assetAlpha/cardAlpha/exampleAlpha/08-10-خ-1.png","./images/assetAlpha/cardAlpha/exampleAlpha/08-10-خ-2.png","./images/assetAlpha/cardAlpha/exampleAlpha/08-10-خ-3.png","./images/assetAlpha/cardAlpha/exampleAlpha/08-10-خ-4.png",],
+        examplePicId:"exampleL-Kh1",
+        shortSoundPic:"./images/assetAlpha/cardAlpha/خ-03-10-2.jpg",
+        shortSoundId:"letterKH-1",
+        longSoundPic:"./images/assetAlpha/cardAlpha/خ-long-1.jpg",
+        longSoundId:"letterKH-2"
+    },
+    {
+        mainPic:"./images/assetAlpha/cardAlpha/د-30-10-1.jpg",
+        title:"حرف د ",
+        examplePic:["./images/assetAlpha/cardAlpha/exampleAlpha/08-10-د-1.png","./images/assetAlpha/cardAlpha/exampleAlpha/08-10-د-2.png","./images/assetAlpha/cardAlpha/exampleAlpha/08-10-د-3.png","./images/assetAlpha/cardAlpha/exampleAlpha/08-10-د-4.png",],
+        examplePicId:"exampleL-D1",
+        shortSoundPic:"./images/assetAlpha/cardAlpha/05-10-24-د-1.jpg",
+        shortSoundId:"letterD-1",
+        longSoundPic:"./images/assetAlpha/cardAlpha/د-long-1.jpg",
+        longSoundId:"letterD-2"
+    },
+    {
+        mainPic:"./images/assetAlpha/cardAlpha/05-10-24-ذ-2.jpg",
+        title:"حرف ذ ",
+        examplePic:["./images/assetAlpha/cardAlpha/exampleAlpha/08-10-ذ-1.png","./images/assetAlpha/cardAlpha/exampleAlpha/08-10-ذ-2.png","./images/assetAlpha/cardAlpha/exampleAlpha/08-10-ذ-3.png"],
+        examplePicId:"exampleL-Zal1",
+        shortSoundPic:"./images/assetAlpha/cardAlpha/05-10-24-ذ-1.jpg",
+        shortSoundId:"letterZal-1",
+        longSoundPic:"./images/assetAlpha/cardAlpha/ذ-long-1.jpg",
+        longSoundId:"letterZal-2"
+    },
+    {
+        mainPic:"./images/assetAlpha/cardAlpha/05-10-24-ر-2.jpg",
+        title:"حرف ر ",
+        examplePic:["./images/assetAlpha/cardAlpha/exampleAlpha/08-10-ر-1.png","./images/assetAlpha/cardAlpha/exampleAlpha/08-10-ر-2.png","./images/assetAlpha/cardAlpha/exampleAlpha/08-10-ر-3.png","./images/assetAlpha/cardAlpha/exampleAlpha/08-10-ر-4.png",],
+        examplePicId:"exampleL-R1",
+        shortSoundPic:"./images/assetAlpha/cardAlpha/05-10-24-ر-1.jpg",
+        shortSoundId:"letterR-1",
+        longSoundPic:"./images/assetAlpha/cardAlpha/ر-long-1.jpg",
+        longSoundId:"letterR-2"
+    },
+    {
+        mainPic:"./images/assetAlpha/cardAlpha/05-10-24-ز-2.jpg",
+        title:"حرف ز ",
+        examplePic:["./images/assetAlpha/cardAlpha/exampleAlpha/08-10-ز-1.png","./images/assetAlpha/cardAlpha/exampleAlpha/08-10-ز-2.png","./images/assetAlpha/cardAlpha/exampleAlpha/08-10-ز-3.png","./images/assetAlpha/cardAlpha/exampleAlpha/08-10-ز-4.png",],
+        examplePicId:"exampleL-ZZ1",
+        shortSoundPic:"./images/assetAlpha/cardAlpha/05-10-24-ز-1.jpg",
+        shortSoundId:"letterZ1-1",
+        longSoundPic:"./images/assetAlpha/cardAlpha/ز-long-1.jpg",
+        longSoundId:"letterZ1-2"
+    },
+    {
+        mainPic:"./images/assetAlpha/cardAlpha/10-19-ژ-1.jpg",
+        title:"حرف ژ ",
+        examplePic:["./images/assetAlpha/cardAlpha/exampleAlpha/08-10-ژ-1.png","./images/assetAlpha/cardAlpha/exampleAlpha/08-10-ژ-2.png","./images/assetAlpha/cardAlpha/exampleAlpha/08-10-ژ-3.png","./images/assetAlpha/cardAlpha/exampleAlpha/08-10-ژ-4.png",],
+        examplePicId:"exampleZh-1",
+        shortSoundPic:"./images/assetAlpha/cardAlpha/1-05-13-ژ-Short.jpg",
+        shortSoundId:"letterZh-2",
+        longSoundPic:"./images/assetAlpha/cardAlpha/10-19-ژ-long.jpg",
+        longSoundId:"letterZh-3"
+    },
+    {
+        mainPic:"./images/assetAlpha/cardAlpha/05-10-24-س-2.jpg",
+        title:"حرف س ",
+        examplePic:["./images/assetAlpha/cardAlpha/exampleAlpha/08-10-س-1.png","./images/assetAlpha/cardAlpha/exampleAlpha/08-10-س-2.png","./images/assetAlpha/cardAlpha/exampleAlpha/08-10-س-3.png","./images/assetAlpha/cardAlpha/exampleAlpha/08-10-س-4.png",],
+        examplePicId:"exampleL-Sin1",
+        shortSoundPic:"./images/assetAlpha/cardAlpha/05-10-24-س-1.jpg",
+        shortSoundId:"letterC1-1",
+        longSoundPic:"./images/assetAlpha/cardAlpha/س-long-1.jpg",
+        longSoundId:"letterC2-1"
+    },
+    {
+        mainPic:"./images/assetAlpha/cardAlpha/10-23-11-ش.jpg",
+        title:"حرف ش ",
+        examplePic:["./images/assetAlpha/cardAlpha/exampleAlpha/10-22-1-ش.png","./images/assetAlpha/cardAlpha/exampleAlpha/10-22-2-ش.png","./images/assetAlpha/cardAlpha/exampleAlpha/10-22-3-ش.png","./images/assetAlpha/cardAlpha/exampleAlpha/10-22-4-ش.png",],
+        examplePicId:"exampleL-Shin1",
+        shortSoundPic:"./images/assetAlpha/cardAlpha/10-23-1-ش.jpg",
+        shortSoundId:"letterShin-2",
+        longSoundPic:"./images/assetAlpha/cardAlpha/10-19-ش-long.jpg",
+        longSoundId:"letterShin-3"
+    },
+    {
+        mainPic:"./images/assetAlpha/cardAlpha/10-14-24-ص.jpg",
+        title:"حرف ص ",
+        examplePic:["./images/assetAlpha/cardAlpha/exampleAlpha/10-22-1-ص.png","./images/assetAlpha/cardAlpha/exampleAlpha/10-22-2-ص.png","./images/assetAlpha/cardAlpha/exampleAlpha/10-22-3-ص.png","./images/assetAlpha/cardAlpha/exampleAlpha/10-22-4-ص.png",],
+        examplePicId:"exampleSad-1",
+        shortSoundPic:"./images/assetAlpha/cardAlpha/10-23-1-ص.jpg",
+        shortSoundId:"letterSad-2",
+        longSoundPic:"./images/assetAlpha/cardAlpha/10-19-ص-long.jpg",
+        longSoundId:"letterSad-3"
+    },
+    {
+        mainPic:"./images/assetAlpha/cardAlpha/10-14-24-ض.jpg",
+        title:"حرف ض ",
+        examplePic:["./images/assetAlpha/cardAlpha/exampleAlpha/10-23-1-ض.png","./images/assetAlpha/cardAlpha/exampleAlpha/10-23-2-ض.png","./images/assetAlpha/cardAlpha/exampleAlpha/10-23-3-ض.png",],
+        examplePicId:"exampleZad-1",
+        shortSoundPic:"./images/assetAlpha/cardAlpha/10-23-11-ض.jpg",
+        shortSoundId:"letterZad-2",
+        longSoundPic:"./images/assetAlpha/cardAlpha/10-19-ض-long.jpg",
+        longSoundId:"letterZad-3"
+    },
+    {
+        mainPic:"./images/assetAlpha/cardAlpha/10-14-24-ط.jpg",
+        title:"حرف ط ",
+        examplePic:["./images/assetAlpha/cardAlpha/exampleAlpha/10-23-1-ط.png","./images/assetAlpha/cardAlpha/exampleAlpha/10-23-2-ط.png","./images/assetAlpha/cardAlpha/exampleAlpha/10-23-3-ط.png","./images/assetAlpha/cardAlpha/exampleAlpha/10-23-4-ط.png",],
+        examplePicId:"exampleTaa-1",
+        shortSoundPic:"./images/assetAlpha/cardAlpha/10-23-11-ط.jpg",
+        shortSoundId:"letterTaa-2",
+        longSoundPic:"./images/assetAlpha/cardAlpha/10-19-ط-long.jpg",
+        longSoundId:"letterTaa-3"
     },
     {
         mainPic:"./images/assetAlpha/cardAlpha/",
