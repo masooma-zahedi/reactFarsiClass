@@ -31,7 +31,7 @@ export const CardAlphaCompo = () => {
                                             <div className="modal-header">
                                                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                             <div className="modal-title" style={{maxiWdth: '300px', maxWidth:' 100px'}} id="staticBackdropLabel">
-                                                <img src="./images/short-sound.jpg" className="w-100 h-100" alt="short-sound" srcSet="" />
+                                                <img src="./images/assetAlpha/cardAlpha/short-sound.jpg" className="w-100 h-100" alt="short-sound" srcSet="" />
                                             </div>
                                             </div>
                                             <div className="modal-body">
@@ -63,7 +63,7 @@ export const CardAlphaCompo = () => {
                                             <div className="modal-header">
                                                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                             <div className="modal-title" style={{maxWidth: '300px', maxWidth: '100px'}} id="staticBackdropLabel">
-                                                <img src="./images/short-sound.jpg" className="w-100 h-100" alt="short-sound" srcSet="" />
+                                                <img src="./images/assetAlpha/cardAlpha/short-sound.jpg" className="w-100 h-100" alt="short-sound" srcSet="" />
                                             </div>
                                             </div>
                                             <div className="modal-body">
@@ -90,7 +90,7 @@ export const CardAlphaCompo = () => {
                                             <div className="modal-header">
                                                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                             <div className="modal-title" style={{maxWidth: '300px', maxWidth: '100px'}} id="staticBackdropLabel">
-                                                <img src="./images/short-sound.jpg" className="w-100 h-100" alt="short-sound" srcSet="" />
+                                                <img src="./images/assetAlpha/cardAlpha/longSound.jpg" className="w-100 h-100" alt="short-sound" srcSet="" />
                                             </div>
                                             </div>
                                             <div className="modal-body">
