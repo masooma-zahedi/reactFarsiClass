@@ -6,7 +6,8 @@ export let infoCard = [
         examplePicId:"exampleL-A1",
         shortSoundPic:"./images/assetAlpha/cardAlpha/اَ-03-10-3.jpg",
         shortSoundId:"letterA-1",
-        longSoundPic:"./images/assetAlpha/cardAlpha/06-10-24-الف-long.jpg"
+        longSoundPic:"./images/assetAlpha/cardAlpha/06-10-24-الف-long.jpg",
+        longSoundId:"letterA-2"
     },
     {
         mainPic:"./images/assetAlpha/cardAlpha/ب-03-10-1.jpg",
@@ -15,7 +16,8 @@ export let infoCard = [
         examplePicId:"exampleL-B1",
         shortSoundPic:"./images/assetAlpha/cardAlpha/ب-03-10-3.jpg",
         shortSoundId:"de",
-        longSoundPic:"./images/assetAlpha/cardAlpha/06-10-ب-long.jpg"
+        longSoundPic:"./images/assetAlpha/cardAlpha/06-10-ب-long.jpg",
+        longSoundId:"lo"
     },
     {
         mainPic:"./images/assetAlpha/cardAlpha/03-10-پ-1.jpg",
@@ -24,7 +26,8 @@ export let infoCard = [
         examplePicId:"exampleL-P1",
         shortSoundPic:"./images/assetAlpha/cardAlpha/3-10-03-پ.jpg",
         shortSoundId:"sw",
-        longSoundPic:"./images/assetAlpha/cardAlpha/06-10-24-پ-long.jpg"
+        longSoundPic:"./images/assetAlpha/cardAlpha/06-10-24-پ-long.jpg",
+        longSoundId:"kj"
     },
     {
         mainPic:"./images/assetAlpha/cardAlpha/03-10-پ-1.jpg",
@@ -33,6 +36,7 @@ export let infoCard = [
         examplePicId:"exampleL-A1",
         shortSoundPic:"./images/assetAlpha/cardAlpha/3-10-03-پ.jpg",
         shortSoundId:"qw",
-        longSoundPic:"./images/assetAlpha/cardAlpha/06-10-24-پ-long.jpg"
+        longSoundPic:"./images/assetAlpha/cardAlpha/06-10-24-پ-long.jpg",
+        longSoundId:"gf"
     },
 ]
