@@ -1,4 +1,4 @@
-import { testBody, testColor, testFruit, testWear } from "./dataAlpha.js"
+import { testBody, testColor, testFruit, testWear, testSchoolSupplies } from "./dataAlpha.js"
 import { MakeWordCarousel } from "./MakeWordCarousel.js";
 import {CardAlphaCompo} from "./cardAlpha/CardAlphaCompo.js"
 
@@ -13,6 +13,7 @@ export const Alphabet = () => {
           <MakeWordCarousel carouselName={testFruit.wordCarousel} carouselData={testFruit.alphaImage}/>
           <MakeWordCarousel carouselName={testBody.wordCarousel} carouselData={testBody.alphaBody}/>
           <MakeWordCarousel carouselName={testWear.wordCarousel} carouselData={testWear.alphaWear}/>
+          <MakeWordCarousel carouselName={testSchoolSupplies.wordCarousel} carouselData={testSchoolSupplies.alphaWear}/>
         </div>
     </>
   )

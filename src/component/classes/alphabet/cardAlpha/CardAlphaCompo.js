@@ -79,10 +79,6 @@ export const CardAlphaCompo = () => {
                                         </div>
                                     </div>
                                     {/* <!-- end modal --> */}
-
-
-
-
                                     {/* <!-- stsrt modal - Long Sound --> */}
                                     <div className="modal fade" id={letter.longSoundId} data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                         <div className="modal-dialog modal-dialog-centered">
@@ -107,31 +103,12 @@ export const CardAlphaCompo = () => {
                                     </div>
                                     {/* <!-- end modal long Sound--> */}
 
-
-
-
-
-
-
                                 </div>
                             </>
                         )
                         
                     })
                 }
-                {/* **** Start Num 2 **** */}
-                {/* <div className="col-md-3">    
-                    <div className="card" style={{width: "18rem"}}>
-                        <img src="./images/آ--04-10.jpg" className="card-img-top" data-bs-toggle="modal" data-bs-target="#exampleL-A1"  alt="حرف آ" />
-                        <div className="card-body">
-                            <h5 className="card-title">حرف الف</h5>
-                            <p className="card-text">همراه با صداهای کوتاه و کشیده</p>
-                            <a href="#" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#letterA-1">صداهای کوتاه</a>
-                            <a href="#" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#letterA-2">صداهای کشیده</a>
-                        </div>
-                    </div>     
-                </div> */}
-                {/* **** End Num 2 **** */}
             </div>
         </section>
 

@@ -502,3 +502,129 @@ export let testWear = {
         },
     ]
 }
+export let testSchoolSupplies = {
+    
+    wordCarousel:{
+        title:"لوازم تحریر",
+        targetCarouselId :"supplyPart-1",
+        idLetter :"supply1",
+        imageCarousel :"imgsupply"
+        },
+    alphaWear : [
+        {
+            image :"./images/assetAlpha/school-supplies/12-30-1-sch.png",
+            sylabelWord : " لَ + وا + زِم --> لَوازِم تَحریر",
+            active :"active"
+        },
+        {
+            image :"./images/assetAlpha/school-supplies/12-30-2-sch.png",
+            sylabelWord : "مِ + داد --> مِداد",
+            active :""
+        },
+        {
+            image :"./images/assetAlpha/school-supplies/12-30-3-sch.png",
+            sylabelWord : "مِ + داد + رَن + گی --> مِدادرَنگی",
+            active :""
+        },
+        {
+            image :"./images/assetAlpha/school-supplies/12-30-4-sch.png",
+            sylabelWord : "خود + کار --> خودکار",
+            active :""
+        },
+        {
+            image :"./images/assetAlpha/school-supplies/12-30-5-sch.png",
+            sylabelWord : "تَ + راش --> تَراش",
+            active :""
+        },
+        {
+            image :"./images/assetAlpha/school-supplies/12-30-6-sch.png",
+            sylabelWord : "پاک + کُن --> پاک کن",
+            active :""
+        },
+        {
+            image :"./images/assetAlpha/school-supplies/12-30-7-sch.png",
+            sylabelWord : "خَط + کِش --> خَط کِش",
+            active :""
+        },
+        {
+            image :"./images/assetAlpha/school-supplies/12-30-8-sch.png",
+            sylabelWord : "قِی + چی --> قِیچی",
+            active :""
+        },
+        {
+            image :"./images/assetAlpha/school-supplies/12-30-9-sch.png",
+            sylabelWord : "گو + نی + یا --> گونیا",
+            active :""
+        },
+        {
+            image :"./images/assetAlpha/school-supplies/12-30-10-sch.png",
+            sylabelWord : "نَ + قا + لِه --> نَقالِه",
+            active :""
+        },
+        {
+            image :"./images/assetAlpha/school-supplies/12-30-11-sch.png",
+            sylabelWord : "پَر + گار --> پَرگار",
+            active :""
+        },
+        {
+            image :"./images/assetAlpha/school-supplies/12-30-12-sch.png",
+            sylabelWord : "دَف + تَر --> دَفتَر",
+            active :""
+        },
+        {
+            image :"./images/assetAlpha/school-supplies/12-30-13-sch.png",
+            sylabelWord : "کِ + تاب --> کِتاب",
+            active :""
+        },
+        {
+            image :"./images/assetAlpha/school-supplies/12-30-14-sch.png",
+            sylabelWord : "قَ + لَم + نَ + قا + شی",
+            active :""
+        },
+        {
+            image :"./images/assetAlpha/school-supplies/12-30-15-sch.png",
+            sylabelWord : "کا + غَذ --> کاغَذ",
+            active :""
+        },
+        {
+            image :"./images/assetAlpha/school-supplies/12-30-16-sch.png",
+            sylabelWord : "آب + رَنگ --> آبرَنگ",
+            active :""
+        },
+        {
+            image :"./images/assetAlpha/school-supplies/12-30-17-sch.png",
+            sylabelWord : "کو + لِه + پُش + تی--> کوله پُشتی",
+            active :""
+        },
+        {
+            image :"./images/assetAlpha/school-supplies/12-30-18-sch.png",
+            sylabelWord : "خَ + میر + با + زی --> خمیر بازی",
+            active :""
+        },
+        {
+            image :"./images/assetAlpha/school-supplies/12-30-19-sch.png",
+            sylabelWord : "جا + مِ + دا + دی --> جامِدادی",
+            active :""
+        },
+        {
+            image :"./images/assetAlpha/school-supplies/12-30-20-sch.png",
+            sylabelWord : "چَسب + ما + تی + کی --> چسب ماتیکی",
+            active :""
+        },
+        {
+            image :"./images/assetAlpha/school-supplies/12-30-21-sch.png",
+            sylabelWord : "گی + ره --> گیره",
+            active :""
+        },
+        {
+            image :"./images/assetAlpha/school-supplies/12-30-22-sch.png",
+            sylabelWord : "چُرت + که --> چُرتکه",
+            active :""
+        },
+        {
+            image :"./images/assetAlpha/school-supplies/12-30-23-sch.png",
+            sylabelWord : "ما + شین + حِ + ساب --> ماشین حساب",
+            active :""
+        },
+    ]
+}
