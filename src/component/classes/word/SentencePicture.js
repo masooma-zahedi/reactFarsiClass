@@ -1,5 +1,6 @@
 
-export const MakeWordCarousel = (props) => {
+
+export const SentencePicture = (props) => {
     
     const bobStyle ={
         width: "150px",
@@ -28,11 +29,12 @@ export const MakeWordCarousel = (props) => {
                     {props.carouselData.map((item,index)=>{
                             function bobMouseOver(sylabelWord){
                                 document.querySelector(`#${props.carouselName.idLetter}`).innerHTML =` 
-                                    <div className="text-center">
-                                        <h1 className="">
-                                        ${item.sylabelWord}                   
+                                    <div className="text-center ">
+                                        <div className="" style="width:100%; height:400px;">
+                                            <img src=${item.image} className=" " style="width:50%; height:100%"  alt=""/>
                                             <img style="width:60px" src="./images/webPic/StrawberryPNG.webp"/>
-                                        </h1>
+                                        </div>
+                                                          
                                     </div>               
                                 `
                             }
@@ -40,10 +42,11 @@ export const MakeWordCarousel = (props) => {
                         
                        return( 
                         <div key={index} className= {`${index == 0 ? "carousel-item active" : " carousel-item"}`}>
-                            <div className="d-flex justify-content-center  pb-5 mb-5" style={{textDecoration:'center',height:'600px'}}>
-                                    <img src={item.image} className="d-block h-100 w-75"  alt={item.sylabelWord}/>
+                            <div className="d-flex justify-content-center align-content-center  py-5 my-5 pt-3" style={{textDecoration:'center',height:'200px', backgroundColor:'#f9c0f0'}}>
+                                    {/* <img src={item.image} className="d-block h-100 w-75"  alt={item.sylabelWord}/> */}
+                                    <h1 className="text-success pt-4">{item.sylabelWord}</h1>
                             </div>
-                            <div className="carousel-caption  p-4 text-primary " onMouseOver={bobMouseOver} style={bobStyle}>
+                            <div className="carousel-caption  p-4 pb-2 text-primary " onMouseOver={bobMouseOver} style={bobStyle}>
                                 <img src="./images/webPic/bob2.png" className="w-100 h-100 rounded "   alt="" srcSet=""/>
                             </div>
                         </div>
@@ -63,7 +66,7 @@ export const MakeWordCarousel = (props) => {
             </div>
             {/* <hr className="bg-danger"/> <hr className="bg-danger"/> */}
             {/* **** End Carousel***** */}
-            <div className=" rounded-3 py-10  bg-info text-center text-light p-5" id={props.carouselName.idLetter}></div>
+            <div className=" rounded-3   bg-info text-center text-light p-5" id={props.carouselName.idLetter}></div>
             <hr className="p-2 bg-danger" />
             <br/><br/><br/><br/><br/>
         </section>

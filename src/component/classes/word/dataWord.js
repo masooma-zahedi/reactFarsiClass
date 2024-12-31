@@ -85,3 +85,77 @@ export let sentenceCarousel = {
         }
 
     }
+
+
+    export let testPicture = {
+    
+        wordCarousel:{
+            title:"فعل ها",
+            targetCarouselId :"verbAction1",
+            idLetter :"verbId",
+            imageCarousel :"imgcarouselv1"
+        },
+        alphaColor : [
+            {
+                image :"./images/assetWord/actionVerb/12-31-1-verb.png",
+                sylabelWord : ".ما در جاده راه می رویم",
+            },
+            {
+                image :"./images/assetWord/actionVerb/12-31-2-verb.png",
+                sylabelWord : "",
+            },
+            {
+                image :"./images/assetWord/actionVerb/12-31-3-verb.png",
+                sylabelWord : "",
+            },
+            {
+                image :"./images/assetWord/actionVerb/12-31-4-verb.png",
+                sylabelWord : "",
+            },
+            {
+                image :"./images/assetWord/actionVerb/12-31-5-verb.png",
+                sylabelWord : "",
+            },
+            {
+                image :"./images/assetWord/actionVerb/12-31-6-verb.png",
+                sylabelWord : "",
+            },
+            {
+                image :"./images/assetWord/actionVerb/12-31-7-verb.png",
+                sylabelWord : "",
+            },
+            {
+                image :"./images/assetWord/actionVerb/12-31-8-verb.png",
+                sylabelWord : "",
+            },
+            {
+                image :"./images/assetWord/actionVerb/12-31-9-verb.png",
+                sylabelWord : "",
+            },
+            {
+                image :"./images/assetWord/actionVerb/12-31-10-verb.png",
+                sylabelWord : "",
+            },
+            {
+                image :"./images/assetWord/actionVerb/12-31-11-verb.png",
+                sylabelWord : "",
+            },
+            {
+                image :"./images/assetWord/actionVerb/12-31-12-verb.png",
+                sylabelWord : "",
+            },
+            {
+                image :"./images/assetWord/actionVerb/12-31-13-verb.png",
+                sylabelWord : "",
+            },
+            {
+                image :"./images/assetWord/actionVerb/12-31-14-verb.png",
+                sylabelWord : "",
+            },
+            {
+                image :"./images/assetWord/actionVerb/12-31-15-verb.png",
+                sylabelWord : "",
+            },
+        ]
+    
+    };
