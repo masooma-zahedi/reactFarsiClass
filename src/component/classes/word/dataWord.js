@@ -25,8 +25,8 @@ export let sentenceCarousel = {
                     sentence:"حَلزون موقعِ حَرِکَت بَدَنَش را روی زمین می کِشَد",
                      wordsSentence:[
                        { word:'حلزون',
-                        img:"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/We_logo.svg/1200px-We_logo.svg.png",
-                        eng:'We'},
+                        img:"https://mostaql.hsoubcdn.com/uploads/thumbnails/33360/6209414b5e6dd/%D8%B9%D9%85%D9%84-%D9%81%D9%86%D9%8A-%D8%A8%D9%84%D8%A7-%D8%B9%D9%86%D9%88%D8%A7%D9%86-9.png",
+                        eng:'Snail'},
                        { word:'موقع',
                         img:"https://res.cloudinary.com/hz3gmuqw6/image/upload/c_fill,q_auto,w_750/f_auto/breakfast-houston-phpk9GPFf",
                         eng:'breakFast'},
@@ -53,6 +53,20 @@ export let sentenceCarousel = {
                        { word:'من',
                         img:"",
                         eng:'eat'},
+                    ]
+                },
+                {
+                    sentence:"او در جاده راه می رود ",
+                     wordsSentence:[
+                       { word:'راه رفتن',
+                        img:"./images/assetWord/actionVerb/12-31-1-verb.png",
+                        eng:'راه رفتن'},
+                       { word:'جاده',
+                        img:"",
+                        eng:'Road'},
+                       { word:'راه می رود',
+                        img:"",
+                        eng:'Walk'},
                     ]
                 },
                 // 'ما هَر روز صُبحانه می خوریم.',
