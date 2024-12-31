@@ -98,63 +98,63 @@ export let sentenceCarousel = {
         alphaColor : [
             {
                 image :"./images/assetWord/actionVerb/12-31-1-verb.png",
-                sylabelWord : ".ما در جاده راه می رویم",
+                sylabelWord : ".او در جاده راه می رَود",
             },
             {
                 image :"./images/assetWord/actionVerb/12-31-2-verb.png",
-                sylabelWord : "",
+                sylabelWord : ".او سریعتر از من می دود",
             },
             {
                 image :"./images/assetWord/actionVerb/12-31-3-verb.png",
-                sylabelWord : "",
+                sylabelWord : ".او دوچرخه سواری می کند",
             },
             {
                 image :"./images/assetWord/actionVerb/12-31-4-verb.png",
-                sylabelWord : "",
+                sylabelWord : ".آنها نمی توانند جَنگیدَن را متوقف کنند",
             },
             {
                 image :"./images/assetWord/actionVerb/12-31-5-verb.png",
-                sylabelWord : "",
+                sylabelWord : ".او به شوخی می خندد",
             },
             {
                 image :"./images/assetWord/actionVerb/12-31-6-verb.png",
-                sylabelWord : "",
+                sylabelWord : ".او یک کتاب انگلیسی می خواند",
             },
             {
                 image :"./images/assetWord/actionVerb/12-31-7-verb.png",
-                sylabelWord : "",
+                sylabelWord : ".آنها همیشه فوتبال بازی می کنند",
             },
             {
                 image :"./images/assetWord/actionVerb/12-31-8-verb.png",
-                sylabelWord : "",
+                sylabelWord : ".او در حال گوش دادن به موسیقی است",
             },
             {
                 image :"./images/assetWord/actionVerb/12-31-9-verb.png",
-                sylabelWord : "",
+                sylabelWord : ".تام وقتی به زمین افتاد گریه کرد",
             },
             {
                 image :"./images/assetWord/actionVerb/12-31-10-verb.png",
-                sylabelWord : "",
+                sylabelWord : ".پسر در فکر جابجایی هفته آینده است",
             },
             {
                 image :"./images/assetWord/actionVerb/12-31-11-verb.png",
-                sylabelWord : "",
+                sylabelWord : ".سارا در حال خواندن یک آهنگ روی صحنه است",
             },
             {
                 image :"./images/assetWord/actionVerb/12-31-12-verb.png",
-                sylabelWord : "",
+                sylabelWord : ".او یک فیلم کارتونی از تلویزیون تماشا می کند",
             },
             {
                 image :"./images/assetWord/actionVerb/12-31-13-verb.png",
-                sylabelWord : "",
+                sylabelWord : ".او روی زمین می رقصد",
             },
             {
                 image :"./images/assetWord/actionVerb/12-31-14-verb.png",
-                sylabelWord : "",
+                sylabelWord : ".او این جایزه را برای کسب مقام اول در مسابقه بَرَنده شد",
             },
             {
                 image :"./images/assetWord/actionVerb/12-31-15-verb.png",
-                sylabelWord : "",
+                sylabelWord : ".او در حال نوشتن یک داستان برای بچه ها است",
             },
         ]
     

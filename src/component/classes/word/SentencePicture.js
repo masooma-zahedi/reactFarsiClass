@@ -11,7 +11,7 @@ export const SentencePicture = (props) => {
     const test = ()=>{
         document.querySelector(`#${props.carouselName.idLetter}`).innerHTML =` 
                                     <div className="text-center">
-                                            <img style="width:150px" src="./images/webPic/cinnamoroll-1.gif"/>
+                                            <img style="width:150px" src="./images/webPic/sanrio-rentry.gif"/>
                                             <p>Come On!!!</p>
                                     </div>               
                                 `
@@ -31,8 +31,8 @@ export const SentencePicture = (props) => {
                                 document.querySelector(`#${props.carouselName.idLetter}`).innerHTML =` 
                                     <div className="text-center ">
                                         <div className="" style="width:100%; height:400px;">
-                                            <img src=${item.image} className=" " style="width:50%; height:100%"  alt=""/>
-                                            <img style="width:60px" src="./images/webPic/StrawberryPNG.webp"/>
+                                            <img src=${item.image} className=" " style="width:50%; height:100%; border-radius:20px;"  alt=""/>
+                                            <img style="width:60px;padding-left:20px" src="./images/webPic/StrawberryPNG.webp"/>
                                         </div>
                                                           
                                     </div>               
@@ -66,7 +66,7 @@ export const SentencePicture = (props) => {
             </div>
             {/* <hr className="bg-danger"/> <hr className="bg-danger"/> */}
             {/* **** End Carousel***** */}
-            <div className=" rounded-3   bg-info text-center text-light p-5" id={props.carouselName.idLetter}></div>
+            <div className=" rounded-3  text-center text-light p-5" id={props.carouselName.idLetter}></div>
             <hr className="p-2 bg-danger" />
             <br/><br/><br/><br/><br/>
         </section>
