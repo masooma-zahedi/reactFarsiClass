@@ -1,7 +1,7 @@
 import React from 'react'
 import { SentenceCarousel } from './SentenceCarousel'
-import { sentenceCarousel } from './dataWord';
-import { testPicture } from './dataWord';
+import { sentenceCarousel, testPicture, testGramer } from './dataWord';
+import {  } from './dataWord';
 import { SentencePicture } from './SentencePicture'
 
 export const Word = () => {
@@ -10,6 +10,7 @@ export const Word = () => {
         <div className = "container border border-success mt-4">
             <SentenceCarousel carouselName={sentenceCarousel.carouselInfo} carouselData={sentenceCarousel.contentCarousel}/>
             <SentencePicture carouselName={testPicture.wordCarousel} carouselData={testPicture.alphaColor}/>
+            <SentencePicture carouselName={testGramer.wordCarousel} carouselData={testGramer.alphaColor}/>
         </div>
     
     </>

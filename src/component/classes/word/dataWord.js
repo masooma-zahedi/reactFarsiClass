@@ -159,3 +159,23 @@ export let sentenceCarousel = {
         ]
     
     };
+    export let testGramer = {
+    
+        wordCarousel:{
+            title:"دستور زبان",
+            targetCarouselId :"gramer-1",
+            idLetter :"gramer1Id",
+            imageCarousel :"imggramer1"
+        },
+        alphaColor : [
+            {
+                image :"./images/assetWord/grammer/1-1-25-1.png",
+                sylabelWord : "ضمایر فاعلی",
+            },
+            {
+                image :"./images/assetWord/grammer/1-1-25-2.png",
+                sylabelWord : "تطابق فعل و فاعل",
+            },
+        ]
+    
+    };
