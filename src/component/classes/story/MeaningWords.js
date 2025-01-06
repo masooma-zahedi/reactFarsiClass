@@ -1,7 +1,6 @@
 import React from 'react';
-import {florence} from "./dataStory";
 
-export const MeaningWords = () => {
+export const MeaningWords = ({dataWordsM}) => {
   return (
     <>
         <section className=" mt-3 f-right">
@@ -22,9 +21,9 @@ export const MeaningWords = () => {
                         </thead>
                         <tbody>
                             <tr className="">
-                            {florence.wordPart.map((item,index)=>{
+                            {dataWordsM.wordPart.map((item,index)=>{
                                 const putWord=()=>{
-                                    document.querySelector(`#${florence.wordId}`).innerHTML=`
+                                    document.querySelector(`#${dataWordsM.wordId}`).innerHTML=`
                                         <div  class=' my-5 text-center'>
                                             <h1 class ="py-5 text-purple">${item.engMean}</h1>
                                         </div>
@@ -45,7 +44,7 @@ export const MeaningWords = () => {
                     {/* <!-- *************** --> */}
                 </div>
                 </div>
-                <div className="col-md-6 bg-warning rounded py-10" id={florence.wordId}></div>
+                <div className="col-md-6 bg-warning rounded py-10" id={dataWordsM.wordId}></div>
             </div>
                 <br /><br /><br /><br /><br />
         </section>

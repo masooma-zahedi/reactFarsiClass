@@ -216,31 +216,216 @@ export let sentenceCarousel = {
     
     };
     
-    export let testGramer = {
-    
-        wordCarousel:{
-            title:"دستور زبان",
-            targetCarouselId :"gramer-1",
-            idLetter :"gramer1Id",
-            imageCarousel :"imggramer1"
+export let testGramer = {
+
+    wordCarousel:{
+        title:"دستور زبان",
+        targetCarouselId :"gramer-1",
+        idLetter :"gramer1Id",
+        imageCarousel :"imggramer1"
+    },
+    alphaColor : [
+        {
+            image :"./images/assetWord/grammer/1-1-25-1.png",
+            sylabelWord : "ضمایر فاعلی",
         },
-        alphaColor : [
-            {
-                image :"./images/assetWord/grammer/1-1-25-1.png",
-                sylabelWord : "ضمایر فاعلی",
-            },
-            {
-                image :"./images/assetWord/grammer/1-1-25-2.png",
-                sylabelWord : "تطابق فعل و فاعل",
-            },
-            {
-                image :"./images/assetWord/grammer/1-1-25-3-زمان.png",
-                sylabelWord : "زمان-1",
-            },
-            {
-                image :"./images/assetWord/grammer/1-1-25-4.png",
-                sylabelWord : "زمان-2",
-            },
-        ]
+        {
+            image :"./images/assetWord/grammer/1-1-25-2.png",
+            sylabelWord : "تطابق فعل و فاعل",
+        },
+        {
+            image :"./images/assetWord/grammer/1-1-25-3-زمان.png",
+            sylabelWord : "زمان-1",
+        },
+        {
+            image :"./images/assetWord/grammer/1-1-25-4.png",
+            sylabelWord : "زمان-2",
+        },
+    ]
+
+};
+
+export let lionBear ={
+    wordId:"lionB1",
+    titleStory:"داستان شیر و خرس و روباه",
+    imageStory:["./images/assetWord/storyWord/1-6-25-1-lion.png",],
+    wordPart:[
+        {
+            wordMean:"شَریک",
+            engMean:"Partner"
+        },
+        {
+            wordMean:"صاحِب",
+            engMean:"Owner"
+        },
+        {
+            wordMean:"به درازا کشید",
+            engMean:"It took a long time."
+        },
+        {
+            wordMean:"توان جنگیدن",
+            engMean:"Ability to fight"
+        },
+        {
+            wordMean:"زخم عمیق",
+            engMean:"Deep wound"
+        },
+        {
+            wordMean:"زیر نظر داشتن",
+            engMean:"To keep an eye on"
+        },
+        {
+            wordMean:"فرصت طلایی",
+            engMean:"Golden opportunity"
+        },
+        {
+            wordMean:"نیشخند",
+            engMean:"Laughter"
+        },
+        {
+            wordMean:"گرسنه",
+            engMean:"Hungry"
+        },
+        {
+            wordMean:"هیچ کدام",
+            engMean:"None"
+        },
+        {
+            wordMean:"قبول کردن",
+            engMean:"Accepted"
+        },
+        {
+            wordMean:"خرگوش",
+            engMean:"Rabbit"
+        },
+        {
+            wordMean:"دَلیل",
+            engMean:"Reason"
+        },
+        {
+            wordMean:"خسته",
+            engMean:"Tired"
+        },
+        {
+            wordMean:"افتادن",
+            engMean:"Falling"
+        },
+    ]
     
-    };
+}
+export let realFriends ={
+    wordId:"realF1",
+    titleStory:"داستان دوستی واقعی",
+    imageStory:["./images/assetWord/storyWord/1-6-25-1-friends.png",],
+    wordPart:[
+        {
+            wordMean:"دوستی واقعی",
+            engMean:"True friendship"
+        },
+        {
+            wordMean:"آب و هوا",
+            engMean:"Weather"
+        },
+        {
+            wordMean:"زیرک",
+            engMean:"Smart"
+        },
+        {
+            wordMean:"لاک پشت",
+            engMean:"Turtle"
+        },
+        {
+            wordMean:"کلاغ",
+            engMean:"Crow"
+        },
+        {
+            wordMean:"آهو",
+            engMean:"Deer"
+        },
+        {
+            wordMean:"آرامش",
+            engMean:"Peace"
+        },
+        {
+            wordMean:"وقت ظهر",
+            engMean:"Noon time"
+        },
+        {
+            wordMean:"نهار",
+            engMean:"Lunch"
+        },
+        {
+            wordMean:"مُنتَظر",
+            engMean:"Waiting"
+        },
+        {
+            wordMean:"نگران",
+            engMean:"Worried"
+        },
+        {
+            wordMean:"اطراف",
+            engMean:"Around"
+        },
+        {
+            wordMean:"شکارچی",
+            engMean:"Hunter"
+        },
+        {
+            wordMean:"پاره کردن",
+            engMean:"Tear"
+        },
+        {
+            wordMean:"نجات دادن",
+            engMean:"rescue"
+        },
+        {
+            wordMean:"جویدن",
+            engMean:"Chewing"
+        },
+        {
+            wordMean:"متعجب",
+            engMean:"Surprised"
+        },
+        {
+            wordMean:"پاسخ دادن",
+            engMean:"Reply"
+        },
+        {
+            wordMean:"نزدیک شدن",
+            engMean:"come close"
+        },
+        {
+            wordMean:"فرار کردن",
+            engMean:"To escape"
+        },
+        {
+            wordMean:"خالی",
+            engMean:"Empty"
+        },
+        {
+            wordMean:"چاره",
+            engMean:"Solution"
+        },
+        {
+            wordMean:"زخمی",
+            engMean:"Wounded"
+        },
+        {
+            wordMean:"عجله",
+            engMean:"Hurry"
+        },
+        {
+            wordMean:"ناامید",
+            engMean:"disappointed"
+        },
+        {
+            wordMean:"شگفت زده",
+            engMean:"Surprised"
+        },
+        {
+            wordMean:"باز گشت",
+            engMean:"Return"
+        },
+    ]
+    
+}

@@ -1,30 +1,28 @@
 import React from 'react';
-import { florence } from './dataStory';
-
-export const TheStory = () => {
+import { MeaningWords } from './MeaningWords';
+export const TheStory = ({srcStory}) => {
     
-    const Florence = ()=>{
         return(
             <>
                 <section>
-                        <h2 className="story-title text-center text-light rounded-3 my-5 p-5 flower-bg">{florence.titleStory}</h2>
+                        <h2 className="story-title text-center text-light rounded-3 my-5 p-5 flower-bg">{srcStory.titleStory}</h2>
                         <div className="">
                             <div className="text-center">
-                            <div className="border mx-auto w-100 h-100 mb-3">
-                                <img src="./images/assetStory/12-10-4-فلورانس.jpg" className="w-100 h-100"  alt=""/>
-                            </div>
-                            <div className="border mx-auto w-100 h-100 mb-3">
-                                <img src="./images/assetStory/12-19-5-فلورنس.jpg" className="w-100 h-100"  alt="" />
-                            </div>
+                                {srcStory.imageStory.map((story,index)=>{
+                                    return(
+                                        <>
+                                            <div className="border mx-auto w-100 h-100 mb-3">
+                                                <img src={story} className="w-100 h-100"  alt={srcStory.titleStory}/>
+                                            </div>
+                                        </>
+                                    )
+                                })}
                             </div>
                         </div>
                 </section>
+                <MeaningWords dataWordsM={srcStory}/>
+
             </>
         )
-    }
-  return (
-    <>
-        <Florence/>
-    </>
-  )
 }
+

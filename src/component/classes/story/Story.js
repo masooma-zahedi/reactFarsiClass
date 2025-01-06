@@ -1,13 +1,12 @@
 import React from 'react'
 import { TheStory } from './TheStory'
-import { MeaningWords } from './MeaningWords'
+import { florence } from './dataStory';
 
 export const Story = () => {
   return (
     <>
         <div className = "container border border-danger mt-4">
-            <TheStory />
-            <MeaningWords />
+            <TheStory srcStory={florence}/>
         </div>
 
     </>

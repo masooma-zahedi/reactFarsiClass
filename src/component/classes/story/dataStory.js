@@ -1,6 +1,7 @@
 export let florence ={
     wordId:"floren1",
     titleStory:"زندگی فلورانس نایتینگل",
+    imageStory:["./images/assetStory/12-10-4-فلورانس.jpg","./images/assetStory/12-19-5-فلورنس.jpg"],
     wordPart:[
         {
             wordMean:"سرپرست",
