@@ -10,7 +10,7 @@ export const MakeWordCarousel = (props) => {
     const test = ()=>{
         document.querySelector(`#${props.carouselName.idLetter}`).innerHTML =` 
                                     <div className="text-center">
-                                            <img style="width:150px" src="./images/webPic/cinnamoroll-1.gif"/>
+                                            <img style="width:150px" src="./images/webPic/littleBus-4.gif"/>
                                             <p>Come On!!!</p>
                                     </div>               
                                 `
@@ -31,7 +31,7 @@ export const MakeWordCarousel = (props) => {
                                     <div className="text-center">
                                         <h1 className="">
                                         ${item.sylabelWord}                   
-                                            <img style="width:60px" src="./images/webPic/StrawberryPNG.webp"/>
+                                            <img style="width:60px" src="./images/webPic/littleBus-2.png"/>
                                         </h1>
                                     </div>               
                                 `
@@ -44,7 +44,7 @@ export const MakeWordCarousel = (props) => {
                                     <img src={item.image} className="d-block h-100 w-75"  alt={item.sylabelWord}/>
                             </div>
                             <div className="carousel-caption  p-4 text-primary " onMouseOver={bobMouseOver} style={bobStyle}>
-                                <img src="./images/webPic/bob2.png" className="w-100 h-100 rounded "   alt="" srcSet=""/>
+                                <img src="./images/webPic/littleBus-3.png" className="w-100 h-100 rounded "   alt="" srcSet=""/>
                             </div>
                         </div>
                         
