@@ -665,5 +665,21 @@ export let testDaysOfWeek = {
             image :"./images/assetAlpha/days-of-week/1-5-25-7.png",
             sylabelWord : " شَن + به --> شنبه",
         },
+        {
+            image :"./images/assetAlpha/days-of-week/1-5-25-8.gif",
+            sylabelWord : "اِم + روز --> امروز ",
+        },
+        {
+            image :"./images/assetAlpha/days-of-week/1-5-25-10.gif",
+            sylabelWord : " فَر + دا --> فَردا",
+        },
+        {
+            image :"./images/assetAlpha/days-of-week/1-5-25-9.gif",
+            sylabelWord : "دی + روز --> دیروز ",
+        },
+        {
+            image :"./images/assetAlpha/days-of-week/1-5-25-11.png",
+            sylabelWord : "اِمروز چه روزی اَست ؟ ",
+        },
     ]
 }

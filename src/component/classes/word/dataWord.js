@@ -145,16 +145,72 @@ export let sentenceCarousel = {
                 sylabelWord : ".او یک فیلم کارتونی از تلویزیون تماشا می کند",
             },
             {
-                image :"./images/assetWord/actionVerb/12-31-13-verb.png",
-                sylabelWord : ".او روی زمین می رقصد",
-            },
-            {
                 image :"./images/assetWord/actionVerb/12-31-14-verb.png",
                 sylabelWord : ".او این جایزه را برای کسب مقام اول در مسابقه بَرَنده شد",
             },
             {
                 image :"./images/assetWord/actionVerb/12-31-15-verb.png",
                 sylabelWord : ".او در حال نوشتن یک داستان برای بچه ها است",
+            },
+            {
+                image :"./images/assetWord/actionVerb/12-31-16-verb.png",
+                sylabelWord : ".هَرگِز در را به روی غَریبه ها باز نکُنید",
+            },
+            {
+                image :"./images/assetWord/actionVerb/12-31-17-verb.png",
+                sylabelWord : ".لُطفا در را بِبَند",
+            },
+            {
+                image :"./images/assetWord/actionVerb/12-31-18-verb.png",
+                sylabelWord : ".من مَعمولا سَعی می کُنم هر شب حداقل هَشت ساعَت بِخوابَم",
+            },
+            {
+                image :"./images/assetWord/actionVerb/12-31-19-verb.png",
+                sylabelWord : ".او با استفاده از قیچی یک تکه کاغذ را برش می دهد",
+            },
+            {
+                image :"./images/assetWord/actionVerb/12-31-20-verb.png",
+                sylabelWord : ".هواپبما در آسمان در حال پرواز است",
+            },
+            {
+                image :"./images/assetWord/actionVerb/12-31-21-verb.png",
+                sylabelWord : ".پُلیس یک ماشین را مُتِوَقِف کرد",
+            },
+            {
+                image :"./images/assetWord/actionVerb/12-31-22-verb.png",
+                sylabelWord : ".بند کفش هایت را بِبَند",
+            },
+            {
+                image :"./images/assetWord/actionVerb/12-31-23-verb.png",
+                sylabelWord : ".او با قایق بادبانی از اقیانوس عبور کرد",
+            },
+            {
+                image :"./images/assetWord/actionVerb/12-31-24-verb.png",
+                sylabelWord : ".کودک شروع به خَزیدَن با دست ها و زانوهایش به سمت در کرد",
+            },
+            {
+                image :"./images/assetWord/actionVerb/12-31-25-verb.png",
+                sylabelWord : ".مادر بزرگ من در بافتن لباس مهارت دارد",
+            },
+            {
+                image :"./images/assetWord/actionVerb/12-31-26-verb.png",
+                sylabelWord : ".من دوست دارم صبح حَمام کنم تا روزم را با طَراوَت و تَمیزی شروع کنم",
+            },
+            {
+                image :"./images/assetWord/actionVerb/12-31-27-verb.png",
+                sylabelWord : ".او داخِل اِستَخر شیرجه زَد",
+            },
+            {
+                image :"./images/assetWord/actionVerb/12-31-28-verb.png",
+                sylabelWord : ".آدامس به ته کفشم چسبیده بود",
+            },
+            {
+                image :"./images/assetWord/actionVerb/12-31-29-verb.png",
+                sylabelWord : ".او چیپس را با دوستَش شریک کرد",
+            },
+            {
+                image :"./images/assetWord/actionVerb/12-31-30-verb.png",
+                sylabelWord : ".او با مشت به صورتم زد",
             },
         ]
     
