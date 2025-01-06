@@ -159,6 +159,7 @@ export let sentenceCarousel = {
         ]
     
     };
+    
     export let testGramer = {
     
         wordCarousel:{
@@ -175,6 +176,14 @@ export let sentenceCarousel = {
             {
                 image :"./images/assetWord/grammer/1-1-25-2.png",
                 sylabelWord : "تطابق فعل و فاعل",
+            },
+            {
+                image :"./images/assetWord/grammer/1-1-25-3-زمان.png",
+                sylabelWord : "زمان-1",
+            },
+            {
+                image :"./images/assetWord/grammer/1-1-25-4.png",
+                sylabelWord : "زمان-2",
             },
         ]
     
