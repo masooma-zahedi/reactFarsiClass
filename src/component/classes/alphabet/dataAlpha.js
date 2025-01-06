@@ -628,3 +628,42 @@ export let testSchoolSupplies = {
         },
     ]
 }
+export let testDaysOfWeek = {
+    
+    wordCarousel:{
+        title:"روزهای هفته",
+        targetCarouselId :"daysPart-1",
+        idLetter :"days1",
+        imageCarousel :"imgdays"
+        },
+    alphaDays : [
+        {
+            image :"./images/assetAlpha/days-of-week/1-5-25-1.png",
+            sylabelWord : "یِک + شَن + به --> یِک شَنبه ",
+        },
+        {
+            image :"./images/assetAlpha/days-of-week/1-5-25-2.png",
+            sylabelWord : " دو + شَن + به --> دوشنبه",
+        },
+        {
+            image :"./images/assetAlpha/days-of-week/1-5-25-3.png",
+            sylabelWord : "سِه + شَن + به --> سه شنبه ",
+        },
+        {
+            image :"./images/assetAlpha/days-of-week/1-5-25-4.png",
+            sylabelWord : "چَ + هار + شَن + به --> چهارشنبه ",
+        },
+        {
+            image :"./images/assetAlpha/days-of-week/1-5-25-5.png",
+            sylabelWord : "پَنج + شَن + به --> پنج شنبه ",
+        },
+        {
+            image :"./images/assetAlpha/days-of-week/1-5-25-6.png",
+            sylabelWord : "جُم + عه --> جمعه ",
+        },
+        {
+            image :"./images/assetAlpha/days-of-week/1-5-25-7.png",
+            sylabelWord : " شَن + به --> شنبه",
+        },
+    ]
+}
