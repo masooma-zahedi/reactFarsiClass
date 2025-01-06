@@ -62,7 +62,7 @@ export const SentenceCarousel = ({carouselName,carouselData}) => {
                                             {item.wordsSentence.map((i,index)=>{
                                                 const putWordPic = ()=>{
                                                     document.querySelector(`#${carouselName.wordTarget}`).innerHTML =`
-                                                        <div class="w-100 pt-2 h-100  " style="text-align:center;">
+                                                        <div key=${index} class="w-100 pt-2 h-100  " style="text-align:center;">
                                                         ${i.img.length==0 ? `<h1 style="margin-top:50px" className="text-center pt-5 mt-5 border border-danger"> ${i.eng}<h1/>` : 
                                                             `<img  class="w-75 h-75 rounded" style="max-width:400px"  src=${i.img} alt="" />
                                                             <h1 className="text-center">${i.eng}<h1/>

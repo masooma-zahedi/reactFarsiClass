@@ -6,8 +6,8 @@ export const Story = () => {
   return (
     <>
         <div className = "container border border-danger mt-4">
-            <TheStory/>
-            <MeaningWords/>
+            <TheStory />
+            <MeaningWords />
         </div>
 
     </>

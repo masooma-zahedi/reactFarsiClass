@@ -2,7 +2,6 @@ import React from 'react';
 import {florence} from "./dataStory";
 
 export const MeaningWords = () => {
-    
   return (
     <>
         <section className=" mt-3 f-right">
@@ -26,13 +25,10 @@ export const MeaningWords = () => {
                             {florence.wordPart.map((item,index)=>{
                                 const putWord=()=>{
                                     document.querySelector(`#${florence.wordId}`).innerHTML=`
-                                        <div class=' my-5 text-center'>
+                                        <div  class=' my-5 text-center'>
                                             <h1 class ="py-5 text-purple">${item.engMean}</h1>
                                         </div>
-                                    `
-                                        
-                                    
-                                    
+                                    ` 
                                 }
                                 return(
                                     <>
@@ -43,24 +39,6 @@ export const MeaningWords = () => {
                                 )
                             })}
                             </tr>
-                        {/* <tr className="">
-                            <td className="btn-group sentence_alpha" role="group" aria-label="Basic example">
-                            <button type="button" className="btn btn-light" onClick="putWord('elephent-1','Story')">حکایت</button>
-                            </td>
-
-                            <button type="button" className="btn btn-light" onClick="putWord('elephent-1','Judgment')">قضاوت</button>
-                            <button type="button" className="btn btn-light" onClick="putWord('elephent-1','Darkness')">ظلمت</button>
-                            <button type="button" className="btn btn-light" onClick="putWord('elephent-1','Elephant trunk')">خرطوم فیل</button>
-                        </tr>
-                        <tr className="">
-                            <td className="btn-group sentence_alpha" role="group" aria-label="Basic example">
-                            <button type="button" className="btn btn-light" onClick="putWord('elephent-1','To think')">پنداشتن</button>
-                            <button type="button" className="btn btn-light" onClick="putWord('elephent-1','Reality')">واقعیت</button>
-                            <button type="button" className="btn btn-light" onClick="putWord('elephent-1','Prejudice')">تعصب</button>
-                            <button type="button" className="btn btn-light" onClick="putWord('elephent-1','Consultation')">مشورت</button>
-                            </td>
-                        </tr> */}
-
                         </tbody>
                     </table>
                     </div>

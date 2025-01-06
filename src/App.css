@@ -42,3 +42,8 @@
 .text-purple{
   color: rgb(66, 14, 150);
 }
+.flower-bg{
+  background-image:url("../public/images/webPic/flower-bg.jpg") ;
+  
+  /* background-color: #7b1b1b; */
+}

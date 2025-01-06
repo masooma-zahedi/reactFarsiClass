@@ -1,11 +1,13 @@
-import React from 'react'
+import React from 'react';
+import { florence } from './dataStory';
 
 export const TheStory = () => {
+    
     const Florence = ()=>{
         return(
             <>
                 <section>
-                        <h2 className="story-title text-center text-light rounded-3 my-5 p-5 flower-bg">داستان فیل در تاریکی</h2>
+                        <h2 className="story-title text-center text-light rounded-3 my-5 p-5 flower-bg">{florence.titleStory}</h2>
                         <div className="">
                             <div className="text-center">
                             <div className="border mx-auto w-100 h-100 mb-3">
