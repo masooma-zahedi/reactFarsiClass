@@ -86,3 +86,51 @@ export let florence ={
     ]
     
 }
+export let soldier ={
+    wordId:"soldier1",
+    titleStory:"داستان دو سرباز",
+    imageStory:["./images/assetStory/12-19-1-دو سرباز.jpg",],
+    wordPart:[
+        {
+            wordMean:"سرباز",
+            engMean:"Soldier"
+        },
+        {
+            wordMean:"",
+            engMean:""
+        },
+   ]
+    
+}
+export let healthStory ={
+    wordId:"health1",
+    titleStory:"داستان عافیت",
+    imageStory:["./images/assetStory/12-19-2-عافیت.jpg",],
+    wordPart:[
+        {
+            wordMean:"عافیت",
+            engMean:"Healthy"
+        },
+        {
+            wordMean:"",
+            engMean:""
+        },
+   ]
+    
+}
+export let donky ={
+    wordId:"donky1",
+    titleStory:"داستان شیر و الاغ وحشی",
+    imageStory:["./images/assetStory/1-6-25-1-lion&donki.png","./images/assetStory/1-6-25-2-lion&donki.png",],
+    wordPart:[
+        {
+            wordMean:"وحشی",
+            engMean:"Wild"
+        },
+        {
+            wordMean:"",
+            engMean:""
+        },
+   ]
+    
+}
