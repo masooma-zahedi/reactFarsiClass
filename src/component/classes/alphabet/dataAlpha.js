@@ -1,3 +1,13 @@
+export let alphaCrousel={
+    buttonId:"alphaC1",
+    carouselImg:[
+    "./images/assetAlpha/cardAlpha/Untitled-2.jpg",
+    "./images/assetAlpha/cardAlpha/Untitled-2-2.jpg",
+    "./images/assetAlpha/cardAlpha/Untitled-2-3.jpg",
+    "./images/assetAlpha/cardAlpha/Untitled-2-4.jpg",
+    "./images/assetAlpha/cardAlpha/Untitled-2-5.jpg",
+    "./images/assetAlpha/cardAlpha/Untitled-2-6.jpg",
+]}
 export let testColor = {
     
         wordCarousel:{

@@ -1,20 +1,17 @@
-import { testBody, testColor, testFruit, testWear, testSchoolSupplies, testDaysOfWeek } from "./dataAlpha.js"
-import { MakeWordCarousel } from "./MakeWordCarousel.js";
-import {CardAlphaCompo} from "./cardAlpha/CardAlphaCompo.js"
+import {CardAlphaCompo,} from "./cardAlpha/CardAlphaCompo.js";
+import {alphaCrousel} from "./dataAlpha.js"
+import {CarouselAlpha} from "./CarouselAlpha"
+import { WordCarousel } from "./WordCarousel";
 
 
 export const Alphabet = () => {
     
   return (
     <>
-        <div className = "container border border-warning mt-4">
+        <div className = "container mt-4">
+          <CarouselAlpha  dataCarousel={alphaCrousel}/>
           <CardAlphaCompo/>
-          <MakeWordCarousel carouselName={testColor.wordCarousel} carouselData={testColor.alphaColor}/>
-          <MakeWordCarousel carouselName={testFruit.wordCarousel} carouselData={testFruit.alphaImage}/>
-          <MakeWordCarousel carouselName={testBody.wordCarousel} carouselData={testBody.alphaBody}/>
-          <MakeWordCarousel carouselName={testWear.wordCarousel} carouselData={testWear.alphaWear}/>
-          <MakeWordCarousel carouselName={testSchoolSupplies.wordCarousel} carouselData={testSchoolSupplies.alphaWear}/>
-          <MakeWordCarousel carouselName={testDaysOfWeek.wordCarousel} carouselData={testDaysOfWeek.alphaDays}/>
+          <WordCarousel/>
         </div>
     </>
   )

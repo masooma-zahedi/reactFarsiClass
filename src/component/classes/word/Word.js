@@ -8,7 +8,7 @@ import { TheStory } from '../story/TheStory';
 export const Word = () => {
   return (
     <>
-        <div className = "container border border-success mt-4">
+        <div className = "container mt-4">
             <SentenceCarousel carouselName={sentenceCarousel.carouselInfo} carouselData={sentenceCarousel.contentCarousel}/>
             <SentencePicture carouselName={testPicture.wordCarousel} carouselData={testPicture.alphaColor}/>
             <SentencePicture carouselName={testGramer.wordCarousel} carouselData={testGramer.alphaColor}/>

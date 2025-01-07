@@ -5,7 +5,7 @@ import { donky, florence, healthStory, soldier } from './dataStory';
 export const Story = () => {
   return (
     <>
-        <div className = "container border border-danger mt-4">
+        <div className = "container mt-4">
             <TheStory srcStory={florence}/>
             <TheStory srcStory={soldier}/>
             <TheStory srcStory={healthStory}/>
