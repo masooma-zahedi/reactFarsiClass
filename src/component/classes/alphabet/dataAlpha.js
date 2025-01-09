@@ -697,6 +697,101 @@ export let testDaysOfWeek = {
         },
     ]
 }
+export let testNumbers = {
+    
+    wordCarousel:{
+        title:"شماره ها",
+        targetCarouselId :"numPart-1",
+        idLetter :"nums1",
+        imageCarousel :"imgnums"
+        },
+    alphaDays : [
+        {
+            image :"./images/assetAlpha/numbers/1-8-25-0-num.png",
+            sylabelWord : "صِفر",
+        },
+        {
+            image :"./images/assetAlpha/numbers/1-8-25-1-num.png",
+            sylabelWord : "یک",
+        },
+        {
+            image :"./images/assetAlpha/numbers/1-8-25-2-num.png",
+            sylabelWord : "دو",
+        },
+        {
+            image :"./images/assetAlpha/numbers/1-8-25-3-num.png",
+            sylabelWord : "سِه",
+        },
+        {
+            image :"./images/assetAlpha/numbers/1-8-25-4-num.png",
+            sylabelWord : "چَ + هار --> چَهار",
+        },
+        {
+            image :"./images/assetAlpha/numbers/1-8-25-5-num.png",
+            sylabelWord : "پَنج",
+        },
+        {
+            image :"./images/assetAlpha/numbers/1-8-25-6-num.png",
+            sylabelWord : "شش",
+        },
+        {
+            image :"./images/assetAlpha/numbers/1-8-25-7-num.png",
+            sylabelWord : "هَفت",
+        },
+        {
+            image :"./images/assetAlpha/numbers/1-8-25-8-num.png",
+            sylabelWord : "هَشت",
+        },
+        {
+            image :"./images/assetAlpha/numbers/1-8-25-9-num.png",
+            sylabelWord : "نُه",
+        },
+        {
+            image :"./images/assetAlpha/numbers/1-8-25-10-num.png",
+            sylabelWord : "دَه",
+        },
+        {
+            image :"./images/assetAlpha/numbers/1-8-25-11-num.png",
+            sylabelWord : "یاز + دَه --> یازدَه",
+        },
+        {
+            image :"./images/assetAlpha/numbers/1-8-25-12-num.png",
+            sylabelWord : "دَ + واز + دَه --> دَوازدَه",
+        },
+        {
+            image :"./images/assetAlpha/numbers/1-8-25-13-num.png",
+            sylabelWord : "سیز + دَه --> سیزدَه",
+        },
+        {
+            image :"./images/assetAlpha/numbers/1-8-25-14-num.png",
+            sylabelWord : "چَ + هار + دَه --> چَهاردَه",
+        },
+        {
+            image :"./images/assetAlpha/numbers/1-8-25-15-num.png",
+            sylabelWord : "پانز + دَه --> پانزدَه",
+        },
+        {
+            image :"./images/assetAlpha/numbers/1-8-25-16-num.png",
+            sylabelWord : "شانز + دَه --> شانزدَه",
+        },
+        {
+            image :"./images/assetAlpha/numbers/1-8-25-17-num.png",
+            sylabelWord : "هِف + دَه --> هِفدَه",
+        },
+        {
+            image :"./images/assetAlpha/numbers/1-8-25-18-num.png",
+            sylabelWord : "هِج + دَه --> هِجدَه",
+        },
+        {
+            image :"./images/assetAlpha/numbers/1-8-25-19-num.png",
+            sylabelWord : "نوز + دَه --> نوزدَه",
+        },
+        {
+            image :"./images/assetAlpha/numbers/1-8-25-20-num.png",
+            sylabelWord : "بیست",
+        },
+    ]
+}
 
 // ******************************* End MakeWordCarousel data *********************
 
