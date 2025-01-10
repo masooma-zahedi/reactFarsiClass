@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Alphabet } from './classes/alphabet/Alphabet';
 import {Word} from './classes/word/Word'
 import { Story } from './classes/story/Story';
+import { ScrollToTop } from './classes/ScrollToTop';
 
 export const Main = () => {
   return (
@@ -10,6 +11,7 @@ export const Main = () => {
       <div style={{height:"400px", opacity:"0.9"}}>
         <img className='w-100 h-100' src="./images/webPic/ad-1.png" alt="" />
       </div>
+      <ScrollToTop />
       <Routes>
         <Route path='/' element={<Alphabet/>} end />
         <Route path='/word' element={<Word/>} />

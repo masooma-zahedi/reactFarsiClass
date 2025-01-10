@@ -3,6 +3,7 @@ import {alphaCrousel} from "./dataAlpha.js"
 import {CarouselAlpha} from "./CarouselAlpha"
 import { WordCarousel } from "./WordCarousel";
 import { SylabeWords } from "./SylabeWords";
+import { ScrollTotop } from "../ScrollToTop.js";
 
 
 export const Alphabet = () => {
