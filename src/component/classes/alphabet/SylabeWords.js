@@ -4,7 +4,7 @@ import { sylabelWord1 } from './dataAlpha';
 export const SylabeWords = () => {
   return (
     <>
-        <section className=" f-right mt-4">
+        <section id='read1' className=" f-right mt-4">
             <div className="d-flex  ">
                 <div className=" flex-fill">
                     <div className="ms-3">

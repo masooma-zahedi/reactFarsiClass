@@ -18,7 +18,7 @@ export const MakeWordCarousel = (props) => {
     
   return (
     <>
-        <section>
+        <section id="meaning1">
 
             <h1 className="bg-info mt-5 rounded-3 p-4 text-center hov" >{props.carouselName.title}</h1>
             {/*  **** start carousel**** */}

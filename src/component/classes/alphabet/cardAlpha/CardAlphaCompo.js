@@ -14,7 +14,7 @@ export const CardAlphaCompo = () => {
                         // console.log(index);
                         return(
                             <>
-                                <div className="col-md-3" key={index}>
+                                <div className="col mb-3" key={index}>
                                     <div className="card" style={{width:"18rem"}}>
                                         <img src={letter.mainPic} className="card-img-top" data-bs-toggle="modal" data-bs-target={`#${letter.examplePicId}`}  alt="حرف آ" />
                                         <div className="card-body">
