@@ -10,14 +10,28 @@ export let alphaCrousel={
     "./images/assetAlpha/cardAlpha/Untitled-2-6.jpg",
 ]}
 // ******************************* End Just Carousel data ************************
+// ************************* start List for List Content****************
+export let contentListAlpha = {
+        newword :{
+            idModal:"newTest",
+            infoWords:[
+            {title:"رنگ ها",targetCarouselId:"colorPart1",idLetter:"color1"},
+            {title:"میوه ها",targetCarouselId:"fruitPart1",idLetter:"fruit1"},
+            {title:"اعضای بدن",targetCarouselId:"bodyPart1",idLetter:"body1"},
+            ],
+        },
+    }
+
+
+// ************************* end List for List Content****************
 
 // ******************************* Start MakeWordCarousel data *********************
 export let testColor = {
     
         wordCarousel:{
             title:"رنگ ها",
-            targetCarouselId :"carouselExampleControlsNoTouching20",
-            idLetter :"h2",
+            targetCarouselId :"colorPart1",
+            idLetter :"color1",
             imageCarousel :"imgcarousel2"
         },
         alphaColor : [
@@ -85,8 +99,8 @@ export let testFruit = {
     
         wordCarousel:{
         title:"میوه ها و سبزیجات",
-        targetCarouselId :"carouselExampleControlsNoTouching1",
-        idLetter :"h8",
+        targetCarouselId :"fruitPart1",
+        idLetter :"fruit1",
         imageCarousel :"imgcarousel2"
         },
     alphaImage : [
@@ -302,7 +316,7 @@ export let testBody = {
     
     wordCarousel:{
         title:"اعضای بدن",
-        targetCarouselId :"bodyPart-1",
+        targetCarouselId :"bodyPart1",
         idLetter :"body1",
         imageCarousel :"imgbody"
         },

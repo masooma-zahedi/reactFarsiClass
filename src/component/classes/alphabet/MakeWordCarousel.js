@@ -20,7 +20,7 @@ export const MakeWordCarousel = (props) => {
     <>
         <section id="meaning1">
 
-            <h1 className="bg-info mt-5 rounded-3 p-4 text-center hov" >{props.carouselName.title}</h1>
+            <h1 className="bg-info mt-5 rounded-3 p-4 text-center hov" id={props.carouselName.targetCarouselId}>{props.carouselName.title}</h1>
             {/*  **** start carousel**** */}
 
             <div id={props.carouselName.targetCarouselId } className="carousel slide" data-bs-touch="false" data-bs-interval="false">

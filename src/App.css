@@ -40,6 +40,8 @@ html {
     transform: rotate(360deg);
   }
 }
+
+
 .f-right{
   direction: rtl;
 }
