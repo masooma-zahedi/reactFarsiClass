@@ -18,6 +18,10 @@ export let contentListAlpha = {
             {title:"رنگ ها",targetHref:"colorPart-2",idLetter:"color1"},
             {title:"میوه ها",targetHref :"fruitPart-2",idLetter:"fruit1"},
             {title:"اعضای بدن",targetHref :"bodyPart2",idLetter:"body1"},
+            {title:"پوشیدنی ها",targetHref :"wearPart-2",idLetter:"wear1"},
+            {title:"لوازم تحریر",targetHref :"supplyPart-2",idLetter:"supply1"},
+            {title:"روزهای هفته",targetHref :"daysPart-2",idLetter:"days1"},
+            {title:"اعداد 1-20 ",targetHref :"numPart-2",idLetter:"nums1"},
             ],
         },
     }
@@ -723,7 +727,7 @@ export let testDaysOfWeek = {
 export let testNumbers = {
     
     wordCarousel:{
-        title:"شماره ها",
+        title:"اعداد 1-20 ",
         targetCarouselId :"numPart-1",
         targetHref :"numPart-2",
         idLetter :"nums1",

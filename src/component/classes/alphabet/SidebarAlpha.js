@@ -51,10 +51,7 @@ export const SidebarAlpha = () => {
               </>
             )
         })}
-        <a className='p-3  shadow-sm m-2 text-decoration-none text-success' href="#wearPart-1"> پوشاک</a>
-
         </div>
-        hhh
       </div>
       <div className="modal-footer">
         <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
