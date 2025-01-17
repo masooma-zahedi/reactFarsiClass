@@ -15,9 +15,9 @@ export let contentListAlpha = {
         newword :{
             idModal:"newTest",
             infoWords:[
-            {title:"رنگ ها",targetCarouselId:"colorPart1",idLetter:"color1"},
-            {title:"میوه ها",targetCarouselId:"fruitPart1",idLetter:"fruit1"},
-            {title:"اعضای بدن",targetCarouselId:"bodyPart1",idLetter:"body1"},
+            {title:"رنگ ها",targetHref:"colorPart-2",idLetter:"color1"},
+            {title:"میوه ها",targetHref :"fruitPart-2",idLetter:"fruit1"},
+            {title:"اعضای بدن",targetHref :"bodyPart2",idLetter:"body1"},
             ],
         },
     }
@@ -31,6 +31,7 @@ export let testColor = {
         wordCarousel:{
             title:"رنگ ها",
             targetCarouselId :"colorPart1",
+            targetHref:"colorPart-2",
             idLetter :"color1",
             imageCarousel :"imgcarousel2"
         },
@@ -92,7 +93,7 @@ export let testColor = {
             }
         ]
     
-    };
+};
 
 
 export let testFruit = {
@@ -100,6 +101,7 @@ export let testFruit = {
         wordCarousel:{
         title:"میوه ها و سبزیجات",
         targetCarouselId :"fruitPart1",
+        targetHref :"fruitPart-2",
         idLetter :"fruit1",
         imageCarousel :"imgcarousel2"
         },
@@ -317,6 +319,7 @@ export let testBody = {
     wordCarousel:{
         title:"اعضای بدن",
         targetCarouselId :"bodyPart1",
+        targetHref :"bodyPart2",
         idLetter :"body1",
         imageCarousel :"imgbody"
         },
@@ -419,6 +422,7 @@ export let testWear = {
     wordCarousel:{
         title:"پوشیدنی ها",
         targetCarouselId :"wearPart-1",
+        targetHref :"wearPart-2",
         idLetter :"wear1",
         imageCarousel :"imgwear"
         },
@@ -536,6 +540,7 @@ export let testSchoolSupplies = {
     wordCarousel:{
         title:"لوازم تحریر",
         targetCarouselId :"supplyPart-1",
+        targetHref:"supplyPart-2",
         idLetter :"supply1",
         imageCarousel :"imgsupply"
         },
@@ -663,6 +668,7 @@ export let testDaysOfWeek = {
     wordCarousel:{
         title:"روزهای هفته",
         targetCarouselId :"daysPart-1",
+        targetHref:"daysPart-2",
         idLetter :"days1",
         imageCarousel :"imgdays"
         },
@@ -719,6 +725,7 @@ export let testNumbers = {
     wordCarousel:{
         title:"شماره ها",
         targetCarouselId :"numPart-1",
+        targetHref :"numPart-2",
         idLetter :"nums1",
         imageCarousel :"imgnums"
         },

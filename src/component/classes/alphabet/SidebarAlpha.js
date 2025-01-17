@@ -46,7 +46,7 @@ export const SidebarAlpha = () => {
         {contentListAlpha.newword.infoWords.map((item,index)=>{
             return(
               <>
-                <a className='p-3 shadow-sm m-2' href={`#${item.targetCarouselId}`}><button className='border-0 text-success bg-transparent'>{item.title}</button></a>
+                <a key={index} className='p-3 shadow-sm m-2' href={`#${item.targetHref}`}><button className='border-0 text-success bg-transparent'>{item.title}</button></a>
 
               </>
             )
