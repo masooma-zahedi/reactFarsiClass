@@ -1,6 +1,7 @@
 export let florence ={
     wordId:"floren1",
     titleStory:"زندگی فلورانس نایتینگل",
+    targetHref:"floraN1",
     imageStory:["./images/assetStory/12-10-4-فلورانس.jpg","./images/assetStory/12-19-5-فلورنس.jpg"],
     wordPart:[
         {
@@ -89,6 +90,7 @@ export let florence ={
 export let soldier ={
     wordId:"soldier1",
     titleStory:"داستان دو سرباز",
+    targetHref :"soldier1",
     imageStory:["./images/assetStory/12-19-1-دو سرباز.jpg",],
     wordPart:[
         {
@@ -105,6 +107,7 @@ export let soldier ={
 export let healthStory ={
     wordId:"health1",
     titleStory:"داستان عافیت",
+    targetHref :"health1",
     imageStory:["./images/assetStory/12-19-2-عافیت.jpg",],
     wordPart:[
         {
@@ -121,6 +124,7 @@ export let healthStory ={
 export let donky ={
     wordId:"donky1",
     titleStory:"داستان شیر و الاغ وحشی",
+    targetHref :"donky1",
     imageStory:["./images/assetStory/1-6-25-1-lion&donki.png","./images/assetStory/1-6-25-2-lion&donki.png",],
     wordPart:[
         {
@@ -134,3 +138,18 @@ export let donky ={
    ]
     
 }
+
+// ************* Start SidebarStory ***************
+export let contentListStory = {
+    newword :{
+        idModal:"storyList",
+        infoWords:[
+        {title:"زندگی فلورانس ",targetHref:"floraN1"},
+        {title:"دوسرباز",targetHref :"soldier1"},
+        {title:"عافیت",targetHref :"health1"},
+        {title:"شیرو الاغ",targetHref :"donky1"},
+        {title:"",targetHref :""},
+        ],
+    },
+}
+// ************* Start SidebarStory ***************
