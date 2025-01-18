@@ -34,6 +34,8 @@ export let contentListAlpha = {
 export let sylabelWord1={
     buttonTargetId:"testSylabe1",
     titleHead:"با هم بخوانیم",
+    titleColor:"rgb(187, 39, 88)",
+    sylabelBg:"rgb(209, 79, 79)",
     sentenceRow:[
         // each arrow is one sentence
         [
@@ -184,6 +186,8 @@ export let sylabelWord1={
 export let sylabelWord2={
     buttonTargetId:"testSylabe2",
     titleHead:"با هم بخوانیم",
+    titleColor:"rgb(58, 86, 210)",
+    sylabelBg:"rgb(36, 113, 190)",
     sentenceRow:[
         // each arrow is one sentence
         [

@@ -1,6 +1,8 @@
 import React from 'react';
 
 export const SylabeWords = (props) => {
+    console.log(props.infoSentence.titleColor);
+    
   return (
     <>
         <section id='read1' className=" f-right mt-4">
@@ -16,7 +18,7 @@ export const SylabeWords = (props) => {
                         >
                         <thead>
                             <tr className=''>
-                            <th className="h3 bg-secondary p-4 text-center rounded text-light p-2" scope="col">{props.infoSentence.titleHead}</th>
+                            <th className="h3  p-4 text-center rounded text-light p-2" style={{backgroundColor:`${props.infoSentence.titleColor}`}} scope="col">{props.infoSentence.titleHead}</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -50,7 +52,7 @@ export const SylabeWords = (props) => {
                     {/* <!-- *************** --> */}
                     </div>
                 </div>
-                <div className=" bg-danger flex-fill rounded py-10 d-flex justify-content-center align-items-center text-light" id={props.infoSentence.buttonTargetId}></div>
+                <div className=" flex-fill rounded py-10 d-flex justify-content-center align-items-center text-light" style={{backgroundColor:`${props.infoSentence.sylabelBg}`}} id={props.infoSentence.buttonTargetId}></div>
             </div>
         </section>
     </>
