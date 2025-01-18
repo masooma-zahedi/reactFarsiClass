@@ -9,21 +9,21 @@ export const SidebarAlpha = () => {
     <div className=' mt-4 f-right shadow-lg' style={{position:'sticky',top:"10px"}}>
       <div className="sidebar border-end">
         <div className="sidebar-header border-bottom">
-          <div className="sidebar-brand text-success h4">فهرست مطالب</div>
+          <div className="sidebar-brand text-secondary h4">فهرست مطالب</div>
         </div>
         <ul className="sidebar-nav">
           <li className="nav-item">
-            <a className="nav-link active" href="#">
-              <i className="nav-icon cil-speedometer"></i> گروه الفبا
+            <a className="nav-link active h6 text-success" href="#">
+              گروه الفبا
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
-              <i className="nav-icon cil-speedometer"></i> حروف الفبا
+            <a className="nav-link" href="#read1">
+              <i className="nav-Link  text-success h6">با هم بخوانیم</i> 
             </a>
           </li>
           <li className="nav-item d-grid  ">
-            <button type="button" className="border-0 text-success h5   nav-link" data-bs-toggle="modal" data-bs-target={`#${contentListAlpha.newword.idModal}`}>
+            <button type="button" className="border-0 text-success h6 nav-link" data-bs-toggle="modal" data-bs-target={`#${contentListAlpha.newword.idModal}`}>
              معنی لغات تازه 
             </button>
           </li>
@@ -35,7 +35,7 @@ export const SidebarAlpha = () => {
     </div>
     {/* modal */}
     <div className="modal fade" id={`${contentListAlpha.newword.idModal}`} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div className="modal-dialog">
+  <div className="modal-dialog biger-modal ">
     <div className="modal-content">
       <div className="modal-header">
         <h5 className="modal-title" id="exampleModalLabel">Modal title</h5>
