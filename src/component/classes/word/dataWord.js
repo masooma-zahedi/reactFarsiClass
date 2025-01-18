@@ -247,6 +247,7 @@ export let testGramer = {
 
 export let lionBear ={
     wordId:"lionB1",
+    targetHref:"lionB2",
     titleStory:"داستان شیر و خرس و روباه",
     imageStory:["./images/assetWord/storyWord/1-6-25-1-lion.png",],
     wordPart:[
@@ -315,6 +316,7 @@ export let lionBear ={
 }
 export let realFriends ={
     wordId:"realF1",
+    targetHref:"realF2",
     titleStory:"داستان دوستی واقعی",
     imageStory:["./images/assetWord/storyWord/1-6-25-1-friends.png",],
     wordPart:[
@@ -428,4 +430,18 @@ export let realFriends ={
         },
     ]
     
+}
+
+
+
+// **********Start Sidebar Word*****************
+export let contentListWord = {
+    newword :{
+        idModal:"wordList",
+        infoWords:[
+        {title:"داستان شیر و خرس ",targetHref:"lionB2"},
+        {title:"دوستی واقعی",targetHref :"realF2"},
+        {title:"",targetHref :""},
+        ],
+    },
 }

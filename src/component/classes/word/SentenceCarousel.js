@@ -5,7 +5,7 @@ export const SentenceCarousel = ({carouselName,carouselData}) => {
   return (
     <>
         {/* <!-- *****************************  Introduce Section جملات و کلمات حرف ح************ --> */}
-        <section className="container">
+        <section className="container" id=''>
           <h1 className="text-light hov  p-4 m-3 text-center rounded-pill"  style={{backgroundColor:' rgba(89, 4, 45, 0.804)'}}>{carouselName.titleCarousel}</h1>
   
           {/* <!-- ************************** Start carusel *************************** --> */}

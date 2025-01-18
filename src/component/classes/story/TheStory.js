@@ -5,7 +5,7 @@ export const TheStory = ({srcStory}) => {
         return(
             <>
                 <section>
-                        <h2 className="story-title text-center text-light rounded-3 my-5 p-5 flower-bg">{srcStory.titleStory}</h2>
+                        <h2 className="story-title text-center text-light rounded-3 my-5 p-5 flower-bg" id={srcStory.targetHref} >{srcStory.titleStory}</h2>
                         <div className="">
                             <div className="text-center">
                                 {srcStory.imageStory.map((story,index)=>{

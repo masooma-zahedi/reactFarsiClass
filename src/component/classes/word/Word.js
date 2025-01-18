@@ -4,17 +4,26 @@ import { sentenceCarousel, testPicture, testGramer } from './dataWord';
 import { lionBear, realFriends } from './dataWord';
 import { SentencePicture } from './SentencePicture'
 import { TheStory } from '../story/TheStory';
+import { SidebarWord } from './SidebarWord.js';
 
 export const Word = () => {
   return (
     <>
-        <div className = "container mt-4">
+        {/* <div className = "container mt-4">
+        </div> */}
+        <div className='row'>
+          <div className="col-s-0 col-lg-2  ps-5">
+                    <SidebarWord />
+          </div>
+          <div className="col-s-12 col-lg-9">
             <SentenceCarousel carouselName={sentenceCarousel.carouselInfo} carouselData={sentenceCarousel.contentCarousel}/>
             <SentencePicture carouselName={testPicture.wordCarousel} carouselData={testPicture.alphaColor}/>
             <SentencePicture carouselName={testGramer.wordCarousel} carouselData={testGramer.alphaColor}/>
             <TheStory srcStory={lionBear}/>
             <TheStory srcStory={realFriends}/>
+          </div>
         </div>
+        
     
     </>
   )
