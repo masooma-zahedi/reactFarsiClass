@@ -1,7 +1,6 @@
 import React from 'react';
-import { sylabelWord1 } from './dataAlpha';
 
-export const SylabeWords = () => {
+export const SylabeWords = (props) => {
   return (
     <>
         <section id='read1' className=" f-right mt-4">
@@ -17,18 +16,18 @@ export const SylabeWords = () => {
                         >
                         <thead>
                             <tr className=''>
-                            <th className="h3 bg-secondary p-4 text-center rounded text-light p-2" scope="col">{sylabelWord1.titleHead}</th>
+                            <th className="h3 bg-secondary p-4 text-center rounded text-light p-2" scope="col">{props.infoSentence.titleHead}</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {sylabelWord1.sentenceRow.map((sentence,index)=>{
+                            {props.infoSentence.sentenceRow.map((sentence,index)=>{
                                 return(
                                     <>
                                         <tr style={{backgroundColor:"#ddddff"}} className="h1 " key={index}>
                                         <td className="btn-group sentence_alpha " role="group" aria-label="Basic example">
                                             {sentence.map((item,index)=>{
                                                 const putWord = ()=>{
-                                                    let target = sylabelWord1.buttonTargetId
+                                                    let target = props.infoSentence.buttonTargetId
                                                     console.log(target);
                                                     document.querySelector(`#${target}`).innerHTML=`
                                                         <h1>${item.syla=="" ? item.word : item.syla}</h1>
@@ -51,7 +50,7 @@ export const SylabeWords = () => {
                     {/* <!-- *************** --> */}
                     </div>
                 </div>
-                <div className=" bg-danger flex-fill rounded py-10 d-flex justify-content-center align-items-center text-light" id={sylabelWord1.buttonTargetId}></div>
+                <div className=" bg-danger flex-fill rounded py-10 d-flex justify-content-center align-items-center text-light" id={props.infoSentence.buttonTargetId}></div>
             </div>
         </section>
     </>

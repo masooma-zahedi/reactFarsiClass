@@ -28,6 +28,380 @@ export let contentListAlpha = {
 
 
 // ************************* end List for List Content****************
+// ******************************* Start SylabelWords data *********************
+
+// ##########--> برای حرف ت ##########
+export let sylabelWord1={
+    buttonTargetId:"testSylabe1",
+    titleHead:"با هم بخوانیم",
+    sentenceRow:[
+        // each arrow is one sentence
+        [
+            {
+            word:"او",
+            syla:""
+            },
+            {
+            word:"توت",
+            syla:""
+            },
+            {
+            word:"داد.",
+            syla:""
+            },
+        ],
+        [
+            {
+            word:"دوستَم",
+            syla:"دوس + تَم"
+            },
+            {
+            word:"با",
+            syla:""
+            },
+            {
+            word:"سام",
+            syla:""
+            },
+            {
+            word:"دَست",
+            syla:""
+            },
+            {
+            word:"داد.",
+            syla:""
+            },
+        ],
+        [
+            {
+            word:"او",
+            syla:""
+            },
+            {
+            word:"تاب",
+            syla:""
+            },
+            {
+            word:"بَست.",
+            syla:""
+            },
+        ],
+        [
+            {
+            word:"او",
+            syla:""
+            },
+            {
+            word:"با",
+            syla:""
+            },
+            {
+            word:"اَسَد",
+            syla:"اَ + سَد"
+            },
+            {
+            word:"دَست",
+            syla:""
+            },
+            {
+            word:"داد.",
+            syla:""
+            },
+        ],
+        [
+            {
+            word:"سام",
+            syla:""
+            },
+            {
+            word:"تاب",
+            syla:""
+            },
+            {
+            word:"بَست.",
+            syla:""
+            },
+        ],
+        [
+            {
+            word:"سام",
+            syla:""
+            },
+            {
+            word:"با",
+            syla:""
+            },
+            {
+            word:"اَسَد",
+            syla:"اَ + سَد"
+            },
+            {
+            word:"دوست",
+            syla:""
+            },
+            {
+            word:"اَست.",
+            syla:""
+            },
+        ],
+        [
+            {
+            word:"سَبا",
+            syla:""
+            },
+            {
+            word:"با",
+            syla:""
+            },
+            {
+            word:"سوت",
+            syla:""
+            },
+            {
+            word:"آمَد.",
+            syla:"آ + مَد"
+            },
+        ],
+        [
+            {
+            word:"او",
+            syla:""
+            },
+            {
+            word:"ماست",
+            syla:""
+            },
+            {
+            word:"داد.",
+            syla:""
+            },
+        ],
+    ]
+}
+// ########## برای حرف ت <--########
+
+// ##########-->برای حرف د ########
+export let sylabelWord2={
+    buttonTargetId:"testSylabe2",
+    titleHead:"با هم بخوانیم",
+    sentenceRow:[
+        // each arrow is one sentence
+        [
+            {
+            word:"آسِمان",
+            syla:"آ + سِ + مان"
+            },
+            {
+            word:"اَبر",
+            syla:""
+            },
+            {
+            word:"دارَد.",
+            syla:"دا + رَد"
+            },
+        ],
+        [
+            {
+            word:"تو",
+            syla:""
+            },
+            {
+            word:"دَر",
+            syla:""
+            },
+            {
+            word:"سَبَد",
+            syla:"سَ + بَد"
+            },
+            {
+            word:"توت",
+            syla:""
+            },
+            {
+            word:"داری.",
+            syla:"دا + ری"
+            },
+        ],
+        [
+            {
+            word:"سارا",
+            syla:"سا + را"
+            },
+            {
+            word:"با",
+            syla:""
+            },
+            {
+            word:"اَدَب",
+            syla:"اَ + دَب"
+            },
+            {
+            word:"اَست.",
+            syla:""
+            },
+        ],
+        [
+            {
+            word:"توت",
+            syla:""
+            },
+            {
+            word:"تازِه",
+            syla:"تا + زِه"
+            },
+            {
+            word:"وَ",
+            syla:""
+            },
+            {
+            word:"سَرد",
+            syla:""
+            },
+            {
+            word:"بود.",
+            syla:""
+            },
+        ],
+        [
+            {
+            word:"دِرَخت",
+            syla:"دِ + رَخت"
+            },
+            {
+            word:"سَبز",
+            syla:""
+            },
+            {
+            word:"اَست.",
+            syla:""
+            },
+        ],
+        [
+            {
+            word:"دارا",
+            syla:"دا + را"
+            },
+            {
+            word:"سَردَرد",
+            syla:"سَر + دَرد"
+            },
+            {
+            word:"دارَد.",
+            syla:"دا + رَد"
+            },
+        ],
+        [
+            {
+            word:"اَسب",
+            syla:""
+            },
+            {
+            word:"بار",
+            syla:""
+            },
+            {
+            word:"شیر",
+            syla:""
+            },
+            {
+            word:"رِضا",
+            syla:"رِ + ضا"
+            },
+            {
+            word:"بَشَر",
+            syla:"بَ + شَر"
+            },
+            {
+            word:"سیر",
+            syla:""
+            },
+        ],
+        [
+            {
+            word:"شور",
+            syla:""
+            },
+            {
+            word:"آبی",
+            syla:"آ + بی"
+            },
+            {
+            word:"ریش",
+            syla:""
+            },
+            {
+            word:"اَبر",
+            syla:""
+            },
+            {
+            word:"شیب",
+            syla:""
+            },
+            {
+            word:"سیب",
+            syla:""
+            },
+        ],
+        [
+            {
+            word:"سُرب",
+            syla:""
+            },
+            {
+            word:"اَبرو",
+            syla:"اَب + رو"
+            },
+            {
+            word:"ساری",
+            syla:"سا + ری"
+            },
+            {
+            word:"سَبز",
+            syla:""
+            },
+            {
+            word:"سَراب",
+            syla:"سَ + راب"
+            },
+            {
+            word:"سُروش",
+            syla:"سُ + روش"
+            },
+        ],
+        [
+            {
+            word:"اَبری",
+            syla:"اَب + ری"
+            },
+            {
+            word:"ضارِب",
+            syla:"ضا + رِب"
+            },
+            {
+            word:"روسی",
+            syla:"رو + سی"
+            },
+            {
+            word:"ویروس",
+            syla:"وی + روس"
+            },
+            {
+            word:"زیبا",
+            syla:"زی + با"
+            },
+            {
+            word:"خُروس",
+            syla:"خُ + روس"
+            },
+        ],
+
+    ]
+}
+// ##########برای حرف د <--##########
+
+
+// ******************************* End SylabelWords data *********************
+
 
 // ******************************* Start MakeWordCarousel data *********************
 export let testColor = {
@@ -823,155 +1197,4 @@ export let testNumbers = {
 
 // ******************************* End MakeWordCarousel data *********************
 
-// ******************************* Start SylabelWords data *********************
-export let sylabelWord1={
-    buttonTargetId:"testSylabe1",
-    titleHead:"با هم بخوانیم",
-    sentenceRow:[
-        // each arrow is one sentence
-        [
-            {
-            word:"او",
-            syla:""
-            },
-            {
-            word:"توت",
-            syla:""
-            },
-            {
-            word:"داد.",
-            syla:""
-            },
-        ],
-        [
-            {
-            word:"دوستَم",
-            syla:"دوس + تَم"
-            },
-            {
-            word:"با",
-            syla:""
-            },
-            {
-            word:"سام",
-            syla:""
-            },
-            {
-            word:"دَست",
-            syla:""
-            },
-            {
-            word:"داد.",
-            syla:""
-            },
-        ],
-        [
-            {
-            word:"او",
-            syla:""
-            },
-            {
-            word:"تاب",
-            syla:""
-            },
-            {
-            word:"بَست.",
-            syla:""
-            },
-        ],
-        [
-            {
-            word:"او",
-            syla:""
-            },
-            {
-            word:"با",
-            syla:""
-            },
-            {
-            word:"اَسَد",
-            syla:"اَ + سَد"
-            },
-            {
-            word:"دَست",
-            syla:""
-            },
-            {
-            word:"داد.",
-            syla:""
-            },
-        ],
-        [
-            {
-            word:"سام",
-            syla:""
-            },
-            {
-            word:"تاب",
-            syla:""
-            },
-            {
-            word:"بَست.",
-            syla:""
-            },
-        ],
-        [
-            {
-            word:"سام",
-            syla:""
-            },
-            {
-            word:"با",
-            syla:""
-            },
-            {
-            word:"اَسَد",
-            syla:"اَ + سَد"
-            },
-            {
-            word:"دوست",
-            syla:""
-            },
-            {
-            word:"اَست.",
-            syla:""
-            },
-        ],
-        [
-            {
-            word:"سَبا",
-            syla:""
-            },
-            {
-            word:"با",
-            syla:""
-            },
-            {
-            word:"سوت",
-            syla:""
-            },
-            {
-            word:"آمَد.",
-            syla:"آ + مَد"
-            },
-        ],
-        [
-            {
-            word:"او",
-            syla:""
-            },
-            {
-            word:"ماست",
-            syla:""
-            },
-            {
-            word:"داد.",
-            syla:""
-            },
-        ],
-    ]
-}
-
-
-// ******************************* End SylabelWords data *********************
 

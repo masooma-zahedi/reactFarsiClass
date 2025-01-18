@@ -1,5 +1,5 @@
 import {CardAlphaCompo,} from "./cardAlpha/CardAlphaCompo.js";
-import {alphaCrousel} from "./dataAlpha.js"
+import {alphaCrousel, sylabelWord1, sylabelWord2} from "./dataAlpha.js"
 import {CarouselAlpha} from "./CarouselAlpha"
 import { WordCarousel } from "./WordCarousel";
 import { SylabeWords } from "./SylabeWords";
@@ -17,7 +17,8 @@ export const Alphabet = () => {
             <div className="col-s-12 col-lg-9">
               <CarouselAlpha  dataCarousel={alphaCrousel}/>
               <CardAlphaCompo/>
-              <SylabeWords/>
+              <SylabeWords infoSentence={sylabelWord1}/>
+              <SylabeWords infoSentence={sylabelWord2}/>
               <WordCarousel/>
             </div>
           </div>
