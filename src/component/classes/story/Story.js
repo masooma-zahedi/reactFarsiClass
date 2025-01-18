@@ -6,8 +6,6 @@ import { SidebarStory } from './SidebarStory';
 export const Story = () => {
   return (
     <>
-        <div className = "container mt-4">
-        </div>
         <div className='row'>
           <div className="col-s-0 col-lg-2  ps-5">
                     <SidebarStory />

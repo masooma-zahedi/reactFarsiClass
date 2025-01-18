@@ -169,7 +169,7 @@ export let testPicture = {
         },
         {
             image :"./images/assetWord/actionVerb/12-31-20-verb.png",
-            sylabelWord : ".هواپبما در آسمان در حال پرواز است",
+            sylabelWord : ".هواپیما در آسمان در حال پرواز است",
         },
         {
             image :"./images/assetWord/actionVerb/12-31-21-verb.png",

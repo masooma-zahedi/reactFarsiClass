@@ -50,6 +50,7 @@ html {
 }
 .flower-bg{
   background-image:url("../public/images/webPic/flower-bg.jpg") ;
+  background-size: cover;
   
   /* background-color: #7b1b1b; */
 }

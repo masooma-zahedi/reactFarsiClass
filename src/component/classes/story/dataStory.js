@@ -90,7 +90,7 @@ export let florence ={
 export let soldier ={
     wordId:"soldier1",
     titleStory:"داستان دو سرباز",
-    targetHref :"soldier1",
+    targetHref :"soldier-2",
     imageStory:["./images/assetStory/12-19-1-دو سرباز.jpg",],
     wordPart:[
         {
@@ -98,8 +98,60 @@ export let soldier ={
             engMean:"Soldier"
         },
         {
-            wordMean:"",
-            engMean:""
+            wordMean:"روزی روزگاری",
+            engMean:"Once upon a time"
+        },
+        {
+            wordMean:"شجاعت",
+            engMean:"Courage"
+        },
+        {
+            wordMean:"جنگیدن",
+            engMean:"Fighting"
+        },
+        {
+            wordMean:"مقابله",
+            engMean:"Confrontation"
+        },
+        {
+            wordMean:"درمانده",
+            engMean:"Helpless"
+        },
+        {
+            wordMean:"اوضاع",
+            engMean:"Situation"
+        },
+        {
+            wordMean:"تفنگ",
+            engMean:"Gun"
+        },
+        {
+            wordMean:"نشانه گیری",
+            engMean:"Targeting"
+        },
+        {
+            wordMean:"بدجنس",
+            engMean:"Bad guy"
+        },
+        {
+            wordMean:"جرات",
+            engMean:"Courage"
+        },
+        {
+            wordMean:"شکست خوردن",
+            engMean:"Failure"
+        },
+        {
+            wordMean:"غرولند",
+            engMean:"Gnarl"
+        },
+        {
+            wordMean:"کردار",
+            engMean:"Act"
+        },
+        {
+            wordMean:"توخالی",
+            engMean:"Hollow"
         },
    ]
     
@@ -107,16 +159,76 @@ export let soldier ={
 export let healthStory ={
     wordId:"health1",
     titleStory:"داستان عافیت",
-    targetHref :"health1",
+    targetHref :"health-2",
     imageStory:["./images/assetStory/12-19-2-عافیت.jpg",],
     wordPart:[
         {
             wordMean:"عافیت",
-            engMean:"Healthy"
+            engMean:"Well-beingthy"
         },
         {
-            wordMean:"",
-            engMean:""
+            wordMean:"غلام",
+            engMean:"Slave"
+        },
+        {
+            wordMean:"کشتی",
+            engMean:"Ship"
+        },
+        {
+            wordMean:"گریه و زاری",
+            engMean:"Crying and wailing"
+        },
+        {
+            wordMean:"بی قراری",
+            engMean:"Restlessness"
+        },
+        {
+            wordMean:"دانا",
+            engMean:"Wise"
+        },
+        {
+            wordMean:"کلافه و خسته",
+            engMean:"Bored and tired"
+        },
+        {
+            wordMean:"سرورم",
+            engMean:"My lord"
+        },
+        {
+            wordMean:"خرسندی",
+            engMean:"Satisfaction"
+        },
+        {
+            wordMean:"لطف کردن",
+            engMean:"To do a favor"
+        },
+        {
+            wordMean:"خدمه",
+            engMean:"Crew"
+        },
+        {
+            wordMean:"گوشه",
+            engMean:"Corner"
+        },
+        {
+            wordMean:"غرق شدن",
+            engMean:"Drowning"
+        },
+        {
+            wordMean:"تجربه",
+            engMean:"Experience"
+        },
+        {
+            wordMean:"قدر",
+            engMean:"Value"
+        },
+        {
+            wordMean:"مصیبت",
+            engMean:"Calamity"
+        },
+        {
+            wordMean:"گرفتار",
+            engMean:"Involved"
         },
    ]
     
@@ -124,7 +236,7 @@ export let healthStory ={
 export let donky ={
     wordId:"donky1",
     titleStory:"داستان شیر و الاغ وحشی",
-    targetHref :"donky1",
+    targetHref :"donky-2",
     imageStory:["./images/assetStory/1-6-25-1-lion&donki.png","./images/assetStory/1-6-25-2-lion&donki.png",],
     wordPart:[
         {
@@ -132,8 +244,64 @@ export let donky ={
             engMean:"Wild"
         },
         {
-            wordMean:"",
-            engMean:""
+            wordMean:"سرسبز",
+            engMean:"Lush"
+        },
+        {
+            wordMean:"شریک",
+            engMean:"Partner"
+        },
+        {
+            wordMean:"تقسیم کردن",
+            engMean:"Divide"
+        },
+        {
+            wordMean:"همکاری",
+            engMean:"Collaboration"
+        },
+        {
+            wordMean:"سرعت",
+            engMean:"Speed"
+        },
+        {
+            wordMean:"نیرو",
+            engMean:"Force"
+        },
+        {
+            wordMean:"اسیر",
+            engMean:"Captive"
+        },
+        {
+            wordMean:"معمولا",
+            engMean:"Usually"
+        },
+        {
+            wordMean:"گوزن",
+            engMean:"Deer"
+        },
+        {
+            wordMean:"سلطان",
+            engMean:"king"
+        },
+        {
+            wordMean:"خودخواه",
+            engMean:"Selfish"
+        },
+        {
+            wordMean:"ادامه دادن",
+            engMean:"Continue"
+        },
+        {
+            wordMean:"سیر شدن",
+            engMean:"To be full"
+        },
+        {
+            wordMean:"برازنده",
+            engMean:"Graceful"
+        },
+        {
+            wordMean:"نیرومند",
+            engMean:"Strong"
         },
    ]
     
@@ -145,9 +313,9 @@ export let contentListStory = {
         idModal:"storyList",
         infoWords:[
         {title:"زندگی فلورانس ",targetHref:"floraN1"},
-        {title:"دوسرباز",targetHref :"soldier1"},
-        {title:"عافیت",targetHref :"health1"},
-        {title:"شیرو الاغ",targetHref :"donky1"},
+        {title:"دوسرباز",targetHref :"soldier-2"},
+        {title:"عافیت",targetHref :"health-2"},
+        {title:"شیرو الاغ",targetHref :"donky-2"},
         {title:"",targetHref :""},
         ],
     },
