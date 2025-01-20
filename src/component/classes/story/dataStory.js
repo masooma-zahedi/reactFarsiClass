@@ -329,6 +329,7 @@ export let contentListStory = {
         {title:"دوسرباز",targetHref :"soldier-2"},
         {title:"عافیت",targetHref :"health-2"},
         {title:"شیرو الاغ",targetHref :"donky-2"},
+        {title:"شیر و خرگوش",targetHref :"rabit-2"},
         {title:"",targetHref :""},
         ],
     },

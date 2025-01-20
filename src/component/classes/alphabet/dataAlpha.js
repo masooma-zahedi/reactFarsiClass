@@ -10,7 +10,7 @@ export let alphaCrousel={
     "./images/assetAlpha/cardAlpha/Untitled-2-6.jpg",
 ]}
 // ******************************* End Just Carousel data ************************
-// ************************* start List for List Content****************
+// ************************* start List for List Content (for Side Bar )****************
 export let contentListAlpha = {
         newword :{
             idModal:"newTest",
@@ -22,6 +22,7 @@ export let contentListAlpha = {
             {title:"لوازم تحریر",targetHref :"supplyPart-2",idLetter:"supply1"},
             {title:"روزهای هفته",targetHref :"daysPart-2",idLetter:"days1"},
             {title:"اعداد 0-20 ",targetHref :"numPart-2",idLetter:"nums1"},
+            {title:"جملات کوتاه دستوری",targetHref :"orderPart-2",idLetter:"orderv1"},
             ],
         },
     }
