@@ -1,4 +1,4 @@
-import { testBody, testColor, testFruit, testWear, testSchoolSupplies, testDaysOfWeek, testNumbers } from "./dataAlpha.js"
+import { testBody, testColor, testFruit, testWear, testSchoolSupplies, testDaysOfWeek, testNumbers,testOrder1 } from "./dataAlpha.js"
 import { MakeWordCarousel } from "./MakeWordCarousel.js";
 
 export const WordCarousel = () => {
@@ -11,6 +11,7 @@ export const WordCarousel = () => {
         <MakeWordCarousel carouselName={testSchoolSupplies.wordCarousel} carouselData={testSchoolSupplies.alphaWear}/>
         <MakeWordCarousel carouselName={testDaysOfWeek.wordCarousel} carouselData={testDaysOfWeek.alphaDays}/>
         <MakeWordCarousel carouselName={testNumbers.wordCarousel} carouselData={testNumbers.alphaDays}/>
+        <MakeWordCarousel carouselName={testOrder1.wordCarousel} carouselData={testOrder1.alphaDays}/>
 
     </>
   )

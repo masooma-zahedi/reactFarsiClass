@@ -1198,6 +1198,78 @@ export let testNumbers = {
         },
     ]
 }
+export let testOrder1 = {
+    
+    wordCarousel:{
+        title:"جملات کوتاه دستوری",
+        targetCarouselId :"orderPart-1",
+        targetHref :"orderPart-2",
+        idLetter :"order1",
+        imageCarousel :"imgOrder"
+        },
+    alphaDays : [
+        {
+            image :"./images/assetAlpha/actionOrder/1-20-order-1.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/actionOrder/1-20-order-2.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/actionOrder/1-20-order-3.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/actionOrder/1-20-order-4.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/actionOrder/1-20-order-5.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/actionOrder/1-20-order-6.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/actionOrder/1-20-order-7.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/actionOrder/1-20-order-8.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/actionOrder/1-20-order-9.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/actionOrder/1-20-order-10.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/actionOrder/1-20-order-11.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/actionOrder/1-20-order-12.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/actionOrder/1-20-order-13.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/actionOrder/1-20-order-14.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/actionOrder/1-20-order-15.jpg",
+            sylabelWord : "",
+        },
+    ]
+}
 
 // ******************************* End MakeWordCarousel data *********************
 
