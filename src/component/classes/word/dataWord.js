@@ -89,7 +89,7 @@ export let sentenceCarousel = {
 export let testPicture = {
 
     wordCarousel:{
-        title:"فعل ها",
+        title:"(1) فعل ها",
         targetCarouselId :"verbAction1",
         idLetter :"verbId",
         imageCarousel :"imgcarouselv1"
@@ -210,6 +210,170 @@ export let testPicture = {
         {
             image :"./images/assetWord/actionVerb/12-31-30-verb.png",
             sylabelWord : ".او با مشت به صورتم زد",
+        },
+        {
+            image :"./images/assetWord/actionVerb/12-31-65-verb.png",
+            sylabelWord : ".",
+        },
+        {
+            image :"./images/assetWord/actionVerb/12-31-66-verb.png",
+            sylabelWord : ".",
+        },
+        {
+            image :"./images/assetWord/actionVerb/12-31-67-verb.png",
+            sylabelWord : ".",
+        },
+        {
+            image :"./images/assetWord/actionVerb/12-31-68-verb.png",
+            sylabelWord : ".",
+        },
+    ]
+
+};
+export let testPicture2 = {
+
+    wordCarousel:{
+        title:" 2 فعل ها",
+        targetCarouselId :"verbAction2",
+        idLetter :"verbId2",
+        imageCarousel :"imgcarouselv2"
+    },
+    alphaColor : [
+        {
+            image :"./images/assetWord/actionVerb/12-31-31-verb.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetWord/actionVerb/12-31-32-verb.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetWord/actionVerb/12-31-33-verb.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetWord/actionVerb/12-31-34-verb.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetWord/actionVerb/12-31-35-verb.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetWord/actionVerb/12-31-36-verb.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetWord/actionVerb/12-31-37-verb.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetWord/actionVerb/12-31-38-verb.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetWord/actionVerb/12-31-39-verb.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetWord/actionVerb/12-31-40-verb.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetWord/actionVerb/12-31-41-verb.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetWord/actionVerb/12-31-42-verb.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetWord/actionVerb/12-31-43-verb.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetWord/actionVerb/12-31-44-verb.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetWord/actionVerb/12-31-45-verb.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetWord/actionVerb/12-31-46-verb.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetWord/actionVerb/12-31-47-verb.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetWord/actionVerb/12-31-48-verb.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetWord/actionVerb/12-31-49-verb.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetWord/actionVerb/12-31-50-verb.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetWord/actionVerb/12-31-51-verb.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetWord/actionVerb/12-31-52-verb.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetWord/actionVerb/12-31-53-verb.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetWord/actionVerb/12-31-54-verb.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetWord/actionVerb/12-31-55-verb.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetWord/actionVerb/12-31-56-verb.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetWord/actionVerb/12-31-57-verb.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetWord/actionVerb/12-31-58-verb.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetWord/actionVerb/12-31-59-verb.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetWord/actionVerb/12-31-60-verb.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetWord/actionVerb/12-31-61-verb.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetWord/actionVerb/12-31-62-verb.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetWord/actionVerb/12-31-63-verb.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetWord/actionVerb/12-31-64-verb.png",
+            sylabelWord : "",
         },
     ]
 
