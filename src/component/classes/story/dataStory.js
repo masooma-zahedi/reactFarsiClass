@@ -306,6 +306,19 @@ export let donky ={
    ]
     
 }
+export let rabit ={
+    wordId:"raboit1",
+    titleStory:"داستان شیر و خرگوش",
+    targetHref :"rabit-2",
+    imageStory:["/images/assetStory/smartRabit-1.png","/images/assetStory/smartRabit-2.png",],
+    wordPart:[
+        {
+            wordMean:"",
+            engMean:""
+        },
+   ]
+    
+}
 
 // ************* Start SidebarStory ***************
 export let contentListStory = {
