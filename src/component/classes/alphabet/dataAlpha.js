@@ -1,3 +1,4 @@
+import {infoCard} from "./cardAlpha/cardDataAlpha"
 // ******************************* Start Just Carousel ***************
 export let alphaCrousel={
     buttonId:"alphaC1",
@@ -9,6 +10,21 @@ export let alphaCrousel={
     "./images/assetAlpha/cardAlpha/Untitled-2-5.jpg",
     "./images/assetAlpha/cardAlpha/Untitled-2-6.jpg",
 ]}
+
+// &&&&&& start
+let shortSoundExa = [];
+infoCard.map((item , index)=>{
+    shortSoundExa =[...shortSoundExa, item.shortSoundPic]
+})
+export let alphaShortCrousel={
+    buttonId:"shortCa1",
+    carouselImg:shortSoundExa
+}
+// &&&&&& End
+
+
+
+
 // ******************************* End Just Carousel data ************************
 // ************************* start List for List Content (for Side Bar )****************
 export let contentListAlpha = {
@@ -25,7 +41,7 @@ export let contentListAlpha = {
             {title:"جملات کوتاه دستوری",targetHref :"orderPart-2",idLetter:"orderv1"},
             ],
         },
-    }
+}
 
 
 // ************************* end List for List Content****************

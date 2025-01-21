@@ -1,7 +1,6 @@
 import React from 'react';
 
 export const SylabeWords = (props) => {
-    console.log(props.infoSentence.titleColor);
     
   return (
     <>
@@ -30,7 +29,6 @@ export const SylabeWords = (props) => {
                                             {sentence.map((item,index)=>{
                                                 const putWord = ()=>{
                                                     let target = props.infoSentence.buttonTargetId
-                                                    console.log(target);
                                                     document.querySelector(`#${target}`).innerHTML=`
                                                         <h1>${item.syla=="" ? item.word : item.syla}</h1>
                                                     `

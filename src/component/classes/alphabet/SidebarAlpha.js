@@ -1,9 +1,10 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import {contentListAlpha } from "./dataAlpha"
 
-export const SidebarAlpha = () => {  
-  
+export const SidebarAlpha = ({setShowShort,idCarouselAlpha}) => { 
+  console.log(idCarouselAlpha);
+   
   return (
     <>
     <div className=' mt-4 f-right shadow-lg' style={{position:'sticky',top:"10px"}}>
@@ -13,8 +14,14 @@ export const SidebarAlpha = () => {
         </div>
         <ul className="sidebar-nav">
           <li className="nav-item">
-            <a className="nav-link active h6 text-success" href="#">
+            <a onClick={()=>{setShowShort(false)}} className="nav-link active h6 text-success" href="#">
               گروه الفبا
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link"  href={`#${idCarouselAlpha}`} >{console.log(idCarouselAlpha)
+            }
+              <i onClick={()=>{setShowShort(true)} }  className="nav-Link  text-success h6">صداهای کوتاه</i> 
             </a>
           </li>
           <li className="nav-item">

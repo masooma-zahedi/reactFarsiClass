@@ -1,9 +1,9 @@
 import React from 'react'
 
-export const CarouselAlpha = ({dataCarousel}) => {
+export const CarouselAlpha = ({dataCarousel,idCarouselAlpha}) => {
   return (
     <>
-        <section class="container mt-4">
+        <section class="container mt-4" id={idCarouselAlpha}>
             <div id={dataCarousel.buttonId} class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 {dataCarousel.carouselImg.map((item, index)=>{
