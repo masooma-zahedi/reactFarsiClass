@@ -1210,10 +1210,6 @@ export let testOrder1 = {
         },
     alphaDays : [
         {
-            image :"./images/assetAlpha/actionOrder/1-20-order-1.jpg",
-            sylabelWord : "",
-        },
-        {
             image :"./images/assetAlpha/actionOrder/1-20-order-2.jpg",
             sylabelWord : "",
         },
@@ -1267,6 +1263,86 @@ export let testOrder1 = {
         },
         {
             image :"./images/assetAlpha/actionOrder/1-20-order-15.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/actionOrder/1-20-order-16.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/actionOrder/1-20-order-17.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/actionOrder/1-20-order-18.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/actionOrder/1-20-order-19.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/actionOrder/1-20-order-20.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/actionOrder/1-20-order-21.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/actionOrder/1-20-order-22.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/actionOrder/1-20-order-23.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/actionOrder/1-20-order-24.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/actionOrder/1-20-order-25.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/actionOrder/1-20-order-26.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/actionOrder/1-20-order-27.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/actionOrder/1-20-order-28.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/actionOrder/1-20-order-29.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/actionOrder/1-20-order-30.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/actionOrder/1-20-order-31.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/actionOrder/1-20-order-32.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/actionOrder/1-20-order-33.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/actionOrder/1-20-order-34.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/actionOrder/1-20-order-35.jpg",
             sylabelWord : "",
         },
     ]
