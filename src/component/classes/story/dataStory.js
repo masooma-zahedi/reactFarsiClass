@@ -1,3 +1,20 @@
+// ************* Start SidebarStory ***************
+export let contentListStory = {
+    newword :{
+        idModal:"storyList",
+        infoWords:[
+        {title:"زندگی فلورانس ",targetHref:"floraN1"},
+        {title:"دوسرباز",targetHref :"soldier-2"},
+        {title:"عافیت",targetHref :"health-2"},
+        {title:"شیرو الاغ",targetHref :"donky-2"},
+        {title:"شیر و خرگوش",targetHref :"rabit-2"},
+        {title:"",targetHref :""},
+        ],
+    },
+}
+// ************* Start SidebarStory ***************
+
+
 export let florence ={
     wordId:"floren1",
     titleStory:"زندگی فلورانس نایتینگل",
@@ -313,25 +330,82 @@ export let rabit ={
     imageStory:["/images/assetStory/smartRabit-1.png","/images/assetStory/smartRabit-2.png",],
     wordPart:[
         {
-            wordMean:"",
-            engMean:""
+            wordMean:"باهوش",
+            engMean:"Intelligent"
+        },
+        {
+            wordMean:"وحشی",
+            engMean:"Wild"
+        },
+        {
+            wordMean:"قوی",
+            engMean:"Strong"
+        },
+        {
+            wordMean:"زور",
+            engMean:"Force"
+        },
+        {
+            wordMean:"کشتن",
+            engMean:"Kill"
+        },
+        {
+            wordMean:"جمع شدند",
+            engMean:"Gathering"
+        },
+        {
+            wordMean:"داوطلبانه",
+            engMean:"Voluntary"
+        },
+        {
+            wordMean:"پیشنهاد",
+            engMean:"Offer"
+        },
+        {
+            wordMean:"قربان",
+            engMean:"Sir"
+        },
+        {
+            wordMean:"رحم کردن",
+            engMean:"To have mercy"
+        },
+        {
+            wordMean:"چاه آب",
+            engMean:"Water well"
+        },
+        {
+            wordMean:"صدای لرزان",
+            engMean:"Trembling voice"
+        },
+        {
+            wordMean:"اخم کردن",
+            engMean:"To frown"
+        },
+        {
+            wordMean:"پریدن",
+            engMean:"Jumping"
+        },
+        {
+            wordMean:"غیر واقعی",
+            engMean:"Unreal"
+        },
+        {
+            wordMean:"خفه شد",
+            engMean:"Drowning "
+        },
+        {
+            wordMean:"هورا کشیدن",
+            engMean:"Cheering"
+        },
+        {
+            wordMean:"آفرین",
+            engMean:"Well done!"
+        },
+        {
+            wordMean:"اذیت کردن",
+            engMean:"To annoy"
         },
    ]
     
 }
 
-// ************* Start SidebarStory ***************
-export let contentListStory = {
-    newword :{
-        idModal:"storyList",
-        infoWords:[
-        {title:"زندگی فلورانس ",targetHref:"floraN1"},
-        {title:"دوسرباز",targetHref :"soldier-2"},
-        {title:"عافیت",targetHref :"health-2"},
-        {title:"شیرو الاغ",targetHref :"donky-2"},
-        {title:"شیر و خرگوش",targetHref :"rabit-2"},
-        {title:"",targetHref :""},
-        ],
-    },
-}
-// ************* Start SidebarStory ***************
