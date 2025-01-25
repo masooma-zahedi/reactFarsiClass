@@ -29,6 +29,11 @@ export const SidebarAlpha = ({setShowShort,idCarouselAlpha}) => {
               <i className="nav-Link  text-success h6">با هم بخوانیم</i> 
             </a>
           </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#play1">
+              <i className="nav-Link  text-success h6">بازی جدول</i> 
+            </a>
+          </li>
           <li className="nav-item d-grid  ">
             <button type="button" className="border-0 text-success h6 nav-link" data-bs-toggle="modal" data-bs-target={`#${contentListAlpha.newword.idModal}`}>
              معنی لغات تازه 

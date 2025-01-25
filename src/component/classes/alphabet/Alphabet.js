@@ -20,13 +20,13 @@ export const Alphabet = () => {
             </div>
             <div className="col-s-12 col-lg-9">
                 <FlipButton frontText="Click Me masooma" backText="Thanks!" />
-              <CarouselAlpha  dataCarousel={alphaCrousel}/>
+              <CarouselAlpha dataCarousel={alphaCrousel}/>
               <CardAlphaCompo/>
               {showShort && <CarouselAlpha idCarouselAlpha="shorthref1"  dataCarousel={alphaShortCrousel}/>}
               
               <SylabeWords infoSentence={sylabelWord1}/>
               <SylabeWords infoSentence={sylabelWord2}/>
-              <FlippingTable tableData={tableDataNum} />
+              <FlippingTable idTablePlay="play1" tableData={tableDataNum} />
               <WordCarousel/>
             </div>
           </div>

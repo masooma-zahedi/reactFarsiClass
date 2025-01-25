@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './FlippingTable.css';
 
-const FlippingTable = ({ tableData }) => {
+const FlippingTable = ({ tableData, idTablePlay }) => {
   const [flippedCells, setFlippedCells] = useState({});
 
   const handleFlip = (row, col) => {
@@ -12,7 +12,7 @@ const FlippingTable = ({ tableData }) => {
   };
 
   return (
-    <table className="flipping-table">
+    <table id={idTablePlay} className="flipping-table">
       <tbody>
         {tableData.map((row, rowIndex) => (
           <tr key={rowIndex}>

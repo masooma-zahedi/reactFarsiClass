@@ -494,7 +494,6 @@ export let testColor = {
     
 };
 
-
 export let testFruit = {
     
         wordCarousel:{
