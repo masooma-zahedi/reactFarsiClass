@@ -1059,6 +1059,11 @@ export let testSchoolSupplies = {
             sylabelWord : "ما + شین + حِ + ساب --> ماشین حساب",
             active :""
         },
+        {
+            image :"./images/assetAlpha/school-supplies/12-30-24-sch.png",
+            sylabelWord : "",
+            active :""
+        },
     ]
 }
 
@@ -1365,5 +1370,38 @@ export let testOrder1 = {
 }
 
 // ******************************* End MakeWordCarousel data *********************
+
+// **************************** start flipping Table data ***********************
+export const tableDataNum = [
+    [
+      { front: './images/assetAlpha/numbers/1-8-25-16-num.png', back: 'Back A1 Info' },
+      { front: './images/assetAlpha/numbers/1-8-25-8-num.png', back: 'Back A1 Info' },
+      { front: './images/assetAlpha/numbers/1-8-25-13-num.png', back: 'Back A1 Info' },
+      { front: './images/assetAlpha/numbers/1-8-25-9-num.png', back: 'Back A1 Info' },
+      { front: './images/assetAlpha/numbers/1-8-25-10-num.png', back: 'Back A1 Info' },
+    ],
+    [
+      { front: './images/assetAlpha/numbers/1-8-25-1-num.png', back: 'Back A1 Info' },
+      { front: './images/assetAlpha/numbers/1-8-25-17-num.png', back: 'Back A1 Info' },
+      { front: './images/assetAlpha/numbers/1-8-25-19-num.png', back: 'Back A1 Info' },
+      { front: './images/assetAlpha/numbers/1-8-25-3-num.png', back: 'Back A1 Info' },
+      { front: './images/assetAlpha/numbers/1-8-25-5-num.png', back: 'Back A1 Info' },
+    ],
+    [
+      { front: './images/assetAlpha/numbers/1-8-25-6-num.png', back: 'Back A1 Info' },
+      { front: './images/assetAlpha/numbers/1-8-25-2-num.png', back: 'Back A1 Info' },
+      { front: './images/assetAlpha/numbers/1-8-25-4-num.png', back: 'Back A1 Info' },
+      { front: './images/assetAlpha/numbers/1-8-25-15-num.png', back: 'Back A1 Info' },
+      { front: './images/assetAlpha/numbers/1-8-25-12-num.png', back: 'Back A1 Info' },
+    ],
+    [
+      { front: './images/assetAlpha/numbers/1-8-25-14-num.png', back: 'Back A1 Info' },
+      { front: './images/assetAlpha/numbers/1-8-25-7-num.png', back: 'Back A1 Info' },
+      { front: './images/assetAlpha/numbers/1-8-25-11-num.png', back: 'Back A1 Info' },
+      { front: './images/assetAlpha/numbers/1-8-25-18-num.png', back: 'Back A1 Info' },
+      { front: './images/assetAlpha/numbers/1-8-25-20-num.png', back: 'Back A1 Info' },
+    ],
+  ];
+// **************************** End  flipping Table data ************************
 
 
