@@ -2,7 +2,8 @@
   border-collapse: collapse;
   margin: 20px auto;
   text-align: center;
-  background-image:url("/public/images/webPic/cinnamoroll-2.png") ;
+  background-image:url("/public/images/webPic/cute-stitch-1.png") ;
+  background-repeat: no-repeat;
   background-size:cover;
 }
 
