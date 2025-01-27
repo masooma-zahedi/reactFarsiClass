@@ -1,6 +1,6 @@
 import React from 'react'
 import { TheStory } from './TheStory'
-import { donky, florence, healthStory, rabit, soldier } from './dataStory';
+import { donky, eagle1, florence, fox1, healthStory, rabit, soldier } from './dataStory';
 import { SidebarStory } from './SidebarStory';
 
 export const Story = () => {
@@ -16,6 +16,8 @@ export const Story = () => {
             <TheStory srcStory={healthStory}/>
             <TheStory srcStory={donky}/>
             <TheStory srcStory={rabit}/>
+            <TheStory srcStory={fox1}/>
+            <TheStory srcStory={eagle1}/>
           </div>
         </div>
         

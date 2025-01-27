@@ -8,6 +8,8 @@ export let contentListStory = {
         {title:"عافیت",targetHref :"health-2"},
         {title:"شیرو الاغ",targetHref :"donky-2"},
         {title:"شیر و خرگوش",targetHref :"rabit-2"},
+        {title:"روباه جوان",targetHref :"fox-2"},
+        {title:"رویای پرواز",targetHref :"eagle-2"},
         {title:"",targetHref :""},
         ],
     },
@@ -404,6 +406,32 @@ export let rabit ={
         {
             wordMean:"اذیت کردن",
             engMean:"To annoy"
+        },
+   ]
+    
+}
+export let fox1 ={
+    wordId:"fox-1",
+    titleStory:"داستان ماجراجویی روباه جوان",
+    targetHref :"fox-2",
+    imageStory:["./images/assetStory/fox-1.png","./images/assetStory/fox-2.png","./images/assetStory/fox-3.png","./images/assetStory/fox-4.png",],
+    wordPart:[
+        {
+            wordMean:"باهوش",
+            engMean:"Intelligent"
+        },
+   ]
+    
+}
+export let eagle1 ={
+    wordId:"eagle-1",
+    titleStory:"داستان رویای پرواز",
+    targetHref :"eagle-2",
+    imageStory:["./images/assetStory/Eagle-1.png","./images/assetStory/Eagle-2.png",],
+    wordPart:[
+        {
+            wordMean:"باهوش",
+            engMean:"Intelligent"
         },
    ]
     
