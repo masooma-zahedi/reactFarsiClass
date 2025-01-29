@@ -39,6 +39,7 @@ export let contentListAlpha = {
             {title:"روزهای هفته",targetHref :"daysPart-2",idLetter:"days1"},
             {title:"اعداد 0-20 ",targetHref :"numPart-2",idLetter:"nums1"},
             {title:"جملات کوتاه دستوری",targetHref :"orderPart-2",idLetter:"orderv1"},
+            {title:"ظروف آشپزخانه",targetHref :"kitchen1Part-2",idLetter:"kitchen1-1"},
             ],
         },
 }
@@ -422,6 +423,39 @@ export let sylabelWord2={
 
 
 // ******************************* End SylabelWords data *********************
+
+// **************************** start flipping Table data ***********************
+export const tableDataNum = [
+    [
+      { front: './images/assetAlpha/numbers/1-8-25-16-num.png', back: 'Back A1 Info' },
+      { front: './images/assetAlpha/numbers/1-8-25-8-num.png', back: 'Back A1 Info' },
+      { front: './images/assetAlpha/numbers/1-8-25-13-num.png', back: 'Back A1 Info' },
+      { front: './images/assetAlpha/numbers/1-8-25-9-num.png', back: 'Back A1 Info' },
+      { front: './images/assetAlpha/numbers/1-8-25-10-num.png', back: 'Back A1 Info' },
+    ],
+    [
+      { front: './images/assetAlpha/numbers/1-8-25-1-num.png', back: 'Back A1 Info' },
+      { front: './images/assetAlpha/numbers/1-8-25-17-num.png', back: 'Back A1 Info' },
+      { front: './images/assetAlpha/numbers/1-8-25-19-num.png', back: 'Back A1 Info' },
+      { front: './images/assetAlpha/numbers/1-8-25-3-num.png', back: 'Back A1 Info' },
+      { front: './images/assetAlpha/numbers/1-8-25-5-num.png', back: 'Back A1 Info' },
+    ],
+    [
+      { front: './images/assetAlpha/numbers/1-8-25-6-num.png', back: 'Back A1 Info' },
+      { front: './images/assetAlpha/numbers/1-8-25-2-num.png', back: 'Back A1 Info' },
+      { front: './images/assetAlpha/numbers/1-8-25-4-num.png', back: 'Back A1 Info' },
+      { front: './images/assetAlpha/numbers/1-8-25-15-num.png', back: 'Back A1 Info' },
+      { front: './images/assetAlpha/numbers/1-8-25-12-num.png', back: 'Back A1 Info' },
+    ],
+    [
+      { front: './images/assetAlpha/numbers/1-8-25-14-num.png', back: 'Back A1 Info' },
+      { front: './images/assetAlpha/numbers/1-8-25-7-num.png', back: 'Back A1 Info' },
+      { front: './images/assetAlpha/numbers/1-8-25-11-num.png', back: 'Back A1 Info' },
+      { front: './images/assetAlpha/numbers/1-8-25-18-num.png', back: 'Back A1 Info' },
+      { front: './images/assetAlpha/numbers/1-8-25-20-num.png', back: 'Back A1 Info' },
+    ],
+  ];
+// **************************** End  flipping Table data ************************
 
 
 // ******************************* Start MakeWordCarousel data *********************
@@ -1367,40 +1401,117 @@ export let testOrder1 = {
         },
     ]
 }
+export let kitchenUtensils1 = {
+    
+    wordCarousel:{
+        title:"ظروف آشپزخانه",
+        targetCarouselId :"kitchen1Part-1",
+        targetHref :"kitchen1Part-2",
+        idLetter :"kitchen1-1",
+        imageCarousel :"kitchenU1"
+        },
+    alphaKitchen : [
+        {
+            image :"./images/assetAlpha/kitchen-utensills/kitchen-00.png",
+            sylabelWord : "Kitchen Utensils",
+        },
+        {
+            image :"./images/assetAlpha/kitchen-utensills/kitchen-2.png",
+            sylabelWord : "Kitchen Knife",
+        },
+        {
+            image :"./images/assetAlpha/kitchen-utensills/kitchen-4.png",
+            sylabelWord : "Refrigerator",
+        },
+        {
+            image :"./images/assetAlpha/kitchen-utensills/kitchen-6.png",
+            sylabelWord : "Freezer",
+        },
+        {
+            image :"./images/assetAlpha/kitchen-utensills/kitchen-8.png",
+            sylabelWord : "Peeler",
+        },
+        {
+            image :"./images/assetAlpha/kitchen-utensills/kitchen-10.png",
+            sylabelWord : "Cutting board",
+        },
+        {
+            image :"./images/assetAlpha/kitchen-utensills/kitchen-12.png",
+            sylabelWord : "Colander",
+        },
+        {
+            image :"./images/assetAlpha/kitchen-utensills/kitchen-14.png",
+            sylabelWord : "Bowl",
+        },
+        {
+            image :"./images/assetAlpha/kitchen-utensills/kitchen-16.png",
+            sylabelWord : "Kitchen mortar",
+        },
+        {
+            image :"./images/assetAlpha/kitchen-utensills/kitchen-18.png",
+            sylabelWord : "Kitchen sink",
+        },
+        {
+            image :"./images/assetAlpha/kitchen-utensills/kitchen-20.png",
+            sylabelWord : "Grate",
+        },
+        {
+            image :"./images/assetAlpha/kitchen-utensills/kitchen-22.png",
+            sylabelWord : "Kitchen scissors",
+        },
+        {
+            image :"./images/assetAlpha/kitchen-utensills/kitchen-24.png",
+            sylabelWord : "Ice tray",
+        },
+        {
+            image :"./images/assetAlpha/kitchen-utensills/kitchen-26.png",
+            sylabelWord : "Coffee maker",
+        },
+        {
+            image :"./images/assetAlpha/kitchen-utensills/kitchen-28.png",
+            sylabelWord : "Pot",
+        },
+        {
+            image :"./images/assetAlpha/kitchen-utensills/kitchen-30.png",
+            sylabelWord : "Frying pan",
+        },
+        {
+            image :"./images/assetAlpha/kitchen-utensills/kitchen-32.png",
+            sylabelWord : "Skimmer",
+        },
+        {
+            image :"./images/assetAlpha/kitchen-utensills/kitchen-34.png",
+            sylabelWord : "Mixer",
+        },
+        {
+            image :"./images/assetAlpha/kitchen-utensills/kitchen-36.png",
+            sylabelWord : "Gas stove",
+        },
+        {
+            image :"./images/assetAlpha/kitchen-utensills/kitchen-38.png",
+            sylabelWord : "Microwave",
+        },
+        {
+            image :"./images/assetAlpha/kitchen-utensills/kitchen-40.png",
+            sylabelWord : "Pressure cooker",
+        },
+        {
+            image :"./images/assetAlpha/kitchen-utensills/kitchen-42.png",
+            sylabelWord : "Toaster",
+        },
+        {
+            image :"./images/assetAlpha/kitchen-utensills/kitchen-01.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/kitchen-utensills/kitchen-02.png",
+            sylabelWord : "",
+        },
+    ]
+}
 
 // ******************************* End MakeWordCarousel data *********************
 
-// **************************** start flipping Table data ***********************
-export const tableDataNum = [
-    [
-      { front: './images/assetAlpha/numbers/1-8-25-16-num.png', back: 'Back A1 Info' },
-      { front: './images/assetAlpha/numbers/1-8-25-8-num.png', back: 'Back A1 Info' },
-      { front: './images/assetAlpha/numbers/1-8-25-13-num.png', back: 'Back A1 Info' },
-      { front: './images/assetAlpha/numbers/1-8-25-9-num.png', back: 'Back A1 Info' },
-      { front: './images/assetAlpha/numbers/1-8-25-10-num.png', back: 'Back A1 Info' },
-    ],
-    [
-      { front: './images/assetAlpha/numbers/1-8-25-1-num.png', back: 'Back A1 Info' },
-      { front: './images/assetAlpha/numbers/1-8-25-17-num.png', back: 'Back A1 Info' },
-      { front: './images/assetAlpha/numbers/1-8-25-19-num.png', back: 'Back A1 Info' },
-      { front: './images/assetAlpha/numbers/1-8-25-3-num.png', back: 'Back A1 Info' },
-      { front: './images/assetAlpha/numbers/1-8-25-5-num.png', back: 'Back A1 Info' },
-    ],
-    [
-      { front: './images/assetAlpha/numbers/1-8-25-6-num.png', back: 'Back A1 Info' },
-      { front: './images/assetAlpha/numbers/1-8-25-2-num.png', back: 'Back A1 Info' },
-      { front: './images/assetAlpha/numbers/1-8-25-4-num.png', back: 'Back A1 Info' },
-      { front: './images/assetAlpha/numbers/1-8-25-15-num.png', back: 'Back A1 Info' },
-      { front: './images/assetAlpha/numbers/1-8-25-12-num.png', back: 'Back A1 Info' },
-    ],
-    [
-      { front: './images/assetAlpha/numbers/1-8-25-14-num.png', back: 'Back A1 Info' },
-      { front: './images/assetAlpha/numbers/1-8-25-7-num.png', back: 'Back A1 Info' },
-      { front: './images/assetAlpha/numbers/1-8-25-11-num.png', back: 'Back A1 Info' },
-      { front: './images/assetAlpha/numbers/1-8-25-18-num.png', back: 'Back A1 Info' },
-      { front: './images/assetAlpha/numbers/1-8-25-20-num.png', back: 'Back A1 Info' },
-    ],
-  ];
-// **************************** End  flipping Table data ************************
 
 
+  
