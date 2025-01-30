@@ -3,7 +3,7 @@
   margin: 20px auto;
   text-align: center;
   background-image:url("/public/images/webPic/cute-stitch-1.png") ;
-  background-repeat: no-repeat;
+  background-repeat:no-repeat;
   background-size:cover;
 }
 
@@ -11,7 +11,7 @@
   width: 200px;
   height: 200px;
   perspective: 1000px;
-  border: 10px solid #e80505;
+  border: 5px solid #e80505;
   /* padding: 5px; */
 }
 

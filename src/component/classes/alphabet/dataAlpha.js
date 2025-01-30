@@ -424,8 +424,10 @@ export let sylabelWord2={
 
 // ******************************* End SylabelWords data *********************
 
-// **************************** start flipping Table data ***********************
-export const tableDataNum = [
+// **************************** start flipping Table data (game) ***********************
+export const tableDataNum ={
+    bgTable:"./images/webPic/cute-stitch-1.png",
+    photoData: [
     [
       { front: './images/assetAlpha/numbers/1-8-25-16-num.png', back: 'Back A1 Info' },
       { front: './images/assetAlpha/numbers/1-8-25-8-num.png', back: 'Back A1 Info' },
@@ -454,7 +456,41 @@ export const tableDataNum = [
       { front: './images/assetAlpha/numbers/1-8-25-18-num.png', back: 'Back A1 Info' },
       { front: './images/assetAlpha/numbers/1-8-25-20-num.png', back: 'Back A1 Info' },
     ],
-  ];
+  ]};
+
+export const kitchenDataTable ={
+    bgTable:"./images/webPic/tom-1.png",
+    photoData: [
+    [
+      { front: './images/assetAlpha/kitchen-utensills/kitchen-2.png', back: './images/assetAlpha/kitchen-utensills/kitchen-1.png' },
+      { front: './images/assetAlpha/kitchen-utensills/kitchen-8.png', back: './images/assetAlpha/kitchen-utensills/kitchen-7.png' },
+      { front: './images/assetAlpha/kitchen-utensills/kitchen-4.png', back: './images/assetAlpha/kitchen-utensills/kitchen-3.png' },
+      { front: './images/assetAlpha/kitchen-utensills/kitchen-10.png', back: './images/assetAlpha/kitchen-utensills/kitchen-9.png' },
+      { front: './images/assetAlpha/kitchen-utensills/kitchen-6.png', back: './images/assetAlpha/kitchen-utensills/kitchen-5.png' },
+    ],
+    [
+      { front: './images/assetAlpha/kitchen-utensills/kitchen-22.png', back: './images/assetAlpha/kitchen-utensills/kitchen-21.png' },
+      { front: './images/assetAlpha/kitchen-utensills/kitchen-28.png', back: './images/assetAlpha/kitchen-utensills/kitchen-27.png' },
+      { front: './images/assetAlpha/kitchen-utensills/kitchen-24.png', back: './images/assetAlpha/kitchen-utensills/kitchen-23.png' },
+      { front: './images/assetAlpha/kitchen-utensills/kitchen-30.png', back: './images/assetAlpha/kitchen-utensills/kitchen-29.png' },
+      { front: './images/assetAlpha/kitchen-utensills/kitchen-26.png', back: './images/assetAlpha/kitchen-utensills/kitchen-25.png' },
+    ],
+    [
+      { front: './images/assetAlpha/kitchen-utensills/kitchen-12.png', back: './images/assetAlpha/kitchen-utensills/kitchen-11.png' },
+      { front: './images/assetAlpha/kitchen-utensills/kitchen-18.png', back: './images/assetAlpha/kitchen-utensills/kitchen-17.png' },
+      { front: './images/assetAlpha/kitchen-utensills/kitchen-14.png', back: './images/assetAlpha/kitchen-utensills/kitchen-13.png' },
+      { front: './images/assetAlpha/kitchen-utensills/kitchen-20.png', back: './images/assetAlpha/kitchen-utensills/kitchen-19.png' },
+      { front: './images/assetAlpha/kitchen-utensills/kitchen-16.png', back: './images/assetAlpha/kitchen-utensills/kitchen-15.png' },
+    ],
+    [
+      { front: './images/assetAlpha/kitchen-utensills/kitchen-32.png', back: './images/assetAlpha/kitchen-utensills/kitchen-31.png' },
+      { front: './images/assetAlpha/kitchen-utensills/kitchen-38.png', back: './images/assetAlpha/kitchen-utensills/kitchen-37.png' },
+      { front: './images/assetAlpha/kitchen-utensills/kitchen-34.png', back: './images/assetAlpha/kitchen-utensills/kitchen-33.png' },
+      { front: './images/assetAlpha/kitchen-utensills/kitchen-40.png', back: './images/assetAlpha/kitchen-utensills/kitchen-39.png' },
+      { front: './images/assetAlpha/kitchen-utensills/kitchen-36.png', back: './images/assetAlpha/kitchen-utensills/kitchen-35.png' },
+    ],
+    
+  ]};
 // **************************** End  flipping Table data ************************
 
 

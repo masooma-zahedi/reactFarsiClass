@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import './FlippingTable.css';
 
-const FlippingTable = ({ tableData, idTablePlay }) => {
+const FlippingTable = ({ tableData, idTablePlay, showBack1,bgTable }) => {
   const [flippedCells, setFlippedCells] = useState({});
+  const [showBack, setShowBack] = useState(showBack1)
+   
 
   const handleFlip = (row, col) => {
     setFlippedCells((prev) => ({
@@ -12,7 +14,7 @@ const FlippingTable = ({ tableData, idTablePlay }) => {
   };
 
   return (
-    <table id={idTablePlay} className="flipping-table">
+    <table id={idTablePlay} style={{backgroundImage:`url(${bgTable})`}} className="flipping-table mt-5">
       <tbody>
         {tableData.map((row, rowIndex) => (
           <tr key={rowIndex}>
@@ -24,7 +26,8 @@ const FlippingTable = ({ tableData, idTablePlay }) => {
               >
                 <div className="cell-inner">
                   <div className="cell-front "> <img className='w-100 h-100' src={cell.front}  alt="" srcset="" /> </div>
-                  {/* <div className="cell-back">{cell.back}</div> */}
+                  {showBack && <div className="cell-back" onClick={(e)=>{e.target.parentElement.parentElement.style.display="none" }}><img className='w-100 h-100' src={cell.back}  alt="" srcset="" /></div>}
+                  
                 </div>
               </td>
             ))}
