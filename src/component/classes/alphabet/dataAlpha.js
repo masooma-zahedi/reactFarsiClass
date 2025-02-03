@@ -11,7 +11,7 @@ export let alphaCrousel={
     "./images/assetAlpha/cardAlpha/Untitled-2-6.jpg",
 ]}
 
-// &&&&&& start
+// &&&&&& start short sound
 let shortSoundExa = [];
 infoCard.map((item , index)=>{
     shortSoundExa =[...shortSoundExa, item.shortSoundPic]
@@ -20,7 +20,17 @@ export let alphaShortCrousel={
     buttonId:"shortCa1",
     carouselImg:shortSoundExa
 }
-// &&&&&& End
+// &&&&&& End short sound
+// &&&&&& start short sound
+let longSoundExa = [];
+infoCard.map((item , index)=>{
+    longSoundExa =[...longSoundExa, item.longSoundPic]
+})
+export let alphaLongCrousel={
+    buttonId:"longCa1",
+    carouselImg:longSoundExa
+}
+// &&&&&& End short sound
 
 
 
@@ -459,7 +469,7 @@ export const tableDataNum ={
   ]};
 
 export const kitchenDataTable ={
-    bgTable:"./images/webPic/tom-1.png",
+    bgTable:"./images/webPic/zootopia-1.jpg",
     photoData: [
     [
       { front: './images/assetAlpha/kitchen-utensills/kitchen-2.png', back: './images/assetAlpha/kitchen-utensills/kitchen-1.png' },

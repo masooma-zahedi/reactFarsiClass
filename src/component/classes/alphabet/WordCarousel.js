@@ -4,7 +4,7 @@ import { MakeWordCarousel } from "./MakeWordCarousel.js";
 export const WordCarousel = () => {
   return (
     <>
-        <MakeWordCarousel carouselName={testColor.wordCarousel} carouselData={testColor.alphaColor}/>
+        <MakeWordCarousel carouselName={testColor.wordCarousel} carouselData={testColor.alphaColor} />
         <MakeWordCarousel carouselName={testFruit.wordCarousel} carouselData={testFruit.alphaImage}/>
         <MakeWordCarousel carouselName={testBody.wordCarousel} carouselData={testBody.alphaBody}/>
         <MakeWordCarousel carouselName={testWear.wordCarousel} carouselData={testWear.alphaWear}/>
