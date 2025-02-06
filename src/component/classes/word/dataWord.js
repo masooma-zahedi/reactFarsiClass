@@ -213,19 +213,19 @@ export let testPicture = {
         },
         {
             image :"./images/assetWord/actionVerb/12-31-65-verb.png",
-            sylabelWord : ".",
+            sylabelWord : ".او برگشت و به مادرش دست تکان داد",
         },
         {
             image :"./images/assetWord/actionVerb/12-31-66-verb.png",
-            sylabelWord : ".",
+            sylabelWord : ".او لباس هایش را با دست می دوزد",
         },
         {
             image :"./images/assetWord/actionVerb/12-31-67-verb.png",
-            sylabelWord : ".",
+            sylabelWord : ".او توپی را روی انگشتش می چرخاند",
         },
         {
             image :"./images/assetWord/actionVerb/12-31-68-verb.png",
-            sylabelWord : ".",
+            sylabelWord : "من دیروز یک دلار از او دریافت کردم",
         },
     ]
 
@@ -241,139 +241,139 @@ export let testPicture2 = {
     alphaColor : [
         {
             image :"./images/assetWord/actionVerb/12-31-31-verb.png",
-            sylabelWord : "",
+            sylabelWord : "او زمین خورد و افتاد",
         },
         {
             image :"./images/assetWord/actionVerb/12-31-32-verb.png",
-            sylabelWord : "",
+            sylabelWord : "نگذار بستنی ات آب شود",
         },
         {
             image :"./images/assetWord/actionVerb/12-31-33-verb.png",
-            sylabelWord : "",
+            sylabelWord : "میمون موز را پوست کند و خورد",
         },
         {
             image :"./images/assetWord/actionVerb/12-31-34-verb.png",
-            sylabelWord : "",
+            sylabelWord : "دانش آموزان در حال آزمایش یک ماده شیمیایی جدید هستند",
         },
         {
             image :"./images/assetWord/actionVerb/12-31-35-verb.png",
-            sylabelWord : "",
+            sylabelWord : "او انگشتانش را می شمارد",
         },
         {
             image :"./images/assetWord/actionVerb/12-31-36-verb.png",
-            sylabelWord : "",
+            sylabelWord : "آچار خود را بردارید و مهره را سفت کنید",
         },
         {
             image :"./images/assetWord/actionVerb/12-31-37-verb.png",
-            sylabelWord : "",
+            sylabelWord : "لیلی با صدای بلند شروع به خروپف کردن کرد",
         },
         {
             image :"./images/assetWord/actionVerb/12-31-38-verb.png",
-            sylabelWord : "",
+            sylabelWord : "پسر دیروز با قایق روی دریاچه رفت",
         },
         {
             image :"./images/assetWord/actionVerb/12-31-39-verb.png",
-            sylabelWord : "",
+            sylabelWord : "میشه نتایج آزمون انگلیسی خود را به من نشان دهید",
         },
         {
             image :"./images/assetWord/actionVerb/12-31-40-verb.png",
-            sylabelWord : "",
+            sylabelWord : "انگشتت را به سمت من اشاره نکن",
         },
         {
             image :"./images/assetWord/actionVerb/12-31-41-verb.png",
-            sylabelWord : "",
+            sylabelWord : " ما در سفرمان عکس های زیادی گرفتیم",
         },
         {
             image :"./images/assetWord/actionVerb/12-31-42-verb.png",
-            sylabelWord : "",
+            sylabelWord : "حضار پس از سخنرانی او با صدای بلند دست زدند",
         },
         {
             image :"./images/assetWord/actionVerb/12-31-43-verb.png",
-            sylabelWord : "",
+            sylabelWord : " او دستکش را در آورد تا با دوستش دست بدهد.",
         },
         {
             image :"./images/assetWord/actionVerb/12-31-44-verb.png",
-            sylabelWord : "",
+            sylabelWord : "او در حال گرفتن توپ است",
         },
         {
             image :"./images/assetWord/actionVerb/12-31-45-verb.png",
-            sylabelWord : "",
+            sylabelWord : " او جعبه را از روی میز بلند کرد",
         },
         {
             image :"./images/assetWord/actionVerb/12-31-46-verb.png",
-            sylabelWord : "",
+            sylabelWord : "من به دانش آموزانم انگلیسی آموزش می دهم",
         },
         {
             image :"./images/assetWord/actionVerb/12-31-47-verb.png",
-            sylabelWord : "",
+            sylabelWord : "وقتی به ایستگاه اتوبوس رسیدم دوباره با شما تماس خواهم گرفت",
         },
         {
             image :"./images/assetWord/actionVerb/12-31-48-verb.png",
-            sylabelWord : "",
+            sylabelWord : "او به مدرسه می رود",
         },
         {
             image :"./images/assetWord/actionVerb/12-31-49-verb.png",
-            sylabelWord : "",
+            sylabelWord : "هر جا می رفتم کتاب را با خودم حمل می کردم",
         },
         {
             image :"./images/assetWord/actionVerb/12-31-50-verb.png",
-            sylabelWord : "",
+            sylabelWord : "او در را قفل کرد",
         },
         {
             image :"./images/assetWord/actionVerb/12-31-51-verb.png",
-            sylabelWord : "",
+            sylabelWord : " من میخوام برای جشن تولد دوستم کیک بپزم",
         },
         {
             image :"./images/assetWord/actionVerb/12-31-52-verb.png",
-            sylabelWord : "",
+            sylabelWord : " او روی پشتش شناور بود",
         },
         {
             image :"./images/assetWord/actionVerb/12-31-53-verb.png",
-            sylabelWord : "",
+            sylabelWord : "جوکر همزمان با پنج توپ بازی کرد",
         },
         {
             image :"./images/assetWord/actionVerb/12-31-54-verb.png",
-            sylabelWord : "",
+            sylabelWord : "سگ پایش را گاز گرفت",
         },
         {
             image :"./images/assetWord/actionVerb/12-31-55-verb.png",
-            sylabelWord : "",
+            sylabelWord : "من یک توپ را به خانه پرتاب کردم",
         },
         {
             image :"./images/assetWord/actionVerb/12-31-56-verb.png",
-            sylabelWord : "",
+            sylabelWord : "او پتو را تا می کند",
         },
         {
             image :"./images/assetWord/actionVerb/12-31-57-verb.png",
-            sylabelWord : "",
+            sylabelWord : " او آرد را با دو عدد تخم مرغ مخلوط کرد",
         },
         {
             image :"./images/assetWord/actionVerb/12-31-58-verb.png",
-            sylabelWord : "",
+            sylabelWord : "او در حال حفر یک چاله عمیق است",
         },
         {
             image :"./images/assetWord/actionVerb/12-31-59-verb.png",
-            sylabelWord : "",
+            sylabelWord : "من هفته ای دوبار کف آشپزخانه را تمیز می کنم",
         },
         {
             image :"./images/assetWord/actionVerb/12-31-60-verb.png",
-            sylabelWord : "",
+            sylabelWord : "ما می خواهیم خانه خود را بسازیم",
         },
         {
             image :"./images/assetWord/actionVerb/12-31-61-verb.png",
-            sylabelWord : "",
+            sylabelWord : "او برای من تصویری از دایناسور کشید",
         },
         {
             image :"./images/assetWord/actionVerb/12-31-62-verb.png",
-            sylabelWord : "",
+            sylabelWord : "من قبل از خروج از خانه موهایم را شانه کردم",
         },
         {
             image :"./images/assetWord/actionVerb/12-31-63-verb.png",
-            sylabelWord : "",
+            sylabelWord : "ما در پارک اسکیت می کنیم",
         },
         {
             image :"./images/assetWord/actionVerb/12-31-64-verb.png",
-            sylabelWord : "",
+            sylabelWord : "او با ظرافت روی تاب در پارک تاب خورد",
         },
     ]
 

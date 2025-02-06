@@ -21,7 +21,7 @@ export const SidebarAlpha = ({setShowShort,idCarouselAlpha}) => {
           <li className="nav-item">
             <a className="nav-link"  href={`#${idCarouselAlpha}`} >{console.log(idCarouselAlpha)
             }
-              <i onClick={()=>{setShowShort(true)} }  className="nav-Link  text-success h6">صداهای کوتاه</i> 
+              <i onClick={()=>{setShowShort(true)} }  className="nav-Link  text-success h6">صداهای کوتاه و کشیده</i> 
             </a>
           </li>
           <li className="nav-item">
