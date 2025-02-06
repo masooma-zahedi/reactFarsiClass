@@ -1,5 +1,5 @@
 import {CardAlphaCompo,} from "./cardAlpha/CardAlphaCompo.js";
-import {alphaCrousel, alphaLongCrousel, alphaShortCrousel, kitchenDataTable, sylabelWord1, sylabelWord2, tableDataNum} from "./dataAlpha.js"
+import {alphaCrousel, alphaLongCrousel, alphaShortCrousel, kitchenDataTable, sylabelWord1, sylabelWord2, sylabelWord3, tableDataNum} from "./dataAlpha.js"
 import {CarouselAlpha} from "./CarouselAlpha"
 import { WordCarousel } from "./WordCarousel";
 import { SylabeWords } from "./SylabeWords";
@@ -27,6 +27,7 @@ export const Alphabet = () => {
               
               <SylabeWords infoSentence={sylabelWord1}/>
               <SylabeWords infoSentence={sylabelWord2}/>
+              <SylabeWords infoSentence={sylabelWord3}/>
               <FlippingTable idTablePlay="play1" tableData={tableDataNum.photoData} bgTable={tableDataNum.bgTable} showBack1={false} />
               <FlippingTable idTablePlay="kitU1" tableData={kitchenDataTable.photoData} bgTable={kitchenDataTable.bgTable} showBack1={true} />
               <WordCarousel/>

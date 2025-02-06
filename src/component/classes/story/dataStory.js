@@ -414,11 +414,75 @@ export let fox1 ={
     wordId:"fox-1",
     titleStory:"داستان ماجراجویی روباه جوان",
     targetHref :"fox-2",
-    imageStory:["./images/assetStory/fox-1.png","./images/assetStory/fox-2.png","./images/assetStory/fox-3.png","./images/assetStory/fox-4.png",],
+    imageStory:["./images/assetStory/fox-1.png","./images/assetStory/fox-2.png","./images/assetStory/fox-4.png",],
     wordPart:[
         {
-            wordMean:"باهوش",
-            engMean:"Intelligent"
+            wordMean:"فراتر",
+            engMean:"Beyond"
+        },
+        {
+            wordMean:"رازآلود",
+            engMean:"Mysterious"
+        },
+        {
+            wordMean:"وسعت",
+            engMean:"Extent"
+        },
+        {
+            wordMean:"پهنه",
+            engMean:"Area, Width"
+        },
+        {
+            wordMean:"اشتیاق",
+            engMean:"Passion"
+        },
+        {
+            wordMean:"تصمیم",
+            engMean:"Decision"
+        },
+        {
+            wordMean:"آغاز",
+            engMean:"Beginning"
+        },
+        {
+            wordMean:"موانع",
+            engMean:"Obstacles"
+        },
+        {
+            wordMean:"سختی ها",
+            engMean:"Difficulties"
+        },
+        {
+            wordMean:"مسیر",
+            engMean:"Path"
+        },
+        {
+            wordMean:"افق",
+            engMean:"Horizon"
+        },
+        {
+            wordMean:"حیرت",
+            engMean:"surprise"
+        },
+        {
+            wordMean:"هماهنگ",
+            engMean:"Coordinated"
+        },
+        {
+            wordMean:"بیکران",
+            engMean:"Infinite"
+        },
+        {
+            wordMean:"شعله",
+            engMean:"Flame"
+        },
+        {
+            wordMean:"رویا",
+            engMean:"Dream"
+        },
+        {
+            wordMean:"آرامش بخش",
+            engMean:"Relaxing"
         },
    ]
     
@@ -430,8 +494,116 @@ export let eagle1 ={
     imageStory:["./images/assetStory/Eagle-1.png","./images/assetStory/Eagle-2.png",],
     wordPart:[
         {
-            wordMean:"باهوش",
-            engMean:"Intelligent"
+            wordMean:"رویا",
+            engMean:"Dream"
+        },
+        {
+            wordMean:"کوه",
+            engMean:"Mountain"
+        },
+        {
+            wordMean:"دامنه کوه",
+            engMean:"Mountain slope"
+        },
+        {
+            wordMean:"فلک",
+            engMean:"Sky"
+        },
+        {
+            wordMean:"تیزبین",
+            engMean:"Sharp-sighted"
+        },
+        {
+            wordMean:"جستجو",
+            engMean:"Search"
+        },
+        {
+            wordMean:"طعمه",
+            engMean:"Bait"
+        },
+        {
+            wordMean:"اندیشید",
+            engMean:"Think"
+        },
+        {
+            wordMean:"تفریح",
+            engMean:"Entertainment"
+        },
+        {
+            wordMean:"مرغداری",
+            engMean:"Aviculture"
+        },
+        {
+            wordMean:"وضوح",
+            engMean:"Resolution"
+        },
+        {
+            wordMean:"نهایت",
+            engMean:"Ultimate"
+        },
+        {
+            wordMean:"توانایی",
+            engMean:"Ability"
+        },
+        {
+            wordMean:"انتظار",
+            engMean:"Waiting"
+        },
+        {
+            wordMean:"تکان داد",
+            engMean:"Shaken"
+        },
+        {
+            wordMean:"رخ دادن",
+            engMean:"Occurrence"
+        },
+        {
+            wordMean:"عظیم",
+            engMean:"Massive"
+        },
+        {
+            wordMean:"باشکوه",
+            engMean:"Magnificent"
+        },
+        {
+            wordMean:"خیره شدن",
+            engMean:"Staring"
+        },
+        {
+            wordMean:"خجالت زده",
+            engMean:"Embarrassed"
+        },
+        {
+            wordMean:"لحن",
+            engMean:"Tone"
+        },
+        {
+            wordMean:"اوج گرفتن",
+            engMean:"Peaking"
+        },
+        {
+            wordMean:"لرزان",
+            engMean:"Shaking"
+        },
+        {
+            wordMean:"سقوط کردن",
+            engMean:"Fall down"
+        },
+        {
+            wordMean:"تشویق",
+            engMean:"Encouragement"
+        },
+        {
+            wordMean:"تمرین مداوم",
+            engMean:"Continuous practice"
+        },
+        {
+            wordMean:"بی وقفه",
+            engMean:"Non-stop"
+        },
+        {
+            wordMean:"اعتماد به نفس",
+            engMean:"Self-confidence"
         },
    ]
     
