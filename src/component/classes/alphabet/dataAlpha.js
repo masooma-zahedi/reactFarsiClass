@@ -1817,6 +1817,83 @@ export let kitchenUtensils1 = {
         },
     ]
 }
+export let professions1 = {
+    
+    wordCarousel:{
+        title:"شغل ها",
+        targetCarouselId :"professionPart-1",
+        targetHref :"professionPart-2",
+        idLetter :"profession-1",
+        imageCarousel :"profesion1-1"
+        },
+    alphaKitchen : [
+        {
+            image :"./images/assetAlpha/professions/pro-1.png",
+            sylabelWord : "آ + تَش + نِ + شان",
+        },
+        {
+            image :"./images/assetAlpha/professions/pro-2.png",
+            sylabelWord : "آ + را + یِش + گَر",
+        },
+        {
+            image :"./images/assetAlpha/professions/pro-3.png",
+            sylabelWord : "آش + پَز",
+        },
+        {
+            image :"./images/assetAlpha/professions/pro-4.png",
+            sylabelWord : "بَر + نا + مِه + نِ + ویس",
+        },
+        {
+            image :"./images/assetAlpha/professions/pro-5.png",
+            sylabelWord : "بَن + نا",
+        },
+        {
+            image :"./images/assetAlpha/professions/pro-6.png",
+            sylabelWord : "پُ + لیس ",
+        },
+        {
+            image :"./images/assetAlpha/professions/pro-7.png",
+            sylabelWord : "خَی + یاط",
+        },
+        {
+            image :"./images/assetAlpha/professions/pro-8.png",
+            sylabelWord : "دا + نِش + مَند",
+        },
+        {
+            image :"./images/assetAlpha/professions/pro-9.png",
+            sylabelWord : "دُک + تُر",
+        },
+        {
+            image :"./images/assetAlpha/professions/pro-10.png",
+            sylabelWord : "را + نَن + دِه",
+        },
+        {
+            image :"./images/assetAlpha/professions/pro-11.png",
+            sylabelWord : "کِ + شا + وَرز",
+        },
+        {
+            image :"./images/assetAlpha/professions/pro-12.png",
+            sylabelWord : "کَف + فاش",
+        },
+        {
+            image :"./images/assetAlpha/professions/pro-13.png",
+            sylabelWord : "مُ + عَل + لِم",
+        },
+        {
+            image :"./images/assetAlpha/professions/pro-14.png",
+            sylabelWord : "نِ + ظا + می",
+        },
+        {
+            image :"./images/assetAlpha/professions/pro-15.png",
+            sylabelWord : "نَق + قاش",
+        },
+        {
+            image :"./images/assetAlpha/professions/pro-16.png",
+            sylabelWord : "وَر + زِش + کار",
+        },
+
+    ]
+}
 
 // ******************************* End MakeWordCarousel data *********************
 
