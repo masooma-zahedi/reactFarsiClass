@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Alphabet } from './classes/alphabet/Alphabet';
-import {Word} from './classes/word/Word'
+import {Word} from './classes/word/Word';
 import { Story } from './classes/story/Story';
 import { ScrollToTop } from './classes/ScrollToTop';
 
@@ -14,7 +14,7 @@ export const Main = () => {
       {/* <div className='container'> */}
           <ScrollToTop />
           <Routes>
-            <Route path='/' element={<Alphabet/>} end />
+            <Route path='/*' element={<Alphabet/>} end />
             <Route path='/word' element={<Word/>} />
             <Route path='/story' element={<Story/>} />
           </Routes>

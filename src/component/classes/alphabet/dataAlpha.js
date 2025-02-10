@@ -43,13 +43,30 @@ export let contentListAlpha = {
             infoWords:[
             {title:"رنگ ها",targetHref:"colorPart-2",idLetter:"color1"},
             {title:"میوه ها",targetHref :"fruitPart-2",idLetter:"fruit1"},
-            {title:"اعضای بدن",targetHref :"bodyPart2",idLetter:"body1"},
+            {title:"اعضای بدن",targetHref :"bodyPart-2",idLetter:"body1"},
             {title:"پوشیدنی ها",targetHref :"wearPart-2",idLetter:"wear1"},
             {title:"لوازم تحریر",targetHref :"supplyPart-2",idLetter:"supply1"},
             {title:"روزهای هفته",targetHref :"daysPart-2",idLetter:"days1"},
             {title:"اعداد 0-20 ",targetHref :"numPart-2",idLetter:"nums1"},
             {title:"جملات کوتاه دستوری",targetHref :"orderPart-2",idLetter:"orderv1"},
             {title:"ظروف آشپزخانه",targetHref :"kitchen1Part-2",idLetter:"kitchen1-1"},
+            {title:"شغل ها ",targetHref :"professionsPart-2",idLetter:"kitchen1-1"},
+            ],
+        },
+        readTogether :{
+            idModal:"readTo1",
+            infoWords:[
+            {title:"با هم بخوانیم-1",targetHref:"read-1",idLetter:"readtogether-1"},
+            {title:"با هم بخوانیم-2",targetHref:"read-2",idLetter:"readtogether-2"},
+            {title:"با هم بخوانیم-3",targetHref:"read-3",idLetter:"readtogether-3"},
+            ],
+        },
+        gameTable :{
+            idModal:"tableGame1",
+            infoWords:[
+            {title:"بازی اعداد",targetHref:"numberGame",idLetter:"numberGame-1"},
+            {title:"بازی آشپزخانه",targetHref:"kitchenGame",idLetter:"kitchentGame-1"},
+            // {title:"با هم بخوانیم-3",targetHref:"read-3",idLetter:"readtogether-3"},
             ],
         },
 }

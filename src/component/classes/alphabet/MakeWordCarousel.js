@@ -65,7 +65,7 @@ export const MakeWordCarousel = (props) => {
             {/* **** End Carousel***** */}
             <div className=" rounded-3 py-10  bg-info text-center text-light p-5" id={props.carouselName.idLetter}></div>
             <hr className="p-2 bg-danger" />
-            <br/><br/><br/><br/><br/>
+            
         </section>
     </>
   )

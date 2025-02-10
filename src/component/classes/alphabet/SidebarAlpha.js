@@ -1,9 +1,38 @@
 
 import React, { useState } from 'react';
 import {contentListAlpha } from "./dataAlpha"
+import { NavLink, Link } from 'react-router-dom';
 
 export const SidebarAlpha = ({setShowShort,idCarouselAlpha}) => { 
-  console.log(idCarouselAlpha);
+  const Modal = ({id,data})=>{
+    return(<>
+      <div className="modal fade" id={id} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div className="modal-dialog biger-modal ">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLabel">لیست مطالب</h5>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div className="modal-body">
+              <div className='d-flex flex-wrap'>
+              {data.map((item,index)=>{
+                  return(
+                    <>
+                      <NavLink key={index} className="nav-link p-3 shadow-sm m-2 text-success" to={`/${item.targetHref}`}>{item.title}</NavLink>
+                    </>
+                  )
+              })}
+              </div>
+            </div>
+            <div className="modal-footer">
+              <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" className="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>)
+  };
    
   return (
     <>
@@ -19,23 +48,40 @@ export const SidebarAlpha = ({setShowShort,idCarouselAlpha}) => {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link"  href={`#${idCarouselAlpha}`} >{console.log(idCarouselAlpha)
-            }
-              <i onClick={()=>{setShowShort(true)} }  className="nav-Link  text-success h6">صداهای کوتاه و کشیده</i> 
-            </a>
+            <NavLink className="nav-link text-success h6" to="/">کارت الفبا</NavLink>
           </li>
           <li className="nav-item">
+            <NavLink className="nav-link text-success h6" to="/shortSound">صداهای کوتاه</NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink className="nav-link text-success h6" to="/longSound">صداهای بلند</NavLink>
+          </li>
+          {/* <li className="nav-item">
+            <a className="nav-link"  href={`#${idCarouselAlpha}`} >{console.log(idCarouselAlpha)
+            }
+            <i onClick={()=>{setShowShort(true)} }  className="nav-Link  text-success h6">صداهای کوتاه و کشیده</i> 
+            </a>
+            </li> */}
+            <li className="nav-item d-grid  ">
+            <button type="button" className="border-0 text-success h6 nav-link" data-bs-toggle="modal" data-bs-target={`#${contentListAlpha.readTogether.idModal}`}>
+             با هم بخوانیم 
+            </button>
+          </li>
+          {/* <li className="nav-item">
+            <li className="nav-item">
+              <NavLink className="nav-link text-success h6" to="/readTogether">با هم بخوانیم</NavLink>
+            </li>
             <a className="nav-link" href="#read1">
               <i className="nav-Link  text-success h6">با هم بخوانیم</i> 
             </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#play1">
-              <i className="nav-Link  text-success h6">بازی جدول</i> 
-            </a>
+          </li> */}
+          <li className="nav-item d-grid  ">
+            <button type="button" className="border-0 text-success h6 nav-link" data-bs-toggle="modal" data-bs-target={`#${contentListAlpha.gameTable.idModal}`}>
+             بازی جدول 
+            </button>
           </li>
           <li className="nav-item d-grid  ">
-            <button type="button" className="border-0 text-success h6 nav-link" data-bs-toggle="modal" data-bs-target={`#${contentListAlpha.newword.idModal}`}>
+          <button type="button" className="border-0 text-success h6 nav-link" data-bs-toggle="modal" data-bs-target={`#${contentListAlpha.newword.idModal}`}>
              معنی لغات تازه 
             </button>
           </li>
@@ -46,32 +92,41 @@ export const SidebarAlpha = ({setShowShort,idCarouselAlpha}) => {
       </div>
     </div>
     {/* modal */}
-    <div className="modal fade" id={`${contentListAlpha.newword.idModal}`} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div className="modal-dialog biger-modal ">
-    <div className="modal-content">
-      <div className="modal-header">
-        <h5 className="modal-title" id="exampleModalLabel">لیست مطالب</h5>
-        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div className="modal-body">
-        <div className='d-flex flex-wrap'>
-        {contentListAlpha.newword.infoWords.map((item,index)=>{
-            return(
-              <>
-                <a key={index} className='p-3 shadow-sm m-2' href={`#${item.targetHref}`}><button className='border-0 text-success bg-transparent'>{item.title}</button></a>
 
-              </>
-            )
-        })}
+    <Modal id={`${contentListAlpha.newword.idModal}`} data={contentListAlpha.newword.infoWords}/>
+    <Modal id={`${contentListAlpha.readTogether.idModal}`} data={contentListAlpha.readTogether.infoWords}/>
+    <Modal id={`${contentListAlpha.gameTable.idModal}`} data={contentListAlpha.gameTable.infoWords}/>
+ 
+
+
+
+
+
+    {/* <div className="modal fade" id={`${contentListAlpha.newword.idModal}`} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div className="modal-dialog biger-modal ">
+        <div className="modal-content">
+          <div className="modal-header">
+            <h5 className="modal-title" id="exampleModalLabel">لیست مطالب</h5>
+            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div className="modal-body">
+            <div className='d-flex flex-wrap'>
+            {contentListAlpha.newword.infoWords.map((item,index)=>{
+                return(
+                  <>
+                    <NavLink key={index} className="nav-link p-3 shadow-sm m-2 text-success" to={`/${item.targetHref}`}>{item.title}</NavLink>
+                  </>
+                )
+            })}
+            </div>
+          </div>
+          <div className="modal-footer">
+            <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" className="btn btn-primary">Save changes</button>
+          </div>
         </div>
       </div>
-      <div className="modal-footer">
-        <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" className="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
+  </div> */}
 </>
   )
 }
