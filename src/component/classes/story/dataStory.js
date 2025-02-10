@@ -414,7 +414,7 @@ export let fox1 ={
     wordId:"fox-1",
     titleStory:"داستان ماجراجویی روباه جوان",
     targetHref :"fox-2",
-    imageStory:["./images/assetStory/fox-1.png","./images/assetStory/fox-2.png","./images/assetStory/fox-4.png",],
+    imageStory:["./images/assetStory/fox-1.png","./images/assetStory/fox-2.png",],
     wordPart:[
         {
             wordMean:"فراتر",
