@@ -66,7 +66,7 @@ export let contentListAlpha = {
             infoWords:[
             {title:"بازی اعداد",targetHref:"numberGame",idLetter:"numberGame-1"},
             {title:"بازی آشپزخانه",targetHref:"kitchenGame",idLetter:"kitchentGame-1"},
-            // {title:"با هم بخوانیم-3",targetHref:"read-3",idLetter:"readtogether-3"},
+            {title:"بازی شغل ها",targetHref:"professions",idLetter:"professionsGame-3"},
             ],
         },
 }
@@ -779,6 +779,40 @@ export const kitchenDataTable ={
       { front: './images/assetAlpha/kitchen-utensills/kitchen-36.png', back: './images/assetAlpha/kitchen-utensills/kitchen-35.png' },
     ],
     
+  ]};
+
+  export const tableProfessions ={
+    bgTable:"./images/webPic/minions-1.jpg",
+    photoData: [
+    [
+      { front: './images/assetAlpha/professions/pro-1.png', back: '' },
+      { front: './images/assetAlpha/professions/pro-2.png', back: '' },
+      { front: './images/assetAlpha/professions/pro-3.png', back: '' },
+      { front: './images/assetAlpha/professions/pro-4.png', back: '' },
+      { front: './images/assetAlpha/professions/pro-5.png', back: '' },
+    ],
+    [
+      { front: './images/assetAlpha/professions/pro-6.png', back: '' },
+      { front: './images/assetAlpha/professions/pro-7.png', back: '' },
+      { front: './images/assetAlpha/professions/pro-8.png', back: '' },
+      { front: './images/assetAlpha/professions/pro-9.png', back: '' },
+      { front: './images/assetAlpha/professions/pro-10.png', back: '' },
+    ],
+    [
+      { front: './images/assetAlpha/professions/pro-11.png', back: '' },
+      { front: './images/assetAlpha/professions/pro-12.png', back: '' },
+      { front: './images/assetAlpha/professions/pro-13.png', back: '' },
+      { front: './images/assetAlpha/professions/pro-14.png', back: '' },
+      { front: './images/assetAlpha/professions/pro-15.png', back: '' },
+    ],
+    [
+      { front: './images/assetAlpha/professions/pro-16.png', back: '' },
+      { front: './images/assetAlpha/professions/pro-17.png', back: '' },
+      { front: './images/assetAlpha/professions/pro-18.png', back: '' },
+      { front: './images/assetAlpha/professions/pro-19.png', back: '' },
+      { front: './images/assetAlpha/professions/pro-20.png', back: '' },
+    ],
+
   ]};
 // **************************** End  flipping Table data ************************
 
