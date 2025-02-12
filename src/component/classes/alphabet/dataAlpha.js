@@ -1942,6 +1942,22 @@ export let professions1 = {
             image :"./images/assetAlpha/professions/pro-16.png",
             sylabelWord : "وَر + زِش + کار",
         },
+        {
+            image :"./images/assetAlpha/professions/pro-17.png",
+            sylabelWord : "خَ + لَ + بان",
+        },
+        {
+            image :"./images/assetAlpha/professions/pro-18.png",
+            sylabelWord : "دَن + دان + پِ + زِشک",
+        },
+        {
+            image :"./images/assetAlpha/professions/pro-19.png",
+            sylabelWord : "فَ + ضا + نَ + وَرد",
+        },
+        {
+            image :"./images/assetAlpha/professions/pro-20.png",
+            sylabelWord : "مِ + کا + نیک",
+        },
 
     ]
 }
