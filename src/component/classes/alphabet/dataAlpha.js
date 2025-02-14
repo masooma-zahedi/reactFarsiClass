@@ -51,6 +51,7 @@ export let contentListAlpha = {
             {title:"جملات کوتاه دستوری",targetHref :"orderPart-2",idLetter:"orderv1"},
             {title:"ظروف آشپزخانه",targetHref :"kitchen1Part-2",idLetter:"kitchen1-1"},
             {title:"شغل ها ",targetHref :"professionsPart-2",idLetter:"kitchen1-1"},
+            {title:"حیوانات ",targetHref :"animalsPart-2",idLetter:"animal-1"},
             ],
         },
         readTogether :{
@@ -816,7 +817,7 @@ photoData: [
 
 ]};
 export const tableAnimals ={
-bgTable:"./images/webPic/minions-1.jpg",
+bgTable:"./images/webPic/mashroom-1.jpg",
 photoData: [
 [
     { front: './images/assetAlpha/animals/anim-28.png', back: './images/assetAlpha/animals/anim-62.png' },
