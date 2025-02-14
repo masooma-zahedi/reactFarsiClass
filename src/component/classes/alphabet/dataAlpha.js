@@ -67,6 +67,7 @@ export let contentListAlpha = {
             {title:"بازی اعداد",targetHref:"numberGame",idLetter:"numberGame-1"},
             {title:"بازی آشپزخانه",targetHref:"kitchenGame",idLetter:"kitchentGame-1"},
             {title:"بازی شغل ها",targetHref:"professions",idLetter:"professionsGame-3"},
+            {title:"بازی حیوانات",targetHref:"animals",idLetter:"animalsGame-3"},
             ],
         },
 }
@@ -781,39 +782,93 @@ export const kitchenDataTable ={
     
   ]};
 
-  export const tableProfessions ={
-    bgTable:"./images/webPic/minions-1.jpg",
-    photoData: [
-    [
-      { front: './images/assetAlpha/professions/pro-1.png', back: '' },
-      { front: './images/assetAlpha/professions/pro-2.png', back: '' },
-      { front: './images/assetAlpha/professions/pro-3.png', back: '' },
-      { front: './images/assetAlpha/professions/pro-4.png', back: '' },
-      { front: './images/assetAlpha/professions/pro-5.png', back: '' },
-    ],
-    [
-      { front: './images/assetAlpha/professions/pro-6.png', back: '' },
-      { front: './images/assetAlpha/professions/pro-7.png', back: '' },
-      { front: './images/assetAlpha/professions/pro-8.png', back: '' },
-      { front: './images/assetAlpha/professions/pro-9.png', back: '' },
-      { front: './images/assetAlpha/professions/pro-10.png', back: '' },
-    ],
-    [
-      { front: './images/assetAlpha/professions/pro-11.png', back: '' },
-      { front: './images/assetAlpha/professions/pro-12.png', back: '' },
-      { front: './images/assetAlpha/professions/pro-13.png', back: '' },
-      { front: './images/assetAlpha/professions/pro-14.png', back: '' },
-      { front: './images/assetAlpha/professions/pro-15.png', back: '' },
-    ],
-    [
-      { front: './images/assetAlpha/professions/pro-16.png', back: '' },
-      { front: './images/assetAlpha/professions/pro-17.png', back: '' },
-      { front: './images/assetAlpha/professions/pro-18.png', back: '' },
-      { front: './images/assetAlpha/professions/pro-19.png', back: '' },
-      { front: './images/assetAlpha/professions/pro-20.png', back: '' },
-    ],
+export const tableProfessions ={
+bgTable:"./images/webPic/minions-1.jpg",
+photoData: [
+[
+    { front: './images/assetAlpha/professions/pro-1.png', back: '' },
+    { front: './images/assetAlpha/professions/pro-2.png', back: '' },
+    { front: './images/assetAlpha/professions/pro-3.png', back: '' },
+    { front: './images/assetAlpha/professions/pro-4.png', back: '' },
+    { front: './images/assetAlpha/professions/pro-5.png', back: '' },
+],
+[
+    { front: './images/assetAlpha/professions/pro-6.png', back: '' },
+    { front: './images/assetAlpha/professions/pro-7.png', back: '' },
+    { front: './images/assetAlpha/professions/pro-8.png', back: '' },
+    { front: './images/assetAlpha/professions/pro-9.png', back: '' },
+    { front: './images/assetAlpha/professions/pro-10.png', back: '' },
+],
+[
+    { front: './images/assetAlpha/professions/pro-11.png', back: '' },
+    { front: './images/assetAlpha/professions/pro-12.png', back: '' },
+    { front: './images/assetAlpha/professions/pro-13.png', back: '' },
+    { front: './images/assetAlpha/professions/pro-14.png', back: '' },
+    { front: './images/assetAlpha/professions/pro-15.png', back: '' },
+],
+[
+    { front: './images/assetAlpha/professions/pro-16.png', back: '' },
+    { front: './images/assetAlpha/professions/pro-17.png', back: '' },
+    { front: './images/assetAlpha/professions/pro-18.png', back: '' },
+    { front: './images/assetAlpha/professions/pro-19.png', back: '' },
+    { front: './images/assetAlpha/professions/pro-20.png', back: '' },
+],
 
-  ]};
+]};
+export const tableAnimals ={
+bgTable:"./images/webPic/minions-1.jpg",
+photoData: [
+[
+    { front: './images/assetAlpha/animals/anim-28.png', back: './images/assetAlpha/animals/anim-62.png' },
+    { front: './images/assetAlpha/animals/anim-29.png', back: './images/assetAlpha/animals/anim-64.png' },
+    { front: './images/assetAlpha/animals/anim-30.png', back: './images/assetAlpha/animals/anim-65.png' },
+    { front: './images/assetAlpha/animals/anim-31.png', back: './images/assetAlpha/animals/anim-66.png' },
+    { front: './images/assetAlpha/animals/anim-32.png', back: './images/assetAlpha/animals/anim-63.png' },
+],
+[
+    { front: './images/assetAlpha/animals/anim-33.png', back: './images/assetAlpha/animals/anim-69.png' },
+    { front: './images/assetAlpha/animals/anim-34.png', back: './images/assetAlpha/animals/anim-3.png' },
+    { front: './images/assetAlpha/animals/anim-35.png', back: './images/assetAlpha/animals/anim-1.png' },
+    { front: './images/assetAlpha/animals/anim-36.png', back: './images/assetAlpha/animals/anim-7.png' },
+    { front: './images/assetAlpha/animals/anim-37.png', back: './images/assetAlpha/animals/anim-5.png' },
+],
+[
+    { front: './images/assetAlpha/animals/anim-38.png', back: './images/assetAlpha/animals/anim-4.png' },
+    { front: './images/assetAlpha/animals/anim-39.png', back: './images/assetAlpha/animals/anim-6.png' },
+    { front: './images/assetAlpha/animals/anim-40.png', back: './images/assetAlpha/animals/anim-2.png' },
+    { front: './images/assetAlpha/animals/anim-41.png', back: './images/assetAlpha/animals/anim-68.png' },
+    { front: './images/assetAlpha/animals/anim-42.png', back: './images/assetAlpha/animals/anim-67.png' },
+],
+[
+    { front: './images/assetAlpha/animals/anim-43.png', back: './images/assetAlpha/animals/anim-13.png' },
+    { front: './images/assetAlpha/animals/anim-44.png', back: './images/assetAlpha/animals/anim-20.png' },
+    { front: './images/assetAlpha/animals/anim-45.png', back: './images/assetAlpha/animals/anim-9.png' },
+    { front: './images/assetAlpha/animals/anim-46.png', back: './images/assetAlpha/animals/anim-18.png' },
+    { front: './images/assetAlpha/animals/anim-47.png', back: './images/assetAlpha/animals/anim-12.png' },
+],
+[
+    { front: './images/assetAlpha/animals/anim-48.png', back: './images/assetAlpha/animals/anim-21.png' },
+    { front: './images/assetAlpha/animals/anim-49.png', back: './images/assetAlpha/animals/anim-70.jpeg' },
+    { front: './images/assetAlpha/animals/anim-50.png', back: './images/assetAlpha/animals/anim-17.png' },
+    { front: './images/assetAlpha/animals/anim-51.png', back: './images/assetAlpha/animals/anim-10.png' },
+    { front: './images/assetAlpha/animals/anim-52.png', back: './images/assetAlpha/animals/anim-11.png' },
+],
+[
+    { front: './images/assetAlpha/animals/anim-53.png', back: './images/assetAlpha/animals/anim-19.png' },
+    { front: './images/assetAlpha/animals/anim-54.png', back: './images/assetAlpha/animals/anim-8.png' },
+    { front: './images/assetAlpha/animals/anim-55.png', back: './images/assetAlpha/animals/anim-16.png' },
+    { front: './images/assetAlpha/animals/anim-56.png', back: './images/assetAlpha/animals/anim-22.png' },
+    { front: './images/assetAlpha/animals/anim-57.png', back: './images/assetAlpha/animals/anim-23.png' },
+],
+[
+    { front: './images/assetAlpha/animals/anim-58.png', back: './images/assetAlpha/animals/anim-27.png' },
+    { front: './images/assetAlpha/animals/anim-59.png', back: './images/assetAlpha/animals/anim-24.png' },
+    { front: './images/assetAlpha/animals/anim-60.png', back: './images/assetAlpha/animals/anim-26.png' },
+    { front: './images/assetAlpha/animals/anim-43.png', back: './images/assetAlpha/animals/anim-13.png' },
+    { front: './images/assetAlpha/animals/anim-33.png', back: './images/assetAlpha/animals/anim-69.png' },
+],
+
+]};
 // **************************** End  flipping Table data ************************
 
 
@@ -1957,6 +2012,155 @@ export let professions1 = {
         {
             image :"./images/assetAlpha/professions/pro-20.png",
             sylabelWord : "مِ + کا + نیک",
+        },
+
+    ]
+}
+export let animals1 = {
+    
+    wordCarousel:{
+        title:"حیوانات",
+        targetCarouselId :"animalPart-1",
+        targetHref :"animalPart-2",
+        idLetter :"animal-1",
+        imageCarousel :"animalsWild1-1"
+        },
+    alphaAnimal : [
+        {
+            image :"./images/assetAlpha/animals/anim-28.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/animals/anim-29.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/animals/anim-30.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/animals/anim-31.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/animals/anim-32.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/animals/anim-33.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/animals/anim-34.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/animals/anim-35.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/animals/anim-36.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/animals/anim-37.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/animals/anim-38.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/animals/anim-39.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/animals/anim-40.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/animals/anim-41.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/animals/anim-42.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/animals/anim-43.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/animals/anim-44.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/animals/anim-45.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/animals/anim-46.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/animals/anim-47.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/animals/anim-48.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/animals/anim-49.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/animals/anim-50.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/animals/anim-51.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/animals/anim-52.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/animals/anim-53.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/animals/anim-54.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/animals/anim-55.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/animals/anim-56.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/animals/anim-57.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/animals/anim-58.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/animals/anim-59.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/animals/anim-60.png",
+            sylabelWord : "",
+        },
+        {
+            image :"./images/assetAlpha/animals/anim-61.png",
+            sylabelWord : "",
         },
 
     ]
