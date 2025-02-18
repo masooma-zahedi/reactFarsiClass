@@ -598,6 +598,95 @@ export let realFriends ={
     ]
     
 }
+export let lazyDonky ={
+    wordId:"lazyDonky1",
+    targetHref:"lazyD2",
+    titleStory:"داستان اُلاغ تَنبل",
+    imageStory:["./images/assetWord/storyWord/lazyDonky-1.png","./images/assetWord/storyWord/lazyDonky-2.png",],
+    wordPart:[
+        {
+            wordMean:"تنگ دست",
+            engMean:"Poor"
+        },
+        {
+            wordMean:"به فکر فرورفتن",
+            engMean:"Thinking"
+        },
+        {
+            wordMean:"کاسبی کردن",
+            engMean:"To do business"
+        },
+        {
+            wordMean:"سرپاشدن",
+            engMean:"To rise again"
+        },
+        {
+            wordMean:"لغزیدن",
+            engMean:"Slipping"
+        },
+        {
+            wordMean:"آغل",
+            engMean:"Stable"
+        },
+        {
+            wordMean:"زانوی غم بغل کردن",
+            engMean:"to sit in despair"
+        },
+        {
+            wordMean:"تن به کار دادن",
+            engMean:"Being forced"
+        },
+        {
+            wordMean:"مزرعه دار",
+            engMean:"Farmer"
+        },
+        {
+            wordMean:"تنبل",
+            engMean:"Lazy"
+        },
+        {
+            wordMean:"همسایه",
+            engMean:"Neighbor"
+        },
+        {
+            wordMean:"روستا",
+            engMean:"Village"
+        },
+        {
+            wordMean:"رودخانه",
+            engMean:"River"
+        },
+        {
+            wordMean:"ارزان",
+            engMean:"Cheap"
+        },
+        {
+            wordMean:"عبور کردن",
+            engMean:"Passing"
+        },
+        {
+            wordMean:"احتیاط کردن",
+            engMean:"Be careful"
+        },
+        {
+            wordMean:"این دفعه",
+            engMean:"This time"
+        },
+        {
+            wordMean:"گیرافتادن ",
+            engMean:"Getting stuck"
+        },
+        {
+            wordMean:"داد و بیداد ",
+            engMean:"Screaming and shouting"
+        },
+        {
+            wordMean:"پنبه ",
+            engMean:"Cotton"
+        },
+    ]
+    
+}
 // *********************** End Story Parts Data ****************
 
 
@@ -606,8 +695,9 @@ export let contentListWord = {
     newword :{
         idModal:"wordList",
         infoWords:[
-        {title:"داستان شیر و خرس ",targetHref:"lionB2"},
+        {title:"داستان شیر و خرس ",targetHref:"lionB2"},    //tagetHref --> from export data of story
         {title:"دوستی واقعی",targetHref :"realF2"},
+        {title:"الاغ تنبل",targetHref :"lazyD2"},   
         {title:"",targetHref :""},
         ],
     },

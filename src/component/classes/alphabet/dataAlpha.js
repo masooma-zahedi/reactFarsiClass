@@ -60,6 +60,7 @@ export let contentListAlpha = {
             {title:"با هم بخوانیم-1",targetHref:"read-1",idLetter:"readtogether-1"},
             {title:"با هم بخوانیم-2",targetHref:"read-2",idLetter:"readtogether-2"},
             {title:"با هم بخوانیم-3",targetHref:"read-3",idLetter:"readtogether-3"},
+            {title:"با هم بخوانیم-4",targetHref:"read-4",idLetter:"readtogether-4"},
             ],
         },
         gameTable :{
@@ -711,7 +712,129 @@ export let sylabelWord3={
         ],
     ]
 }
-// ##########-->برای حرف  (ا - و - ی - ر - س - ض - ش - ب)  ########
+// ##########-->برای حرف  (از اول تا حرف ظ)  ########
+// ##########-->برای حرف  (از اول تا حرف خ)  ########
+export let sylabelWord4={
+    buttonTargetId:"testSylabe4",
+    titleHead:"با هم بخوانیم",
+    titleColor:"rgb(217, 249, 103)",
+    sylabelBg:"rgb(100, 190, 36)",
+    sentenceRow:[
+        // each arrow is one sentence
+        [
+            {
+            word:"آب",
+            syla:""
+            },
+            {
+            word:"پیچ",
+            syla:""
+            },
+            {
+            word:"چاپ",
+            syla:""
+            },
+            {
+            word:"خوب",
+            syla:""
+            },
+            {
+            word:"بَحر",
+            syla:""
+            },
+        ],
+        [
+            {
+            word:"پُخت",
+            syla:""
+            },
+            {
+            word:"چوب",
+            syla:""
+            },
+            {
+            word:"چُرت",
+            syla:""
+            },
+            {
+            word:"تاب",
+            syla:""
+            },
+            {
+            word:"بَخت",
+            syla:""
+            },
+        ],
+        [
+            {
+            word:"توپ",
+            syla:""
+            },
+            {
+            word:"بیخ",
+            syla:""
+            },
+            {
+            word:"تیپ",
+            syla:""
+            },
+            {
+            word:"بِتا",
+            syla:""
+            },
+            {
+            word:"پَتو",
+            syla:""
+            },
+        ],
+        [
+            {
+            word:"تاج",
+            syla:""
+            },
+            {
+            word:"ثَبت",
+            syla:""
+            },
+            {
+            word:"جیب",
+            syla:""
+            },
+            {
+            word:"باج",
+            syla:""
+            },
+            {
+            word:"اُتو",
+            syla:""
+            },
+        ],
+        [
+            {
+            word:"چَتر",
+            syla:""
+            },
+            {
+            word:"حاج",
+            syla:""
+            },
+            {
+            word:"پوچ",
+            syla:""
+            },
+            {
+            word:"ثابِت",
+            syla:"ثا + بِت"
+            },
+            {
+            word:"تابو",
+            syla:"تا + بو"
+            },
+        ],
+
+    ]
+}
+// ##########-->برای حرف  (از اول تا حرف ظ)  ########
 
 // ******************************* End SylabelWords data *********************
 
@@ -817,7 +940,7 @@ photoData: [
 
 ]};
 export const tableAnimals ={
-bgTable:"./images/webPic/mashroom-1.jpg",
+bgTable:"./images/webPic/theking-1.jpg",
 photoData: [
 [
     { front: './images/assetAlpha/animals/anim-28.png', back: './images/assetAlpha/animals/anim-62.png' },

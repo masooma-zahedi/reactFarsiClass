@@ -1,6 +1,6 @@
 import React from 'react'
 import { SentenceCarousel } from './SentenceCarousel'
-import { sentenceCarousel, testPicture,testPicture2, testGramer } from './dataWord';
+import { sentenceCarousel, testPicture,testPicture2, testGramer, lazyDonky } from './dataWord';
 import { lionBear, realFriends } from './dataWord';
 import { SentencePicture } from './SentencePicture'
 import { TheStory } from '../story/TheStory';
@@ -22,6 +22,7 @@ export const Word = () => {
             <SentencePicture carouselName={testGramer.wordCarousel} carouselData={testGramer.alphaColor}/>
             <TheStory srcStory={lionBear}/>
             <TheStory srcStory={realFriends}/>
+            <TheStory srcStory={lazyDonky}/>
           </div>
         </div>
         
