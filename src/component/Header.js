@@ -16,10 +16,10 @@ export const Header = () => {
                     <NavLink className="nav-link active" aria-current="page" to="/">Alphabet</NavLink>
                     </li>
                     <li className="nav-item">
-                    <NavLink className="nav-link" to="/word">word</NavLink>
+                    <NavLink className="nav-link" to="/word/verbs-1">word</NavLink>
                     </li>
                     <li className="nav-item">
-                    <NavLink className="nav-link" to="/story">story</NavLink>
+                    <NavLink className="nav-link" to="/story/floraN1">story</NavLink>
                     </li>
                 </ul>
                 </div>
