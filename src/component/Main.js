@@ -9,13 +9,13 @@ export const Main = () => {
   return (
     <>
       <div style={{height:"400px", opacity:"0.9"}}>
-        <img className='w-100 h-100' src="./images/webPic/ad-2.png" alt="" />
+        <img className='w-100 h-100' src="/images/webPic/ad-2.png" alt="" />
       </div>
       {/* <div className='container'> */}
           <ScrollToTop />
           <Routes>
             <Route path='/*' element={<Alphabet/>} end />
-            <Route path='/word' element={<Word/>} />
+            <Route path='/word/*' element={<Word/>} />
             <Route path='/story' element={<Story/>} />
           </Routes>
       {/* </div> */}

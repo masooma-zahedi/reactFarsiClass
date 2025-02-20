@@ -1,7 +1,8 @@
 import React from 'react';
 import {contentListWord } from "./dataWord"
+import { NavLink } from 'react-router-dom';
 
-export const SidebarWord = () => {  
+export const SidebarWord = () => {   
   
   return (
     <>
@@ -17,9 +18,13 @@ export const SidebarWord = () => {
             </a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#sencaro">
-              <i className="nav-Link  text-success h6">جملات - فعل ها</i> 
-            </a>
+            <NavLink className="nav-link text-success h6" to="./verbs-1">1-جملات - فعل ها</NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink className="nav-link text-success h6" to="./verbs-2">2-جملات - فعل ها</NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink className="nav-link text-success h6" to="./orderLangua">دستور زبان</NavLink>
           </li>
           <li className="nav-item d-grid  ">
             <button type="button" className="border-0 text-success h6 nav-link" data-bs-toggle="modal" data-bs-target={`#${contentListWord.newword.idModal}`}>
@@ -45,7 +50,8 @@ export const SidebarWord = () => {
         {contentListWord.newword.infoWords.map((item,index)=>{
             return(
               <>
-                <a key={index} className='p-3 shadow-sm m-2' href={`#${item.targetHref}`}><button className='border-0 text-success bg-transparent'>{item.title}</button></a>
+                {/* <a key={index} className='p-3 shadow-sm m-2' href={`#${item.targetHref}`}><button className='border-0 text-success bg-transparent'>{item.title}</button></a> */}
+                      <NavLink key={index} className="nav-link p-3 shadow-sm m-2 text-success" to={`./${item.targetHref}`}>{item.title}</NavLink>
 
               </>
             )

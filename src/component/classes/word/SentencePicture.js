@@ -11,7 +11,7 @@ export const SentencePicture = (props) => {
     const test = ()=>{
         document.querySelector(`#${props.carouselName.idLetter}`).innerHTML =` 
                                     <div className="text-center">
-                                            <img style="width:150px" src="./images/webPic/sanrio-rentry.gif"/>
+                                            <img style="width:150px" src="/images/webPic/sanrio-rentry.gif"/>
                                             <p>Come On!!!</p>
                                     </div>               
                                 `
@@ -32,7 +32,7 @@ export const SentencePicture = (props) => {
                                     <div className="text-center ">
                                         <div className="" style="width:100%; height:400px;">
                                             <img src=${item.image} className=" " style="width:50%; height:100%; border-radius:20px;"  alt=""/>
-                                            <img style="width:60px;padding-left:20px" src="./images/webPic/StrawberryPNG.webp"/>
+                                            <img style="width:60px;padding-left:20px" src="/images/webPic/StrawberryPNG.webp"/>
                                         </div>
                                                           
                                     </div>               
@@ -47,7 +47,7 @@ export const SentencePicture = (props) => {
                                     <h1 className="text-success pt-4">{item.sylabelWord}</h1>
                             </div>
                             <div className="carousel-caption  p-4 pb-2 text-primary " onMouseOver={bobMouseOver} style={bobStyle}>
-                                <img src="./images/webPic/bob2.png" className="w-100 h-100 rounded "   alt="" srcSet=""/>
+                                <img src="/images/webPic/bob2.png" className="w-100 h-100 rounded "   alt="" srcSet=""/>
                             </div>
                         </div>
                         
