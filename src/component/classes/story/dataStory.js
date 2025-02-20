@@ -103,7 +103,22 @@ export let florence ={
             wordMean:"در گذشت",
             engMean:"Died"
         },
-    ]
+    ],
+    accordionItems : [
+        {
+          title: "چرا خانواده فلورانس نایتینگل با تصمیم او برای پرستار شدن مخالف بودند؟",
+          content: "زیرا در آن زمان پرستاری شغلی برای افراد فقیر و بدون آموزش بود و خانواده‌اش فکر می‌کردند این شغل برای او مناسب نیست",
+        },
+        {
+          title: "چرا سربازان به فلورانس نایتینگل لقب «بانوی چراغ‌دار» دادند؟",
+          content: "چون او شب‌ها با فانوس به بازدید از بیماران می‌رفت و به آن‌ها کمک می‌کرد.",
+        },
+        {
+          title: "اولین مدرسه آموزش پرستاری که نایتینگل تأسیس کرد در کجا قرار داشت و چه نامیده می‌شد؟",
+          content: "این مدرسه در لندن تأسیس شد و فارغ‌التحصیلان آن به نام «پرستاران نایتینگل» شناخته می‌شدند.",
+        },
+        
+      ]
     
 }
 export let soldier ={
@@ -172,7 +187,21 @@ export let soldier ={
             wordMean:"توخالی",
             engMean:"Hollow"
         },
-   ]
+   ],
+   accordionItems : [
+    {
+      title: "Section solger",
+      content: "This is the content for section 1. You can add any text or JSX here.",
+    },
+    {
+      title: "Section 2",
+      content: "This is the content for section 2. You can customize it as needed.",
+    },
+    {
+      title: "Section 3",
+      content: "This is the content for section 3. Add more details or components here.",
+    },
+  ]
     
 }
 export let healthStory ={
@@ -249,7 +278,21 @@ export let healthStory ={
             wordMean:"گرفتار",
             engMean:"Involved"
         },
-   ]
+   ],
+   accordionItems : [
+    {
+      title: "Section 1",
+      content: "This is the content for section 1. You can add any text or JSX here.",
+    },
+    {
+      title: "Section 2",
+      content: "This is the content for section 2. You can customize it as needed.",
+    },
+    {
+      title: "Section 3",
+      content: "This is the content for section 3. Add more details or components here.",
+    },
+  ]
     
 }
 export let donky ={
@@ -322,7 +365,21 @@ export let donky ={
             wordMean:"نیرومند",
             engMean:"Strong"
         },
-   ]
+   ],   
+    accordionItems : [
+    {
+      title: "Section 1",
+      content: "This is the content for section 1. You can add any text or JSX here.",
+    },
+    {
+      title: "Section 2",
+      content: "This is the content for section 2. You can customize it as needed.",
+    },
+    {
+      title: "Section 3",
+      content: "This is the content for section 3. Add more details or components here.",
+    },
+  ]
     
 }
 export let rabit ={
@@ -407,7 +464,21 @@ export let rabit ={
             wordMean:"اذیت کردن",
             engMean:"To annoy"
         },
-   ]
+   ],
+   accordionItems : [
+    {
+      title: "Section ",
+      content: "This is the content for section 1. You can add any text or JSX here.",
+    },
+    {
+      title: "Section 2",
+      content: "This is the content for section 2. You can customize it as needed.",
+    },
+    {
+      title: "Section 3",
+      content: "This is the content for section 3. Add more details or components here.",
+    },
+  ]
     
 }
 export let fox1 ={
@@ -484,7 +555,21 @@ export let fox1 ={
             wordMean:"آرامش بخش",
             engMean:"Relaxing"
         },
-   ]
+   ],
+   accordionItems : [
+    {
+      title: "Section ",
+      content: "This is the content for section 1. You can add any text or JSX here.",
+    },
+    {
+      title: "Section 2",
+      content: "This is the content for section 2. You can customize it as needed.",
+    },
+    {
+      title: "Section 3",
+      content: "This is the content for section 3. Add more details or components here.",
+    },
+  ]
     
 }
 export let eagle1 ={
@@ -605,7 +690,25 @@ export let eagle1 ={
             wordMean:"اعتماد به نفس",
             engMean:"Self-confidence"
         },
-   ]
+   ],
+   accordionItems : [
+    {
+      title: " چرا عقاب کوچک فکر می کرد که نمی تواند پرواز کند؟ ",
+      content: "عقاب کوچک به دلیل محیطی که در آن بزرگ شده بود (در میان مرغ ها) و باورهایی که دیگران به او القا کرده بودند، فکر می کرد که توانایی پرواز ندارد.",
+    },
+    {
+      title: "نقش عقاب بزرگ در تغییر زندگی عقاب کوچک چه بود؟",
+      content: "عقاب بزرگ به عنوان یک راهنما و الگو، عقاب کوچک را تشویق کرد تا توانایی های واقعی خود را کشف کند.",
+    },
+    {
+      title: "اگر عقاب کوچک تسلیم ترس خود می شد و هرگز پرواز نمی کرد، چه اتفاقی می افتاد؟",
+      content: "اگر عقاب کوچک تسلیم ترس خود می شد، هرگز نمی فهمید که واقعاً چه توانایی هایی دارد و تا آخر عمر در محدودیت های خود باقی می ماند.",
+    },
+    {
+      title: "چرا عقاب کوچک در ابتدا فقط چند متر پرواز کرد؟ آیا این شکست محسوب می شود؟",
+      content: "نه، این شکست نبود. پرواز کردن یک فرآیند است و نیاز به تمرین و صبر دارد. عقاب کوچک با هر بار تلاش، اعتماد به نفس بیشتری پیدا کرد و در نهایت به موفقیت رسید. ",
+    },
+  ]
     
 }
 
