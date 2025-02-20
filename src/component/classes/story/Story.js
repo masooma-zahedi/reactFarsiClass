@@ -12,14 +12,6 @@ export const Story = () => {
                     <SidebarStory />
           </div>
           <div className="col-s-12 col-lg-9">
-            {/* <TheStory srcStory={florence}/>
-            <TheStory srcStory={soldier}/>
-            <TheStory srcStory={healthStory}/>
-            <TheStory srcStory={donky}/>
-            <TheStory srcStory={rabit}/>
-            <TheStory srcStory={fox1}/>
-            <TheStory srcStory={eagle1}/> */}
-
             <Routes>
               <Route path='/floraN1' element={<TheStory srcStory={florence}/>}  />
               <Route path='/soldier-2' element={<TheStory srcStory={soldier}/>}  />
