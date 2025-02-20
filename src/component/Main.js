@@ -16,7 +16,7 @@ export const Main = () => {
           <Routes>
             <Route path='/*' element={<Alphabet/>} end />
             <Route path='/word/*' element={<Word/>} />
-            <Route path='/story' element={<Story/>} />
+            <Route path='/story/*' element={<Story/>} />
           </Routes>
       {/* </div> */}
     </>

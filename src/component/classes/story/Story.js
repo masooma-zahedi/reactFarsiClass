@@ -2,6 +2,7 @@ import React from 'react'
 import { TheStory } from './TheStory'
 import { donky, eagle1, florence, fox1, healthStory, rabit, soldier } from './dataStory';
 import { SidebarStory } from './SidebarStory';
+import { Route, Routes } from 'react-router-dom';
 
 export const Story = () => {
   return (
@@ -11,13 +12,24 @@ export const Story = () => {
                     <SidebarStory />
           </div>
           <div className="col-s-12 col-lg-9">
-            <TheStory srcStory={florence}/>
+            {/* <TheStory srcStory={florence}/>
             <TheStory srcStory={soldier}/>
             <TheStory srcStory={healthStory}/>
             <TheStory srcStory={donky}/>
             <TheStory srcStory={rabit}/>
             <TheStory srcStory={fox1}/>
-            <TheStory srcStory={eagle1}/>
+            <TheStory srcStory={eagle1}/> */}
+
+            <Routes>
+              <Route path='/floraN1' element={<TheStory srcStory={florence}/>}  />
+              <Route path='/soldier-2' element={<TheStory srcStory={soldier}/>}  />
+              <Route path='/health-2' element={<TheStory srcStory={healthStory}/>}  />
+              <Route path='/donky-2' element={<TheStory srcStory={donky}/>}  />
+              <Route path='/rabit-2' element={<TheStory srcStory={rabit}/>}  />
+              <Route path='/fox-2' element={<TheStory srcStory={fox1}/>}  />
+              <Route path='/eagle-2' element={<TheStory srcStory={eagle1}/>}  />
+            </Routes>
+            
           </div>
         </div>
         

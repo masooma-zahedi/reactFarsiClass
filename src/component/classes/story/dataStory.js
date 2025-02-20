@@ -21,7 +21,7 @@ export let florence ={
     wordId:"floren1",
     titleStory:"زندگی فلورانس نایتینگل",
     targetHref:"floraN1",
-    imageStory:["./images/assetStory/12-10-4-فلورانس.jpg","./images/assetStory/12-19-5-فلورنس.jpg"],
+    imageStory:["/images/assetStory/12-10-4-فلورانس.jpg","/images/assetStory/12-19-5-فلورنس.jpg"],
     wordPart:[
         {
             wordMean:"سرپرست",
@@ -110,7 +110,7 @@ export let soldier ={
     wordId:"soldier1",
     titleStory:"داستان دو سرباز",
     targetHref :"soldier-2",
-    imageStory:["./images/assetStory/12-19-1-دو سرباز.jpg",],
+    imageStory:["/images/assetStory/12-19-1-دو سرباز.jpg",],
     wordPart:[
         {
             wordMean:"سرباز",
@@ -179,7 +179,7 @@ export let healthStory ={
     wordId:"health1",
     titleStory:"داستان عافیت",
     targetHref :"health-2",
-    imageStory:["./images/assetStory/12-19-2-عافیت.jpg",],
+    imageStory:["/images/assetStory/12-19-2-عافیت.jpg",],
     wordPart:[
         {
             wordMean:"عافیت",
@@ -256,7 +256,7 @@ export let donky ={
     wordId:"donky1",
     titleStory:"داستان شیر و الاغ وحشی",
     targetHref :"donky-2",
-    imageStory:["./images/assetStory/1-6-25-1-lion&donki.png","./images/assetStory/1-6-25-2-lion&donki.png",],
+    imageStory:["/images/assetStory/1-6-25-1-lion&donki.png","/images/assetStory/1-6-25-2-lion&donki.png",],
     wordPart:[
         {
             wordMean:"وحشی",
@@ -414,7 +414,7 @@ export let fox1 ={
     wordId:"fox-1",
     titleStory:"داستان ماجراجویی روباه جوان",
     targetHref :"fox-2",
-    imageStory:["./images/assetStory/fox-1.png","./images/assetStory/fox-2.png",],
+    imageStory:["/images/assetStory/fox-1.png","/images/assetStory/fox-2.png",],
     wordPart:[
         {
             wordMean:"فراتر",
@@ -491,7 +491,7 @@ export let eagle1 ={
     wordId:"eagle-1",
     titleStory:"داستان رویای پرواز",
     targetHref :"eagle-2",
-    imageStory:["./images/assetStory/Eagle-1.png","./images/assetStory/Eagle-2.png",],
+    imageStory:["/images/assetStory/Eagle-1.png","/images/assetStory/Eagle-2.png",],
     wordPart:[
         {
             wordMean:"رویا",

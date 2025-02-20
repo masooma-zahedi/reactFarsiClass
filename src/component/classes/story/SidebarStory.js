@@ -1,5 +1,6 @@
 import React from 'react';
 import {contentListStory } from "./dataStory"
+import { NavLink } from 'react-router-dom';
 
 export const SidebarStory = () => {  
   
@@ -40,8 +41,8 @@ export const SidebarStory = () => {
         {contentListStory.newword.infoWords.map((item,index)=>{
             return(
               <>
-                <a key={index} className='p-3 shadow-sm m-2' href={`#${item.targetHref}`}><button className='border-0 text-success bg-transparent'>{item.title}</button></a>
-
+                {/* <a key={index} className='p-3 shadow-sm m-2' href={`#${item.targetHref}`}><button className='border-0 text-success bg-transparent'>{item.title}</button></a> */}
+                <NavLink key={index} className="nav-link p-3 shadow-sm m-2 text-success" to={`./${item.targetHref}`}>{item.title}</NavLink>
               </>
             )
         })}
