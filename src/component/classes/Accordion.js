@@ -26,7 +26,7 @@ export const Accordion = ({ items }) => {
           </h2>
           <div
             id={`collapse${index}`} style={{color:'#993337'}}
-            className={`accordion-collapse h6 collapse ${
+            className={`accordion-collapse h5 collapse ${
               activeIndex === index ? "show" : ""
             }`}
             aria-labelledby={`heading${index}`}
