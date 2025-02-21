@@ -478,7 +478,22 @@ export let lionBear ={
             wordMean:"افتادن",
             engMean:"Falling"
         },
-    ]
+    ],
+    accordionItems : [
+        {
+          title: " ",
+          content: "",
+        },
+        {
+          title: " ",
+          content: "",
+        },
+        {
+          title: " ",
+          content: "",
+        },
+      ]
+    
     
 }
 export let realFriends ={
@@ -595,7 +610,22 @@ export let realFriends ={
             wordMean:"باز گشت",
             engMean:"Return"
         },
-    ]
+    ],
+    accordionItems : [
+        {
+          title: " ",
+          content: "",
+        },
+        {
+          title: " ",
+          content: "",
+        },
+        {
+          title: " ",
+          content: "",
+        },
+      ]
+
     
 }
 export let lazyDonky ={
@@ -684,7 +714,22 @@ export let lazyDonky ={
             wordMean:"پنبه ",
             engMean:"Cotton"
         },
-    ]
+    ],
+    accordionItems : [
+        {
+          title: " ",
+          content: "",
+        },
+        {
+          title: " ",
+          content: "",
+        },
+        {
+          title: " ",
+          content: "",
+        },
+      ]
+
     
 }
 // *********************** End Story Parts Data ****************

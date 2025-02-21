@@ -56,25 +56,18 @@ export const SidebarAlpha = ({setShowShort,idCarouselAlpha}) => {
           <li className="nav-item">
             <NavLink className="nav-link text-success h6" to="/longSound">صداهای بلند</NavLink>
           </li>
-          {/* <li className="nav-item">
-            <a className="nav-link"  href={`#${idCarouselAlpha}`} >{console.log(idCarouselAlpha)
-            }
-            <i onClick={()=>{setShowShort(true)} }  className="nav-Link  text-success h6">صداهای کوتاه و کشیده</i> 
-            </a>
-            </li> */}
-            <li className="nav-item d-grid  ">
+
+          <li className="nav-item d-grid  ">
             <button type="button" className="border-0 text-success h6 nav-link" data-bs-toggle="modal" data-bs-target={`#${contentListAlpha.readTogether.idModal}`}>
              با هم بخوانیم 
             </button>
           </li>
-          {/* <li className="nav-item">
-            <li className="nav-item">
-              <NavLink className="nav-link text-success h6" to="/readTogether">با هم بخوانیم</NavLink>
-            </li>
-            <a className="nav-link" href="#read1">
-              <i className="nav-Link  text-success h6">با هم بخوانیم</i> 
-            </a>
-          </li> */}
+          <li className="nav-item d-grid  ">
+            <button type="button" className="border-0 text-success h6 nav-link" data-bs-toggle="modal" data-bs-target={`#${contentListAlpha.storyAlpha.idModal}`}>
+             داستان الفبا
+            </button>
+          </li>
+
           <li className="nav-item d-grid  ">
             <button type="button" className="border-0 text-success h6 nav-link" data-bs-toggle="modal" data-bs-target={`#${contentListAlpha.gameTable.idModal}`}>
              بازی جدول 
@@ -96,6 +89,7 @@ export const SidebarAlpha = ({setShowShort,idCarouselAlpha}) => {
     <Modal id={`${contentListAlpha.newword.idModal}`} data={contentListAlpha.newword.infoWords}/>
     <Modal id={`${contentListAlpha.readTogether.idModal}`} data={contentListAlpha.readTogether.infoWords}/>
     <Modal id={`${contentListAlpha.gameTable.idModal}`} data={contentListAlpha.gameTable.infoWords}/>
+    <Modal id={`${contentListAlpha.storyAlpha.idModal}`} data={contentListAlpha.storyAlpha.infoWords}/>
  
 
 

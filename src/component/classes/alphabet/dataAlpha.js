@@ -10,6 +10,27 @@ export let alphaCrousel={
     "./images/assetAlpha/cardAlpha/Untitled-2-5.jpg",
     "./images/assetAlpha/cardAlpha/Untitled-2-6.jpg",
 ]}
+export let storyAlpha1={
+    buttonId:"storyAlp1",
+    carouselImg:[
+    "/images/assetAlpha/alphaStory/family/family-1.png",
+    "/images/assetAlpha/alphaStory/family/family-2.png",
+    "/images/assetAlpha/alphaStory/family/family-3.png",
+    "/images/assetAlpha/alphaStory/family/family-4.png",
+]}
+export let storyAlpha2={
+    buttonId:"storyAlp2",
+    carouselImg:[
+    "/images/assetAlpha/alphaStory/variety/variety-1.jpg",
+    "/images/assetAlpha/alphaStory/variety/variety-2.jpg",
+    "/images/assetAlpha/alphaStory/variety/variety-3.jpg",
+    "/images/assetAlpha/alphaStory/variety/variety-4.jpg",
+    "/images/assetAlpha/alphaStory/variety/variety-5.jpg",
+    "/images/assetAlpha/alphaStory/variety/variety-6.jpg",
+    "/images/assetAlpha/alphaStory/variety/variety-7.jpg",
+]}
+
+
 
 // &&&&&& start short sound
 let shortSoundExa = [];
@@ -70,6 +91,13 @@ export let contentListAlpha = {
             {title:"بازی آشپزخانه",targetHref:"kitchenGame",idLetter:"kitchentGame-1"},
             {title:"بازی شغل ها",targetHref:"professions",idLetter:"professionsGame-3"},
             {title:"بازی حیوانات",targetHref:"animals",idLetter:"animalsGame-3"},
+            ],
+        },
+        storyAlpha:{
+            idModal:"storyAlpha1",
+            infoWords:[
+            {title:"خانواده من",targetHref:"storyA1",idLetter:"storyAl-1"},
+            {title:"آخر هفته",targetHref:"storyA2",idLetter:"storyAl-2"},
             ],
         },
 }
@@ -717,7 +745,7 @@ export let sylabelWord3={
 export let sylabelWord4={
     buttonTargetId:"testSylabe4",
     titleHead:"با هم بخوانیم",
-    titleColor:"rgb(217, 249, 103)",
+    titleColor:"rgb(89, 108, 19)",
     sylabelBg:"rgb(100, 190, 36)",
     sentenceRow:[
         // each arrow is one sentence
