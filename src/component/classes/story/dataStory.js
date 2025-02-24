@@ -10,7 +10,7 @@ export let contentListStory = {
         {title:"شیر و خرگوش",targetHref :"rabit-2"},
         {title:"روباه جوان",targetHref :"fox-2"},
         {title:"رویای پرواز",targetHref :"eagle-2"},
-        {title:"",targetHref :""},
+        {title:"پادشاه برهنه",targetHref :"kingCloth"},
         ],
     },
 }
@@ -597,6 +597,145 @@ export let eagle1 ={
     titleStory:"داستان رویای پرواز",
     targetHref :"eagle-2",
     imageStory:["/images/assetStory/Eagle-1.png","/images/assetStory/Eagle-2.png",],
+    wordPart:[
+        {
+            wordMean:"رویا",
+            engMean:"Dream"
+        },
+        {
+            wordMean:"کوه",
+            engMean:"Mountain"
+        },
+        {
+            wordMean:"دامنه کوه",
+            engMean:"Mountain slope"
+        },
+        {
+            wordMean:"فلک",
+            engMean:"Sky"
+        },
+        {
+            wordMean:"تیزبین",
+            engMean:"Sharp-sighted"
+        },
+        {
+            wordMean:"جستجو",
+            engMean:"Search"
+        },
+        {
+            wordMean:"طعمه",
+            engMean:"Bait"
+        },
+        {
+            wordMean:"اندیشید",
+            engMean:"Think"
+        },
+        {
+            wordMean:"تفریح",
+            engMean:"Entertainment"
+        },
+        {
+            wordMean:"مرغداری",
+            engMean:"Aviculture"
+        },
+        {
+            wordMean:"وضوح",
+            engMean:"Resolution"
+        },
+        {
+            wordMean:"نهایت",
+            engMean:"Ultimate"
+        },
+        {
+            wordMean:"توانایی",
+            engMean:"Ability"
+        },
+        {
+            wordMean:"انتظار",
+            engMean:"Waiting"
+        },
+        {
+            wordMean:"تکان داد",
+            engMean:"Shaken"
+        },
+        {
+            wordMean:"رخ دادن",
+            engMean:"Occurrence"
+        },
+        {
+            wordMean:"عظیم",
+            engMean:"Massive"
+        },
+        {
+            wordMean:"باشکوه",
+            engMean:"Magnificent"
+        },
+        {
+            wordMean:"خیره شدن",
+            engMean:"Staring"
+        },
+        {
+            wordMean:"خجالت زده",
+            engMean:"Embarrassed"
+        },
+        {
+            wordMean:"لحن",
+            engMean:"Tone"
+        },
+        {
+            wordMean:"اوج گرفتن",
+            engMean:"Peaking"
+        },
+        {
+            wordMean:"لرزان",
+            engMean:"Shaking"
+        },
+        {
+            wordMean:"سقوط کردن",
+            engMean:"Fall down"
+        },
+        {
+            wordMean:"تشویق",
+            engMean:"Encouragement"
+        },
+        {
+            wordMean:"تمرین مداوم",
+            engMean:"Continuous practice"
+        },
+        {
+            wordMean:"بی وقفه",
+            engMean:"Non-stop"
+        },
+        {
+            wordMean:"اعتماد به نفس",
+            engMean:"Self-confidence"
+        },
+   ],
+   accordionItems : [
+    {
+      title: " چرا عقاب کوچک فکر می کرد که نمی تواند پرواز کند؟ ",
+      content: "عقاب کوچک به دلیل محیطی که در آن بزرگ شده بود (در میان مرغ ها) و باورهایی که دیگران به او القا کرده بودند، فکر می کرد که توانایی پرواز ندارد.",
+    },
+    {
+      title: "نقش عقاب بزرگ در تغییر زندگی عقاب کوچک چه بود؟",
+      content: "عقاب بزرگ به عنوان یک راهنما و الگو، عقاب کوچک را تشویق کرد تا توانایی های واقعی خود را کشف کند.",
+    },
+    {
+      title: "اگر عقاب کوچک تسلیم ترس خود می شد و هرگز پرواز نمی کرد، چه اتفاقی می افتاد؟",
+      content: "اگر عقاب کوچک تسلیم ترس خود می شد، هرگز نمی فهمید که واقعاً چه توانایی هایی دارد و تا آخر عمر در محدودیت های خود باقی می ماند.",
+    },
+    {
+      title: "چرا عقاب کوچک در ابتدا فقط چند متر پرواز کرد؟ آیا این شکست محسوب می شود؟",
+      content: "نه، این شکست نبود. پرواز کردن یک فرآیند است و نیاز به تمرین و صبر دارد. عقاب کوچک با هر بار تلاش، اعتماد به نفس بیشتری پیدا کرد و در نهایت به موفقیت رسید. ",
+    },
+  ]
+    
+}
+export let king1 ={
+    wordId:"king-1",
+    titleStory:"لباس پادشاه",
+    targetHref :"kingCloth",
+    imageStory:["/images/assetStory/king-1.png",],
     wordPart:[
         {
             wordMean:"رویا",
