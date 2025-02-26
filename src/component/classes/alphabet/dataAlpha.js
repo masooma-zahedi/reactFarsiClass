@@ -91,6 +91,7 @@ export let contentListAlpha = {
             {title:"بازی آشپزخانه",targetHref:"kitchenGame",idLetter:"kitchentGame-1"},
             {title:"بازی شغل ها",targetHref:"professions",idLetter:"professionsGame-3"},
             {title:"بازی حیوانات",targetHref:"animals",idLetter:"animalsGame-3"},
+            {title:"بازی رنگ و بدن",targetHref:"tableColor_body",idLetter:"colorB-1"},
             ],
         },
         storyAlpha:{
@@ -1019,6 +1020,36 @@ photoData: [
     { front: './images/assetAlpha/animals/anim-43.png', back: './images/assetAlpha/animals/anim-13.png' },
     { front: './images/assetAlpha/animals/anim-33.png', back: './images/assetAlpha/animals/anim-69.png' },
 ],
+
+]};
+export const tableColor_body ={
+bgTable:"/images/webPic/mashroom-1.jpg",
+photoData: [
+[
+    { front: '/images/assetAlpha/colorExa/12-14-1-c.png', back: '/images/assetAlpha/body-exa/12-6-17.png' },
+    { front: '/images/assetAlpha/colorExa/12-14-3-c.png', back: '/images/assetAlpha/body-exa/12-6-4.png' },
+    { front: '/images/assetAlpha/colorExa/12-14-5-c.png', back: '/images/assetAlpha/body-exa/12-6-2.png' },
+    { front: '/images/assetAlpha/colorExa/12-14-7-c.png', back: '/images/assetAlpha/body-exa/12-6-3.png' },
+],
+[
+    { front: '/images/assetAlpha/colorExa/12-14-2-c.png', back: '/images/assetAlpha/body-exa/12-6-5.png' },
+    { front: '/images/assetAlpha/colorExa/12-14-4-c.png', back: '/images/assetAlpha/body-exa/12-6-8.png' },
+    { front: '/images/assetAlpha/colorExa/12-14-6-c.png', back: '/images/assetAlpha/body-exa/12-6-6.png' },
+    { front: '/images/assetAlpha/colorExa/12-14-8-c.png', back: '/images/assetAlpha/body-exa/12-6-7.png' },
+],
+[
+    { front: '/images/assetAlpha/colorExa/12-14-9-c.png', back: '/images/assetAlpha/body-exa/12-6-12.png' },
+    { front: '/images/assetAlpha/colorExa/12-14-10-c.png', back: '/images/assetAlpha/body-exa/12-6-9.png' },
+    { front: '/images/assetAlpha/colorExa/12-14-1-c.png', back: '/images/assetAlpha/body-exa/12-6-11.png' },
+    { front: '/images/assetAlpha/colorExa/12-14-4-c.png', back: '/images/assetAlpha/body-exa/12-6-10.png' },
+],
+[
+    { front: '/images/assetAlpha/colorExa/12-14-7-c.png', back: '/images/assetAlpha/body-exa/12-6-14.png' },
+    { front: '/images/assetAlpha/colorExa/12-14-3-c.png', back: '/images/assetAlpha/body-exa/12-6-16.png' },
+    { front: '/images/assetAlpha/colorExa/12-14-8-c.png', back: '/images/assetAlpha/body-exa/12-6-15.png' },
+    { front: '/images/assetAlpha/colorExa/12-14-1-c.png', back: '/images/assetAlpha/body-exa/12-6-13.png' },
+],
+
 
 ]};
 // **************************** End  flipping Table data ************************
