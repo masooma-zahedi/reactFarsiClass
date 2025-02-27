@@ -6,7 +6,7 @@ import { NavLink, Link } from 'react-router-dom';
 export const SidebarAlpha = ({setShowShort,idCarouselAlpha}) => { 
   const Modal = ({id,data})=>{
     return(<>
-      <div className="modal fade" id={id} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div className="modal fade" id={id} tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div className="modal-dialog biger-modal ">
           <div className="modal-content">
             <div className="modal-header">
@@ -15,10 +15,10 @@ export const SidebarAlpha = ({setShowShort,idCarouselAlpha}) => {
             </div>
             <div className="modal-body">
               <div className='d-flex flex-wrap'>
-              {data.map((item,index)=>{
+              {data.map((item,index)=>{                
                   return(
                     <>
-                      <NavLink key={index} className="nav-link p-3 shadow-sm m-2 text-success" to={`/${item.targetHref}`}>{item.title}</NavLink>
+                      <NavLink key={item.id} className="nav-link p-3 shadow-sm m-2 text-success" to={`/${item.targetHref}`}>{item.title}</NavLink>
                     </>
                   )
               })}
@@ -96,7 +96,7 @@ export const SidebarAlpha = ({setShowShort,idCarouselAlpha}) => {
 
 
 
-    {/* <div className="modal fade" id={`${contentListAlpha.newword.idModal}`} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    {/* <div className="modal fade" id={`${contentListAlpha.newword.idModal}`} tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div className="modal-dialog biger-modal ">
         <div className="modal-content">
           <div className="modal-header">

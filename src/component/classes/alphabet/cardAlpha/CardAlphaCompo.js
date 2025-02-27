@@ -1,5 +1,6 @@
 import React from 'react';
 import {infoCard} from './cardDataAlpha';
+import { nanoid } from 'nanoid';
 
 export const CardAlphaCompo = () => {
     // console.log(infoCard[0].title);
@@ -14,7 +15,7 @@ export const CardAlphaCompo = () => {
                         // console.log(index);
                         return(
                             <>
-                                <div className="col mb-3" key={index}>
+                                <div className="col mb-3" key={index+nanoid(4)}>
                                     <div className="card" style={{width:"18rem"}}>
                                         <img src={letter.mainPic} className="card-img-top" data-bs-toggle="modal" data-bs-target={`#${letter.examplePicId}`}  alt="حرف آ" />
                                         <div className="card-body">
@@ -39,7 +40,7 @@ export const CardAlphaCompo = () => {
                                                     letter.examplePic.map((exaPic,index)=>{
                                                         return(
                                                             <>
-                                                                <div style={{height: '400px'}} key={index} className="mb-3">
+                                                                <div style={{height: '400px'}} key={index+nanoid(4)} className="mb-3">
                                                                     <img src={exaPic} className="w-100 h-100" alt="" srcSet=""/>
                                                                 </div>
                                                             </>

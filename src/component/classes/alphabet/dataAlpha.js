@@ -1,4 +1,5 @@
-import {infoCard} from "./cardAlpha/cardDataAlpha"
+import {infoCard} from "./cardAlpha/cardDataAlpha";
+import { nanoid } from "nanoid";
 // ******************************* Start Just Carousel ***************
 export let alphaCrousel={
     buttonId:"alphaC1",
@@ -62,43 +63,43 @@ export let contentListAlpha = {
         newword :{
             idModal:"newTest",
             infoWords:[
-            {title:"رنگ ها",targetHref:"colorPart-2",idLetter:"color1"},
-            {title:"میوه ها",targetHref :"fruitPart-2",idLetter:"fruit1"},
-            {title:"اعضای بدن",targetHref :"bodyPart-2",idLetter:"body1"},
-            {title:"پوشیدنی ها",targetHref :"wearPart-2",idLetter:"wear1"},
-            {title:"لوازم تحریر",targetHref :"supplyPart-2",idLetter:"supply1"},
-            {title:"روزهای هفته",targetHref :"daysPart-2",idLetter:"days1"},
-            {title:"اعداد 0-20 ",targetHref :"numPart-2",idLetter:"nums1"},
-            {title:"جملات کوتاه دستوری",targetHref :"orderPart-2",idLetter:"orderv1"},
-            {title:"ظروف آشپزخانه",targetHref :"kitchen1Part-2",idLetter:"kitchen1-1"},
-            {title:"شغل ها ",targetHref :"professionsPart-2",idLetter:"kitchen1-1"},
-            {title:"حیوانات ",targetHref :"animalsPart-2",idLetter:"animal-1"},
+            {id:nanoid(4),title:"رنگ ها",targetHref:"colorPart-2",idLetter:"color1"},
+            {id:nanoid(4),title:"میوه ها",targetHref :"fruitPart-2",idLetter:"fruit1"},
+            {id:nanoid(4),title:"اعضای بدن",targetHref :"bodyPart-2",idLetter:"body1"},
+            {id:nanoid(4),title:"پوشیدنی ها",targetHref :"wearPart-2",idLetter:"wear1"},
+            {id:nanoid(4),title:"لوازم تحریر",targetHref :"supplyPart-2",idLetter:"supply1"},
+            {id:nanoid(4),title:"روزهای هفته",targetHref :"daysPart-2",idLetter:"days1"},
+            {id:nanoid(4),title:"اعداد 0-20 ",targetHref :"numPart-2",idLetter:"nums1"},
+            {id:nanoid(4),title:"جملات کوتاه دستوری",targetHref :"orderPart-2",idLetter:"orderv1"},
+            {id:nanoid(4),title:"ظروف آشپزخانه",targetHref :"kitchen1Part-2",idLetter:"kitchen1-1"},
+            {id:nanoid(4),title:"شغل ها ",targetHref :"professionsPart-2",idLetter:"kitchen1-1"},
+            {id:nanoid(4),title:"حیوانات ",targetHref :"animalsPart-2",idLetter:"animal-1"},
             ],
         },
         readTogether :{
             idModal:"readTo1",
             infoWords:[
-            {title:"با هم بخوانیم-1",targetHref:"read-1",idLetter:"readtogether-1"},
-            {title:"با هم بخوانیم-2",targetHref:"read-2",idLetter:"readtogether-2"},
-            {title:"با هم بخوانیم-3",targetHref:"read-3",idLetter:"readtogether-3"},
-            {title:"با هم بخوانیم-4",targetHref:"read-4",idLetter:"readtogether-4"},
+            {id:nanoid(4),title:"با هم بخوانیم-1",targetHref:"read-1",idLetter:"readtogether-1"},
+            {id:nanoid(4),title:"با هم بخوانیم-2",targetHref:"read-2",idLetter:"readtogether-2"},
+            {id:nanoid(4),title:"با هم بخوانیم-3",targetHref:"read-3",idLetter:"readtogether-3"},
+            {id:nanoid(4),title:"با هم بخوانیم-4",targetHref:"read-4",idLetter:"readtogether-4"},
             ],
         },
         gameTable :{
             idModal:"tableGame1",
             infoWords:[
-            {title:"بازی اعداد",targetHref:"numberGame",idLetter:"numberGame-1"},
-            {title:"بازی آشپزخانه",targetHref:"kitchenGame",idLetter:"kitchentGame-1"},
-            {title:"بازی شغل ها",targetHref:"professions",idLetter:"professionsGame-3"},
-            {title:"بازی حیوانات",targetHref:"animals",idLetter:"animalsGame-3"},
-            {title:"بازی رنگ و بدن",targetHref:"tableColor_body",idLetter:"colorB-1"},
+            {id:nanoid(4),title:"بازی اعداد",targetHref:"numberGame",idLetter:"numberGame-1"},
+            {id:nanoid(4),title:"بازی آشپزخانه",targetHref:"kitchenGame",idLetter:"kitchentGame-1"},
+            {id:nanoid(4),title:"بازی شغل ها",targetHref:"professions",idLetter:"professionsGame-3"},
+            {id:nanoid(4),title:"بازی حیوانات",targetHref:"animals",idLetter:"animalsGame-3"},
+            {id:nanoid(4),title:"بازی رنگ و بدن",targetHref:"tableColor_body",idLetter:"colorB-1"},
             ],
         },
         storyAlpha:{
             idModal:"storyAlpha1",
             infoWords:[
-            {title:"خانواده من",targetHref:"storyA1",idLetter:"storyAl-1"},
-            {title:"آخر هفته",targetHref:"storyA2",idLetter:"storyAl-2"},
+            {id:nanoid(4),title:"خانواده من",targetHref:"storyA1",idLetter:"storyAl-1"},
+            {id:nanoid(4),title:"آخر هفته",targetHref:"storyA2",idLetter:"storyAl-2"},
             ],
         },
 }
