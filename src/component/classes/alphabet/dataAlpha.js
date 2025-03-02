@@ -83,6 +83,7 @@ export let contentListAlpha = {
             {id:nanoid(4),title:"با هم بخوانیم-2",targetHref:"read-2",idLetter:"readtogether-2"},
             {id:nanoid(4),title:"با هم بخوانیم-3",targetHref:"read-3",idLetter:"readtogether-3"},
             {id:nanoid(4),title:"با هم بخوانیم-4",targetHref:"read-4",idLetter:"readtogether-4"},
+            {id:nanoid(4),title:"با هم بخوانیم-5",targetHref:"read-5",idLetter:"readtogether-5"},
             ],
         },
         gameTable :{
@@ -865,7 +866,261 @@ export let sylabelWord4={
 
     ]
 }
-// ##########-->برای حرف  (از اول تا حرف ظ)  ########
+// ##########-->برای حرف  (از اول تا حرف ع)  ########
+export let sylabelWord5={
+    buttonTargetId:"testSylabe5",
+    titleHead:"( حرف ع ) با هم بخوانیم",
+    titleColor:"rgb(108, 19, 105)",
+    sylabelBg:"rgb(190, 36, 105)",
+    sentenceRow:[
+        // each arrow is one sentence
+        [
+            {
+                word:"ساعَت",
+                syla:"سا + عَت"
+            },
+            {
+                word:"عاشورا",
+                syla:"عا + شو + را"
+            },
+            {
+                word:"عَبد",
+                syla:""
+            },
+            {
+                word:"عابِد",
+                syla:"عا + بِد"
+            },
+            {
+                word:"عِبادَت",
+                syla:"عِ + با + دَت"
+            }
+        ],
+        [
+            {
+                word:"عادَت",
+                syla:"عا + دَت"
+            },
+            {
+                word:"عاجِز",
+                syla:"عا + جِز"
+            },
+            {
+                word:"عاج",
+                syla:""
+            },
+            {
+                word:"عادی",
+                syla:"عا + دی"
+            },
+            {
+                word:"عُبور",
+                syla:"عُ + بور"
+            }
+        ],
+        [
+            {
+                word:"عابِر",
+                syla:"عا + بِر"
+            },
+            {
+                word:"عِبارَت",
+                syla:"عِ + با + رَت"
+            },
+            {
+                word:"عَدَد",
+                syla:"عَ + دَد"
+            },
+            {
+                word:"عَدَس",
+                syla:"عَ + دَس"
+            },
+            {
+                word:"عَذاب",
+                syla:"عَ + ذاب"
+            }
+        ],
+        [
+            {
+                word:"عَجَب",
+                syla:"عَ + جَب"
+            },
+            {
+                word:"عاری",
+                syla:"عا + ری"
+            },
+            {
+                word:"عَصا",
+                syla:"عَ + صا"
+            },
+            {
+                word:"عَروس",
+                syla:"عَ + روس"
+            },
+            {
+                word:"عَزیز",
+                syla:"عَ + زیز"
+            }
+        ],
+        [
+            {
+                word:"تاسوعا",
+                syla:"تا + سو + عا"
+            },
+            {
+                word:"دُعا",
+                syla:"دُ + عا"
+            },
+            {
+                word:"سُرعَت",
+                syla:"سُر + عَت"
+            },
+            {
+                word:"شاعِر",
+                syla:"شا + عِر"
+            },
+            {
+                word:"اَعداد",
+                syla:"اَع + داد"
+            }
+        ],
+        [
+            {
+                word:"مادَر ",
+                syla:"ما + دَر"
+            },
+            {
+                word:"سوپ",
+                syla:""
+            },
+            {
+                word:"عَدَس",
+                syla:"عَ + دَس"
+            },
+            {
+                word:"خوشمَزِه",
+                syla:"خوش + مَ + زِه"
+            },
+            {
+                word:"پُخت.",
+                syla:""
+            },
+        ],
+        [
+            {
+                word:"سُرعَت",
+                syla:"سُر + عَت"
+            },
+            {
+                word:"نور",
+                syla:""
+            },
+            {
+                word:"زیاد",
+                syla:"زی + یاد"
+            },
+            {
+                word:"اَست . ",
+                syla:""
+            },
+        ],
+        [
+            {
+                word:"عَروس ",
+                syla:"عَ + روس"
+            },
+            {
+                word:"وَ",
+                syla:""
+            },
+            {
+                word:"داماد",
+                syla:"دا + ماد"
+            },
+            {
+                word:"خوشحال",
+                syla:"خوش + حال"
+            },
+            {
+                word:"بودَند . ",
+                syla:"بو + دَند "
+            },
+        ],
+        [
+            {
+                word:"ما ",
+                syla:""
+            },
+            {
+                word:"عَدَد",
+                syla:"عَ + دَد"
+            },
+            {
+                word:"پَنج",
+                syla:""
+            },
+            {
+                word:"را ",
+                syla:""
+            },
+            {
+                word:"دوست",
+                syla:""
+            },
+            {
+                word:"داریم .",
+                syla:"دا + ریم"
+            },
+
+        ],
+        [
+            {
+                word:"عادَت",
+                syla:"عا + دَت"
+            },
+            {
+                word:"بِه",
+                syla:""
+            },
+            {
+                word:"وَرزِش",
+                syla:"وَر + زِش"
+            },
+            {
+                word:"خوب",
+                syla:""
+            },
+            {
+                word:"اَست .",
+                syla:""
+            },
+        ],
+        [
+            {
+                word:"عَدَس",
+                syla:"عَ + دَس"
+            },
+            {
+                word:"سَرشار",
+                syla:"سَر + شار"
+            },
+            {
+                word:"اَز",
+                syla:""
+            },
+            {
+                word:"ویتامین",
+                syla:"وی + تا + مین"
+            },
+            {
+                word:"اَست .",
+                syla:""
+            },
+        ],
+
+    ]
+}
+// ##########-->برای حرف  (از اول تا حرف ع)  ########
 
 // ******************************* End SylabelWords data *********************
 

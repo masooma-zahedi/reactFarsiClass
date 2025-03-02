@@ -41,7 +41,7 @@ export const CardAlphaCompo = () => {
                                                         return(
                                                             <>
                                                                 <div style={{height: '400px'}} key={index+nanoid(4)} className="mb-3">
-                                                                    <img src={exaPic} className="w-100 h-100" alt="" srcSet=""/>
+                                                                    <img src={exaPic} className="w-100 h-100" alt={exaPic} srcSet=""/>
                                                                 </div>
                                                             </>
                                                         )

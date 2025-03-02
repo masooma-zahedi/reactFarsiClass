@@ -10,7 +10,7 @@ export let contentListStory = {
         {title:"شیر و خرگوش",targetHref :"rabit-2"},
         {title:"روباه جوان",targetHref :"fox-2"},
         {title:"رویای پرواز",targetHref :"eagle-2"},
-        {title:"پادشاه برهنه",targetHref :"kingCloth"},
+        {title:"لباس پادشاه ",targetHref :"kingCloth"},
         ],
     },
 }
@@ -735,137 +735,105 @@ export let king1 ={
     wordId:"king-1",
     titleStory:"لباس پادشاه",
     targetHref :"kingCloth",
-    imageStory:["/images/assetStory/king-1.png",],
+    imageStory:["/images/assetStory/king-1.png","/images/assetStory/king-2.png",],
     wordPart:[
         {
-            wordMean:"رویا",
-            engMean:"Dream"
+            wordMean:"فاخر",
+            engMean:"Luxurious"
         },
         {
-            wordMean:"کوه",
-            engMean:"Mountain"
+            wordMean:"تجملی",
+            engMean:"fancy"
         },
         {
-            wordMean:"دامنه کوه",
-            engMean:"Mountain slope"
+            wordMean:"مرموز",
+            engMean:"Mysterious"
         },
         {
-            wordMean:"فلک",
-            engMean:"Sky"
+            wordMean:"حیله گر",
+            engMean:"Trickster"
         },
         {
-            wordMean:"تیزبین",
-            engMean:"Sharp-sighted"
+            wordMean:"خارق العاده",
+            engMean:"Extraordinary"
         },
         {
-            wordMean:"جستجو",
-            engMean:"Search"
+            wordMean:"نفیس",
+            engMean:"Exquisite"
         },
         {
-            wordMean:"طعمه",
-            engMean:"Bait"
+            wordMean:"وانمود کردن",
+            engMean:"Pretend"
         },
         {
-            wordMean:"اندیشید",
-            engMean:"Think"
+            wordMean:"تحسین",
+            engMean:"Admiration"
         },
         {
-            wordMean:"تفریح",
-            engMean:"Entertainment"
+            wordMean:"شایستگی",
+            engMean:"Competence"
         },
         {
-            wordMean:"مرغداری",
-            engMean:"Aviculture"
+            wordMean:"بی پروا",
+            engMean:"Reckless"
         },
         {
-            wordMean:"وضوح",
-            engMean:"Resolution"
+            wordMean:"صادقانه",
+            engMean:"Honestly"
         },
         {
-            wordMean:"نهایت",
-            engMean:"Ultimate"
+            wordMean:"شرم",
+            engMean:"Shame"
         },
         {
-            wordMean:"توانایی",
-            engMean:"Ability"
+            wordMean:"غرور",
+            engMean:"Pride"
         },
         {
-            wordMean:"انتظار",
-            engMean:"Waiting"
+            wordMean:"حقایق",
+            engMean:"Facts"
         },
         {
-            wordMean:"تکان داد",
-            engMean:"Shaken"
+            wordMean:"فریبنده",
+            engMean:"Deceptive"
         },
         {
-            wordMean:"رخ دادن",
-            engMean:"Occurrence"
+            wordMean:"ظواهر",
+            engMean:"Appearances"
         },
         {
-            wordMean:"عظیم",
-            engMean:"Massive"
+            wordMean:"صداقت",
+            engMean:"Honesty"
         },
         {
-            wordMean:"باشکوه",
-            engMean:"Magnificent"
+            wordMean:"فریب",
+            engMean:"Deception"
         },
         {
-            wordMean:"خیره شدن",
-            engMean:"Staring"
-        },
-        {
-            wordMean:"خجالت زده",
-            engMean:"Embarrassed"
-        },
-        {
-            wordMean:"لحن",
-            engMean:"Tone"
-        },
-        {
-            wordMean:"اوج گرفتن",
-            engMean:"Peaking"
-        },
-        {
-            wordMean:"لرزان",
-            engMean:"Shaking"
-        },
-        {
-            wordMean:"سقوط کردن",
-            engMean:"Fall down"
-        },
-        {
-            wordMean:"تشویق",
-            engMean:"Encouragement"
-        },
-        {
-            wordMean:"تمرین مداوم",
-            engMean:"Continuous practice"
-        },
-        {
-            wordMean:"بی وقفه",
-            engMean:"Non-stop"
-        },
-        {
-            wordMean:"اعتماد به نفس",
-            engMean:"Self-confidence"
+            wordMean:"افتخار",
+            engMean:"Honor"
         },
    ],
    accordionItems : [
     {
-      title: " چرا عقاب کوچک فکر می کرد که نمی تواند پرواز کند؟ ",
-      content: "عقاب کوچک به دلیل محیطی که در آن بزرگ شده بود (در میان مرغ ها) و باورهایی که دیگران به او القا کرده بودند، فکر می کرد که توانایی پرواز ندارد.",
+      title: "پادشاه چه ویژگی‌هایی داشت؟",
+      content: "پادشاه به لباس‌های فاخر و ظاهر خود اهمیت زیادی می‌داد و فکر می‌کرد لباس‌ها نشان‌دهنده شایستگی او هستند.",
     },
     {
-      title: "نقش عقاب بزرگ در تغییر زندگی عقاب کوچک چه بود؟",
-      content: "عقاب بزرگ به عنوان یک راهنما و الگو، عقاب کوچک را تشویق کرد تا توانایی های واقعی خود را کشف کند.",
+      title: "دو مرد حیله‌گر چه ادعایی کردند؟",
+      content: "آن‌ها ادعا کردند لباسی می‌دوزند که فقط افراد باهوش و شایسته می‌توانند آن را ببینند",
     },
     {
-      title: "اگر عقاب کوچک تسلیم ترس خود می شد و هرگز پرواز نمی کرد، چه اتفاقی می افتاد؟",
-      content: "اگر عقاب کوچک تسلیم ترس خود می شد، هرگز نمی فهمید که واقعاً چه توانایی هایی دارد و تا آخر عمر در محدودیت های خود باقی می ماند.",
+      title: "چرا وزیر و مشاوران حقیقت را نگفتند؟",
+      content: "چون از ترس اینکه مبادا احمق یا نالایق به نظر برسند، حقیقت را پنهان کردند",
     },
     {
-      title: "چرا عقاب کوچک در ابتدا فقط چند متر پرواز کرد؟ آیا این شکست محسوب می شود؟",
-      content: "نه، این شکست نبود. پرواز کردن یک فرآیند است و نیاز به تمرین و صبر دارد. عقاب کوچک با هر بار تلاش، اعتماد به نفس بیشتری پیدا کرد و در نهایت به موفقیت رسید. ",
+      title: "نقش کودک در داستان چه بود؟",
+      content: "کودک با صداقت خود فریاد زد: 'پادشاه لباس ندارد!' و حقیقت را آشکار کرد",
+    },
+    {
+      title: "چرا مردم شهر لباس نامرئی را تحسین کردند؟",
+      content: "چون از ترس قضاوت دیگران، جرأت نداشتند حقیقت را بگویند",
     },
   ]
     
