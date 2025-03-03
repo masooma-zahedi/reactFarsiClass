@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import { ChangeBg } from './classes/ChangeBg';
 
 export const Header = () => {
+  const [showbg,setShowbg] = useState(false);
+  const handlebg = ()=>{
+    setShowbg(true)
+  }
   return (
     <>
         <nav className="navbar navbar-expand-lg navbar-dark bg-success">
@@ -16,15 +21,20 @@ export const Header = () => {
                     <NavLink className="nav-link active" aria-current="page" to="/">Alphabet</NavLink>
                     </li>
                     <li className="nav-item">
-                    <NavLink className="nav-link" to="/word/verbs-1">word</NavLink>
+                    <NavLink className="nav-link" to="/word/verbs-1">Word</NavLink>
                     </li>
                     <li className="nav-item">
-                    <NavLink className="nav-link" to="/story/floraN1">story</NavLink>
+                    <NavLink className="nav-link" to="/story/floraN1">Story</NavLink>
+                    </li>
+                    <li className="nav-item">
+                    <NavLink className="nav-link" onClick={handlebg} to="">ChangeBg</NavLink>
                     </li>
                 </ul>
                 </div>
             </div>
         </nav>
+        {showbg && <ChangeBg/>}
+        {/* <ChangeBg/> */}
     </>
   )
 }

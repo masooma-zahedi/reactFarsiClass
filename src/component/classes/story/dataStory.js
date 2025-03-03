@@ -11,6 +11,7 @@ export let contentListStory = {
         {title:"روباه جوان",targetHref :"fox-2"},
         {title:"رویای پرواز",targetHref :"eagle-2"},
         {title:"لباس پادشاه ",targetHref :"kingCloth"},
+        {title:"دختر کبریت فروش",targetHref :"kebritSell"},
         ],
     },
 }
@@ -736,6 +737,113 @@ export let king1 ={
     titleStory:"لباس پادشاه",
     targetHref :"kingCloth",
     imageStory:["/images/assetStory/king-1.png","/images/assetStory/king-2.png",],
+    wordPart:[
+        {
+            wordMean:"فاخر",
+            engMean:"Luxurious"
+        },
+        {
+            wordMean:"تجملی",
+            engMean:"fancy"
+        },
+        {
+            wordMean:"مرموز",
+            engMean:"Mysterious"
+        },
+        {
+            wordMean:"حیله گر",
+            engMean:"Trickster"
+        },
+        {
+            wordMean:"خارق العاده",
+            engMean:"Extraordinary"
+        },
+        {
+            wordMean:"نفیس",
+            engMean:"Exquisite"
+        },
+        {
+            wordMean:"وانمود کردن",
+            engMean:"Pretend"
+        },
+        {
+            wordMean:"تحسین",
+            engMean:"Admiration"
+        },
+        {
+            wordMean:"شایستگی",
+            engMean:"Competence"
+        },
+        {
+            wordMean:"بی پروا",
+            engMean:"Reckless"
+        },
+        {
+            wordMean:"صادقانه",
+            engMean:"Honestly"
+        },
+        {
+            wordMean:"شرم",
+            engMean:"Shame"
+        },
+        {
+            wordMean:"غرور",
+            engMean:"Pride"
+        },
+        {
+            wordMean:"حقایق",
+            engMean:"Facts"
+        },
+        {
+            wordMean:"فریبنده",
+            engMean:"Deceptive"
+        },
+        {
+            wordMean:"ظواهر",
+            engMean:"Appearances"
+        },
+        {
+            wordMean:"صداقت",
+            engMean:"Honesty"
+        },
+        {
+            wordMean:"فریب",
+            engMean:"Deception"
+        },
+        {
+            wordMean:"افتخار",
+            engMean:"Honor"
+        },
+   ],
+   accordionItems : [
+    {
+      title: "پادشاه چه ویژگی‌هایی داشت؟",
+      content: "پادشاه به لباس‌های فاخر و ظاهر خود اهمیت زیادی می‌داد و فکر می‌کرد لباس‌ها نشان‌دهنده شایستگی او هستند.",
+    },
+    {
+      title: "دو مرد حیله‌گر چه ادعایی کردند؟",
+      content: "آن‌ها ادعا کردند لباسی می‌دوزند که فقط افراد باهوش و شایسته می‌توانند آن را ببینند",
+    },
+    {
+      title: "چرا وزیر و مشاوران حقیقت را نگفتند؟",
+      content: "چون از ترس اینکه مبادا احمق یا نالایق به نظر برسند، حقیقت را پنهان کردند",
+    },
+    {
+      title: "نقش کودک در داستان چه بود؟",
+      content: "کودک با صداقت خود فریاد زد: 'پادشاه لباس ندارد!' و حقیقت را آشکار کرد",
+    },
+    {
+      title: "چرا مردم شهر لباس نامرئی را تحسین کردند؟",
+      content: "چون از ترس قضاوت دیگران، جرأت نداشتند حقیقت را بگویند",
+    },
+  ]
+    
+}
+export let kebrit ={
+    wordId:"kebrit-1",
+    titleStory:"دختر کبریت فروش",
+    targetHref :"kebritSell",
+    imageStory:["/images/assetStory/kebrit-1.png","/images/assetStory/kebrit-2.png","/images/assetStory/kebrit-3.png",],
     wordPart:[
         {
             wordMean:"فاخر",

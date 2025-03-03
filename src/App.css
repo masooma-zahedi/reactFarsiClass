@@ -60,3 +60,20 @@ html {
 .dd{
   color:  #46237e;
 }
+
+/* for change background component */
+.bgcolor{
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  /* background-color:#d0709b; */
+  display:block;
+  margin: 0 0 0 15px;
+  border: 1px solid red;
+  transition: 0.5s;
+}
+.bgcolor:hover{
+  width: 30px;
+  height: 30px;
+  margin: 0;
+}
