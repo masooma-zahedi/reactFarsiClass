@@ -202,7 +202,7 @@ export let infoCard = [
     {
         mainPic:"./images/assetAlpha/cardAlpha/10-14-24-ع.jpg",
         title:"حرف ع ",
-        examplePic:["./images/assetAlpha/cardAlpha/exampleAlpha/10-23-1-ع.png","./images/assetAlpha/cardAlpha/exampleAlpha/10-23-2-ع.png","./images/assetAlpha/cardAlpha/exampleAlpha/10-23-3-ع.png","./images/assetAlpha/cardAlpha/exampleAlpha/10-23-4-ع.png",],
+        examplePic:["./images/assetAlpha/cardAlpha/exampleAlpha/10-23-1-ع.png","./images/assetAlpha/cardAlpha/exampleAlpha/10-23-2-ع.png","./images/assetAlpha/cardAlpha/exampleAlpha/10-23-3-ع.png","./images/assetAlpha/cardAlpha/exampleAlpha/10-23-4-ع.png","/images/assetAlpha/cardAlpha/3-04-25-ع.png"],
         examplePicId:"exampleAin-1",
         shortSoundPic:"./images/assetAlpha/cardAlpha/10-23-11-ع.jpg",
         shortSoundId:"letterAin-2",

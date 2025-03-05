@@ -846,102 +846,150 @@ export let kebrit ={
     imageStory:["/images/assetStory/kebrit-1.png","/images/assetStory/kebrit-2.png","/images/assetStory/kebrit-3.png",],
     wordPart:[
         {
-            wordMean:"فاخر",
-            engMean:"Luxurious"
+            wordMean:"کبریت",
+            engMean:"Match"
         },
         {
-            wordMean:"تجملی",
-            engMean:"fancy"
+            wordMean:"غروب",
+            engMean:"Sunset"
         },
         {
-            wordMean:"مرموز",
-            engMean:"Mysterious"
+            wordMean:"عصر",
+            engMean:"Evening"
         },
         {
-            wordMean:"حیله گر",
-            engMean:"Trickster"
+            wordMean:"جشن",
+            engMean:"Celebration"
         },
         {
-            wordMean:"خارق العاده",
-            engMean:"Extraordinary"
+            wordMean:"پابرهنه",
+            engMean:"Barefoot"
         },
         {
-            wordMean:"نفیس",
-            engMean:"Exquisite"
+            wordMean:"خیابان",
+            engMean:"Street"
         },
         {
-            wordMean:"وانمود کردن",
-            engMean:"Pretend"
+            wordMean:"حقیقت",
+            engMean:"Truth"
         },
         {
-            wordMean:"تحسین",
-            engMean:"Admiration"
+            wordMean:"شتابان",
+            engMean:"Hastily"
         },
         {
-            wordMean:"شایستگی",
-            engMean:"Competence"
+            wordMean:"کالسکه",
+            engMean:"Stroller"
         },
         {
-            wordMean:"بی پروا",
-            engMean:"Reckless"
+            wordMean:"سرعت وحشتناک",
+            engMean:"Terrible speed"
         },
         {
-            wordMean:"صادقانه",
-            engMean:"Honestly"
+            wordMean:"بازیگوش",
+            engMean:"Playful"
         },
         {
-            wordMean:"شرم",
-            engMean:"Shame"
+            wordMean:"کبود",
+            engMean:"Bruise"
         },
         {
-            wordMean:"غرور",
-            engMean:"Pride"
+            wordMean:"پیش بند",
+            engMean:"Apron"
         },
         {
-            wordMean:"حقایق",
-            engMean:"Facts"
+            wordMean:"درخشیدن",
+            engMean:"Shine"
         },
         {
-            wordMean:"فریبنده",
-            engMean:"Deceptive"
+            wordMean:"غاز بریان",
+            engMean:"Roast goose"
         },
         {
-            wordMean:"ظواهر",
-            engMean:"Appearances"
+            wordMean:"خوشمزه",
+            engMean:"Delicious"
         },
         {
-            wordMean:"صداقت",
-            engMean:"Honesty"
+            wordMean:"کتک مفصلی",
+            engMean:"Joint pain"
         },
         {
-            wordMean:"فریب",
-            engMean:"Deception"
+            wordMean:"شکاف",
+            engMean:"Gap"
         },
         {
-            wordMean:"افتخار",
-            engMean:"Honor"
+            wordMean:"جعبه",
+            engMean:"Box"
+        },
+        {
+            wordMean:"فوق العاده",
+            engMean:"Wonderful"
+        },
+        {
+            wordMean:"بخاری",
+            engMean:"Heater"
+        },
+        {
+            wordMean:"زیورآلات",
+            engMean:"Jewelry"
+        },
+        {
+            wordMean:"خاکستر",
+            engMean:"Ash"
+        },
+        {
+            wordMean:"شفاف",
+            engMean:"Transparent"
+        },
+        {
+            wordMean:"جلوه گری",
+            engMean:"Showmanship"
+        },
+        {
+            wordMean:"مشام",
+            engMean:"Nose"
+        },
+        {
+            wordMean:"سقوط ",
+            engMean:"Fall"
+        },
+        {
+            wordMean:"سرشار",
+            engMean:"Rich"
+        },
+        {
+            wordMean:"آغوش",
+            engMean:"Hug"
+        },
+        {
+            wordMean:"سحرگاه",
+            engMean:"Dawn"
+        },
+        {
+            wordMean:"استقبال",
+            engMean:"Welcome"
         },
    ],
    accordionItems : [
     {
-      title: "پادشاه چه ویژگی‌هایی داشت؟",
-      content: "پادشاه به لباس‌های فاخر و ظاهر خود اهمیت زیادی می‌داد و فکر می‌کرد لباس‌ها نشان‌دهنده شایستگی او هستند.",
+      title: "چرا دخترک نمی‌توانست به خانه برگردد؟",
+      content: "چون هیچ کبریتی نفروخته بود و می‌ترسید پدرش او را تنبیه کند",
     },
     {
-      title: "دو مرد حیله‌گر چه ادعایی کردند؟",
-      content: "آن‌ها ادعا کردند لباسی می‌دوزند که فقط افراد باهوش و شایسته می‌توانند آن را ببینند",
+      title: "وقتی دخترک اولین کبریت را روشن کرد، چه دید؟",
+      content: "یک بخاری بزرگ و گرم را تصور کرد",
     },
     {
-      title: "چرا وزیر و مشاوران حقیقت را نگفتند؟",
-      content: "چون از ترس اینکه مبادا احمق یا نالایق به نظر برسند، حقیقت را پنهان کردند",
+      title: "چرا دخترک احساس می‌کرد کبریت‌ها به او کمک می‌کنند؟",
+      content: "چون کبریت‌ها به او گرما و آرامش موقتی می‌دادند",
     },
     {
-      title: "نقش کودک در داستان چه بود؟",
-      content: "کودک با صداقت خود فریاد زد: 'پادشاه لباس ندارد!' و حقیقت را آشکار کرد",
+      title: "در پایان داستان چه اتفاقی برای دخترک افتاد؟",
+      content: "دخترک از سرما و گرسنگی جان داد",
     },
     {
-      title: "چرا مردم شهر لباس نامرئی را تحسین کردند؟",
-      content: "چون از ترس قضاوت دیگران، جرأت نداشتند حقیقت را بگویند",
+      title: "پیام اصلی داستان چیست؟",
+      content: "داستان درباره فقر، رنج و آرزوهای برآورده نشده است",
     },
   ]
     

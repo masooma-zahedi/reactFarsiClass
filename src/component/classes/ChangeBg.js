@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 export const ChangeBg = () => {
     const [show,setShow]= useState(false);
     const [textbutton, setTextbutton] = useState('bg')
-    const backgroundCir=['rgba(182, 118, 185, 0.25)','rgb(212, 180, 153)','rgba(235, 175, 180, 0.53)','rgba(119, 187, 107, 0.35)','rgba(157, 165, 221, 0.43)'];
+    const backgroundCir=['rgba(182, 118, 185, 0.25)','rgba(225, 217, 62, 0.54)','rgba(235, 175, 180, 0.53)','rgba(119, 187, 107, 0.35)','rgba(157, 165, 221, 0.43)'];
     const [background, setBackground]= useState(backgroundCir);
     useEffect(()=>{
         setBackground([...background,'rgba(153, 147, 35, 0.47)','rgba(215, 167, 112, 0.49)'])
