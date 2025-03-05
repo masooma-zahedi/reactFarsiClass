@@ -1,4 +1,4 @@
-
+import {ChangeBg} from "../../../component/classes/ChangeBg"
 export const MakeWordCarousel = (props) => {
     
     const bobStyle ={
@@ -20,7 +20,10 @@ export const MakeWordCarousel = (props) => {
     <>
         <section id="meaning1">
 
-            <h1 className="bg-info mt-5 rounded-3 p-4 text-center hov" id={props.carouselName.targetHref}>{props.carouselName.title}</h1>
+            <h1 className="bg-info mt-5 rounded-3 p-4 text-center hov" id={props.carouselName.targetHref}>
+                {props.carouselName.title}
+             </h1>
+                <ChangeBg/>
             {/*  **** start carousel**** */}
 
             <div id={props.carouselName.targetCarouselId } className="carousel slide" data-bs-touch="false" data-bs-interval="false">
