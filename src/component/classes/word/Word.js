@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom';
 import { SentenceCarousel } from './SentenceCarousel'
-import { sentenceCarousel, testPicture,testPicture2, testGramer, lazyDonky } from './dataWord';
+import { sentenceCarousel, testPicture,testPicture2, testGramer, lazyDonky, laklak } from './dataWord';
 import { lionBear, realFriends } from './dataWord';
 import { SentencePicture } from './SentencePicture'
 import { TheStory } from '../story/TheStory';
@@ -34,6 +34,7 @@ export const Word = () => {
               <Route path='/lionB2' element={<TheStory srcStory={lionBear}/>}  />
               <Route path='/realF2' element={<TheStory srcStory={realFriends}/>}  />
               <Route path='/lazyD2' element={<TheStory srcStory={lazyDonky}/>}  />
+              <Route path='/lakLak' element={<TheStory srcStory={laklak}/>}  />
             </Routes>
 
 

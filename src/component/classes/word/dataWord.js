@@ -732,6 +732,106 @@ export let lazyDonky ={
 
     
 }
+export let laklak ={
+    wordId:"laklak1",
+    targetHref:"lakLak",
+    titleStory:"داستان لک لک و جوجه هایش",
+    imageStory:["/images/assetWord/storyWord/laklak-1.png","/images/assetWord/storyWord/laklak-2.png",],
+    wordPart:[
+        {
+            wordMean:"لک لک  ",
+            engMean:""
+        },
+        {
+            wordMean:"جوجه لک لک ",
+            engMean:""
+        },
+        {
+            wordMean:"گندم زار ",
+            engMean:""
+        },
+        {
+            wordMean:" لانه",
+            engMean:""
+        },
+        {
+            wordMean:" نیرومند",
+            engMean:""
+        },
+        {
+            wordMean:"پر و بال ",
+            engMean:""
+        },
+        {
+            wordMean:"رشد کردن ",
+            engMean:""
+        },
+        {
+            wordMean:"سرگرم بازی ",
+            engMean:""
+        },
+        {
+            wordMean:" برداشت گندم",
+            engMean:""
+        },
+        {
+            wordMean:"محصول ",
+            engMean:""
+        },
+        {
+            wordMean:" دوان دوان",
+            engMean:""
+        },
+        {
+            wordMean:" کشاورز",
+            engMean:""
+        },
+        {
+            wordMean:" جدی",
+            engMean:""
+        },
+        {
+            wordMean:" جای امن",
+            engMean:""
+        },
+        {
+            wordMean:"تاخیر ",
+            engMean:""
+        },
+        {
+            wordMean:"آستین ",
+            engMean:""
+        },
+        {
+            wordMean:" کارگر",
+            engMean:""
+        },
+        {
+            wordMean:" وابسته",
+            engMean:""
+        },
+    ],
+    accordionItems : [
+        {
+          title: " چرا جوجه های لک لک دوست نداشتند از آن مزرعه بروند؟ ",
+          content: "چون آنجا بزرگ شده بودند و گندمزار را خیلی دوست داشت. ",
+        },
+        {
+          title: "چرا در بار اول، لک لک مادر به جدیت کشاورز شک کرد؟",
+          content: "کشاورزی که بخواد برای درو کردن محصولش فقط از همسایه هاش کمک بگیره، نمی تونه خیلی جدی باشه",
+        },
+        {
+          title: " چرا در دومین بار، لک لک مادر از جوجه هایش خواست که برای رفتن آماده شوند؟ ",
+          content: "چون دیگر او برای انجام کارهای مهم، به دیگران وابسته نبود و می خواست روی پای خودش بایستد.",
+        },
+        {
+          title: " ضرب المثل آستین بالا زدن به چه معناست؟ ",
+          content: "با جدیت و تلاش، شروع به انجام کاری کردن",
+        },
+      ]
+
+    
+}
 // *********************** End Story Parts Data ****************
 
 
@@ -743,6 +843,7 @@ export let contentListWord = {
         {title:"داستان شیر و خرس ",targetHref:"lionB2"},    //tagetHref --> from export data of story
         {title:"دوستی واقعی",targetHref :"realF2"},
         {title:"الاغ تنبل",targetHref :"lazyD2"},   
+        {title:"لک لک و جوجه ها",targetHref :"lakLak"},
         {title:"",targetHref :""},
         ],
     },
