@@ -740,75 +740,75 @@ export let laklak ={
     wordPart:[
         {
             wordMean:"لک لک  ",
-            engMean:""
+            engMean:"Stork"
         },
         {
             wordMean:"جوجه لک لک ",
-            engMean:""
+            engMean:"Stork chick"
         },
         {
             wordMean:"گندم زار ",
-            engMean:""
+            engMean:"Wheat field"
         },
         {
             wordMean:" لانه",
-            engMean:""
+            engMean:"Nest"
         },
         {
             wordMean:" نیرومند",
-            engMean:""
+            engMean:"Strong"
         },
         {
             wordMean:"پر و بال ",
-            engMean:""
+            engMean:"Wing"
         },
         {
             wordMean:"رشد کردن ",
-            engMean:""
+            engMean:"To grow"
         },
         {
             wordMean:"سرگرم بازی ",
-            engMean:""
+            engMean:"Having fun playing"
         },
         {
             wordMean:" برداشت گندم",
-            engMean:""
+            engMean:"Wheat harvest"
         },
         {
             wordMean:"محصول ",
-            engMean:""
+            engMean:"Product"
         },
         {
             wordMean:" دوان دوان",
-            engMean:""
+            engMean:"Run Run"
         },
         {
             wordMean:" کشاورز",
-            engMean:""
+            engMean:"Farmer"
         },
         {
             wordMean:" جدی",
-            engMean:""
+            engMean:"Serious"
         },
         {
             wordMean:" جای امن",
-            engMean:""
+            engMean:"Safe place"
         },
         {
             wordMean:"تاخیر ",
-            engMean:""
+            engMean:"Delay"
         },
         {
             wordMean:"آستین ",
-            engMean:""
+            engMean:"Sleeve"
         },
         {
             wordMean:" کارگر",
-            engMean:""
+            engMean:"Worker"
         },
         {
             wordMean:" وابسته",
-            engMean:""
+            engMean:"Dependent"
         },
     ],
     accordionItems : [
