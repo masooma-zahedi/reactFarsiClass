@@ -29,6 +29,7 @@ export let storyAlpha2={
     "/images/assetAlpha/alphaStory/variety/variety-5.jpg",
     "/images/assetAlpha/alphaStory/variety/variety-6.jpg",
     "/images/assetAlpha/alphaStory/variety/variety-7.jpg",
+    "/images/assetAlpha/alphaStory/variety/variety-8.png",
 ]}
 
 
