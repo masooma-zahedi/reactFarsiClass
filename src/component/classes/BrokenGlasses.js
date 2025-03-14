@@ -24,7 +24,7 @@ const BrokenGlass = ({ words }) => {
           >
             {words.map((word, index) => (
               <div
-              className="border border-danger"
+              className="border border-success"
                 key={index}
                 onClick={() => handleClick(index)}
                 style={{

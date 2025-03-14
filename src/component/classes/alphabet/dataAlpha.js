@@ -90,7 +90,7 @@ export let contentListAlpha = {
         brokenWords :{
             idModal:"brokenWords11",
             infoWords:[
-            {id:nanoid(4),title:"جدول شماره 1",targetHref:"brokenW-1",idLetter:"broken-1"},
+            {id:nanoid(4),title:" حرف ق",targetHref:"brokenW-1",idLetter:"broken-1"},
             {id:nanoid(4),title:"جدول شماره 2",targetHref:"brokenW-2",idLetter:"broken-2"},
             ],
         },
@@ -2617,8 +2617,8 @@ export let animals1 = {
 // ******************************* End MakeWordCarousel data *********************
 
 // ************************* start BrokenGlassess for word Pract *******************
-export let words1 = ["قاب","رقیق","حقوق","نقره","صادق","قارچ","ناطق","یقین","نقاش","قدرت","عاشق","سقف","قاشق","حقیر","قشنگ","قلب","مقصد","قرمز","قانون","قامت",];
-export let words2 = ['hjoiuoi', 'Bogyuyotstrap', 'Bogyuyotstrap', 'Bogyuyotstrap', 'Bogyuyotstrap', 'Bogyuyotstrap', 'Bogyuyotstrap', 'JavaSccdsipt', 'ftfyufusgfs','masooma', 'mujtaba', 'mujtaba', 'mujtaba', 'mujtaba', 'mujtaba', 'mujtaba', 'zahra', 'Fatima'];
+export let words1 = ["قاب","رَقیق","حُقوق","نُقرِه","صادِق","قارچ","ناطِق","یَقین","نَقاش","قُدرَت","عاشِق","سَقف","قاشُق","حَقیر","قَشَنگ","قَلب","مَقصَد","قِرمِز","قانون","قامَت",];
+export let words2 = ['صابون','اِصرار','صَندوق','عَصا','وِصال','صَبر','صَندَلی','صَدر','مُصیبَت','قِصه','صَفحِه','صِداقَت','صُحبَت','بَصیرَت','وَصف','خالِص','اَصلی','تَصمیم','تَصویر','صورَت', ];
 
 // side bar dose not work
 
