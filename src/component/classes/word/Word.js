@@ -37,9 +37,6 @@ export const Word = () => {
               <Route path='/lakLak' element={<TheStory srcStory={laklak}/>}  />
             </Routes>
 
-
-
-
           </div>
         </div>
         

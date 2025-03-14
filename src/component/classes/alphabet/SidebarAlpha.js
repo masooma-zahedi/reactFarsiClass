@@ -69,6 +69,11 @@ export const SidebarAlpha = ({setShowShort,idCarouselAlpha}) => {
           </li>
 
           <li className="nav-item d-grid  ">
+            <button type="button" className="border-0 text-success h6 nav-link" data-bs-toggle="modal" data-bs-target={`#${contentListAlpha.brokenWords.idModal}`}>
+             جدول کلمات 
+            </button>
+          </li>
+          <li className="nav-item d-grid  ">
             <button type="button" className="border-0 text-success h6 nav-link" data-bs-toggle="modal" data-bs-target={`#${contentListAlpha.gameTable.idModal}`}>
              بازی جدول 
             </button>
@@ -88,6 +93,7 @@ export const SidebarAlpha = ({setShowShort,idCarouselAlpha}) => {
 
     <Modal id={`${contentListAlpha.newword.idModal}`} data={contentListAlpha.newword.infoWords}/>
     <Modal id={`${contentListAlpha.readTogether.idModal}`} data={contentListAlpha.readTogether.infoWords}/>
+    <Modal id={`${contentListAlpha.brokenWords.idModal}`} data={contentListAlpha.brokenWords.infoWords}/>
     <Modal id={`${contentListAlpha.gameTable.idModal}`} data={contentListAlpha.gameTable.infoWords}/>
     <Modal id={`${contentListAlpha.storyAlpha.idModal}`} data={contentListAlpha.storyAlpha.infoWords}/>
  

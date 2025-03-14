@@ -87,6 +87,13 @@ export let contentListAlpha = {
             {id:nanoid(4),title:"با هم بخوانیم-5",targetHref:"read-5",idLetter:"readtogether-5"},
             ],
         },
+        brokenWords :{
+            idModal:"brokenWords11",
+            infoWords:[
+            {id:nanoid(4),title:"جدول شماره 1",targetHref:"brokenW-1",idLetter:"broken-1"},
+            {id:nanoid(4),title:"جدول شماره 2",targetHref:"brokenW-2",idLetter:"broken-2"},
+            ],
+        },
         gameTable :{
             idModal:"tableGame1",
             infoWords:[
@@ -2608,6 +2615,14 @@ export let animals1 = {
 }
 
 // ******************************* End MakeWordCarousel data *********************
+
+// ************************* start BrokenGlassess for word Pract *******************
+export let words1 = ["قاب","رقیق","حقوق","نقره","صادق","قارچ","ناطق","یقین","نقاش","قدرت","عاشق","سقف","قاشق","حقیر","قشنگ","قلب","مقصد","قرمز","قانون","قامت",];
+export let words2 = ['hjoiuoi', 'Bogyuyotstrap', 'Bogyuyotstrap', 'Bogyuyotstrap', 'Bogyuyotstrap', 'Bogyuyotstrap', 'Bogyuyotstrap', 'JavaSccdsipt', 'ftfyufusgfs','masooma', 'mujtaba', 'mujtaba', 'mujtaba', 'mujtaba', 'mujtaba', 'mujtaba', 'zahra', 'Fatima'];
+
+// side bar dose not work
+
+// ************************* End BrokenGlassess for word Pract *******************
 
 
 

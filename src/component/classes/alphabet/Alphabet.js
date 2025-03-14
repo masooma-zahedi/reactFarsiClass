@@ -1,5 +1,6 @@
 import {CardAlphaCompo,} from "./cardAlpha/CardAlphaCompo.js";
-import {alphaCrousel, alphaLongCrousel, alphaShortCrousel, kitchenDataTable, storyAlpha1, storyAlpha2, sylabelWord1, sylabelWord2, sylabelWord3, sylabelWord4, sylabelWord5, tableAnimals, tableColor_body, tableDataNum, tableProfessions} from "./dataAlpha.js"
+import {alphaCrousel, alphaLongCrousel,words1, alphaShortCrousel, kitchenDataTable, storyAlpha1, storyAlpha2, sylabelWord1, sylabelWord2, sylabelWord3, sylabelWord4, sylabelWord5, tableAnimals, tableColor_body, tableDataNum, tableProfessions, words2} from "./dataAlpha.js";
+// import {words} from "./dataAlpha.js";
 import {CarouselAlpha} from "./CarouselAlpha"
 import { WordCarousel } from "./WordCarousel";
 import { SylabeWords } from "./SylabeWords";
@@ -8,6 +9,7 @@ import { useState } from "react";
 import FlipButton from "./FlipButton/FlipButton.js";
 import FlippingTable from "./FlippingTable/FlippingTable.js";
 import { Route, Routes } from "react-router-dom";
+import BrokenGlass from "../BrokenGlasses.js";
 
 export const Alphabet = () => {
   const [showShort, setShowShort] = useState(false)
@@ -39,6 +41,8 @@ export const Alphabet = () => {
                                 <Route path='/professions' element={<FlippingTable idTablePlay="prof1" tableData={tableProfessions.photoData} bgTable={tableProfessions.bgTable} showBack1={false} />}  />
                                 <Route path='/animals' element={<FlippingTable idTablePlay="anim1" tableData={tableAnimals.photoData} bgTable={tableAnimals.bgTable} showBack1={true} />}  />
                                 <Route path='/tableColor_body' element={<FlippingTable idTablePlay="colorBo1" tableData={tableColor_body.photoData} bgTable={tableColor_body.bgTable} showBack1={true} />}  />
+                                <Route path='/brokenW-1' element={<BrokenGlass words={words1} />}  />
+                                <Route path='/brokenW-2' element={<BrokenGlass words={words2} />}  />
               </Routes>
               <WordCarousel/>
             </div>
