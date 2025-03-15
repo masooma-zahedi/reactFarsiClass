@@ -19,6 +19,28 @@ export let storyAlpha1={
     "/images/assetAlpha/alphaStory/family/family-3.png",
     "/images/assetAlpha/alphaStory/family/family-4.png",
 ]}
+export let storyAlpha3={
+    buttonId:"storyAlp3",
+    carouselImg:[
+        "/images/assetAlpha/alphaStory/anty/anty-1.jpg",
+        "/images/assetAlpha/alphaStory/anty/anty-2.jpg",
+        "/images/assetAlpha/alphaStory/anty/anty-3.jpg",
+        "/images/assetAlpha/alphaStory/anty/anty-4.jpg",
+        "/images/assetAlpha/alphaStory/anty/anty-5.jpg",
+        "/images/assetAlpha/alphaStory/anty/anty-6.jpg",
+        "/images/assetAlpha/alphaStory/anty/anty-7.jpg",
+        "/images/assetAlpha/alphaStory/anty/anty-8.jpg",
+        "/images/assetAlpha/alphaStory/anty/anty-9.jpg",
+        "/images/assetAlpha/alphaStory/anty/anty-10.jpg",
+        "/images/assetAlpha/alphaStory/anty/anty-11.jpg",
+        "/images/assetAlpha/alphaStory/anty/anty-12.jpg",
+        "/images/assetAlpha/alphaStory/anty/anty-13.jpg",
+        "/images/assetAlpha/alphaStory/anty/anty-14.jpg",
+        "/images/assetAlpha/alphaStory/anty/anty-15.jpg",
+        "/images/assetAlpha/alphaStory/anty/anty-16.jpg",
+        "/images/assetAlpha/alphaStory/anty/anty-17.jpg",
+        "/images/assetAlpha/alphaStory/anty/anty-18.jpg",
+]}
 export let storyAlpha2={
     buttonId:"storyAlp2",
     carouselImg:[
@@ -109,6 +131,7 @@ export let contentListAlpha = {
             infoWords:[
             {id:nanoid(4),title:"خانواده من",targetHref:"storyA1",idLetter:"storyAl-1"},
             {id:nanoid(4),title:"آخر هفته",targetHref:"storyA2",idLetter:"storyAl-2"},
+            {id:nanoid(4),title:"مورچه تنبل",targetHref:"storyA3",idLetter:"storyAl-3"},
             ],
         },
 }

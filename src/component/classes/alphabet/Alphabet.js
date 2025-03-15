@@ -1,5 +1,5 @@
 import {CardAlphaCompo,} from "./cardAlpha/CardAlphaCompo.js";
-import {alphaCrousel, alphaLongCrousel,words1, alphaShortCrousel, kitchenDataTable, storyAlpha1, storyAlpha2, sylabelWord1, sylabelWord2, sylabelWord3, sylabelWord4, sylabelWord5, tableAnimals, tableColor_body, tableDataNum, tableProfessions, words2} from "./dataAlpha.js";
+import {alphaCrousel, alphaLongCrousel,words1, alphaShortCrousel, kitchenDataTable, storyAlpha1, storyAlpha2, sylabelWord1, sylabelWord2, sylabelWord3, sylabelWord4, sylabelWord5, tableAnimals, tableColor_body, tableDataNum, tableProfessions, words2, storyAlpha3} from "./dataAlpha.js";
 // import {words} from "./dataAlpha.js";
 import {CarouselAlpha} from "./CarouselAlpha"
 import { WordCarousel } from "./WordCarousel";
@@ -31,6 +31,7 @@ export const Alphabet = () => {
                                 <Route path='/longSound' element={<CarouselAlpha  idCarouselAlpha="longhref1"  dataCarousel={alphaLongCrousel}/>}  />
                                 <Route path='/storyA1' element={<CarouselAlpha  idCarouselAlpha="storyAl1"  dataCarousel={storyAlpha1}/>}  />
                                 <Route path='/storyA2' element={<CarouselAlpha  idCarouselAlpha="storyAl2"  dataCarousel={storyAlpha2}/>}  />
+                                <Route path='/storyA3' element={<CarouselAlpha  idCarouselAlpha="storyAl3"  dataCarousel={storyAlpha3}/>}  />
                                 <Route path='/read-1' element={<SylabeWords infoSentence={sylabelWord1}/>}  />
                                 <Route path='/read-2' element={<SylabeWords infoSentence={sylabelWord2}/>}  />
                                 <Route path='/read-3' element={<SylabeWords infoSentence={sylabelWord3}/>}  />
