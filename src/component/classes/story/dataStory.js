@@ -12,6 +12,7 @@ export let contentListStory = {
         {title:"رویای پرواز",targetHref :"eagle-2"},
         {title:"لباس پادشاه ",targetHref :"kingCloth"},
         {title:"دختر کبریت فروش",targetHref :"kebritSell"},
+        {title:"پیرمرد و دریا",targetHref :"oldmanSea"},
         ],
     },
 }
@@ -990,6 +991,38 @@ export let kebrit ={
     {
       title: "پیام اصلی داستان چیست؟",
       content: "داستان درباره فقر، رنج و آرزوهای برآورده نشده است",
+    },
+  ]
+    
+}
+
+export let oldmanSea ={
+    wordId:"oldman-1",
+    titleStory:"پیرمرد و دریا",
+    targetHref :"oldmanSea",
+    imageStory:["/images/assetStory/oldman&sea-1.png",],
+    wordPart:[
+        {
+            wordMean:"",
+            engMean:""
+        },
+   ],
+   accordionItems : [
+    {
+      title: "",
+      content: "",
+    },
+    {
+      title: "",
+      content: "",
+    },
+    {
+      title: "",
+      content: "",
+    },
+    {
+      title: "",
+      content: "",
     },
   ]
     

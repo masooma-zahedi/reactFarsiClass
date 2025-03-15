@@ -91,7 +91,7 @@ export let contentListAlpha = {
             idModal:"brokenWords11",
             infoWords:[
             {id:nanoid(4),title:" حرف ق",targetHref:"brokenW-1",idLetter:"broken-1"},
-            {id:nanoid(4),title:"جدول شماره 2",targetHref:"brokenW-2",idLetter:"broken-2"},
+            {id:nanoid(4),title:" حرف ص",targetHref:"brokenW-2",idLetter:"broken-2"},
             ],
         },
         gameTable :{
