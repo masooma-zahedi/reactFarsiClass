@@ -19,6 +19,19 @@ export let storyAlpha1={
     "/images/assetAlpha/alphaStory/family/family-3.png",
     "/images/assetAlpha/alphaStory/family/family-4.png",
 ]}
+export let storyAlpha2={
+    buttonId:"storyAlp2",
+    carouselImg:[
+        "/images/assetAlpha/alphaStory/variety/variety-1.jpg",
+        "/images/assetAlpha/alphaStory/variety/variety-2.jpg",
+        "/images/assetAlpha/alphaStory/variety/variety-3.jpg",
+        "/images/assetAlpha/alphaStory/variety/variety-4.jpg",
+        "/images/assetAlpha/alphaStory/variety/variety-5.jpg",
+        "/images/assetAlpha/alphaStory/variety/variety-6.jpg",
+        "/images/assetAlpha/alphaStory/variety/variety-7.jpg",
+        "/images/assetAlpha/alphaStory/variety/variety-8.png",
+    ]}
+    
 export let storyAlpha3={
     buttonId:"storyAlp3",
     carouselImg:[
@@ -41,19 +54,6 @@ export let storyAlpha3={
         "/images/assetAlpha/alphaStory/anty/anty-17.jpg",
         "/images/assetAlpha/alphaStory/anty/anty-18.jpg",
 ]}
-export let storyAlpha2={
-    buttonId:"storyAlp2",
-    carouselImg:[
-    "/images/assetAlpha/alphaStory/variety/variety-1.jpg",
-    "/images/assetAlpha/alphaStory/variety/variety-2.jpg",
-    "/images/assetAlpha/alphaStory/variety/variety-3.jpg",
-    "/images/assetAlpha/alphaStory/variety/variety-4.jpg",
-    "/images/assetAlpha/alphaStory/variety/variety-5.jpg",
-    "/images/assetAlpha/alphaStory/variety/variety-6.jpg",
-    "/images/assetAlpha/alphaStory/variety/variety-7.jpg",
-    "/images/assetAlpha/alphaStory/variety/variety-8.png",
-]}
-
 
 
 // &&&&&& start short sound
@@ -114,6 +114,7 @@ export let contentListAlpha = {
             infoWords:[
             {id:nanoid(4),title:" حرف ق",targetHref:"brokenW-1",idLetter:"broken-1"},
             {id:nanoid(4),title:" حرف ص",targetHref:"brokenW-2",idLetter:"broken-2"},
+            {id:nanoid(4),title:" حرف غ",targetHref:"brokenW-3",idLetter:"broken-3"},
             ],
         },
         gameTable :{
@@ -2642,6 +2643,7 @@ export let animals1 = {
 // ************************* start BrokenGlassess for word Pract *******************
 export let words1 = ["قاب","رَقیق","حُقوق","نُقرِه","صادِق","قارچ","ناطِق","یَقین","نَقاش","قُدرَت","عاشِق","سَقف","قاشُق","حَقیر","قَشَنگ","قَلب","مَقصَد","قِرمِز","قانون","قامَت",];
 export let words2 = ['صابون','اِصرار','صَندوق','عَصا','وِصال','صَبر','صَندَلی','صَدر','مُصیبَت','قِصه','صَفحِه','صِداقَت','صُحبَت','بَصیرَت','وَصف','خالِص','اَصلی','تَصمیم','تَصویر','صورَت', ];
+export let words3 = ["غَذا","باغ","غُرور","غُروب","غار","غَریب","غُرِش","غَضَب","باغدار","بَستر","جَذاب","خَطَر","ضَرب","صَبر","تاریخ","پِدَر","سِپَس","بازار","سَبزی","ساعَت",];
 
 // side bar dose not work
 

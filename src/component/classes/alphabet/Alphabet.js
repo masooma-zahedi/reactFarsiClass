@@ -1,5 +1,5 @@
 import {CardAlphaCompo,} from "./cardAlpha/CardAlphaCompo.js";
-import {alphaCrousel, alphaLongCrousel,words1, alphaShortCrousel, kitchenDataTable, storyAlpha1, storyAlpha2, sylabelWord1, sylabelWord2, sylabelWord3, sylabelWord4, sylabelWord5, tableAnimals, tableColor_body, tableDataNum, tableProfessions, words2, storyAlpha3} from "./dataAlpha.js";
+import {alphaCrousel, alphaLongCrousel,words1, alphaShortCrousel, kitchenDataTable, storyAlpha1, storyAlpha2, sylabelWord1, sylabelWord2, sylabelWord3, sylabelWord4, sylabelWord5, tableAnimals, tableColor_body, tableDataNum, tableProfessions, words2, storyAlpha3, words3} from "./dataAlpha.js";
 // import {words} from "./dataAlpha.js";
 import {CarouselAlpha} from "./CarouselAlpha"
 import { WordCarousel } from "./WordCarousel";
@@ -44,6 +44,7 @@ export const Alphabet = () => {
                                 <Route path='/tableColor_body' element={<FlippingTable idTablePlay="colorBo1" tableData={tableColor_body.photoData} bgTable={tableColor_body.bgTable} showBack1={true} />}  />
                                 <Route path='/brokenW-1' element={<BrokenGlass words={words1} />}  />
                                 <Route path='/brokenW-2' element={<BrokenGlass words={words2} />}  />
+                                <Route path='/brokenW-3' element={<BrokenGlass words={words3} />}  />
               </Routes>
               <WordCarousel/>
             </div>
