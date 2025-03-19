@@ -6,6 +6,7 @@ import { lionBear, realFriends } from './dataWord';
 import { SentencePicture } from './SentencePicture'
 import { TheStory } from '../story/TheStory';
 import { SidebarWord } from './SidebarWord.js';
+import WordToSentence from './wordToSentence.js';
 
 export const Word = () => {
   return (
@@ -35,10 +36,11 @@ export const Word = () => {
               <Route path='/realF2' element={<TheStory srcStory={realFriends}/>}  />
               <Route path='/lazyD2' element={<TheStory srcStory={lazyDonky}/>}  />
               <Route path='/lakLak' element={<TheStory srcStory={laklak}/>}  />
+              <Route path='/wordSentence' element={<WordToSentence />}  />
             </Routes>
-
           </div>
         </div>
+              
         
     
     </>

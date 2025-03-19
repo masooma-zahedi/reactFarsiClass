@@ -1,3 +1,21 @@
+// **********Start Sidebar Word*****************
+export let contentListWord = {
+    newword :{
+        idModal:"wordList",
+        infoWords:[
+        {title:"داستان شیر و خرس ",targetHref:"lionB2"},    //tagetHref --> from export data of story
+        {title:"دوستی واقعی",targetHref :"realF2"},
+        {title:"الاغ تنبل",targetHref :"lazyD2"},   
+        {title:"لک لک و جوجه ها",targetHref :"lakLak"},
+        {title:"",targetHref :""},
+        ],
+    },
+}
+
+// ********** End Sidebar Word*****************
+
+
+
 export let sentenceCarousel = {
     carouselInfo:{
         targetCarouselId:"letterHa1",
@@ -835,18 +853,3 @@ export let laklak ={
 // *********************** End Story Parts Data ****************
 
 
-// **********Start Sidebar Word*****************
-export let contentListWord = {
-    newword :{
-        idModal:"wordList",
-        infoWords:[
-        {title:"داستان شیر و خرس ",targetHref:"lionB2"},    //tagetHref --> from export data of story
-        {title:"دوستی واقعی",targetHref :"realF2"},
-        {title:"الاغ تنبل",targetHref :"lazyD2"},   
-        {title:"لک لک و جوجه ها",targetHref :"lakLak"},
-        {title:"",targetHref :""},
-        ],
-    },
-}
-
-// ********** End Sidebar Word*****************
