@@ -1903,21 +1903,21 @@ export let testSchoolSupplies = {
             sylabelWord : "قِی + چی --> قِیچی",
             active :""
         },
-        {
-            image :"./images/assetAlpha/school-supplies/12-30-9-sch.png",
-            sylabelWord : "گو + نی + یا --> گونیا",
-            active :""
-        },
-        {
-            image :"./images/assetAlpha/school-supplies/12-30-10-sch.png",
-            sylabelWord : "نَ + قا + لِه --> نَقالِه",
-            active :""
-        },
-        {
-            image :"./images/assetAlpha/school-supplies/12-30-11-sch.png",
-            sylabelWord : "پَر + گار --> پَرگار",
-            active :""
-        },
+        // {
+        //     image :"./images/assetAlpha/school-supplies/12-30-9-sch.png",
+        //     sylabelWord : "گو + نی + یا --> گونیا",
+        //     active :""
+        // },
+        // {
+        //     image :"./images/assetAlpha/school-supplies/12-30-10-sch.png",
+        //     sylabelWord : "نَ + قا + لِه --> نَقالِه",
+        //     active :""
+        // },
+        // {
+        //     image :"./images/assetAlpha/school-supplies/12-30-11-sch.png",
+        //     sylabelWord : "پَر + گار --> پَرگار",
+        //     active :""
+        // },
         {
             image :"./images/assetAlpha/school-supplies/12-30-12-sch.png",
             sylabelWord : "دَف + تَر --> دَفتَر",

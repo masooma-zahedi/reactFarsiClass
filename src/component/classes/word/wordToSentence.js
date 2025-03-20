@@ -8,7 +8,7 @@ const WordToSentence = () => {
   const [sentencesList, setSentencesList] = useState([]);
 
     // لیست رنگ‌های تصادفی برای پس‌زمینه جملات
-    const colors = [' #FFCCCB', ' #ADD8E6','rgb(229, 154, 240)', ' #90EE90', ' #FFD700', ' #DDA0DD', ' #87CEEB', ' #FFA07A'];
+    const colors = [' #FFCCCB', 'rgba(119, 71, 85, 0.73)','rgb(229, 154, 240)', ' #90EE90', ' #FFD700', ' #DDA0DD', ' #87CEEB', ' #FFA07A'];
 
 
   const handleAddWord = () => {
