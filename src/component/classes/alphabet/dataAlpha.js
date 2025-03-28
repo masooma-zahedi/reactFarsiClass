@@ -112,9 +112,11 @@ export let contentListAlpha = {
         brokenWords :{
             idModal:"brokenWords11",
             infoWords:[
+            {id:nanoid(4),title:" حرف ر",targetHref:"brokenW-5",idLetter:"broken-5"},
             {id:nanoid(4),title:" حرف ق",targetHref:"brokenW-1",idLetter:"broken-1"},
             {id:nanoid(4),title:" حرف ص",targetHref:"brokenW-2",idLetter:"broken-2"},
             {id:nanoid(4),title:" حرف غ",targetHref:"brokenW-3",idLetter:"broken-3"},
+            {id:nanoid(4),title:" حرف ف",targetHref:"brokenW-4",idLetter:"broken-4"},
             ],
         },
         gameTable :{
@@ -2500,139 +2502,139 @@ export let animals1 = {
     alphaAnimal : [
         {
             image :"./images/assetAlpha/animals/anim-28.png",
-            sylabelWord : "",
+            sylabelWord : "Polar bear",
         },
         {
             image :"./images/assetAlpha/animals/anim-29.png",
-            sylabelWord : "",
+            sylabelWord : "Deer",
         },
         {
             image :"./images/assetAlpha/animals/anim-30.png",
-            sylabelWord : "",
+            sylabelWord : "Crocodile",
         },
         {
             image :"./images/assetAlpha/animals/anim-31.png",
-            sylabelWord : "",
+            sylabelWord : "Fox",
         },
         {
             image :"./images/assetAlpha/animals/anim-32.png",
-            sylabelWord : "",
+            sylabelWord : "ostrich",
         },
         {
             image :"./images/assetAlpha/animals/anim-33.png",
-            sylabelWord : "",
+            sylabelWord : "Woodpecker",
         },
         {
             image :"./images/assetAlpha/animals/anim-34.png",
-            sylabelWord : "",
+            sylabelWord : "Cat",
         },
         {
             image :"./images/assetAlpha/animals/anim-35.png",
-            sylabelWord : "",
+            sylabelWord : "Chimpanzee",
         },
         {
             image :"./images/assetAlpha/animals/anim-36.png",
-            sylabelWord : "",
+            sylabelWord : "Frog",
         },
         {
             image :"./images/assetAlpha/animals/anim-37.png",
-            sylabelWord : "",
+            sylabelWord : "Kangaroo",
         },
         {
             image :"./images/assetAlpha/animals/anim-38.png",
-            sylabelWord : "",
+            sylabelWord : "Hamster",
         },
         {
             image :"./images/assetAlpha/animals/anim-39.png",
-            sylabelWord : "",
+            sylabelWord : "Squirrel",
         },
         {
             image :"./images/assetAlpha/animals/anim-40.png",
-            sylabelWord : "",
+            sylabelWord : "Bear",
         },
         {
             image :"./images/assetAlpha/animals/anim-41.png",
-            sylabelWord : "",
+            sylabelWord : "Horse",
         },
         {
             image :"./images/assetAlpha/animals/anim-42.png",
-            sylabelWord : "",
+            sylabelWord : "Monkey",
         },
         {
             image :"./images/assetAlpha/animals/anim-43.png",
-            sylabelWord : "",
+            sylabelWord : "Zebra",
         },
         {
             image :"./images/assetAlpha/animals/anim-44.png",
-            sylabelWord : "",
+            sylabelWord : "Gorilla",
         },
         {
             image :"./images/assetAlpha/animals/anim-45.png",
-            sylabelWord : "",
+            sylabelWord : "Hippopotamus",
         },
         {
             image :"./images/assetAlpha/animals/anim-46.png",
-            sylabelWord : "",
+            sylabelWord : "Shrimp",
         },
         {
             image :"./images/assetAlpha/animals/anim-47.png",
-            sylabelWord : "",
+            sylabelWord : "Wolf",
         },
         {
             image :"./images/assetAlpha/animals/anim-48.png",
-            sylabelWord : "",
+            sylabelWord : "Koala",
         },
         {
             image :"./images/assetAlpha/animals/anim-49.png",
-            sylabelWord : "",
+            sylabelWord : "Killer whale",
         },
         {
             image :"./images/assetAlpha/animals/anim-50.png",
-            sylabelWord : "",
+            sylabelWord : "Lemur",
         },
         {
             image :"./images/assetAlpha/animals/anim-51.png",
-            sylabelWord : "",
+            sylabelWord : "Panda",
         },
         {
             image :"./images/assetAlpha/animals/anim-52.png",
-            sylabelWord : "",
+            sylabelWord : "Octopus",
         },
         {
             image :"./images/assetAlpha/animals/anim-53.png",
-            sylabelWord : "",
+            sylabelWord : "Giraffe",
         },
         {
             image :"./images/assetAlpha/animals/anim-54.png",
-            sylabelWord : "",
+            sylabelWord : "Cheetah",
         },
         {
             image :"./images/assetAlpha/animals/anim-55.png",
-            sylabelWord : "",
+            sylabelWord : "Hyena",
         },
         {
             image :"./images/assetAlpha/animals/anim-56.png",
-            sylabelWord : "",
+            sylabelWord : "Sea lion",
         },
         {
             image :"./images/assetAlpha/animals/anim-57.png",
-            sylabelWord : "",
+            sylabelWord : "Eagle",
         },
         {
             image :"./images/assetAlpha/animals/anim-58.png",
-            sylabelWord : "",
+            sylabelWord : "Peacock",
         },
         {
             image :"./images/assetAlpha/animals/anim-59.png",
-            sylabelWord : "",
+            sylabelWord : "Tiger",
         },
         {
             image :"./images/assetAlpha/animals/anim-60.png",
-            sylabelWord : "",
+            sylabelWord : "Elephant",
         },
         {
             image :"./images/assetAlpha/animals/anim-61.png",
-            sylabelWord : "",
+            sylabelWord : "Lion",
         },
 
     ]
@@ -2644,6 +2646,8 @@ export let animals1 = {
 export let words1 = ["قاب","رَقیق","حُقوق","نُقرِه","صادِق","قارچ","ناطِق","یَقین","نَقاش","قُدرَت","عاشِق","سَقف","قاشُق","حَقیر","قَشَنگ","قَلب","مَقصَد","قِرمِز","قانون","قامَت",];
 export let words2 = ['صابون','اِصرار','صَندوق','عَصا','وِصال','صَبر','صَندَلی','صَدر','مُصیبَت','قِصه','صَفحِه','صِداقَت','صُحبَت','بَصیرَت','وَصف','خالِص','اَصلی','تَصمیم','تَصویر','صورَت', ];
 export let words3 = ["غَذا","باغ","غُرور","غُروب","غار","غَریب","غُرِش","غَضَب","باغدار","بَستر","جَذاب","خَطَر","ضَرب","صَبر","تاریخ","پِدَر","سِپَس","بازار","سَبزی","ساعَت",];
+export let words4 = ["فَردا","فَرش","دَفتَر","رَفتَن","شَرَف","عَرف","حَرف","فَراموش","تَفریح","فانوس","سِفید","فارسی","فَریاد","ظَرف","فُروتَن","فَرزاد","فِردوس","فارس","فَرض","تُف",];
+export let words5 = ["بَرادَر","بَر","خِرَد","رُخ","بَرباد","پَرچَم","دارَد","تَر","دَرد","رَد","بار","تاجِر","رُب","چَتر","تُرُب","دَر","چَرخ","اَبر","خَرج","بُخار",];
 
 // side bar dose not work
 
