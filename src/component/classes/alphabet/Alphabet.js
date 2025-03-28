@@ -43,11 +43,6 @@ export const Alphabet = () => {
                                 <Route path='/professions' element={<FlippingTable idTablePlay="prof1" tableData={tableProfessions.photoData} bgTable={tableProfessions.bgTable} showBack1={false} />}  />
                                 <Route path='/animals' element={<FlippingTable idTablePlay="anim1" tableData={tableAnimals.photoData} bgTable={tableAnimals.bgTable} showBack1={true} />}  />
                                 <Route path='/tableColor_body' element={<FlippingTable idTablePlay="colorBo1" tableData={tableColor_body.photoData} bgTable={tableColor_body.bgTable} showBack1={true} />}  />
-                                {/* <Route path='/brokenW-1' element={<BrokenGlass words={words1} />}  />
-                                <Route path='/brokenW-2' element={<BrokenGlass words={words2} />}  />
-                                <Route path='/brokenW-3' element={<BrokenGlass words={words3} />}  />
-                                <Route path='/brokenW-4' element={<BrokenGlass words={words4} />}  />
-                                <Route path='/brokenW-5' element={<BrokenGlass words={words5} />}  /> */}
                                 <Route path='/wordTable/*' element={<WordTable />}  />
 
               </Routes>
