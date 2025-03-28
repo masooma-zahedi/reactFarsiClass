@@ -112,11 +112,11 @@ export let contentListAlpha = {
         brokenWords :{
             idModal:"brokenWords11",
             infoWords:[
-            {id:nanoid(4),title:" حرف ر",targetHref:"brokenW-5",idLetter:"broken-5"},
-            {id:nanoid(4),title:" حرف ق",targetHref:"brokenW-1",idLetter:"broken-1"},
-            {id:nanoid(4),title:" حرف ص",targetHref:"brokenW-2",idLetter:"broken-2"},
-            {id:nanoid(4),title:" حرف غ",targetHref:"brokenW-3",idLetter:"broken-3"},
-            {id:nanoid(4),title:" حرف ف",targetHref:"brokenW-4",idLetter:"broken-4"},
+            {id:nanoid(4),title:" حرف ر",targetHref:"wordTable/brokenW-5",idLetter:"broken-5"},
+            {id:nanoid(4),title:" حرف ق",targetHref:"wordTable/brokenW-1",idLetter:"broken-1"},
+            {id:nanoid(4),title:" حرف ص",targetHref:"wordTable/brokenW-2",idLetter:"broken-2"},
+            {id:nanoid(4),title:" حرف غ",targetHref:"wordTable/brokenW-3",idLetter:"broken-3"},
+            {id:nanoid(4),title:" حرف ف",targetHref:"wordTable/brokenW-4",idLetter:"broken-4"},
             ],
         },
         gameTable :{
