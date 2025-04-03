@@ -113,6 +113,7 @@ export let contentListAlpha = {
             idModal:"brokenWords11",
             infoWords:[
             {id:nanoid(4),title:" حرف ر",targetHref:"wordTable/brokenW-5",idLetter:"broken-5"},
+            {id:nanoid(4),title:"حرف ز",targetHref:"wordTable/brokenW-6",idLetter:"broken-6"},
             {id:nanoid(4),title:" حرف ق",targetHref:"wordTable/brokenW-1",idLetter:"broken-1"},
             {id:nanoid(4),title:" حرف ص",targetHref:"wordTable/brokenW-2",idLetter:"broken-2"},
             {id:nanoid(4),title:" حرف غ",targetHref:"wordTable/brokenW-3",idLetter:"broken-3"},
@@ -2648,6 +2649,7 @@ export let words2 = ['صابون','اِصرار','صَندوق','عَصا','وِ
 export let words3 = ["غَذا","باغ","غُرور","غُروب","غار","غَریب","غُرِش","غَضَب","باغدار","بَستر","جَذاب","خَطَر","ضَرب","صَبر","تاریخ","پِدَر","سِپَس","بازار","سَبزی","ساعَت",];
 export let words4 = ["فَردا","فَرش","دَفتَر","رَفتَن","شَرَف","عَرف","حَرف","فَراموش","تَفریح","فانوس","سِفید","فارسی","فَریاد","ظَرف","فُروتَن","فَرزاد","فِردوس","فارس","فَرض","تُف",];
 export let words5 = ["بَرادَر","بَر","خِرَد","رُخ","بَرباد","پَرچَم","دارَد","تَر","دَرد","رَد","بار","تاجِر","رُب","چَتر","تُرُب","دَر","چَرخ","اَبر","خَرج","بُخار",];
+export let words6 = ["بُز","روز","زور","زَرد","زیب","باز","پاز","چیز","زِبر","بازی","تیز","زیر","زَر","خَز","زو","زیبا","زِشت","زار","راز","رُز",];
 
 // side bar dose not work
 
