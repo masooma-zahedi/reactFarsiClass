@@ -13,6 +13,7 @@ export let contentListStory = {
         {title:"لباس پادشاه ",targetHref :"kingCloth"},
         {title:"دختر کبریت فروش",targetHref :"kebritSell"},
         {title:"پیرمرد و دریا",targetHref :"oldmanSea"},
+        {title:"خجسته بهاران",targetHref :"springKh"},
         ],
     },
 }
@@ -1005,6 +1006,129 @@ export let oldmanSea ={
         {
             wordMean:"",
             engMean:""
+        },
+   ],
+   accordionItems : [
+    {
+      title: "",
+      content: "",
+    },
+    {
+      title: "",
+      content: "",
+    },
+    {
+      title: "",
+      content: "",
+    },
+    {
+      title: "",
+      content: "",
+    },
+  ]
+    
+}
+export let spring ={
+    wordId:"spring-1",
+    titleStory:" خجسته بهاران",
+    targetHref :"springKh",
+    imageStory:["/images/assetStory/springS-1.png",],
+    wordPart:[
+        {
+            wordMean:"خجسته",
+            engMean:"Blessed"
+        },
+        {
+            wordMean:"فصل",
+            engMean:"Season"
+        },
+        {
+            wordMean:"شکوفایی",
+            engMean:"Blossoming "
+        },
+        {
+            wordMean:"تجدید",
+            engMean:"Renewal"
+        },
+        {
+            wordMean:"حیات",
+            engMean:"Life"
+        },
+        {
+            wordMean:"طبیعت",
+            engMean:"Nature"
+        },
+        {
+            wordMean:"بی نظیر",
+            engMean:"Unique"
+        },
+        {
+            wordMean:"نماد",
+            engMean:"Symbol"
+        },
+        {
+            wordMean:"سکون",
+            engMean:"Stillness"
+        },
+        {
+            wordMean:"دشت",
+            engMean:"Plain"
+        },
+        {
+            wordMean:"خودنمایی",
+            engMean:"Show off"
+        },
+        {
+            wordMean:"عطر",
+            engMean:"Perfume"
+        },
+        {
+            wordMean:"دل انگیز",
+            engMean:"Pleasant"
+        },
+        {
+            wordMean:"فضا",
+            engMean:"Space"
+        },
+        {
+            wordMean:"گرمسیر",
+            engMean:"Tropical"
+        },
+        {
+            wordMean:"کوچ",
+            engMean:"migration"
+        },
+        {
+            wordMean:"پرطنین",
+            engMean:"Resonant"
+        },
+        {
+            wordMean:"نوید دادن",
+            engMean:"Giving good news"
+        },
+        {
+            wordMean:"معتدل",
+            engMean:"Moderate"
+        },
+        {
+            wordMean:"مطبوع",
+            engMean:"Airy"
+        },
+        {
+            wordMean:"ملایم",
+            engMean:"Gentle"
+        },
+        {
+            wordMean:"نوازش گر",
+            engMean:"Caresser"
+        },
+        {
+            wordMean:"سیراب",
+            engMean:"irrigated-watered"
+        },
+        {
+            wordMean:"چرخه",
+            engMean:"Cycle"
         },
    ],
    accordionItems : [
