@@ -1,5 +1,5 @@
 import {CardAlphaCompo,} from "./cardAlpha/CardAlphaCompo.js";
-import {alphaCrousel, alphaLongCrousel, alphaShortCrousel, kitchenDataTable, storyAlpha1, storyAlpha2, sylabelWord1, sylabelWord2, sylabelWord3, sylabelWord4, sylabelWord5, tableAnimals, tableColor_body, tableDataNum, tableProfessions, storyAlpha3, sylabelWord6,} from "./dataAlpha.js";
+import {alphaCrousel, alphaLongCrousel, alphaShortCrousel, kitchenDataTable, storyAlpha1, storyAlpha2, sylabelWord1, sylabelWord2, sylabelWord3, sylabelWord4, sylabelWord5, tableAnimals, tableColor_body, tableDataNum, tableProfessions, storyAlpha3, sylabelWord6, ququly,} from "./dataAlpha.js";
 import {CarouselAlpha} from "./CarouselAlpha"
 import { WordCarousel } from "./WordCarousel";
 import { SylabeWords } from "./SylabeWords";
@@ -10,6 +10,8 @@ import FlippingTable from "./FlippingTable/FlippingTable.js";
 import { Route, Routes } from "react-router-dom";
 import BrokenGlass from "../BrokenGlasses.js";
 import WordTable from "./WordTable.js";
+// import { ququly } from "../word/dataWord.js";
+import { TheStory } from "../story/TheStory.js";
 
 export const Alphabet = () => {
   const [showShort, setShowShort] = useState(false)
@@ -32,6 +34,7 @@ export const Alphabet = () => {
                 <Route path='/storyA1' element={<CarouselAlpha  idCarouselAlpha="storyAl1"  dataCarousel={storyAlpha1}/>}  />
                 <Route path='/storyA2' element={<CarouselAlpha  idCarouselAlpha="storyAl2"  dataCarousel={storyAlpha2}/>}  />
                 <Route path='/storyA3' element={<CarouselAlpha  idCarouselAlpha="storyAl3"  dataCarousel={storyAlpha3}/>}  />
+                <Route path='/ququlyQu' element={<TheStory srcStory={ququly}/>}  />
                 <Route path='/read-1' element={<SylabeWords infoSentence={sylabelWord1}/>}  />
                 <Route path='/read-2' element={<SylabeWords infoSentence={sylabelWord2}/>}  />
                 <Route path='/read-3' element={<SylabeWords infoSentence={sylabelWord3}/>}  />

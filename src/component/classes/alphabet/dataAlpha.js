@@ -56,6 +56,27 @@ export let storyAlpha3={
         "/images/assetAlpha/alphaStory/anty/anty-18.jpg",
 ]}
 
+export let ququly ={
+    wordId:"ququl",
+    targetHref:"ququlyQu",
+    titleStory:" داستان قوقولی ",
+    imageStory:["/images/assetWord/storyWord/ququly.png",],
+    wordPart:[
+        {
+            wordMean:"",
+            engMean:""
+        },
+    ],
+    accordionItems : [
+        {
+          title: "",
+          content: "",
+        },
+      ]
+
+    
+}
+
 
 // &&&&&& start short sound
 let shortSoundExa = [];
@@ -139,6 +160,7 @@ export let contentListAlpha = {
             {id:nanoid(4),title:"خانواده من",targetHref:"storyA1",idLetter:"storyAl-1"},
             {id:nanoid(4),title:"آخر هفته",targetHref:"storyA2",idLetter:"storyAl-2"},
             {id:nanoid(4),title:"مورچه تنبل",targetHref:"storyA3",idLetter:"storyAl-3"},
+            {id:nanoid(4),title:"قوقولی",targetHref:"ququlyQu",idLetter:"ququl"},
             ],
         },
 }
