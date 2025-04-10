@@ -14,6 +14,7 @@ export let contentListStory = {
         {title:"دختر کبریت فروش",targetHref :"kebritSell"},
         {title:"پیرمرد و دریا",targetHref :"oldmanSea"},
         {title:"خجسته بهاران",targetHref :"springKh"},
+        {title:"داستان پرواز",targetHref :"flyS"},
         ],
     },
 }
@@ -1199,6 +1200,145 @@ export let spring ={
     {
       title: "",
       content: "",
+    },
+  ]
+    
+}
+export let flyStory ={
+    wordId:"fly-1",
+    titleStory:" داستان پرواز ",
+    targetHref :"flyS",
+    imageStory:["/images/assetStory/flyStory.png",],
+    wordPart:[
+        {
+            wordMean:"رویا",
+            engMean:""
+        },
+        {
+            wordMean:"پشتکار",
+            engMean:""
+        },
+        {
+            wordMean:"شکست",
+            engMean:""
+        },
+        {
+            wordMean:"تلاش",
+            engMean:""
+        },
+        {
+            wordMean:"اختراع",
+            engMean:""
+        },
+        {
+            wordMean:"تاریخ ساز",
+            engMean:""
+        },
+        {
+            wordMean:"ثبت",
+            engMean:""
+        },
+        {
+            wordMean:"ساده",
+            engMean:""
+        },
+        {
+            wordMean:"پرواز",
+            engMean:""
+        },
+        {
+            wordMean:"باور",
+            engMean:""
+        },
+        {
+            wordMean:"امکان ندارد",
+            engMean:""
+        },
+        {
+            wordMean:"جدی",
+            engMean:""
+        },
+        {
+            wordMean:"مهم",
+            engMean:""
+        },
+        {
+            wordMean:"تماشاچی",
+            engMean:""
+        },
+        {
+            wordMean:"هواپیما",
+            engMean:""
+        },
+        {
+            wordMean:"پرنده",
+            engMean:""
+        },
+        {
+            wordMean:"جمعیت",
+            engMean:""
+        },
+        {
+            wordMean:"قلمرو",
+            engMean:""
+        },
+        {
+            wordMean:"تماشا کردن",
+            engMean:""
+        },
+        {
+            wordMean:"پل",
+            engMean:""
+        },
+        {
+            wordMean:"انگیزه",
+            engMean:""
+        },
+        {
+            wordMean:"اشتباه",
+            engMean:""
+        },
+        {
+            wordMean:"دانشگاه",
+            engMean:""
+        },
+        {
+            wordMean:"ابزار",
+            engMean:""
+        },
+        {
+            wordMean:"بادخیز",
+            engMean:""
+        },
+        {
+            wordMean:"حقیقت",
+            engMean:""
+        },
+        {
+            wordMean:"ماندگار شدن",
+            engMean:""
+        },
+   ],
+   accordionItems : [
+    {
+      title: "برادران رایت چه رؤیایی در سر داشتند؟",
+      content: " آن‌ها می‌خواستند وسیله ای بسازند که بتواند مثل پرنده‌ها پرواز کند.",
+    },
+    {
+      title: "چرا مردم رؤیای آن‌ها را باور نمی‌کردند؟",
+      content: " چون در آن زمان پرواز انسان غیرممکن به نظر می‌رسید و تا آن موقع هیچ‌کس نتوانسته بود پرواز کند.",
+    },
+    {
+      title: "چه چیزی در روز پرواز کم بود که باعث نگرانی شد؟",
+      content: "ساعت برای اندازه‌گیری مدت زمان پرواز.",
+    },
+    {
+      title: "چه کسی مشکل ساعت را حل کرد؟",
+      content: "یک پسر نوجوان که ساعت جیبی‌اش را به آن‌ها داد.",
+    },
+    {
+      title: "هواپیما چند ثانیه پرواز کرد و چه مسافتی را طی کرد؟",
+      content: "۱۲ ثانیه در آسمان ماند و ۳۶ متر حرکت کرد.",
     },
   ]
     

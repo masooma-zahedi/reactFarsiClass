@@ -1,6 +1,6 @@
 import React from 'react'
 import { TheStory } from './TheStory'
-import { donky, eagle1, florence, fox1, healthStory, kebrit, king1, oldmanSea, rabit, soldier, spring } from './dataStory';
+import { donky, eagle1, florence, flyStory, fox1, healthStory, kebrit, king1, oldmanSea, rabit, soldier, spring } from './dataStory';
 import { SidebarStory } from './SidebarStory';
 import { Route, Routes } from 'react-router-dom';
 
@@ -24,6 +24,7 @@ export const Story = () => {
               <Route path='/kebritSell' element={<TheStory srcStory={kebrit}/>}  />
               <Route path='/oldmanSea' element={<TheStory srcStory={oldmanSea}/>}  />
               <Route path='/springKh' element={<TheStory srcStory={spring}/>}  />
+              <Route path='/flyS' element={<TheStory srcStory={flyStory}/>}  />
             </Routes>
             
           </div>

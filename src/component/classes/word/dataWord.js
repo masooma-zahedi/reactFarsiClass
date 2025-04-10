@@ -7,6 +7,7 @@ export let contentListWord = {
         {title:"دوستی واقعی",targetHref :"realF2"},
         {title:"الاغ تنبل",targetHref :"lazyD2"},   
         {title:"لک لک و جوجه ها",targetHref :"lakLak"},
+        {title:"موش و قورباغه",targetHref :"FrogMouse"},
         {title:"",targetHref :""},
         ],
     },
@@ -845,6 +846,134 @@ export let laklak ={
         {
           title: " ضرب المثل آستین بالا زدن به چه معناست؟ ",
           content: "با جدیت و تلاش، شروع به انجام کاری کردن",
+        },
+      ]
+
+    
+}
+export let FrogM ={
+    wordId:"frogM1",
+    targetHref:"FrogMouse",
+    titleStory:"داستان موش و قورباغه",
+    imageStory:["/images/assetWord/storyWord/frog&mouse.png",],
+    wordPart:[
+        {
+            wordMean:" روزی روزگاری ",
+            engMean:"Once upon a time"
+        },
+        {
+            wordMean:" دشت ",
+            engMean:"Plain"
+        },
+        {
+            wordMean:" باهوش ",
+            engMean:"Intelligent"
+        },
+        {
+            wordMean:" کنجکاو ",
+            engMean:"Curious"
+        },
+        {
+            wordMean:" چمنزار ",
+            engMean:"Meadow"
+        },
+        {
+            wordMean:" گشت و گذار ",
+            engMean:"Sightseeing"
+        },
+        {
+            wordMean:" جمع آوری ",
+            engMean:"Collection"
+        },
+        {
+            wordMean:" دانه",
+            engMean:"Seed"
+        },
+        {
+            wordMean:" پریدن ",
+            engMean:"Jumping"
+        },
+        {
+            wordMean:" برکه ",
+            engMean:"pond"
+        },
+        {
+            wordMean:" بازیگوش ",
+            engMean:"Playful"
+        },
+        {
+            wordMean:" برخلاف ",
+            engMean:"Unlike"
+        },
+        {
+            wordMean:" نیزار ",
+            engMean:"Reed"
+        },
+        {
+            wordMean:" شیرجه زدن ",
+            engMean:"Diving"
+        },
+        {
+            wordMean:" شگفت زده ",
+            engMean:"Surprised"
+        },
+        {
+            wordMean:" ماجراجویی ",
+            engMean:"Adventure"
+        },
+        {
+            wordMean:" لذت بردن ",
+            engMean:"Enjoy"
+        },
+        {
+            wordMean:" خودخواه ",
+            engMean:"Selfish"
+        },
+        {
+            wordMean:" عَجیب ",
+            engMean:"Strange"
+        },
+        {
+            wordMean:"نازک",
+            engMean:"thin"
+        },
+        {
+            wordMean:"تعجب کردن",
+            engMean:"To be surprised"
+        },
+        {
+            wordMean:"متوجه شدن",
+            engMean:"To understand"
+        },
+        {
+            wordMean:"آزادانه",
+            engMean:"Freely"
+        },
+        {
+            wordMean:"وحشت",
+            engMean:"Horror"
+        },
+    ],
+    accordionItems : [
+        {
+          title: "چگونه موش و قورباغه با هم آشنا شدند؟  ",
+          content: "کنار یک برکه، موش با قورباغه‌ای بازیگوش آشنا شد. ",
+        },
+        {
+          title: " قورباغه چه کاری کرد که باعث دردسر برای موش شد؟ ",
+          content: "قورباغه با طنابی پای خودش را به پای موش بست و او را همه جا با خودش برد. ",
+        },
+        {
+          title: " چه اتفاقی افتاد وقتی به برکه رسیدند؟ ",
+          content: "  قورباغه پرید داخل آب و موش را هم با خودش کشید، ولی موش شنا بلد نبود و غرق شد.",
+        },
+        {
+          title: " شاهین چگونه وارد داستان شد؟ ",
+          content: " شاهین که در آسمان پرواز می‌کرد، موش را دید که روی آب شناور است و آمد تا او را شکار کند. ",
+        },
+        {
+          title: "چرا قورباغه هم شکار شد؟  ",
+          content: " چون به پای موش بسته شده بود و وقتی شاهین موش را گرفت، قورباغه هم همراه او بالا رفت.",
         },
       ]
 
