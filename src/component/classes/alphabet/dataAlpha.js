@@ -30,6 +30,7 @@ export let storyAlpha2={
         "/images/assetAlpha/alphaStory/variety/variety-6.jpg",
         "/images/assetAlpha/alphaStory/variety/variety-7.jpg",
         "/images/assetAlpha/alphaStory/variety/variety-8.png",
+        "./images/assetAlpha/alphaStory/variety/kakoly.png",
     ]}
     
 export let storyAlpha3={
@@ -119,6 +120,7 @@ export let contentListAlpha = {
             {id:nanoid(4),title:" حرف ص",targetHref:"wordTable/brokenW-2",idLetter:"broken-2"},
             {id:nanoid(4),title:" حرف غ",targetHref:"wordTable/brokenW-3",idLetter:"broken-3"},
             {id:nanoid(4),title:" حرف ف",targetHref:"wordTable/brokenW-4",idLetter:"broken-4"},
+            {id:nanoid(4),title:" حرف ک",targetHref:"wordTable/brokenW-7",idLetter:"broken-7"},
             ],
         },
         gameTable :{
@@ -1267,7 +1269,7 @@ export let sylabelWord6={
                 syla:""
             },
             {
-                word:"بود.",
+                word:"اَست.",
                 syla:""
             },
         ],
@@ -2863,6 +2865,7 @@ export let words3 = ["غَذا","باغ","غُرور","غُروب","غار","غ�
 export let words4 = ["فَردا","فَرش","دَفتَر","رَفتَن","شَرَف","عَرف","حَرف","فَراموش","تَفریح","فانوس","سِفید","فارسی","فَریاد","ظَرف","فُروتَن","فَرزاد","فِردوس","فارس","فَرض","تُف",];
 export let words5 = ["بَرادَر","بَر","خِرَد","رُخ","بَرباد","پَرچَم","دارَد","تَر","دَرد","رَد","بار","تاجِر","رُب","چَتر","تُرُب","دَر","چَرخ","اَبر","خَرج","بُخار",];
 export let words6 = ["بُز","روز","زور","زَرد","زیب","باز","پاز","چیز","زِبر","بازی","تیز","زیر","زَر","خَز","زو","زیبا","زِشت","زار","راز","رُز",];
+export let words7 = ["کِتاب","کوکَب","کَبک","کَبود","کوبید","کَفش","کِیک","کَبِد","کِبریت","کَپَک","کِشتی","کیش","کَثیف","کوثَر","کودَک","کاخ","کار","کَشف","کاشی","کوشا",];
 
 // side bar dose not work
 
