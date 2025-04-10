@@ -1004,26 +1004,78 @@ export let oldmanSea ={
     imageStory:["/images/assetStory/oldman&sea-1.png",],
     wordPart:[
         {
-            wordMean:"",
-            engMean:""
+            wordMean:"ساحل",
+            engMean:"Beach"
+        },
+        {
+            wordMean:"ماهی گیر",
+            engMean:"Fisherman"
+        },
+        {
+            wordMean:"منطقه",
+            engMean:"area"
+        },
+        {
+            wordMean:"روزگار",
+            engMean:"Times"
+        },
+        {
+            wordMean:"تنها و منزوی",
+            engMean:"Lonely and isolated"
+        },
+        {
+            wordMean:"روز موعود",
+            engMean:"The Promised Day"
+        },
+        {
+            wordMean:"خیر مقدم",
+            engMean:"Welcome"
+        },
+        {
+            wordMean:"طعمه",
+            engMean:"Bait"
+        },
+        {
+            wordMean:"غول پیکر",
+            engMean:"Giant"
+        },
+        {
+            wordMean:"طاقت فرسا",
+            engMean:"Exhausting"
+        },
+        {
+            wordMean:"دیری نپایید",
+            engMean:"It didn't take long."
+        },
+        {
+            wordMean:"غول آسا",
+            engMean:"Gigantic"
         },
    ],
    accordionItems : [
     {
-      title: "",
-      content: "",
+      title: "سانتیاگو چند روز بود که هیچ ماهی‌ای نگرفته بود؟",
+      content: "84 روز بود که هیچ ماهی‌ای نگرفته بود.",
     },
     {
-      title: "",
-      content: "",
+      title: "چرا پسرک دیگر با سانتیاگو به ماهیگیری نمی‌رفت؟",
+      content: "چون خانواده‌اش او را مجبور کرده بودند با ماهیگیر دیگری کار کند، چون فکر می‌کردند سانتیاگو بدشانسی آورده است.",
     },
     {
-      title: "",
-      content: "",
+      title: "وقتی سانتیاگو ماهی بزرگ را گرفت، چه چیزی او را شگفت‌زده کرد؟",
+      content: "او متوجه شد که این یک ماهی معمولی نیست، بلکه بسیار بزرگ و قوی است و مبارزه سختی برای صید آن نیاز دارد.",
     },
     {
-      title: "",
-      content: "",
+      title: "چگونه کوسه‌ها باعث شدند تلاش سانتیاگو به سختی بیفتد؟",
+      content: "کوسه‌ها به ماهی بزرگی که صید کرده بود حمله کردند و گوشت آن را خوردند، به طوری‌که وقتی سانتیاگو به ساحل رسید، فقط اسکلت ماهی باقی مانده بود.",
+    },
+    {
+      title: "واکنش مردم روستا نسبت به سانتیاگو پس از بازگشت به ساحل چه بود؟",
+      content: "مردم تحت تأثیر تلاش و شجاعت او قرار گرفتند و به او احترام گذاشتند، چون هرگز چنین ماهی بزرگی ندیده بودند.",
+    },
+    {
+      title: "به نظر شما، سانتیاگو در این داستان نماد چه چیزی است؟",
+      content: "سانتیاگو نماد پایداری، تلاش بی‌وقفه، ایمان به خود و مبارزه با سختی‌های زندگی است.",
     },
   ]
     

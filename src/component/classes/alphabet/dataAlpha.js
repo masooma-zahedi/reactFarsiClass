@@ -107,6 +107,7 @@ export let contentListAlpha = {
             {id:nanoid(4),title:"با هم بخوانیم-3",targetHref:"read-3",idLetter:"readtogether-3"},
             {id:nanoid(4),title:"با هم بخوانیم-4",targetHref:"read-4",idLetter:"readtogether-4"},
             {id:nanoid(4),title:"با هم بخوانیم-5",targetHref:"read-5",idLetter:"readtogether-5"},
+            {id:nanoid(4),title:"با هم بخوانیم-6",targetHref:"read-6",idLetter:"readtogether-6"},
             ],
         },
         brokenWords :{
@@ -142,7 +143,7 @@ export let contentListAlpha = {
 
 
 // ************************* end List for List Content****************
-// ******************************* Start SylabelWords data *********************
+// ******************************* Start SylabelWords data  با هم بخوانیم  ************************************************
 
 // ##########--> برای حرف ت ##########
 export let sylabelWord1={
@@ -1156,6 +1157,218 @@ export let sylabelWord5={
     ]
 }
 // ##########-->برای حرف  (از اول تا حرف ع)  ########
+// ##########-->برای حرف  (از اول تا حرف ق)  ########
+export let sylabelWord6={
+    buttonTargetId:"testSylabe6",
+    titleHead:"( تا حرف ق ) با هم بخوانیم",
+    titleColor:"rgb(21, 19, 108)",
+    sylabelBg:"rgb(139, 36, 190)",
+    sentenceRow:[
+        // each arrow is one sentence
+        [
+            {
+                word:"چِراغِ",
+                syla:""
+            },
+            {
+                word:"سَبز",
+                syla:""
+            },
+            {
+                word:"روشَن",
+                syla:""
+            },
+            {
+                word:"شُد.",
+                syla:""
+            },
+        ],
+        [
+            {
+                word:"شُتر",
+                syla:""
+            },
+            {
+                word:"اَز",
+                syla:""
+            },
+            {
+                word:"صَحرا",
+                syla:""
+            },
+            {
+                word:"آمَد.",
+                syla:""
+            },
+        ],
+        [
+            {
+                word:"دیروز",
+                syla:""
+            },
+            {
+                word:"صُبح",
+                syla:""
+            },
+            {
+                word:"بَرق",
+                syla:""
+            },
+            {
+                word:"قَطع",
+                syla:""
+            },
+            {
+                word:"بود.",
+                syla:""
+            },
+        ],
+        [
+            {
+                word:"بَرف",
+                syla:""
+            },
+            {
+                word:"سَبُک",
+                syla:""
+            },
+            {
+                word:"وَ",
+                syla:""
+            },
+            {
+                word:"سِفید",
+                syla:""
+            },
+            {
+                word:"بود.",
+                syla:""
+            },
+        ],
+        [
+            {
+                word:"ظَرف",
+                syla:""
+            },
+            {
+                word:"پُر",
+                syla:""
+            },
+            {
+                word:"اَز",
+                syla:""
+            },
+            {
+                word:"شَربَتِ",
+                syla:""
+            },
+            {
+                word:"قِرمِز",
+                syla:""
+            },
+            {
+                word:"بود.",
+                syla:""
+            },
+        ],
+        [
+            {
+                word:"بابا",
+                syla:""
+            },
+            {
+                word:"آمَد",
+                syla:""
+            },
+            {
+                word:"وَ",
+                syla:""
+            },
+            {
+                word:"پَرچَم",
+                syla:""
+            },
+            {
+                word:"چَرخید.",
+                syla:""
+            },
+        ],
+        [
+            {
+                word:"خِرس",
+                syla:""
+            },
+            {
+                word:"چَرخ",
+                syla:""
+            },
+            {
+                word:"را",
+                syla:""
+            },
+            {
+                word:"چَرخاند.",
+                syla:""
+            },
+        ],
+        [
+            {
+                word:"سَحَر",
+                syla:""
+            },
+            {
+                word:"زور",
+                syla:""
+            },
+            {
+                word:"بیدار",
+                syla:""
+            },
+            {
+                word:"شُد.",
+                syla:""
+            },
+        ],
+        [
+            {
+                word:"پِدَر",
+                syla:""
+            },
+            {
+                word:"ظَرفِ",
+                syla:""
+            },
+            {
+                word:"شَربَت",
+                syla:""
+            },
+            {
+                word:"را",
+                syla:""
+            },
+            {
+                word:"بَرداشت.",
+                syla:""
+            },
+        ],
+        [
+            {
+                word:"طوفانِ",
+                syla:""
+            },
+            {
+                word:"شَدید",
+                syla:""
+            },
+            {
+                word:"وَزید.",
+                syla:""
+            },
+        ],
+
+    ]
+}
+// ##########-->برای حرف  (از اول تا حرف ق)  ########
 
 // ******************************* End SylabelWords data *********************
 
