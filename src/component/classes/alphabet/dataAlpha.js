@@ -124,12 +124,12 @@ export let contentListAlpha = {
         readTogether :{
             idModal:"readTo1",
             infoWords:[
-            {id:nanoid(4),title:"با هم بخوانیم-1",targetHref:"read-1",idLetter:"readtogether-1"},
-            {id:nanoid(4),title:"با هم بخوانیم-2",targetHref:"read-2",idLetter:"readtogether-2"},
-            {id:nanoid(4),title:"با هم بخوانیم-3",targetHref:"read-3",idLetter:"readtogether-3"},
-            {id:nanoid(4),title:"با هم بخوانیم-4",targetHref:"read-4",idLetter:"readtogether-4"},
-            {id:nanoid(4),title:"با هم بخوانیم-5",targetHref:"read-5",idLetter:"readtogether-5"},
-            {id:nanoid(4),title:"با هم بخوانیم-6",targetHref:"read-6",idLetter:"readtogether-6"},
+            {id:nanoid(4),title:"با هم بخوانیم-1",targetHref:"reading/read-1",idLetter:"readtogether-1"},
+            {id:nanoid(4),title:"با هم بخوانیم-2",targetHref:"reading/read-2",idLetter:"readtogether-2"},
+            {id:nanoid(4),title:"با هم بخوانیم-3",targetHref:"reading/read-3",idLetter:"readtogether-3"},
+            {id:nanoid(4),title:"با هم بخوانیم-4",targetHref:"reading/read-4",idLetter:"readtogether-4"},
+            {id:nanoid(4),title:"با هم بخوانیم-5",targetHref:"reading/read-5",idLetter:"readtogether-5"},
+            {id:nanoid(4),title:"با هم بخوانیم-6",targetHref:"reading/read-6",idLetter:"readtogether-6"},
             ],
         },
         brokenWords :{
