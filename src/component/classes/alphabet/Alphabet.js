@@ -8,9 +8,7 @@ import { useState } from "react";
 import FlipButton from "./FlipButton/FlipButton.js";
 import FlippingTable from "./FlippingTable/FlippingTable.js";
 import { Route, Routes } from "react-router-dom";
-import BrokenGlass from "../BrokenGlasses.js";
 import WordTable from "./WordTable.js";
-// import { ququly } from "../word/dataWord.js";
 import { TheStory } from "../story/TheStory.js";
 import Reading from "./Reading.js";
 
@@ -36,12 +34,6 @@ export const Alphabet = () => {
                 <Route path='/storyA2' element={<CarouselAlpha  idCarouselAlpha="storyAl2"  dataCarousel={storyAlpha2}/>}  />
                 <Route path='/storyA3' element={<CarouselAlpha  idCarouselAlpha="storyAl3"  dataCarousel={storyAlpha3}/>}  />
                 <Route path='/ququlyQu' element={<TheStory srcStory={ququly}/>}  />
-                {/* <Route path='/read-1' element={<SylabeWords infoSentence={sylabelWord1}/>}  />
-                <Route path='/read-2' element={<SylabeWords infoSentence={sylabelWord2}/>}  />
-                <Route path='/read-3' element={<SylabeWords infoSentence={sylabelWord3}/>}  />
-                <Route path='/read-4' element={<SylabeWords infoSentence={sylabelWord4}/>}  />
-                <Route path='/read-5' element={<SylabeWords infoSentence={sylabelWord5}/>}  />
-                <Route path='/read-6' element={<SylabeWords infoSentence={sylabelWord6}/>}  /> */}
                 <Route path='/reading/*' element={<Reading />}  />
                 <Route path='/numberGame' element={<FlippingTable idTablePlay="play1" tableData={tableDataNum.photoData} bgTable={tableDataNum.bgTable} showBack1={false} />}  />
                 <Route path='/kitchenGame' element={<FlippingTable idTablePlay="kitU1" tableData={kitchenDataTable.photoData} bgTable={kitchenDataTable.bgTable} showBack1={true} />}  />
