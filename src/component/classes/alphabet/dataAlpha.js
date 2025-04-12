@@ -119,6 +119,7 @@ export let contentListAlpha = {
             {id:nanoid(4),title:"ظروف آشپزخانه",targetHref :"kitchen1Part-2",idLetter:"kitchen1-1"},
             {id:nanoid(4),title:"شغل ها ",targetHref :"professionsPart-2",idLetter:"kitchen1-1"},
             {id:nanoid(4),title:"حیوانات ",targetHref :"animalsPart-2",idLetter:"animal-1"},
+            {id:nanoid(4),title:"بخش های خانه ",targetHref :"houseParts-2",idLetter:"houseP-1"},
             ],
         },
         readTogether :{
@@ -2873,6 +2874,287 @@ export let animals1 = {
         {
             image :"./images/assetAlpha/animals/anim-61.png",
             sylabelWord : "Lion",
+        },
+
+    ]
+}
+export let houseParts1 = {
+    
+    wordCarousel:{
+        title:"بخش های خانه",
+        targetCarouselId :"housePart-1",
+        targetHref :"housePart-2",
+        idLetter :"housePa-1",
+        imageCarousel :"housePartD-1"
+        },
+    alphaAnimal : [
+        {
+            image :"/images/assetAlpha/house/house-1.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/house-2.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/house-3.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/house-4.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/house-5.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/house-6.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/nameTools/toolsH-2.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/nameTools/toolsH-4.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/nameTools/toolsH-6.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/nameTools/toolsH-8.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/nameTools/toolsH-10.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/nameTools/toolsH-12.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/nameTools/toolsH-14.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/house-7.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/house-8.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/house-9.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/house-10.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/house-11.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/house-12.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/house-13.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/house-14.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/house-15.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/house-16.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/house-17.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/nameTools/toolsH-16.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/nameTools/toolsH-18.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/nameTools/toolsH-20.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/nameTools/toolsH-22.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/nameTools/toolsH-24.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/nameTools/toolsH-26.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/nameTools/toolsH-28.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/nameTools/toolsH-30.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/nameTools/toolsH-32.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/nameTools/toolsH-34.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/nameTools/toolsH-36.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/nameTools/toolsH-38.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/house-18.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/house-19.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/nameTools/toolsH-40.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/nameTools/toolsH-42.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/nameTools/toolsH-44.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/house-20.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/house-21.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/house-22.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/house-23.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/house-24.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/nameTools/toolsH-46.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/nameTools/toolsH-48.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/nameTools/toolsH-50.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/nameTools/toolsH-52.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/nameTools/toolsH-54.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/nameTools/toolsH-56.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/nameTools/toolsH-58.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/nameTools/toolsH-60.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/nameTools/toolsH-62.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/house-25.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/house-26.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/house-27.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/house-28.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/house-29.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/house-30.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/nameTools/toolsH-64.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/nameTools/toolsH-66.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/nameTools/toolsH-68.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/nameTools/toolsH-70.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/nameTools/toolsH-72.png",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/house/nameTools/toolsH-74.png",
+            sylabelWord : "",
         },
 
     ]
