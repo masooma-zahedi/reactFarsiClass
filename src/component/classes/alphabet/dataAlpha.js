@@ -2894,11 +2894,11 @@ export let houseParts1 = {
         },
         {
             image :"/images/assetAlpha/house/house-2.png",
-            sylabelWord : "",
+            sylabelWord : "House",
         },
         {
             image :"/images/assetAlpha/house/house-3.png",
-            sylabelWord : "",
+            sylabelWord : "Living room",
         },
         {
             image :"/images/assetAlpha/house/house-4.png",
@@ -2914,35 +2914,35 @@ export let houseParts1 = {
         },
         {
             image :"/images/assetAlpha/house/nameTools/toolsH-2.png",
-            sylabelWord : "",
+            sylabelWord : "Sofa",
         },
         {
             image :"/images/assetAlpha/house/nameTools/toolsH-4.png",
-            sylabelWord : "",
+            sylabelWord : "Cushion",
         },
         {
             image :"/images/assetAlpha/house/nameTools/toolsH-6.png",
-            sylabelWord : "",
+            sylabelWord : "Coffee table",
         },
         {
             image :"/images/assetAlpha/house/nameTools/toolsH-8.png",
-            sylabelWord : "",
+            sylabelWord : "TV and TV table",
         },
         {
             image :"/images/assetAlpha/house/nameTools/toolsH-10.png",
-            sylabelWord : "",
+            sylabelWord : "Carpet",
         },
         {
             image :"/images/assetAlpha/house/nameTools/toolsH-12.png",
-            sylabelWord : "",
+            sylabelWord : "Clock",
         },
         {
             image :"/images/assetAlpha/house/nameTools/toolsH-14.png",
-            sylabelWord : "",
+            sylabelWord : "Lamp",
         },
         {
             image :"/images/assetAlpha/house/house-7.png",
-            sylabelWord : "",
+            sylabelWord : "Kitchen",
         },
         {
             image :"/images/assetAlpha/house/house-8.png",
@@ -2986,55 +2986,55 @@ export let houseParts1 = {
         },
         {
             image :"/images/assetAlpha/house/nameTools/toolsH-16.png",
-            sylabelWord : "",
+            sylabelWord : "Refrigerator",
         },
         {
             image :"/images/assetAlpha/house/nameTools/toolsH-18.png",
-            sylabelWord : "",
+            sylabelWord : "stove",
         },
         {
             image :"/images/assetAlpha/house/nameTools/toolsH-20.png",
-            sylabelWord : "",
+            sylabelWord : "Microwave",
         },
         {
             image :"/images/assetAlpha/house/nameTools/toolsH-22.png",
-            sylabelWord : "",
+            sylabelWord : "Kitchen sink",
         },
         {
             image :"/images/assetAlpha/house/nameTools/toolsH-24.png",
-            sylabelWord : "",
+            sylabelWord : "Electric kettle",
         },
         {
             image :"/images/assetAlpha/house/nameTools/toolsH-26.png",
-            sylabelWord : "",
+            sylabelWord : "Kitchen cabinet",
         },
         {
             image :"/images/assetAlpha/house/nameTools/toolsH-28.png",
-            sylabelWord : "",
+            sylabelWord : "Plate",
         },
         {
             image :"/images/assetAlpha/house/nameTools/toolsH-30.png",
-            sylabelWord : "",
+            sylabelWord : "Bowl",
         },
         {
             image :"/images/assetAlpha/house/nameTools/toolsH-32.png",
-            sylabelWord : "",
+            sylabelWord : "Glass",
         },
         {
             image :"/images/assetAlpha/house/nameTools/toolsH-34.png",
-            sylabelWord : "",
+            sylabelWord : "Clay mug",
         },
         {
             image :"/images/assetAlpha/house/nameTools/toolsH-36.png",
-            sylabelWord : "",
+            sylabelWord : "Cutlery",
         },
         {
             image :"/images/assetAlpha/house/nameTools/toolsH-38.png",
-            sylabelWord : "",
+            sylabelWord : "Kitchen utensils",
         },
         {
             image :"/images/assetAlpha/house/house-18.png",
-            sylabelWord : "",
+            sylabelWord : "Dining room",
         },
         {
             image :"/images/assetAlpha/house/house-19.png",
@@ -3042,15 +3042,15 @@ export let houseParts1 = {
         },
         {
             image :"/images/assetAlpha/house/nameTools/toolsH-40.png",
-            sylabelWord : "",
+            sylabelWord : "Chair",
         },
         {
             image :"/images/assetAlpha/house/nameTools/toolsH-42.png",
-            sylabelWord : "",
+            sylabelWord : "Dining table",
         },
         {
             image :"/images/assetAlpha/house/nameTools/toolsH-44.png",
-            sylabelWord : "",
+            sylabelWord : "Bathroom",
         },
         {
             image :"/images/assetAlpha/house/house-20.png",
@@ -3074,43 +3074,43 @@ export let houseParts1 = {
         },
         {
             image :"/images/assetAlpha/house/nameTools/toolsH-46.png",
-            sylabelWord : "",
+            sylabelWord : "Bathtub",
         },
         {
             image :"/images/assetAlpha/house/nameTools/toolsH-48.png",
-            sylabelWord : "",
+            sylabelWord : "Bathroom sink",
         },
         {
             image :"/images/assetAlpha/house/nameTools/toolsH-50.png",
-            sylabelWord : "",
+            sylabelWord : "Shampoo and conditioner",
         },
         {
             image :"/images/assetAlpha/house/nameTools/toolsH-52.png",
-            sylabelWord : "",
+            sylabelWord : "Bath towel",
         },
         {
             image :"/images/assetAlpha/house/nameTools/toolsH-54.png",
-            sylabelWord : "",
+            sylabelWord : "Leaf",
         },
         {
             image :"/images/assetAlpha/house/nameTools/toolsH-56.png",
-            sylabelWord : "",
+            sylabelWord : "Soap",
         },
         {
             image :"/images/assetAlpha/house/nameTools/toolsH-58.png",
-            sylabelWord : "",
+            sylabelWord : "Toothpaste and toothbrush",
         },
         {
             image :"/images/assetAlpha/house/nameTools/toolsH-60.png",
-            sylabelWord : "",
+            sylabelWord : "Toilet",
         },
         {
             image :"/images/assetAlpha/house/nameTools/toolsH-62.png",
-            sylabelWord : "",
+            sylabelWord : "Toilet paper",
         },
         {
             image :"/images/assetAlpha/house/house-25.png",
-            sylabelWord : "",
+            sylabelWord : "Bedroom",
         },
         {
             image :"/images/assetAlpha/house/house-26.png",
@@ -3134,27 +3134,27 @@ export let houseParts1 = {
         },
         {
             image :"/images/assetAlpha/house/nameTools/toolsH-64.png",
-            sylabelWord : "",
+            sylabelWord : "Bed",
         },
         {
             image :"/images/assetAlpha/house/nameTools/toolsH-66.png",
-            sylabelWord : "",
+            sylabelWord : "Pillow",
         },
         {
             image :"/images/assetAlpha/house/nameTools/toolsH-68.png",
-            sylabelWord : "",
+            sylabelWord : "Blanket",
         },
         {
             image :"/images/assetAlpha/house/nameTools/toolsH-70.png",
-            sylabelWord : "",
+            sylabelWord : "Study table",
         },
         {
             image :"/images/assetAlpha/house/nameTools/toolsH-72.png",
-            sylabelWord : "",
+            sylabelWord : "Study lights",
         },
         {
             image :"/images/assetAlpha/house/nameTools/toolsH-74.png",
-            sylabelWord : "",
+            sylabelWord : "Wardrobe",
         },
 
     ]
