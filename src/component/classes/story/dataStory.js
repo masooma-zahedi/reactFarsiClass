@@ -15,6 +15,7 @@ export let contentListStory = {
         {title:"پیرمرد و دریا",targetHref :"oldmanSea"},
         {title:"خجسته بهاران",targetHref :"springKh"},
         {title:"داستان پرواز",targetHref :"flyS"},
+        {title:"راز سبز زندگی بخش",targetHref :"peniS"},
         ],
     },
 }
@@ -1339,6 +1340,93 @@ export let flyStory ={
     {
       title: "هواپیما چند ثانیه پرواز کرد و چه مسافتی را طی کرد؟",
       content: "۱۲ ثانیه در آسمان ماند و ۳۶ متر حرکت کرد.",
+    },
+  ]
+    
+}
+export let peniSilin ={
+    wordId:"peni-1",
+    titleStory:"راز سبز زندگی بخش ",
+    targetHref :"peniS",
+    imageStory:["/images/assetStory/peniSilin.png",],
+    wordPart:[
+        {
+            wordMean:"ژرف‌اندیش",
+            engMean:"Thoughtful, deep thinker"
+        },
+        {
+            wordMean:"هیاهو",
+            engMean:"commotion, Noise"
+        },
+        {
+            wordMean:"جست‌وجوگر",
+            engMean:"Explorer, seeker"
+        },
+        {
+            wordMean:"حیرت‌انگیز",
+            engMean:"Amazing, incredible"
+        },
+        {
+            wordMean:"بی‌هیچ حفاظی",
+            engMean:"Unprotected"
+        },
+        {
+            wordMean:"محو شده بودند",
+            engMean:"Had disappeared"
+        },
+        {
+            wordMean:"مثال‌زدنی",
+            engMean:"exemplary"
+        },
+        {
+            wordMean:"نوید",
+            engMean:" good news"
+        },
+        {
+            wordMean:"تحول",
+            engMean:"revolution"
+        },
+        {
+            wordMean:"لا‌علاج",
+            engMean:"untreatable"
+        },
+        {
+            wordMean:"بدل شد",
+            engMean:"transformed"
+        },
+        {
+            wordMean:"بطن",
+            engMean:"Depth, inside"
+        },
+        {
+            wordMean:"زاده شد",
+            engMean:"Was born, was created"
+        },
+        {
+            wordMean:"دقیق",
+            engMean:"detailed"
+        },
+        {
+            wordMean:"دلی کنجکاو",
+            engMean:"inquisitive mind"
+        },
+   ],
+   accordionItems : [
+    {
+      title: "فلمینگ در آزمایشگاه به چه کاری مشغول بود؟",
+      content: "او در حال تحقیق و آزمایش برای پیدا کردن راهی جهت درمان بیماری‌های عفونی بود. ",
+    },
+    {
+      title: "چه اتفاقی باعث شد فلمینگ به وجود کپک در ظرف توجه کند؟",
+      content: "پس از چند روز که از آزمایشگاه دور بود، بازگشت و متوجه کپک سبزی شد که باکتری‌ها را در اطراف خود از بین برده بود. ",
+    },
+    {
+      title: "فلمینگ نام ماده‌ای را که کپک تولید می‌کرد چه گذاشت؟",
+      content: "او آن را پنی‌سیلین نامید. ",
+    },
+    {
+      title: "این کشف چه تأثیری بر درمان بیماری‌ها داشت؟",
+      content: " پنی‌سیلین باعث نجات جان هزاران نفر شد و به عنوان اولین آنتی‌بیوتیک، تحولی بزرگ در علم پزشکی به وجود آورد.",
     },
   ]
     
