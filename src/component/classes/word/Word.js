@@ -7,6 +7,7 @@ import { SentencePicture } from './SentencePicture'
 import { TheStory } from '../story/TheStory';
 import { SidebarWord } from './SidebarWord.js';
 import WordToSentence from './wordToSentence.js';
+import LetterPuzzle from './LetterPuzzle.js';
 
 export const Word = () => {
   return (
@@ -38,6 +39,7 @@ export const Word = () => {
               <Route path='/lakLak' element={<TheStory srcStory={laklak}/>}  />
               <Route path='/frogMouse' element={<TheStory srcStory={FrogM}/>}  />
               <Route path='/wordSentence' element={<WordToSentence />}  />
+              <Route path='/letterPuzzle' element={<LetterPuzzle />}  />
             </Routes>
           </div>
         </div>

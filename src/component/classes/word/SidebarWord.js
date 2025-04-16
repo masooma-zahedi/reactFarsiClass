@@ -29,6 +29,9 @@ export const SidebarWord = () => {
           <li className="nav-item">
             <NavLink className="nav-link text-success h6" to="./wordSentence">جمله سازی</NavLink>
           </li>
+          <li className="nav-item">
+            <NavLink className="nav-link text-success h6" to="./letterPuzzle">بازی حروف</NavLink>
+          </li>
           <li className="nav-item d-grid  ">
             <button type="button" className="border-0 text-success h6 nav-link" data-bs-toggle="modal" data-bs-target={`#${contentListWord.newword.idModal}`}>
               داستان 
