@@ -144,6 +144,7 @@ export let contentListAlpha = {
             {id:nanoid(4),title:" حرف غ",targetHref:"wordTable/brokenW-3",idLetter:"broken-3"},
             {id:nanoid(4),title:" حرف ف",targetHref:"wordTable/brokenW-4",idLetter:"broken-4"},
             {id:nanoid(4),title:" حرف ک",targetHref:"wordTable/brokenW-7",idLetter:"broken-7"},
+            {id:nanoid(4),title:" حرف گ",targetHref:"wordTable/brokenW-8",idLetter:"broken-8"},
             ],
         },
         gameTable :{
@@ -1686,46 +1687,46 @@ export let testFruit = {
             sylabelWord : "پی + یاز + چه --> پیازچه",
             active :""
         },
-        {
-            image : "./images/assetAlpha/fruitExa/11-07-10.png",
-            sylabelWord : "تُ + رُب --> تُرُب",
-            active :""
-        },
-        {
-            image : "./images/assetAlpha/fruitExa/11-07-11.png",
-            sylabelWord : "جَع + فَ + ری --> جَعفَری",
-            active :""
-        },
-        {
-            image : "./images/assetAlpha/fruitExa/11-07-12.png",
-            sylabelWord : "چُ + غُن + دَر --> چُغُندَر",
-            active :""
-        },
+        // {
+        //     image : "./images/assetAlpha/fruitExa/11-07-10.png",
+        //     sylabelWord : "تُ + رُب --> تُرُب",
+        //     active :""
+        // },
+        // {
+        //     image : "./images/assetAlpha/fruitExa/11-07-11.png",
+        //     sylabelWord : "جَع + فَ + ری --> جَعفَری",
+        //     active :""
+        // },
+        // {
+        //     image : "./images/assetAlpha/fruitExa/11-07-12.png",
+        //     sylabelWord : "چُ + غُن + دَر --> چُغُندَر",
+        //     active :""
+        // },
         {
             image : "./images/assetAlpha/fruitExa/11-07-13.png",
             sylabelWord : "سیر",
             active :""
         },
-        {
-            image : "./images/assetAlpha/fruitExa/11-07-14.png",
-            sylabelWord : "شَل + غَم --> شَلغَم",
-            active :""
-        },
-        {
-            image : "./images/assetAlpha/fruitExa/11-07-15.png",
-            sylabelWord : "شِ + وید --> شِوید",
-            active :""
-        },
+        // {
+        //     image : "./images/assetAlpha/fruitExa/11-07-14.png",
+        //     sylabelWord : "شَل + غَم --> شَلغَم",
+        //     active :""
+        // },
+        // {
+        //     image : "./images/assetAlpha/fruitExa/11-07-15.png",
+        //     sylabelWord : "شِ + وید --> شِوید",
+        //     active :""
+        // },
         {
             image : "./images/assetAlpha/fruitExa/11-07-16.png",
             sylabelWord : "فِل + فِل --> فِلفِل",
             active :""
         },
-        {
-            image : "./images/assetAlpha/fruitExa/11-07-17.png",
-            sylabelWord : "فِل + فِل + دُل +مِه --> فِلفِل دُلمِه",
-            active :""
-        },
+        // {
+        //     image : "./images/assetAlpha/fruitExa/11-07-17.png",
+        //     sylabelWord : "فِل + فِل + دُل +مِه --> فِلفِل دُلمِه",
+        //     active :""
+        // },
         {
             image : "./images/assetAlpha/fruitExa/11-07-18.png",
             sylabelWord : "قارچ",
@@ -1736,36 +1737,36 @@ export let testFruit = {
             sylabelWord : "کا + هو --> کاهو",
             active :""
         },
-        {
-            image : "./images/assetAlpha/fruitExa/11-07-20.png",
-            sylabelWord : "کَ + دو --> کَدو",
-            active :""
-        },
-        {
-            image : "./images/assetAlpha/fruitExa/11-07-21.png",
-            sylabelWord : " کَ + دو + سَبز --> کَدوسَبز",
-            active :""
-        },
-        {
-            image : "./images/assetAlpha/fruitExa/11-07-22.png",
-            sylabelWord : "کَ + رَفس --> کَرَفس",
-            active :""
-        },
-        {
-            image : "./images/assetAlpha/fruitExa/11-07-23.png",
-            sylabelWord : "کَ + لَم --> کَلَم",
-            active :""
-        },
+        // {
+        //     image : "./images/assetAlpha/fruitExa/11-07-20.png",
+        //     sylabelWord : "کَ + دو --> کَدو",
+        //     active :""
+        // },
+        // {
+        //     image : "./images/assetAlpha/fruitExa/11-07-21.png",
+        //     sylabelWord : " کَ + دو + سَبز --> کَدوسَبز",
+        //     active :""
+        // },
+        // {
+        //     image : "./images/assetAlpha/fruitExa/11-07-22.png",
+        //     sylabelWord : "کَ + رَفس --> کَرَفس",
+        //     active :""
+        // },
+        // {
+        //     image : "./images/assetAlpha/fruitExa/11-07-23.png",
+        //     sylabelWord : "کَ + لَم --> کَلَم",
+        //     active :""
+        // },
         {
             image : "./images/assetAlpha/fruitExa/11-07-24.png",
             sylabelWord : "کَ + لَم + بُ + روک + لی--> کَلَم بُروکلی",
             active :""
         },
-        {
-            image : "./images/assetAlpha/fruitExa/11-07-25.png",
-            sylabelWord : "گُل + کَ + لَم --> گُل کَلَم",
-            active :""
-        },
+        // {
+        //     image : "./images/assetAlpha/fruitExa/11-07-25.png",
+        //     sylabelWord : "گُل + کَ + لَم --> گُل کَلَم",
+        //     active :""
+        // },
         {
             image : "./images/assetAlpha/fruitExa/11-07-26.png",
             sylabelWord : "لو + بی + یا --> لوبیا ",
@@ -1801,31 +1802,31 @@ export let testFruit = {
             sylabelWord : "اَن + به --> اَنبه",
             active :""
         },
-        {
-            image : "./images/assetAlpha/fruitExa/12-2-5-e.png",
-            sylabelWord : "اَن + جیر --> اَنجیر",
-            active :""
-        },
+        // {
+        //     image : "./images/assetAlpha/fruitExa/12-2-5-e.png",
+        //     sylabelWord : "اَن + جیر --> اَنجیر",
+        //     active :""
+        // },
         {
             image : "./images/assetAlpha/fruitExa/12-2-6-e.png",
             sylabelWord : "اَن + گور --> اَنگور",
             active :""
         },
-        {
-            image : "./images/assetAlpha/fruitExa/12-2-7-e.png",
-            sylabelWord : "پا + پا + یا --> پاپایا",
-            active :""
-        },
+        // {
+        //     image : "./images/assetAlpha/fruitExa/12-2-7-e.png",
+        //     sylabelWord : "پا + پا + یا --> پاپایا",
+        //     active :""
+        // },
         {
             image : "./images/assetAlpha/fruitExa/12-2-8-e.png",
             sylabelWord : "پُر + تِ + قال --> پُرتِقال",
             active :""
         },
-        {
-            image : "./images/assetAlpha/fruitExa/12-2-9-e.png",
-            sylabelWord : "تَ + مِشک --> تَمِشک",
-            active :""
-        },
+        // {
+        //     image : "./images/assetAlpha/fruitExa/12-2-9-e.png",
+        //     sylabelWord : "تَ + مِشک --> تَمِشک",
+        //     active :""
+        // },
         {
             image : "./images/assetAlpha/fruitExa/12-2-10-e.png",
             sylabelWord : "توت + فَ + رَن + گی --> توت فَرَنگی",
@@ -1866,11 +1867,11 @@ export let testFruit = {
             sylabelWord : "هُ + لو --> هُلو",
             active :""
         },
-        {
-            image : "./images/assetAlpha/fruitExa/12-2-18-e.png",
-            sylabelWord : "هِن + دِ + وا + نه --> هندوانه",
-            active :""
-        },
+        // {
+        //     image : "./images/assetAlpha/fruitExa/12-2-18-e.png",
+        //     sylabelWord : "هِن + دِ + وا + نه --> هندوانه",
+        //     active :""
+        // },
     ]
 }
 
@@ -3171,8 +3172,8 @@ export let words4 = ["فَردا","فَرش","دَفتَر","رَفتَن","شَ
 export let words5 = ["بَرادَر","بَر","خِرَد","رُخ","بَرباد","پَرچَم","دارَد","تَر","دَرد","رَد","بار","تاجِر","رُب","چَتر","تُرُب","دَر","چَرخ","اَبر","خَرج","بُخار",];
 export let words6 = ["بُز","روز","زور","زَرد","زیب","باز","پاز","چیز","زِبر","بازی","تیز","زیر","زَر","خَز","زو","زیبا","زِشت","زار","راز","رُز",];
 export let words7 = ["کِتاب","کوکَب","کَبک","کَبود","کوبید","کَفش","کِیک","کَبِد","کِبریت","کَپَک","کِشتی","کیش","کَثیف","کوثَر","کودَک","کاخ","کار","کَشف","کاشی","کوشا",];
+export let words8 = ["گُربه","گُرگ","گاو","گُل","گوش","گوشی","گاز","تَگ","گُذاشت","توت فَرَنگی","اَگَر","شِگِفت","سازگار","سَگ","گِراف","گُذَر","دِگر","جِگَر","حَق گو","تَگَرگ",];
 
-// side bar dose not work
 
 // ************************* End BrokenGlassess for word Pract *******************
 
