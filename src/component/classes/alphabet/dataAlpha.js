@@ -56,6 +56,26 @@ export let storyAlpha3={
         "/images/assetAlpha/alphaStory/anty/anty-17.jpg",
         "/images/assetAlpha/alphaStory/anty/anty-18.jpg",
 ]}
+export let storyAlpha4={
+    buttonId:"storyAlp4",
+    carouselImg:[
+        "https://www.farsiamoozi.com/wp-content/uploads/h5p/content/51/images/file-ba7f09f6-beeb.png",
+        "https://www.farsiamoozi.com/wp-content/uploads/h5p/content/51/images/file-cfacfab0-c5d2.png",
+        "https://www.farsiamoozi.com/wp-content/uploads/h5p/content/51/images/file-a0117f2a-2b50.png",
+        "https://www.farsiamoozi.com/wp-content/uploads/h5p/content/51/images/file-fccf781d-0792.png",
+        "https://www.farsiamoozi.com/wp-content/uploads/h5p/content/51/images/file-228b6786-04cd.png",
+        "https://www.farsiamoozi.com/wp-content/uploads/h5p/content/51/images/file-2234e576-1925.png",
+        "https://www.farsiamoozi.com/wp-content/uploads/h5p/content/51/images/file-7df53eef-6038.png",
+        "https://www.farsiamoozi.com/wp-content/uploads/h5p/content/51/images/file-5446f0f4-a95f.png",
+        "https://www.farsiamoozi.com/wp-content/uploads/h5p/content/51/images/file-3275bc5d-477b.png",
+        "https://www.farsiamoozi.com/wp-content/uploads/h5p/content/51/images/file-7b1d3070-d2dd.png",
+        "https://www.farsiamoozi.com/wp-content/uploads/h5p/content/51/images/file-582c0078-dfab.png",
+        "https://www.farsiamoozi.com/wp-content/uploads/h5p/content/51/images/file-be365445-3d06.png",
+        "https://www.farsiamoozi.com/wp-content/uploads/h5p/content/51/images/file-09357cfb-7b7d.png",
+        "https://www.farsiamoozi.com/wp-content/uploads/h5p/content/51/images/file-14f59814-1b43.png",
+        "https://www.farsiamoozi.com/wp-content/uploads/h5p/content/51/images/file-2d7d8fa4-e1a0.png",
+        "https://www.farsiamoozi.com/wp-content/uploads/h5p/content/51/images/file-3f309db7-78ca.png",
+]}
 
 export let ququly ={
     wordId:"ququl",
@@ -139,6 +159,7 @@ export let contentListAlpha = {
             infoWords:[
             {id:nanoid(4),title:" حرف ر",targetHref:"wordTable/brokenW-5",idLetter:"broken-5"},
             {id:nanoid(4),title:"حرف ز",targetHref:"wordTable/brokenW-6",idLetter:"broken-6"},
+            {id:nanoid(4),title:" کلمات تا ژ",targetHref:"wordTable/wordBox-1",idLetter:"wordB-1"},
             {id:nanoid(4),title:" حرف ق",targetHref:"wordTable/brokenW-1",idLetter:"broken-1"},
             {id:nanoid(4),title:" حرف ص",targetHref:"wordTable/brokenW-2",idLetter:"broken-2"},
             {id:nanoid(4),title:" حرف غ",targetHref:"wordTable/brokenW-3",idLetter:"broken-3"},
@@ -161,8 +182,9 @@ export let contentListAlpha = {
             idModal:"storyAlpha1",
             infoWords:[
             {id:nanoid(4),title:"خانواده من",targetHref:"storyA1",idLetter:"storyAl-1"},
-            {id:nanoid(4),title:"آخر هفته",targetHref:"storyA2",idLetter:"storyAl-2"},
+            {id:nanoid(4),title:"متون کوتاه",targetHref:"storyA2",idLetter:"storyAl-2"},
             {id:nanoid(4),title:"مورچه تنبل",targetHref:"storyA3",idLetter:"storyAl-3"},
+            {id:nanoid(4),title:"کلمات شبیه",targetHref:"storyA4",idLetter:"storyAl-4"},
             {id:nanoid(4),title:"قوقولی",targetHref:"ququlyQu",idLetter:"ququl"},
             ],
         },
@@ -3173,6 +3195,7 @@ export let words5 = ["بَرادَر","بَر","خِرَد","رُخ","بَربا
 export let words6 = ["بُز","روز","زور","زَرد","زیب","باز","پاز","چیز","زِبر","بازی","تیز","زیر","زَر","خَز","زو","زیبا","زِشت","زار","راز","رُز",];
 export let words7 = ["کِتاب","کوکَب","کَبک","کَبود","کوبید","کَفش","کِیک","کَبِد","کِبریت","کَپَک","کِشتی","کیش","کَثیف","کوثَر","کودَک","کاخ","کار","کَشف","کاشی","کوشا",];
 export let words8 = ["گُربه","گُرگ","گاو","گُل","گوش","گوشی","گاز","تَگ","گُذاشت","توت فَرَنگی","اَگَر","شِگِفت","سازگار","سَگ","گِراف","گُذَر","دِگر","جِگَر","حَق گو","تَگَرگ",];
+export let words9 = ["بابا","پِدَر","پاپا","داد","بَد","بَر","پَد","بُرج","بید","پیر","چَپ","جَد","دود","زَر","رَد","ژَر","دُزد","دَرد","چَسب","بَرچَسب","پَتو","پود","بَرزَخ",];
 
 
 // ************************* End BrokenGlassess for word Pract *******************
