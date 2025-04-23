@@ -164,8 +164,11 @@ export let contentListAlpha = {
             {id:nanoid(4),title:" حرف ص",targetHref:"wordTable/brokenW-2",idLetter:"broken-2"},
             {id:nanoid(4),title:" حرف غ",targetHref:"wordTable/brokenW-3",idLetter:"broken-3"},
             {id:nanoid(4),title:" حرف ف",targetHref:"wordTable/brokenW-4",idLetter:"broken-4"},
-            {id:nanoid(4),title:" حرف ک",targetHref:"wordTable/brokenW-7",idLetter:"broken-7"},
+            {id:nanoid(4),title:" حرف ک",targetHref:"wordTable/wordBox-5",idLetter:"wordB-5"},
             {id:nanoid(4),title:" حرف گ",targetHref:"wordTable/brokenW-8",idLetter:"broken-8"},
+            {id:nanoid(4),title:" حرف ل",targetHref:"wordTable/wordBox-2",idLetter:"wordB-2"},
+            {id:nanoid(4),title:"حرف م",targetHref:"wordTable/wordBox-3",idLetter:"wordB-3"},
+            {id:nanoid(4),title:"حروف اب پ",targetHref:"wordTable/wordBox-4",idLetter:"wordB-4"},
             ],
         },
         gameTable :{
@@ -173,7 +176,7 @@ export let contentListAlpha = {
             infoWords:[
             {id:nanoid(4),title:"بازی اعداد",targetHref:"numberGame",idLetter:"numberGame-1"},
             {id:nanoid(4),title:"بازی آشپزخانه",targetHref:"kitchenGame",idLetter:"kitchentGame-1"},
-            {id:nanoid(4),title:"بازی شغل ها",targetHref:"professions",idLetter:"professionsGame-3"},
+            {id:nanoid(4),title:" بازی شغل ها و میوه ها",targetHref:"professions",idLetter:"professionsGame-3"},
             {id:nanoid(4),title:"بازی حیوانات",targetHref:"animals",idLetter:"animalsGame-3"},
             {id:nanoid(4),title:"بازی رنگ و بدن",targetHref:"tableColor_body",idLetter:"colorB-1"},
             ],
@@ -1493,32 +1496,32 @@ export const tableProfessions ={
 bgTable:"./images/webPic/minions-1.jpg",
 photoData: [
 [
-    { front: './images/assetAlpha/professions/pro-1.png', back: '' },
-    { front: './images/assetAlpha/professions/pro-2.png', back: '' },
-    { front: './images/assetAlpha/professions/pro-3.png', back: '' },
-    { front: './images/assetAlpha/professions/pro-4.png', back: '' },
-    { front: './images/assetAlpha/professions/pro-5.png', back: '' },
+    { front: './images/assetAlpha/professions/pro-1.png', back: './images/assetAlpha/fruitExa/12-2-17-e.png' },
+    { front: './images/assetAlpha/professions/pro-2.png', back: './images/assetAlpha/fruitExa/12-2-16-e.png' },
+    { front: './images/assetAlpha/professions/pro-3.png', back: './images/assetAlpha/fruitExa/12-2-15-e.png' },
+    { front: './images/assetAlpha/professions/pro-4.png', back: './images/assetAlpha/fruitExa/12-2-14-e.png' },
+    { front: './images/assetAlpha/professions/pro-5.png', back: './images/assetAlpha/fruitExa/12-2-13-e.png' },
 ],
 [
-    { front: './images/assetAlpha/professions/pro-6.png', back: '' },
-    { front: './images/assetAlpha/professions/pro-7.png', back: '' },
-    { front: './images/assetAlpha/professions/pro-8.png', back: '' },
-    { front: './images/assetAlpha/professions/pro-9.png', back: '' },
-    { front: './images/assetAlpha/professions/pro-10.png', back: '' },
+    { front: './images/assetAlpha/professions/pro-6.png', back: './images/assetAlpha/fruitExa/12-2-12-e.png' },
+    { front: './images/assetAlpha/professions/pro-7.png', back: './images/assetAlpha/fruitExa/12-2-11-e.png' },
+    { front: './images/assetAlpha/professions/pro-8.png', back: './images/assetAlpha/fruitExa/12-2-10-e.png' },
+    { front: './images/assetAlpha/professions/pro-9.png', back: './images/assetAlpha/fruitExa/12-2-8-e.png' },
+    { front: './images/assetAlpha/professions/pro-10.png', back: './images/assetAlpha/fruitExa/12-2-6-e.png' },
 ],
 [
-    { front: './images/assetAlpha/professions/pro-11.png', back: '' },
-    { front: './images/assetAlpha/professions/pro-12.png', back: '' },
-    { front: './images/assetAlpha/professions/pro-13.png', back: '' },
-    { front: './images/assetAlpha/professions/pro-14.png', back: '' },
-    { front: './images/assetAlpha/professions/pro-15.png', back: '' },
+    { front: './images/assetAlpha/professions/pro-11.png', back: './images/assetAlpha/fruitExa/12-2-4-e.png' },
+    { front: './images/assetAlpha/professions/pro-12.png', back: './images/assetAlpha/fruitExa/12-2-3-e.png' },
+    { front: './images/assetAlpha/professions/pro-13.png', back: './images/assetAlpha/fruitExa/12-2-2-e.png' },
+    { front: './images/assetAlpha/professions/pro-14.png', back: './images/assetAlpha/fruitExa/12-2-1-e.png' },
+    { front: './images/assetAlpha/professions/pro-15.png', back: './images/assetAlpha/fruitExa/11-07-28.png' },
 ],
 [
-    { front: './images/assetAlpha/professions/pro-16.png', back: '' },
-    { front: './images/assetAlpha/professions/pro-17.png', back: '' },
-    { front: './images/assetAlpha/professions/pro-18.png', back: '' },
-    { front: './images/assetAlpha/professions/pro-19.png', back: '' },
-    { front: './images/assetAlpha/professions/pro-20.png', back: '' },
+    { front: './images/assetAlpha/professions/pro-16.png', back: './images/assetAlpha/fruitExa/11-07-27.png' },
+    { front: './images/assetAlpha/professions/pro-17.png', back: './images/assetAlpha/fruitExa/11-07-26.png' },
+    { front: './images/assetAlpha/professions/pro-18.png', back: './images/assetAlpha/fruitExa/11-07-24.png' },
+    { front: './images/assetAlpha/professions/pro-19.png', back: './images/assetAlpha/fruitExa/11-07-19.png' },
+    { front: './images/assetAlpha/professions/pro-20.png', back: './images/assetAlpha/fruitExa/11-07-18.png' },
 ],
 
 ]};
@@ -1894,6 +1897,7 @@ export let testFruit = {
         //     sylabelWord : "هِن + دِ + وا + نه --> هندوانه",
         //     active :""
         // },
+        
     ]
 }
 
@@ -3196,6 +3200,10 @@ export let words6 = ["بُز","روز","زور","زَرد","زیب","باز","پ
 export let words7 = ["کِتاب","کوکَب","کَبک","کَبود","کوبید","کَفش","کِیک","کَبِد","کِبریت","کَپَک","کِشتی","کیش","کَثیف","کوثَر","کودَک","کاخ","کار","کَشف","کاشی","کوشا",];
 export let words8 = ["گُربه","گُرگ","گاو","گُل","گوش","گوشی","گاز","تَگ","گُذاشت","توت فَرَنگی","اَگَر","شِگِفت","سازگار","سَگ","گِراف","گُذَر","دِگر","جِگَر","حَق گو","تَگَرگ",];
 export let words9 = ["بابا","پِدَر","پاپا","داد","بَد","بَر","پَد","بُرج","بید","پیر","چَپ","جَد","دود","زَر","رَد","ژَر","دُزد","دَرد","چَسب","بَرچَسب","پَتو","پود","بَرزَخ",];
+export let words10 = ["طَلا","لاک","بالا","لیز","قالی","کالا","سالو","لولا","لوک","پِلاک","پولاد","کِلاس","لِباس","بُلور","لوکس","زُلال","جَلال","زِلزِلِه","بالارو","دِلاوَر","لاکپُشت","سالاد",];
+export let words11 = ["مار","مات","موز","مَغز","مُلک","مَرد","موم","مَکر","ماست","ماسک","مِداد","ماکارونی","ماتیک","موتور","آمار","رام","کَلام","گام","سُماق","مَطبَخ","مُبل","مُپ","موج","سیمُرغ","مُقَوا","مَخمل","مُژده","ماتَم",];
+export let words12 = ["نان","اَنار","نارِنچ","نیش","نَرم","نَقاش","سَنگ","رَنگ","بَنَفش","دَندان","آب نَبات","نَسیم","کَمان","تَکان","نارِنگی","کَفَن","آتَش نِشان","نِگران","نَرگِس","نَوَسان","نازُک","ناقوس","نَعل","ناحَق","نِجات","ناخُن","نازَنین","نَردِبان","نارَس","نازِل","نیکو","دانِش","سَنجاق","نَمَد",];
+export let words13 = ["آ","با","پَ","بِ","او","پی","اُ","بَ","اَ","بو","بُ","پُ","بُ","پو","بو","پِ","بو","اِ","بی","ای","پِ","پا","او","پی",];
 
 
 // ************************* End BrokenGlassess for word Pract *******************
