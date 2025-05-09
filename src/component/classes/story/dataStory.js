@@ -1213,111 +1213,111 @@ export let flyStory ={
     wordPart:[
         {
             wordMean:"رویا",
-            engMean:""
+            engMean:"Dream"
         },
         {
             wordMean:"پشتکار",
-            engMean:""
+            engMean:"Perseverance"
         },
         {
             wordMean:"شکست",
-            engMean:""
+            engMean:"Failure"
         },
         {
             wordMean:"تلاش",
-            engMean:""
+            engMean:"Effort"
         },
         {
             wordMean:"اختراع",
-            engMean:""
+            engMean:"Invention"
         },
         {
             wordMean:"تاریخ ساز",
-            engMean:""
+            engMean:"History maker"
         },
         {
             wordMean:"ثبت",
-            engMean:""
+            engMean:"Registration"
         },
         {
             wordMean:"ساده",
-            engMean:""
+            engMean:"Simple"
         },
         {
             wordMean:"پرواز",
-            engMean:""
+            engMean:"Flight"
         },
         {
             wordMean:"باور",
-            engMean:""
+            engMean:"Belief"
         },
         {
             wordMean:"امکان ندارد",
-            engMean:""
+            engMean:"Not possible."
         },
         {
             wordMean:"جدی",
-            engMean:""
+            engMean:"Serious"
         },
         {
             wordMean:"مهم",
-            engMean:""
+            engMean:"Important"
         },
         {
             wordMean:"تماشاچی",
-            engMean:""
+            engMean:"viewer"
         },
         {
             wordMean:"هواپیما",
-            engMean:""
+            engMean:"Airplane"
         },
         {
             wordMean:"پرنده",
-            engMean:""
+            engMean:"Bird"
         },
         {
             wordMean:"جمعیت",
-            engMean:""
+            engMean:"Population"
         },
         {
             wordMean:"قلمرو",
-            engMean:""
+            engMean:"Territory"
         },
         {
             wordMean:"تماشا کردن",
-            engMean:""
+            engMean:"Watching"
         },
         {
             wordMean:"پل",
-            engMean:""
+            engMean:"Bridge"
         },
         {
             wordMean:"انگیزه",
-            engMean:""
+            engMean:"Motivation"
         },
         {
             wordMean:"اشتباه",
-            engMean:""
+            engMean:"Wrong"
         },
         {
             wordMean:"دانشگاه",
-            engMean:""
+            engMean:"University"
         },
         {
             wordMean:"ابزار",
-            engMean:""
+            engMean:"Tools"
         },
         {
             wordMean:"بادخیز",
-            engMean:""
+            engMean:"Windy"
         },
         {
             wordMean:"حقیقت",
-            engMean:""
+            engMean:"Truth"
         },
         {
             wordMean:"ماندگار شدن",
-            engMean:""
+            engMean:"To become permanent"
         },
    ],
    accordionItems : [
