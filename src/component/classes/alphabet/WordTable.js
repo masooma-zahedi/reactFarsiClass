@@ -1,7 +1,7 @@
 import React from 'react';
 import BrokenGlass from "../BrokenGlasses.js";
 import { Route, Routes } from 'react-router-dom';
-import { words1, words10, words11, words13, words14, words2, words3, words4, words5, words6, words7, words8, words9 } from './dataAlpha';
+import { words1, words10, words11, words13, words14, words15, words2, words3, words4, words5, words6, words7, words8, words9 } from './dataAlpha';
 import WordBox from './WordBox.js';
 
 
@@ -23,6 +23,7 @@ export default function WordTable() {
                 <Route path='/wordBox-4' element={<WordBox wordB={words13} />}  />
                 <Route path='/wordBox-5' element={<WordBox wordB={words7} />}  />
                 <Route path='/wordBox-6' element={<WordBox wordB={words14} />}  />
+                <Route path='/wordBox-7' element={<WordBox wordB={words15} />}  />
             </Routes>
                 
     </>

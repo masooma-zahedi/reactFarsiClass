@@ -171,6 +171,7 @@ export let contentListAlpha = {
             {id:nanoid(4),title:"حرف م",targetHref:"wordTable/wordBox-3",idLetter:"wordB-3"},
             {id:nanoid(4),title:"حروف اب پ",targetHref:"wordTable/wordBox-4",idLetter:"wordB-4"},
             {id:nanoid(4),title:"حروف س",targetHref:"wordTable/wordBox-6",idLetter:"wordB-6"},
+            {id:nanoid(4),title:"حروف ش",targetHref:"wordTable/wordBox-7",idLetter:"wordB-7"},
             ],
         },
         gameTable :{
