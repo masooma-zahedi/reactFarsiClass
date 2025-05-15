@@ -8,6 +8,7 @@ export let contentListWord = {
         {title:"الاغ تنبل",targetHref :"lazyD2"},   
         {title:"لک لک و جوجه ها",targetHref :"lakLak"},
         {title:"موش و قورباغه",targetHref :"FrogMouse"},
+        {title:"موش کور",targetHref :"blindMouse"},
         {title:"",targetHref :""},
         ],
     },
@@ -974,6 +975,142 @@ export let FrogM ={
         {
           title: "چرا قورباغه هم شکار شد؟  ",
           content: " چون به پای موش بسته شده بود و وقتی شاهین موش را گرفت، قورباغه هم همراه او بالا رفت.",
+        },
+      ]
+
+    
+}
+export let blindMouse ={
+    wordId:"blindM",
+    targetHref:"blindMouse",
+    titleStory:"داستان موش کور",
+    imageStory:["/images/assetWord/storyWord/blindMouse.png",],
+    wordPart:[
+        {
+            wordMean:"آرام  و خاموش",
+            engMean:"Quiet and silent"
+        },
+        {
+            wordMean:"هیاهو",
+            engMean:"Noise"
+        },
+        {
+            wordMean:"لانه",
+            engMean:"Nest"
+        },
+        {
+            wordMean:"ریشه های ستبر",
+            engMean:"Thick roots"
+        },
+        {
+            wordMean:"کهنسال",
+            engMean:"Old"
+        },
+        {
+            wordMean:"نوجوان",
+            engMean:"Teenager"
+        },
+        {
+            wordMean:"شوق",
+            engMean:"Passion"
+        },
+        {
+            wordMean:"جوانه زدن",
+            engMean:"Sprouting"
+        },
+        {
+            wordMean:"فراتر از تاریکی",
+            engMean:"Beyond the Darkness"
+        },
+        {
+            wordMean:"شور و هیجان",
+            engMean:"Passion and excitement"
+        },
+        {
+            wordMean:"فریاد زدن",
+            engMean:"Shouting"
+        },
+        {
+            wordMean:"سکوت کردن",
+            engMean:"To be silent"
+        },
+        {
+            wordMean:"تردید",
+            engMean:"Doubt"
+        },
+        {
+            wordMean:"تمسخر",
+            engMean:"Ridicule"
+        },
+        {
+            wordMean:"عمیق",
+            engMean:"Deep"
+        },
+        {
+            wordMean:"واقعیت",
+            engMean:"Reality"
+        },
+        {
+            wordMean:"ماندگار",
+            engMean:"Permanent"
+        },
+        {
+            wordMean:"لمس کردن",
+            engMean:"Touching"
+        },
+        {
+            wordMean:"شکل",
+            engMean:"Shape"
+        },
+        {
+            wordMean:"جنس",
+            engMean:"material"
+        },
+        {
+            wordMean:"گرد",
+            engMean:"Round"
+        },
+        {
+            wordMean:"زبر",
+            engMean:"Rough"
+        },
+        {
+            wordMean:"اندوه",
+            engMean:"Sadness"
+        },
+        {
+            wordMean:"ملایم",
+            engMean:"Gentle"
+        },
+        {
+            wordMean:"درک کردن",
+            engMean:"Understand"
+        },
+        {
+            wordMean:"قضاوت کردن",
+            engMean:"To judge"
+        },
+    ],
+    accordionItems : [
+        {
+          title: "موش کور و پسرش کجا زندگی می‌کردند؟ ",
+          content: "آن‌ها در یک جنگل سرسبز و آرام، زیر درخت بزرگی زندگی می‌کردند. ",
+        },
+        {
+          title: "پسر موش کور صبح چه چیزی را ادعا کرد؟ ",
+          content: "او گفت که می‌تواند همه‌چیز را ببیند و چشم‌هایش کار می‌کنند. ",
+        },
+        {
+          title: "مادر برای امتحان کردن حرف پسرش چه کاری انجام داد؟ ",
+          content: "چند دانه کندر جلوی پسرش گذاشت و از او خواست بگوید که آن‌ها چه هستند. ",
+        },
+        {
+          title: " پسر موش کور دانه‌های کندر را چه چیزی تصور کرد؟ ",
+          content: "او فکر کرد که آن‌ها چند تکه سنگ کوچک هستند. ",
+        },
+        {
+          title: "مادر چگونه ثابت کرد که پسرش اشتباه کرده است؟ ",
+          content: "او گفت اگر پسرش بوی دانه‌ها را حس می‌کرد، می‌فهمید که آن‌ها کندر هستند، نه سنگ. ",
         },
       ]
 

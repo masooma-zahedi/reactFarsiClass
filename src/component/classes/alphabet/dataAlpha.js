@@ -142,6 +142,7 @@ export let contentListAlpha = {
             {id:nanoid(4),title:"شغل ها ",targetHref :"professionsPart-2",idLetter:"kitchen1-1"},
             {id:nanoid(4),title:"حیوانات ",targetHref :"animalsPart-2",idLetter:"animal-1"},
             {id:nanoid(4),title:"بخش های خانه ",targetHref :"houseParts-2",idLetter:"houseP-1"},
+            {id:nanoid(4),title:"نشانه های بیماری",targetHref :"healthP-2",idLetter:"healthPro-1"},
             ],
         },
         readTogether :{
@@ -1615,7 +1616,7 @@ photoData: [
 // **************************** End  flipping Table data ************************
 
 
-// ******************************* Start MakeWordCarousel data *********************
+// ******************************* Start MakeWordCarousel data (معنی لغات تازه) *********************
 export let testColor = {
     
         wordCarousel:{
@@ -2918,7 +2919,7 @@ export let houseParts1 = {
         idLetter :"housePa-1",
         imageCarousel :"housePartD-1"
         },
-    alphaAnimal : [
+    alphaHouse : [
         {
             image :"/images/assetAlpha/house/house-1.png",
             sylabelWord : "",
@@ -3190,6 +3191,123 @@ export let houseParts1 = {
 
     ]
 }
+export let healthProblem1 = {
+    
+    wordCarousel:{
+        title:"نشانه های بیماری",
+        targetCarouselId :"healthP-1",
+        targetHref :"healthP-2",
+        idLetter :"healthPro-1",
+        imageCarousel :"healthproblem-1"
+        },
+    alphaHealth : [
+        {
+            image :"/images/assetAlpha/problemHealth/New folder/health-1.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/problemHealth/New folder/health-2.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/problemHealth/New folder/health-3.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/problemHealth/New folder/health-4.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/problemHealth/New folder/health-5.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/problemHealth/New folder/health-6.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/problemHealth/New folder/health-7.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/problemHealth/New folder/health-8.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/problemHealth/New folder/health-9.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/problemHealth/New folder/health-10.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/problemHealth/New folder/health-11.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/problemHealth/New folder/health-12.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/problemHealth/New folder/health-13.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/problemHealth/health-1-1.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/problemHealth/health-1-2.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/problemHealth/health-1-3.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/problemHealth/health-1-4.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/problemHealth/health-1-5.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/problemHealth/health-1-6.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/problemHealth/health-1-7.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/problemHealth/health-1-8.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/problemHealth/health-1-9.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/problemHealth/health-1-10.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/problemHealth/health-1-11.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/problemHealth/health-1-12.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/problemHealth/health-1-13.jpg",
+            sylabelWord : "",
+        },
+
+    ]
+}
 
 // ******************************* End MakeWordCarousel data *********************
 
@@ -3203,7 +3321,7 @@ export let words6 = ["بُز","روز","زور","زَرد","زیب","باز","پ
 export let words7 = ["کِتاب","کوکَب","کَبک","کَبود","کوبید","کَفش","کِیک","کَبِد","کِبریت","کَپَک","کِشتی","کیش","کَثیف","کوثَر","کودَک","کاخ","کار","کَشف","کاشی","کوشا",];
 export let words8 = ["گُربه","گُرگ","گاو","گُل","گوش","گوشی","گاز","تَگ","گُذاشت","توت فَرَنگی","اَگَر","شِگِفت","سازگار","سَگ","گِراف","گُذَر","دِگر","جِگَر","حَق گو","تَگَرگ",];
 export let words9 = ["بابا","پِدَر","پاپا","داد","بَد","بَر","پَد","بُرج","بید","پیر","چَپ","جَد","دود","زَر","رَد","ژَر","دُزد","دَرد","چَسب","بَرچَسب","پَتو","پود","بَرزَخ",];
-export let words10 = ["طَلا","لاک","بالا","لیز","قالی","کالا","سالو","لولا","لوک","پِلاک","پولاد","کِلاس","لِباس","بُلور","لوکس","زُلال","جَلال","زِلزِلِه","بالارو","دِلاوَر","لاکپُشت","سالاد",];
+export let words10 = ["طَلا","لاک","بالا","لیز","قالی","کالا","سالو","لولا","لوک","پِلاک","پولاد","کِلاس","لِباس","بُلور","لوکس","زُلال","جَلال","زِلزِلِه","بالارو","دِلاوَر","لاک پُشت","سالاد",];
 export let words11 = ["مار","مات","موز","مَغز","مُلک","مَرد","موم","مَکر","ماست","ماسک","مِداد","ماکارونی","ماتیک","موتور","آمار","رام","کَلام","گام","سُماق","مَطبَخ","مُبل","مُپ","موج","سیمُرغ","مُقَوا","مَخمل","مُژده","ماتَم",];
 export let words12 = ["نان","اَنار","نارِنچ","نیش","نَرم","نَقاش","سَنگ","رَنگ","بَنَفش","دَندان","آب نَبات","نَسیم","کَمان","تَکان","نارِنگی","کَفَن","آتَش نِشان","نِگران","نَرگِس","نَوَسان","نازُک","ناقوس","نَعل","ناحَق","نِجات","ناخُن","نازَنین","نَردِبان","نارَس","نازِل","نیکو","دانِش","سَنجاق","نَمَد",];
 export let words13 = ["آ","تُ","با","تا","پَ","بِ","او","پی","تَ","اُ","بَ","اَ","بو","بُ","پُ","تو","بُ","پو","تُ","بو","پِ","تا","بو","اِ","بی","ای","تِ","پِ","پا","او","تی","پی",];

@@ -1,4 +1,4 @@
-import { testBody, testColor, testFruit, testWear, testSchoolSupplies, testDaysOfWeek, testNumbers,testOrder1, kitchenUtensils1, professions1, animals1, houseParts, houseParts1 } from "./dataAlpha.js"
+import { testBody, testColor, testFruit, testWear, testSchoolSupplies, testDaysOfWeek, testNumbers,testOrder1, kitchenUtensils1, professions1, animals1, houseParts, houseParts1, healthProblem1 } from "./dataAlpha.js"
 import { MakeWordCarousel } from "./MakeWordCarousel.js";
 import { Routes, Route } from 'react-router-dom';
 
@@ -18,7 +18,8 @@ export const WordCarousel = () => {
                   <Route path='/kitchen1Part-2' element={<MakeWordCarousel carouselName={kitchenUtensils1.wordCarousel} carouselData={kitchenUtensils1.alphaKitchen}/>}  />
                   <Route path='/professionsPart-2' element={<MakeWordCarousel carouselName={professions1.wordCarousel} carouselData={professions1.alphaKitchen}/>}  />
                   <Route path='/animalsPart-2' element={<MakeWordCarousel carouselName={animals1.wordCarousel} carouselData={animals1.alphaAnimal}/>}  />
-                  <Route path='/houseParts-2' element={<MakeWordCarousel carouselName={houseParts1.wordCarousel} carouselData={houseParts1.alphaAnimal}/>}  />
+                  <Route path='/houseParts-2' element={<MakeWordCarousel carouselName={houseParts1.wordCarousel} carouselData={houseParts1.alphaHouse}/>}  />
+                  <Route path='/healthP-2' element={<MakeWordCarousel carouselName={healthProblem1.wordCarousel} carouselData={healthProblem1.alphaHealth}/>}  />
       </Routes>
 
 
