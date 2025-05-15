@@ -1,4 +1,4 @@
-import { testBody, testColor, testFruit, testWear, testSchoolSupplies, testDaysOfWeek, testNumbers,testOrder1, kitchenUtensils1, professions1, animals1, houseParts, houseParts1, healthProblem1 } from "./dataAlpha.js"
+import { testBody, testColor, testFruit, testWear, testSchoolSupplies, testDaysOfWeek, testNumbers,testOrder1, kitchenUtensils1, professions1, animals1, houseParts, houseParts1, healthProblem1, insect1 } from "./dataAlpha.js"
 import { MakeWordCarousel } from "./MakeWordCarousel.js";
 import { Routes, Route } from 'react-router-dom';
 
@@ -20,6 +20,7 @@ export const WordCarousel = () => {
                   <Route path='/animalsPart-2' element={<MakeWordCarousel carouselName={animals1.wordCarousel} carouselData={animals1.alphaAnimal}/>}  />
                   <Route path='/houseParts-2' element={<MakeWordCarousel carouselName={houseParts1.wordCarousel} carouselData={houseParts1.alphaHouse}/>}  />
                   <Route path='/healthP-2' element={<MakeWordCarousel carouselName={healthProblem1.wordCarousel} carouselData={healthProblem1.alphaHealth}/>}  />
+                  <Route path='/insectA-2' element={<MakeWordCarousel carouselName={insect1.wordCarousel} carouselData={insect1.alphaInsect}/>}  />
       </Routes>
 
 

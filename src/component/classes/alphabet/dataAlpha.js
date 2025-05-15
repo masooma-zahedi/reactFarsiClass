@@ -32,7 +32,8 @@ export let storyAlpha2={
         "/images/assetAlpha/alphaStory/variety/variety-8.png",
         "./images/assetAlpha/alphaStory/variety/kakoly.png",
         "/images/assetAlpha/alphaStory/variety/happyFamily.png",
-        "/images/assetAlpha/alphaStory/variety/sara.png"
+        "/images/assetAlpha/alphaStory/variety/sara.png",
+        "/images/assetAlpha/alphaStory/variety/windCat.png",
     ]}
     
 export let storyAlpha3={
@@ -143,6 +144,7 @@ export let contentListAlpha = {
             {id:nanoid(4),title:"حیوانات ",targetHref :"animalsPart-2",idLetter:"animal-1"},
             {id:nanoid(4),title:"بخش های خانه ",targetHref :"houseParts-2",idLetter:"houseP-1"},
             {id:nanoid(4),title:"نشانه های بیماری",targetHref :"healthP-2",idLetter:"healthPro-1"},
+            {id:nanoid(4),title:"حَشَرات",targetHref :"insectA-2",idLetter:"insectA-1"},
             ],
         },
         readTogether :{
@@ -3306,6 +3308,66 @@ export let healthProblem1 = {
             sylabelWord : "",
         },
 
+    ]
+}
+export let insect1 = {
+    
+    wordCarousel:{
+        title:"حَشَرات",
+        targetCarouselId :"insect-1",
+        targetHref :"insectA-2",
+        idLetter :"insectA-1",
+        imageCarousel :"insectCarousel-1"
+        },
+    alphaInsect : [
+        {
+            image :"/images/assetAlpha/insects/insect-1.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/insects/insect-2.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/insects/insect-3.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/insects/insect-4.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/insects/insect-5.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/insects/insect-6.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/insects/insect-7.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/insects/insect-8.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/insects/insect-10.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/insects/insect-11.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/insects/insect-12.jpg",
+            sylabelWord : "",
+        },
+        {
+            image :"/images/assetAlpha/insects/insect-13.jpg",
+            sylabelWord : "",
+        },
     ]
 }
 
