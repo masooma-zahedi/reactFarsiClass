@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom';
 import { SentenceCarousel } from './SentenceCarousel'
-import { sentenceCarousel, testPicture,testPicture2, testGramer, lazyDonky, laklak, FrogM, blindMouse, elephantT } from './dataWord';
+import { sentenceCarousel, testPicture,testPicture2, testGramer, lazyDonky, laklak, FrogM, blindMouse, elephantT, sleepBear } from './dataWord';
 import { lionBear, realFriends } from './dataWord';
 import { SentencePicture } from './SentencePicture'
 import { TheStory } from '../story/TheStory';
@@ -20,14 +20,6 @@ export const Word = () => {
                     <SidebarWord />
           </div>
           <div className="col-s-12 col-lg-9">
-            {/* <SentenceCarousel carouselName={sentenceCarousel.carouselInfo} carouselData={sentenceCarousel.contentCarousel}/>
-            <SentencePicture carouselName={testPicture.wordCarousel} carouselData={testPicture.alphaColor}/>
-            <SentencePicture carouselName={testPicture2.wordCarousel} carouselData={testPicture2.alphaColor}/>
-            <SentencePicture carouselName={testGramer.wordCarousel} carouselData={testGramer.alphaColor}/>
-            <TheStory srcStory={lionBear}/>
-            <TheStory srcStory={realFriends}/>
-            <TheStory srcStory={lazyDonky}/> */}
-
 
             <Routes>
               <Route path='/sentenceCarousel-1' element={<SentenceCarousel carouselName={sentenceCarousel.carouselInfo} carouselData={sentenceCarousel.contentCarousel}/>}  />
@@ -41,6 +33,7 @@ export const Word = () => {
               <Route path='/frogMouse' element={<TheStory srcStory={FrogM}/>}  />
               <Route path='/blindMouse' element={<TheStory srcStory={blindMouse}/>}  />
               <Route path='/elephantT1' element={<TheStory srcStory={elephantT}/>}  />
+              <Route path='/sleepBear1' element={<TheStory srcStory={sleepBear}/>}  />
               <Route path='/wordSentence' element={<WordToSentence />}  />
               <Route path='/letterPuzzle' element={<LetterPuzzle />}  />
             </Routes>

@@ -16,6 +16,7 @@ export let contentListStory = {
         {title:"خجسته بهاران",targetHref :"springKh"},
         {title:"داستان پرواز",targetHref :"flyS"},
         {title:"راز سبز زندگی بخش",targetHref :"peniS"},
+        {title:"جاناتان مرغ دریایی",targetHref :"janatanM"},
         ],
     },
 }
@@ -1427,6 +1428,141 @@ export let peniSilin ={
     {
       title: "این کشف چه تأثیری بر درمان بیماری‌ها داشت؟",
       content: " پنی‌سیلین باعث نجات جان هزاران نفر شد و به عنوان اولین آنتی‌بیوتیک، تحولی بزرگ در علم پزشکی به وجود آورد.",
+    },
+  ]
+    
+}
+export let janatan ={
+    wordId:"janatan-1",
+    titleStory:"داستان جاناتان مرغ دریایی",
+    targetHref :"janatanM",
+    imageStory:["/images/assetStory/janatan.png",],
+    wordPart:[
+        {
+            wordMean:"مرغ دریایی",
+            engMean:"Seagull"
+        },
+        {
+            wordMean:"بحر",
+            engMean:"Sea"
+        },
+        {
+            wordMean:"پهناور",
+            engMean:"Vast"
+        },
+        {
+            wordMean:"هیاهو",
+            engMean:"Noise"
+        },
+        {
+            wordMean:"استراحت",
+            engMean:"Rest"
+        },
+        {
+            wordMean:"لذت واقعی",
+            engMean:"Real pleasure"
+        },
+        {
+            wordMean:"شکار",
+            engMean:"Hunting"
+        },
+        {
+            wordMean:"ارتفاع",
+            engMean:"Height"
+        },
+        {
+            wordMean:"لمس کردن",
+            engMean:"Touching"
+        },
+        {
+            wordMean:"مانور",
+            engMean:"Maneuver"
+        },
+        {
+            wordMean:"پیچیده",
+            engMean:"Complex"
+        },
+        {
+            wordMean:"صخره ها",
+            engMean:"Rocks"
+        },
+        {
+            wordMean:"شیرجه",
+            engMean:"Dive"
+        },
+        {
+            wordMean:"چرخ میزد",
+            engMean:"It was spinning."
+        },
+        {
+            wordMean:"درک کردن",
+            engMean:"Understand"
+        },
+        {
+            wordMean:"سقوط کردن",
+            engMean:"To fall"
+        },
+        {
+            wordMean:"کمال",
+            engMean:"Perfection"
+        },
+        {
+            wordMean:"قانون",
+            engMean:"Law"
+        },
+        {
+            wordMean:"بزرگان",
+            engMean:"Elders"
+        },
+        {
+            wordMean:"بی احترامی",
+            engMean:"Disrespect"
+        },
+        {
+            wordMean:"غمگین شدن",
+            engMean:"To be sad"
+        },
+        {
+            wordMean:"قبیله",
+            engMean:"Tribe"
+        },
+        {
+            wordMean:"دشمن",
+            engMean:"Enemy"
+        },
+        {
+            wordMean:"ذهن",
+            engMean:"Mind"
+        },
+        {
+            wordMean:"تمرکز",
+            engMean:"Focus"
+        },
+        {
+            wordMean:"محدودیت",
+            engMean:"Limitation"
+        },
+   ],
+   accordionItems : [
+    {
+      title: " جاناتان با دیگر مرغ‌های دریایی چه تفاوتی داشت؟",
+      content: "جاناتان عاشق پرواز بود و فقط برای شکار غذا پرواز نمی‌کرد، بلکه برای لذت بردن، یادگیری و کشف توانایی‌هایش پرواز می‌کرد. ",
+    },
+    {
+      title: "چرا جاناتان پرواز را بیشتر از شکار ماهی دوست داشت؟",
+      content: " چون او حس می‌کرد که پرواز می‌تواند راهی برای آزادی، شناخت خود و تجربه کردن چیزهای جدید باشد.",
+    },
+    {
+      title: "مرغ‌های دیگر درباره‌ی رفتار جاناتان چه نظری داشتند؟",
+      content: "  آن‌ها فکر می‌کردند جاناتان عجیب است، وقتش را تلف می‌کند و قانون‌های گروه را می‌شکند.",
+    },
+    {
+      title: "جاناتان بعد از ترک گروه، با چه مرغ‌هایی آشنا شد؟",
+      content: " با مرغ‌هایی که مثل خودش بودند؛ عاشق پرواز، مشتاق یادگیری و آزاداندیش.",
+    },
+    {
+      title: " جمله‌ی «آسمان، محدودیتی ندارد. تنها محدودیت، ذهن ماست» چه مفهومی دارد؟",
+      content: "یعنی انسان‌ها می‌توانند به هر چیزی برسند اگر ذهن‌شان را آزاد کنند و از ترس و باورهای منفی دور شوند. ",
     },
   ]
     
