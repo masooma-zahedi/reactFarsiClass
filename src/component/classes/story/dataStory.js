@@ -16,6 +16,7 @@ export let contentListStory = {
         {title:"خجسته بهاران",targetHref :"springKh"},
         {title:"داستان پرواز",targetHref :"flyS"},
         {title:"راز سبز زندگی بخش",targetHref :"peniS"},
+        {title:"جاناتان مرغ دریایی",targetHref :"janatanM"},
         ],
     },
 }
@@ -1427,6 +1428,25 @@ export let peniSilin ={
     {
       title: "این کشف چه تأثیری بر درمان بیماری‌ها داشت؟",
       content: " پنی‌سیلین باعث نجات جان هزاران نفر شد و به عنوان اولین آنتی‌بیوتیک، تحولی بزرگ در علم پزشکی به وجود آورد.",
+    },
+  ]
+    
+}
+export let janatan ={
+    wordId:"janatan-1",
+    titleStory:"داستان جاناتان مرغ دریایی",
+    targetHref :"janatanM",
+    imageStory:["/images/assetStory/janatan.png",],
+    wordPart:[
+        {
+            wordMean:"",
+            engMean:""
+        },
+   ],
+   accordionItems : [
+    {
+      title: "",
+      content: " ",
     },
   ]
     

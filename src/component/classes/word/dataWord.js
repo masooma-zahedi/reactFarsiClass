@@ -10,6 +10,7 @@ export let contentListWord = {
         {title:"موش و قورباغه",targetHref :"FrogMouse"},
         {title:"موش کور",targetHref :"blindMouse"},
         {title:"شوخی خیاط و فیل",targetHref :"elephantT1"},
+        {title:"خرس خواب آلود",targetHref :"sleepBear1"},
         {title:"",targetHref :""},
         ],
     },
@@ -1122,6 +1123,26 @@ export let elephantT ={
     targetHref:"elephantT1",
     titleStory:"  داستان شوخی خیاط و فیل",
     imageStory:["/images/assetWord/storyWord/elephantT.png",],
+    wordPart:[
+        {
+            wordMean:"",
+            engMean:""
+        },
+    ],
+    accordionItems : [
+        {
+          title: "",
+          content: " ",
+        },
+      ]
+
+    
+}
+export let sleepBear ={
+    wordId:"sleepBearD",
+    targetHref:"sleepBear1",
+    titleStory:"  داستان خرسک خواب آلود",
+    imageStory:["/images/assetWord/storyWord/sleepBear.png",],
     wordPart:[
         {
             wordMean:"",
