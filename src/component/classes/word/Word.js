@@ -8,7 +8,7 @@ import { TheStory } from '../story/TheStory';
 import { SidebarWord } from './SidebarWord.js';
 import WordToSentence from './wordToSentence.js';
 import LetterPuzzle from './LetterPuzzle.js';
-import SentenceBuilder from './SentenceBuilder.js';
+// import SentenceBuilder from './SentenceBuilder.js';
 
 export const Word = () => {
   return (
