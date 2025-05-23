@@ -1125,14 +1125,154 @@ export let elephantT ={
     imageStory:["/images/assetWord/storyWord/elephantT.png",],
     wordPart:[
         {
-            wordMean:"",
-            engMean:""
+            wordMean:"خیاط",
+            engMean:"Tailor"
+        },
+        {
+            wordMean:"فیل",
+            engMean:"Elephant"
+        },
+        {
+            wordMean:"سرزمین",
+            engMean:"Land"
+        },
+        {
+            wordMean:"رنگارنگ",
+            engMean:"Colorful"
+        },
+        {
+            wordMean:"شگفت انگیز",
+            engMean:"Amazing"
+        },
+        {
+            wordMean:"نیرومند",
+            engMean:"Strong"
+        },
+        {
+            wordMean:"مردم",
+            engMean:"People"
+        },
+        {
+            wordMean:"جایگاه",
+            engMean:"position"
+        },
+        {
+            wordMean:"خاص",
+            engMean:"Special"
+        },
+        {
+            wordMean:"قریه",
+            engMean:"Village"
+        },
+        {
+            wordMean:"مناطق",
+            engMean:"Regions"
+        },
+        {
+            wordMean:"دوردست",
+            engMean:"Distant"
+        },
+        {
+            wordMean:"حمل کردن",
+            engMean:"Carrying"
+        },
+        {
+            wordMean:"مسافر",
+            engMean:"Passenger"
+        },
+        {
+            wordMean:"معبد",
+            engMean:"Temple"
+        },
+        {
+            wordMean:"استفاده کردن",
+            engMean:"Use"
+        },
+        {
+            wordMean:"انتقال دادن",
+            engMean:"Transfer"
+        },
+        {
+            wordMean:"نفقه",
+            engMean:"Alimony"
+        },
+        {
+            wordMean:"ختم کار",
+            engMean:"End of work"
+        },
+        {
+            wordMean:"مسیر",
+            engMean:"path"
+        },
+        {
+            wordMean:"درخت کهن",
+            engMean:"Old tree"
+        },
+        {
+            wordMean:"نوش جان کردن",
+            engMean:"To enjoy"
+        },
+        {
+            wordMean:"دکان",
+            engMean:"Shop"
+        },
+        {
+            wordMean:"بازیگوش",
+            engMean:"Playful"
+        },
+        {
+            wordMean:"عادت",
+            engMean:"Habit"
+        },
+        {
+            wordMean:"سوزن",
+            engMean:"Needle"
+        },
+        {
+            wordMean:"خرطوم",
+            engMean:"Hose"
+        },
+        {
+            wordMean:"قاه قاه خندیدن",
+            engMean:"Laughing out loud"
+        },
+        {
+            wordMean:"خواهش کردن",
+            engMean:"To beg"
+        },
+        {
+            wordMean:"مزاق کردن",
+            engMean:"To joke"
+        },
+        {
+            wordMean:"کوشش کردن",
+            engMean:"To try"
         },
     ],
     accordionItems : [
         {
-          title: "",
-          content: " ",
+          title: "۱. فیل در کجا و برای چه کارهایی استفاده می‌شد؟",
+          content: "در روستاهای هندوستان، فیل برای حمل بار و رساندن مردم به معبد استفاده می‌شد. ",
+        },
+        {
+          title: "۲. مردی که فیل داشت، چگونه با آن کار می‌کرد؟",
+          content: "او با فیل بار مردم را انتقال می‌داد و از این طریق پول به دست می‌آورد. گاهی هم مردم را سوار فیل می‌کرد و به معبد می‌برد. ",
+        },
+        {
+          title: "۳. خیاط با فیل چه رفتاری داشت و چرا این کار نادرست بود؟",
+          content: "خیاط هر روز سوزن را در خرطوم فیل فرو می‌کرد و به آن شوخی می‌گفت. این کار نادرست بود چون فیل هم احساس دارد و از این کار اذیت می‌شد. ",
+        },
+        {
+          title: "۴. چرا صاحب فیل نتوانست راه فیل را تغییر دهد؟",
+          content: " جواب: چون فیل عاشق موز بود و نمی‌توانست از کنار درخت موز بگذرد.",
+        },
+        {
+          title: "۵. فیل چگونه از خیاط انتقام گرفت؟",
+          content: "فیل آب گل‌آلود را در خرطوم خود نگه داشت و وقتی خیاط خواست باز هم شوخی کند، آن آب را روی خیاط و لباس‌هایش پاشید. ",
+        },
+        {
+          title: "۶. مردم بعد از دیدن این ماجرا چه عکس‌العملی نشان دادند؟",
+          content: "مردم خندیدند و به خیاط گفتند حالا مزه‌ی شوخی را چشیدی. چون همیشه با فیل شوخی می‌کردی، حالا فیل هم با تو شوخی کرد. ",
         },
       ]
 

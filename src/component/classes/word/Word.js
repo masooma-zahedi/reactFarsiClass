@@ -20,14 +20,6 @@ export const Word = () => {
                     <SidebarWord />
           </div>
           <div className="col-s-12 col-lg-9">
-            {/* <SentenceCarousel carouselName={sentenceCarousel.carouselInfo} carouselData={sentenceCarousel.contentCarousel}/>
-            <SentencePicture carouselName={testPicture.wordCarousel} carouselData={testPicture.alphaColor}/>
-            <SentencePicture carouselName={testPicture2.wordCarousel} carouselData={testPicture2.alphaColor}/>
-            <SentencePicture carouselName={testGramer.wordCarousel} carouselData={testGramer.alphaColor}/>
-            <TheStory srcStory={lionBear}/>
-            <TheStory srcStory={realFriends}/>
-            <TheStory srcStory={lazyDonky}/> */}
-
 
             <Routes>
               <Route path='/sentenceCarousel-1' element={<SentenceCarousel carouselName={sentenceCarousel.carouselInfo} carouselData={sentenceCarousel.contentCarousel}/>}  />
