@@ -1,28 +1,7 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const sentenceOptions = [
-  {
-    fa: ['من', 'به','می‌روم', 'مدرسه', ],
-    en: 'I go to school',
-    correctFa:['من', 'به', 'مدرسه', 'می‌روم']
-  },
-  {
-    fa: ['او','می‌خواند','کتاب',],
-    en: 'He/She reads a book',
-    correctFa:['او', 'کتاب', 'می‌خواند']
-  },
-  {
-    fa: ['ما', 'در', 'پارک', 'بازی', 'می‌کنیم'],
-    en: 'We play in the park',
-    correctFa:['او', 'کتاب', 'می‌خواند']
-  },
-  {
-    fa: ['اسم','معصومه','و','من','26ساله','است','هستم',],
-    en: 'We play in the park',
-    correctFa:['او', 'کتاب', 'می‌خواند']
-  },
-];
+
 
 // تابعی برای تولید رنگ تصادفی
 const getRandomColor = () => {
@@ -39,7 +18,7 @@ const isDarkColor = ({ r, g, b }) => {
   return brightness < 128;
 };
 
-const SentenceBuilder = () => {
+const SentenceBuilder = ({sentenceOptions}) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [words, setWords] = useState([...sentenceOptions[0].fa]);
   const [originalWords, setOriginalWords] = useState([...sentenceOptions[0].fa]);

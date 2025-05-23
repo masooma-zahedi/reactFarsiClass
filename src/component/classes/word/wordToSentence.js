@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import SentenceBuilder from './SentenceBuilder';
+import {sentenceOptions3} from './dataWord'
+
 // import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const WordToSentence = () => {
   const [wordInput, setWordInput] = useState('');
@@ -112,7 +115,7 @@ const WordToSentence = () => {
         <button className='btn btn-danger' onClick={handleReset}>Reset</button>
       </div>
       <div className='container pb-3 border border-2  border-danger rounded my-5'>
-        <SentenceBuilder />
+        <SentenceBuilder sentenceOptions={sentenceOptions3}/>
       </div>
     </>
   );

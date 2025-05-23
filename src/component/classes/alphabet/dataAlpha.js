@@ -99,6 +99,26 @@ export let ququly ={
 
     
 }
+export let puyaStory ={
+    wordId:"puya1",
+    targetHref:"puyaStory1",
+    titleStory:" داستان روز بارانی پویا ",
+    imageStory:["/images/assetWord/storyWord/puya.png",],
+    wordPart:[
+        {
+            wordMean:"",
+            engMean:""
+        },
+    ],
+    accordionItems : [
+        {
+          title: "",
+          content: "",
+        },
+      ]
+
+    
+}
 
 
 // &&&&&& start short sound
@@ -195,6 +215,7 @@ export let contentListAlpha = {
             {id:nanoid(4),title:"مورچه تنبل",targetHref:"storyA3",idLetter:"storyAl-3"},
             {id:nanoid(4),title:"کلمات شبیه",targetHref:"storyA4",idLetter:"storyAl-4"},
             {id:nanoid(4),title:"قوقولی",targetHref:"ququlyQu",idLetter:"ququl"},
+            {id:nanoid(4),title:"پویا و روز بارانی",targetHref:"puyaStory1",idLetter:"puya1"},
             ],
         },
 }
@@ -3233,18 +3254,6 @@ export let healthProblem1 = {
         },
         {
             image :"/images/assetAlpha/problemHealth/New folder/health-8.jpg",
-            sylabelWord : "",
-        },
-        {
-            image :"/images/assetAlpha/problemHealth/New folder/health-9.jpg",
-            sylabelWord : "",
-        },
-        {
-            image :"/images/assetAlpha/problemHealth/New folder/health-10.jpg",
-            sylabelWord : "",
-        },
-        {
-            image :"/images/assetAlpha/problemHealth/New folder/health-11.jpg",
             sylabelWord : "",
         },
         {

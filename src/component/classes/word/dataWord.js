@@ -9,6 +9,7 @@ export let contentListWord = {
         {title:"لک لک و جوجه ها",targetHref :"lakLak"},
         {title:"موش و قورباغه",targetHref :"FrogMouse"},
         {title:"موش کور",targetHref :"blindMouse"},
+        {title:"شوخی خیاط و فیل",targetHref :"elephantT1"},
         {title:"",targetHref :""},
         ],
     },
@@ -1116,7 +1117,78 @@ export let blindMouse ={
 
     
 }
+export let elephantT ={
+    wordId:"elephantT",
+    targetHref:"elephantT1",
+    titleStory:"  داستان شوخی خیاط و فیل",
+    imageStory:["/images/assetWord/storyWord/elephantT.png",],
+    wordPart:[
+        {
+            wordMean:"",
+            engMean:""
+        },
+    ],
+    accordionItems : [
+        {
+          title: "",
+          content: " ",
+        },
+      ]
+
+    
+}
 
 // *********************** End Story Parts Data ****************
+
+
+
+export let sentenceOptions3 = [
+  {
+    fa: ["مهربان", "خانه ای","خانواده ای","زندگی","در","می کُنَند.","کوچَک",],
+    en: 'A kind family lives in a small house.',
+    correctFa:["در","خانه ای","کوچَک","خانواده ای","مهربان","زندگی","می کُنَند.",]
+  },
+  {
+    fa: [ "ما","روز","می خوریم.","با ","صُبح","هَم","هُر","صُبحانه",],
+    en: 'We have breakfast together every morning.',
+    correctFa:["ما","هر","روز","صُبح","با ","هَم","صُبحانه","می خوریم.",]
+  },
+  {
+    fa: [ "دوست","بازی","دارَم","با ","مَن","نازَنین","کُنَم.",],
+    en: 'I like to play with Nazanin.',
+    correctFa:["مَن","دوست","دارَم","با ","نازَنین","بازی","کُنَم.",]
+  },
+  {
+    fa: [ "تاب بازی","مَن","می کُند.","دوچَرخِه سَواری","می کُنم","و","نازَنین",],
+    en: 'I ride a bike and Nazanin plays on the swing.',
+    correctFa:["مَن","دوچَرخِه سَواری","می کُنم","و","نازَنین","تاب بازی","می کُند.",]
+  },
+  {
+    fa: ["شاد","ما","خانواده ی ","یِک","هَستیم.", ],
+    en: 'We are a happy family.',
+    correctFa:["ما","یِک","خانواده ی ","شاد","هَستیم.",]
+  },
+  {
+    fa: ["هَمدیگَر","را","دوست","داریم.","خیلی","ما", ],
+    en: 'We love each other very much.',
+    correctFa:["ما","هَمدیگَر","را","خیلی","دوست","داریم.",]
+  },
+  {
+    fa: ["و","ما","پارک","میوه","دَر","می خوریم.", "غَذا",],
+    en: 'We eat food and fruit in the park.',
+    correctFa:["ما","دَر","پارک","غَذا","و","میوه","می خوریم.",]
+  },
+  {
+    fa: ["می گویَد.","مادر","با","شب ها","برایِمان","لبخند","قصه", ],
+    en: 'Mother tells us stories at night with a smile.',
+    correctFa:["مادر","با","لبخند","شب ها","برایِمان","قصه","می گویَد.",]
+  },
+  {
+    fa: [ ],
+    en: '',
+    correctFa:[]
+  },
+];
+
 
 
