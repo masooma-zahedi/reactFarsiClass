@@ -9,6 +9,7 @@ import { SidebarWord } from './SidebarWord.js';
 import WordToSentence from './wordToSentence.js';
 import LetterPuzzle from './LetterPuzzle.js';
 import SentenceBuilder from './SentenceBuilder.js';
+import DragDropQuiz from './DragDropQuiz.js';
 
 export const Word = () => {
   return (

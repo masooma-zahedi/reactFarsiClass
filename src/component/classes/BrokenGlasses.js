@@ -17,7 +17,7 @@ const BrokenGlass = ({ words }) => {
   return (
     <>
       <section className="" >
-        <div style={{height:'100vh'}}>
+        <div style={{height:'200vh'}}>
           <div
             className="d-flex flex-wrap mb-5"
             style={{ height: "300px", position: "relative" ,backgroundColor:"transparent"}}
