@@ -1,5 +1,5 @@
 import {CardAlphaCompo,} from "./cardAlpha/CardAlphaCompo.js";
-import {alphaCrousel, alphaLongCrousel, alphaShortCrousel, kitchenDataTable, storyAlpha1, storyAlpha2,  tableAnimals, tableColor_body, tableDataNum, tableProfessions, storyAlpha3, ququly, storyAlpha4, puyaStory,} from "./dataAlpha.js";
+import {alphaCrousel, alphaLongCrousel, alphaShortCrousel, kitchenDataTable, storyAlpha1, storyAlpha2,  tableAnimals, tableColor_body, tableDataNum, tableProfessions, storyAlpha3, ququly, storyAlpha4, puyaStory, gameWords,} from "./dataAlpha.js";
 import {CarouselAlpha} from "./CarouselAlpha"
 import { WordCarousel } from "./WordCarousel";
 import { SylabeWords } from "./SylabeWords";
@@ -11,6 +11,7 @@ import { Route, Routes } from "react-router-dom";
 import WordTable from "./WordTable.js";
 import { TheStory } from "../story/TheStory.js";
 import Reading from "./Reading.js";
+import GameWord from "./GameWord.js";
 
 export const Alphabet = () => {
   const [showShort, setShowShort] = useState(false)
@@ -45,6 +46,7 @@ export const Alphabet = () => {
                 <Route path='/wordTable/*' element={<WordTable />}  />
               </Routes>
               <WordCarousel/>
+              <GameWord />
             </div>
           </div>
         </div>

@@ -181,6 +181,7 @@ export let contentListAlpha = {
         brokenWords :{
             idModal:"brokenWords11",
             infoWords:[
+                {id:nanoid(4),title:"حروف اب پ",targetHref:"wordTable/wordBox-4",idLetter:"wordB-4"},
             {id:nanoid(4),title:" حرف ر",targetHref:"wordTable/brokenW-5",idLetter:"broken-5"},
             {id:nanoid(4),title:"حرف ز",targetHref:"wordTable/brokenW-6",idLetter:"broken-6"},
             {id:nanoid(4),title:" کلمات تا ژ",targetHref:"wordTable/wordBox-1",idLetter:"wordB-1"},
@@ -191,10 +192,10 @@ export let contentListAlpha = {
             {id:nanoid(4),title:" حرف ک",targetHref:"wordTable/wordBox-5",idLetter:"wordB-5"},
             {id:nanoid(4),title:" حرف گ",targetHref:"wordTable/brokenW-8",idLetter:"broken-8"},
             {id:nanoid(4),title:" حرف ل",targetHref:"wordTable/wordBox-2",idLetter:"wordB-2"},
-            {id:nanoid(4),title:"حرف م",targetHref:"wordTable/wordBox-3",idLetter:"wordB-3"},
-            {id:nanoid(4),title:"حروف اب پ",targetHref:"wordTable/wordBox-4",idLetter:"wordB-4"},
             {id:nanoid(4),title:"حروف س",targetHref:"wordTable/wordBox-6",idLetter:"wordB-6"},
             {id:nanoid(4),title:"حروف ش",targetHref:"wordTable/wordBox-7",idLetter:"wordB-7"},
+            {id:nanoid(4),title:"حرف م",targetHref:"wordTable/wordBox-3", idLetter:"wordB-3"},  
+            {id:nanoid(4),title:"حرف ن",targetHref:"wordTable/brokenW-9",idLetter:"broken-9"},
             ],
         },
         gameTable :{
@@ -3393,14 +3394,24 @@ export let words7 = ["کِتاب","کوکَب","کَبک","کَبود","کوبی
 export let words8 = ["گُربه","گُرگ","گاو","گُل","گوش","گوشی","گاز","تَگ","گُذاشت","توت فَرَنگی","اَگَر","شِگِفت","سازگار","سَگ","گِراف","گُذَر","دِگر","جِگَر","حَق گو","تَگَرگ",];
 export let words9 = ["بابا","پِدَر","پاپا","داد","بَد","بَر","پَد","بُرج","بید","پیر","چَپ","جَد","دود","زَر","رَد","ژَر","دُزد","دَرد","چَسب","بَرچَسب","پَتو","پود","بَرزَخ",];
 export let words10 = ["طَلا","لاک","بالا","لیز","قالی","کالا","سالو","لولا","لوک","پِلاک","پولاد","کِلاس","لِباس","بُلور","لوکس","زُلال","جَلال","زِلزِلِه","بالارو","دِلاوَر","لاک پُشت","سالاد",];
+
 export let words11 = ["مار","مات","موز","مَغز","مُلک","مَرد","موم","مَکر","ماست","ماسک","مِداد","ماکارونی","ماتیک","موتور","آمار","رام","کَلام","گام","سُماق","مَطبَخ","مُبل","مُپ","موج","سیمُرغ","مُقَوا","مَخمل","مُژده","ماتَم",];
-export let words12 = ["نان","اَنار","نارِنچ","نیش","نَرم","نَقاش","سَنگ","رَنگ","بَنَفش","دَندان","آب نَبات","نَسیم","کَمان","تَکان","نارِنگی","کَفَن","آتَش نِشان","نِگران","نَرگِس","نَوَسان","نازُک","ناقوس","نَعل","ناحَق","نِجات","ناخُن","نازَنین","نَردِبان","نارَس","نازِل","نیکو","دانِش","سَنجاق","نَمَد",];
+
+export let words12 = ["نان","اَنار","نارنج","نیش","نَرم","نَقاش","سَنگ","رَنگ","بَنَفش","دَندان","آب نَبات","نَسیم","کَمان","تَکان","نارِنگی","کَفَن","آتَش نِشان","نِگران","نَرگِس","نَوَسان","نازُک","ناقوس","نَعل","ناحَق","نِجات","ناخُن","نازَنین","نَردِبان","نارَس","نازِل","نیکو","دانِش","سَنجاق","نَمَد",];
+
 export let words13 = ["آ","تُ","با","تا","پَ","بِ","او","پی","تَ","اُ","بَ","اَ","بو","بُ","پُ","تو","بُ","پو","تُ","بو","پِ","تا","بو","اِ","بی","ای","تِ","پِ","پا","او","تی","پی",];
 export let words14 = ["سَبَد","سَرباز","سَبز","بَست","سیراب","بَسی","سِپاس","بَسیج","سِز","ساز","سُرب","سُرخ","سِپَر","سَر","اَست","سیر","سَبا","سیری","سیب","سَوز",];
 export let words15 = ["شِش","شوش","شیشه","باش","پوش","پاش","پیش","بیش","تَشت","چِشم","خوش","خوشی","باشی","شاد","شَب","شور","شیر","شَب رو","شَبَح","بَشیر","شِتاب","چِشید",];
+// حرف ض
+export let words16 = ["ضَرب","ضِد","رِضا","راضی","رضوان","حُضور","وَضع","اِضطِراب","اِضافِه","تَضاد","حافِظ",];
 
 
 // ************************* End BrokenGlassess for word Pract *******************
+
+export let gameWords = {
+    iframe1:<iframe style={{maxWidth:'100%'}} src='https://wordwall.net/embed/9585e62f49974baf8997bab3e0c6a277?themeId=46&templateId=30&fontStackId=2' width='100%' height='100%' frameborder='0' allowfullscreen></iframe>,
+    iframe2:<iframe style={{maxWidth:"100%"}} src="https://wordwall.net/embed/7b1b9050f37f40a7b8beab4b54c1ffad?themeId=51&templateId=30&fontStackId=2" width="100%" height="100%" frameborder="10" allowfullscreen></iframe>
+    }
 
 
 
