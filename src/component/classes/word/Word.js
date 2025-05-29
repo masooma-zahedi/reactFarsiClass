@@ -1,15 +1,13 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom';
 import { SentenceCarousel } from './SentenceCarousel'
-import { sentenceCarousel, testPicture,testPicture2, testGramer, lazyDonky, laklak, FrogM, blindMouse, elephantT, sleepBear } from './dataWord';
+import { sentenceCarousel, testPicture,testPicture2, testGramer, lazyDonky, laklak, FrogM, blindMouse, elephantT, sleepBear, twoSparrow } from './dataWord';
 import { lionBear, realFriends } from './dataWord';
 import { SentencePicture } from './SentencePicture'
 import { TheStory } from '../story/TheStory';
 import { SidebarWord } from './SidebarWord.js';
 import WordToSentence from './wordToSentence.js';
 import LetterPuzzle from './LetterPuzzle.js';
-import SentenceBuilder from './SentenceBuilder.js';
-import DragDropQuiz from './DragDropQuiz.js';
 
 export const Word = () => {
   return (
@@ -35,6 +33,7 @@ export const Word = () => {
               <Route path='/blindMouse' element={<TheStory srcStory={blindMouse}/>}  />
               <Route path='/elephantT1' element={<TheStory srcStory={elephantT}/>}  />
               <Route path='/sleepBear1' element={<TheStory srcStory={sleepBear}/>}  />
+              <Route path='/twoSparrow1' element={<TheStory srcStory={twoSparrow}/>}  />
               <Route path='/wordSentence' element={<WordToSentence />}  />
               <Route path='/letterPuzzle' element={<LetterPuzzle />}  />
             </Routes>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import SentenceBuilder from './SentenceBuilder';
-import {sentenceOptions3} from './dataWord'
+import {questions1, sentenceOptions3} from './dataWord'
 import DragDropQuiz from './DragDropQuiz';
 
 // import 'bootstrap/dist/css/bootstrap.min.css';
@@ -118,9 +118,9 @@ const WordToSentence = () => {
       <div className='container pb-3 border border-2  border-danger rounded my-5'>
         <SentenceBuilder sentenceOptions={sentenceOptions3}/>
       </div>
-      <DragDropQuiz/>
+      <DragDropQuiz questions={questions1}/>
     </>
   );
 };
-
+  
 export default WordToSentence;

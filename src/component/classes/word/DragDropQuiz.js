@@ -1,22 +1,22 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const questions = [
-  {
-    sentence: 'من هر روز به ___ می‌روم.',
-    correctWord: 'مدرسه',
-    options: ['مدرسه', 'سیب', 'باران'],
-    image: 'https://i.pinimg.com/736x/28/07/eb/2807eb52c3035c3caa48347167545cd4.jpg'
-  },
-  {
-    sentence: 'او یک ___ در دست دارد.',
-    correctWord: 'کتاب',
-    options: ['کتاب', 'دویدن', 'زنگ'],
-    image: null
-  }
-];
+// const questions = [
+//   {
+//     sentence: 'من هر روز به ___ می‌روم.',
+//     correctWord: 'مدرسه',
+//     options: ['مدرسه', 'سیب', 'باران'],
+//     image: 'https://i.pinimg.com/736x/28/07/eb/2807eb52c3035c3caa48347167545cd4.jpg'
+//   },
+//   {
+//     sentence: 'او یک ___ در دست دارد.',
+//     correctWord: 'کتاب',
+//     options: ['کتاب', 'دویدن', 'زنگ'],
+//     image: null
+//   }
+// ];
 
-const DragDropQuiz = () => {
+const DragDropQuiz = ({questions}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [droppedWord, setDroppedWord] = useState(null);
   const [isCorrect, setIsCorrect] = useState(null);
