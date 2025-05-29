@@ -1324,7 +1324,7 @@ export let twoSparrow ={
 
 
 // ************************* Start Mix word for sentences (کلمات بهم ریخته برای جمله سازی) ***********
-export let sentenceOptions3 = [
+export let sentenceOptions1 = [
   {
     fa: ["مهربان", "خانه ای","خانواده ای","زندگی","در","می کُنَند.","کوچَک",],
     en: 'A kind family lives in a small house.',
@@ -1371,12 +1371,232 @@ export let sentenceOptions3 = [
     correctFa:[]
   },
 ];
+export let sentenceOptions2 = [
+  {
+    fa: ["یاسیهاصخمهربان", "خانه ای","خانواده ای","زندگی","در","می کُنَند.","کوچَک",],
+    en: 'A kind family lives in a small house.',
+    correctFa:["درآهای این مننم","خانه ای","کوچَک","خانواده ای","مهربان","زندگی","می کُنَند.",]
+  },
+  {
+    fa: [ "بصبصث یسما","روز","می خوریم.","با ","صُبح","هَم","هُر","صُبحانه",],
+    en: 'We have breakfast together every morning.',
+    correctFa:["ما","هر","روز","صُبح","با ","هَم","صُبحانه","می خوریم.",]
+  },
+  {
+    fa: [ "ثص ثثث ثث دوست","بازی","دارَم","با ","مَن","نازَنین","کُنَم.",],
+    en: 'I like to play with Nazanin.',
+    correctFa:["مَن","دوست","دارَم","با ","نازَنین","بازی","کُنَم.",]
+  },
+  {
+    fa: [ "یص صثصث تاب بازی","مَن","می کُند.","دوچَرخِه سَواری","می کُنم","و","نازَنین",],
+    en: 'I ride a bike and Nazanin plays on the swing.',
+    correctFa:["مَن","دوچَرخِه سَواری","می کُنم","و","نازَنین","تاب بازی","می کُند.",]
+  },
+  {
+    fa: ["یسبص صصص شاد","ما","خانواده ی ","یِک","هَستیم.", ],
+    en: 'We are a happy family.',
+    correctFa:["ما","یِک","خانواده ی ","شاد","هَستیم.",]
+  },
+  {
+    fa: ["سبصبص س هَمدیگَر","را","دوست","داریم.","خیلی","ما", ],
+    en: 'We love each other very much.',
+    correctFa:["ما","هَمدیگَر","را","خیلی","دوست","داریم.",]
+  },
+  {
+    fa: ["و","ما","پارک","میوه","دَر","می خوریم.", "غَذا",],
+    en: 'We eat food and fruit in the park.',
+    correctFa:["ما","دَر","پارک","غَذا","و","میوه","می خوریم.",]
+  },
+  {
+    fa: ["می گویَد.","مادر","با","شب ها","برایِمان","لبخند","قصه", ],
+    en: 'Mother tells us stories at night with a smile.',
+    correctFa:["مادر","با","لبخند","شب ها","برایِمان","قصه","می گویَد.",]
+  },
+  {
+    fa: [ ],
+    en: '',
+    correctFa:[]
+  },
+];
+export let sentenceOptions3 = [
+  {
+    fa: ["نَند.","کوچَک",],
+    en: 'A kind family lives in a small house.',
+    correctFa:["درآهای این مننم","خانه ای","کوچَک","خانواده ای","مهربان","زندگی","می کُنَند.",]
+  },
+  {
+    fa: [ "بصبصث ",],
+    en: 'We have breakfast together every morning.',
+    correctFa:["ما","هر","روز","صُبح","با ","هَم","صُبحانه","می خوریم.",]
+  },
+  {
+    fa: [ "ثص ثثث ثث"," دکُنَم.",],
+    en: 'I like to play with Nazanin.',
+    correctFa:["مَن","دوست","دارَم","با ","نازَنین","بازی","کُنَم.",]
+  },
+  {
+    fa: [ "یص صثصث تاب بازی","مَن","می کُند.","دوچَرخِه سَواری","می کُنم","و","نازَنین",],
+    en: 'I ride a bike and Nazanin plays on the swing.',
+    correctFa:["مَن","دوچَرخِه سَواری","می کُنم","و","نازَنین","تاب بازی","می کُند.",]
+  },
+  {
+    fa: ["یسبص صصص شاد","ما","خانواده ی ","یِک","هَستیم.", ],
+    en: 'We are a happy family.',
+    correctFa:["ما","یِک","خانواده ی ","شاد","هَستیم.",]
+  },
+  {
+    fa: ["سبصبص س هَمدیگَر","را","دوست","داریم.","خیلی","ما", ],
+    en: 'We love each other very much.',
+    correctFa:["ما","هَمدیگَر","را","خیلی","دوست","داریم.",]
+  },
+  {
+    fa: ["و","ما","پارک","میوه","دَر","می خوریم.", "غَذا",],
+    en: 'We eat food and fruit in the park.',
+    correctFa:["ما","دَر","پارک","غَذا","و","میوه","می خوریم.",]
+  },
+  {
+    fa: ["می گویَد.","مادر","با","شب ها","برایِمان","لبخند","قصه", ],
+    en: 'Mother tells us stories at night with a smile.',
+    correctFa:["مادر","با","لبخند","شب ها","برایِمان","قصه","می گویَد.",]
+  },
+  {
+    fa: [ ],
+    en: '',
+    correctFa:[]
+  },
+];
 
 // ************************* Start Mix word for sentences (کلمات بهم ریخته برای جمله سازی) ***********
                                 // هر جای خالی باید از سه بار تکرار "crt + - "
 export let questions1 = [
       {
         sentence: 'مَن هَر روز به ___ می‌رَوَم.',
+        correctWord: 'مدرسه',
+        options: ['مدرسه', 'سیب', 'باران'],
+        image: 'https://i.pinimg.com/736x/28/07/eb/2807eb52c3035c3caa48347167545cd4.jpg'
+      },
+      {
+        sentence: 'او یِک ___ در دست دارَد.',
+        correctWord: 'کتاب',
+        options: ['کتاب', 'دویدن', 'زنگ'],
+        image: 'https://static.scientificamerican.com/sciam/cache/file/1DDFE633-2B85-468D-B28D05ADAE7D1AD8_source.jpg?w=1200'
+      },
+      {
+        sentence: 'مَن نان تازه ___ دارَم.',
+        correctWord: 'دوست',
+        options: ['بَستَنی', 'دوست', 'سَرما','نیما'],
+        image: null
+      },
+      {
+        sentence: 'مادَر کَمی ___ به غَذا زَد.',
+        correctWord: 'نَمَک',
+        options: ['نَمَک', 'میوه', 'بُشقاب'],
+        image: 'https://upload.wikimedia.org/wikipedia/commons/a/ad/Table_salt_with_salt_shaker_V1.jpg'
+      },
+      {
+        sentence: ' ___ دَر دَریا زِندِگی می کُنَد.',
+        correctWord: 'نَهَنگ',
+        options: ['جوجه', 'شیر', 'گَوَزن','نَهَنگ'],
+        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Killerwhales_jumping.jpg/1200px-Killerwhales_jumping.jpg'
+      },
+      {
+        sentence: 'پِدَرَم بَرایَم یِک ___ خَرید.',
+        correctWord: 'کُلاه',
+        options: ['هَوا', 'آسمان', 'مادَر','کُلاه'],
+        image: 'https://sainc2.myshopify.com/cdn/shop/products/beach-hat-red-front-ss20-2500px_6a3730db-77cc-44d6-b437-b027b32bb044.jpg?v=1718389492'
+      },
+      {
+        sentence: ' ___نوک کوچَکی دارَد.',
+        correctWord: 'پَرَندِه',
+        options: ['پَرَندِه', 'روباه', 'ماهی','تِمساح'],
+        image: 'https://statics.basalam.com/public-7/users/kRZKpN/2110/wq4ytYJSJBtoG93qZQpTpO390nrWk4rbf79ftOGJ.jpg'
+      },
+      {
+        sentence: 'مَن با ___ لِباس دوختَم.',
+        correctWord: 'نَخ',
+        options: [ 'چوب','نَخ', 'لیوان','مِداد'],
+        image: 'https://www.lavanbaft.com/wp-content/uploads/2022/02/nakh.jpg'
+      },
+      {
+        sentence: 'زَنبور ___ زَد.',
+        correctWord: 'نیش',
+        options: [ 'گِریه', 'کُتَک','عَسَل','نیش'],
+        image: 'https://www.digikala.com/mag/wp-content/uploads/2023/05/01-Bee-Sting-Treatment-1.jpg'
+      },
+      {
+        sentence: '___ بالای دِرَخت رَفت.',
+        correctWord: 'گُربه',
+        options: ['کَفش', 'گُربه', 'گُل','موبایل'],
+        image: 'https://cdn.fararu.com/thumbnail/OTliY2YXgLxy/fCohl8MdDeqLuUiNxwx9X4gYrgKL9XBZBWdbZWUJQbHweEbOeibJ3lKhwCXPcymMenByfMSSpsbh46ioIqLjxbHMRm21_h7HQpcPeRTlTup9Fg2BIMEOf3jclM_4J6zeNSYMgfXaohvvVGVyDx5LlALVa--jwrBG/OTliY2YXgLxy.jpg'
+      },
+    
+]
+export let questions2 = [
+      {
+        sentence: 'مَن  نماسی ماخهسیggh hjهَر روز به ___ می‌رَوَم.',
+        correctWord: 'مدرسه',
+        options: ['مدرسه', 'سیب', 'باران'],
+        image: 'https://i.pinimg.com/736x/28/07/eb/2807eb52c3035c3caa48347167545cd4.jpg'
+      },
+      {
+        sentence: 'او یِک ___ در دست دارَد.',
+        correctWord: 'کتاب',
+        options: ['کتاب', 'دویدن', 'زنگ'],
+        image: 'https://static.scientificamerican.com/sciam/cache/file/1DDFE633-2B85-468D-B28D05ADAE7D1AD8_source.jpg?w=1200'
+      },
+      {
+        sentence: 'مَن نان تازه ___ دارَم.',
+        correctWord: 'دوست',
+        options: ['بَستَنی', 'دوست', 'سَرما','نیما'],
+        image: null
+      },
+      {
+        sentence: 'مادَر کَمی ___ به غَذا زَد.',
+        correctWord: 'نَمَک',
+        options: ['نَمَک', 'میوه', 'بُشقاب'],
+        image: 'https://upload.wikimedia.org/wikipedia/commons/a/ad/Table_salt_with_salt_shaker_V1.jpg'
+      },
+      {
+        sentence: ' ___ دَر دَریا زِندِگی می کُنَد.',
+        correctWord: 'نَهَنگ',
+        options: ['جوجه', 'شیر', 'گَوَزن','نَهَنگ'],
+        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Killerwhales_jumping.jpg/1200px-Killerwhales_jumping.jpg'
+      },
+      {
+        sentence: 'پِدَرَم بَرایَم یِک ___ خَرید.',
+        correctWord: 'کُلاه',
+        options: ['هَوا', 'آسمان', 'مادَر','کُلاه'],
+        image: 'https://sainc2.myshopify.com/cdn/shop/products/beach-hat-red-front-ss20-2500px_6a3730db-77cc-44d6-b437-b027b32bb044.jpg?v=1718389492'
+      },
+      {
+        sentence: ' ___نوک کوچَکی دارَد.',
+        correctWord: 'پَرَندِه',
+        options: ['پَرَندِه', 'روباه', 'ماهی','تِمساح'],
+        image: 'https://statics.basalam.com/public-7/users/kRZKpN/2110/wq4ytYJSJBtoG93qZQpTpO390nrWk4rbf79ftOGJ.jpg'
+      },
+      {
+        sentence: 'مَن با ___ لِباس دوختَم.',
+        correctWord: 'نَخ',
+        options: [ 'چوب','نَخ', 'لیوان','مِداد'],
+        image: 'https://www.lavanbaft.com/wp-content/uploads/2022/02/nakh.jpg'
+      },
+      {
+        sentence: 'زَنبور ___ زَد.',
+        correctWord: 'نیش',
+        options: [ 'گِریه', 'کُتَک','عَسَل','نیش'],
+        image: 'https://www.digikala.com/mag/wp-content/uploads/2023/05/01-Bee-Sting-Treatment-1.jpg'
+      },
+      {
+        sentence: '___ بالای دِرَخت رَفت.',
+        correctWord: 'گُربه',
+        options: ['کَفش', 'گُربه', 'گُل','موبایل'],
+        image: 'https://cdn.fararu.com/thumbnail/OTliY2YXgLxy/fCohl8MdDeqLuUiNxwx9X4gYrgKL9XBZBWdbZWUJQbHweEbOeibJ3lKhwCXPcymMenByfMSSpsbh46ioIqLjxbHMRm21_h7HQpcPeRTlTup9Fg2BIMEOf3jclM_4J6zeNSYMgfXaohvvVGVyDx5LlALVa--jwrBG/OTliY2YXgLxy.jpg'
+      },
+    
+]
+export let questions3 = [
+      {
+        sentence: 'مَن هَر روز به ___ می‌رَوَم.jh jio ou iuou ooi ouoi iiou ',
         correctWord: 'مدرسه',
         options: ['مدرسه', 'سیب', 'باران'],
         image: 'https://i.pinimg.com/736x/28/07/eb/2807eb52c3035c3caa48347167545cd4.jpg'

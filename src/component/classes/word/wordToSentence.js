@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import SentenceBuilder from './SentenceBuilder';
-import {questions1, sentenceOptions3} from './dataWord'
+import {questions1, sentenceOptions1} from './dataWord'
 import DragDropQuiz from './DragDropQuiz';
+import { Route, Routes } from 'react-router-dom';
 
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -116,7 +117,7 @@ const WordToSentence = () => {
         <button className='btn btn-danger' onClick={handleReset}>Reset</button>
       </div>
       <div className='container pb-3 border border-2  border-danger rounded my-5'>
-        <SentenceBuilder sentenceOptions={sentenceOptions3}/>
+        <SentenceBuilder sentenceOptions={sentenceOptions1}/>
       </div>
       <DragDropQuiz questions={questions1}/>
     </>

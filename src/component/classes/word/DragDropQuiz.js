@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { questions1, questions2, questions3 } from './dataWord';
 
 // const questions = [
 //   {
@@ -16,7 +17,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 //   }
 // ];
 
-const DragDropQuiz = ({questions}) => {
+const DragDropQuiz = () => {
+  const [questions,setQuestions] = useState(questions1)
+  const[idModal,setIdModal]=useState('question1')
   const [currentIndex, setCurrentIndex] = useState(0);
   const [droppedWord, setDroppedWord] = useState(null);
   const [isCorrect, setIsCorrect] = useState(null);
@@ -72,11 +75,47 @@ const DragDropQuiz = ({questions}) => {
       </>
     );
   };
+  const stylebg = {
+    backgroundColor:'rgba(232, 231, 231, 0.99)'
+  }
+  const questionsqq = (e,i)=>{
+    setQuestions(e);
+    setIdModal(i)
+  }
 
   return (
-        <div className="test " dir="rtl" style={{fontFamily:'Vazir,sans-serif'}}>
+        <div className="test  " dir="rtl" style={{fontFamily:'Vazir,sans-serif'}}>
 
-    <div className="container my-5 p-4 border rounded shadow bg-light text-end direction-rtl" style={{ fontFamily: 'Vazir' }}>
+    <div className="container border border-danger my-5 p-4 border rounded shadow bg-light text-end direction-rtl" style={{ fontFamily: 'Vazir' }}>
+      {/*Start modal for titles */}
+      <div className="border border-success p-3">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target={'#'+idModal}>
+          فهرست
+        </button>
+
+        <div class="modal fade" id={idModal} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h1 class="modal-title fs-5" id="exampleModalLabel" > فهرست مطالب  </h1>
+              </div>
+              <div className="modal-body">
+                <div className='d-flex flex-wrap'>
+                  <button className='btn  shadow-sm border  mx-2' style={stylebg} onClick={()=>questionsqq(questions1,'question1')}>مرحله 1</button>
+                  <button className='btn shadow-sm border  mx-2' style={stylebg} onClick={()=>questionsqq(questions2,'question2')}>مرحله 2</button>
+                  <button className='btn shadow-sm border mx-2' style={stylebg} onClick={()=>questionsqq(questions3,'question3')}>مرحله 3</button>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* End modal for titles */}
+      
       <div className="d-flex justify-content-between align-items-center m-5" >
         <h4>جمله را کامل کن:</h4>
         <button className="btn btn-outline-danger btn-sm" onClick={resetGame}>
@@ -96,14 +135,14 @@ const DragDropQuiz = ({questions}) => {
               />
             </div>
             <div className="col-md-8">
-              <p className="fs-5">{getSentenceWithBlank()}</p>
+              <p className="fs-2 ">{getSentenceWithBlank()}</p>
               <div className="mt-4 mb-3 ">
         {currentQuestion.options.map((word, idx) => (
           <span
             key={idx}
             draggable
             onDragStart={(e) => onDragStart(e, word)}
-            className="badge bg-secondary mx-2 p-2 fs-6"
+            className="badge bg-secondary mx-2 p-2 fs-5"
             style={{ cursor: 'grab' }}
           >
             {word}
