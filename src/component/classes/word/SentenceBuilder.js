@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { sentenceOptions1, sentenceOptions2, sentenceOptions3} from './dataWord'
+
 
 
 
@@ -17,8 +19,9 @@ const isDarkColor = ({ r, g, b }) => {
   const brightness = (r * 299 + g * 587 + b * 114) / 1000;
   return brightness < 128;
 };
-
-const SentenceBuilder = ({sentenceOptions}) => {
+// ***********************************
+const SentenceBuilder = () => {
+  const [sentenceOptions,setSentenceOptions]= useState(sentenceOptions1)
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [words, setWords] = useState([...sentenceOptions[0].fa]);
   const [originalWords, setOriginalWords] = useState([...sentenceOptions[0].fa]);
@@ -79,7 +82,7 @@ const SentenceBuilder = ({sentenceOptions}) => {
 
   return (
     <div
-      className="container mt-5 p-4 rounded shadow-sm"
+      className="container mt-5 p-4 rounded shadow-sm border border-danger"
       dir="rtl"
       style={{
         backgroundColor: themeColor.background,
@@ -88,6 +91,35 @@ const SentenceBuilder = ({sentenceOptions}) => {
         transition: 'all 0.4s ease',
       }}
     >
+      {/*Start modal for titles */}
+      <div className="border border-success p-3">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          فهرست
+        </button>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h1 class="modal-title fs-5" id="exampleModalLabel">فهرست  مطالب</h1>
+              </div>
+              <div className="modal-body">
+                <div className='d-flex flex-wrap'>
+                  <button className='btn btn-secondary mx-2' onClick={()=>setSentenceOptions(sentenceOptions1)}>main</button>
+                  <button className='btn btn-secondary mx-2' onClick={()=>setSentenceOptions(sentenceOptions2)}>masooma</button>
+                  <button className='btn btn-secondary mx-2' onClick={()=>setSentenceOptions(sentenceOptions3)}>mujtaba</button>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* End modal for titles */}
       <div className="d-flex justify-content-between align-items-center mb-4">
         <h4 className="m-0">🧩 جمله‌سازی فارسی</h4>
         <button className="btn btn-outline-secondary btn-sm" onClick={changeRandomColor}>
