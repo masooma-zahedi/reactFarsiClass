@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { use, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { sentenceOptions1, sentenceOptions2, sentenceOptions3} from './dataWord'
 
@@ -21,7 +21,8 @@ const isDarkColor = ({ r, g, b }) => {
 };
 // ***********************************
 const SentenceBuilder = () => {
-  const [sentenceOptions,setSentenceOptions]= useState(sentenceOptions1)
+  const [sentenceOptions,setSentenceOptions]= useState(sentenceOptions1);
+  const [idModal,setIdModal] = useState('sentenceOptions1');
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [words, setWords] = useState([...sentenceOptions[0].fa]);
   const [originalWords, setOriginalWords] = useState([...sentenceOptions[0].fa]);
@@ -80,9 +81,14 @@ const SentenceBuilder = () => {
     });
   };
 
+  const senOptions =(e,i)=>{
+    setSentenceOptions(e);
+    setIdModal(i)
+  }
+
   return (
     <div
-      className="container mt-5 p-4 rounded shadow-sm border border-danger"
+      className="container mt-5 p-4 rounded shadow-sm border "
       dir="rtl"
       style={{
         backgroundColor: themeColor.background,
@@ -93,11 +99,11 @@ const SentenceBuilder = () => {
     >
       {/*Start modal for titles */}
       <div className="border border-success p-3">
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target={'#'+idModal}>
           فهرست
         </button>
 
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id={idModal} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
@@ -106,14 +112,13 @@ const SentenceBuilder = () => {
               </div>
               <div className="modal-body">
                 <div className='d-flex flex-wrap'>
-                  <button className='btn btn-secondary mx-2' onClick={()=>setSentenceOptions(sentenceOptions1)}>main</button>
-                  <button className='btn btn-secondary mx-2' onClick={()=>setSentenceOptions(sentenceOptions2)}>masooma</button>
-                  <button className='btn btn-secondary mx-2' onClick={()=>setSentenceOptions(sentenceOptions3)}>mujtaba</button>
+                  <button className='btn  shadow-sm border  mx-2' style={{backgroundColor: themeColor.background,}} onClick={()=>senOptions(sentenceOptions1,'sentenceOptions1')}>مرحله 1</button>
+                  <button className='btn shadow-sm border  mx-2' style={{backgroundColor: themeColor.background,}} onClick={()=>senOptions(sentenceOptions2,'sentenceOptions2')}>مرحله 2</button>
+                  <button className='btn shadow-sm border mx-2' style={{backgroundColor: themeColor.background,}} onClick={()=>senOptions(sentenceOptions3,'sentenceOptions3')}>مرحله 3</button>
                 </div>
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
               </div>
             </div>
           </div>
@@ -142,7 +147,7 @@ const SentenceBuilder = () => {
         </select>
       </div>
 
-      <div className="d-flex flex-wrap justify-content-end gap-2 mb-3 border border-danger">
+      <div className="d-flex flex-wrap justify-content-end gap-2 mb-3 ">
         {words.map((word, index) => (
           <div
             key={index}
