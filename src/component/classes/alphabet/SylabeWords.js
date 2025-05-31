@@ -25,7 +25,7 @@ export const SylabeWords = (props) => {
                                 return(
                                     <>
                                         <tr style={{backgroundColor:"#ddddff"}} className="h1 " key={index}>
-                                        <td className="btn-group sentence_alpha " role="group" aria-label="Basic example">
+                                        <td className="btn-group sentence_alpha my-1 border border-info " role="group" aria-label="Basic example">
                                             {sentence.map((item,index)=>{
                                                 const putWord = ()=>{
                                                     let target = props.infoSentence.buttonTargetId
@@ -35,7 +35,7 @@ export const SylabeWords = (props) => {
                                                 }
                                                 return(
                                                     <>
-                                                        <button key={index} type="button" style={{color:"#8822bb"}} className="btn-lg btn-light fs-3 p-3 me-2  border-0" onClick={putWord}>{item.word}</button>
+                                                        <button key={index} type="button" style={{color:"#8822bb"}} className="btn-lg btn-light fs-3 p-3 me-2  border border-warning" onClick={putWord}>{item.word}</button>
                                                     </>
                                                 )
                                             })}

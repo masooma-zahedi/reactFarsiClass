@@ -1,5 +1,5 @@
 import {CardAlphaCompo,} from "./cardAlpha/CardAlphaCompo.js";
-import {alphaCrousel, alphaLongCrousel, alphaShortCrousel, kitchenDataTable, storyAlpha1, storyAlpha2,  tableAnimals, tableColor_body, tableDataNum, tableProfessions, storyAlpha3, ququly, storyAlpha4, puyaStory, gameWords, aminFireFighter,} from "./dataAlpha.js";
+import {alphaCrousel, alphaLongCrousel, alphaShortCrousel, kitchenDataTable, storyAlpha1, storyAlpha2,  tableAnimals, tableColor_body, tableDataNum, tableProfessions, storyAlpha3, ququly, storyAlpha4, puyaStory, gameWords, aminFireFighter, pami,} from "./dataAlpha.js";
 import {CarouselAlpha} from "./CarouselAlpha"
 import { WordCarousel } from "./WordCarousel";
 import { SylabeWords } from "./SylabeWords";
@@ -38,6 +38,7 @@ export const Alphabet = () => {
                 <Route path='/ququlyQu' element={<TheStory srcStory={ququly}/>}  />
                 <Route path='/puyaStory1' element={<TheStory srcStory={puyaStory}/>}  />
                 <Route path='/aminFireFighter1' element={<TheStory srcStory={aminFireFighter}/>}  />
+                <Route path='/worriedPami1' element={<TheStory srcStory={pami}/>}  />
                 <Route path='/reading/*' element={<Reading />}  />
                 <Route path='/numberGame' element={<FlippingTable idTablePlay="play1" tableData={tableDataNum.photoData} bgTable={tableDataNum.bgTable} showBack1={false} />}  />
                 <Route path='/kitchenGame' element={<FlippingTable idTablePlay="kitU1" tableData={kitchenDataTable.photoData} bgTable={kitchenDataTable.bgTable} showBack1={true} />}  />
