@@ -11,6 +11,8 @@ export let alphaCrousel={
     "./images/assetAlpha/cardAlpha/Untitled-2-5.jpg",
     "./images/assetAlpha/cardAlpha/Untitled-2-6.jpg",
 ]}
+
+// ****************** Start Alpha Story*********
 export let storyAlpha1={
     buttonId:"storyAlp1",
     carouselImg:[
@@ -34,6 +36,12 @@ export let storyAlpha2={
         "/images/assetAlpha/alphaStory/variety/happyFamily.png",
         "/images/assetAlpha/alphaStory/variety/sara.png",
         "/images/assetAlpha/alphaStory/variety/windCat.png",
+        "/images/assetAlpha/alphaStory/variety/firefighter.png",
+        "/images/assetAlpha/alphaStory/variety/goodBoy.png",
+        "/images/assetAlpha/alphaStory/variety/police1.png",
+        "/images/assetAlpha/alphaStory/variety/waiting-1.png",
+        "/images/assetAlpha/alphaStory/variety/waiting-2.png",
+        "/images/assetAlpha/alphaStory/variety/doctor-1.png"
     ]}
     
 export let storyAlpha3={
@@ -119,8 +127,28 @@ export let puyaStory ={
 
     
 }
+export let aminFireFighter ={
+    wordId:"amin1",
+    targetHref:"aminfireFighter1",
+    titleStory:"داستان اَمین آتَش نِشان  ",
+    imageStory:["/images/assetAlpha/alphaStory/storyPage/AminFireFighter.png",],
+    wordPart:[
+        {
+            wordMean:"",
+            engMean:""
+        },
+    ],
+    accordionItems : [
+        {
+          title: "",
+          content: "",
+        },
+      ]
 
+    
+}
 
+// ********************************* End Alpha Story***************
 // &&&&&& start short sound
 let shortSoundExa = [];
 infoCard.map((item , index)=>{
@@ -217,6 +245,7 @@ export let contentListAlpha = {
             {id:nanoid(4),title:"کلمات شبیه",targetHref:"storyA4",idLetter:"storyAl-4"},
             {id:nanoid(4),title:"قوقولی",targetHref:"ququlyQu",idLetter:"ququl"},
             {id:nanoid(4),title:"پویا و روز بارانی",targetHref:"puyaStory1",idLetter:"puya1"},
+            {id:nanoid(4),title:"اَمین آتَش نِشان",targetHref:"aminFireFighter1",idLetter:"amin1"},
             ],
         },
 }
