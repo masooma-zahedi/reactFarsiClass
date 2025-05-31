@@ -11,6 +11,8 @@ export let alphaCrousel={
     "./images/assetAlpha/cardAlpha/Untitled-2-5.jpg",
     "./images/assetAlpha/cardAlpha/Untitled-2-6.jpg",
 ]}
+
+// ****************** Start Alpha Story*********
 export let storyAlpha1={
     buttonId:"storyAlp1",
     carouselImg:[
@@ -34,6 +36,15 @@ export let storyAlpha2={
         "/images/assetAlpha/alphaStory/variety/happyFamily.png",
         "/images/assetAlpha/alphaStory/variety/sara.png",
         "/images/assetAlpha/alphaStory/variety/windCat.png",
+        "/images/assetAlpha/alphaStory/variety/firefighter.png",
+        "/images/assetAlpha/alphaStory/variety/goodBoy.png",
+        "/images/assetAlpha/alphaStory/variety/police1.png",
+        "/images/assetAlpha/alphaStory/variety/waiting-1.png",
+        "/images/assetAlpha/alphaStory/variety/waiting-2.png",
+        "/images/assetAlpha/alphaStory/variety/doctor-1.png",
+        "/images/assetAlpha/alphaStory/variety/dad&basket.png",
+        "/images/assetAlpha/alphaStory/variety/umberellaBoy.png",
+        "/images/assetAlpha/alphaStory/variety/snowPlay.png"
     ]}
     
 export let storyAlpha3={
@@ -119,8 +130,48 @@ export let puyaStory ={
 
     
 }
+export let aminFireFighter ={
+    wordId:"amin1",
+    targetHref:"aminfireFighter1",
+    titleStory:"داستان اَمین آتَش نِشان  ",
+    imageStory:["/images/assetAlpha/alphaStory/storyPage/AminFireFighter.png",],
+    wordPart:[
+        {
+            wordMean:"",
+            engMean:""
+        },
+    ],
+    accordionItems : [
+        {
+          title: "",
+          content: "",
+        },
+      ]
 
+    
+}
+export let pami ={
+    wordId:"pami1",
+    targetHref:"woreidPami1",
+    titleStory:"داستان پامی با هزارپا  ",
+    imageStory:["/images/assetAlpha/alphaStory/storyPage/pami.png",],
+    wordPart:[
+        {
+            wordMean:"",
+            engMean:""
+        },
+    ],
+    accordionItems : [
+        {
+          title: "",
+          content: "",
+        },
+      ]
 
+    
+}
+
+// ********************************* End Alpha Story***************
 // &&&&&& start short sound
 let shortSoundExa = [];
 infoCard.map((item , index)=>{
@@ -176,6 +227,7 @@ export let contentListAlpha = {
             {id:nanoid(4),title:"با هم بخوانیم-4",targetHref:"reading/read-4",idLetter:"readtogether-4"},
             {id:nanoid(4),title:"با هم بخوانیم-5",targetHref:"reading/read-5",idLetter:"readtogether-5"},
             {id:nanoid(4),title:"با هم بخوانیم-6",targetHref:"reading/read-6",idLetter:"readtogether-6"},
+            {id:nanoid(4),title:"با هم بخوانیم-7",targetHref:"reading/read-7",idLetter:"readtogether-7"},
             ],
         },
         brokenWords :{
@@ -217,6 +269,8 @@ export let contentListAlpha = {
             {id:nanoid(4),title:"کلمات شبیه",targetHref:"storyA4",idLetter:"storyAl-4"},
             {id:nanoid(4),title:"قوقولی",targetHref:"ququlyQu",idLetter:"ququl"},
             {id:nanoid(4),title:"پویا و روز بارانی",targetHref:"puyaStory1",idLetter:"puya1"},
+            {id:nanoid(4),title:"اَمین آتَش نِشان",targetHref:"aminFireFighter1",idLetter:"amin1"},
+            {id:nanoid(4),title:"پامی با هزار پا",targetHref:"worriedPami1",idLetter:"pami1"},
             ],
         },
 }
@@ -1449,6 +1503,368 @@ export let sylabelWord6={
     ]
 }
 // ##########-->برای حرف  (از اول تا حرف ق)  ########
+// ##########-->شروع : برای حرف  (از اول تا حرف ن)  ########
+export let sylabelWord7={
+    buttonTargetId:"testSylabe7",
+    titleHead:"( تا حرف ن ) با هم بخوانیم",
+    titleColor:"rgb(108, 19, 107)",
+    sylabelBg:"rgb(190, 36, 85)",
+    sentenceRow:[
+        // each arrow is one sentence
+        [
+            {
+                word:"مَن",
+                syla:""
+            },
+            {
+                word:"نان",
+                syla:""
+            },
+            {
+                word:"تازِه",
+                syla:""
+            },
+            {
+                word:"دوست",
+                syla:""
+            },
+            {
+                word:"دارَم.",
+                syla:""
+            },
+        ],
+        [
+            {
+                word:"مادَر",
+                syla:""
+            },
+            {
+                word:"کَمی",
+                syla:""
+            },
+            {
+                word:"نَمک ",
+                syla:""
+            },
+            {
+                word:"به",
+                syla:""
+            },
+            {
+                word:"غَذا",
+                syla:""
+            },
+            {
+                word:"زَد.",
+                syla:""
+            },
+        ],
+        [
+            {
+                word:"نَرگِس",
+                syla:""
+            },
+            {
+                word:"یِک",
+                syla:""
+            },
+            {
+                word:"گُل",
+                syla:""
+            },
+            {
+                word:"زیباست.",
+                syla:""
+            },
+        ],
+        [
+            {
+                word:"نَهَنگ",
+                syla:""
+            },
+            {
+                word:"دَر",
+                syla:""
+            },
+            {
+                word:"دَریا",
+                syla:""
+            },
+            {
+                word:"زِندِگی ",
+                syla:""
+            },
+            {
+                word:"می کُنَد.",
+                syla:""
+            },
+        ],
+        [
+            {
+                word:"پِدَرَم ",
+                syla:""
+            },
+            {
+                word:"بَرایَم",
+                syla:""
+            },
+            {
+                word:"یِک",
+                syla:""
+            },
+            {
+                word:"کُلاه",
+                syla:""
+            },
+            {
+                word:"نَمَدی",
+                syla:""
+            },
+            {
+                word:"خَرید.",
+                syla:""
+            },
+        ],
+        [
+            {
+                word:"مادَر",
+                syla:""
+            },
+            {
+                word:"مَرا",
+                syla:""
+            },
+            {
+                word:"نَوازِش",
+                syla:""
+            },
+            {
+                word:"کَرد.",
+                syla:""
+            },
+        ],
+        [
+            {
+                word:"پَرَنده ",
+                syla:""
+            },
+            {
+                word:"نوک",
+                syla:""
+            },
+            {
+                word:"کوچَکی",
+                syla:""
+            },
+            {
+                word:"دارَد.",
+                syla:""
+            },
+        ],
+        [
+            {
+                word:"بَچِه",
+                syla:""
+            },
+            {
+                word:"به",
+                syla:""
+            },
+            {
+                word:"ماه",
+                syla:""
+            },
+            {
+                word:"نِگاه",
+                syla:""
+            },
+            {
+                word:"کَرد.",
+                syla:""
+            },
+        ],
+        [
+            {
+                word:"او",
+                syla:""
+            },
+            {
+                word:"از",
+                syla:""
+            },
+            {
+                word:"نَردِبان",
+                syla:""
+            },
+            {
+                word:"بالا",
+                syla:""
+            },
+            {
+                word:"رَفت.",
+                syla:""
+            },
+        ],
+        [
+            {
+                word:"این",
+                syla:""
+            },
+            {
+                word:"اَنگُشتَر",
+                syla:""
+            },
+            {
+                word:"اَز",
+                syla:""
+            },
+            {
+                word:"نُقرِه",
+                syla:""
+            },
+            {
+                word:"اَست.",
+                syla:""
+            },
+        ],
+        [
+            {
+                word:"مَن",
+                syla:""
+            },
+            {
+                word:"آبمیوِه",
+                syla:""
+            },
+            {
+                word:"دوست",
+                syla:""
+            },
+            {
+                word:"دارَم.",
+                syla:""
+            },
+        ],
+        [
+            {
+                word:"حالا",
+                syla:""
+            },
+            {
+                word:"نوبَتِ",
+                syla:""
+            },
+            {
+                word:"توست.",
+                syla:""
+            },
+        ],
+        [
+            {
+                word:"کِلاس",
+                syla:""
+            },
+            {
+                word:"دَه",
+                syla:""
+            },
+            {
+                word:"نَفَر",
+                syla:""
+            },
+            {
+                word:"شاگِرد",
+                syla:""
+            },
+            {
+                word:"دارَد.",
+                syla:""
+            },
+        ],
+        [
+            {
+                word:"مَن",
+                syla:""
+            },
+            {
+                word:"کَفش",
+                syla:""
+            },
+            {
+                word:"نو",
+                syla:""
+            },
+            {
+                word:"خَریدَم.",
+                syla:""
+            },
+        ],
+        [
+            {
+                word:"مادَر ",
+                syla:""
+            },
+            {
+                word:"نِگَرانِ",
+                syla:""
+            },
+            {
+                word:"مَن",
+                syla:""
+            },
+            {
+                word:"بود.",
+                syla:""
+            },
+        ],
+        [
+            {
+                word:"خانِه",
+                syla:""
+            },
+            {
+                word:"ما",
+                syla:""
+            },
+            {
+                word:"نَزدیک",
+                syla:""
+            },
+            {
+                word:"پارک",
+                syla:""
+            },
+            {
+                word:"اَست.",
+                syla:""
+            },
+        ],
+        [
+            {
+                word:"آتَش نِشان",
+                syla:""
+            },
+            {
+                word:"کودَک",
+                syla:""
+            },
+            {
+                word:"را",
+                syla:""
+            },
+            {
+                word:"نجات",
+                syla:""
+            },
+            {
+                word:"داد.",
+                syla:""
+            },
+        ],
+
+    ]
+}
+// ##########-->برای حرف  (از اول تا حرف ن) پایان ########
 
 // ******************************* End SylabelWords data *********************
 
