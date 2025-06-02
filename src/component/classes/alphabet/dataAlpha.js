@@ -44,7 +44,8 @@ export let storyAlpha2={
         "/images/assetAlpha/alphaStory/variety/doctor-1.png",
         "/images/assetAlpha/alphaStory/variety/dad&basket.png",
         "/images/assetAlpha/alphaStory/variety/umberellaBoy.png",
-        "/images/assetAlpha/alphaStory/variety/snowPlay.png"
+        "/images/assetAlpha/alphaStory/variety/snowPlay.png",
+        "/images/assetAlpha/alphaStory/variety/startEarly.png",
     ]}
     
 export let storyAlpha3={

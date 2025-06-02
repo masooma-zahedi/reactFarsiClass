@@ -264,7 +264,7 @@ export let testPicture2 = {
     alphaColor : [
         {
             image :"/images/assetWord/actionVerb/12-31-31-verb.png",
-            sylabelWord : ".او زمین خورد و افتاد",
+            sylabelWord : ".او لیز خورد و افتاد",
         },
         {
             image :"/images/assetWord/actionVerb/12-31-32-verb.png",
