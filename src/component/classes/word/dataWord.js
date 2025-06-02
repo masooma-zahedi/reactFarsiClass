@@ -1468,6 +1468,7 @@ export let sentenceOptions3 = [
 
 // ************************* Start Mix word for sentences (کلمات بهم ریخته برای جمله سازی) ***********
                                 // هر جای خالی باید از سه بار تکرار "crt + - "
+                                // اگر عکس برای سوالات نداشتید در قسمت image: null 
 export let questions1 = [
       {
         sentence: 'مَن هَر روز به ___ می‌رَوَم.',
@@ -1485,7 +1486,7 @@ export let questions1 = [
         sentence: 'مَن نان تازه ___ دارَم.',
         correctWord: 'دوست',
         options: ['بَستَنی', 'دوست', 'سَرما','نیما'],
-        image: null
+        image: 'https://borna.news/files/fa/news/1399/3/23/1788123_900.jpg'
       },
       {
         sentence: 'مادَر کَمی ___ به غَذا زَد.',
@@ -1534,82 +1535,82 @@ export let questions1 = [
 export let questions2 = [
     // masooma
       {
-        sentence: 'او ___ و افتاد.',
+        sentence: 'او ___ وَ اُفتاد.',
         correctWord: 'لیز خورد',
-        options: ['لیز خورد', 'غذاخورد', 'کتاب خواند'],
+        options: ['لیز خورد', 'غَذاخورد', 'کِتاب خواند'],
         image: '/images/assetWord/actionVerb/12-31-31-verb.png'
       },
       {
-        sentence: 'نگذار بستنی ات ___',
-        correctWord: 'آب شود(ذوب شود)',
-        options: ['پُخته شَوَد', 'آب شود(ذوب شود)', 'بُزُرگ شَوَد '],
+        sentence: 'نَگذار بَستَنی اَت ___',
+        correctWord: 'آب شَوَد(ذوب شَوَد)',
+        options: ['پُخته شَوَد', 'آب شَوَد(ذوب شَوَد)', 'بُزُرگ شَوَد '],
         image: '/images/assetWord/actionVerb/12-31-32-verb.png'
       },
       {
-        sentence: 'میمون موز را ___ و خورد',
+        sentence: 'مِیمون موز را ___ وَ خورد.',
         correctWord: 'پوست کَند',
         options: ['اَنداخت','پوست کَند' ,'بازی کَرد'],
         image: '/images/assetWord/actionVerb/12-31-33-verb.png'
       },
       {
-        sentence: '',
-        correctWord: '',
-        options: ['', '', ' '],
-        image: ''
+        sentence: 'دانِش آموزان ___ یِک مادِه شیمیایی جَدید هَستَند.',
+        correctWord: 'دَر حالِ آزمایِش',
+        options: ['دَر حالِ آزمایِش', 'در حال تماشا کردن', ' در حال خوابیدن'],
+        image: '/images/assetWord/actionVerb/12-31-34-verb.png'
       },
       {
-        sentence: '',
-        correctWord: '',
-        options: ['', '', ' '],
-        image: ''
+        sentence: 'او اَنگُشتانَش را ___.',
+        correctWord: 'می شُمارَد',
+        options: ['گِریه می کُنَد', 'راه می رَوَد', 'می شُمارَد'],
+        image: '/images/assetWord/actionVerb/12-31-35-verb.png'
       },
       {
-        sentence: '',
-        correctWord: '',
-        options: ['', '', ' '],
-        image: ''
+        sentence: 'آچار خود را بَردارید وَ مُهرِه را ___ .',
+        correctWord: 'سِفت کُنید',
+        options: ['سِفت کُنید', 'بیاندازید', 'خَراب کُنید'],
+        image: '/images/assetWord/actionVerb/12-31-36-verb.png'
       },
       {
-        sentence: '',
-        correctWord: '',
-        options: ['', '', ' '],
-        image: ''
+        sentence: 'لیلی با صِدایِ بُلَند شَروع به ___ کَرد.',
+        correctWord: 'خُروپُف کَردَن',
+        options: ['جیغ زَدَن ', 'بالا پَریدَن', 'خُروپُف کَردَن'],
+        image: '/images/assetWord/actionVerb/12-31-37-verb.png'
       },
       {
-        sentence: '',
-        correctWord: '',
-        options: ['', '', ' '],
-        image: ''
+        sentence: 'پِسر دیروز با قایِق روی دَریاچه ___.',
+        correctWord: 'عُبور کَرد',
+        options: ['زِندِگی کَرد', 'عُبور کَرد', 'کار کَرد'],
+        image: '/images/assetWord/actionVerb/12-31-38-verb.png'
       },
       {
-        sentence: '',
-        correctWord: '',
-        options: ['', '', ' '],
-        image: ''
+        sentence: 'میشه نَتایِج آزمون اِنگِلیسی خود را به مَن ___.',
+        correctWord: 'نِشان دَهید',
+        options: ['نِشان دَهید', 'بپوشانی', 'بِرَوید'],
+        image: '/images/assetWord/actionVerb/12-31-39-verb.png'
       },
       {
-        sentence: '',
-        correctWord: '',
-        options: ['', '', ' '],
-        image: ''
+        sentence: 'اَنگُشتت را به سَمتِ مَن ___.',
+        correctWord: 'اِشارِه نَکن',
+        options: ['نَدِه', 'نَخور', 'اِشارِه نَکن'],
+        image: '/images/assetWord/actionVerb/12-31-40-verb.png'
       },
       {
-        sentence: '',
-        correctWord: '',
-        options: ['', '', ' '],
-        image: ''
+        sentence: 'حُضار پَس اَز سَخَنرانی او با صِدایِ بُلَند ___.',
+        correctWord: 'دَست زَدَند',
+        options: ['دَست زَدَند', 'خوابیدَند', 'کار کَردَند'],
+        image: '/images/assetWord/actionVerb/12-31-42-verb.png'
       },
       {
-        sentence: '',
-        correctWord: '',
-        options: ['', '', ' '],
-        image: ''
+        sentence: 'او دَستکِش را دَر آوَرد تا با دوستَش ___.',
+        correctWord: 'دَست بِدَهَد',
+        options: ['راه بِرَوَد', 'دَست بِدَهَد', 'پَرواز کُنَد'],
+        image: '/images/assetWord/actionVerb/12-31-43-verb.png'
       },
       {
-        sentence: '',
-        correctWord: '',
-        options: ['', '', ' '],
-        image: ''
+        sentence: 'او دَر حال ___ توپ اَست.',
+        correctWord: 'گِرِفتَن',
+        options: ['گِرِفتَن', 'زَدَن', 'نِوِشتَن'],
+        image: '/images/assetWord/actionVerb/12-31-44-verb.png'
       },
     
 ]
