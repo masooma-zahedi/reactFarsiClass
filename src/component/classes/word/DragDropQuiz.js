@@ -78,10 +78,13 @@ const DragDropQuiz = () => {
   const stylebg = {
     backgroundColor:'rgba(232, 231, 231, 0.99)'
   }
-  const questionsqq = (e,i)=>{
-    setQuestions(e);
-    setIdModal(i)
-  }
+const questionsqq = (e, i) => {
+  setQuestions(e);
+  setIdModal(i);
+  setCurrentIndex(0);     // ریست کردن به سوال اول
+  setDroppedWord(null);
+  setIsCorrect(null);
+};
 
   return (
         <div className="test  " dir="rtl" style={{fontFamily:'Vazir,sans-serif'}}>
