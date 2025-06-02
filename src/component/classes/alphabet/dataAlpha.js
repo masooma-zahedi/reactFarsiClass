@@ -44,7 +44,8 @@ export let storyAlpha2={
         "/images/assetAlpha/alphaStory/variety/doctor-1.png",
         "/images/assetAlpha/alphaStory/variety/dad&basket.png",
         "/images/assetAlpha/alphaStory/variety/umberellaBoy.png",
-        "/images/assetAlpha/alphaStory/variety/snowPlay.png"
+        "/images/assetAlpha/alphaStory/variety/snowPlay.png",
+        "/images/assetAlpha/alphaStory/variety/startEarly.png",
     ]}
     
 export let storyAlpha3={
@@ -170,6 +171,26 @@ export let pami ={
 
     
 }
+export let smallPea ={
+    wordId:"pea1",
+    targetHref:"smallPea1",
+    titleStory:"داستان نخود کوچولو",
+    imageStory:["/images/assetAlpha/alphaStory/storyPage/smallPea.png",],
+    wordPart:[
+        {
+            wordMean:"",
+            engMean:""
+        },
+    ],
+    accordionItems : [
+        {
+          title: "",
+          content: "",
+        },
+      ]
+
+    
+}
 
 // ********************************* End Alpha Story***************
 // &&&&&& start short sound
@@ -271,6 +292,7 @@ export let contentListAlpha = {
             {id:nanoid(4),title:"پویا و روز بارانی",targetHref:"puyaStory1",idLetter:"puya1"},
             {id:nanoid(4),title:"اَمین آتَش نِشان",targetHref:"aminFireFighter1",idLetter:"amin1"},
             {id:nanoid(4),title:"پامی با هزار پا",targetHref:"worriedPami1",idLetter:"pami1"},
+            {id:nanoid(4),title:"نُخود کوچَک",targetHref:"smallPea1",idLetter:"pea1"},
             ],
         },
 }

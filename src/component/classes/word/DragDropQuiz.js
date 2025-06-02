@@ -78,10 +78,22 @@ const DragDropQuiz = () => {
   const stylebg = {
     backgroundColor:'rgba(232, 231, 231, 0.99)'
   }
-  const questionsqq = (e,i)=>{
-    setQuestions(e);
-    setIdModal(i)
+const questionsqq = (e, i) => {
+  setQuestions(e);
+  setIdModal(i);
+  setCurrentIndex(0);     // ریست کردن به سوال اول
+  setDroppedWord(null);
+  setIsCorrect(null);
+};
+
+const prevQuestion = () => {
+  if (currentIndex > 0) {
+    setCurrentIndex(prev => prev - 1);
+    setDroppedWord(null);
+    setIsCorrect(null);
   }
+};
+
 
   return (
         <div className="test  " dir="rtl" style={{fontFamily:'Vazir,sans-serif'}}>
@@ -115,6 +127,14 @@ const DragDropQuiz = () => {
         </div>
       </div>
       {/* End modal for titles */}
+
+      {/* *** */}
+      <div className="text-center my-3">
+        <span className="badge bg-info fs-6">
+          سوال {currentIndex + 1} از {questions.length}
+        </span>
+      </div>
+
       
       <div className="d-flex justify-content-between align-items-center m-5" >
         <h4>جمله را کامل کن:</h4>
@@ -171,8 +191,31 @@ const DragDropQuiz = () => {
         )}
       </div>
 
-
       <div className="d-flex gap-2 flex-wrap flex-row-reverse mx-4">
+  <button className="btn btn-success" onClick={checkAnswer} disabled={!droppedWord}>
+    بررسی پاسخ ✅
+  </button>
+
+  <button className="btn btn-warning" onClick={resetCurrentQuestion}>
+    پاک کردن پاسخ 🔄
+  </button>
+
+  {currentIndex > 0 && (
+    <button className="btn btn-outline-secondary" onClick={prevQuestion}>
+      سوال قبلی ⬅️
+    </button>
+  )}
+
+  {isCorrect && currentIndex < questions.length - 1 && (
+    <button className="btn btn-primary" onClick={nextQuestion}>
+      سوال بعدی ➡️
+    </button>
+  )}
+</div>
+
+
+
+      {/* <div className="d-flex gap-2 flex-wrap flex-row-reverse mx-4">
         <button className="btn btn-success" onClick={checkAnswer} disabled={!droppedWord}>
           بررسی پاسخ ✅
         </button>
@@ -184,7 +227,7 @@ const DragDropQuiz = () => {
             سوال بعدی ➡️
           </button>
         )}
-      </div>
+      </div> */}
 
       {isCorrect !== null && (
         <div className="mt-3">

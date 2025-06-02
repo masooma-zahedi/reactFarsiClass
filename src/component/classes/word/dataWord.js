@@ -264,7 +264,7 @@ export let testPicture2 = {
     alphaColor : [
         {
             image :"/images/assetWord/actionVerb/12-31-31-verb.png",
-            sylabelWord : ".او زمین خورد و افتاد",
+            sylabelWord : ".او لیز خورد و افتاد",
         },
         {
             image :"/images/assetWord/actionVerb/12-31-32-verb.png",
@@ -1468,6 +1468,7 @@ export let sentenceOptions3 = [
 
 // ************************* Start Mix word for sentences (کلمات بهم ریخته برای جمله سازی) ***********
                                 // هر جای خالی باید از سه بار تکرار "crt + - "
+                                // اگر عکس برای سوالات نداشتید در قسمت image: null 
 export let questions1 = [
       {
         sentence: 'مَن هَر روز به ___ می‌رَوَم.',
@@ -1485,7 +1486,7 @@ export let questions1 = [
         sentence: 'مَن نان تازه ___ دارَم.',
         correctWord: 'دوست',
         options: ['بَستَنی', 'دوست', 'سَرما','نیما'],
-        image: null
+        image: 'https://borna.news/files/fa/news/1399/3/23/1788123_900.jpg'
       },
       {
         sentence: 'مادَر کَمی ___ به غَذا زَد.',
@@ -1532,68 +1533,242 @@ export let questions1 = [
     
 ]
 export let questions2 = [
+    // masooma
       {
-        sentence: 'مَن  نماسی ماخهسیggh hjهَر روز به ___ می‌رَوَم.',
-        correctWord: 'مدرسه',
-        options: ['مدرسه', 'سیب', 'باران'],
-        image: 'https://i.pinimg.com/736x/28/07/eb/2807eb52c3035c3caa48347167545cd4.jpg'
+        sentence: 'او ___ وَ اُفتاد.',
+        correctWord: 'لیز خورد',
+        options: ['لیز خورد', 'غَذاخورد', 'کِتاب خواند'],
+        image: '/images/assetWord/actionVerb/12-31-31-verb.png'
       },
       {
-        sentence: 'او یِک ___ در دست دارَد.',
-        correctWord: 'کتاب',
-        options: ['کتاب', 'دویدن', 'زنگ'],
-        image: 'https://static.scientificamerican.com/sciam/cache/file/1DDFE633-2B85-468D-B28D05ADAE7D1AD8_source.jpg?w=1200'
+        sentence: 'نَگذار بَستَنی اَت ___',
+        correctWord: 'آب شَوَد(ذوب شَوَد)',
+        options: ['پُخته شَوَد', 'آب شَوَد(ذوب شَوَد)', 'بُزُرگ شَوَد '],
+        image: '/images/assetWord/actionVerb/12-31-32-verb.png'
       },
       {
-        sentence: 'مَن نان تازه ___ دارَم.',
-        correctWord: 'دوست',
-        options: ['بَستَنی', 'دوست', 'سَرما','نیما'],
-        image: null
+        sentence: 'مِیمون موز را ___ وَ خورد.',
+        correctWord: 'پوست کَند',
+        options: ['اَنداخت','پوست کَند' ,'بازی کَرد'],
+        image: '/images/assetWord/actionVerb/12-31-33-verb.png'
       },
       {
-        sentence: 'مادَر کَمی ___ به غَذا زَد.',
-        correctWord: 'نَمَک',
-        options: ['نَمَک', 'میوه', 'بُشقاب'],
-        image: 'https://upload.wikimedia.org/wikipedia/commons/a/ad/Table_salt_with_salt_shaker_V1.jpg'
+        sentence: 'دانِش آموزان ___ یِک مادِه شیمیایی جَدید هَستَند.',
+        correctWord: 'دَر حالِ آزمایِش',
+        options: ['دَر حالِ آزمایِش', 'در حال تماشا کردن', ' در حال خوابیدن'],
+        image: '/images/assetWord/actionVerb/12-31-34-verb.png'
       },
       {
-        sentence: ' ___ دَر دَریا زِندِگی می کُنَد.',
-        correctWord: 'نَهَنگ',
-        options: ['جوجه', 'شیر', 'گَوَزن','نَهَنگ'],
-        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Killerwhales_jumping.jpg/1200px-Killerwhales_jumping.jpg'
+        sentence: 'او اَنگُشتانَش را ___.',
+        correctWord: 'می شُمارَد',
+        options: ['گِریه می کُنَد', 'راه می رَوَد', 'می شُمارَد'],
+        image: '/images/assetWord/actionVerb/12-31-35-verb.png'
       },
       {
-        sentence: 'پِدَرَم بَرایَم یِک ___ خَرید.',
-        correctWord: 'کُلاه',
-        options: ['هَوا', 'آسمان', 'مادَر','کُلاه'],
-        image: 'https://sainc2.myshopify.com/cdn/shop/products/beach-hat-red-front-ss20-2500px_6a3730db-77cc-44d6-b437-b027b32bb044.jpg?v=1718389492'
+        sentence: 'آچار خود را بَردارید وَ مُهرِه را ___ .',
+        correctWord: 'سِفت کُنید',
+        options: ['سِفت کُنید', 'بیاندازید', 'خَراب کُنید'],
+        image: '/images/assetWord/actionVerb/12-31-36-verb.png'
       },
       {
-        sentence: ' ___نوک کوچَکی دارَد.',
-        correctWord: 'پَرَندِه',
-        options: ['پَرَندِه', 'روباه', 'ماهی','تِمساح'],
-        image: 'https://statics.basalam.com/public-7/users/kRZKpN/2110/wq4ytYJSJBtoG93qZQpTpO390nrWk4rbf79ftOGJ.jpg'
+        sentence: 'لیلی با صِدایِ بُلَند شَروع به ___ کَرد.',
+        correctWord: 'خُروپُف کَردَن',
+        options: ['جیغ زَدَن ', 'بالا پَریدَن', 'خُروپُف کَردَن'],
+        image: '/images/assetWord/actionVerb/12-31-37-verb.png'
       },
       {
-        sentence: 'مَن با ___ لِباس دوختَم.',
-        correctWord: 'نَخ',
-        options: [ 'چوب','نَخ', 'لیوان','مِداد'],
-        image: 'https://www.lavanbaft.com/wp-content/uploads/2022/02/nakh.jpg'
+        sentence: 'پِسر دیروز با قایِق روی دَریاچه ___.',
+        correctWord: 'عُبور کَرد',
+        options: ['زِندِگی کَرد', 'عُبور کَرد', 'کار کَرد'],
+        image: '/images/assetWord/actionVerb/12-31-38-verb.png'
       },
       {
-        sentence: 'زَنبور ___ زَد.',
-        correctWord: 'نیش',
-        options: [ 'گِریه', 'کُتَک','عَسَل','نیش'],
-        image: 'https://www.digikala.com/mag/wp-content/uploads/2023/05/01-Bee-Sting-Treatment-1.jpg'
+        sentence: 'میشه نَتایِج آزمون اِنگِلیسی خود را به مَن ___.',
+        correctWord: 'نِشان دَهید',
+        options: ['نِشان دَهید', 'بپوشانی', 'بِرَوید'],
+        image: '/images/assetWord/actionVerb/12-31-39-verb.png'
       },
       {
-        sentence: '___ بالای دِرَخت رَفت.',
-        correctWord: 'گُربه',
-        options: ['کَفش', 'گُربه', 'گُل','موبایل'],
-        image: 'https://cdn.fararu.com/thumbnail/OTliY2YXgLxy/fCohl8MdDeqLuUiNxwx9X4gYrgKL9XBZBWdbZWUJQbHweEbOeibJ3lKhwCXPcymMenByfMSSpsbh46ioIqLjxbHMRm21_h7HQpcPeRTlTup9Fg2BIMEOf3jclM_4J6zeNSYMgfXaohvvVGVyDx5LlALVa--jwrBG/OTliY2YXgLxy.jpg'
+        sentence: 'اَنگُشتت را به سَمتِ مَن ___.',
+        correctWord: 'اِشارِه نَکن',
+        options: ['نَدِه', 'نَخور', 'اِشارِه نَکن'],
+        image: '/images/assetWord/actionVerb/12-31-40-verb.png'
+      },
+      {
+        sentence: 'حُضار پَس اَز سَخَنرانی او با صِدایِ بُلَند ___.',
+        correctWord: 'دَست زَدَند',
+        options: ['دَست زَدَند', 'خوابیدَند', 'کار کَردَند'],
+        image: '/images/assetWord/actionVerb/12-31-42-verb.png'
+      },
+      {
+        sentence: 'او دَستکِش را دَر آوَرد تا با دوستَش ___.',
+        correctWord: 'دَست بِدَهَد',
+        options: ['راه بِرَوَد', 'دَست بِدَهَد', 'پَرواز کُنَد'],
+        image: '/images/assetWord/actionVerb/12-31-43-verb.png'
+      },
+      {
+        sentence: 'او دَر حال ___ توپ اَست.',
+        correctWord: 'گِرِفتَن',
+        options: ['گِرِفتَن', 'زَدَن', 'نِوِشتَن'],
+        image: '/images/assetWord/actionVerb/12-31-44-verb.png'
       },
     
 ]
+// test
+export let testPicture2T = {
+// masooma
+    wordCarousel:{
+        title:" 2 فعل ها",
+        targetCarouselId :"verbAction2",
+        idLetter :"verbId2",
+        imageCarousel :"imgcarouselv2"
+    },
+    alphaColor : [
+        {
+            image :"/images/assetWord/actionVerb/12-31-31-verb.png",
+            sylabelWord : ".او لیز خورد و افتاد",
+        },
+        {
+            image :"/images/assetWord/actionVerb/12-31-32-verb.png",
+            sylabelWord : ".نگذار بستنی ات آب شود",
+        },
+        {
+            image :"/images/assetWord/actionVerb/12-31-33-verb.png",
+            sylabelWord : ".میمون موز را پوست کند و خورد",
+        },
+        {
+            image :"/images/assetWord/actionVerb/12-31-34-verb.png",
+            sylabelWord : ".دانش آموزان در حال آزمایش یک ماده شیمیایی جدید هستند",
+        },
+        {
+            image :"/images/assetWord/actionVerb/12-31-35-verb.png",
+            sylabelWord : ".او انگشتانش را می شمارد",
+        },
+        {
+            image :"/images/assetWord/actionVerb/12-31-36-verb.png",
+            sylabelWord : ".آچار خود را بردارید و مهره را سفت کنید",
+        },
+        {
+            image :"/images/assetWord/actionVerb/12-31-37-verb.png",
+            sylabelWord : ".لیلی با صدای بلند شروع به خروپف کردن کرد",
+        },
+        {
+            image :"/images/assetWord/actionVerb/12-31-38-verb.png",
+            sylabelWord : ".پسر دیروز با قایق روی دریاچه رفت",
+        },
+        {
+            image :"/images/assetWord/actionVerb/12-31-39-verb.png",
+            sylabelWord : ".میشه نتایج آزمون انگلیسی خود را به من نشان دهید",
+        },
+        {
+            image :"/images/assetWord/actionVerb/12-31-40-verb.png",
+            sylabelWord : ".انگشتت را به سمت من اشاره نکن",
+        },
+        {
+            image :"/images/assetWord/actionVerb/12-31-41-verb.png",
+            sylabelWord : ".ما در سفرمان عکس های زیادی گرفتیم",
+        },
+        {
+            image :"/images/assetWord/actionVerb/12-31-42-verb.png",
+            sylabelWord : ".حضار پس از سخنرانی او با صدای بلند دست زدند",
+        },
+        {
+            image :"/images/assetWord/actionVerb/12-31-43-verb.png",
+            sylabelWord : " .او دستکش را در آورد تا با دوستش دست بدهد.",
+        },
+        {
+            image :"/images/assetWord/actionVerb/12-31-44-verb.png",
+            sylabelWord : ".او در حال گرفتن توپ است",
+        },
+        {
+            image :"/images/assetWord/actionVerb/12-31-45-verb.png",
+            sylabelWord : ". او جعبه را از روی میز بلند کرد",
+        },
+        {
+            image :"/images/assetWord/actionVerb/12-31-46-verb.png",
+            sylabelWord : ".من به دانش آموزانم انگلیسی آموزش می دهم",
+        },
+        {
+            image :"/images/assetWord/actionVerb/12-31-47-verb.png",
+            sylabelWord : ".وقتی به ایستگاه اتوبوس رسیدم دوباره با شما تماس خواهم گرفت",
+        },
+        {
+            image :"/images/assetWord/actionVerb/12-31-48-verb.png",
+            sylabelWord : ".او به مدرسه می رود",
+        },
+        {
+            image :"/images/assetWord/actionVerb/12-31-49-verb.png",
+            sylabelWord : ".هر جا می رفتم کتاب را با خودم حمل می کردم",
+        },
+        {
+            image :"/images/assetWord/actionVerb/12-31-50-verb.png",
+            sylabelWord : ".او در را قفل کرد",
+        },
+        {
+            image :"/images/assetWord/actionVerb/12-31-51-verb.png",
+            sylabelWord : ". من میخوام برای جشن تولد دوستم کیک بپزم",
+        },
+        {
+            image :"/images/assetWord/actionVerb/12-31-52-verb.png",
+            sylabelWord : " .او روی پشتش شناور بود",
+        },
+        {
+            image :"/images/assetWord/actionVerb/12-31-53-verb.png",
+            sylabelWord : ".جوکر همزمان با پنج توپ بازی کرد",
+        },
+        {
+            image :"/images/assetWord/actionVerb/12-31-54-verb.png",
+            sylabelWord : ".سگ پایش را گاز گرفت",
+        },
+        {
+            image :"/images/assetWord/actionVerb/12-31-55-verb.png",
+            sylabelWord : ".من یک توپ را به خانه پرتاب کردم",
+        },
+        {
+            image :"/images/assetWord/actionVerb/12-31-56-verb.png",
+            sylabelWord : ".او پتو را تا می کند",
+        },
+        {
+            image :"/images/assetWord/actionVerb/12-31-57-verb.png",
+            sylabelWord : " .او آرد را با دو عدد تخم مرغ مخلوط کرد",
+        },
+        {
+            image :"/images/assetWord/actionVerb/12-31-58-verb.png",
+            sylabelWord : ".او در حال حفر یک چاله عمیق است",
+        },
+        {
+            image :"/images/assetWord/actionVerb/12-31-59-verb.png",
+            sylabelWord : ".من هفته ای دوبار کف آشپزخانه را تمیز می کنم",
+        },
+        {
+            image :"/images/assetWord/actionVerb/12-31-60-verb.png",
+            sylabelWord : ".ما می خواهیم خانه خود را بسازیم",
+        },
+        {
+            image :"/images/assetWord/actionVerb/12-31-61-verb.png",
+            sylabelWord : ".او برای من تصویری از دایناسور کشید",
+        },
+        {
+            image :"/images/assetWord/actionVerb/12-31-62-verb.png",
+            sylabelWord : ".من قبل از خروج از خانه موهایم را شانه کردم",
+        },
+        {
+            image :"/images/assetWord/actionVerb/12-31-63-verb.png",
+            sylabelWord : ".ما در پارک اسکیت می کنیم",
+        },
+        {
+            image :"/images/assetWord/actionVerb/12-31-64-verb.png",
+            sylabelWord : ".او با ظرافت روی تاب در پارک تاب خورد",
+        },
+    ]
+
+};
+
+
+
+
+
+
 export let questions3 = [
       {
         sentence: 'مَن هَر روز به ___ می‌رَوَم.jh jio ou iuou ooi ouoi iiou ',
