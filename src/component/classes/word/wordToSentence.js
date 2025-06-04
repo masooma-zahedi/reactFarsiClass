@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import SentenceBuilder from './SentenceBuilder';
 import {questions1, sentenceOptions1} from './dataWord'
 import DragDropQuiz from './DragDropQuiz';
-import { Route, Routes } from 'react-router-dom';
 
 // import 'bootstrap/dist/css/bootstrap.min.css';
 

@@ -12,6 +12,7 @@ import WordTable from "./WordTable.js";
 import { TheStory } from "../story/TheStory.js";
 import Reading from "./Reading.js";
 import GameWord from "./GameWord.js";
+import ObjectSentenceGame from "./ObjectSentenceGame.js";
 
 export const Alphabet = () => {
   const [showShort, setShowShort] = useState(false)
@@ -51,6 +52,7 @@ export const Alphabet = () => {
               <WordCarousel/>
               <GameWord />
             </div>
+            <ObjectSentenceGame/>
           </div>
         </div>
 
