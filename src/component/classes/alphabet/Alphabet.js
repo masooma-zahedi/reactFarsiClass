@@ -13,6 +13,7 @@ import { TheStory } from "../story/TheStory.js";
 import Reading from "./Reading.js";
 import GameWord from "./GameWord.js";
 import ObjectSentenceGame from "./ObjectSentenceGame.js";
+import MatchGame from "./MatchGame.js";
 
 export const Alphabet = () => {
   const [showShort, setShowShort] = useState(false)
@@ -30,6 +31,8 @@ export const Alphabet = () => {
                {/* <CardAlphaCompo/>  */}
               <Routes>
                 <Route path='/' element={<CardAlphaCompo/>}  />
+                <Route path='/objectSentenceGame' element={<ObjectSentenceGame/>}  />
+                <Route path='/matchGameWord' element={<MatchGame/>}  />
                 <Route path='/shortSound' element={<CarouselAlpha idCarouselAlpha="shorthref1"  dataCarousel={alphaShortCrousel}/>}  />
                 <Route path='/longSound' element={<CarouselAlpha  idCarouselAlpha="longhref1"  dataCarousel={alphaLongCrousel}/>}  />
                 <Route path='/storyA1' element={<CarouselAlpha  idCarouselAlpha="storyAl1"  dataCarousel={storyAlpha1}/>}  />
@@ -52,7 +55,6 @@ export const Alphabet = () => {
               <WordCarousel/>
               <GameWord />
             </div>
-            <ObjectSentenceGame/>
           </div>
         </div>
 
