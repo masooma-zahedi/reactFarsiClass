@@ -279,6 +279,8 @@ export let contentListAlpha = {
             {id:nanoid(4),title:" بازی شغل ها و میوه ها",targetHref:"professions",idLetter:"professionsGame-3"},
             {id:nanoid(4),title:"بازی حیوانات",targetHref:"animals",idLetter:"animalsGame-3"},
             {id:nanoid(4),title:"بازی رنگ و بدن",targetHref:"tableColor_body",idLetter:"colorB-1"},
+            {id:nanoid(4),title:" جمله سازی با تصویر",targetHref:"objectSentenceGame",idLetter:"objectS-1"},
+            {id:nanoid(4),title:" جفت سازی کلمه ها",targetHref:"matchGameWord",idLetter:"matchG-1"},
             ],
         },
         storyAlpha:{
@@ -1313,216 +1315,188 @@ export let sylabelWord5={
     ]
 }
 // ##########-->برای حرف  (از اول تا حرف ع)  ########
-// ##########-->برای حرف  (از اول تا حرف ق)  ########
+// ##########-->برای حرف  (از اول تا حرف ق)  ########************************ فعلا تغییر دادم درستش کن!!!!!!
 export let sylabelWord6={
     buttonTargetId:"testSylabe6",
     titleHead:"( تا حرف ق ) با هم بخوانیم",
     titleColor:"rgb(21, 19, 108)",
     sylabelBg:"rgb(139, 36, 190)",
+    // sent
     sentenceRow:[
-        // each arrow is one sentence
-        [
-            {
-                word:"چِراغِ",
-                syla:""
-            },
-            {
-                word:"سَبز",
-                syla:""
-            },
-            {
-                word:"روشَن",
-                syla:""
-            },
-            {
-                word:"شُد.",
-                syla:""
-            },
-        ],
-        [
-            {
-                word:"شُتر",
-                syla:""
-            },
-            {
-                word:"اَز",
-                syla:""
-            },
-            {
-                word:"صَحرا",
-                syla:""
-            },
-            {
-                word:"آمَد.",
-                syla:""
-            },
-        ],
-        [
-            {
-                word:"دیروز",
-                syla:""
-            },
-            {
-                word:"صُبح",
-                syla:""
-            },
-            {
-                word:"بَرق",
-                syla:""
-            },
-            {
-                word:"قَطع",
-                syla:""
-            },
-            {
-                word:"بود.",
-                syla:""
-            },
-        ],
-        [
-            {
-                word:"بَرف",
-                syla:""
-            },
-            {
-                word:"سَبُک",
-                syla:""
-            },
-            {
-                word:"وَ",
-                syla:""
-            },
-            {
-                word:"سِفید",
-                syla:""
-            },
-            {
-                word:"بود.",
-                syla:""
-            },
-        ],
-        [
-            {
-                word:"ظَرف",
-                syla:""
-            },
-            {
-                word:"پُر",
-                syla:""
-            },
-            {
-                word:"اَز",
-                syla:""
-            },
-            {
-                word:"شَربَتِ",
-                syla:""
-            },
-            {
-                word:"قِرمِز",
-                syla:""
-            },
-            {
-                word:"اَست.",
-                syla:""
-            },
-        ],
-        [
-            {
-                word:"بابا",
-                syla:""
-            },
-            {
-                word:"آمَد",
-                syla:""
-            },
-            {
-                word:"وَ",
-                syla:""
-            },
-            {
-                word:"پَرچَم",
-                syla:""
-            },
-            {
-                word:"چَرخید.",
-                syla:""
-            },
-        ],
-        [
-            {
-                word:"خِرس",
-                syla:""
-            },
-            {
-                word:"چَرخ",
-                syla:""
-            },
-            {
-                word:"را",
-                syla:""
-            },
-            {
-                word:"چَرخاند.",
-                syla:""
-            },
-        ],
-        [
-            {
-                word:"سَحَر",
-                syla:""
-            },
-            {
-                word:"زور",
-                syla:""
-            },
-            {
-                word:"بیدار",
-                syla:""
-            },
-            {
-                word:"شُد.",
-                syla:""
-            },
-        ],
-        [
-            {
-                word:"پِدَر",
-                syla:""
-            },
-            {
-                word:"ظَرفِ",
-                syla:""
-            },
-            {
-                word:"شَربَت",
-                syla:""
-            },
-            {
-                word:"را",
-                syla:""
-            },
-            {
-                word:"بَرداشت.",
-                syla:""
-            },
-        ],
-        [
-            {
-                word:"طوفانِ",
-                syla:""
-            },
-            {
-                word:"شَدید",
-                syla:""
-            },
-            {
-                word:"وَزید.",
-                syla:""
-            },
-        ],
+  [
+    { word: "با‌ر‌ا‌ن", syla: "با + ران" },
+    { word: "شَب", syla: "شب" },
+    { word: "آ‌را‌م", syla: "آ + رام" },
+    { word: "بود", syla: "بود" }
+  ],
+  [
+    { word: "پِدَر", syla: "پِ + دَر" },
+    { word: "تاب", syla: "تاب" },
+    { word: "را", syla: "را" },
+    { word: "بَردا‌شت", syla: "بَرد + داشت" }
+  ],
+  [
+    { word: "سارا", syla: "سا + را" },
+    { word: "چوب", syla: "چوب" },
+    { word: "خُشک", syla: "خُشک" },
+    { word: "را", syla: "را" },
+    { word: "سو‌زا‌ند", syla: "سو + زاند" }
+  ],
+  [
+    { word: "آب", syla: "آب" },
+    { word: "بی‌بو", syla: "بی + بو" },
+    { word: "اَست", syla: "اَست" }
+  ],
+  [
+    { word: "باد", syla: "باد" },
+    { word: "بَر", syla: "بَر" },
+    { word: "سَر", syla: "سَر" },
+    { word: "شاخ", syla: "شاخ" },
+    { word: "دِرَخت", syla: "دِ + رَخت" },
+    { word: "چَر‌خید", syla: "چَر + خید" }
+  ],
+  [
+    { word: "حُبا‌بی", syla: "حُ + با + بی" },
+    { word: "بَر", syla: "بَر" },
+    { word: "آب", syla: "آب" },
+    { word: "نِشَست", syla: "نِ + شَست" }
+  ],
+  [
+    { word: "دُختَر", syla: "دُخ + تَر" },
+    { word: "چَتر", syla: "چَتر" },
+    { word: "را", syla: "را" },
+    { word: "بَردا‌شت", syla: "بَرد + داشت" }
+  ],
+  [
+    { word: "صَدا", syla: "صَ + دا" },
+    { word: "دَر", syla: "دَر" },
+    { word: "چاه", syla: "چاه" },
+    { word: "پَخش", syla: "پَخش" },
+    { word: "شُد", syla: "شُد" }
+  ],
+  [
+    { word: "صُبحِ", syla: "صُبحِ" },
+    { word: "پاک", syla: "پاک" },
+    { word: "وَ", syla: "وَ" },
+    { word: "روشَن", syla: "روْ + شَن" },
+    { word: "بود", syla: "بود" }
+  ],
+  [
+    { word: "شیشِه", syla: "شی + شِه" },
+    { word: "بَر", syla: "بَر" },
+    { word: "سَنگ", syla: "سَنگ" },
+    { word: "خورد", syla: "خوْرد" },
+    { word: "وَ", syla: "وَ" },
+    { word: "شِکَست", syla: "شِ + کَسْت" }
+  ],
+  [
+    { word: "چِراغ", syla: "چِ + راغ" },
+    { word: "چو‌بی", syla: "چو + بی" },
+    { word: "بَر", syla: "بَر" },
+    { word: "طا‌قچِه", syla: "طا + ق + چِه" },
+    { word: "بود", syla: "بود" }
+  ],
+  [
+    { word: "بُطری", syla: "بُط + ری" },
+    { word: "پُر", syla: "پُر" },
+    { word: "اَز", syla: "اَز" },
+    { word: "آبِ", syla: "آ + بِ" },
+    { word: "سَرد", syla: "سَرد" },
+    { word: "اَست", syla: "اَست" }
+  ],
+  [
+    { word: "پِسَر", syla: "پِ + سَر" },
+    { word: "با", syla: "با" },
+    { word: "پِدَر", syla: "پِ + دَر" },
+    { word: "بِه", syla: "بِه" },
+    { word: "رود", syla: "رود" },
+    { word: "رَفت", syla: "رَفت" }
+  ],
+  [
+    { word: "حِس", syla: "حِس" },
+    { word: "شادی", syla: "شا+دی" },
+    { word: "دَر", syla: "دَر" },
+    { word: "دِل", syla: "دِل" },
+    { word: "نِشَست", syla: "نِ + شَسْت" }
+  ],
+  [
+    { word: "باد", syla: "باد" },
+    { word: "صَدا", syla: "صَ + دا" },
+    { word: "را", syla: "را" },
+    { word: "بُرد", syla: "بُرد" }
+  ],
+  [
+    { word: "صَبر", syla: "صَبْر" },
+    { word: "دارو‌یِ", syla: "دا + رو + یِ" },
+    { word: "دَرد", syla: "دَرْد" },
+    { word: "اَست", syla: "اَست" }
+  ],
+  [
+    { word: "شَب", syla: "شَب" },
+    { word: "سِتا‌رِه‌ها", syla: "سِ + تا + ره + ها" },
+    { word: "را", syla: "را" },
+    { word: "دید", syla: "دید" }
+  ],
+  [
+    { word: "دَر", syla: "دَر" },
+    { word: "حَیا‌ط", syla: "حَ + یا + ط" },
+    { word: "بُط", syla: "بُط" },
+    { word: "پَر", syla: "پَر" },
+    { word: "زَد", syla: "زَد" }
+  ],
+  [
+    { word: "ضَربِ", syla: "ضَر + بِ" },
+    { word: "سا‌ز", syla: "سا + ز" },
+    { word: "شَب", syla: "شَب" },
+    { word: "را", syla: "را" },
+    { word: "پُر", syla: "پُر" },
+    { word: "کَرد", syla: "کَرد" }
+  ],
+  [
+    { word: "پَر‌تو", syla: "پَر + تو" },
+    { word: "خُورشید", syla: "خور + شید" },
+    { word: "بَر", syla: "بَر" },
+    { word: "چِهرَه‌اش", syla: "چِه + رَه + اش" },
+    { word: "تا‌بید", syla: "تا + بید" }
+  ],
+  [
+    { word: "دُختَر", syla: "دُخ + تَر" },
+    { word: "چَشمان", syla: "چَش + مان" },
+    { word: "خود", syla: "خود" },
+    { word: "را", syla: "را" },
+    { word: "شُسْت", syla: "شُسْت" }
+  ],
+  [
+    { word: "طَیِّب", syla: "طَ + یِّب" },
+    { word: "وَ", syla: "وَ" },
+    { word: "پاک", syla: "پاک" },
+    { word: "باش", syla: "باش" }
+  ],
+  [
+    { word: "شور", syla: "شور" },
+    { word: "دَر", syla: "دَر" },
+    { word: "دِلِ", syla: "دِ + لِ" },
+    { word: "پِدَر", syla: "پِ + دَر" },
+    { word: "بود", syla: "بود" }
+  ],
+  [
+    { word: "زیر", syla: "زیْر" },
+    { word: "چَتر", syla: "چَتْر" },
+    { word: "بارا‌ن", syla: "با + ران" },
+    { word: "صَدا", syla: "صَ + دا" },
+    { word: "نداشت", syla: "نَ + داشت" }
+  ],
+  [
+    { word: "بازیِ", syla: "با + زیِ" },
+    { word: "با", syla: "با" },
+    { word: "توپ", syla: "توپ" },
+    { word: "آغاز", syla: "آ + غاز" },
+    { word: "شُد", syla: "شُد" }
+  ],
+]
 
-    ]
+
+
 }
 // ##########-->برای حرف  (از اول تا حرف ق)  ########
 // ##########-->شروع : برای حرف  (از اول تا حرف ن)  ########

@@ -30,7 +30,7 @@ export const SylabeWords = (props) => {
                                                 const putWord = ()=>{
                                                     let target = props.infoSentence.buttonTargetId
                                                     document.querySelector(`#${target}`).innerHTML=`
-                                                        <h1>${item.syla=="" ? item.word : item.syla}</h1>
+                                                        <h1 >${item.syla=="" ? item.word : item.syla}</h1>
                                                     `
                                                 }
                                                 return(
