@@ -2,36 +2,36 @@ import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const items1 = [
-  { id: 1, word: 'ساندویچ', image: 'https://www.sargento.com/assets/Uploads/Recipe/Image/Sargento11501.jpg' },
-  { id: 2, word: 'کنسرو ماهی', image: 'https://100jewishfoods.tabletmag.com/wp-content/uploads/2018/02/tuna-fish.jpg' },
+  { id: 1, word: 'ساندِویچ', image: 'https://www.sargento.com/assets/Uploads/Recipe/Image/Sargento11501.jpg' },
+  { id: 2, word: 'کُنسِروِ ماهی', image: 'https://100jewishfoods.tabletmag.com/wp-content/uploads/2018/02/tuna-fish.jpg' },
   { id: 3, word: 'بُطری آب', image: 'https://dayapolymercaspian.com/wp-content/uploads/2019/05/293f571bace5aea56074a1106afe3842.jpg' },
   { id: 4, word: 'مارشمالو', image: 'https://www.finedininglovers.com/sites/default/files/body_images/marshmallows-what-are%C2%A9iStock.jpg' },
-  { id: 5, word: 'میوه خشک', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT6HQNf43QNPQjfDv86t7pHFhWweeCEpHbpA&s' },
+  { id: 5, word: 'میوِه خُشک', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT6HQNf43QNPQjfDv86t7pHFhWweeCEpHbpA&s' },
   { id: 6, word: 'چای', image: 'https://goodricketea.com/cdn/shop/articles/IMAGE-2.png?v=1686659498' },
   { id: 7, word: 'نوشابه', image: 'https://mykathmandukitchen.com/wp-content/uploads/2018/03/coke-all1.png' },
-  { id: 8, word: 'کلوچه', image: 'https://harnika.ir/wp-content/uploads/2022/10/koloche-ahari-min.jpg' },
+  { id: 8, word: 'کُلوچه', image: 'https://harnika.ir/wp-content/uploads/2022/10/koloche-ahari-min.jpg' },
 ];
 
 const items2 = [
-  { id: 1, word: 'چادر', image: 'https://classroomclipart.com/image/static7/preview2/small-backpacking-tent-clip-art-59364.jpg' },
-  { id: 2, word: 'کوله‌پشتی', image: 'https://i.ebayimg.com/images/g/xEYAAOSw4P9lFi~c/s-l1200.png' },
-  { id: 3, word: 'چراغ ', image: 'https://cdn.outsideonline.com/wp-content/uploads/2018/08/17/barebones-canyon-light_s.jpg' },
+  { id: 1, word: 'چادُر', image: 'https://classroomclipart.com/image/static7/preview2/small-backpacking-tent-clip-art-59364.jpg' },
+  { id: 2, word: 'کوله‌پُشتی', image: 'https://i.ebayimg.com/images/g/xEYAAOSw4P9lFi~c/s-l1200.png' },
+  { id: 3, word: 'چِراغ ', image: 'https://cdn.outsideonline.com/wp-content/uploads/2018/08/17/barebones-canyon-light_s.jpg' },
   { id: 4, word: 'کیسه خواب', image: 'https://m.media-amazon.com/images/I/61X+v2ij6KL._AC_UF1000,1000_QL80_.jpg' },
-  { id: 5, word: 'اجاق گاز', image: 'https://sarvkooh.ir/wp-content/uploads/2021/04/125-6.jpg' },
-  { id: 6, word: 'قمقمه', image: 'https://www.overlanded.com/wp-content/uploads/2023/02/vessel-32-oz-stainless-steel-camping-water-bottle-tuff-stuff-overland-ts-8-1100-6.webp' },
-  { id: 7, word: 'پتو', image: 'https://kodiakcanvas.com/cdn/shop/files/1351_Main__73673.1637789104.1280.1280.jpg?v=1701717233&width=1214' },
-  { id: 8, word: 'فندک', image: 'https://images.thdstatic.com/productImages/3e3fe8a9-efac-4ed9-a3bb-5fdee54a2da7/svn/bic-lighters-ump4dc-ast-64_1000.jpg' },
+  { id: 5, word: 'اُجاقِ گاز', image: 'https://sarvkooh.ir/wp-content/uploads/2021/04/125-6.jpg' },
+  { id: 6, word: 'قُمقُمه', image: 'https://www.overlanded.com/wp-content/uploads/2023/02/vessel-32-oz-stainless-steel-camping-water-bottle-tuff-stuff-overland-ts-8-1100-6.webp' },
+  { id: 7, word: 'پَتو', image: 'https://kodiakcanvas.com/cdn/shop/files/1351_Main__73673.1637789104.1280.1280.jpg?v=1701717233&width=1214' },
+  { id: 8, word: 'فَندک', image: 'https://images.thdstatic.com/productImages/3e3fe8a9-efac-4ed9-a3bb-5fdee54a2da7/svn/bic-lighters-ump4dc-ast-64_1000.jpg' },
 ];
 
 const items3 = [
-  { id: 1, word: 'جنگل', image:'https://foodtank.com/wp-content/uploads/2015/09/agroforestry-FAO.jpg'},
-  { id: 2, word: 'درخت', image:'https://www.fertilome.com/media/klowrey/Article%20Images/Tree.jpg'},
+  { id: 1, word: 'جَنگَل', image:'https://foodtank.com/wp-content/uploads/2015/09/agroforestry-FAO.jpg'},
+  { id: 2, word: 'دِرَخت', image:'https://www.fertilome.com/media/klowrey/Article%20Images/Tree.jpg'},
   { id: 3, word: 'کوه', image:'https://upload.wikimedia.org/wikipedia/commons/6/60/Matterhorn_from_Domh%C3%BCtte_-_2.jpg'} ,
   { id: 4, word: 'رودخانه', image:'https://img.redbull.com/images/c_crop,x_0,y_0,h_3840,w_5760/c_fill,w_800,h_539/q_auto,f_auto/redbullcom/2024/9/18/uarvhdfxqihzmnyddkoo/adrian-mattern-kayak-ivindo-gabon'},
-  { id: 5, word: 'دریاچه', image:'https://t4.ftcdn.net/jpg/04/30/46/87/360_F_430468753_hjeCITV6815pAztrEiOyElhwCao4v6XS.jpg'} ,
+  { id: 5, word: 'دَریاچِه', image:'https://t4.ftcdn.net/jpg/04/30/46/87/360_F_430468753_hjeCITV6815pAztrEiOyElhwCao4v6XS.jpg'} ,
   { id: 6, word: 'خورشید', image:'https://static.scientificamerican.com/sciam/cache/file/A53E2873-F8D7-48F7-8DD5FB9F5B32A420_source.jpg?w=1200'} ,
-  { id: 7, word: 'ابر', image:'https://platform.vox.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/15788040/20150428-cloud-computing.0.1489222360.jpg?quality=90&strip=all&crop=0,15.095986038394,100,69.808027923211'},
-  { id: 8, word: 'ستاره', image:'https://imageio.forbes.com/specials-images/imageserve/6724a083c587bccd03d3b5a9/0x0.jpg?format=jpg&crop=3077,1729,x1272,y0,safe&height=600&width=1200&fit=bounds'}
+  { id: 7, word: 'اَبر', image:'https://platform.vox.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/15788040/20150428-cloud-computing.0.1489222360.jpg?quality=90&strip=all&crop=0,15.095986038394,100,69.808027923211'},
+  { id: 8, word: 'سِتارِه', image:'https://imageio.forbes.com/specials-images/imageserve/6724a083c587bccd03d3b5a9/0x0.jpg?format=jpg&crop=3077,1729,x1272,y0,safe&height=600&width=1200&fit=bounds'}
 ];
 
 const MatchGame = () => {
@@ -173,7 +173,7 @@ const MatchGame = () => {
                 </div>
                 <div className="modal-body">
                   <div className='d-flex flex-wrap'>
-                    <button className='btn  shadow-sm border  mx-2' style={stylebg} onClick={()=>questionsqq(items1,'item1')}>مرحله 1</button>
+                    <button className='btn  shadow-sm border  mx-2' style={stylebg} onClick={()=>questionsqq(items1,'item1')}>خوراکی کمپینگ</button>
                     <button className='btn shadow-sm border  mx-2' style={stylebg} onClick={()=>questionsqq(items2,'item2')}>وسایل کمپینگ</button>
                     <button className='btn shadow-sm border mx-2' style={stylebg} onClick={()=>questionsqq(items3,'item3')}>طَبیعَت</button>
                   </div>

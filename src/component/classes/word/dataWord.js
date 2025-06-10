@@ -1,3 +1,9 @@
+// ********************************** Refrences*********************
+// جمله سازی فارسی: component : SentenceBuilder ____ data : sentenceOptions1
+// جمله را کامل کن : component : DragDropQuize ______ data :questions1
+// بازی پیدا کردن کلمات(بازی حروف): component : LetterPuzzle ______ data : داده ها در خود صفحه وارد می شود
+// جملات و مترادف ها : component : SentenceCarousel __________ data : sentenceCarousel
+
 // **********Start Sidebar Word*****************
 export let contentListWord = {
     newword :{
@@ -12,6 +18,7 @@ export let contentListWord = {
         {title:"شوخی خیاط و فیل",targetHref :"elephantT1"},
         {title:"خرس خواب آلود",targetHref :"sleepBear1"},
         {title:"دو گُنجَشک",targetHref :"twoSparrow1"},
+        {title:"راز شب کمپینگ",targetHref :"kidsCamping1"},
         {title:"",targetHref :""},
         ],
     },
@@ -1319,11 +1326,53 @@ export let twoSparrow ={
 
     
 }
+export let kidsCamping ={
+    wordId:"kidsCamp",
+    targetHref:"kidsCamping1",
+    titleStory:"  داستان راز شب کمپینگ",
+    imageStory:["/images/assetWord/storyWord/kids_camping-1.png","/images/assetWord/storyWord/kids_camping-2.png"],
+    wordPart:[
+        {
+            wordMean:"",
+            engMean:""
+        },
+    ],
+    accordionItems : [
+        {
+          title: "کمپینگ در کجا انجام شد؟",
+          content: "در دل جنگل ",
+        },
+        {
+          title: "بچه ها چه چیزهایی با خود برده بودند؟",
+          content: "غذا، لباس گرم، بوت محکم، و بستر خواب ",
+        },
+        {
+          title: "استاد کاویانی به بچه‌ها چه هشدارهایی داد؟",
+          content: " گفت یک‌دیگر را تنها نگذارند، با گیاه‌های ناشناس تماس نگیرند و شب بدون اجازه از چادر بیرون نروند.",
+        },
+        {
+          title: "بچه‌ها وقتی رسیدند، چه کارهایی کردند؟",
+          content: "چادرها را زدند، نان چاشت خوردند، چوب برای آتش جمع کردند و رودخانه را پیدا کردند. ",
+        },
+        {
+          title: "شب چه چیزی باعث ترس بچه‌ها شد؟",
+          content: "صدای خش‌خش بیرون از چادر. ",
+        },
+        {
+          title: "چه حیوانی از پشت بوته‌ها بیرون آمد؟",
+          content: "یک راکون کوچک با چشم‌های درخشان. ",
+        },
+      ]
+
+    
+}
 
 // *********************** End Story Parts Data ****************
 
 
 // ************************* Start Mix word for sentences (کلمات بهم ریخته برای جمله سازی) ***********
+// هر جای خالی باید از سه بار تکرار "crt + - "
+// اگر عکس برای سوالات نداشتید در قسمت image: null
 export let sentenceOptions1 = [
   {
     fa: ["مهربان", "خانه ای","خانواده ای","زندگی","در","می کُنَند.","کوچَک",],
@@ -1466,9 +1515,8 @@ export let sentenceOptions3 = [
   },
 ];
 
-// ************************* Start Mix word for sentences (کلمات بهم ریخته برای جمله سازی) ***********
-                                // هر جای خالی باید از سه بار تکرار "crt + - "
-                                // اگر عکس برای سوالات نداشتید در قسمت image: null 
+// ************************* End Mix word for sentences (کلمات بهم ریخته برای جمله سازی) ***********
+// ************************* Start جمله را کامل کن* ****************************************
 export let questions1 = [
       {
         sentence: 'مَن هَر روز به ___ می‌رَوَم.',
@@ -1678,6 +1726,9 @@ export let questions3 = [
       },
     
 ]
+
+// ************************* End جمله را کامل کن* ****************************************
+
 
 
 

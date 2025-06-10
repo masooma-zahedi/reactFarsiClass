@@ -1,5 +1,14 @@
 import {infoCard} from "./cardAlpha/cardDataAlpha";
 import { nanoid } from "nanoid";
+// ************************************************************************ REFRENCES****************************************************************
+// refrences:
+// بازی جمله سازی با تصویر: component:ObjectSentenceGamse ____ data: questions
+//  بازی جفت سازی کلمات :   componetn:MathGame ______ data : inside component
+//  با هم بخوانیم : component : SylabeWords--> Reading _________ data : sylabelWord1
+// بازی جدول(اعداد و رنگها و ...) : component :FlippingTable _____ data : tableDataNum
+// جدول کلمات : component : BrokenGlassess --> WordBox _____ data : words   ;&&&&&&&&;   component:  WordTable --> WordBox ____ data: words
+// داستان ها : component : CarouselAlpha _____ data : storyAlpha3    ;&&&&&&&;    component: TheStory ____ data: ququly
+// ***************************************************************************************************************************************************
 // ******************************* Start Just Carousel ***************
 export let alphaCrousel={
     buttonId:"alphaC1",
@@ -46,6 +55,7 @@ export let storyAlpha2={
         "/images/assetAlpha/alphaStory/variety/umberellaBoy.png",
         "/images/assetAlpha/alphaStory/variety/snowPlay.png",
         "/images/assetAlpha/alphaStory/variety/startEarly.png",
+        "/images/assetAlpha/alphaStory/variety/dad_camping.png",
     ]}
     
 export let storyAlpha3={
@@ -193,7 +203,7 @@ export let smallPea ={
 }
 
 // ********************************* End Alpha Story***************
-// &&&&&& start short sound
+// ************************************************* start short sound *************************
 let shortSoundExa = [];
 infoCard.map((item , index)=>{
     shortSoundExa =[...shortSoundExa, item.shortSoundPic]
@@ -202,8 +212,8 @@ export let alphaShortCrousel={
     buttonId:"shortCa1",
     carouselImg:shortSoundExa
 }
-// &&&&&& End short sound
-// &&&&&& start short sound
+// ************************************************* End short sound *****************************
+// ********************************* start long sound ********************************************
 let longSoundExa = [];
 infoCard.map((item , index)=>{
     longSoundExa =[...longSoundExa, item.longSoundPic]
@@ -212,13 +222,9 @@ export let alphaLongCrousel={
     buttonId:"longCa1",
     carouselImg:longSoundExa
 }
-// &&&&&& End short sound
-
-
-
-
-// ******************************* End Just Carousel data ************************
-// ************************* start List for List Content (for Side Bar )****************
+//********************************** */ End long sound *******************************************
+// ******************************* End Just Carousel data ****************************************
+// ************************* Modal for new words (for Side Bar ) (فهرست های جانبی side bar)****************
 export let contentListAlpha = {
         newword :{
             idModal:"newTest",
@@ -301,7 +307,7 @@ export let contentListAlpha = {
 
 
 // ************************* end List for List Content****************
-// ******************************* Start SylabelWords data  با هم بخوانیم  ************************************************
+// ******************************* Start SylabelWords data  (با هم بخوانیم ) ************************************************
 
 // ##########--> برای حرف ت ##########
 export let sylabelWord1={
@@ -1862,7 +1868,7 @@ export let sylabelWord7={
 }
 // ##########-->برای حرف  (از اول تا حرف ن) پایان ########
 
-// ******************************* End SylabelWords data *********************
+// ******************************* End SylabelWords data (با هم بخوانیم)*********************
 
 // **************************** start flipping Table data (game) ***********************
 export const tableDataNum ={

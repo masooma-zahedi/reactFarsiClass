@@ -18,6 +18,9 @@ export const SidebarWord = () => {
             </a>
           </li>
           <li className="nav-item">
+            <NavLink className="nav-link text-success h6" to="./sentenceCarousel-1">جملات و مترادف ها</NavLink>
+          </li>
+          <li className="nav-item">
             <NavLink className="nav-link text-success h6" to="./verbs-1">1-جملات - فعل ها</NavLink>
           </li>
           <li className="nav-item">
