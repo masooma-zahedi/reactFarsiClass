@@ -1,6 +1,6 @@
 import {CardAlphaCompo,} from "./cardAlpha/CardAlphaCompo.js";
 import {alphaCrousel, alphaLongCrousel, alphaShortCrousel, kitchenDataTable, storyAlpha1, storyAlpha2,  tableAnimals, tableColor_body, tableDataNum, tableProfessions, storyAlpha3, ququly, storyAlpha4, puyaStory, gameWords, aminFireFighter, pami, smallPea,} from "./dataAlpha.js";
-import {CarouselAlpha} from "./CarouselAlpha"
+import { CarouselAlpha, CarouselAlphaExp} from "./CarouselAlphaExp.js"
 import { WordCarousel } from "./WordCarousel";
 import { SylabeWords } from "./SylabeWords";
 import { SidebarAlpha } from "./SidebarAlpha.js";
@@ -33,12 +33,7 @@ export const Alphabet = () => {
                 <Route path='/' element={<CardAlphaCompo/>}  />
                 <Route path='/objectSentenceGame' element={<ObjectSentenceGame/>}  />
                 <Route path='/matchGameWord' element={<MatchGame/>}  />
-                <Route path='/shortSound' element={<CarouselAlpha idCarouselAlpha="shorthref1"  dataCarousel={alphaShortCrousel}/>}  />
-                <Route path='/longSound' element={<CarouselAlpha  idCarouselAlpha="longhref1"  dataCarousel={alphaLongCrousel}/>}  />
-                <Route path='/storyA1' element={<CarouselAlpha  idCarouselAlpha="storyAl1"  dataCarousel={storyAlpha1}/>}  />
-                <Route path='/storyA2' element={<CarouselAlpha  idCarouselAlpha="storyAl2"  dataCarousel={storyAlpha2}/>}  />
-                <Route path='/storyA3' element={<CarouselAlpha  idCarouselAlpha="storyAl3"  dataCarousel={storyAlpha3}/>}  />
-                <Route path='/storyA4' element={<CarouselAlpha  idCarouselAlpha="storyAl4"  dataCarousel={storyAlpha4}/>}  />
+                <Route path='/CarouselAlphaExp/*' element={<CarouselAlphaExp/>}  />
                 <Route path='/ququlyQu' element={<TheStory srcStory={ququly}/>}  />
                 <Route path='/puyaStory1' element={<TheStory srcStory={puyaStory}/>}  />
                 <Route path='/aminFireFighter1' element={<TheStory srcStory={aminFireFighter}/>}  />

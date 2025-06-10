@@ -28,93 +28,160 @@ export let contentListWord = {
 
 
 
+// export let sentenceCarousel = {
+//     carouselInfo:{
+//         targetCarouselId:"letterHa1",
+//         titleCarousel:'جملات و کلمات حرف ح',
+//         wordTarget:"letterHa2"
+//     },
+//     contentCarousel:
+//         {
+//             textCarousel:[
+//                 {
+//                     sentence:"ما هَر روز صُبحانه می خوریم.",
+//                      wordsSentence:[
+//                        { word:'ما',
+//                         img:"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/We_logo.svg/1200px-We_logo.svg.png",
+//                         eng:'We'},
+//                        { word:'صبحانه',
+//                         img:"https://res.cloudinary.com/hz3gmuqw6/image/upload/c_fill,q_auto,w_750/f_auto/breakfast-houston-phpk9GPFf",
+//                         eng:'breakFast'},
+//                        { word:'خوردن',
+//                         img:"https://plantbasedjuniors.com/wp-content/uploads/2022/03/intuitive-eating-kids-1-scaled.jpg",
+//                         eng:'eat'},
+//                     ]
+//                 },
+//                 {
+//                     sentence:"حَلزون موقعِ حَرِکَت بَدَنَش را روی زمین می کِشَد",
+//                      wordsSentence:[
+//                        { word:'حلزون',
+//                         img:"https://mostaql.hsoubcdn.com/uploads/thumbnails/33360/6209414b5e6dd/%D8%B9%D9%85%D9%84-%D9%81%D9%86%D9%8A-%D8%A8%D9%84%D8%A7-%D8%B9%D9%86%D9%88%D8%A7%D9%86-9.png",
+//                         eng:'Snail'},
+//                        { word:'موقع',
+//                         img:"https://res.cloudinary.com/hz3gmuqw6/image/upload/c_fill,q_auto,w_750/f_auto/breakfast-houston-phpk9GPFf",
+//                         eng:'breakFast'},
+//                        { word:'حرکت',
+//                         img:"https://plantbasedjuniors.com/wp-content/uploads/2022/03/intuitive-eating-kids-1-scaled.jpg",
+//                         eng:'eat'},
+//                        { word:'بدن',
+//                         img:"https://plantbasedjuniors.com/wp-content/uploads/2022/03/intuitive-eating-kids-1-scaled.jpg",
+//                         eng:'eat'},
+//                        { word:'زمین',
+//                         img:"https://plantbasedjuniors.com/wp-content/uploads/2022/03/intuitive-eating-kids-1-scaled.jpg",
+//                         eng:'eat'},
+//                     ]
+//                 },
+//                 {
+//                     sentence:"من اِحساسِ تِشنِگی  می کُنَم.",
+//                      wordsSentence:[
+//                        { word:'احساس',
+//                         img:"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/We_logo.svg/1200px-We_logo.svg.png",
+//                         eng:'We'},
+//                        { word:'تشنگی',
+//                         img:"https://res.cloudinary.com/hz3gmuqw6/image/upload/c_fill,q_auto,w_750/f_auto/breakfast-houston-phpk9GPFf",
+//                         eng:'breakFast'},
+//                        { word:'من',
+//                         img:"",
+//                         eng:'eat'},
+//                     ]
+//                 },
+//                 {
+//                     sentence:"او در جاده راه می رود ",
+//                      wordsSentence:[
+//                        { word:'راه رفتن',
+//                         img:"/images/assetWord/actionVerb/12-31-1-verb.png",
+//                         eng:'راه رفتن'},
+//                        { word:'جاده',
+//                         img:"",
+//                         eng:'Road'},
+//                        { word:'راه می رود',
+//                         img:"",
+//                         eng:'Walk'},
+//                     ]
+//                 },
+//             ],
+//         }
+
+//     }
+
 export let sentenceCarousel = {
     carouselInfo:{
         targetCarouselId:"letterHa1",
-        titleCarousel:'جملات و کلمات حرف ح',
+        titleCarousel:'جملات و کلمات حرف ه',
         wordTarget:"letterHa2"
     },
     contentCarousel:
         {
             textCarousel:[
                 {
-                    sentence:"ما هَر روز صُبحانه می خوریم.",
-                     wordsSentence:[
-                       { word:'ما',
-                        img:"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/We_logo.svg/1200px-We_logo.svg.png",
-                        eng:'We'},
-                       { word:'صبحانه',
-                        img:"https://res.cloudinary.com/hz3gmuqw6/image/upload/c_fill,q_auto,w_750/f_auto/breakfast-houston-phpk9GPFf",
-                        eng:'breakFast'},
-                       { word:'خوردن',
-                        img:"https://plantbasedjuniors.com/wp-content/uploads/2022/03/intuitive-eating-kids-1-scaled.jpg",
-                        eng:'eat'},
+                    sentence:"بچه‌ها به خانه می‌روند.",
+                    wordsSentence:[
+                        { word:'بچه‌ها', img:'https://s3.envato.com/files/62940466/Cartoon%20Kids.jpg', eng:'Children' },
+                        { word:'خانه', img:'https://static.vecteezy.com/system/resources/previews/025/902/055/non_2x/house-cartoon-style-illustration-ai-generated-vector.jpg', eng:'House' },
+                        { word:'هَلو', img:'https://static.vecteezy.com/system/resources/previews/050/473/895/non_2x/cute-cartoon-peach-with-face-eyes-smile-and-leafy-green-stem-free-png.png', eng:'Peaches' },
+                        { word:'میز', img:'https://img.freepik.com/premium-vector/wooden-table-with-different-racks_642458-763.jpg?semt=ais_hybrid&w=740', eng:'Table' },
+                        { word:'بهار', img:'https://as2.ftcdn.net/jpg/02/56/61/45/1000_F_256614501_8ng35vnx4tr5MvH564fLZRrSynSeyP7w.jpg', eng:'Spring' },
+                        { word:'آینه', img:'https://img.pikbest.com/wp/202405/gazing-3d-cartoon-illustration-of-a-child-at-his-reflection-in-mirror-with-copy-space_9840868.jpg!sw800', eng:'Mirror' },
                     ]
                 },
                 {
-                    sentence:"حَلزون موقعِ حَرِکَت بَدَنَش را روی زمین می کِشَد",
-                     wordsSentence:[
-                       { word:'حلزون',
-                        img:"https://mostaql.hsoubcdn.com/uploads/thumbnails/33360/6209414b5e6dd/%D8%B9%D9%85%D9%84-%D9%81%D9%86%D9%8A-%D8%A8%D9%84%D8%A7-%D8%B9%D9%86%D9%88%D8%A7%D9%86-9.png",
-                        eng:'Snail'},
-                       { word:'موقع',
-                        img:"https://res.cloudinary.com/hz3gmuqw6/image/upload/c_fill,q_auto,w_750/f_auto/breakfast-houston-phpk9GPFf",
-                        eng:'breakFast'},
-                       { word:'حرکت',
-                        img:"https://plantbasedjuniors.com/wp-content/uploads/2022/03/intuitive-eating-kids-1-scaled.jpg",
-                        eng:'eat'},
-                       { word:'بدن',
-                        img:"https://plantbasedjuniors.com/wp-content/uploads/2022/03/intuitive-eating-kids-1-scaled.jpg",
-                        eng:'eat'},
-                       { word:'زمین',
-                        img:"https://plantbasedjuniors.com/wp-content/uploads/2022/03/intuitive-eating-kids-1-scaled.jpg",
-                        eng:'eat'},
+                    sentence:"هَلوها روی میز است.",
+                    wordsSentence:[
+                        { word:'تمیز کردن', img:'https://c8.alamy.com/comp/2B190HD/family-cleaning-house-father-mother-and-kids-cleaning-living-room-together-housework-cartoon-vector-illustration-2B190HD.jpg', eng:'Clean' },
+                        { word:'پنجره', img:'https://img.freepik.com/free-vector/window_1308-3890.jpg', eng:'Window' },
+                        { word:'باز کردن', img:'https://static.vecteezy.com/system/resources/previews/026/119/347/non_2x/little-kid-standing-and-holding-door-knob-vector.jpg', eng:'Open' },
+                        { word:'ماه', img:'https://cdn3.vectorstock.com/i/1000x1000/62/77/half-moon-cartoon-vector-1936277.jpg', eng:'Moon' },
+                        { word:'آسمان', img:'https://static.vecteezy.com/system/resources/previews/022/394/347/non_2x/blue-sky-with-clouds-anime-style-background-with-shining-sun-and-white-fluffy-clouds-sunny-day-sky-scene-cartoon-illustration-vector.jpg', eng:'Sky' },
                     ]
                 },
                 {
-                    sentence:"من اِحساسِ تِشنِگی  می کُنَم.",
-                     wordsSentence:[
-                       { word:'احساس',
-                        img:"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/We_logo.svg/1200px-We_logo.svg.png",
-                        eng:'We'},
-                       { word:'تشنگی',
-                        img:"https://res.cloudinary.com/hz3gmuqw6/image/upload/c_fill,q_auto,w_750/f_auto/breakfast-houston-phpk9GPFf",
-                        eng:'breakFast'},
-                       { word:'من',
-                        img:"",
-                        eng:'eat'},
+                    sentence:"هوا بهاری است.",
+                    wordsSentence:[
+                    { word: "هَواپیما", img:'https://img.freepik.com/premium-vector/happy-cartoon-airplane-ready-takeoff_1308-161838.jpg', eng: "Airplane" },
+                    { word: "هندوانه", img:'https://t3.ftcdn.net/jpg/01/31/17/02/360_F_131170289_mCTXUvCsNnc0VjZqITGEyNUOiuoI6Gii.jpg', eng: "Watermelon" },
+                    { word: "رنگین‌کمان", img:'https://elements-resized.envatousercontent.com/elements-video-cover-images/files/e951e06d-91dd-4465-bfd9-850358e0db57/inline_image_preview.jpg?w=500&cf_fit=cover&q=85&format=auto&s=3fbf5c070aa1f45310f322799736f8e36892171f1dce42d0ee2094940e4536a4', eng: "Rainbow" },
+                    { word: "هَدهد", img:'https://static.vecteezy.com/system/resources/previews/020/901/687/non_2x/cute-woodpecker-cartoon-style-vector.jpg', eng: "woodpecker (bird)" },
                     ]
                 },
                 {
-                    sentence:"او در جاده راه می رود ",
-                     wordsSentence:[
-                       { word:'راه رفتن',
-                        img:"/images/assetWord/actionVerb/12-31-1-verb.png",
-                        eng:'راه رفتن'},
-                       { word:'جاده',
-                        img:"",
-                        eng:'Road'},
-                       { word:'راه می رود',
-                        img:"",
-                        eng:'Walk'},
+                    sentence:"آینه را تمیز کن.",
+                    wordsSentence:[
                     ]
                 },
-                // 'ما هَر روز صُبحانه می خوریم.',
-                // 'حَلزون موقعِ حَرِکَت بَدَنَش را روی زمین می کِشَد.',
-                // 'من اِحساسِ تِشنِگی  می کُنَم.',
-                // 'با مِهربانی دوستی ها را مُحکم کُنیم. ',
-                // 'من با حوله مخصوص به خودَم صورَتَم را خُشک می کُنَم.',
-                // 'ثُریّا حِیوانات را دوست دارَد.',
-                // 'مادَر با من صُحبَت می کُند.',
-                // 'سَعید به سَمتِ مَدرسه حَرِکَت می کُند.',
-                // 'اَحمد هر روز وَرزِش می کند.',
-                // 'زهرا صُبحِ زود از خواب بیدار شُد.',
-                // 'قَدَم زَدَن کنار ساحلِ دریا لذّت دیگَری دارد.',
-                // 'تِمساح حِیوانی وَحشی اَست.'
+                {
+                    sentence:"پنجره را باز کن.",
+                    wordsSentence:[
+                    ]
+                },
+                {
+                    sentence:"ماه در آسمان اَست.",
+                    wordsSentence:[
+                    ]
+                },
+                {
+                    sentence: "هَواپیما می‌رود.",
+                    wordsSentence: [
+                    ]
+                },
+                {
+                    sentence: "هَندوانه بزرگ است.",
+                    wordsSentence: [
+                    ]
+                },
+                {
+                    sentence: "رنگین‌کمان هَفت رنگ دارد. ",
+                    wordsSentence: [
+                    ]
+                },
+                {
+                    sentence: "هَدهد پرنده‌ی زیباست.",
+                    wordsSentence: [
+                    ]
+                },
             ],
         }
+}
 
-    }
 
 export let testPicture = {
 

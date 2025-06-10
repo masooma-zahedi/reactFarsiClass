@@ -292,10 +292,10 @@ export let contentListAlpha = {
         storyAlpha:{
             idModal:"storyAlpha1",
             infoWords:[
-            {id:nanoid(4),title:"خانواده من",targetHref:"storyA1",idLetter:"storyAl-1"},
-            {id:nanoid(4),title:"متون کوتاه",targetHref:"storyA2",idLetter:"storyAl-2"},
-            {id:nanoid(4),title:"مورچه تنبل",targetHref:"storyA3",idLetter:"storyAl-3"},
-            {id:nanoid(4),title:"کلمات شبیه",targetHref:"storyA4",idLetter:"storyAl-4"},
+            {id:nanoid(4),title:"خانواده من",targetHref:"CarouselAlphaExp/storyA1",idLetter:"storyAl-1"},
+            {id:nanoid(4),title:"متون کوتاه",targetHref:"CarouselAlphaExp/storyA2",idLetter:"storyAl-2"},
+            {id:nanoid(4),title:"مورچه تنبل",targetHref:"CarouselAlphaExp/storyA3",idLetter:"storyAl-3"},
+            {id:nanoid(4),title:"کلمات شبیه",targetHref:"CarouselAlphaExp/storyA4",idLetter:"storyAl-4"},
             {id:nanoid(4),title:"قوقولی",targetHref:"ququlyQu",idLetter:"ququl"},
             {id:nanoid(4),title:"پویا و روز بارانی",targetHref:"puyaStory1",idLetter:"puya1"},
             {id:nanoid(4),title:"اَمین آتَش نِشان",targetHref:"aminFireFighter1",idLetter:"amin1"},
