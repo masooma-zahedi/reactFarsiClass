@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom'
-import { alphaCrousel, alphaLongCrousel, alphaShortCrousel, storyAlpha1, storyAlpha2, storyAlpha3, storyAlpha4 } from './dataAlpha'
+import { alphaCrousel, alphaLongCrousel, alphaShortCrousel, aminFireFighter, pami, puyaStory, ququly, smallPea, storyAlpha1, storyAlpha2, storyAlpha3, storyAlpha4 } from './dataAlpha'
+import { TheStory } from '../story/TheStory'
 
 export const CarouselAlpha = ({dataCarousel,idCarouselAlpha}) => {
   return (
@@ -33,6 +34,21 @@ export const CarouselAlpha = ({dataCarousel,idCarouselAlpha}) => {
     </>
 )
 }
+
+const AlphaStory =()=>{
+    return(
+        <>
+            <Routes>
+                <Route path='/puyaStory1' element={<TheStory srcStory={puyaStory}/>}  />
+                <Route path='/ququlyQu' element={<TheStory srcStory={ququly}/>}  />
+                <Route path='/aminFireFighter1' element={<TheStory srcStory={aminFireFighter}/>}  />
+                <Route path='/worriedPami1' element={<TheStory srcStory={pami}/>}  />
+                <Route path='/smallPea1' element={<TheStory srcStory={smallPea}/>}  />
+            </Routes>
+        </>
+    )
+}
+
 export const CarouselAlphaExp = ()=>{
     return(
         <>
@@ -43,6 +59,7 @@ export const CarouselAlphaExp = ()=>{
                 <Route path='/storyA2' element={<CarouselAlpha  idCarouselAlpha="storyAl2"  dataCarousel={storyAlpha2}/>}  />
                 <Route path='/storyA3' element={<CarouselAlpha  idCarouselAlpha="storyAl3"  dataCarousel={storyAlpha3}/>}  />
                 <Route path='/storyA4' element={<CarouselAlpha  idCarouselAlpha="storyAl4"  dataCarousel={storyAlpha4}/>}  />
+                <Route path='/alphaStory/*' element={<AlphaStory />}  />
             </Routes>
             
         </>

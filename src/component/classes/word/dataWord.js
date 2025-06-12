@@ -114,28 +114,28 @@ export let sentenceCarousel = {
         {
             textCarousel:[
                 {
-                    sentence:"بچه‌ها به خانه می‌روند.",
+                    sentence:"بَچِه‌ها بِه خانِه می‌رَوَند.",
                     wordsSentence:[
-                        { word:'بچه‌ها', img:'https://s3.envato.com/files/62940466/Cartoon%20Kids.jpg', eng:'Children' },
+                        { word:'بَچِه‌ها', img:'https://s3.envato.com/files/62940466/Cartoon%20Kids.jpg', eng:'Children' },
                         { word:'خانه', img:'https://static.vecteezy.com/system/resources/previews/025/902/055/non_2x/house-cartoon-style-illustration-ai-generated-vector.jpg', eng:'House' },
-                        { word:'هَلو', img:'https://static.vecteezy.com/system/resources/previews/050/473/895/non_2x/cute-cartoon-peach-with-face-eyes-smile-and-leafy-green-stem-free-png.png', eng:'Peaches' },
+                        { word:'هُلو', img:'https://static.vecteezy.com/system/resources/previews/050/473/895/non_2x/cute-cartoon-peach-with-face-eyes-smile-and-leafy-green-stem-free-png.png', eng:'Peaches' },
                         { word:'میز', img:'https://img.freepik.com/premium-vector/wooden-table-with-different-racks_642458-763.jpg?semt=ais_hybrid&w=740', eng:'Table' },
-                        { word:'بهار', img:'https://as2.ftcdn.net/jpg/02/56/61/45/1000_F_256614501_8ng35vnx4tr5MvH564fLZRrSynSeyP7w.jpg', eng:'Spring' },
-                        { word:'آینه', img:'https://img.pikbest.com/wp/202405/gazing-3d-cartoon-illustration-of-a-child-at-his-reflection-in-mirror-with-copy-space_9840868.jpg!sw800', eng:'Mirror' },
+                        { word:'بَهار', img:'https://as2.ftcdn.net/jpg/02/56/61/45/1000_F_256614501_8ng35vnx4tr5MvH564fLZRrSynSeyP7w.jpg', eng:'Spring' },
+                        { word:'آیِنِه', img:'https://img.pikbest.com/wp/202405/gazing-3d-cartoon-illustration-of-a-child-at-his-reflection-in-mirror-with-copy-space_9840868.jpg!sw800', eng:'Mirror' },
                     ]
                 },
                 {
-                    sentence:"هَلوها روی میز است.",
+                    sentence:"هُلوها روی میز اَست.",
                     wordsSentence:[
-                        { word:'تمیز کردن', img:'https://c8.alamy.com/comp/2B190HD/family-cleaning-house-father-mother-and-kids-cleaning-living-room-together-housework-cartoon-vector-illustration-2B190HD.jpg', eng:'Clean' },
-                        { word:'پنجره', img:'https://img.freepik.com/free-vector/window_1308-3890.jpg', eng:'Window' },
-                        { word:'باز کردن', img:'https://static.vecteezy.com/system/resources/previews/026/119/347/non_2x/little-kid-standing-and-holding-door-knob-vector.jpg', eng:'Open' },
+                        { word:'تَمیز کَردَن', img:'https://c8.alamy.com/comp/2B190HD/family-cleaning-house-father-mother-and-kids-cleaning-living-room-together-housework-cartoon-vector-illustration-2B190HD.jpg', eng:'Clean' },
+                        { word:'پَنجَرِه', img:'https://img.freepik.com/free-vector/window_1308-3890.jpg', eng:'Window' },
+                        { word:'باز کَردَن', img:'https://static.vecteezy.com/system/resources/previews/026/119/347/non_2x/little-kid-standing-and-holding-door-knob-vector.jpg', eng:'Open' },
                         { word:'ماه', img:'https://cdn3.vectorstock.com/i/1000x1000/62/77/half-moon-cartoon-vector-1936277.jpg', eng:'Moon' },
-                        { word:'آسمان', img:'https://static.vecteezy.com/system/resources/previews/022/394/347/non_2x/blue-sky-with-clouds-anime-style-background-with-shining-sun-and-white-fluffy-clouds-sunny-day-sky-scene-cartoon-illustration-vector.jpg', eng:'Sky' },
+                        { word:'آسِمان', img:'https://static.vecteezy.com/system/resources/previews/022/394/347/non_2x/blue-sky-with-clouds-anime-style-background-with-shining-sun-and-white-fluffy-clouds-sunny-day-sky-scene-cartoon-illustration-vector.jpg', eng:'Sky' },
                     ]
                 },
                 {
-                    sentence:"هوا بهاری است.",
+                    sentence:"هَوا بهاری است.",
                     wordsSentence:[
                     { word: "هَواپیما", img:'https://img.freepik.com/premium-vector/happy-cartoon-airplane-ready-takeoff_1308-161838.jpg', eng: "Airplane" },
                     { word: "هندوانه", img:'https://t3.ftcdn.net/jpg/01/31/17/02/360_F_131170289_mCTXUvCsNnc0VjZqITGEyNUOiuoI6Gii.jpg', eng: "Watermelon" },
@@ -144,37 +144,37 @@ export let sentenceCarousel = {
                     ]
                 },
                 {
-                    sentence:"آینه را تمیز کن.",
+                    sentence:"آیِنِه را تَمیز کُن.",
                     wordsSentence:[
                     ]
                 },
                 {
-                    sentence:"پنجره را باز کن.",
+                    sentence:"پَنجَرِه را باز کُن.",
                     wordsSentence:[
                     ]
                 },
                 {
-                    sentence:"ماه در آسمان اَست.",
+                    sentence:"ماه دَر آسِمان اَست.",
                     wordsSentence:[
                     ]
                 },
                 {
-                    sentence: "هَواپیما می‌رود.",
+                    sentence: "هَواپِیما می‌رَوَد.",
                     wordsSentence: [
                     ]
                 },
                 {
-                    sentence: "هَندوانه بزرگ است.",
+                    sentence: "هِندِوانِه بُزُرگ اَست.",
                     wordsSentence: [
                     ]
                 },
                 {
-                    sentence: "رنگین‌کمان هَفت رنگ دارد. ",
+                    sentence: "رَنگین‌کَمان هَفت رَنگ دارَد. ",
                     wordsSentence: [
                     ]
                 },
                 {
-                    sentence: "هَدهد پرنده‌ی زیباست.",
+                    sentence: "هُدهُد پَرَندِه‌یِ زیباست.",
                     wordsSentence: [
                     ]
                 },
@@ -1400,7 +1400,111 @@ export let kidsCamping ={
     imageStory:["/images/assetWord/storyWord/kids_camping-1.png","/images/assetWord/storyWord/kids_camping-2.png"],
     wordPart:[
         {
-            wordMean:"",
+            wordMean:"راز",
+            engMean:""
+        },
+        {
+            wordMean:"رُخصَتی",
+            engMean:""
+        },
+        {
+            wordMean:"تابستان",
+            engMean:""
+        },
+        {
+            wordMean:"شروع",
+            engMean:""
+        },
+        {
+            wordMean:"نوجوان",
+            engMean:""
+        },
+        {
+            wordMean:"تصمیم گرفتن",
+            engMean:""
+        },
+        {
+            wordMean:"استاد راهنما",
+            engMean:""
+        },
+        {
+            wordMean:"اِنرژی",
+            engMean:""
+        },
+        {
+            wordMean:"هیجان",
+            engMean:""
+        },
+        {
+            wordMean:"کوله پشتی",
+            engMean:""
+        },
+        {
+            wordMean:"بوت",
+            engMean:""
+        },
+        {
+            wordMean:"بستر خواب",
+            engMean:""
+        },
+        {
+            wordMean:"مینی بَس",
+            engMean:""
+        },
+        {
+            wordMean:"تماس نگیرین",
+            engMean:""
+        },
+        {
+            wordMean:"بدون اجازه",
+            engMean:""
+        },
+        {
+            wordMean:"مرغان",
+            engMean:""
+        },
+        {
+            wordMean:"فَضا",
+            engMean:""
+        },
+        {
+            wordMean:"نان چاشت",
+            engMean:""
+        },
+        {
+            wordMean:"رودخانه",
+            engMean:""
+        },
+        {
+            wordMean:"مرموز",
+            engMean:""
+        },
+        {
+            wordMean:"ترسناک",
+            engMean:""
+        },
+        {
+            wordMean:"گرگ",
+            engMean:""
+        },
+        {
+            wordMean:"شجاع",
+            engMean:""
+        },
+        {
+            wordMean:"چراغ قوه",
+            engMean:""
+        },
+        {
+            wordMean:"راکون",
+            engMean:""
+        },
+        {
+            wordMean:"ناپدید",
+            engMean:""
+        },
+        {
+            wordMean:"رمزآلود",
             engMean:""
         },
     ],

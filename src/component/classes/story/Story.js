@@ -3,6 +3,7 @@ import { TheStory } from './TheStory'
 import { donky, eagle1, florence, flyStory, fox1, healthStory, janatan, kebrit, king1, oldmanSea, peniSilin, rabit, soldier, spring } from './dataStory';
 import { SidebarStory } from './SidebarStory';
 import { Route, Routes } from 'react-router-dom';
+import { ququly } from '../alphabet/dataAlpha';
 
 export const Story = () => {
   return (
