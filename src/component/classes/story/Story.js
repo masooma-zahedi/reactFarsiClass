@@ -1,9 +1,8 @@
-import React from 'react'
 import { TheStory } from './TheStory'
 import { donky, eagle1, florence, flyStory, fox1, healthStory, janatan, kebrit, king1, oldmanSea, peniSilin, rabit, soldier, spring } from './dataStory';
 import { SidebarStory } from './SidebarStory';
 import { Route, Routes } from 'react-router-dom';
-import { ququly } from '../alphabet/dataAlpha';
+import StoryPage3 from './StoryPage3';
 
 export const Story = () => {
   return (
@@ -28,7 +27,9 @@ export const Story = () => {
               <Route path='/flyS' element={<TheStory srcStory={flyStory}/>}  />
               <Route path='/peniS' element={<TheStory srcStory={peniSilin}/>}  />
               <Route path='/janatanM' element={<TheStory srcStory={janatan}/>}  />
+              <Route path='moreStory' element={<StoryPage3/>}  />
             </Routes>
+            
             
           </div>
         </div>
