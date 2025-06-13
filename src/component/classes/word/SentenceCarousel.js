@@ -21,7 +21,6 @@ export const SentenceCarousel = ({carouselName,carouselData}) => {
                                         </div>
                                     </>
                                 )
-                                
                             })
                         }
                     </div>
@@ -69,7 +68,6 @@ export const SentenceCarousel = ({carouselName,carouselData}) => {
                                                             `
                                                         }
                                                         <div/>
-                                                        
                                                     `  
                                                 }
                                                 return(

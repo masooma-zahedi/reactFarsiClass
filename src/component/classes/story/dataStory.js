@@ -17,6 +17,7 @@ export let contentListStory = {
         {title:"داستان پرواز",targetHref :"flyS"},
         {title:"راز سبز زندگی بخش",targetHref :"peniS"},
         {title:"جاناتان مرغ دریایی",targetHref :"janatanM"},
+        {title:"داستان های بیشتر",targetHref :"moreStory"},
         ],
     },
 }

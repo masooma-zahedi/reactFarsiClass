@@ -1,7 +1,6 @@
 import React from 'react';
 import { MeaningWords } from './MeaningWords';
 import { Accordion } from '../Accordion';
-// import { Accordion } from '../Accordion';
 export const TheStory = ({srcStory}) => {    
     
     return(
@@ -27,10 +26,6 @@ export const TheStory = ({srcStory}) => {
                 <h3 className='p-3 text-success '>سوالات درک مطلب</h3>
                 <Accordion items={srcStory.accordionItems} />
             </div>
-
-
-
-
 
         </>
     )

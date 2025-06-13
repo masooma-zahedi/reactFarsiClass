@@ -1,5 +1,14 @@
 import {infoCard} from "./cardAlpha/cardDataAlpha";
 import { nanoid } from "nanoid";
+// ************************************************************************ REFRENCES****************************************************************
+// refrences:
+// بازی جمله سازی با تصویر: component:ObjectSentenceGamse ____ data: questions
+//  بازی جفت سازی کلمات :   componetn:MathGame ______ data : inside component
+//  با هم بخوانیم : component : SylabeWords--> Reading _________ data : sylabelWord1
+// بازی جدول(اعداد و رنگها و ...) : component :FlippingTable _____ data : tableDataNum
+// جدول کلمات : component : BrokenGlassess --> WordBox _____ data : words   ;&&&&&&&&;   component:  WordTable --> WordBox ____ data: words
+// داستان ها : component : CarouselAlpha _____ data : storyAlpha3    ;&&&&&&&;    component: TheStory ____ data: ququly
+// ***************************************************************************************************************************************************
 // ******************************* Start Just Carousel ***************
 export let alphaCrousel={
     buttonId:"alphaC1",
@@ -46,6 +55,7 @@ export let storyAlpha2={
         "/images/assetAlpha/alphaStory/variety/umberellaBoy.png",
         "/images/assetAlpha/alphaStory/variety/snowPlay.png",
         "/images/assetAlpha/alphaStory/variety/startEarly.png",
+        "/images/assetAlpha/alphaStory/variety/dad_camping.png",
     ]}
     
 export let storyAlpha3={
@@ -113,7 +123,7 @@ export let ququly ={
 }
 export let puyaStory ={
     wordId:"puya1",
-    targetHref:"puyaStory1",
+    targetHref:"CarouselAlphaExp/alphaStory/puyaStory1",
     titleStory:" داستان روز بارانی پویا ",
     imageStory:["/images/assetWord/storyWord/puya.png",],
     wordPart:[
@@ -193,7 +203,7 @@ export let smallPea ={
 }
 
 // ********************************* End Alpha Story***************
-// &&&&&& start short sound
+// ************************************************* start short sound *************************
 let shortSoundExa = [];
 infoCard.map((item , index)=>{
     shortSoundExa =[...shortSoundExa, item.shortSoundPic]
@@ -202,8 +212,8 @@ export let alphaShortCrousel={
     buttonId:"shortCa1",
     carouselImg:shortSoundExa
 }
-// &&&&&& End short sound
-// &&&&&& start short sound
+// ************************************************* End short sound *****************************
+// ********************************* start long sound ********************************************
 let longSoundExa = [];
 infoCard.map((item , index)=>{
     longSoundExa =[...longSoundExa, item.longSoundPic]
@@ -212,13 +222,9 @@ export let alphaLongCrousel={
     buttonId:"longCa1",
     carouselImg:longSoundExa
 }
-// &&&&&& End short sound
-
-
-
-
-// ******************************* End Just Carousel data ************************
-// ************************* start List for List Content (for Side Bar )****************
+//********************************** */ End long sound *******************************************
+// ******************************* End Just Carousel data ****************************************
+// ************************* Modal for new words (for Side Bar ) (فهرست های جانبی side bar)****************
 export let contentListAlpha = {
         newword :{
             idModal:"newTest",
@@ -274,7 +280,7 @@ export let contentListAlpha = {
         gameTable :{
             idModal:"tableGame1",
             infoWords:[
-            {id:nanoid(4),title:"بازی اعداد",targetHref:"numberGame",idLetter:"numberGame-1"},
+            {id:nanoid(4),title:"بازی اعداد",targetHref:"FlippingTableExa/numberGame",idLetter:"numberGame-1"},
             {id:nanoid(4),title:"بازی آشپزخانه",targetHref:"kitchenGame",idLetter:"kitchentGame-1"},
             {id:nanoid(4),title:" بازی شغل ها و میوه ها",targetHref:"professions",idLetter:"professionsGame-3"},
             {id:nanoid(4),title:"بازی حیوانات",targetHref:"animals",idLetter:"animalsGame-3"},
@@ -286,22 +292,22 @@ export let contentListAlpha = {
         storyAlpha:{
             idModal:"storyAlpha1",
             infoWords:[
-            {id:nanoid(4),title:"خانواده من",targetHref:"storyA1",idLetter:"storyAl-1"},
-            {id:nanoid(4),title:"متون کوتاه",targetHref:"storyA2",idLetter:"storyAl-2"},
-            {id:nanoid(4),title:"مورچه تنبل",targetHref:"storyA3",idLetter:"storyAl-3"},
-            {id:nanoid(4),title:"کلمات شبیه",targetHref:"storyA4",idLetter:"storyAl-4"},
-            {id:nanoid(4),title:"قوقولی",targetHref:"ququlyQu",idLetter:"ququl"},
-            {id:nanoid(4),title:"پویا و روز بارانی",targetHref:"puyaStory1",idLetter:"puya1"},
-            {id:nanoid(4),title:"اَمین آتَش نِشان",targetHref:"aminFireFighter1",idLetter:"amin1"},
-            {id:nanoid(4),title:"پامی با هزار پا",targetHref:"worriedPami1",idLetter:"pami1"},
-            {id:nanoid(4),title:"نُخود کوچَک",targetHref:"smallPea1",idLetter:"pea1"},
+            {id:nanoid(4),title:"خانواده من",targetHref:"CarouselAlphaExp/storyA1",idLetter:"storyAl-1"},
+            {id:nanoid(4),title:"متون کوتاه",targetHref:"CarouselAlphaExp/storyA2",idLetter:"storyAl-2"},
+            {id:nanoid(4),title:"مورچه تنبل",targetHref:"CarouselAlphaExp/storyA3",idLetter:"storyAl-3"},
+            {id:nanoid(4),title:"کلمات شبیه",targetHref:"CarouselAlphaExp/storyA4",idLetter:"storyAl-4"},
+            {id:nanoid(4),title:"قوقولی",targetHref:"CarouselAlphaExp/alphaStory/ququlyQu",idLetter:"ququl"},
+            {id:nanoid(4),title:"پویا و روز بارانی",targetHref:"CarouselAlphaExp/alphaStory/puyaStory1",idLetter:"puya1"},
+            {id:nanoid(4),title:"اَمین آتَش نِشان",targetHref:"CarouselAlphaExp/alphaStory/aminFireFighter1",idLetter:"amin1"},
+            {id:nanoid(4),title:"پامی با هزار پا",targetHref:"CarouselAlphaExp/alphaStory/worriedPami1",idLetter:"pami1"},
+            {id:nanoid(4),title:"نُخود کوچَک",targetHref:"CarouselAlphaExp/alphaStory/smallPea1",idLetter:"pea1"},
             ],
         },
 }
 
 
 // ************************* end List for List Content****************
-// ******************************* Start SylabelWords data  با هم بخوانیم  ************************************************
+// ******************************* Start SylabelWords data  (با هم بخوانیم ) ************************************************
 
 // ##########--> برای حرف ت ##########
 export let sylabelWord1={
@@ -1862,7 +1868,7 @@ export let sylabelWord7={
 }
 // ##########-->برای حرف  (از اول تا حرف ن) پایان ########
 
-// ******************************* End SylabelWords data *********************
+// ******************************* End SylabelWords data (با هم بخوانیم)*********************
 
 // **************************** start flipping Table data (game) ***********************
 export const tableDataNum ={
@@ -2763,87 +2769,87 @@ export let testNumbers = {
         },
     alphaDays : [
         {
-            image :"./images/assetAlpha/numbers/1-8-25-0-num.png",
+            image :"/images/assetAlpha/numbers/1-8-25-0-num.png",
             sylabelWord : "صِفر",
         },
         {
-            image :"./images/assetAlpha/numbers/1-8-25-1-num.png",
+            image :"/images/assetAlpha/numbers/1-8-25-1-num.png",
             sylabelWord : "یک",
         },
         {
-            image :"./images/assetAlpha/numbers/1-8-25-2-num.png",
+            image :"/images/assetAlpha/numbers/1-8-25-2-num.png",
             sylabelWord : "دو",
         },
         {
-            image :"./images/assetAlpha/numbers/1-8-25-3-num.png",
+            image :"/images/assetAlpha/numbers/1-8-25-3-num.png",
             sylabelWord : "سِه",
         },
         {
-            image :"./images/assetAlpha/numbers/1-8-25-4-num.png",
+            image :"/images/assetAlpha/numbers/1-8-25-4-num.png",
             sylabelWord : "چَ + هار --> چَهار",
         },
         {
-            image :"./images/assetAlpha/numbers/1-8-25-5-num.png",
+            image :"/images/assetAlpha/numbers/1-8-25-5-num.png",
             sylabelWord : "پَنج",
         },
         {
-            image :"./images/assetAlpha/numbers/1-8-25-6-num.png",
+            image :"/images/assetAlpha/numbers/1-8-25-6-num.png",
             sylabelWord : "شش",
         },
         {
-            image :"./images/assetAlpha/numbers/1-8-25-7-num.png",
+            image :"/images/assetAlpha/numbers/1-8-25-7-num.png",
             sylabelWord : "هَفت",
         },
         {
-            image :"./images/assetAlpha/numbers/1-8-25-8-num.png",
+            image :"/images/assetAlpha/numbers/1-8-25-8-num.png",
             sylabelWord : "هَشت",
         },
         {
-            image :"./images/assetAlpha/numbers/1-8-25-9-num.png",
+            image :"/images/assetAlpha/numbers/1-8-25-9-num.png",
             sylabelWord : "نُه",
         },
         {
-            image :"./images/assetAlpha/numbers/1-8-25-10-num.png",
+            image :"/images/assetAlpha/numbers/1-8-25-10-num.png",
             sylabelWord : "دَه",
         },
         {
-            image :"./images/assetAlpha/numbers/1-8-25-11-num.png",
+            image :"/images/assetAlpha/numbers/1-8-25-11-num.png",
             sylabelWord : "یاز + دَه --> یازدَه",
         },
         {
-            image :"./images/assetAlpha/numbers/1-8-25-12-num.png",
+            image :"/images/assetAlpha/numbers/1-8-25-12-num.png",
             sylabelWord : "دَ + واز + دَه --> دَوازدَه",
         },
         {
-            image :"./images/assetAlpha/numbers/1-8-25-13-num.png",
+            image :"/images/assetAlpha/numbers/1-8-25-13-num.png",
             sylabelWord : "سیز + دَه --> سیزدَه",
         },
         {
-            image :"./images/assetAlpha/numbers/1-8-25-14-num.png",
+            image :"/images/assetAlpha/numbers/1-8-25-14-num.png",
             sylabelWord : "چَ + هار + دَه --> چَهاردَه",
         },
         {
-            image :"./images/assetAlpha/numbers/1-8-25-15-num.png",
+            image :"/images/assetAlpha/numbers/1-8-25-15-num.png",
             sylabelWord : "پانز + دَه --> پانزدَه",
         },
         {
-            image :"./images/assetAlpha/numbers/1-8-25-16-num.png",
+            image :"/images/assetAlpha/numbers/1-8-25-16-num.png",
             sylabelWord : "شانز + دَه --> شانزدَه",
         },
         {
-            image :"./images/assetAlpha/numbers/1-8-25-17-num.png",
+            image :"/images/assetAlpha/numbers/1-8-25-17-num.png",
             sylabelWord : "هِف + دَه --> هِفدَه",
         },
         {
-            image :"./images/assetAlpha/numbers/1-8-25-18-num.png",
+            image :"/images/assetAlpha/numbers/1-8-25-18-num.png",
             sylabelWord : "هِج + دَه --> هِجدَه",
         },
         {
-            image :"./images/assetAlpha/numbers/1-8-25-19-num.png",
+            image :"/images/assetAlpha/numbers/1-8-25-19-num.png",
             sylabelWord : "نوز + دَه --> نوزدَه",
         },
         {
-            image :"./images/assetAlpha/numbers/1-8-25-20-num.png",
+            image :"/images/assetAlpha/numbers/1-8-25-20-num.png",
             sylabelWord : "بیست",
         },
     ]

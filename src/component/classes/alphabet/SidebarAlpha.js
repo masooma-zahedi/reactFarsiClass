@@ -51,10 +51,10 @@ export const SidebarAlpha = ({setShowShort,idCarouselAlpha}) => {
             <NavLink className="nav-link text-success h6" to="/">کارت الفبا</NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link text-success h6" to="/shortSound">صداهای کوتاه</NavLink>
+            <NavLink className="nav-link text-success h6" to="CarouselAlphaExp/shortSound">صداهای کوتاه</NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link text-success h6" to="/longSound">صداهای بلند</NavLink>
+            <NavLink className="nav-link text-success h6" to="CarouselAlphaExp/longSound">صداهای بلند</NavLink>
           </li>
 
           <li className="nav-item d-grid  ">
