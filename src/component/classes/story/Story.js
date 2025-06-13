@@ -2,9 +2,18 @@ import { TheStory } from './TheStory'
 import { donky, eagle1, florence, flyStory, fox1, healthStory, janatan, kebrit, king1, oldmanSea, peniSilin, rabit, soldier, spring } from './dataStory';
 import { SidebarStory } from './SidebarStory';
 import { Route, Routes } from 'react-router-dom';
+import {stories1} from './StoryPage3'
 import StoryPage3 from './StoryPage3';
 
 export const Story = () => {
+  const stories1 = {
+    1: {
+      title: 'پترس قهرمان سد',
+      content: [{ type: 'text', content: 'پترس انگشتش را در سوراخ سد گذاشت...' }],
+      vocab: [{ word: 'سد', meaning: 'dam' }],
+      qa: [{ question: 'پترس چه کار کرد؟', answer: 'انگشتش را در سد گذاشت' }]
+    }
+  };
   return (
     <>
         <div className='row'>
@@ -27,7 +36,7 @@ export const Story = () => {
               <Route path='/flyS' element={<TheStory srcStory={flyStory}/>}  />
               <Route path='/peniS' element={<TheStory srcStory={peniSilin}/>}  />
               <Route path='/janatanM' element={<TheStory srcStory={janatan}/>}  />
-              <Route path='moreStory' element={<StoryPage3/>}  />
+              <Route path='moreStory' element={<StoryPage3 initialStories={stories1} storageKey="page1Stories" />}  />
             </Routes>
             
             

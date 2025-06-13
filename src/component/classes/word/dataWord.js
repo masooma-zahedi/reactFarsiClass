@@ -19,6 +19,7 @@ export let contentListWord = {
         {title:"خرس خواب آلود",targetHref :"sleepBear1"},
         {title:"دو گُنجَشک",targetHref :"twoSparrow1"},
         {title:"راز شب کمپینگ",targetHref :"kidsCamping1"},
+        {title:"داستان های بیشتر...",targetHref :"moreStoryWords"},
         {title:"",targetHref :""},
         ],
     },
