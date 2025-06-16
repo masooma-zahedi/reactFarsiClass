@@ -7,7 +7,17 @@ import { TheStory } from '../story/TheStory';
 import { SidebarWord } from './SidebarWord.js';
 import WordToSentence from './wordToSentence.js';
 import LetterPuzzle from './LetterPuzzle.js';
+import StoryPage3 from '../story/StoryPage3.js';
+
 export const Word = () => {
+  const stories2 = {
+  1: {
+    title: 'راز شب در جنگل',
+    content: [{ type: 'text', content: 'چند نوجوان به جنگل رفتند...' }],
+    vocab: [{ word: 'جنگل', meaning: 'forest' }],
+    qa: [{ question: 'آن‌ها کجا رفتند؟', answer: 'جنگل' }]
+  }
+};
   return (
     <>
         {/* <div className = "container mt-4">
@@ -35,9 +45,14 @@ export const Word = () => {
               <Route path='/kidsCamping1' element={<TheStory srcStory={kidsCamping}/>}  />
               <Route path='/wordSentence' element={<WordToSentence />}  />
               <Route path='/letterPuzzle' element={<LetterPuzzle />}  />
+              <Route path='moreStoryWords' element={<StoryPage3 initialStories={stories2} storageKey="page2Stories" />}  />
+
             </Routes>
           </div>
-          
+          <div className="container">
+            
+          {/* <StoryPage3 initialStories={stories2} storageKey="page2Stories" /> */}
+          </div>
         </div>
               
         

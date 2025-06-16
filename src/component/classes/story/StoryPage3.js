@@ -1,24 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const defaultStories = {
-  1: {
-    title: 'ماجرای شجاعت',
-    content: [
-      { type: 'text', content: 'روزی روزگاری، در دهکده‌ای دور، پسرکی زندگی می‌کرد که بسیار شجاع بود.' },
-      { type: 'image', content: 'https://cdn.pixabay.com/photo/2017/02/20/18/03/fantasy-2085725_1280.jpg' },
-      { type: 'text', content: 'او با چراغی کوچک وارد جنگل شد و صداهای عجیب را دنبال کرد...' },
-    ],
-    vocab: [
-      { word: 'شجاع', meaning: 'brave' },
-      { word: 'دهکده', meaning: 'village' },
-    ],
-    qa: [
-      { question: 'پسرک چگونه بود؟', answer: 'بسیار شجاع' },
-      { question: 'او با چه چیزی وارد جنگل شد؟', answer: 'چراغی کوچک' },
-    ],
-  },
-};
+// برای ویرایش و حذف داستان باید کلمه ویرایش یا حذف را سرچ بعد در تگ مربوطه در کلس نیم و دیسپلی نان را بردارید(d-none)
+
 
 // بخش نمایش داستان به همراه اکوردین سوالات و جواب‌ها
 const StoryPage = ({ title, content, vocab, qa }) => {
@@ -30,13 +14,13 @@ const StoryPage = ({ title, content, vocab, qa }) => {
   };
 
   return (
-    <div className="p-4 border rounded shadow-sm bg-light" dir="rtl">
-      <h2 className="mb-4 text-center" style={{ fontFamily: 'Tahoma, sans-serif' }}>{title}</h2>
+    <div className="p-5 m-3 border rounded shadow-sm bg-light " dir="rtl">
+      <h2 className="mb-4 text-center h2" style={{ fontFamily: 'Tahoma, sans-serif' }}>{title}</h2>
       {content.map((item, idx) =>
         item.type === 'text' ? (
           <p
             key={idx}
-            style={{ fontSize: '1.2rem', lineHeight: '2', fontFamily: 'Vazir, Tahoma', textAlign: 'justify' }}
+            style={{ fontSize: '1.7rem', lineHeight: '1.8', fontFamily: 'sans-serif,Vazir, Tahoma', textAlign: '' }}
           >
             {item.content}
           </p>
@@ -112,22 +96,27 @@ const StoryPage = ({ title, content, vocab, qa }) => {
   );
 };
 
-function StoryPage3() {
+function StoryPage3({ initialStories, storageKey = null }) {
   const [stories, setStories] = useState(() => {
-    const saved = localStorage.getItem('stories');
-    if (saved) {
-      try {
-        const parsed = JSON.parse(saved);
-        if (parsed && Object.keys(parsed).length > 0) {
-          return parsed;
-        }
-      } catch (error) {
-        console.error('خطا در خواندن localStorage:', error);
+    if (storageKey) {
+      const saved = localStorage.getItem(storageKey);
+      if (saved) {
+        try {
+          const parsed = JSON.parse(saved);
+          if (parsed && Object.keys(parsed).length > 0) return parsed;
+        } catch {}
       }
     }
-    localStorage.setItem('stories', JSON.stringify(defaultStories));
-    return defaultStories;
+    return initialStories || {};
   });
+
+  // ...
+  // در useEffect هم اگر storageKey داشت، ذخیره کنیم
+  useEffect(() => {
+    if (storageKey) {
+      localStorage.setItem(storageKey, JSON.stringify(stories));
+    }
+  }, [stories, storageKey]);
 
   const [selectedStoryId, setSelectedStoryId] = useState(null);
   const [newTitle, setNewTitle] = useState('');
@@ -283,10 +272,10 @@ function StoryPage3() {
                 qa={currentStory.qa}
               />
               <div className="d-flex justify-content-end gap-2 mt-3">
-                <button className="btn btn-sm btn-warning" onClick={handleEdit}>
+                <button className="btn btn-sm btn-warning d-none" onClick={handleEdit}>
                   ویرایش
                 </button>
-                <button className="btn btn-sm btn-danger" onClick={handleDelete}>
+                <button className="btn btn-sm btn-danger d-none" onClick={handleDelete}>
                   حذف
                 </button>
               </div>

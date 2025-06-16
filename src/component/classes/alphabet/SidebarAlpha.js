@@ -56,6 +56,9 @@ export const SidebarAlpha = ({setShowShort,idCarouselAlpha}) => {
           <li className="nav-item">
             <NavLink className="nav-link text-success h6" to="CarouselAlphaExp/longSound">صداهای بلند</NavLink>
           </li>
+          <li className="nav-item">
+            <NavLink className="nav-link text-success h6" to="SyllableApp">بخش های کلمات</NavLink>
+          </li>
 
           <li className="nav-item d-grid  ">
             <button type="button" className="border-0 text-success h6 nav-link" data-bs-toggle="modal" data-bs-target={`#${contentListAlpha.readTogether.idModal}`}>
