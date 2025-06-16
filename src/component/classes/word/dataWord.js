@@ -1399,116 +1399,117 @@ export let kidsCamping ={
     targetHref:"kidsCamping1",
     titleStory:"  داستان راز شب کمپینگ",
     imageStory:["/images/assetWord/storyWord/kids_camping-1.png","/images/assetWord/storyWord/kids_camping-2.png"],
-    wordPart:[
+    wordPart: [
         {
-            wordMean:"راز",
-            engMean:""
+            wordMean: "راز",
+            engMean: "secret"
         },
         {
-            wordMean:"رُخصَتی",
-            engMean:""
+            wordMean: "رُخصَتی",
+            engMean: "vacation"
         },
         {
-            wordMean:"تابستان",
-            engMean:""
+            wordMean: "تابستان",
+            engMean: "summer"
         },
         {
-            wordMean:"شروع",
-            engMean:""
+            wordMean: "شروع",
+            engMean: "start"
         },
         {
-            wordMean:"نوجوان",
-            engMean:""
+            wordMean: "نوجوان",
+            engMean: "teenager"
         },
         {
-            wordMean:"تصمیم گرفتن",
-            engMean:""
+            wordMean: "تصمیم گرفتن",
+            engMean: "to decide"
         },
         {
-            wordMean:"استاد راهنما",
-            engMean:""
+            wordMean: "استاد راهنما",
+            engMean: "mentor / guide teacher"
         },
         {
-            wordMean:"اِنرژی",
-            engMean:""
+            wordMean: "اِنرژی",
+            engMean: "energy"
         },
         {
-            wordMean:"هیجان",
-            engMean:""
+            wordMean: "هیجان",
+            engMean: "excitement"
         },
         {
-            wordMean:"کوله پشتی",
-            engMean:""
+            wordMean: "کوله پشتی",
+            engMean: "backpack"
         },
         {
-            wordMean:"بوت",
-            engMean:""
+            wordMean: "بوت",
+            engMean: "shoes"
         },
         {
-            wordMean:"بستر خواب",
-            engMean:""
+            wordMean: "بستر خواب",
+            engMean: "sleeping bag"
         },
         {
-            wordMean:"مینی بَس",
-            engMean:""
+            wordMean: "مینی بَس",
+            engMean: "minibus"
         },
         {
-            wordMean:"تماس نگیرین",
-            engMean:""
+            wordMean: "تماس نگیرین",
+            engMean: "do not contact"
         },
         {
-            wordMean:"بدون اجازه",
-            engMean:""
+            wordMean: "بدون اجازه",
+            engMean: "without permission"
         },
         {
-            wordMean:"مرغان",
-            engMean:""
+            wordMean: "مرغان",
+            engMean: "birds"
         },
         {
-            wordMean:"فَضا",
-            engMean:""
+            wordMean: "فَضا",
+            engMean: "space / environment"
         },
         {
-            wordMean:"نان چاشت",
-            engMean:""
+            wordMean: "نان چاشت",
+            engMean: "lunch"
         },
         {
-            wordMean:"رودخانه",
-            engMean:""
+            wordMean: "رودخانه",
+            engMean: "river"
         },
         {
-            wordMean:"مرموز",
-            engMean:""
+            wordMean: "مرموز",
+            engMean: "mysterious"
         },
         {
-            wordMean:"ترسناک",
-            engMean:""
+            wordMean: "ترسناک",
+            engMean: "scary"
         },
         {
-            wordMean:"گرگ",
-            engMean:""
+            wordMean: "گرگ",
+            engMean: "wolf"
         },
         {
-            wordMean:"شجاع",
-            engMean:""
+            wordMean: "شجاع",
+            engMean: "brave"
         },
         {
-            wordMean:"چراغ قوه",
-            engMean:""
+            wordMean: "چراغ قوه",
+            engMean: "flashlight"
         },
         {
-            wordMean:"راکون",
-            engMean:""
+            wordMean: "راکون",
+            engMean: "raccoon"
         },
         {
-            wordMean:"ناپدید",
-            engMean:""
+            wordMean: "ناپدید",
+            engMean: "disappeared"
         },
         {
-            wordMean:"رمزآلود",
-            engMean:""
-        },
+            wordMean: "رمزآلود",
+            engMean: "mysterious / cryptic"
+        }
     ],
+
     accordionItems : [
         {
           title: "کمپینگ در کجا انجام شد؟",

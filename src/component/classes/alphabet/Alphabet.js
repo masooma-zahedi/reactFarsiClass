@@ -14,6 +14,8 @@ import Reading from "./Reading.js";
 import GameWord from "./GameWord.js";
 import ObjectSentenceGame from "./ObjectSentenceGame.js";
 import MatchGame from "./MatchGame.js";
+import SyllableManager from "./SyllableApp.js";
+import SyllableApp from "./SyllableApp.js";
 
 export const Alphabet = () => {
   const [showShort, setShowShort] = useState(false)
@@ -41,11 +43,13 @@ export const Alphabet = () => {
                 <Route path='/animals' element={<FlippingTable idTablePlay="anim1" tableData={tableAnimals.photoData} bgTable={tableAnimals.bgTable} showBack1={true} />}  />
                 <Route path='/tableColor_body' element={<FlippingTable idTablePlay="colorBo1" tableData={tableColor_body.photoData} bgTable={tableColor_body.bgTable} showBack1={true} />}  />
                 <Route path='/wordTable/*' element={<WordTable />}  />
+                <Route path='/SyllableApp' element={<SyllableApp />}  />
               </Routes>
               <WordCarousel/>
               <GameWord />
             </div>
           </div>
+          {/* <SyllableApp/> */}
         </div>
 
     </>
