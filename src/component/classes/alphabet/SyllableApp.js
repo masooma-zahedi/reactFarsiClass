@@ -1,4 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
+// delete and Edit words and list are unactive . (showDelete--> true)
+
+
 import {
   Button,
   Form,
@@ -12,6 +15,7 @@ import {
 
 const SyllableApp = () => {
   const inputRef = useRef(null);
+  const [showDelete, setShowDelete] = useState(true)
 
   const [listVisible, setListVisible] = useState(true);
   const [words, setWords] = useState([]);
@@ -185,6 +189,7 @@ const SyllableApp = () => {
                 <Button variant="success" type="submit">
                   افزودن
                 </Button>
+                <Button className="mx-2" variant="secondary" onClick={() => setShowDelete(!showDelete)}>حذف -ویرایش</Button>
               </Form>
             </Card.Body>
           </Card>
@@ -210,6 +215,9 @@ const SyllableApp = () => {
                       className="d-flex justify-content-between align-items-center"
                     >
                       <span>حرف «{cat}»</span>
+
+                      {/* delete list item */}
+                      {showDelete && 
                       <Button
                         variant="outline-danger"
                         size="sm"
@@ -220,6 +228,7 @@ const SyllableApp = () => {
                       >
                         🗑️
                       </Button>
+                      }
                     </ListGroup.Item>
                   ))}
                 </ListGroup>
@@ -246,23 +255,27 @@ const SyllableApp = () => {
                       >
                         {item.word}
                       </Button>
-                      <div className="mt-1 d-flex justify-content-between">
-                        <Button
-                          variant="outline-warning"
-                          size="sm"
-                          className="me-1"
-                          onClick={() => openEditModal(item.index)}
-                        >
-                          ✏️
-                        </Button>
-                        <Button
-                          variant="outline-danger"
-                          size="sm"
-                          onClick={() => handleDeleteWord(item.index)}
-                        >
-                          🗑️
-                        </Button>
-                      </div>
+
+                        {/* delete and Edit words  */}
+                        {showDelete && 
+                          <div className="mt-1 d-flex justify-content-between">
+                            <Button
+                              variant="outline-warning"
+                              size="sm"
+                              className="me-1"
+                              onClick={() => openEditModal(item.index)}
+                            >
+                              ✏️
+                            </Button>
+                            <Button
+                              variant="outline-danger"
+                              size="sm"
+                              onClick={() => handleDeleteWord(item.index)}
+                            >
+                              🗑️
+                            </Button>
+                          </div>
+                        }
                     </div>
                   ))}
                 </div>
