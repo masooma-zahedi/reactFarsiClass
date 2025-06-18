@@ -1,7 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-// delete and Edit words and list are unactive . (showDelete--> true)
-
-
 import {
   Button,
   Form,
@@ -15,8 +12,7 @@ import {
 
 const SyllableApp = () => {
   const inputRef = useRef(null);
-  const [showDelete, setShowDelete] = useState(true)
-
+  const [showDelete, setShowDelete] = useState(false);
   const [listVisible, setListVisible] = useState(true);
   const [words, setWords] = useState([]);
   const [formVisible, setFormVisible] = useState(false);
@@ -36,34 +32,76 @@ const SyllableApp = () => {
 
   const firstLoad = useRef(true);
 
-  useEffect(() => {
-  if (selectedWord && inputRef.current) {
-    inputRef.current.focus();
-  }
-}, [selectedWord]);
+// Initial static words
+const initialWords = [
+  {
+    word: "مدرسه",
+    syllables: ["مَد", "رَ", "سِه"],
+    category: "م"
+  },
+  {
+    word: "کتاب",
+    syllables: ["کِ", "تاب"],
+    category: "ک"
+  },
+  {
+    word: "سیب",
+    syllables: ["سی", "ب"],
+    category: "س"
+  },
+  {
+    word: "مادر",
+    syllables: ["ما", "دَر"],
+    category: "م"
+  },
+  {
+    word: "روباه",
+    syllables: ["رو", "باه"],
+    category: "ر"
+  },
+];
 
 
-  // Load from localStorage
-  useEffect(() => {
-    const saved = localStorage.getItem("syllableWords");
-    if (saved) {
-      try {
-        const parsed = JSON.parse(saved);
-        if (Array.isArray(parsed)) setWords(parsed);
-      } catch (e) {
-        console.error("Error parsing localStorage data:", e);
+// Load from localStorage or use initial
+useEffect(() => {
+  const saved = localStorage.getItem("syllableWords");
+  let finalWords = [...initialWords];
+
+  if (saved) {
+    try {
+      const parsed = JSON.parse(saved);
+      if (Array.isArray(parsed)) {
+        // ادغام بدون تکرار
+        const merged = [...parsed];
+        initialWords.forEach((item) => {
+          const exists = parsed.some((w) => w.word === item.word);
+          if (!exists) merged.push(item);
+        });
+        finalWords = merged;
       }
+    } catch (e) {
+      console.error("Error parsing localStorage data:", e);
     }
-  }, []);
+  }
 
-  // Save to localStorage
+  setWords(finalWords);
+}, []);
+
+
+useEffect(() => {
+  if (!firstLoad.current) {
+    localStorage.setItem("syllableWords", JSON.stringify(words));
+  } else {
+    firstLoad.current = false;
+  }
+}, [words]);
+
+
   useEffect(() => {
-    if (firstLoad.current) {
-      firstLoad.current = false;
-    } else {
-      localStorage.setItem("syllableWords", JSON.stringify(words));
+    if (selectedWord && inputRef.current) {
+      inputRef.current.focus();
     }
-  }, [words]);
+  }, [selectedWord]);
 
   const handleAddWord = (e) => {
     e.preventDefault();
@@ -79,14 +117,30 @@ const SyllableApp = () => {
     setNewWord("");
     setSyllables("");
     setCategory("");
-    setSelectedCategory(category); // دسته جدید انتخاب شود
+    setSelectedCategory(category);
   };
 
-  const handleDeleteWord = (index) => {
-    const updated = words.filter((_, i) => i !== index);
-    setWords(updated);
+  // const handleDeleteWord = (index) => {
+  //   const updated = words.filter((_, i) => i !== index);
+  //   setWords(updated);
+  //   setSelectedWord(null);
+  // };
+const handleDeleteWord = (index) => {
+  const wordToDelete = words[index];
+  const updated = words.filter((_, i) => i !== index);
+  setWords(updated);
+
+  // بررسی آیا دسته خالی شد؟
+  const stillHasWords = updated.some(w => w.category === wordToDelete.category);
+  if (!stillHasWords) {
+    setSelectedCategory(null);
+  }
+
+  // اگر کلمه‌ای که حذف شد همان کلمه‌ی انتخاب شده بود، آن را پاک کن
+  if (selectedWord && selectedWord.word === wordToDelete.word) {
     setSelectedWord(null);
-  };
+  }
+};
 
   const handleDeleteCategory = (cat) => {
     const updated = words.filter((w) => w.category !== cat);
@@ -113,7 +167,7 @@ const SyllableApp = () => {
     };
     setWords(updated);
     setEditModal(false);
-    setSelectedCategory(editCategory); // دسته ویرایش‌شده را فعال کن
+    setSelectedCategory(editCategory);
     if (selectedWord && selectedWord.word === words[editIndex].word) {
       setSelectedWord(updated[editIndex]);
     }
@@ -189,7 +243,9 @@ const SyllableApp = () => {
                 <Button variant="success" type="submit">
                   افزودن
                 </Button>
-                <Button className="mx-2" variant="secondary" onClick={() => setShowDelete(!showDelete)}>حذف -ویرایش</Button>
+                <Button className="mx-2" variant="secondary" onClick={() => setShowDelete(!showDelete)}>
+                  حذف -ویرایش
+                </Button>
               </Form>
             </Card.Body>
           </Card>
@@ -215,20 +271,18 @@ const SyllableApp = () => {
                       className="d-flex justify-content-between align-items-center"
                     >
                       <span>حرف «{cat}»</span>
-
-                      {/* delete list item */}
-                      {showDelete && 
-                      <Button
-                        variant="outline-danger"
-                        size="sm"
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          handleDeleteCategory(cat);
-                        }}
-                      >
-                        🗑️
-                      </Button>
-                      }
+                      {showDelete && (
+                        <Button
+                          variant="outline-danger"
+                          size="sm"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            handleDeleteCategory(cat);
+                          }}
+                        >
+                          🗑️
+                        </Button>
+                      )}
                     </ListGroup.Item>
                   ))}
                 </ListGroup>
@@ -244,7 +298,7 @@ const SyllableApp = () => {
               <Card.Body>
                 <div className="d-flex flex-wrap gap-2 justify-content-end">
                   {groupedWords[selectedCategory].map((item, idx) => (
-                    <div key={idx} className="border rounded p-2 bg-light" style={{ minWidth: "fit-content" }}>
+                    <div key={idx} className="border rounded p-2 bg-light">
                       <Button
                         variant="link"
                         className="text-decoration-none text-dark"
@@ -255,27 +309,25 @@ const SyllableApp = () => {
                       >
                         {item.word}
                       </Button>
-
-                        {/* delete and Edit words  */}
-                        {showDelete && 
-                          <div className="mt-1 d-flex justify-content-between">
-                            <Button
-                              variant="outline-warning"
-                              size="sm"
-                              className="me-1"
-                              onClick={() => openEditModal(item.index)}
-                            >
-                              ✏️
-                            </Button>
-                            <Button
-                              variant="outline-danger"
-                              size="sm"
-                              onClick={() => handleDeleteWord(item.index)}
-                            >
-                              🗑️
-                            </Button>
-                          </div>
-                        }
+                      {showDelete && (
+                        <div className="mt-1 d-flex justify-content-between">
+                          <Button
+                            variant="outline-warning"
+                            size="sm"
+                            className="me-1"
+                            onClick={() => openEditModal(item.index)}
+                          >
+                            ✏️
+                          </Button>
+                          <Button
+                            variant="outline-danger"
+                            size="sm"
+                            onClick={() => handleDeleteWord(item.index)}
+                          >
+                            🗑️
+                          </Button>
+                        </div>
+                      )}
                     </div>
                   ))}
                 </div>
@@ -292,7 +344,7 @@ const SyllableApp = () => {
                   currentSyllable
                 )}
                 <input
-                 ref={inputRef}
+                  ref={inputRef}
                   type="range"
                   min="0"
                   max={selectedWord.syllables.length - 1}
@@ -309,7 +361,6 @@ const SyllableApp = () => {
         </Col>
       </Row>
 
-      {/* Modal ویرایش */}
       <Modal show={editModal} onHide={() => setEditModal(false)}>
         <Modal.Header closeButton>
           <Modal.Title>ویرایش کلمه</Modal.Title>
