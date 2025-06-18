@@ -8,6 +8,7 @@ import { nanoid } from "nanoid";
 // بازی جدول(اعداد و رنگها و ...) : component :FlippingTable _____ data : tableDataNum
 // جدول کلمات : component : BrokenGlassess --> WordBox _____ data : words   ;&&&&&&&&;   component:  WordTable --> WordBox ____ data: words
 // داستان ها : component : CarouselAlpha _____ data : storyAlpha3    ;&&&&&&&;    component: TheStory ____ data: ququly
+// بخش های کلمات : component : SyllableApp __________ data : در خود صفحه سایت وارد می شود
 // ***************************************************************************************************************************************************
 // ******************************* Start Just Carousel ***************
 export let alphaCrousel={

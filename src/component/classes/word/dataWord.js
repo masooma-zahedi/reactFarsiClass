@@ -3,6 +3,7 @@
 // جمله را کامل کن : component : DragDropQuize ______ data :questions1
 // بازی پیدا کردن کلمات(بازی حروف): component : LetterPuzzle ______ data : داده ها در خود صفحه وارد می شود
 // جملات و مترادف ها : component : SentenceCarousel __________ data : sentenceCarousel
+// جملات موضوعی (جمله با معنی لغات آن ) : componteny :SentenceObject _______ data : in component
 
 // **********Start Sidebar Word*****************
 export let contentListWord = {

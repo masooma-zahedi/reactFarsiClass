@@ -10,10 +10,8 @@ const items1 = [
   { id: 6, word: 'چای', image: 'https://goodricketea.com/cdn/shop/articles/IMAGE-2.png?v=1686659498' },
   { id: 7, word: 'نوشابه', image: 'https://mykathmandukitchen.com/wp-content/uploads/2018/03/coke-all1.png' },
   { id: 8, word: 'کُلوچه', image: 'https://harnika.ir/wp-content/uploads/2022/10/koloche-ahari-min.jpg' },
-  { id: 11, word: 'چادُر', image: 'https://classroomclipart.com/image/static7/preview2/small-backpacking-tent-clip-art-59364.jpg' },
-  { id: 22, word: 'کوله‌پُشتی', image: 'https://i.ebayimg.com/images/g/xEYAAOSw4P9lFi~c/s-l1200.png' },
-  // { id: 33, word: 'چِراغ ', image: 'https://cdn.outsideonline.com/wp-content/uploads/2018/08/17/barebones-canyon-light_s.jpg' },
-  // { id: 4, word: 'کیسه خواب', image: 'https://m.media-amazon.com/images/I/61X+v2ij6KL._AC_UF1000,1000_QL80_.jpg' },
+  { id: 9, word: 'نان ', image: 'https://cdn.vectorstock.com/i/1000v/53/07/thanksgiving-baked-bread-cartoon-colored-clipart-vector-43185307.jpg' },
+  { id: 10, word: 'بیسکویت', image: 'https://www.shutterstock.com/image-vector/illustration-on-theme-big-set-600nw-1530904565.jpg' }
 ];
 
 const items2 = [
@@ -25,18 +23,37 @@ const items2 = [
   { id: 6, word: 'قُمقُمه', image: 'https://www.overlanded.com/wp-content/uploads/2023/02/vessel-32-oz-stainless-steel-camping-water-bottle-tuff-stuff-overland-ts-8-1100-6.webp' },
   { id: 7, word: 'پَتو', image: 'https://kodiakcanvas.com/cdn/shop/files/1351_Main__73673.1637789104.1280.1280.jpg?v=1701717233&width=1214' },
   { id: 8, word: 'فَندک', image: 'https://images.thdstatic.com/productImages/3e3fe8a9-efac-4ed9-a3bb-5fdee54a2da7/svn/bic-lighters-ump4dc-ast-64_1000.jpg' },
+  { id: 9, word: 'نَقشه', image: 'https://media.gettyimages.com/id/165586562/vector/treasure-map-cartoon.jpg?s=1024x1024&w=gi&k=20&c=gnkFtgjNxJMXYpE3brL_CEOcHCTpy3YcLDWUhD_vSlU=' },
+  { id: 10, word: 'کَفشِ کوه', image: 'https://www.shutterstock.com/image-vector/hiking-shoes-boots-vector-illustration-260nw-354922850.jpg' }
 ];
+
 
 const items3 = [
   { id: 1, word: 'جَنگَل', image:'https://foodtank.com/wp-content/uploads/2015/09/agroforestry-FAO.jpg'},
   { id: 2, word: 'دِرَخت', image:'https://www.fertilome.com/media/klowrey/Article%20Images/Tree.jpg'},
-  { id: 3, word: 'کوه', image:'https://upload.wikimedia.org/wikipedia/commons/6/60/Matterhorn_from_Domh%C3%BCtte_-_2.jpg'} ,
+  { id: 3, word: 'کوه', image:'https://upload.wikimedia.org/wikipedia/commons/6/60/Matterhorn_from_Domh%C3%BCtte_-_2.jpg'},
   { id: 4, word: 'رودخانه', image:'https://img.redbull.com/images/c_crop,x_0,y_0,h_3840,w_5760/c_fill,w_800,h_539/q_auto,f_auto/redbullcom/2024/9/18/uarvhdfxqihzmnyddkoo/adrian-mattern-kayak-ivindo-gabon'},
-  { id: 5, word: 'دَریاچِه', image:'https://t4.ftcdn.net/jpg/04/30/46/87/360_F_430468753_hjeCITV6815pAztrEiOyElhwCao4v6XS.jpg'} ,
-  { id: 6, word: 'خورشید', image:'https://static.scientificamerican.com/sciam/cache/file/A53E2873-F8D7-48F7-8DD5FB9F5B32A420_source.jpg?w=1200'} ,
+  { id: 5, word: 'دَریاچِه', image:'https://t4.ftcdn.net/jpg/04/30/46/87/360_F_430468753_hjeCITV6815pAztrEiOyElhwCao4v6XS.jpg'},
+  { id: 6, word: 'خورشید', image:'https://static.scientificamerican.com/sciam/cache/file/A53E2873-F8D7-48F7-8DD5FB9F5B32A420_source.jpg?w=1200'},
   { id: 7, word: 'اَبر', image:'https://platform.vox.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/15788040/20150428-cloud-computing.0.1489222360.jpg?quality=90&strip=all&crop=0,15.095986038394,100,69.808027923211'},
-  { id: 8, word: 'سِتارِه', image:'https://imageio.forbes.com/specials-images/imageserve/6724a083c587bccd03d3b5a9/0x0.jpg?format=jpg&crop=3077,1729,x1272,y0,safe&height=600&width=1200&fit=bounds'}
+  { id: 8, word: 'سِتارِه', image:'https://imageio.forbes.com/specials-images/imageserve/6724a083c587bccd03d3b5a9/0x0.jpg?format=jpg&crop=3077,1729,x1272,y0,safe&height=600&width=1200&fit=bounds'},
+  { id: 9, word: 'ماه', image: 'https://images.newscientist.com/wp-content/uploads/2024/06/27164847/SEI_210650080.jpg' },
+  { id: 10, word: 'بیابان', image: 'https://cdn.prod.website-files.com/5f58a077d654db1a689fd95b/60ab777e17b2c9be9058c96c_picfair-01350937-dunes-and-desert-landscape-of-namib-fu-PREVIEW-ONLY.jpg' }
 ];
+
+const itemsFood = [
+  { id: 3, word: 'پَنیر', image: 'https://img.freepik.com/premium-vector/cartoon-drawing-cheese-with-face-it_602454-7870.jpg' },
+  { id: 4, word: 'تُخم‌مُرغ', image: 'https://easy-peasy.ai/cdn-cgi/image/quality=80,format=auto,width=700/https://media.easy-peasy.ai/509fefb5-bf9c-42d5-934a-0425d8612e11/eadbd16b-14a1-4191-809e-34232364e071.png' },
+  { id: 5, word: 'مُرَبا', image: 'https://icon2.cleanpng.com/ci2/gzz/iut/aqru265v3.webp' },
+  { id: 6, word: 'کَرِه', image: 'https://thumbs.dreamstime.com/z/cartoon-butter-cutting-board-margarine-spread-natural-dairy-product-vector-brick-wooden-high-calorie-food-cooking-225918083.jpg' },
+  { id: 7, word: 'عَسَل', image: 'https://t4.ftcdn.net/jpg/06/12/86/49/360_F_612864989_v6TrLkbttR4sjm9vj7bMvtTxO7Xw4ZXY.jpg' },
+  { id: 8, word: 'گِردو', image: 'https://e7.pngegg.com/pngimages/836/823/png-clipart-walnut-transparency-walnut-food-desktop-wallpaper.png' },
+  { id: 9, word: 'چای', image: 'https://img.freepik.com/premium-vector/cartoon-illustration-cup-tea-with-smiley-face_180868-3002.jpg?w=360' },
+  { id: 10, word: 'آب‌میوه', image: 'https://img.freepik.com/premium-vector/orange-fruit-juice-vector-logo_1306769-453.jpg' },
+  { id: 12, word: 'خامِه', image: 'https://png.pngtree.com/png-vector/20220519/ourmid/pngtree-meringue-cream-icon-cartoon-vector-png-image_4691580.png' },
+  { id: 19, word: 'ماست', image: 'https://www.shutterstock.com/image-vector/spoon-yogurt-vector-illustration-600nw-1396014698.jpg' },
+];
+
 
 const MatchGame = () => {
     const [items,setItems] = useState(items1);
@@ -180,6 +197,7 @@ const MatchGame = () => {
                     <button className='btn  shadow-sm border  mx-2' style={stylebg} onClick={()=>questionsqq(items1,'item1')}>خوراکی کمپینگ</button>
                     <button className='btn shadow-sm border  mx-2' style={stylebg} onClick={()=>questionsqq(items2,'item2')}>وسایل کمپینگ</button>
                     <button className='btn shadow-sm border mx-2' style={stylebg} onClick={()=>questionsqq(items3,'item3')}>طَبیعَت</button>
+                    <button className='btn shadow-sm border mx-2' style={stylebg} onClick={()=>questionsqq(itemsFood,'item4')}>صبحانه</button>
                   </div>
                 </div>
                 <div class="modal-footer">

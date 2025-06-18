@@ -8,6 +8,7 @@ import { SidebarWord } from './SidebarWord.js';
 import WordToSentence from './wordToSentence.js';
 import LetterPuzzle from './LetterPuzzle.js';
 import StoryPage3 from '../story/StoryPage3.js';
+import SentenceTest from './SententceObject.js';
 
 export const Word = () => {
   const stories2 = {
@@ -50,8 +51,7 @@ export const Word = () => {
             </Routes>
           </div>
           <div className="container">
-            
-          {/* <StoryPage3 initialStories={stories2} storageKey="page2Stories" /> */}
+            <SentenceTest/>
           </div>
         </div>
               
