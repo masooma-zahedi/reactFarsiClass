@@ -35,30 +35,232 @@ const SyllableApp = () => {
 // Initial static words
 const initialWords = [
   {
-    word: "مدرسه",
-    syllables: ["مَد", "رَ", "سِه"],
-    category: "م"
+    word: "وَطن",
+    syllables: ["وَ", "طن"],
+    category: "و"
   },
   {
-    word: "کتاب",
-    syllables: ["کِ", "تاب"],
-    category: "ک"
+    word: "وَقت",
+    syllables: ["وَ", "قت"],
+    category: "و"
   },
   {
-    word: "سیب",
-    syllables: ["سی", "ب"],
-    category: "س"
+    word: "وَسَط",
+    syllables: ["وَ", "سَط"],
+    category: "و"
   },
   {
-    word: "مادر",
-    syllables: ["ما", "دَر"],
-    category: "م"
+    word: "وَکیل",
+    syllables: ["وَ", "کیل"],
+    category: "و"
   },
   {
-    word: "روباه",
-    syllables: ["رو", "باه"],
-    category: "ر"
+    word: "وَرد",
+    syllables: ["وَ", "رد"],
+    category: "و"
   },
+  {
+    word: "وَعده",
+    syllables: ["وَ", "عد", "ه"],
+    category: "و"
+  },
+  {
+    word: "وَزن",
+    syllables: ["وَ", "زن"],
+    category: "و"
+  },
+  {
+    word: "وَجه",
+    syllables: ["وَ", "جه"],
+    category: "و"
+  },
+  {
+    word: "دوست " ,
+    syllables: ["دو", "ست"],
+    category: "و"
+  },
+  {
+    word: " سَوار " ,
+    syllables: ["سَ", "وار"],
+    category: "و"
+  },
+  {
+    word: "نَوَرد ",
+    syllables: ["نَ", "وَرد"],
+    category: "و"
+  },
+  {
+    word: "کَوتاه ",
+    syllables: ["کو", "تا", "ه"],
+    category: "و"
+  },
+  {
+    word: "نِوِشتن ",
+    syllables: ["نِ", "وِش", "تن"],
+    category: "و"
+  },
+  {
+    word: "پَروَنده ",
+    syllables: ["پَ", "رو", "ن", "ده"],
+    category: "و"
+  },
+  {
+    word: "شَورا ",
+    syllables: ["شَو", "را"],
+    category: "و"
+  },
+  {
+    word: "خَوابگاه " ,
+    syllables: ["خَواب", "گاه"],
+    category: "و"
+  },
+  {
+    word: "توانا ",
+    syllables: ["تَ", "وا", "نا"],
+    category: "و"
+  },
+  {
+    word: "هیزم",
+    syllables: ["هی", "زُم"],
+    category: "ه"
+  },
+  {
+    word: "همکار",
+    syllables: ["هَم", "کار"],
+    category: "ه"
+  },
+  {
+    word: "همراه",
+    syllables: ["هَم", "راه"],
+    category: "ه"
+  },
+  {
+    word: "هفته",
+    syllables: ["هَف", "ته"],
+    category: "ه"
+  },
+  {
+    word: "هال",
+    syllables: ["هال"],
+    category: "ه"
+  },
+  {
+    word: "هشتم",
+    syllables: ["هَش", "تُم"],
+    category: "ه"
+  },
+  {
+    word: "هوش",
+    syllables: ["هوش"],
+    category: "ه"
+  },
+  {
+    word: "هزارپا",
+    syllables: ["هِ", "زار", "پا"],
+    category: "ه"
+  },
+  {
+    word: "همه",
+    syllables: ["هَ", "مه"],
+    category: "ه"
+  },
+  {
+    word: "کوه",
+    syllables: ["کوه"],
+    category: "ه"
+  },
+  {
+    word: "چاه",
+    syllables: ["چاه"],
+    category: "ه"
+  },
+  {
+    word: "راه",
+    syllables: ["راه"],
+    category: "ه"
+  },
+  {
+    word: "نامه",
+    syllables: ["نا", "مه"],
+    category: "ه"
+  },
+  {
+    word: "خانه",
+    syllables: ["خا", "نه"],
+    category: "ه"
+  },
+  {
+    word: "شانه",
+    syllables: ["شا", "نه"],
+    category: "ه"
+  },
+  {
+    word: "کاه",
+    syllables: ["کاه"],
+    category: "ه"
+  },
+  {
+    word: "گیاه",
+    syllables: ["گِ", "یاه"],
+    category: "ه"
+  },
+  {
+    word: "توبه",
+    syllables: ["تو", "به"],
+    category: "ه"
+  },
+  {
+    word: "دانه",
+    syllables: ["دا", "نه"],
+    category: "ه"
+  },
+  {
+    word: "ماه",
+    syllables: ["ماه"],
+    category: "ه"
+  },
+  {
+    word: "سپیده",
+    syllables: ["سِ", "پی", "ده"],
+    category: "ه"
+  },
+  {
+    word: "آهو",
+    syllables: ["آ", "هو"],
+    category: "ه"
+  },
+  {
+    word: "شیشه",
+    syllables: ["شی", "شه"],
+    category: "ه"
+  },
+  {
+    word: "کلاه",
+    syllables: ["کُ", "لاه"],
+    category: "ه"
+  },
+  {
+    word: "زیبارو",
+    syllables: ["زی", "با", "رو"],
+    category: "ه"
+  },
+  {
+    word: "آگاه",
+    syllables: ["آ", "گاه"],
+    category: "ه"
+  },
+  {
+    word: "قهوه",
+    syllables: ["قَ", "هو", "ه"],
+    category: "ه"
+  },
+  {
+    word: "شجاعانه",
+    syllables: ["شُ", "جا", "عا", "نه"],
+    category: "ه"
+  }
+
+
 ];
 
 
