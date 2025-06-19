@@ -90,7 +90,7 @@ const initialWords = [
     category: "و"
   },
   {
-    word: "کَوتاه ",
+    word: "کوتاه ",
     syllables: ["کو", "تا", "ه"],
     category: "و"
   },
