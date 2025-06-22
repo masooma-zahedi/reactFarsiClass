@@ -258,7 +258,133 @@ const initialWords = [
     word: "شجاعانه",
     syllables: ["شُ", "جا", "عا", "نه"],
     category: "ه"
-  }
+  },
+  //************* */ حرف ع**********************
+  {
+    word: "باعِث",
+    syllables: ["با", "عِث"],
+    category: "ع"
+  },
+  {
+    word: "طَبعی",
+    syllables: ["طَ", "بع", "ی"],
+    category: "ع"
+  },
+  {
+    word: "ضَعیف",
+    syllables: ["ضَ", "عی", "ف"],
+    category: "ع"
+  },
+  {
+    word: "بَعید",
+    syllables: ["بَ", "عید"],
+    category: "ع"
+  },
+  {
+    word: "عَزیز",
+    syllables: ["عَ", "زی", "ز"],
+    category: "ع"
+  },
+  {
+    word: "عَروس",
+    syllables: ["عَ", "روس"],
+    category: "ع"
+  },
+  {
+    word: "عَرضه",
+    syllables: ["عَ", "رضِ", "ه"],
+    category: "ع"
+  },
+  {
+    word: "عَذاب",
+    syllables: ["عَ", "ذاب"],
+    category: "ع"
+  },
+  {
+    word: "عُضو",
+    syllables: ["عُ", "ضو"],
+    category: "ع"
+  },
+  {
+    word: "عَصا",
+    syllables: ["عَ", "صا"],
+    category: "ع"
+  },
+  {
+    word: "عُبور",
+    syllables: ["عُ", "بور"],
+    category: "ع"
+  },
+  {
+    word: "عَجَب",
+    syllables: ["عَ", "جَب"],
+    category: "ع"
+  },
+  {
+    word: "عُذر",
+    syllables: ["عُ", "ذر"],
+    category: "ع"
+  },
+  {
+    word: "عُروج",
+    syllables: ["عُ", "روج"],
+    category: "ع"
+  },
+  {
+    word: "عَطر",
+    syllables: ["عَ", "طر"],
+    category: "ع"
+  },
+  {
+    word: "عَرف",
+    syllables: ["عَ", "رف"],
+    category: "ع"
+  },
+  {
+    word: "عَصر",
+    syllables: ["عَ", "صر"],
+    category: "ع"
+  },
+  {
+    word: "عِشق",
+    syllables: ["عِ", "شق"],
+    category: "ع"
+  },
+  {
+    word: "باعِث",
+    syllables: ["با", "عِث"],
+    category: "ع"
+  },
+  {
+    word: "ضَعیف ",
+    syllables: ["ضَ", "عی", "ف"],
+    category: "ع"
+  },
+  {
+    word: "بَعید ",
+    syllables: ["بَ", "عید"],
+    category: "ع"
+  },
+  {
+    word: "طَبعی ",
+    syllables: ["طَ", "بع", "ی"],
+    category: "ع"
+  },
+  {
+    word: "مَنع ",
+    syllables: ["مَن", "ع"],
+    category: "ع"
+  },
+  {
+    word: "طَبع ",
+    syllables: ["طَ", "بع"],
+    category: "ع"
+  },
+  {
+    word: "وَضع ",
+    syllables: ["وَ", "ضع"],
+    category: "ع"
+  },
 
 
 ];
