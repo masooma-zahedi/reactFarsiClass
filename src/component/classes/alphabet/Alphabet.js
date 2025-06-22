@@ -16,6 +16,7 @@ import ObjectSentenceGame from "./ObjectSentenceGame.js";
 import MatchGame from "./MatchGame.js";
 import SyllableManager from "./SyllableApp.js";
 import SyllableApp from "./SyllableApp.js";
+import SentenceApp2 from "./SentenceApp2.js";
 
 export const Alphabet = () => {
   const [showShort, setShowShort] = useState(false)
@@ -50,6 +51,7 @@ export const Alphabet = () => {
             </div>
           </div>
           {/* <SyllableApp/> */}
+          {/* <SentenceApp2/> */}
         </div>
 
     </>
