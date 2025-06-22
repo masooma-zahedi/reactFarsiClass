@@ -262,7 +262,7 @@ const ObjectSentenceGame = () => {
       } else {
         setIsFinished(true);
       }
-    }, 1000);
+    }, 1500);
   };
 
   const resetGame = () => {
