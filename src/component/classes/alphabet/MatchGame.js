@@ -53,6 +53,19 @@ const itemsFood = [
   { id: 12, word: 'خامِه', image: 'https://png.pngtree.com/png-vector/20220519/ourmid/pngtree-meringue-cream-icon-cartoon-vector-png-image_4691580.png' },
   { id: 19, word: 'ماست', image: 'https://www.shutterstock.com/image-vector/spoon-yogurt-vector-illustration-600nw-1396014698.jpg' },
 ];
+const transport1 = [
+  { id: 1, word: 'ماشین', image: 'http://i.pinimg.com/474x/07/ef/87/07ef878fdd9734f674ce709bfb6523be.jpg' },
+  { id: 2, word: 'اتوبوس', image: 'https://www.citypng.com/public/uploads/preview/white-cartoon-illustration-bus-7040816948746366ehecfbrpq.png' },
+  { id: 3, word: 'قطار', image: 'https://static.vecteezy.com/system/resources/previews/033/520/223/non_2x/train-cartoon-illustration-train-train-engine-train-cartoon-train-cartoon-cartoon-ai-generative-png.png' },
+  { id: 4, word: 'هواپیما', image: 'https://img.freepik.com/free-vector/airplane-cartoon-sticker-white-background_1308-76926.jpg?semt=ais_hybrid&w=740' },
+  { id: 5, word: 'قایق', image: 'https://media.istockphoto.com/id/2150065784/vector/cute-sailing-ship-marine-transport-clipart-vector-illustration-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=upvS-ntka7jrD27TTxM6Z6N08hHdH9aA_KzRKqpabpE=' },
+  { id: 6, word: 'دوچرخه', image: 'https://www.clker.com/cliparts/9/2/a/5/1217862219992805751lescinqailes_bicycle.svg.hi.png' },
+  { id: 7, word: 'تاکسی', image: 'https://t3.ftcdn.net/jpg/04/74/98/04/360_F_474980460_iR8TN3ev27lpeg8tZVu1plboDfew2j5W.jpg' },
+  { id: 8, word: 'کشتی', image: 'https://i.pinimg.com/736x/6d/c3/79/6dc3792181622a60cf04c512af0e78a7.jpg' },
+  { id: 9, word: 'کامیون', image: 'https://img.freepik.com/premium-vector/cartoon-truck-trailer-isolated-vehicle-vector-illustration_939711-4064.jpg?semt=ais_hybrid&w=740' },
+  { id: 10, word: 'موتور', image: 'https://t3.ftcdn.net/jpg/06/08/99/08/360_F_608990870_yAJaCtKKmmhU7jiSuAS8ZxsdL5VlA9ZM.jpg' }
+];
+
 
 
 const MatchGame = () => {
@@ -194,10 +207,11 @@ const MatchGame = () => {
                 </div>
                 <div className="modal-body">
                   <div className='d-flex flex-wrap'>
-                    <button className='btn  shadow-sm border  mx-2' style={stylebg} onClick={()=>questionsqq(items1,'item1')}>خوراکی کمپینگ</button>
-                    <button className='btn shadow-sm border  mx-2' style={stylebg} onClick={()=>questionsqq(items2,'item2')}>وسایل کمپینگ</button>
-                    <button className='btn shadow-sm border mx-2' style={stylebg} onClick={()=>questionsqq(items3,'item3')}>طَبیعَت</button>
-                    <button className='btn shadow-sm border mx-2' style={stylebg} onClick={()=>questionsqq(itemsFood,'item4')}>صبحانه</button>
+                    <button className='btn  shadow-sm border  m-2' style={stylebg} onClick={()=>questionsqq(items1,'item1')}>خوراکی کمپینگ</button>
+                    <button className='btn shadow-sm border  m-2' style={stylebg} onClick={()=>questionsqq(items2,'item2')}>وسایل کمپینگ</button>
+                    <button className='btn shadow-sm border m-2' style={stylebg} onClick={()=>questionsqq(items3,'item3')}>طَبیعَت</button>
+                    <button className='btn shadow-sm border m-2' style={stylebg} onClick={()=>questionsqq(itemsFood,'item4')}>صبحانه</button>
+                    <button className='btn shadow-sm border  m-2' style={stylebg} onClick={()=>questionsqq(transport1,'item4')}>حمل و نقل</button>
                   </div>
                 </div>
                 <div class="modal-footer">

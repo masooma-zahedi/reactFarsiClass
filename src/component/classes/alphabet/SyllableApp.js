@@ -35,6 +35,101 @@ const SyllableApp = () => {
 
 // Initial static words
 const initialWords = [
+  // *************** حرف د *******************************
+  { word: "باد", syllables: ["با", "د"], category: "د" },
+  { word: "داد", syllables: ["دا", "د"], category: "د" },
+  { word: "بد", syllables: ["بَ", "د"], category: "د" },
+  { word: "دادی", syllables: ["دا", "دی"], category: "د" },
+  { word: "داود", syllables: ["دا", "وُد"], category: "د" },
+  { word: "دید", syllables: ["دی", "د"], category: "د" },
+  { word: "دیو", syllables: ["دی", "و"], category: "د" },
+  { word: "دادو", syllables: ["دا", "دو"], category: "د" },
+  { word: "داب", syllables: ["دا", "ب"], category: "د" },
+  { word: "بید", syllables: ["بی", "د"], category: "د" },
+  { word: "پد", syllables: ["پَ", "د"], category: "د" },
+  { word: "دود", syllables: ["دو", "د"], category: "د" },
+  { word: "دپ", syllables: ["دِ", "پ"], category: "د" },
+  { word: "دبی", syllables: ["دَ", "بی"], category: "د" },
+  { word: "ید", syllables: ["یَ", "د"], category: "د" },
+  { word: "پدید", syllables: ["پَ", "دید"], category: "د" },
+  { word: "دیبا", syllables: ["دی", "با"], category: "د" },
+  { word: "دیده", syllables: ["دی", "ده"], category: "د" },
+  { word: "دوبا", syllables: ["دو", "با"], category: "د" },
+  { word: "دوید", syllables: ["دَ", "وید"], category: "د" },
+  // **************** حرف ذ **************************
+  { word: "اذر", syllables: ["اَ", "ذَر"], category: "ذ" },
+  { word: "ذوب", syllables: ["ذو", "ب"], category: "ذ" },
+  { word: "ذبیح", syllables: ["ذَ", "بیح"], category: "ذ" },
+  { word: "ذکر", syllables: ["ذَ", "کَر"], category: "ذ" },
+  // *************** حرف ر **************************************
+  { word: "بار", syllables: ["با", "ر"], category: "ر" },
+  { word: "بر", syllables: ["بَ", "ر"], category: "ر" },
+  { word: "برد", syllables: ["بَ", "رد"], category: "ر" },
+  { word: "دار", syllables: ["دا", "ر"], category: "ر" },
+  { word: "در", syllables: ["دَ", "ر"], category: "ر" },
+  { word: "پَر", syllables: ["پَ", "ر"], category: "ر" },
+  { word: "پرور", syllables: ["پَر", "وَر"], category: "ر" },
+  { word: "بردار", syllables: ["بر", "دار"], category: "ر" },
+  { word: "رود", syllables: ["رو", "د"], category: "ر" },
+  { word: "یار", syllables: ["یا", "ر"], category: "ر" },
+  { word: "دُر", syllables: ["دُ", "ر"], category: "ر" },
+  { word: "بیدر", syllables: ["بی", "دَر"], category: "ر" },
+  { word: "پار", syllables: ["پا", "ر"], category: "ر" },
+  { word: "ری", syllables: ["ری"], category: "ر" },
+  { word: "ریخت", syllables: ["ری", "خت"], category: "ر" },
+  // ****************************** حرف ز ****************************
+   { word: "زود", syllables: ["زو", "د"], category: "ز" },
+  { word: "زور", syllables: ["زو", "ر"], category: "ز" },
+  { word: "زر", syllables: ["زَ", "ر"], category: "ز" },
+  { word: "زار", syllables: ["زا", "ر"], category: "ز" },
+  { word: "باز", syllables: ["با", "ز"], category: "ز" },
+  { word: "بزار", syllables: ["بِ", "زار"], category: "ز" },
+  { word: "پز", syllables: ["پَ", "ز"], category: "ز" },
+  { word: "پرز", syllables: ["پِ", "رْز"], category: "ز" },
+  { word: "زبر", syllables: ["زِ", "بَر"], category: "ز" },
+  { word: "راز", syllables: ["را", "ز"], category: "ز" },
+  { word: "یزید", syllables: ["یَ", "زید"], category: "ز" },
+  { word: "زاد", syllables: ["زا", "د"], category: "ز" },
+  { word: "زاید", syllables: ["زا", "یِد"], category: "ز" },
+  { word: "زودتر", syllables: ["زود", "تَر"], category: "ز" },
+  { word: "زرد", syllables: ["زَر", "د"], category: "ز" },
+  { word: "زبون", syllables: ["زَ", "بون"], category: "ز" },
+  { word: "بازو", syllables: ["با", "زو"], category: "ز" },
+  { word: "زوزِه", syllables: ["زِو", "زه"], category: "ز" },
+  { word: "بذار", syllables: ["بِ", "زار"], category: "ز" },
+  { word: "زواره", syllables: ["زَ", "وا", "ره"], category: "ز" },
+  // *************************** حرف ژ *********************
+  { word: "ژاله", syllables: ["ژا", "له"], category: "ژ" },
+  { word: "ژاله‌ای", syllables: ["ژا", "له", "ای"], category: "ژ" },
+  { word: "ژن", syllables: ["ژَن"], category: "ژ" },
+  { word: "ژل", syllables: ["ژِل"], category: "ژ" },
+  { word: "ژیان", syllables: ["ژی", "ان"], category: "ژ" },
+  { word: "ژرف", syllables: ["ژَ", "رف"], category: "ژ" },
+  { word: "ژنده", syllables: ["ژن", "ده"], category: "ژ" },
+  { word: "ژولیده", syllables: ["ژو", "لی", "ده"], category: "ژ" },
+  { word: "ژاپن", syllables: ["ژا", "پَن"], category: "ژ" },
+  // ******************************** حرف س ***************
+  { word: "سبد", syllables: ["سَ", "بَد"], category: "س" },
+  { word: "سبز", syllables: ["سَب", "ز"], category: "س" },
+  { word: "ساده", syllables: ["سا", "ده"], category: "س" },
+  { word: "سیب", syllables: ["سی", "ب"], category: "س" },
+  { word: "سیر", syllables: ["سی", "ر"], category: "س" },
+  { word: "سوز", syllables: ["سو", "ز"], category: "س" },
+  { word: "سوت", syllables: ["سو", "ت"], category: "س" },
+  { word: "سور", syllables: ["سو", "ر"], category: "س" },
+  { word: "سوار", syllables: ["سو", "ار"], category: "س" },
+  { word: "سپید", syllables: ["سِ", "پید"], category: "س" },
+  { word: "سپر", syllables: ["سِ", "پَر"], category: "س" },
+  { word: "ساز", syllables: ["سا", "ز"], category: "س" },
+  { word: "سحر", syllables: ["سَ", "حَر"], category: "س" },
+  { word: "سر", syllables: ["سَر"], category: "س" },
+  { word: "سرد", syllables: ["سَر","د"], category: "س" },
+  { word: "سوزد", syllables: ["سو", "زد"], category: "س" },
+  { word: "سیاه", syllables: ["سی", "یاه"], category: "س" },
+  { word: "سایه", syllables: ["سا", "یه"], category: "س" },
+  { word: "سایش", syllables: ["سا", "یش"], category: "س" },
+  { word: "سبدی", syllables: ["سَ", "بَ", "دی"], category: "س" },
+  //*************** */ حرف و****************************************
   {
     word: "وَطن",
     syllables: ["وَ", "طن"],
@@ -252,7 +347,7 @@ const initialWords = [
   },
   {
     word: "قهوه",
-    syllables: ["قَ", "هو", "ه"],
+    syllables: ["قَه-وه"],
     category: "ه"
   },
   {
@@ -268,12 +363,12 @@ const initialWords = [
   },
   {
     word: "طَبعی",
-    syllables: ["طَ", "بع", "ی"],
+    syllables: ["طَب","عی"],
     category: "ع"
   },
   {
     word: "ضَعیف",
-    syllables: ["ضَ", "عی", "ف"],
+    syllables: ["ضَ", "عیف"],
     category: "ع"
   },
   {
@@ -283,7 +378,7 @@ const initialWords = [
   },
   {
     word: "عَزیز",
-    syllables: ["عَ", "زی", "ز"],
+    syllables: ["عَ", "زیز"],
     category: "ع"
   },
   {
@@ -293,7 +388,7 @@ const initialWords = [
   },
   {
     word: "عَرضه",
-    syllables: ["عَ", "رضِ", "ه"],
+    syllables: ["عَر","ضِه"],
     category: "ع"
   },
   {
@@ -303,7 +398,7 @@ const initialWords = [
   },
   {
     word: "عُضو",
-    syllables: ["عُ", "ضو"],
+    syllables: ["عَضو"],
     category: "ع"
   },
   {
@@ -323,7 +418,7 @@ const initialWords = [
   },
   {
     word: "عُذر",
-    syllables: ["عُ", "ذر"],
+    syllables: ["عُذر"],
     category: "ع"
   },
   {
@@ -333,22 +428,22 @@ const initialWords = [
   },
   {
     word: "عَطر",
-    syllables: ["عَ", "طر"],
+    syllables: ["عَطر"],
     category: "ع"
   },
   {
-    word: "عَرف",
-    syllables: ["عَ", "رف"],
+    word: "عُرف",
+    syllables: ["عُرف"],
     category: "ع"
   },
   {
     word: "عَصر",
-    syllables: ["عَ", "صر"],
+    syllables: ["عَصر"],
     category: "ع"
   },
   {
     word: "عِشق",
-    syllables: ["عِ", "شق"],
+    syllables: ["عِشق"],
     category: "ع"
   },
   {
@@ -367,23 +462,18 @@ const initialWords = [
     category: "ع"
   },
   {
-    word: "طَبعی ",
-    syllables: ["طَ", "بع", "ی"],
-    category: "ع"
-  },
-  {
     word: "مَنع ",
-    syllables: ["مَن", "ع"],
+    syllables: ["مَنع"],
     category: "ع"
   },
   {
     word: "طَبع ",
-    syllables: ["طَ", "بع"],
+    syllables: ["طَبع"],
     category: "ع"
   },
   {
     word: "وَضع ",
-    syllables: ["وَ", "ضع"],
+    syllables: ["وَضع"],
     category: "ع"
   },
   {
