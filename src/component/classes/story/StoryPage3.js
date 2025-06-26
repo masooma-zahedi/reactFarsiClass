@@ -97,6 +97,9 @@ const StoryPage = ({ title, content, vocab, qa }) => {
 };
 
 function StoryPage3({ initialStories, storageKey = null }) {
+  const [showEdit, setShowEdit] = useState(false);
+  const [changeText,setChangeText] = useState(true)
+
   const [stories, setStories] = useState(() => {
     if (storageKey) {
       const saved = localStorage.getItem(storageKey);
@@ -271,14 +274,16 @@ function StoryPage3({ initialStories, storageKey = null }) {
                 vocab={currentStory.vocab}
                 qa={currentStory.qa}
               />
-              <div className="d-flex justify-content-end gap-2 mt-3">
-                <button className="btn btn-sm btn-warning " onClick={handleEdit}>
-                  ویرایش
-                </button>
-                <button className="btn btn-sm btn-danger " onClick={handleDelete}>
-                  حذف
-                </button>
-              </div>
+              {showEdit && 
+                <div className="d-flex justify-content-end gap-2 mt-3">
+                  <button className="btn btn-sm btn-warning " onClick={handleEdit}>
+                    ویرایش
+                  </button>
+                  <button className="btn btn-sm btn-danger " onClick={handleDelete}>
+                    حذف
+                  </button>
+                </div>
+              }
             </>
           ) : (
             <p className="text-center">داستانی برای نمایش وجود ندارد.</p>
@@ -287,6 +292,9 @@ function StoryPage3({ initialStories, storageKey = null }) {
 
         {showForm && (
           <div className="col-md-3">
+            <button className='btn mb-2 mx-2 btn-sm btn-outline-secondary' onClick={()=>{setShowEdit(!showEdit)
+              setChangeText(!changeText)
+            }}>{changeText ? 'Show Edit' : 'Hide Edit'}</button>
             <form onSubmit={handleSubmit}>
               <h5 className="mb-3">{isEditing ? 'ویرایش داستان' : 'افزودن داستان جدید'}</h5>
               <div className="mb-3">
@@ -373,6 +381,7 @@ function StoryPage3({ initialStories, storageKey = null }) {
                 {isEditing ? 'ویرایش داستان' : 'افزودن داستان'}
               </button>
             </form>
+
           </div>
         )}
       </div>

@@ -1,5 +1,5 @@
 import {CardAlphaCompo,} from "./cardAlpha/CardAlphaCompo.js";
-import {alphaCrousel, alphaLongCrousel, alphaShortCrousel, kitchenDataTable, storyAlpha1, storyAlpha2,  tableAnimals, tableColor_body, tableDataNum, tableProfessions, storyAlpha3, ququly, storyAlpha4, puyaStory, gameWords, aminFireFighter, pami, smallPea,} from "./dataAlpha.js";
+import {alphaCrousel, alphaLongCrousel, alphaShortCrousel, kitchenDataTable, storyAlpha1, storyAlpha2,  tableAnimals, tableColor_body, tableDataNum, tableProfessions, storyAlpha3, ququly, storyAlpha4, puyaStory, gameWords, aminFireFighter, pami, smallPea, storiesAlpha,} from "./dataAlpha.js";
 import { AlphaStory, CarouselAlpha, CarouselAlphaExp} from "./CarouselAlphaExp.js"
 import { WordCarousel } from "./WordCarousel";
 import { SylabeWords } from "./SylabeWords";
@@ -14,9 +14,10 @@ import Reading from "./Reading.js";
 import GameWord from "./GameWord.js";
 import ObjectSentenceGame from "./ObjectSentenceGame.js";
 import MatchGame from "./MatchGame.js";
-import SyllableManager from "./SyllableApp.js";
+// import SyllableManager from "./SyllableApp.js";
 import SyllableApp from "./SyllableApp.js";
-import SentenceApp2 from "./SentenceApp2.js";
+// import SentenceApp2 from "./SentenceApp2.js";
+import StoryPage3 from "../story/StoryPage3.js";
 
 export const Alphabet = () => {
   const [showShort, setShowShort] = useState(false)
@@ -45,6 +46,7 @@ export const Alphabet = () => {
                 <Route path='/tableColor_body' element={<FlippingTable idTablePlay="colorBo1" tableData={tableColor_body.photoData} bgTable={tableColor_body.bgTable} showBack1={true} />}  />
                 <Route path='/wordTable/*' element={<WordTable />}  />
                 <Route path='/SyllableApp' element={<SyllableApp />}  />
+                <Route path='moreStoryWordsAlpha' element={<StoryPage3 initialStories={storiesAlpha} storageKey="storyPageAlph" />}  />
               </Routes>
               <WordCarousel/>
               <GameWord />
@@ -53,6 +55,7 @@ export const Alphabet = () => {
           {/* <SyllableApp/> */}
           {/* <SentenceApp2/> */}
         </div>
+
 
     </>
   )
