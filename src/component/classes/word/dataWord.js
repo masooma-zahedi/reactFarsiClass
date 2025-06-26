@@ -1,5 +1,5 @@
 // ********************************** Refrences*********************
-// جمله سازی فارسی: component : SentenceBuilder ____ data : sentenceOptions1
+// (جملات به هم ریخته (جمله سازی فارسی: component : SentenceBuilder ____ data : sentenceOptions1
 // جمله را کامل کن : component : DragDropQuize ______ data :questions1
 // بازی پیدا کردن کلمات(بازی حروف): component : LetterPuzzle ______ data : داده ها در خود صفحه وارد می شود
 // جملات و مترادف ها : component : SentenceCarousel __________ data : sentenceCarousel
@@ -1588,11 +1588,6 @@ export let sentenceOptions1 = [
     en: 'Mother tells us stories at night with a smile.',
     correctFa:["مادر","با","لبخند","شب ها","برایِمان","قصه","می گویَد.",]
   },
-  {
-    fa: [ ],
-    en: '',
-    correctFa:[]
-  },
 ];
 export let sentenceOptions2 = [
   {
@@ -1688,6 +1683,107 @@ export let sentenceOptions3 = [
     correctFa:[]
   },
 ];
+export let sentenceOptions4 = [
+  {
+    fa: ["بالا", "خورشید", "پشت", "از", "می‌آید.", "کوه"],
+    en: "The sun rises from behind the mountain.",
+    correctFa: ["خورشید", "از", "پشت", "کوه", "بالا", "می‌آید."]
+  },
+  {
+    fa: ["شب‌ها", "می‌تابد.", "در", "ماه", "آسمان"],
+    en: "The moon shines in the sky at night.",
+    correctFa: ["ماه", "شب‌ها", "در", "آسمان", "می‌تابد."]
+  },
+  {
+    fa: ["آسمان", "از", "ابر", "است.", "پُر"],
+    en: "The sky is full of clouds.",
+    correctFa: ["آسمان", "پُر", "از", "ابر", "است."]
+  },
+  {
+    fa: ["زیبا", "در", "جنگل", "درخت‌های", "هستند."],
+    en: "There are beautiful trees in the forest.",
+    correctFa: ["در", "جنگل", "درخت‌های", "زیبا", "هستند."]
+  },
+  {
+    fa: ["سایه", "درخت", "ما", "زیر", "نشستیم."],
+    en: "We sat under the tree’s shade.",
+    correctFa: ["ما", "زیر", "سایه", "درخت", "نشستیم."]
+  },
+  {
+    fa: ["ماهی", "در", "شنا", "می‌کند.", "دریاچه"],
+    en: "The fish swims in the lake.",
+    correctFa: ["ماهی", "در", "دریاچه", "شنا", "می‌کند."]
+  },
+  {
+    fa: ["آهسته", "می‌رود.", "رودخانه", "و", "بلند"],
+    en: "The river flows slowly and quietly.",
+    correctFa: ["رودخانه", "آرام", "و", "آهسته", "می‌رود."]
+  },
+  {
+    fa: ["در", "شب", "می‌درخشند.", "ستاره‌ها", "زیبا"],
+    en: "The stars shine beautifully at night.",
+    correctFa: ["ستاره‌ها", "در", "شب", "زیبا", "می‌درخشند."]
+  },
+  {
+    fa: ["بیابان", "هیچ", "در", "درختی", "نیست."],
+    en: "There is no tree in the desert.",
+    correctFa: ["در", "بیابان", "هیچ", "درختی", "نیست."]
+  }
+];
+export let sentenceOptions5 = [
+  {
+    fa: ["پویـا", "دریا", "به", "با", "رفت.", "خانواده‌اش"],
+    en: "Pouya went to the sea with his family.",
+    correctFa: ["پویـا", "با", "خانواده‌اش", "به", "دریا", "رفت."]
+  },
+  {
+    fa: ["روی", "آب", "ما", "می‌برد.","را", "کِشتی"],
+    en: "The ship carries us on the water.",
+    correctFa: ["کِشتی", "ما", "را", "روی", "آب", "می‌برد."]
+  },
+  {
+    fa: ["در", "می‌پریدند.", "آب", "ماهی‌ها"],
+    en: "The fish were jumping in the water.",
+    correctFa: ["ماهی‌ها", "در", "آب", "می‌پریدند."]
+  },
+  {
+    fa: ["کِشتی", "کرد.", "حرکت", "آرام‌آرام"],
+    en: "The ship slowly started moving.",
+    correctFa: ["کِشتی", "آرام‌آرام", "حرکت", "کرد."]
+  },
+  {
+    fa: [ "خود","بابا", "ماهی‌ها", "خانه‌ی","گفت:", "در", "هستند."],
+    en: "Dad said: The fish are in their home.",
+    correctFa: ["بابا", "گفت:", "ماهی‌ها", "در", "خانه‌ی", "خود", "هستند."]
+  },
+  {
+    fa: ["پر", "دریایی", "مرغ", "یک", "زد."],
+    en: "A seagull flew away.",
+    correctFa: ["یک", "مرغ", "دریایی", "پر", "زد."]
+  },
+  {
+    fa: ["رسید.", "به", "جزیره", "کِشتی", "یک"],
+    en: "The ship arrived at an island.",
+    correctFa: ["کِشتی", "به", "یک", "جزیره", "رسید."]
+  },
+  {
+    fa: ["در", "درخت", "نارگیل", "بود.", "جزیره"],
+    en: "There was a coconut tree on the island.",
+    correctFa: ["در", "جزیره", "درخت", "نارگیل", "بود."]
+  },
+  {
+    fa: ["نارگیل", "پویـا", "می‌تونم", "بخورم؟", "گفت:"],
+    en: "Pouya said: Can I eat the coconut?",
+    correctFa: ["پویـا", "گفت:", "می‌تونم", "نارگیل", "بخورم؟"]
+  },
+  {
+    fa: ["کِشتی", "خانه", "به", "آرام‌آرام", "برگشت."],
+    en: "The ship slowly returned home.",
+    correctFa: ["کِشتی", "آرام‌آرام", "به", "خانه", "برگشت."]
+  }
+];
+
+
 
 // ************************* End Mix word for sentences (کلمات بهم ریخته برای جمله سازی) ***********
 // ************************* Start جمله را کامل کن* ****************************************

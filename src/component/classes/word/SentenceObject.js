@@ -125,7 +125,7 @@ const lessonGroups = [
   },
 ];
 
-const SententceObject = () => {
+const SentenceObject = () => {
   const [activeGroupIndex, setActiveGroupIndex] = useState(0);
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
   const [selectedWord, setSelectedWord] = useState(null);
@@ -235,4 +235,4 @@ const SententceObject = () => {
   );
 };
 
-export default SententceObject;
+export default SentenceObject;
