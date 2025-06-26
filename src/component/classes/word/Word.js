@@ -8,7 +8,7 @@ import { SidebarWord } from './SidebarWord.js';
 import WordToSentence from './wordToSentence.js';
 import LetterPuzzle from './LetterPuzzle.js';
 import StoryPage3 from '../story/StoryPage3.js';
-import SentenceTest from './SententceObject.js';
+import SentenceObject from './SentenceObject.js';
 
 export const Word = () => {
   const stories2 = {
@@ -46,12 +46,10 @@ export const Word = () => {
               <Route path='/kidsCamping1' element={<TheStory srcStory={kidsCamping}/>}  />
               <Route path='/wordSentence' element={<WordToSentence />}  />
               <Route path='/letterPuzzle' element={<LetterPuzzle />}  />
+              <Route path='/sentenceObject' element={<SentenceObject />}  />
               <Route path='moreStoryWords' element={<StoryPage3 initialStories={stories2} storageKey="page2Stories" />}  />
 
             </Routes>
-          </div>
-          <div className="container">
-            <SentenceTest/>
           </div>
         </div>
               

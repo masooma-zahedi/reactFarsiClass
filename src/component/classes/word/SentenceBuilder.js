@@ -1,6 +1,6 @@
 import React, { use, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { sentenceOptions1, sentenceOptions2, sentenceOptions3, sentenceOptions4} from './dataWord'
+import { sentenceOptions1, sentenceOptions2, sentenceOptions3, sentenceOptions4, sentenceOptions5} from './dataWord'
 
 
 
@@ -112,10 +112,11 @@ const SentenceBuilder = () => {
               </div>
               <div className="modal-body">
                 <div className='d-flex flex-wrap'>
-                  <button className='btn  shadow-sm border  mx-2' style={{backgroundColor: themeColor.background,}} onClick={()=>senOptions(sentenceOptions1,'sentenceOptions1')}>مرحله 1</button>
-                  <button className='btn shadow-sm border  mx-2' style={{backgroundColor: themeColor.background,}} onClick={()=>senOptions(sentenceOptions2,'sentenceOptions2')}>مرحله 2</button>
-                  <button className='btn shadow-sm border mx-2' style={{backgroundColor: themeColor.background,}} onClick={()=>senOptions(sentenceOptions3,'sentenceOptions3')}>مرحله 3</button>
-                  <button className='btn shadow-sm border mx-2' style={{backgroundColor: themeColor.background,}} onClick={()=>senOptions(sentenceOptions4,'sentenceOptions4')}>طبیعت</button>
+                  <button className='btn  shadow-sm border  m-2' style={{backgroundColor: themeColor.background,}} onClick={()=>senOptions(sentenceOptions1,'sentenceOptions1')}>مرحله 1</button>
+                  {/* <button className='btn shadow-sm border  m-2' style={{backgroundColor: themeColor.background,}} onClick={()=>senOptions(sentenceOptions2,'sentenceOptions2')}>مرحله 2</button>
+                  <button className='btn shadow-sm border m-2' style={{backgroundColor: themeColor.background,}} onClick={()=>senOptions(sentenceOptions3,'sentenceOptions3')}>مرحله 3</button> */}
+                  <button className='btn shadow-sm border m-2' style={{backgroundColor: themeColor.background,}} onClick={()=>senOptions(sentenceOptions4,'sentenceOptions4')}>طبیعت</button>
+                  <button className='btn shadow-sm border m-2' style={{backgroundColor: themeColor.background,}} onClick={()=>senOptions(sentenceOptions5,'sentenceOptions5')}>سفر کشتی</button>
                 </div>
               </div>
               <div class="modal-footer">
