@@ -20,7 +20,7 @@ const StoryPage = ({ title, content, vocab, qa }) => {
         item.type === 'text' ? (
           <p
             key={idx}
-            style={{ fontSize: '1.7rem', lineHeight: '1.8', fontFamily: 'sans-serif,Vazir, Tahoma', textAlign: '' }}
+            style={{ fontSize: '1.8rem', lineHeight: '1.8', fontFamily: 'Tahoma,sans-serif,Vazir, ', textAlign: '' }}
           >
             {item.content}
           </p>
@@ -30,7 +30,7 @@ const StoryPage = ({ title, content, vocab, qa }) => {
               src={item.content}
               alt={`تصویر ${idx}`}
               className="img-fluid rounded"
-              style={{ maxHeight: '300px' }}
+              style={{ maxHeight: '400px' }}
             />
           </div>
         )
@@ -40,17 +40,17 @@ const StoryPage = ({ title, content, vocab, qa }) => {
         <div className="mt-4">
           <h5 className='m-4'>واژگان:</h5>
           <div className='row'>
-            <div className='col col-lg-8' >
+            <div className='col col-lg-7' >
               <div className=" d-flex flex-wrap gap-2 rounded p-3 pb-5" style={{backgroundColor: 'rgba(235, 183, 217, 0.17)'}}>
                 {vocab.map((v, i) => (
-                  <button key={i} className="btn btn-outline-dark border btn-sm bg-info px-3 " style={{fontWeight:'bold'}} onClick={() => setSelectedWord(v)}>
+                  <button key={i} className="btn btn-outline-dark border btn-sm bg-info px-3 " style={{fontWeight:'bold',fontSize:'1.4rem'}} onClick={() => setSelectedWord(v)}>
                     {v.word}
                   </button>
                 ))}
               </div>
             </div>
             {selectedWord && (
-              <div className="col col-lg-4 alert alert-info text-center h2 mt-3" dir="rtl">
+              <div className="col col-lg-5 alert alert-info text-center h2 mt-3" dir="rtl">
                 {selectedWord.meaning}
               </div>
             )}      
@@ -272,10 +272,10 @@ function StoryPage3({ initialStories, storageKey = null }) {
                 qa={currentStory.qa}
               />
               <div className="d-flex justify-content-end gap-2 mt-3">
-                <button className="btn btn-sm btn-warning d-none" onClick={handleEdit}>
+                <button className="btn btn-sm btn-warning " onClick={handleEdit}>
                   ویرایش
                 </button>
-                <button className="btn btn-sm btn-danger d-none" onClick={handleDelete}>
+                <button className="btn btn-sm btn-danger " onClick={handleDelete}>
                   حذف
                 </button>
               </div>
@@ -324,7 +324,7 @@ function StoryPage3({ initialStories, storageKey = null }) {
               <hr />
               <h6 className="mb-2">واژگان:</h6>
               {newVocab.map((v, idx) => (
-                <div key={idx} className="d-flex gap-2 mb-2">
+                <div key={idx} className="d-flex gap-2 mb-2" >
                   <input
                     type="text"
                     className="form-control"
