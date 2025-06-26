@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import { SentenceCarousel } from './SentenceCarousel'
-import { sentenceCarousel, testPicture,testPicture2, testGramer, lazyDonky, laklak, FrogM, blindMouse, elephantT, sleepBear, twoSparrow, kidsCamping } from './dataWord';
+import { sentenceCarousel, testPicture,testPicture2, testGramer, lazyDonky, laklak, FrogM, blindMouse, elephantT, sleepBear, twoSparrow, kidsCamping,stories2 } from './dataWord';
 import { lionBear, realFriends } from './dataWord';
 import { SentencePicture } from './SentencePicture'
 import { TheStory } from '../story/TheStory';
@@ -11,14 +11,6 @@ import StoryPage3 from '../story/StoryPage3.js';
 import SentenceObject from './SentenceObject.js';
 
 export const Word = () => {
-  const stories2 = {
-  1: {
-    title: 'راز شب در جنگل',
-    content: [{ type: 'text', content: 'چند نوجوان به جنگل رفتند...' }],
-    vocab: [{ word: 'جنگل', meaning: 'forest' }],
-    qa: [{ question: 'آن‌ها کجا رفتند؟', answer: 'جنگل' }]
-  }
-};
   return (
     <>
         {/* <div className = "container mt-4">

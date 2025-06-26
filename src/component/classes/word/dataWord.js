@@ -1999,6 +1999,15 @@ export let questions3 = [
 
 // ************************* End جمله را کامل کن* ****************************************
 
+// ****************** For StoryPage3***********
+ export const stories2 = {
+  1: {
+    title: 'راز شب در جنگل',
+    content: [{ type: 'text', content: 'چند نوجوان به جنگل رفتند...' }],
+    vocab: [{ word: 'جنگل', meaning: 'forest' }],
+    qa: [{ question: 'آن‌ها کجا رفتند؟', answer: 'جنگل' }]
+  }
+};
 
 
 

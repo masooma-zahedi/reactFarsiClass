@@ -302,6 +302,7 @@ export let contentListAlpha = {
             {id:nanoid(4),title:"اَمین آتَش نِشان",targetHref:"CarouselAlphaExp/alphaStory/aminFireFighter1",idLetter:"amin1"},
             {id:nanoid(4),title:"پامی با هزار پا",targetHref:"CarouselAlphaExp/alphaStory/worriedPami1",idLetter:"pami1"},
             {id:nanoid(4),title:"نُخود کوچَک",targetHref:"CarouselAlphaExp/alphaStory/smallPea1",idLetter:"pea1"},
+            {id:nanoid(4),title:"داستان های بیشتر",targetHref:"moreStoryWordsAlpha",idLetter:"story"},
             ],
         },
 }
@@ -3831,6 +3832,18 @@ export let gameWords = {
     iframe1:<iframe style={{maxWidth:'100%'}} src='https://wordwall.net/embed/9585e62f49974baf8997bab3e0c6a277?themeId=46&templateId=30&fontStackId=2' width='100%' height='100%' frameborder='0' allowfullscreen></iframe>,
     iframe2:<iframe style={{maxWidth:"100%"}} src="https://wordwall.net/embed/7b1b9050f37f40a7b8beab4b54c1ffad?themeId=51&templateId=30&fontStackId=2" width="100%" height="100%" frameborder="10" allowfullscreen></iframe>
     }
+
+
+// ****************** For StoryPage3*****************
+ export const storiesAlpha = {
+  1: {
+    title: 'راز شب در جنگل',
+    content: [{ type: 'text', content: 'چند نوجوان به جنگل رفتند...' }],
+    vocab: [{ word: 'جنگل', meaning: 'forest' }],
+    qa: [{ question: 'آن‌ها کجا رفتند؟', answer: 'جنگل' }]
+  }
+};
+// ******************************
 
 
 
