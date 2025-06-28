@@ -46,7 +46,7 @@ export const Alphabet = () => {
                 <Route path='/tableColor_body' element={<FlippingTable idTablePlay="colorBo1" tableData={tableColor_body.photoData} bgTable={tableColor_body.bgTable} showBack1={true} />}  />
                 <Route path='/wordTable/*' element={<WordTable />}  />
                 <Route path='/SyllableApp' element={<SyllableApp />}  />
-                <Route path='moreStoryWordsAlpha' element={<StoryPage3 initialStories={storiesAlpha} storageKey="storyPageAlph" />}  />
+                <Route path='moreStoryWordsAlpha' element={<StoryPage3 groupKey="alefba" />}  />
               </Routes>
               <WordCarousel/>
               <GameWord />

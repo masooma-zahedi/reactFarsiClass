@@ -1,12 +1,8 @@
-// نسخه اصلاح‌شده StoryPage3.js با پشتیبانی از Firebase به‌جای localStorage
-
 import React, { useState, useEffect } from 'react';
 import { database, ref, set, onValue, remove } from '.././firebase';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { database, ref, set } from "../firebase";
 
-
-// بخش نمایش داستان به همراه اکوردین سوالات و جواب‌ها
+// کامپوننت نمایش محتوای داستان
 const StoryPage = ({ title, content, vocab, qa }) => {
   const [selectedWord, setSelectedWord] = useState(null);
   const [accordionOpen, setAccordionOpen] = useState(null);
@@ -16,13 +12,11 @@ const StoryPage = ({ title, content, vocab, qa }) => {
   };
 
   return (
-    <div className="p-5 m-3 border rounded shadow-sm bg-light " dir="rtl">
-      <h2 className="mb-4 text-center h2" style={{ fontFamily: 'Tahoma, sans-serif' }}>{title}</h2>
+    <div className="p-5 m-3 border rounded shadow-sm bg-light" dir="rtl">
+      <h2 className="mb-4 text-center h2" style={{ fontFamily: 'Tahoma' }}>{title}</h2>
       {content.map((item, idx) =>
         item.type === 'text' ? (
-          <p key={idx} style={{ fontSize: '1.8rem', lineHeight: '1.8', fontFamily: 'Tahoma,sans-serif,Vazir' }}>
-            {item.content}
-          </p>
+          <p key={idx} style={{ fontSize: '1.8rem', lineHeight: '1.8' }}>{item.content}</p>
         ) : (
           <div key={idx} className="text-center my-4">
             <img src={item.content} alt={`تصویر ${idx}`} className="img-fluid rounded" style={{ maxHeight: '400px' }} />
@@ -30,21 +24,19 @@ const StoryPage = ({ title, content, vocab, qa }) => {
         )
       )}
 
-      {vocab && vocab.length > 0 && (
+      {vocab?.length > 0 && (
         <div className="mt-4">
           <h5 className='m-4'>واژگان:</h5>
           <div className='row'>
-            <div className='col col-lg-7'>
-              <div className="d-flex flex-wrap gap-2 rounded p-3 pb-5" style={{ backgroundColor: 'rgba(235, 183, 217, 0.17)' }}>
+            <div className='col-lg-7'>
+              <div className="d-flex flex-wrap gap-2 p-3" style={{ backgroundColor: 'rgba(235, 183, 217, 0.17)' }}>
                 {vocab.map((v, i) => (
-                  <button key={i} className="btn btn-outline-dark border btn-sm bg-info px-3" style={{ fontWeight: 'bold', fontSize: '1.4rem' }} onClick={() => setSelectedWord(v)}>
-                    {v.word}
-                  </button>
+                  <button key={i} className="btn btn-outline-dark btn-sm bg-info px-3" onClick={() => setSelectedWord(v)}>{v.word}</button>
                 ))}
               </div>
             </div>
             {selectedWord && (
-              <div className="col col-lg-5 alert alert-info text-center h2 mt-3" dir="rtl">
+              <div className="col-lg-5 alert alert-info text-center h2 mt-3">
                 {selectedWord.meaning}
               </div>
             )}
@@ -52,19 +44,19 @@ const StoryPage = ({ title, content, vocab, qa }) => {
         </div>
       )}
 
-      {qa && qa.length > 0 && (
+      {qa?.length > 0 && (
         <div className="mt-5">
-          <h5 className="mb-3 text-success h5">سوالات درک مطلب :</h5>
+          <h5 className="mb-3 text-success">سوالات درک مطلب:</h5>
           <div className="accordion border border-warning rounded shadow" id="qaAccordion">
             {qa.map((item, idx) => (
               <div className="accordion-item" key={idx}>
                 <h2 className="accordion-header" id={`heading${idx}`}>
-                  <button className={`h1 accordion-button ${accordionOpen === idx ? '' : 'collapsed'}`} type="button" onClick={() => toggleAccordion(idx)} aria-expanded={accordionOpen === idx} aria-controls={`collapse${idx}`}>
+                  <button className={`accordion-button ${accordionOpen === idx ? '' : 'collapsed'}`} type="button" onClick={() => toggleAccordion(idx)}>
                     {item.question}
                   </button>
                 </h2>
-                <div id={`collapse${idx}`} style={{ color: 'rgb(136, 15, 15)' }} className={`h3 accordion-collapse collapse ${accordionOpen === idx ? 'show' : ''}`} aria-labelledby={`heading${idx}`} data-bs-parent="#qaAccordion">
-                  <div className="accordion-body" style={{ fontSize: '1.1rem' }}>{item.answer}</div>
+                <div className={`accordion-collapse collapse ${accordionOpen === idx ? 'show' : ''}`}>
+                  <div className="accordion-body" style={{ fontSize: '1.1rem', color: 'rgb(136, 15, 15)' }}>{item.answer}</div>
                 </div>
               </div>
             ))}
@@ -75,7 +67,8 @@ const StoryPage = ({ title, content, vocab, qa }) => {
   );
 };
 
-function StoryPage3() {
+// کامپوننت اصلی
+function StoryPage3({ groupKey = 'dastan' }) {
   const [stories, setStories] = useState({});
   const [selectedStoryId, setSelectedStoryId] = useState(null);
   const [newTitle, setNewTitle] = useState('');
@@ -88,15 +81,18 @@ function StoryPage3() {
   const [showEdit, setShowEdit] = useState(false);
 
   useEffect(() => {
-    const storiesRef = ref(database, 'stories');
+    const storiesRef = ref(database, `stories/${groupKey}`);
     onValue(storiesRef, (snapshot) => {
       const data = snapshot.val();
       if (data) {
         setStories(data);
         setSelectedStoryId(Number(Object.keys(data)[0]));
+      } else {
+        setStories({});
+        setSelectedStoryId(null);
       }
     });
-  }, []);
+  }, [groupKey]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -107,13 +103,9 @@ function StoryPage3() {
     if (!title || cleanedContent.length === 0) return alert('عنوان و محتوا الزامی است.');
 
     const newId = isEditing ? selectedStoryId : Date.now();
-    const updatedStory = {
-      title,
-      content: cleanedContent,
-      vocab: cleanedVocab,
-      qa: cleanedQA,
-    };
-    set(ref(database, `stories/${newId}`), updatedStory);
+    const updatedStory = { title, content: cleanedContent, vocab: cleanedVocab, qa: cleanedQA };
+
+    set(ref(database, `stories/${groupKey}/${newId}`), updatedStory);
     setNewTitle('');
     setNewItems([{ type: 'text', content: '' }]);
     setNewVocab([{ word: '', meaning: '' }]);
@@ -135,7 +127,7 @@ function StoryPage3() {
 
   const handleDelete = () => {
     if (!window.confirm('آیا مطمئن هستید که می‌خواهید این داستان را حذف کنید؟')) return;
-    remove(ref(database, `stories/${selectedStoryId}`));
+    remove(ref(database, `stories/${groupKey}/${selectedStoryId}`));
   };
 
   const handleAddItem = (type) => setNewItems([...newItems, { type, content: '' }]);
@@ -158,21 +150,6 @@ function StoryPage3() {
   const addQARow = () => setNewQA([...newQA, { question: '', answer: '' }]);
 
   const currentStory = stories[selectedStoryId];
-  useEffect(() => {
-  const local = localStorage.getItem('stories');
-  if (local) {
-    try {
-      const parsed = JSON.parse(local);
-      if (parsed && Object.keys(parsed).length > 0) {
-        set(ref(database, 'stories'), parsed);
-        console.log('داده‌ها از localStorage به Firebase منتقل شدند.');
-      }
-    } catch (e) {
-      console.error('خطا در خواندن localStorage', e);
-    }
-  }
-}, []);
-
 
   return (
     <div className="container mt-4">
@@ -225,7 +202,7 @@ function StoryPage3() {
               {newItems.map((item, idx) => (
                 <div className="mb-2" key={idx}>
                   <label className="form-label">{item.type === 'text' ? 'پاراگراف' : 'آدرس تصویر'} #{idx + 1}</label>
-                  <input type="text" className="form-control" placeholder={item.type === 'text' ? 'متن پاراگراف' : 'https://...'} value={item.content} onChange={(e) => handleItemChange(idx, e.target.value)} />
+                  <input type="text" className="form-control" value={item.content} onChange={(e) => handleItemChange(idx, e.target.value)} />
                 </div>
               ))}
               <div className="d-flex gap-2 my-3">

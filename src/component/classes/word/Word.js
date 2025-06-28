@@ -40,7 +40,7 @@ export const Word = () => {
               <Route path='/wordSentence' element={<WordToSentence />}  />
               <Route path='/letterPuzzle' element={<LetterPuzzle />}  />
               <Route path='/sentenceObject' element={<SentenceObject />}  />
-              <Route path='moreStoryWords' element={<StoryPage3 initialStories={stories2} storageKey="page2Stories" />}  />
+              <Route path='moreStoryWords' element={<StoryPage3 groupKey="kalemat" />}  />
 
             </Routes>
           </div>
