@@ -36,7 +36,7 @@ export const Story = () => {
               <Route path='/flyS' element={<TheStory srcStory={flyStory}/>}  />
               <Route path='/peniS' element={<TheStory srcStory={peniSilin}/>}  />
               <Route path='/janatanM' element={<TheStory srcStory={janatan}/>}  />
-              <Route path='moreStory' element={<StoryPage3 initialStories={stories1} storageKey="page1Stories" />}  />
+              <Route path='moreStory' element={<StoryPage3 groupKey="dastan" />}  />
             </Routes>
             
             
