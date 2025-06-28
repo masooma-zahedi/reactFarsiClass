@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { database, ref, set } from "../firebase";
+
 
 // برای ویرایش و حذف داستان باید کلمه ویرایش یا حذف را سرچ بعد در تگ مربوطه در کلس نیم و دیسپلی نان را بردارید(d-none)
 
@@ -223,6 +225,21 @@ function StoryPage3({ initialStories, storageKey = null }) {
   };
 
   const currentStory = stories[selectedStoryId];
+  useEffect(() => {
+  const local = localStorage.getItem('stories');
+  if (local) {
+    try {
+      const parsed = JSON.parse(local);
+      if (parsed && Object.keys(parsed).length > 0) {
+        set(ref(database, 'stories'), parsed);
+        console.log('داده‌ها از localStorage به Firebase منتقل شدند.');
+      }
+    } catch (e) {
+      console.error('خطا در خواندن localStorage', e);
+    }
+  }
+}, []);
+
 
   return (
     <div className="container mt-4">
