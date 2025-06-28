@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import { SentenceCarousel } from './SentenceCarousel'
-import { sentenceCarousel, testPicture,testPicture2, testGramer, lazyDonky, laklak, FrogM, blindMouse, elephantT, sleepBear, twoSparrow, kidsCamping,stories2 } from './dataWord';
+import { sentenceCarousel, testPicture,testPicture2, testGramer, lazyDonky, laklak, FrogM, blindMouse, elephantT, sleepBear, twoSparrow, kidsCamping,stories2, catMouse1 } from './dataWord';
 import { lionBear, realFriends } from './dataWord';
 import { SentencePicture } from './SentencePicture'
 import { TheStory } from '../story/TheStory';
@@ -36,6 +36,7 @@ export const Word = () => {
               <Route path='/sleepBear1' element={<TheStory srcStory={sleepBear}/>}  />
               <Route path='/twoSparrow1' element={<TheStory srcStory={twoSparrow}/>}  />
               <Route path='/kidsCamping1' element={<TheStory srcStory={kidsCamping}/>}  />
+              <Route path='/catMouse1' element={<TheStory srcStory={catMouse1}/>}  />
               <Route path='/wordSentence' element={<WordToSentence />}  />
               <Route path='/letterPuzzle' element={<LetterPuzzle />}  />
               <Route path='/sentenceObject' element={<SentenceObject />}  />

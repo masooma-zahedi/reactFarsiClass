@@ -20,6 +20,7 @@ export let contentListWord = {
         {title:"خرس خواب آلود",targetHref :"sleepBear1"},
         {title:"دو گُنجَشک",targetHref :"twoSparrow1"},
         {title:"راز شب کمپینگ",targetHref :"kidsCamping1"},
+        {title:"گربه و موش ها",targetHref :"catMouse1"},
         {title:"داستان های بیشتر...",targetHref :"moreStoryWords"},
         {title:"",targetHref :""},
         ],
@@ -1535,6 +1536,27 @@ export let kidsCamping ={
         {
           title: "چه حیوانی از پشت بوته‌ها بیرون آمد؟",
           content: "یک راکون کوچک با چشم‌های درخشان. ",
+        },
+      ]
+
+    
+}
+export let catMouse1 ={
+    wordId:"catMouse",
+    targetHref:"catMouse1",
+    titleStory:"  داستان گربه و موش ها",
+    imageStory:["/images/assetWord/storyWord/cat-mouse-1.png"],
+    wordPart: [
+        {
+            wordMean: "",
+            engMean: ""
+        },
+    ],
+
+    accordionItems : [
+        {
+          title: "",
+          content: " ",
         },
       ]
 
