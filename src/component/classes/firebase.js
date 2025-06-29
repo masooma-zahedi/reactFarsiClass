@@ -3,6 +3,8 @@
 // Import پایه‌ای از SDK
 import { initializeApp } from "firebase/app";
 import { getDatabase, ref, set, onValue, remove } from "firebase/database";
+import { getStorage, ref as storageRef, uploadBytes, getDownloadURL } from "firebase/storage";
+
 
 // تنظیمات Firebase پروژه‌ات (این مقادیر از خودت هستن)
 const firebaseConfig = {
@@ -21,6 +23,7 @@ const app = initializeApp(firebaseConfig);
 
 // گرفتن Realtime Database
 const database = getDatabase(app);
+const storage = getStorage(app);
 
 // خروجی توابع مورد نیاز
-export { database, ref, set, onValue, remove };
+export { database, ref, set, onValue, remove, storage, storageRef, uploadBytes, getDownloadURL }; 
