@@ -249,13 +249,14 @@ export let contentListAlpha = {
         readTogether :{
             idModal:"readTo1",
             infoWords:[
-            {id:nanoid(4),title:"با هم بخوانیم-1",targetHref:"reading/read-1",idLetter:"readtogether-1"},
+            {id:nanoid(4),title:"با هم بخوانیم-1(س)",targetHref:"reading/read-1",idLetter:"readtogether-1"},
             {id:nanoid(4),title:"با هم بخوانیم-2",targetHref:"reading/read-2",idLetter:"readtogether-2"},
             {id:nanoid(4),title:"با هم بخوانیم-3",targetHref:"reading/read-3",idLetter:"readtogether-3"},
-            {id:nanoid(4),title:"با هم بخوانیم-4",targetHref:"reading/read-4",idLetter:"readtogether-4"},
-            {id:nanoid(4),title:"با هم بخوانیم-5",targetHref:"reading/read-5",idLetter:"readtogether-5"},
-            {id:nanoid(4),title:"با هم بخوانیم-6",targetHref:"reading/read-6",idLetter:"readtogether-6"},
-            {id:nanoid(4),title:"با هم بخوانیم-7",targetHref:"reading/read-7",idLetter:"readtogether-7"},
+            {id:nanoid(4),title:"با هم بخوانیم-4(ش)",targetHref:"reading/read-4",idLetter:"readtogether-4"},
+            {id:nanoid(4),title:"با هم بخوانیم-5(ع)",targetHref:"reading/read-5",idLetter:"readtogether-5"},
+            {id:nanoid(4),title:"با هم بخوانیم-6(ق)",targetHref:"reading/read-6",idLetter:"readtogether-6"},
+            {id:nanoid(4),title:"با هم بخوانیم-7(ن)",targetHref:"reading/read-7",idLetter:"readtogether-7"},
+            {id:nanoid(4),title:"با هم بخوانیم-8 (ذ)",targetHref:"reading/read-8",idLetter:"readtogether-8"},
             ],
         },
         brokenWords :{
@@ -1068,6 +1069,64 @@ export let sylabelWord4={
 
     ]
 }
+// ############################# تا حرف ذ #################
+export let sylabelWordOnlyTaughtLetters = {
+  buttonTargetId: "taughtLettersSet1",
+  titleHead: "با هم بخوانیم (تا حرف ذ)",
+  titleColor: "rgb(19, 108, 107)",
+  sylabelBg: "rgb(212, 137, 235)",
+  sentenceRow: [
+    [
+      { word: "پِدَر", syla: "پِ + دَر" },
+      { word: "باد", syla: "با + د" },
+      { word: "را", syla: "را" },
+      { word: "دید.", syla: "دی + د" }
+    ],
+    [
+      { word: "جوجِه", syla: "جو + جه" },
+      { word: "چای", syla: "چا + ی" },
+      { word: "را", syla: "را" },
+      { word: "خورد.", syla: "خور + د" }
+    ],
+    [
+      { word: "بوتِه", syla: "بو + ته" },
+      { word: "دَر", syla: "دَر" },
+      { word: "باد", syla: "با + د" },
+      { word: "چَرخید.", syla: "چر + خی + د" }
+    ],
+    [
+      { word: "تیپ", syla: "تی + پِ" },
+      { word: "بَچِه", syla: "بَ + چه" },
+      { word: "جالِب", syla: "جا + لِب" },
+      { word: "بود.", syla: "بو + د" }
+    ],
+    [
+      { word: "پُتک", syla: "پُت + کِ" },
+      { word: "دَر", syla: "دَر" },
+      { word: "دَست", syla: "دَس + ت" },
+      { word: "پِدَر", syla: "پِ + دَر" },
+      { word: "بود.", syla: "بو + د" }
+    ],
+    [
+      { word: "اَبر", syla: "اَ + بر" },
+      { word: "چوبی", syla: "چو + بی" },
+      { word: "دیدَم!", syla: "دی + دَ + م" }
+    ],
+    [
+      { word: "بی‌تاب", syla: "بی + تاب" },
+      { word: "بودَم.", syla: "بو + دَ + م" }
+    ],
+    [
+      { word: "باد", syla: "با + د" },
+      { word: "آمَد", syla: "آ + مَـد" },
+      { word: "َو", syla: "وَ" },
+      { word: "چادُر", syla: "چا + دُر" },
+      { word: "را", syla: "را" },
+      { word: "بُرد.", syla: "بُر + د" }
+    ]
+  ]
+};
+
 // ##########-->برای حرف  (از اول تا حرف ع)  ########
 export let sylabelWord5={
     buttonTargetId:"testSylabe5",
