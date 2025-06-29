@@ -65,6 +65,19 @@ const transport1 = [
   { id: 9, word: 'کامیون', image: 'https://img.freepik.com/premium-vector/cartoon-truck-trailer-isolated-vehicle-vector-illustration_939711-4064.jpg?semt=ais_hybrid&w=740' },
   { id: 10, word: 'موتور', image: 'https://t3.ftcdn.net/jpg/06/08/99/08/360_F_608990870_yAJaCtKKmmhU7jiSuAS8ZxsdL5VlA9ZM.jpg' }
 ];
+const diningTableItems = [
+  { id: 1, word: 'بشقاب', image: 'https://cdn.pixabay.com/photo/2012/04/13/01/39/plate-31732_640.png' },
+  { id: 2, word: 'قاشق', image: 'https://img.freepik.com/premium-vector/cartoon-spoon-vector-illustration-cooking-designs_1138840-4464.jpg' },
+  { id: 3, word: 'چنگال', image: 'https://t4.ftcdn.net/jpg/10/43/71/15/360_F_1043711536_EeQ5oQvMidA4xEv5ZLnt4zAYsZ8N19pt.jpg' },
+  { id: 4, word: 'کارد', image: 'https://img.freepik.com/free-vector/floating-knife-cartoon-vector-icon-illustration-food-object-icon-concept-isolated-premium-vector_138676-5784.jpg' },
+  { id: 5, word: 'لیوان', image: 'https://img.freepik.com/premium-vector/hand-drawn-glass-cartoon-vector-illustration-clipart-white-background_191095-41097.jpg' },
+  { id: 6, word: ' دستمال کاغذی', image: 'https://static.vecteezy.com/system/resources/previews/014/504/574/non_2x/box-with-napkins-icon-cartoon-style-vector.jpg' },
+  { id: 9, word: 'پارچ آب', image:'https://img.freepik.com/premium-photo/cartoon-pitcher-with-blue-handle-white-background-generative-ai_1034058-50154.jpg'},
+  { id: 11, word: 'کاسه', image: 'https://img.freepik.com/free-vector/blue-bowl-from-goldilocks-story_1308-168955.jpg?semt=ais_items_boosted&w=740' },
+  { id: 13, word: 'نمکدان', image: 'https://static.vecteezy.com/system/resources/previews/027/565/570/non_2x/salt-shaker-bottle-seasoning-container-cartoon-vector.jpg' },
+  { id: 15, word: 'سینی', image: 'https://www.shutterstock.com/image-vector/cartoon-food-tray-icon-vector-260nw-2588075195.jpg' }
+];
+
 
 
 
@@ -211,7 +224,8 @@ const MatchGame = () => {
                     <button className='btn shadow-sm border  m-2' style={stylebg} onClick={()=>questionsqq(items2,'item2')}>وسایل کمپینگ</button>
                     <button className='btn shadow-sm border m-2' style={stylebg} onClick={()=>questionsqq(items3,'item3')}>طَبیعَت</button>
                     <button className='btn shadow-sm border m-2' style={stylebg} onClick={()=>questionsqq(itemsFood,'item4')}>صبحانه</button>
-                    <button className='btn shadow-sm border  m-2' style={stylebg} onClick={()=>questionsqq(transport1,'item4')}>حمل و نقل</button>
+                    <button className='btn shadow-sm border  m-2' style={stylebg} onClick={()=>questionsqq(transport1,'item5')}>حمل و نقل</button>
+                    <button className='btn shadow-sm border  m-2' style={stylebg} onClick={()=>questionsqq(diningTableItems,'item6')}>میز غذاخوری</button>
                   </div>
                 </div>
                 <div class="modal-footer">

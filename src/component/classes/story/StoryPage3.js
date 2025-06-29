@@ -29,9 +29,9 @@ const StoryPage = ({ title, content, vocab, qa }) => {
           <h5 className='m-4'>واژگان:</h5>
           <div className='row'>
             <div className='col-lg-7'>
-              <div className="d-flex flex-wrap gap-2 p-3" style={{ backgroundColor: 'rgba(235, 183, 217, 0.17)' }}>
+              <div className="d-flex flex-wrap gap-2  p-3" style={{ backgroundColor: 'rgba(235, 183, 217, 0.17)' }}>
                 {vocab.map((v, i) => (
-                  <button key={i} className="btn btn-outline-dark btn-sm bg-info px-3" onClick={() => setSelectedWord(v)}>{v.word}</button>
+                  <button key={i} className="btn btn-outline-dark fs-4  btn-sm bg-info px-3 " onClick={() => setSelectedWord(v)}>{v.word}</button>
                 ))}
               </div>
             </div>

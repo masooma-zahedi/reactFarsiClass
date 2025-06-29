@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { sylabelWord1, sylabelWord2, sylabelWord3, sylabelWord4, sylabelWord5, sylabelWord6, sylabelWord7 } from './dataAlpha.js';
+import { sylabelWord1, sylabelWord2, sylabelWord3, sylabelWord4, sylabelWord5, sylabelWord6, sylabelWord7, sylabelWordOnlyTaughtLetters } from './dataAlpha.js';
 import { SylabeWords } from './SylabeWords.js';
 
 
@@ -15,6 +15,7 @@ export default function Reading() {
                 <Route path='/read-5' element={<SylabeWords infoSentence={sylabelWord5}/>}  />
                 <Route path='/read-6' element={<SylabeWords infoSentence={sylabelWord6}/>}  />
                 <Route path='/read-7' element={<SylabeWords infoSentence={sylabelWord7}/>}  />
+                <Route path='/read-8' element={<SylabeWords infoSentence={sylabelWordOnlyTaughtLetters}/>}  />
             </Routes>
                 
     </>

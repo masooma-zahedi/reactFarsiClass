@@ -18,6 +18,7 @@ import MatchGame from "./MatchGame.js";
 import SyllableApp from "./SyllableApp.js";
 // import SentenceApp2 from "./SentenceApp2.js";
 import StoryPage3 from "../story/StoryPage3.js";
+import WordGameWithCategories from "./WordGameWithCategories.js";
 
 export const Alphabet = () => {
   const [showShort, setShowShort] = useState(false)
@@ -46,14 +47,15 @@ export const Alphabet = () => {
                 <Route path='/tableColor_body' element={<FlippingTable idTablePlay="colorBo1" tableData={tableColor_body.photoData} bgTable={tableColor_body.bgTable} showBack1={true} />}  />
                 <Route path='/wordTable/*' element={<WordTable />}  />
                 <Route path='/SyllableApp' element={<SyllableApp />}  />
+                <Route path='/wordGameWithCategories' element={<WordGameWithCategories/>}  />
                 <Route path='moreStoryWordsAlpha' element={<StoryPage3 groupKey="alefba" />}  />
               </Routes>
               <WordCarousel/>
               <GameWord />
             </div>
+            <div>
+            </div>
           </div>
-          {/* <SyllableApp/> */}
-          {/* <SentenceApp2/> */}
         </div>
 
 
