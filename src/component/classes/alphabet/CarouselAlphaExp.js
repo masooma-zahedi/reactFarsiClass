@@ -13,9 +13,6 @@ export const CarouselAlpha = ({dataCarousel,idCarouselAlpha}) => {
                         <>
                             <div key={index} className={`carousel-item ${index == 0 ? 'active' : ""}`}>
                             <img src={item} className="d-block w-100" alt="alphabet"/>
-                            {console.log(item)
-                            }
-                            
                             </div>
                         </>
                     )
