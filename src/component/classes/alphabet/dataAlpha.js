@@ -278,6 +278,7 @@ export let contentListAlpha = {
             {id:nanoid(4),title:"حرف م",targetHref:"wordTable/wordBox-3", idLetter:"wordB-3"},  
             {id:nanoid(4),title:"حرف ن",targetHref:"wordTable/brokenW-9",idLetter:"broken-9"},
             {id:nanoid(4),title:"حرف ض",targetHref:"wordTable/brokenW-10",idLetter:"broken-10"},
+            {id:nanoid(4),title:"مسابقه کلمات",targetHref:"wordTable/wordGameGride",idLetter:"broken-11"},
             ],
         },
         gameTable :{

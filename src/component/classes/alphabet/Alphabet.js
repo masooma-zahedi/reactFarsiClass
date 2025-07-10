@@ -53,6 +53,7 @@ export const Alphabet = () => {
               <GameWord />
             </div>
             <div>
+              {/* test */}
             </div>
           </div>
         </div>
