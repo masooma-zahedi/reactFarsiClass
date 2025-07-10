@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import WordGameGrid from "./alphabet/WordGameGrid";
 // import "bootstrap/dist/css/bootstrap.min.css";
 
 const BrokenGlass = ({ words }) => {
@@ -73,6 +74,9 @@ const BrokenGlass = ({ words }) => {
             ))}
           </div>
         </div>
+      </section>
+      <section>
+        <WordGameGrid/>
       </section>
     </>
   );
