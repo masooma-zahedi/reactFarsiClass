@@ -22,7 +22,6 @@ import WordGameWithCategories from "./WordGameWithCategories.js";
 
 export const Alphabet = () => {
   const [showShort, setShowShort] = useState(false)
-
   return (
     <>
         <div className = " mt-4">
