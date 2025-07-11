@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import WhoDoesWhatGame from './WhoDoesWhatGame';
 // import { form } from 'react-bootstrap';
 
 const getRandomPersianLetter = () => {
@@ -192,9 +193,9 @@ const LetterPuzzle = ({ rows = 10, cols = 10 }) => {
   const deleteWordSee =()=>{ setShow(!show);}
 
   return (
-    <div className="App mt-5 container border border-3 border-success" style={{direction: 'rtl'}}>
-      <h3 className='p-3 text-center bg-info mt-1 rounded-3'>بازی پیدا کردن کلمات</h3>
-      <div>
+    <div className="App mt-5 container " style={{direction: 'rtl'}}>
+      <div className='rounded-3 mb-5 border border-2 border-info'>
+        <h3 className='m-3 p-3 text-center bg-info mt-1 rounded-3'>بازی پیدا کردن کلمات</h3>
         {!show && 
           <form className="form-group mb-3">
             <label>کلمات مورد نظر (با کاما انگلیسی  جدا کنید)</label>
@@ -252,6 +253,8 @@ const LetterPuzzle = ({ rows = 10, cols = 10 }) => {
           </>
         )}
       </div>
+        <br /><br /><br /><br />
+      <WhoDoesWhatGame/>
     </div>
   );
 };

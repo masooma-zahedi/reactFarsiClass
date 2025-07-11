@@ -9,6 +9,7 @@ import WordToSentence from './wordToSentence.js';
 import LetterPuzzle from './LetterPuzzle.js';
 import StoryPage3 from '../story/StoryPage3.js';
 import SentenceObject from './SentenceObject.js';
+import WhoDoesWhatGame from './WhoDoesWhatGame.js';
 
 export const Word = () => {
   return (
@@ -43,6 +44,9 @@ export const Word = () => {
               <Route path='moreStoryWords' element={<StoryPage3 groupKey="kalemat" />}  />
 
             </Routes>
+          </div>
+          <div>
+            {/* <WhoDoesWhatGame/> */}
           </div>
         </div>
               
