@@ -129,6 +129,14 @@ const initialWords = [
   { word: "سایه", syllables: ["سا", "یه"], category: "س" },
   { word: "سایش", syllables: ["سا", "یش"], category: "س" },
   { word: "سبدی", syllables: ["سَ", "بَ", "دی"], category: "س" },
+  // *********************** حرف ق*******************************
+   { word: "قاشُق", syllables: ["قا", "شُق"], category: "ق" },
+  { word: "قَند", syllables: ["قَن","د"], category: "ق" },
+  { word: "قَندان", syllables: ["قَن", "دان"], category: "ق" },
+  { word: "قَدیم", syllables: ["قَ", "دیم"], category: "ق" },
+  { word: "قَوی", syllables: ["قَ", "وی"], category: "ق" },
+  { word: "قُرص", syllables: ["قُ", "رص"], category: "ق" },
+  { word: "قُفل", syllables: ["قُ", "فل"], category: "ق" },
   //*************** */ حرف و****************************************
   {
     word: "وَطن",

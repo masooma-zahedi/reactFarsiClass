@@ -2,8 +2,8 @@ import React, { useState, useRef  } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const wordTranslations = {
-  "صَندَلی": "Chair", "میز": "Table", "لَمپ": "Lamp", "فَرش": "Carpet",
-  "یَخچال": "Fridge", "پَنکه": "Fan", "کَمُد": "Closet", "تِلویزیون": "TV",
+  "صَندَلی": "Chair", "میز": "Table", "لامپ": "Lamp", "فَرش": "Carpet",
+  "یَخچال": "Fridge", "پَنکه": "Fan", "کُمُد": "Closet", "تِلویزیون": "TV",
   "تَخت": "Bed", "پَتو": "Blanket", "آیِنه": "Mirror", "گاز": "Stove",
   "ماشینِ لِباس‌شویی": "Washing Machine", "ظَرف‌شویی": "Dishwasher", "مایکرُویو": "Microwave",
   "دَرب": "Door", "کَف‌پوش": "Flooring", "پَرده": "Curtain", "قالیچه": "Rug", "نَشیمن‌گاه": "Couch",
@@ -17,7 +17,7 @@ const wordTranslations = {
 
 const wordCategories = {
   "وَسایِلِ خانِه": [
-    "صَندَلی", "میز", "لَمپ", "فَرش", "یَخچال", "پَنکه", "کَمُد", "تِلویزیون",
+    "صَندَلی", "میز", "لامپ", "فَرش", "یَخچال", "پَنکه", "کُمُد", "تِلویزیون",
     "تَخت", "پَتو", "آیِنه", "گاز", "ماشینِ لِباس‌شویی", "ظَرف‌شویی", "مایکرُویو",
     "دَرب", "کَف‌پوش", "پَرده", "قالیچه", "نَشیمن‌گاه"
   ],
