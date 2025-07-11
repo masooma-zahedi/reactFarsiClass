@@ -231,6 +231,7 @@ const SentenceObject = () => {
           )}
         </Col>
       </Row>
+      <div className="text-muted">SentenceObject</div>
     </Container>
   );
 };
