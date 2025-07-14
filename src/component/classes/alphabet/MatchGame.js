@@ -27,7 +27,6 @@ const items2 = [
   { id: 10, word: 'کَفشِ کوه', image: 'https://www.shutterstock.com/image-vector/hiking-shoes-boots-vector-illustration-260nw-354922850.jpg' }
 ];
 
-
 const items3 = [
   { id: 1, word: 'جَنگَل', image:'https://foodtank.com/wp-content/uploads/2015/09/agroforestry-FAO.jpg'},
   { id: 2, word: 'دِرَخت', image:'https://www.fertilome.com/media/klowrey/Article%20Images/Tree.jpg'},
@@ -77,6 +76,19 @@ const diningTableItems = [
   { id: 13, word: 'نمکدان', image: 'https://static.vecteezy.com/system/resources/previews/027/565/570/non_2x/salt-shaker-bottle-seasoning-container-cartoon-vector.jpg' },
   { id: 15, word: 'سینی', image: 'https://www.shutterstock.com/image-vector/cartoon-food-tray-icon-vector-260nw-2588075195.jpg' }
 ];
+const bathItems = [
+  { id: 1, word: 'صابون', image: 'https://www.shutterstock.com/image-vector/soap-bubbles-260nw-187215893.jpg' },
+  { id: 3, word: 'لیف', image: 'https://media.istockphoto.com/id/1371070501/vector/purple-shower-loofah-cartoon-bath-mesh-sponge.jpg?s=612x612&w=0&k=20&c=a2ZgaNp9--EvSGl6LNgW6F7iNdWSRQ816yigek4jPZI=' },
+  { id: 4, word: 'حوله', image: 'https://www.shutterstock.com/image-vector/cartoon-home-kitchen-towel-isolated-600nw-95509165.jpg' },
+  { id: 6, word: 'خمیردندان', image: 'https://png.pngtree.com/png-clipart/20230307/ourmid/pngtree-toothpaste-cartoon-png-image_6635972.png' },
+  { id: 7, word: 'تیغ اصلاح', image: 'https://thumbs.dreamstime.com/b/creative-sticker-cartoon-disposable-razor-original-150936137.jpg' },
+  { id: 8, word: 'آینه', image: 'https://cdn.pixabay.com/photo/2022/09/08/22/57/mirror-7442023_960_720.png' },
+  { id: 10, word: 'سطل زباله', image: 'https://thumbs.dreamstime.com/z/cartoon-trash-can-20097337.jpg' },
+  { id: 12, word: 'پادری', image: 'https://img.kwcdn.com/product/fancy/fdea41db-2986-4acf-afc9-58d85b45d29c.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp' },
+  { id: 13, word: 'وان حمام', image: 'https://as2.ftcdn.net/jpg/02/97/22/83/1000_F_297228382_4NN3RAuZTdc4A0qZWyBexgsVt6BLOFwJ.jpg' },
+  { id: 15, word: 'دوش', image: 'https://t4.ftcdn.net/jpg/01/23/78/13/360_F_123781353_rLB4kTmqwgoWpW0YNBjGN8Vu99PCFXIw.jpg' }
+];
+
 
 
 
@@ -226,6 +238,7 @@ const MatchGame = () => {
                     <button className='btn shadow-sm border m-2' style={stylebg} onClick={()=>questionsqq(itemsFood,'item4')}>صبحانه</button>
                     <button className='btn shadow-sm border  m-2' style={stylebg} onClick={()=>questionsqq(transport1,'item5')}>حمل و نقل</button>
                     <button className='btn shadow-sm border  m-2' style={stylebg} onClick={()=>questionsqq(diningTableItems,'item6')}>میز غذاخوری</button>
+                    <button className='btn shadow-sm border  m-2' style={stylebg} onClick={()=>questionsqq(bathItems ,'item7')}>وسایل حمام</button>
                   </div>
                 </div>
                 <div class="modal-footer">
