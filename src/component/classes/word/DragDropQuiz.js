@@ -213,22 +213,6 @@ const prevQuestion = () => {
   )}
 </div>
 
-
-
-      {/* <div className="d-flex gap-2 flex-wrap flex-row-reverse mx-4">
-        <button className="btn btn-success" onClick={checkAnswer} disabled={!droppedWord}>
-          بررسی پاسخ ✅
-        </button>
-        <button className="btn btn-warning" onClick={resetCurrentQuestion}>
-          پاک کردن پاسخ 🔄
-        </button>
-        {isCorrect && currentIndex < questions.length - 1 && (
-          <button className="btn btn-primary" onClick={nextQuestion}>
-            سوال بعدی ➡️
-          </button>
-        )}
-      </div> */}
-
       {isCorrect !== null && (
         <div className="mt-3">
           {isCorrect ? (
@@ -243,6 +227,7 @@ const prevQuestion = () => {
         <div className="alert alert-info mt-4">👏 تمام سوال‌ها تمام شد!</div>
       )}
       <br /><br />
+      <div className="text-muted">DragDropQuiz</div>
     </div>
     </div>
   );

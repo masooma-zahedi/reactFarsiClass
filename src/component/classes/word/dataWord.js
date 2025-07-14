@@ -1962,68 +1962,128 @@ export let questions2 = [
 ]
 
 export let questions3 = [
-      {
-        sentence: 'مَن هَر روز به ___ می‌رَوَم.jh jio ou iuou ooi ouoi iiou ',
-        correctWord: 'مدرسه',
-        options: ['مدرسه', 'سیب', 'باران'],
-        image: 'https://i.pinimg.com/736x/28/07/eb/2807eb52c3035c3caa48347167545cd4.jpg'
-      },
-      {
-        sentence: 'او یِک ___ در دست دارَد.',
-        correctWord: 'کتاب',
-        options: ['کتاب', 'دویدن', 'زنگ'],
-        image: 'https://static.scientificamerican.com/sciam/cache/file/1DDFE633-2B85-468D-B28D05ADAE7D1AD8_source.jpg?w=1200'
-      },
-      {
-        sentence: 'مَن نان تازه ___ دارَم.',
-        correctWord: 'دوست',
-        options: ['بَستَنی', 'دوست', 'سَرما','نیما'],
-        image: null
-      },
-      {
-        sentence: 'مادَر کَمی ___ به غَذا زَد.',
-        correctWord: 'نَمَک',
-        options: ['نَمَک', 'میوه', 'بُشقاب'],
-        image: 'https://upload.wikimedia.org/wikipedia/commons/a/ad/Table_salt_with_salt_shaker_V1.jpg'
-      },
-      {
-        sentence: ' ___ دَر دَریا زِندِگی می کُنَد.',
-        correctWord: 'نَهَنگ',
-        options: ['جوجه', 'شیر', 'گَوَزن','نَهَنگ'],
-        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Killerwhales_jumping.jpg/1200px-Killerwhales_jumping.jpg'
-      },
-      {
-        sentence: 'پِدَرَم بَرایَم یِک ___ خَرید.',
-        correctWord: 'کُلاه',
-        options: ['هَوا', 'آسمان', 'مادَر','کُلاه'],
-        image: 'https://sainc2.myshopify.com/cdn/shop/products/beach-hat-red-front-ss20-2500px_6a3730db-77cc-44d6-b437-b027b32bb044.jpg?v=1718389492'
-      },
-      {
-        sentence: ' ___نوک کوچَکی دارَد.',
-        correctWord: 'پَرَندِه',
-        options: ['پَرَندِه', 'روباه', 'ماهی','تِمساح'],
-        image: 'https://statics.basalam.com/public-7/users/kRZKpN/2110/wq4ytYJSJBtoG93qZQpTpO390nrWk4rbf79ftOGJ.jpg'
-      },
-      {
-        sentence: 'مَن با ___ لِباس دوختَم.',
-        correctWord: 'نَخ',
-        options: [ 'چوب','نَخ', 'لیوان','مِداد'],
-        image: 'https://www.lavanbaft.com/wp-content/uploads/2022/02/nakh.jpg'
-      },
-      {
-        sentence: 'زَنبور ___ زَد.',
-        correctWord: 'نیش',
-        options: [ 'گِریه', 'کُتَک','عَسَل','نیش'],
-        image: 'https://www.digikala.com/mag/wp-content/uploads/2023/05/01-Bee-Sting-Treatment-1.jpg'
-      },
-      {
-        sentence: '___ بالای دِرَخت رَفت.',
-        correctWord: 'گُربه',
-        options: ['کَفش', 'گُربه', 'گُل','موبایل'],
-        image: 'https://cdn.fararu.com/thumbnail/OTliY2YXgLxy/fCohl8MdDeqLuUiNxwx9X4gYrgKL9XBZBWdbZWUJQbHweEbOeibJ3lKhwCXPcymMenByfMSSpsbh46ioIqLjxbHMRm21_h7HQpcPeRTlTup9Fg2BIMEOf3jclM_4J6zeNSYMgfXaohvvVGVyDx5LlALVa--jwrBG/OTliY2YXgLxy.jpg'
-      },
-    
-]
+  {
+    sentence: 'او جعبه را از روی ___ بلند کرد.',
+    correctWord: 'میز',
+    options: ['میز', 'کِتاب', 'کِیف'],
+    image: '/images/assetWord/actionVerb/12-31-45-verb.png'
+  },
+  {
+    sentence: 'من به دانش‌آموزانم ___ آموزش می‌دهم.',
+    correctWord: 'انگلیسی',
+    options: ['انگلیسی', 'ریاضی', 'نقاشی'],
+    image: '/images/assetWord/actionVerb/12-31-46-verb.png'
+  },
+  {
+    sentence: 'وقتی به ایستگاه ___ رسیدم دوباره با شما تماس خواهم گرفت.',
+    correctWord: 'اتوبوس',
+    options: ['اتوبوس', 'قطار', 'مدرسه'],
+    image: '/images/assetWord/actionVerb/12-31-47-verb.png'
+  },
+  {
+    sentence: 'او به ___ می‌رود.',
+    correctWord: 'مدرسه',
+    options: ['مدرسه', 'بیمارستان', 'مغازه'],
+    image: '/images/assetWord/actionVerb/12-31-48-verb.png'
+  },
+  {
+    sentence: 'هر جا می‌رفتم کتاب را با خودم ___ می‌کردم.',
+    correctWord: 'حمل',
+    options: ['حمل', 'پنهان', 'تمیز'],
+    image: '/images/assetWord/actionVerb/12-31-49-verb.png'
+  },
+  {
+    sentence: 'او در را ___ کرد.',
+    correctWord: 'قفل',
+    options: ['قفل', 'باز', 'رنگ'],
+    image: '/images/assetWord/actionVerb/12-31-50-verb.png'
+  },
+  {
+    sentence: 'من می‌خواهم برای جشن تولد دوستم ___ بپزم.',
+    correctWord: 'کیک',
+    options: ['کیک', 'کباب', 'برنج'],
+    image: '/images/assetWord/actionVerb/12-31-51-verb.png'
+  },
+  {
+    sentence: 'او روی ___ شناور بود.',
+    correctWord: 'پشتش',
+    options: ['پشتش', 'سینه‌اش', 'پایش'],
+    image: '/images/assetWord/actionVerb/12-31-52-verb.png'
+  },
+  {
+    sentence: 'جوکر همزمان با پنج ___ بازی کرد.',
+    correctWord: 'توپ',
+    options: ['توپ', 'سیب', 'جعبه'],
+    image: '/images/assetWord/actionVerb/12-31-53-verb.png'
+  },
+  {
+    sentence: 'سگ ___ را گاز گرفت.',
+    correctWord: 'پایش',
+    options: ['پایش', 'دستش', 'گوشش'],
+    image: '/images/assetWord/actionVerb/12-31-54-verb.png'
+  },
+  {
+    sentence: 'من یک ___ را به خانه پرتاب کردم.',
+    correctWord: 'توپ',
+    options: ['توپ', 'سیب', 'کتاب'],
+    image: '/images/assetWord/actionVerb/12-31-55-verb.png'
+  },
+  {
+    sentence: 'او ___ را تا می‌کند.',
+    correctWord: 'پتو',
+    options: ['پتو', 'پیراهن', 'کاغذ'],
+    image: '/images/assetWord/actionVerb/12-31-56-verb.png'
+  },
+  {
+    sentence: 'او آرد را با دو عدد ___ مخلوط کرد.',
+    correctWord: 'تخم‌مرغ',
+    options: ['تخم‌مرغ', 'سیب‌زمینی', 'پیاز'],
+    image: '/images/assetWord/actionVerb/12-31-57-verb.png'
+  },
+  {
+    sentence: 'او در حال حفر یک ___ عمیق است.',
+    correctWord: 'چاله',
+    options: ['چاله', 'کمد', 'چتر'],
+    image: '/images/assetWord/actionVerb/12-31-58-verb.png'
+  },
+  {
+    sentence: 'من هفته‌ای دوبار کف ___ را تمیز می‌کنم.',
+    correctWord: 'آشپزخانه',
+    options: ['آشپزخانه', 'اتاق', 'حیاط'],
+    image: '/images/assetWord/actionVerb/12-31-59-verb.png'
+  },
+  {
+    sentence: 'ما می‌خواهیم خانه خود را ___ .',
+    correctWord: 'بسازیم',
+    options: ['بسازیم', 'ترک', 'رها'],
+    image: '/images/assetWord/actionVerb/12-31-60-verb.png'
+  },
+  {
+    sentence: 'او برای من تصویری از ___ کشید.',
+    correctWord: 'دایناسور',
+    options: ['دایناسور', 'ماشین', 'ماهی'],
+    image: '/images/assetWord/actionVerb/12-31-61-verb.png'
+  },
+  {
+    sentence: 'من قبل از خروج از خانه موهایم را ___ کردم.',
+    correctWord: 'شانه',
+    options: ['شانه', 'رنگ', 'شستشو'],
+    image: '/images/assetWord/actionVerb/12-31-62-verb.png'
+  },
+  {
+    sentence: 'ما در ___ اسکیت می‌کنیم.',
+    correctWord: 'پارک',
+    options: ['پارک', 'خیابان', 'مدرسه'],
+    image: '/images/assetWord/actionVerb/12-31-63-verb.png'
+  },
+  {
+    sentence: 'او با ظرافت روی ___ در پارک تاب خورد.',
+    correctWord: 'تاب',
+    options: ['تاب', 'در', 'تخته'],
+    image: '/images/assetWord/actionVerb/12-31-64-verb.png'
+  }
+];
+
 
 // ************************* End جمله را کامل کن* ****************************************
 
