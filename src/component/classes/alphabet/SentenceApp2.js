@@ -126,6 +126,15 @@ const SentenceApp2 = () => {
     </div>
   );
 
+
+
+useEffect(() => {
+  if (inputRef.current) {
+    inputRef.current.focus();
+  }
+}, [selectedSentence]); // یا هر زمانی که باید فوکوس انجام بشه
+
+
   return (
     <div className="container mt-4 text-end" style={{ direction: "rtl" }}>
       <div className="mb-3 d-flex justify-content-between">
