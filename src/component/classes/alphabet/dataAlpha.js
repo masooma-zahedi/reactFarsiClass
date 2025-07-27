@@ -3895,14 +3895,14 @@ export let gameWords = {
 
 
 // ****************** For StoryPage3*****************
- export const storiesAlpha = {
-  1: {
-    title: 'راز شب در جنگل',
-    content: [{ type: 'text', content: 'چند نوجوان به جنگل رفتند...' }],
-    vocab: [{ word: 'جنگل', meaning: 'forest' }],
-    qa: [{ question: 'آن‌ها کجا رفتند؟', answer: 'جنگل' }]
-  }
-};
+//  export const storiesAlpha = {
+//   1: {
+//     title: 'راز شب در جنگل',
+//     content: [{ type: 'text', content: 'چند نوجوان به جنگل رفتند...' }],
+//     vocab: [{ word: 'جنگل', meaning: 'forest' }],
+//     qa: [{ question: 'آن‌ها کجا رفتند؟', answer: 'جنگل' }]
+//   }
+// };
 // ******************************
 
 

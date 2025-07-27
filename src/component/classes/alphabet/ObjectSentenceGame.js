@@ -121,122 +121,135 @@ const questions1 = [
 // masooma
 const questions2 = [
   {
-    image: 'https://thumbs.dreamstime.com/b/pencil-character-facial-expressions-19965263.jpg',
-    correct: '.این یِک مِدادددددددددددددددددددددددددددددد اَست',
-    options: ['.این یِک کِتاب اَست', '.این یِک صَندَلی اَست', '.این یِک مِدادnnnnnnnnnnnnnnnnnnnnnnnnn اَست'],
+    image: ' //static.vecteezy.com/system/resources/previews/007/637/871/non_2x/cute-summer-sunny-day-weather-character-smiling-with-clouds-in-yellow-background-illustration-vector.jpg',
+    correct: '.هَوا آفتابی اَست',
+    options: ['.هَوا آفتابی اَست', '.هَوا بارانی اَست', '.هَوا بادی اَست'],
   },
   {
-    image: 'https://i.graphicmama.com/uploads/2019/3/5c9256275ee59-Cute%20Book%20Cartoon%20Vector%20Character.png',
-    correct: '.مَن کِتاب دارَم',
-    options: ['.مَن مِداد دارَم', '.مَن کِتاب دارَم', '.او صَندَلی دارَد'],
+    image: 'https://img.freepik.com/free-vector/nature-raining-scene_1308-22369.jpg',
+    correct: '.هَوا بارانی اَست',
+    options: ['.هَوا بَرفی اَست', '.هَوا بارانی اَست', '.هَوا گَرم اَست'],
   },
   {
-    image: 'https://s3.envato.com/files/295931587/preview1.jpg',
-    correct: '.او کیف دارَد',
-    options: ['.او دَفتَر دارَد', '.او کیف دارَد', '.او صَندَلی دارَد'],
+    image: 'https://thumbs.dreamstime.com/b/cold-weather-boy-freezing-shivering-young-winter-cartoon-style-illustration-landscape-115782671.jpg',
+    correct: '.هَوا سَرد و بَرفی اَست',
+    options: ['.هَوا گَرم اَست', '.هَوا سَرد و بَرفی اَست', '.هَوا بارانی اَست'],
   },
   {
-    image: 'https://www.shutterstock.com/image-vector/illustration-timer-clock-design-hand-260nw-2328107837.jpg',
-    correct: 'حالا نوبَتِ توست.',
-    options: ['حالا نوبَتِ توست.','حالا نوبَتِ مَن اَست.','حالا نوبَت آنها اَست.',],
+    image: 'https://t3.ftcdn.net/jpg/07/25/45/18/360_F_725451899_HXqF8T8cUpTdg8DyhfVu1Qle0jhvJPH5.jpg',
+    correct: '.هَوا بادی اَست',
+    options: ['.هَوا بادی اَست', '.هَوا آفتابی اَست', '.هَوا بَرفی اَست'],
   },
   {
-    image: 'https://img.freepik.com/premium-vector/school-age-boy-looking-moon-flat-style-vector-illustration_1332465-15978.jpg',
-    correct: 'بَچِه بِه ماه نِگاه کَرد',
-    options: ['بَچِه بِه جَنگَل نِگاه کَرد','بَچه بِه دَریا نِگاه کَرد','بَچِه بِه ماه نِگاه کَرد',],
+    image: 'https://www.shutterstock.com/image-vector/person-suffering-summer-sun-heat-600nw-2356554209.jpg',
+    correct: '.هَوا گَرم اَست',
+    options: ['.هَوا گَرم اَست', '.هَوا سَرد اَست', '.هَوا بارانی اَست'],
   },
   {
-    image: 'https://static.vecteezy.com/system/resources/previews/030/688/870/non_2x/juice-2d-cartoon-vector-illustration-on-white-background-h-free-photo.jpg',
-    correct: 'مَن آبمیوِه دوست دارَم',
-    options: ['مَن پیتزا دوست دارَم','مَن آبمیوِه دوست دارَم','مَن نانِ تازِه دوست دارَم',],
+    image: 'https://img.freepik.com/free-photo/anime-style-clouds_23-2151071731.jpg?semt=ais_hybrid&w=740',
+    correct: '.آسمان اَبری اَست',
+    options: ['.آسمان آبی اَست', '.آسمان اَبری اَست', '.آسمان روشن اَست'],
   },
   {
-    image: 'https://previews.123rf.com/images/microone/microone2208/microone220800180/190481157-students-in-classroom-student-behaviour-pupils-sitting-at-desks-on-lesson-school-college-children.jpg',
-    correct: 'کِلاس شِش نَفَر شاگِرد دارَد',
-    options: ['کِلاس شِش نَفَر شاگِرد دارَد','ما دَر وَرزِشگاه وَرزِش می کُنیم','مادَر در فُروشگاه است',],
+    image: 'https://t3.ftcdn.net/jpg/03/22/97/22/360_F_322972200_yN6Lz4k7uLZAnOs3pt3ODmLL0vHgBUJ0.jpg',
+    correct: '.توفان آمدِه اَست',
+    options: ['.توفان آمدِه اَست', '.باران نِیامده اَست', '.خورشید دَر آسمان اَست'],
   },
   {
-    image: 'https://thumbs.dreamstime.com/b/cartoon-shoes-icon-19180433.jpg',
-    correct: 'مَن کَفشِ نو خَریدَم',
-    options: ['مَن یِک آیپَد خَریدَم','مَن کَفشِ نو خَریدَم','مَن چَند دَفتَر خَریدَم',],
+    image: 'https://st4.depositphotos.com/31862216/38693/v/450/depositphotos_386930238-stock-illustration-beautiful-rainbow-sky-paper-art.jpg',
+    correct: '.رَنگین‌کَمان در آسمان اَست',
+    options: ['.اَبَر در آسمان اَست', '.رَنگین‌کَمان در آسمان اَست', '.خورشید پُشت کوه اَست'],
   },
   {
-    image: 'https://thumbs.dreamstime.com/b/baby-crying-next-to-worried-mother-vector-illustration-newborn-tears-desperate-new-mom-trying-calm-him-down-147979328.jpg',
-    correct: 'مادَر نِگُران بَرادَرم بود',
-    options: ['مادر با بَرادَر خندید','مادَر برای بَرادَرم خوراکی خَرید','مادَر نِگُران بَرادَرم بود',],
+    image: 'https://www.shutterstock.com/image-photo/children-a-boy-girl-aged-260nw-2639401605.jpg',
+    correct: '.بَرق و رَعد در آسمان اَست',
+    options: ['.باران مِی‌بارد', '.بَرق و رَعد در آسمان اَست', '.باد آرام اَست'],
   },
   {
-    image: 'https://www.shutterstock.com/image-vector/vector-illustration-happy-children-playing-600nw-1099688924.jpg',
-    correct: 'خانِه ما نَزدیک پارک اَست',
-    options: ['خانِه ما نَزدیک پارک اَست','خانِه ما اَز کِتابخانِه دور اَست','خانِه ما به مَکتَب نَزدیک اَست',],
-  },
-  {
-    image: 'https://ik.imagekit.io/storybird/images/d553bf69-ddfe-4d2c-b683-e7ddde9acced/1_79727818.webp?tr=q-80',
-    correct: 'آتَش نِشان کودَک را نِجات داد',
-    options: ['رانَنده کودَکان را به مَکتَب بُرد','دُکتر کودَک را جَراحی کَرد','آتَش نِشان کودَک را نِجات داد',],
-  },
-  {
-    image: 'https://t3.ftcdn.net/jpg/13/23/10/74/360_F_1323107457_M22cjnt1yOTcDkMgzONR7Te37HyRdTGg.jpg',
-    correct: 'این اَنگُشتَر اَز طَلا اَست',
-    options: ['این اَنگُشتَر اَز طَلا اَست','این گوشوارِه اَست','این یِک اَلَنگو اَست',],
-  },
-  {
-    image: 'https://icon2.cleanpng.com/ci3/uvn/sbz/ad84tyi8n.webp',
-    correct: 'او اَز نَردِبان بالا رَفت',
-    options: ['اَمین اَز دِرَخت بالا رَفت','مَن از کوه بالا رَفتَم','او اَز نَردِبان بالا رَفت',],
-  },
-  // 10 مورد جدید
-  {
-    image: 'https://static.vecteezy.com/system/resources/previews/008/154/102/original/kid-eating-healthy-food-illustration-cartoon-flat-design-free-vector.jpg',
-    correct: 'بَچِه سیب می‌خورَد',
-    options: ['بَچِه توپ بازی می‌کُنَد', 'بَچِه سیب می‌خورَد', 'بَچِه می‌خوابَد'],
-  },
-  {
-    image: 'https://cdn.pixabay.com/photo/2016/04/01/09/25/girl-1299629_960_720.png',
-    correct: 'او دَر حال نِوِشتَن اَست',
-    options: ['او دَر حال نِوِشتَن اَست', 'او دَر حال خَواب اَست', 'او دَر حال دویدن اَست'],
-  },
-  {
-    image: 'https://cdn4.vectorstock.com/i/1000x1000/79/66/cute-boy-reading-book-cartoon-vector-46347966.jpg',
-    correct: 'پَسر دَر حالِ خواندَن اَست',
-    options: ['پَسر دَر حالِ خواندَن اَست', 'پَسر دَر حالِ نِوِشتَن اَست', 'پَسر دَر حالِ نِشِستن اَست'],
-  },
-  {
-    image: 'https://static.vecteezy.com/system/resources/previews/008/372/310/original/cartoon-character-girl-drinking-water-vector.jpg',
-    correct: 'دُختَر آب می‌نوشَد',
-    options: ['دُختَر آب می‌نوشَد', 'دُختَر با دوستَش گَپ می‌زَنَد', 'دُختَر نِقاشی می‌کِشَد'],
-  },
-  {
-    image: 'https://cdn3.vectorstock.com/i/1000x1000/76/39/boy-playing-football-cartoon-vector-44277639.jpg',
-    correct: 'او فوتبَال بازی می‌کُنَد',
-    options: ['او کتاب می‌خوانَد', 'او فوتبَال بازی می‌کُنَد', 'او دَر آشپَزخانه اَست'],
-  },
-  {
-    image: 'https://img.freepik.com/premium-vector/young-girl-cleaning-window-cartoon-illustration-white-background_549750-167.jpg',
-    correct: 'دُختَر دَریچه را پاک می‌کُنَد',
-    options: ['دُختَر دَریچه را پاک می‌کُنَد', 'دُختَر دَرس می‌خوانَد', 'دُختَر رَنگ می‌کِشَد'],
-  },
-  {
-    image: 'https://static.vecteezy.com/system/resources/previews/017/452/353/original/cute-boy-eating-noodles-cartoon-illustration-vector.jpg',
-    correct: 'پَسر نودِل می‌خورَد',
-    options: ['پَسر خَوابیده اَست', 'پَسر نودِل می‌خورَد', 'پَسر می‌دَوَد'],
-  },
-  {
-    image: 'https://cdn.vectorstock.com/i/1000x1000/30/68/happy-kid-boy-eating-ice-cream-vector-31013068.webp',
-    correct: 'کودَک بستَنی می‌خورَد',
-    options: ['کودَک بستَنی می‌خورَد', 'کودَک می‌نویسَد', 'کودَک می‌شوید'],
-  },
-  {
-    image: 'https://static.vecteezy.com/system/resources/previews/017/086/361/original/cartoon-boy-taking-a-bath-in-the-bathroom-illustration-vector.jpg',
-    correct: 'او دَر حالِ شُست‌وشو اَست',
-    options: ['او دَر حالِ بازی اَست', 'او دَر حالِ خَواب اَست', 'او دَر حالِ شُست‌وشو اَست'],
-  },
-  {
-    image: 'https://cdn4.vectorstock.com/i/1000x1000/29/39/girl-feeding-cat-cartoon-vector-45822939.jpg',
-    correct: 'دُختَر گُربه را غذا می‌دَهَد',
-    options: ['دُختَر گُربه را غذا می‌دَهَد', 'دُختَر با گُربه می‌دوَد', 'دُختَر گُربه را می‌شوید'],
+    image: 'https://img.freepik.com/free-vector/dirt-road-foggy-forest-dull-weather-cartoon-nature-landscape-with-road-going-along-field-coni_107791-7449.jpg',
+    correct: '.هَوا مِه‌آلود اَست',
+    options: ['.هَوا روشَن اَست', '.هَوا مِه‌آلود اَست', '.هَوا گَرم و خُشک اَست'],
   },
 ];
+const illnessSignsQuestions = [
+  {
+    image: 'https://media.istockphoto.com/id/598785430/vector/sick-girl-in-bed.jpg?s=612x612&w=0&k=20&c=sp_1S46NAWTwVYfiln8cv6sKc-PJNT-HR54GNeryy5Q=',
+    correct: '.او تَب دارَد',
+    options: ['.او تَب دارَد', '.او می‌خَندَد', '.او گُرسنه اَست'],
+  },
+  {
+    image: 'https://www.shutterstock.com/image-vector/boys-people-suffering-various-symptoms-260nw-1658168074.jpg',
+    correct: '.او سَرفه می‌کُنَد',
+    options: [ '.او مِی‌دَوَد','.او سَرفه می‌کُنَد', '.او بازی می‌کُنَد'],
+  },
+  {
+    image: 'https://media.istockphoto.com/id/1624886149/vector/vector-illustration-of-a-sick-child-in-hospital.jpg?s=612x612&w=0&k=20&c=TRUdAA59SS_14Y-5wmH0372qHCAhVKqf7uTI0uV6ob8=',
+    correct: '.او حالِ خوبی نَدارَد',
+    options: [ '.او حالِ خوبی دارَد', '.او خوشحال اَست','.او حالِ خوبی نَدارَد',],
+  },
+  {
+    image: 'https://www.shutterstock.com/image-vector/child-has-got-flu-sneezing-600nw-216852040.jpg',
+    correct: '.او عَطسِه می‌کُنَد',
+    options: ['.او عَطسِه می‌کُنَد', '.او آواز می‌خوانَد', '.او می‌خوابَد'],
+  },
+  {
+    image: 'https://img.freepik.com/free-vector/hand-drawn-headache-cartoon-illustration_23-2150696197.jpg',
+    correct: '.او سَردَرد دارَد',
+    options: ['.او سَردَرد دارَد', '.او دَست‌دَرد دارَد', '.او خوشحال اَست'],
+  },
+  {
+    image: 'https://www.shutterstock.com/image-vector/illustration-depicts-child-character-tuft-260nw-703924654.jpg',
+    correct: '.او گَلودَرد دارَد',
+    options: [ '.او پا دَرد دارَد', '.او خوابیده اَست','.او گَلودَرد دارَد',],
+  },
+  {
+    image: 'https://www.shutterstock.com/image-vector/vector-illustration-little-boy-suffering-600nw-1582302751.jpg',
+    correct: '.او شِکم‌دَرد دارَد',
+    options: [ '.او دَست دَرد دارَد', '.او شِکم‌دَرد دارَد','.او دَندان دَرد دارَد'],
+  },
+  {
+    image: 'https://previews.123rf.com/images/colorfuelstudio/colorfuelstudio2104/colorfuelstudio210400194/167735574-young-good-looking-woman-feeling-tired-and-sick.jpg',
+    correct: '.او خَستِه اَست',
+    options: [ '.او بیدار اَست', '.او تَب دارَد','.او خَستِه اَست',],
+  },
+  {
+    image: 'https://previews.123rf.com/images/ruangdesign19/ruangdesign191909/ruangdesign19190900013/129710506-cartoon-child-toothache-vector-illustration.jpg',
+    correct: '.او دَندان‌دَرد دارَد',
+    options: ['.او دَندان‌دَرد دارَد', '.او گوش‌دَرد دارَد', '.او خوابش می‌آیَد'],
+  },
+  {
+    image: 'https://www.shutterstock.com/image-vector/earache-sore-boy-sick-person-600nw-1671298501.jpg',
+    correct: '.او گوش‌دَرد دارَد',
+    options: ['.او گوش‌دَرد دارَد', '.او شِکم‌دَرد دارَد', '.او حالِ خوب دارَد'],
+  },
+  {
+    image: 'https://media.istockphoto.com/id/1423379495/vector/girl-sweating-sunny-day-cute-child.jpg?s=612x612&w=0&k=20&c=FU0s8UF13Ms0UaOVXG5RUr3iWukOirvKnhdf1SZ7Xss=',
+    correct: '.او عَرق می‌کُنَد',
+    options: [ '.او لَبخَند می‌زَنَد','.او عَرق می‌کُنَد', '.او دَر راه اَست'],
+  },
+  {
+    image: 'https://png.pngtree.com/png-clipart/20250210/original/pngtree-a-runny-nose-for-a-child-png-image_20412369.png',
+    correct: '.بینیِ او گِرفتِه اَست',
+    options: [ '.او بینی نَدارَد', '.او دَندان دَرد دارَد','.بینیِ او گِرفتِه اَست',],
+  },
+  {
+    image: 'https://www.shutterstock.com/image-vector/little-kid-feel-tired-low-260nw-2524893147.jpg',
+    correct: '.او نِیرویی نَدارَد',
+    options: [ '.او دَرس می‌خوانَد','.او نِیرویی نَدارَد', '.او تَشنه اَست'],
+  },
+  {
+    image: 'https://t.pimg.jp/084/974/769/1/84974769.jpg',
+    correct: '.او روی تَخت دراز کِشیدِه اَست',
+    options: ['.او روی تَخت دراز کِشیدِه اَست', '.او بازی می‌کُنَد', '.او مِی‌دَوَد'],
+  },
+  {
+    image: 'https://cdn.motherhood.com.my/wp-content/uploads/2022/04/14190652/child-eat-medicine.png',
+    correct: '.او دارو می‌خورد',
+    options: [ '.او میوه می‌خورَد', '.او آب می‌خورَد','.او دارو می‌خورد',],
+  },
+];
+
+
 
 
 const ObjectSentenceGame = () => {
@@ -306,9 +319,9 @@ const ObjectSentenceGame = () => {
                 </div>
                 <div className="modal-body">
                   <div className='d-flex flex-wrap'>
-                    <button className='btn  shadow-sm border  mx-2' style={stylebg} onClick={()=>questionsqq(questions1,'question1')}>مرحله 1</button>
-                    <button className='btn shadow-sm border  mx-2' style={stylebg} onClick={()=>questionsqq(questions2,'question2')}>مرحله 2</button>
-                    {/* <button className='btn shadow-sm border mx-2' style={stylebg} onClick={()=>questionsqq(questions3,'question3')}>مرحله 3</button> */}
+                    <button className='btn  shadow-sm border  mx-2' style={stylebg} onClick={()=>questionsqq(questions1,'question1')}>اشیا و فعل ها</button>
+                    <button className='btn shadow-sm border  mx-2' style={stylebg} onClick={()=>questionsqq(questions2,'question2')}>آب و هوا</button>
+                    <button className='btn shadow-sm border mx-2' style={stylebg} onClick={()=>questionsqq(illnessSignsQuestions,'question3')}>علایم بیماری</button>
                   </div>
                 </div>
                 <div class="modal-footer">
