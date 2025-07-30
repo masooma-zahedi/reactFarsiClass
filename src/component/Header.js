@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { ChangeBg } from './classes/ChangeBg';
+import {TodayPlan} from './classes/TodayPlan'
 
 export const Header = () => {
   const [showbg,setShowbg] = useState(false);
@@ -28,6 +29,9 @@ export const Header = () => {
                     </li>
                     <li className="nav-item">
                     <NavLink className="nav-link" onClick={handlebg} to="">ChangeBg</NavLink>
+                    </li>
+                    <li className="nav-item">
+                    <NavLink className="nav-link" to="/todayplan">TodayPlan</NavLink>
                     </li>
                 </ul>
                 </div>
