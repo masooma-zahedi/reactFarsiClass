@@ -1963,69 +1963,69 @@ export let questions2 = [
 
 export let questions3 = [
   {
-    sentence: 'او جعبه را از روی ___ بلند کرد.',
+    sentence: 'او جَعبِه را از روی ___ بُلَند کَرد.',
     correctWord: 'میز',
-    options: ['میز', 'کِتاب', 'کِیف'],
+    options: [ 'کِتاب', 'کِیف','میز',],
     image: '/images/assetWord/actionVerb/12-31-45-verb.png'
   },
   {
-    sentence: 'من به دانش‌آموزانم ___ آموزش می‌دهم.',
+    sentence: 'من به دانِش‌آموزانَم ___ آموزِش می‌دَهَم.',
     correctWord: 'انگلیسی',
-    options: ['انگلیسی', 'ریاضی', 'نقاشی'],
+    options: [ 'ریاضی','انگلیسی', 'نقاشی'],
     image: '/images/assetWord/actionVerb/12-31-46-verb.png'
   },
   {
-    sentence: 'وقتی به ایستگاه ___ رسیدم دوباره با شما تماس خواهم گرفت.',
+    sentence: 'وَقتی به ایستگاه ___ رِسیدَم دوباره با شُما تَماس خواهم گِرِفت.',
     correctWord: 'اتوبوس',
-    options: ['اتوبوس', 'قطار', 'مدرسه'],
+    options: [ 'قَطار','اتوبوس', 'مَدرِسِه'],
     image: '/images/assetWord/actionVerb/12-31-47-verb.png'
   },
   {
-    sentence: 'او به ___ می‌رود.',
+    sentence: 'او به ___ می‌رَوَد.',
     correctWord: 'مدرسه',
     options: ['مدرسه', 'بیمارستان', 'مغازه'],
     image: '/images/assetWord/actionVerb/12-31-48-verb.png'
   },
   {
-    sentence: 'هر جا می‌رفتم کتاب را با خودم ___ می‌کردم.',
+    sentence: 'هَر جا می‌رَفتَم کِتاب را با خودَم ___ می‌کَردَم.',
     correctWord: 'حمل',
-    options: ['حمل', 'پنهان', 'تمیز'],
+    options: ['پنهان', 'تمیز','حمل', ],
     image: '/images/assetWord/actionVerb/12-31-49-verb.png'
   },
   {
     sentence: 'او در را ___ کرد.',
-    correctWord: 'قفل',
-    options: ['قفل', 'باز', 'رنگ'],
+    correctWord: 'قُفل',
+    options: [ 'باز', 'رَنگ','قُفل',],
     image: '/images/assetWord/actionVerb/12-31-50-verb.png'
   },
   {
-    sentence: 'من می‌خواهم برای جشن تولد دوستم ___ بپزم.',
-    correctWord: 'کیک',
-    options: ['کیک', 'کباب', 'برنج'],
+    sentence: 'مَن می‌خواهَم بَرایِ جَشن تَوَلُد دوستَم ___ بِپَزَم.',
+    correctWord: 'کِیک',
+    options: [ 'کَباب', 'کِیک','بِرِنج'],
     image: '/images/assetWord/actionVerb/12-31-51-verb.png'
   },
   {
-    sentence: 'او روی ___ شناور بود.',
-    correctWord: 'پشتش',
-    options: ['پشتش', 'سینه‌اش', 'پایش'],
+    sentence: 'او رویِ ___ شِناوَر بود.',
+    correctWord: 'پُشتَش',
+    options: ['پُشتَش', 'سینه‌اش', 'پایش'],
     image: '/images/assetWord/actionVerb/12-31-52-verb.png'
   },
   {
-    sentence: 'جوکر همزمان با پنج ___ بازی کرد.',
+    sentence: 'جوکِر هَمزَمان با پَنج ___ بازی کَرد.',
     correctWord: 'توپ',
-    options: ['توپ', 'سیب', 'جعبه'],
+    options: ['توپ', 'سیب', 'جَعبِه'],
     image: '/images/assetWord/actionVerb/12-31-53-verb.png'
   },
   {
-    sentence: 'سگ ___ را گاز گرفت.',
-    correctWord: 'پایش',
-    options: ['پایش', 'دستش', 'گوشش'],
+    sentence: 'سَگ ___ را گاز گِرِفت.',
+    correctWord: 'پایَش',
+    options: ['دَستَش', 'گوشَش','پایَش', ],
     image: '/images/assetWord/actionVerb/12-31-54-verb.png'
   },
   {
     sentence: 'من یک ___ را به خانه پرتاب کردم.',
     correctWord: 'توپ',
-    options: ['توپ', 'سیب', 'کتاب'],
+    options: [ 'سیب',,'توپ', 'کتاب'],
     image: '/images/assetWord/actionVerb/12-31-55-verb.png'
   },
   {
@@ -2043,19 +2043,19 @@ export let questions3 = [
   {
     sentence: 'او در حال حفر یک ___ عمیق است.',
     correctWord: 'چاله',
-    options: ['چاله', 'کمد', 'چتر'],
+    options: [ 'کمد','چاله', 'چتر'],
     image: '/images/assetWord/actionVerb/12-31-58-verb.png'
   },
   {
     sentence: 'من هفته‌ای دوبار کف ___ را تمیز می‌کنم.',
     correctWord: 'آشپزخانه',
-    options: ['آشپزخانه', 'اتاق', 'حیاط'],
+    options: [ 'اتاق', 'حیاط','آشپزخانه',],
     image: '/images/assetWord/actionVerb/12-31-59-verb.png'
   },
   {
     sentence: 'ما می‌خواهیم خانه خود را ___ .',
     correctWord: 'بسازیم',
-    options: ['بسازیم', 'ترک', 'رها'],
+    options: [ 'ترک', 'رها','بسازیم',],
     image: '/images/assetWord/actionVerb/12-31-60-verb.png'
   },
   {
@@ -2073,13 +2073,13 @@ export let questions3 = [
   {
     sentence: 'ما در ___ اسکیت می‌کنیم.',
     correctWord: 'پارک',
-    options: ['پارک', 'خیابان', 'مدرسه'],
+    options: [ 'خیابان', 'پارک','مدرسه'],
     image: '/images/assetWord/actionVerb/12-31-63-verb.png'
   },
   {
     sentence: 'او با ظرافت روی ___ در پارک تاب خورد.',
     correctWord: 'تاب',
-    options: ['تاب', 'در', 'تخته'],
+    options: [ 'در', 'تخته','تاب'],
     image: '/images/assetWord/actionVerb/12-31-64-verb.png'
   }
 ];

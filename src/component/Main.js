@@ -4,6 +4,7 @@ import { Alphabet } from './classes/alphabet/Alphabet';
 import {Word} from './classes/word/Word';
 import { Story } from './classes/story/Story';
 import { ScrollToTop } from './classes/ScrollToTop';
+import TodayPlan from './classes/TodayPlan';
 
 export const Main = () => {
   return (
@@ -17,6 +18,7 @@ export const Main = () => {
             <Route path='/*' element={<Alphabet/>} end />
             <Route path='/word/*' element={<Word/>} />
             <Route path='/story/*' element={<Story/>} />
+            <Route path='/todayPlan' element={<TodayPlan/>} />
           </Routes>
       {/* </div> */}
     </>

@@ -28,7 +28,7 @@ export let florence ={
     wordId:"floren1",
     titleStory:"زندگی فلورانس نایتینگل",
     targetHref:"floraN1",
-    imageStory:["/images/assetStory/12-10-4-فلورانس.jpg","/images/assetStory/12-19-5-فلورنس.jpg"],
+    imageStory:["/images/assetStory/12-10-4-فلورانس.jpg"],
     wordPart:[
         {
             wordMean:"سرپرست",
