@@ -10,6 +10,7 @@ import LetterPuzzle from './LetterPuzzle.js';
 import StoryPage3 from '../story/StoryPage3.js';
 import SentenceObject from './SentenceObject.js';
 import WhoDoesWhatGame from './WhoDoesWhatGame.js';
+import TypingQAImageSlider from './TypingQAImageSlider.js';
 
 export const Word = () => {
   return (
@@ -41,6 +42,7 @@ export const Word = () => {
               <Route path='/wordSentence' element={<WordToSentence />}  />
               <Route path='/letterPuzzle' element={<LetterPuzzle />}  />
               <Route path='/sentenceObject' element={<SentenceObject />}  />
+              <Route path='/typingQAImageSlider' element={<TypingQAImageSlider />}  />
               <Route path='moreStoryWords' element={<StoryPage3 groupKey="kalemat" />}  />
 
             </Routes>
