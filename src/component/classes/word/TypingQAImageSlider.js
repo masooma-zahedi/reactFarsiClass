@@ -3,11 +3,165 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 // ✅ داده‌های دسته‌بندی‌شده
 const categories = {
+   "خرید و فروش":[
+        {
+          "image": "https://www.shutterstock.com/image-vector/green-grocer-shop-various-fruits-600nw-1736669012.jpg",
+          "question": "تو بازار چی می‌خَری؟",
+          "answer": "مَن میوه می‌خَرم."
+        },
+        {
+          "image": "https://www.shutterstock.com/image-vector/toys-seller-street-illustration-260nw-2283941305.jpg",
+          "question": "او چی می‌فُروشه؟",
+          "answer": "او اسباب‌بازی می‌فُروشه."
+        },
+        {
+          "image": "https://media.istockphoto.com/id/1288819807/vector/buying-clothes-girl-and-dress-clothes-rack-cartoon-child-in-fashion-store-choosing-new-look.jpg?s=612x612&w=0&k=20&c=uJjPuV_tm1C-v3rAaDzCludeF_zwAtG_l1Z03tQiBxc=",
+          "question": "مَن از کُجا لِباس می‌خَرم؟",
+          "answer": "تو مَغازه لِباس می‌خَری."
+        },
+        {
+          "image": "https://thumbs.dreamstime.com/b/cartoon-baker-selling-bread-buns-bakery-colorful-drawing-172930431.jpg",
+          "question": "نانوایی چی می‌فُروشه؟",
+          "answer": "او نان می‌فُروشه."
+        },
+        {
+          "image": "https://thumb.ac-illust.com/dc/dcbf5a403e03001e645444393f7ad8c1_w.jpeg",
+          "question": "تو کِی کفش می‌خَری؟",
+          "answer": "مَن روز جمعه کفش می‌خَرم."
+        },
+        {
+          "image": "https://img.freepik.com/premium-photo/cartoon-illustration-farmers-market-with-people-shopping-fresh-produce_36682-244933.jpg",
+          "question": "بازار میوه کُجاست؟",
+          "answer": "بازار میوه نَزدیک خونه ماست."
+        },
+        {
+          "image": "https://t4.ftcdn.net/jpg/02/78/37/33/360_F_278373358_25gUoss2GtX0KJa8kJQmNcp872u6dTxW.jpg",
+          "question": "مَن چی از بقالی می‌خَرم؟",
+          "answer": "تو شیر و تخم‌مرغ می‌خَری."
+        },
+        {
+          "image": "https://www.shutterstock.com/image-vector/buying-books-shop-students-library-260nw-2286949429.jpg",
+          "question": "کِتاب‌فُروش چی داره؟",
+          "answer": "او کِتاب و دَفتَر داره."
+        },
+        {
+          "image": "https://thumbs.dreamstime.com/b/candy-stall-kids-buying-sweets-festive-42703019.jpg",
+          "question": "بَچه‌ها چی دوست دارن بِخَرن؟",
+          "answer": "آنها شیرینی و شکلات دوست دارن."
+        },
+        {
+          "image": "https://thumbs.dreamstime.com/b/cute-girly-farmer-market-stand-sell-fruit-veggies-produce-doodle-hand-drawn-cute-girly-farmer-market-stand-sell-fruit-veggies-380216776.jpg",
+          "question": "مَرد تو بازار چی می‌فُروشه؟",
+          "answer": "او سبزی و میوه می‌فُروشه."
+        },
+        {
+          "image": "https://thumbs.dreamstime.com/b/d-cartoon-customer-buying-milk-small-shop-ai-generated-d-cartoon-illustration-shows-customer-buying-milk-cheerful-343553900.jpg",
+          "question": "مَن صُبح چی می‌خَرم؟",
+          "answer": "تو صُبح شیر می‌خَری."
+        },
+        {
+          "image": "https://thumb.ac-illust.com/b7/b718b3063816b28ab392cea84cc92456_t.jpeg",
+          "question": "او تو مَغازه چی می‌فُروشه؟",
+          "answer": "او لِباس می‌فُروشه."
+        },
+        {
+          "image": "https://www.shutterstock.com/shutterstock/photos/353749007/display_1500/stock-vector-cartoon-shopping-cart-full-of-groceries-vector-illustration-isolated-on-white-353749007.jpg",
+          "question": "مَن با چِی خرید می‌کنم؟",
+          "answer": "تو با چَرخ خرید می‌کُنی."
+        },
+        {
+          "image": "https://media.istockphoto.com/id/1707345367/vector/empty-toy-store-interior-with-shelves-cartoon.jpg?s=612x612&w=0&k=20&c=xXastjKzSCqPhxA1FGv1XJhB4EFC_286SF7DMwS11SA=",
+          "question": "اَسباب‌بازی‌ فُروشی کُجاست؟",
+          "answer": "اِسباب‌بازی‌فُروشی تو بازار است."
+        },
+        {
+          "image": "https://media.istockphoto.com/id/450654623/vector/buying-vegetables.jpg?s=612x612&w=0&k=20&c=swi--ephBC0xn8RP--ka0BU5VJ_nwEdD_LgbEkPyPAo=",
+          "question": "مادَر چی می‌خَره؟",
+          "answer": "او سبزی و گوجه می‌خَره."
+        }
+     ],
+    "حیوانات":[
+        {
+          "image": "http://img.freepik.com/free-vector/cute-kitten-sofa-cartoon_1308-146475.jpg?semt=ais_hybrid&w=740&q=80",
+          "question": "ایـن چـه حِیوانی اَست؟",
+          "answer": "گُربـه"
+        },
+        {
+          "image": "https://images.stockcake.com/public/0/d/3/0d3804e2-cd56-44e7-b03f-3495d88724fa_medium/happy-puppy-play-stockcake.jpg",
+          "question": "ایـن چـه حِیوانی اَست؟",
+          "answer": "سَگ"
+        },
+        {
+          "image": "https://static.vecteezy.com/system/resources/previews/055/346/933/non_2x/fun-cute-rabbit-eating-carrot-cartoon-colored-character-isolated-drawing-line-style-sketch-classic-vintage-design-illustration-vector.jpg",
+          "question": "خَرگوش چـه کـار می‌کُنَد؟",
+          "answer": "هَوِیج می‌خـورَد"
+        },
+        {
+          "image": "https://img.freepik.com/premium-vector/cute-goldfish-round-aquarium-illustration-cartoon-vector-isolated-white-background_338371-2638.jpg",
+          "question": "ماهی کُـجـاست؟",
+          "answer": "دَر آکـوار‌یوم"
+        },
+        {
+          "image": "https://png.pngtree.com/png-clipart/20250417/original/pngtree-green-parrot-sitting-on-tree-branch-png-image_20818241.png",
+          "question": "طوطی چـه رَنگی اَست؟",
+          "answer": "سَـبز"
+        },
+        {
+          "image": "https://thumbs.dreamstime.com/b/cute-cartoon-baby-sea-turtle-crawling-sandy-beach-ocean-waves-background-digital-illustration-332975730.jpg",
+          "question": "لاک‌پُشت کُـجا راه می‌رَوَد؟",
+          "answer": "روی زَمین"
+        },
+        {
+          "image": "https://www.shutterstock.com/image-vector/hamsters-cage-cartoon-fatty-hamster-260nw-2465102381.jpg",
+          "question": "هَمـسـتِر کُـجـاست؟",
+          "answer": "دَر قَفَس"
+        },
+        {
+          "image": "https://thumbs.dreamstime.com/b/lion-lies-under-tree-sunset-resting-african-savanna-illustration-386543547.jpg",
+          "question": "ایـن چـه حِیوانی اَست؟",
+          "answer": "شیر"
+        },
+        {
+          "image": "https://thumbs.dreamstime.com/b/tiger-walking-forest-301966215.jpg",
+          "question": "بَبر کُجا راه می‌رَوَد؟",
+          "answer": "دَر جَنگَل"
+        },
+        {
+          "image": "https://thumbs.dreamstime.com/b/cartoon-bear-walking-forest-301538973.jpg",
+          "question": "خُرس کُـجـاست؟",
+          "answer": "دَر جَنگَل"
+        },
+        {
+          "image": "https://img.favpng.com/5/15/8/cartoon-monkey-cute-monkey-climbing-a-tree-zZfPfr2q_t.jpg",
+          "question": "میمون چـه کـاری می‌کُنَد؟",
+          "answer": "اَز دَرخـت بالا می‌رَوَد"
+        },
+        {
+          "image": "https://img-v3.deepdreamgenerator.com/4780118/md_fvqfyh_dbfda0ebb101aa847c530e6a5707b674b42ae787.jpg",
+          "question": "فیل با چِـه کَسی اَست؟",
+          "answer": "با بَچِـه‌اَش"
+        },
+        {
+          "image": "https://i.pinimg.com/736x/e4/b9/91/e4b991bb79a1a165776a7d824559c0e4.jpg",
+          "question": "ایـن چـه حَیوانی اَست؟",
+          "answer": "آهُو"
+        },
+        {
+          "image": "https://thumbs.dreamstime.com/b/curious-fox-peeking-lush-green-foliage-illustration-cute-orange-eyes-playfully-behind-dense-bush-381026758.jpg",
+          "question": "روباه کُـجـاست؟",
+          "answer": "دَر میـان بُـوته‌ها"
+        },
+        {
+          "image": "https://media.istockphoto.com/id/474157988/vector/lone-wolf-howling-at-the-moon.jpg?s=612x612&w=0&k=20&c=wT3nuawWk6FHaTXze6V_POcQe9dzM9s-ZpoUp5S-54g=",
+          "question": "گُرگ چـه کـاری می‌کُنَد؟",
+          "answer": "زُوزه می‌کِشَد"
+        }
+      ],
     "احساسات":[
         {
             "image": "https://png.pngtree.com/png-clipart/20250425/original/pngtree-laughing-happy-cartoon-boy-with-expressive-joyful-face-for-fun-illustration-png-image_20810123.png",
             "question": "او چِه اِحساسی دارَد؟",
-            "answer": "خُوشحال"
+            "answer": "  خُوشحال"
         },
         {
             "image": "https://img.freepik.com/premium-vector/sad-little-girl-sits-floor-has-sad-face_679557-2802.jpg?semt=ais_hybrid&w=740&q=80",
