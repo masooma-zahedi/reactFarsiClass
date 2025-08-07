@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { words1, words10, words11, words12, words14, words15, words16, words2, words3, words4, words5, words6, words7, words8 } from './dataAlpha';
+import { words1, words10, words11, words12, words14, words15, words16, words2, words3, words4, words5, words6, words7, words8,words17 } from './dataAlpha';
 
 const wordCategories = {
   "حرف ل":words10,
@@ -20,6 +20,7 @@ const wordCategories = {
   "حرف س":words14,
   "حرف ش":words15,
   "حرف ض":words16,
+  "*حرف چ":words17,
 };
 
 const getRandomColor = () => {
