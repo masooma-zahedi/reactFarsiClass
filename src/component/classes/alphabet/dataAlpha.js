@@ -34,7 +34,7 @@ export let storyAlpha1={
 export let storyAlpha2={
     buttonId:"storyAlp2",
     carouselImg:[
-        "/images/assetAlpha/alphaStory/variety/variety-1.jpg",
+        "/images/assetAlpha/alphaStory/variety/variety-1.png",
         "/images/assetAlpha/alphaStory/variety/variety-2.jpg",
         "/images/assetAlpha/alphaStory/variety/variety-3.jpg",
         "/images/assetAlpha/alphaStory/variety/variety-4.jpg",

@@ -19,6 +19,7 @@ import SyllableApp from "./SyllableApp.js";
 // import SentenceApp2 from "./SentenceApp2.js";
 import StoryPage3 from "../story/StoryPage3.js";
 import WordGameWithCategories from "./WordGameWithCategories.js";
+import HighlightLetterText from "./HighlightLetterText.js";
 
 export const Alphabet = () => {
   const [showShort, setShowShort] = useState(false)
@@ -48,6 +49,7 @@ export const Alphabet = () => {
                 <Route path='/SyllableApp' element={<SyllableApp />}  />
                 <Route path='/wordGameWithCategories' element={<WordGameWithCategories/>}  />
                 <Route path='moreStoryWordsAlpha' element={<StoryPage3 groupKey="alefba" />}  />
+                <Route path='HighlightLetterText' element={<HighlightLetterText />}  />
               </Routes>
               <WordCarousel/>
               <GameWord />

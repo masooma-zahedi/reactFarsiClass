@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { database, ref, set, onValue, remove } from '.././firebase';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { NavLink } from 'react-router-dom';
 
 // کامپوننت نمایش محتوای داستان
 const StoryPage = ({ title, content, vocab, qa }) => {
@@ -154,9 +155,22 @@ function StoryPage3({ groupKey = 'dastan' }) {
   return (
     <div className="container mt-4">
       <div className="d-flex justify-content-between mb-3">
-        <button className="btn btn-outline-primary" onClick={() => setShowList(!showList)}>
-          {showList ? 'پنهان کردن فهرست' : 'نمایش فهرست'}
-        </button>
+        <div className='d-flex justify-content-start'>
+        {/* <button className="btn btn-success"> */}
+          {/* <NavLink className="btn btn-outline-success  mx-1" to="/HighlightLetterText">test this</NavLink> */}
+        {/* </button> */}
+        <a
+          className="btn btn-outline-success mx-1"
+          href="/HighlightLetterText"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          test this
+        </a>         
+         <button className="btn btn-outline-primary" onClick={() => setShowList(!showList)}>
+            {showList ? 'پنهان کردن فهرست' : 'نمایش فهرست'}
+          </button>
+        </div>
         <button className="btn btn-outline-success" onClick={() => setShowForm(!showForm)}>
           {showForm ? 'پنهان کردن فرم افزودن' : 'نمایش فرم افزودن'}
         </button>
