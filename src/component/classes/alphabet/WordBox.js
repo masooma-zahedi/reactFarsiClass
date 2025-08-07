@@ -1,8 +1,6 @@
-import React, { useState, useEffect, useRef } from "react";
-import {words9} from "./dataAlpha"
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-
-// const initialWords = words9;
+import { words9 } from "./dataAlpha"; // مطمئن شو که آرایه words9 در این فایل وجود داره
 
 const emojis = ["🚗", "🦄", "🐥", "🐸", "🐱", "🐵", "🛸", "🌈", "🚀", "🧸", "🎈"];
 
@@ -15,12 +13,13 @@ const getRandomEmoji = () => {
   return emojis[Math.floor(Math.random() * emojis.length)];
 };
 
-const WordBox = ({wordB}) => {
+const WordBox = ({ wordB = words9 }) => {
   const [words, setWords] = useState([...wordB]);
   const [currentWord, setCurrentWord] = useState("");
   const [currentEmoji, setCurrentEmoji] = useState(getRandomEmoji());
   const [isRunning, setIsRunning] = useState(true);
   const [bgColor, setBgColor] = useState(getRandomColor());
+  const [highlightLetter, setHighlightLetter] = useState("ک");
   const intervalRef = useRef(null);
 
   useEffect(() => {
@@ -37,15 +36,31 @@ const WordBox = ({wordB}) => {
 
     return () => clearInterval(intervalRef.current);
   }, [isRunning, words]);
+  
 
-  const handleBoxClick = () => {
-    if (isRunning) {
-      setIsRunning(false);
-      setWords(prev => prev.filter(w => w !== currentWord));
-    } else if (words.length > 0) {
-      setIsRunning(true);
+const handleBoxClick = useCallback(() => {
+  if (isRunning) {
+    setIsRunning(false);
+    setWords(prev => prev.filter(w => w !== currentWord));
+  } else if (words.length > 0) {
+    setIsRunning(true);
+  }
+}, [isRunning, words, currentWord]);
+
+useEffect(() => {
+  const handleKeyDown = (e) => {
+    if (e.code === "Space") {
+      e.preventDefault(); // از اسکرول پیش‌فرض جلوگیری می‌کنه
+      handleBoxClick();
     }
   };
+
+  window.addEventListener("keydown", handleKeyDown);
+
+  return () => {
+    window.removeEventListener("keydown", handleKeyDown);
+  };
+}, [handleBoxClick]);
 
   const resetGame = () => {
     setWords([...wordB]);
@@ -53,6 +68,12 @@ const WordBox = ({wordB}) => {
     setCurrentWord("");
     setCurrentEmoji(getRandomEmoji());
     setBgColor(getRandomColor());
+  };
+
+  const getHighlightedWord = (word, letter) => {
+    if (!letter) return word;
+    const regex = new RegExp(`(${letter})`, "g");
+    return word.replace(regex, '<span style="color: red;">$1</span>');
   };
 
   return (
@@ -93,7 +114,14 @@ const WordBox = ({wordB}) => {
         }}
         onClick={handleBoxClick}
       >
-        <div>{words.length > 0 ? currentWord : "پایان"}</div>
+        <div
+          dangerouslySetInnerHTML={{
+            __html:
+              words.length > 0
+                ? getHighlightedWord(currentWord, highlightLetter)
+                : "پایان",
+          }}
+        />
         <div className={`emoji ${isRunning ? "" : "paused"}`}>{currentEmoji}</div>
       </div>
 
@@ -102,6 +130,21 @@ const WordBox = ({wordB}) => {
       <button className="btn btn-primary mt-3" onClick={resetGame}>
         شروع دوباره
       </button>
+
+      <div className="mt-4">
+        <label htmlFor="letterInput" className="form-label">
+          حرف مورد نظر برای رنگی شدن:
+        </label>
+        <input
+          type="text"
+          id="letterInput"
+          maxLength={1}
+          className="form-control text-center"
+          style={{ width: "60px", margin: "0 auto" }}
+          value={highlightLetter}
+          onChange={(e) => setHighlightLetter(e.target.value)}
+        />
+      </div>
     </div>
   );
 };
