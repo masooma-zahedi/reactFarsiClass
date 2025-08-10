@@ -22,7 +22,7 @@ const renderText = () => {
     return (
       <span
         key={index}
-        style={{ color: char === letterToHighlight ? "red" : "black" }}
+        style={{ color: char === letterToHighlight ? " #d365a9ff" : "black" }}
       >
         {char}
       </span>
@@ -37,7 +37,7 @@ const renderText2 = () => {
     return (
       <span
         key={index}
-        style={{ color: char === letterToHighlight ? "red" : "black" }}
+        style={{ color: char === letterToHighlight ?" #d365a9ff" : "black" }}
       >
         {char}
       </span>
@@ -84,18 +84,19 @@ const renderText2 = () => {
         </div>
       }
 
-      <h4 className="mb-3">متن با حرف قرمز <span className='text-danger'>{letterToHighlight}</span></h4>
-      <p className='h2' style={{ fontSize: "1.5rem", textAlign: "right",lineHeight:"3rem", direction: "rtl" }}>
+      {/* <h4 className="mb-3">متن با حرف قرمز <span className='text-danger'>{letterToHighlight}</span></h4> */}
+      <h4 className="my-3 h2">کامی و کیک</h4>
+      <p className='h2' style={{ fontSize: "2rem", textAlign: "right",lineHeight:"3.5rem", direction: "rtl" }}>
         {renderText()}
       </p>
 
       <img
         src={imageUrl}
         alt="تصویر مرتبط"
-        className="img-fluid mt-3"
+        className="img-fluid my-3"
         style={{ maxWidth: "400px", borderRadius: "10px" }}
       />
-      <p className='h2' style={{ fontSize: "1.5rem", textAlign: "right",lineHeight:"3rem", direction: "rtl" }}>
+      <p className='h2' style={{ fontSize: "2rem", textAlign: "right",lineHeight:"3.5rem", direction: "rtl" }}>
         {renderText2()}
       </p>    
     </div>
