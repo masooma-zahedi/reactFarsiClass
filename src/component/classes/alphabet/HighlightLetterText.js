@@ -4,110 +4,129 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const HighlightLetterText = () => {
   const [textStory, setTextStory] = useState('');
   const [textStory2, setTextStory2] = useState('');
-  const [title, setTitle] = useState('')
-  const text = `${textStory}`;
-  const text2 = `${textStory2}`;
-  
-  const [test, setTest] = useState('');
-  const letterToHighlight = `${test}`;
-  const [showT, setShowT] = useState(true);
-  const [imgAddress, setImgAddress] = useState('')
+  const [title, setTitle] = useState('');
+  const [letterToHighlight, setLetterToHighlight] = useState('');
+  const [showForm, setShowForm] = useState(true);
+  const [imgAddress, setImgAddress] = useState('');
 
-  const imageUrl = `${imgAddress}`; // ← آدرس تصویر مناسب با متن را این‌جا بگذارید
-
-const renderText = () => {
-  return text.split("").map((char, index) => {
-    if (char === "\n") {
-      return <br key={index} />;
-    }
-    return (
-      <span
-        key={index}
-        style={{ color: char === letterToHighlight ? " #d365a9ff" : "black" }}
-      >
-        {char}
-      </span>
-    );
-  });
-};
-const renderText2 = () => {
-  return text2.split("").map((char, index) => {
-    if (char === "\n") {
-      return <br key={index} />;
-    }
-    return (
-      <span
-        key={index}
-        style={{ color: char === letterToHighlight ?" #d365a9ff" : "black" }}
-      >
-        {char}
-      </span>
-    );
-  });
-};
-
+  const renderText = (text, highlight, color) => {
+    return text.split("").map((char, index) => {
+      if (char === "\n") {
+        return <br key={index} />;
+      }
+      return (
+        <span
+          key={index}
+          style={{ color: char === highlight ? color : "black" }}
+        >
+          {char}
+        </span>
+      );
+    });
+  };
 
   return (
-    <div className="container bg-light p-4 mt-4 d-flex flex-column align-items-center">
-      <button className='btn-sm btn-success mb-4' onClick={()=>setShowT(!showT)}>{showT ? "HideText" : "ShowText"}</button>
-      {showT && 
-        <div className="mb-3 w-100">
-          <input
-            type="text"
-            value={test}
-            placeholder="حرف را وارد کنید"
-            onChange={(e) => setTest(e.target.value)}
-            className="form-control mb-2"
-          />
-                    <input
-            type="text"
-            value={title}
-            placeholder="عنوان داستان"
-            onChange={(e) => setTitle(e.target.value)}
-            className="form-control mb-2"
-          />
+    <div className="container my-5">
+      <div className="d-flex justify-content-between align-items-center mb-3">
+        <h3 className="mb-0">نمایش متن با هایلایت</h3>
+        <button
+          className="btn btn-outline-primary btn-sm"
+          onClick={() => setShowForm(!showForm)}
+        >
+          {showForm ? "پنهان کردن فرم" : "نمایش فرم"}
+        </button>
+      </div>
 
-          <textarea
-            value={textStory}
-            onChange={(e) => setTextStory(e.target.value)}
-            className="form-control"
-            rows={4}
-            placeholder="متن خود را این‌جا وارد کنید"
-          ></textarea>
-            <input
-            type="text"
-            value={imgAddress}
-            placeholder="آدرس عکس"
-            onChange={(e) => setImgAddress(e.target.value)}
-            className="form-control my-2"
-          />
-                    <textarea
-            value={textStory2}
-            onChange={(e) => setTextStory2(e.target.value)}
-            className="form-control"
-            rows={4}
-            placeholder="متن خود را این‌جا وارد کنید"
-          ></textarea>
+      {showForm && (
+        <div className="card shadow-sm p-4 mb-4">
+          <div className="row g-3">
+            <div className="col-md-6">
+              <label className="form-label">حرف یا کلمه برای هایلایت</label>
+              <input
+                type="text"
+                value={letterToHighlight}
+                onChange={(e) => setLetterToHighlight(e.target.value)}
+                className="form-control"
+                placeholder="مثلا: ک یا کا"
+              />
+            </div>
 
+            <div className="col-md-6">
+              <label className="form-label">عنوان داستان</label>
+              <input
+                type="text"
+                value={title}
+                onChange={(e) => setTitle(e.target.value)}
+                className="form-control"
+                placeholder="عنوان داستان"
+              />
+            </div>
 
+            <div className="col-12">
+              <label className="form-label">متن اول</label>
+              <textarea
+                value={textStory}
+                onChange={(e) => setTextStory(e.target.value)}
+                rows={4}
+                className="form-control"
+                placeholder="متن خود را اینجا وارد کنید"
+              />
+            </div>
+
+            <div className="col-12">
+              <label className="form-label">آدرس تصویر</label>
+              <input
+                type="text"
+                value={imgAddress}
+                onChange={(e) => setImgAddress(e.target.value)}
+                className="form-control"
+                placeholder="https://example.com/image.jpg"
+              />
+            </div>
+
+            <div className="col-12">
+              <label className="form-label">متن دوم</label>
+              <textarea
+                value={textStory2}
+                onChange={(e) => setTextStory2(e.target.value)}
+                rows={4}
+                className="form-control"
+                placeholder="متن خود را اینجا وارد کنید"
+              />
+            </div>
+          </div>
         </div>
-      }
+      )}
 
-      <h4 className="mb-5">متن با حرف قرمز <span className='text-danger'>{letterToHighlight}</span></h4>
-      <h4 className="my-4 h2">{title}</h4>
-      <p className='h2' style={{ fontSize: "2rem", textAlign: "right",lineHeight:"3.5rem", direction: "rtl" }}>
-        {renderText()}
-      </p>
+      <h4 className="mb-5">
+        متن با حرف قرمز: <span className="text-danger">{letterToHighlight}</span>
+      </h4>
 
-      <img
-        src={imageUrl}
-        alt="تصویر مرتبط"
-        className="img-fluid my-3"
-        style={{ maxWidth: "500px", borderRadius: "10px" }}
-      />
-      <p className='h2' style={{ fontSize: "2rem", textAlign: "right",lineHeight:"3.5rem", direction: "rtl" }}>
-        {renderText2()}
-      </p>    
+      <h2 className="mb-5 text-center">{title}</h2>
+
+      <div
+        className="mb-4 "
+        style={{ fontSize: "2rem", lineHeight: "3rem", direction: "rtl", textAlign: "right" }}
+      >
+        {renderText(textStory, letterToHighlight, "#d365a9")}
+      </div>
+
+      {imgAddress && (
+        <div className="text-center mb-4">
+          <img
+            src={imgAddress}
+            alt="تصویر مرتبط"
+            className="img-fluid rounded shadow"
+            style={{ maxWidth: "400px" }}
+          />
+        </div>
+      )}
+
+      <div
+        style={{ fontSize: "2rem", lineHeight: "3rem", direction: "rtl", textAlign: "right" }}
+      >
+        {renderText(textStory2, letterToHighlight, "#c24d95")}
+      </div>
     </div>
   );
 };
