@@ -38,7 +38,7 @@ const renderText2 = () => {
     return (
       <span
         key={index}
-        style={{ color: char === letterToHighlight ?" #c24d95ff" : "black" }}
+        style={{ color: char === letterToHighlight ?" #d365a9ff" : "black" }}
       >
         {char}
       </span>
@@ -103,7 +103,7 @@ const renderText2 = () => {
         src={imageUrl}
         alt="تصویر مرتبط"
         className="img-fluid my-3"
-        style={{ maxWidth: "400px", borderRadius: "10px" }}
+        style={{ maxWidth: "500px", borderRadius: "10px" }}
       />
       <p className='h2' style={{ fontSize: "2rem", textAlign: "right",lineHeight:"3.5rem", direction: "rtl" }}>
         {renderText2()}
