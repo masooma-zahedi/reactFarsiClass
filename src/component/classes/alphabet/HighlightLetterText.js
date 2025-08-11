@@ -105,10 +105,10 @@ const HighlightLetterText = () => {
       <h2 className="mb-5 text-center">{title}</h2>
 
       <div
-        className="mb-4 "
-        style={{ fontSize: "2rem", lineHeight: "3rem", direction: "rtl", textAlign: "right" }}
+        className="mb-4 pe-5"
+        style={{ fontSize: "2rem", lineHeight: "2.5rem", direction: "rtl", textAlign: "right" }}
       >
-        {renderText(textStory, letterToHighlight, "#d365a9")}
+        {renderText(textStory, letterToHighlight, "#fe15a5ff")}
       </div>
 
       {imgAddress && (
@@ -123,9 +123,10 @@ const HighlightLetterText = () => {
       )}
 
       <div
-        style={{ fontSize: "2rem", lineHeight: "3rem", direction: "rtl", textAlign: "right" }}
+        className='pe-5'
+        style={{ fontSize: "2rem", lineHeight: "2.5rem", direction: "rtl", textAlign: "right" }}
       >
-        {renderText(textStory2, letterToHighlight, "#c24d95")}
+        {renderText(textStory2, letterToHighlight, "#fe15a5ff")}
       </div>
     </div>
   );
