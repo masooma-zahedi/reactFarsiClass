@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const HighlightLetterText = () => {
   const [textStory, setTextStory] = useState('');
   const [textStory2, setTextStory2] = useState('');
+  const [title, setTitle] = useState('')
   const text = `${textStory}`;
   const text2 = `${textStory2}`;
   
@@ -37,7 +38,7 @@ const renderText2 = () => {
     return (
       <span
         key={index}
-        style={{ color: char === letterToHighlight ?" #d365a9ff" : "black" }}
+        style={{ color: char === letterToHighlight ?" #c24d95ff" : "black" }}
       >
         {char}
       </span>
@@ -58,6 +59,14 @@ const renderText2 = () => {
             onChange={(e) => setTest(e.target.value)}
             className="form-control mb-2"
           />
+                    <input
+            type="text"
+            value={title}
+            placeholder="عنوان داستان"
+            onChange={(e) => setTitle(e.target.value)}
+            className="form-control mb-2"
+          />
+
           <textarea
             value={textStory}
             onChange={(e) => setTextStory(e.target.value)}
@@ -84,8 +93,8 @@ const renderText2 = () => {
         </div>
       }
 
-      {/* <h4 className="mb-3">متن با حرف قرمز <span className='text-danger'>{letterToHighlight}</span></h4> */}
-      <h4 className="my-3 h2">کامی و کیک</h4>
+      <h4 className="mb-5">متن با حرف قرمز <span className='text-danger'>{letterToHighlight}</span></h4>
+      <h4 className="my-4 h2">{title}</h4>
       <p className='h2' style={{ fontSize: "2rem", textAlign: "right",lineHeight:"3.5rem", direction: "rtl" }}>
         {renderText()}
       </p>
