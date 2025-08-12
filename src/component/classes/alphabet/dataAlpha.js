@@ -2,7 +2,7 @@ import {infoCard} from "./cardAlpha/cardDataAlpha";
 import { nanoid } from "nanoid";
 // ************************************************************************ REFRENCES****************************************************************
 // refrences:
-// بازی جمله سازی با تصویر: component:ObjectSentenceGamse ____ data: questions
+// بازی جمله سازی با تصویر: component:ObjectSentenceGamse ____ data: داده ها در خود صفحه
 //  بازی جفت سازی کلمات :   componetn:MathGame ______ data : inside component
 //  با هم بخوانیم : component : SylabeWords--> Reading _________ data : sylabelWord1
 // بازی جدول(اعداد و رنگها و ...) : component :FlippingTable _____ data : tableDataNum

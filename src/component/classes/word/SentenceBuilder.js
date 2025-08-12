@@ -315,14 +315,14 @@ const SentenceBuilder = () => {
 
   return (
     <div
-      className="container mt-4 p-4 rounded shadow"
-      style={{ fontFamily: "Vazir" }}
+      className="container mt-4 p-5 rounded shadow"
+      style={{ fontFamily: "Vazir" , width: '90%'}}
       dir="rtl"
     >
       <h4 className="mb-3">🧩 جمله‌سازی فارسی</h4>
 
       {/* دکمه باز/بسته کردن فهرست */}
-      <div className="mb-2">
+      <div className="mb-2 ">
         <button
           className="btn btn-sm btn-secondary"
           onClick={() => setShowCategories((prev) => !prev)}
@@ -413,6 +413,7 @@ const SentenceBuilder = () => {
       <style>{`
         @import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css');
       `}</style>
+      <div className="text-end text-muted fs-6">SentenceBuilder</div>
     </div>
   );
 };
