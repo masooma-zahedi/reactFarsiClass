@@ -103,26 +103,7 @@ export let storyAlpha4={
         "https://www.farsiamoozi.com/wp-content/uploads/h5p/content/51/images/file-3f309db7-78ca.png",
 ]}
 
-export let ququly ={
-    wordId:"ququl",
-    targetHref:"ququlyQu",
-    titleStory:" داستان قوقولی ",
-    imageStory:["/images/assetWord/storyWord/ququly.png",],
-    wordPart:[
-        {
-            wordMean:"",
-            engMean:""
-        },
-    ],
-    accordionItems : [
-        {
-          title: "",
-          content: "",
-        },
-      ]
 
-    
-}
 export let puyaStory ={
     wordId:"puya1",
     targetHref:"CarouselAlphaExp/alphaStory/puyaStory1",
@@ -302,7 +283,6 @@ export let contentListAlpha = {
             {id:nanoid(4),title:"متون کوتاه",targetHref:"CarouselAlphaExp/storyA2",idLetter:"storyAl-2"},
             {id:nanoid(4),title:"مورچه تنبل",targetHref:"CarouselAlphaExp/storyA3",idLetter:"storyAl-3"},
             {id:nanoid(4),title:"کلمات شبیه",targetHref:"CarouselAlphaExp/storyA4",idLetter:"storyAl-4"},
-            {id:nanoid(4),title:"قوقولی",targetHref:"CarouselAlphaExp/alphaStory/ququlyQu",idLetter:"ququl"},
             {id:nanoid(4),title:"پویا و روز بارانی",targetHref:"CarouselAlphaExp/alphaStory/puyaStory1",idLetter:"puya1"},
             {id:nanoid(4),title:"اَمین آتَش نِشان",targetHref:"CarouselAlphaExp/alphaStory/aminFireFighter1",idLetter:"amin1"},
             {id:nanoid(4),title:"پامی با هزار پا",targetHref:"CarouselAlphaExp/alphaStory/worriedPami1",idLetter:"pami1"},

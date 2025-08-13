@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom'
-import { alphaCrousel, alphaLongCrousel, alphaShortCrousel, aminFireFighter, pami, puyaStory, ququly, smallPea, storyAlpha1, storyAlpha2, storyAlpha3, storyAlpha4 } from './dataAlpha'
+import { alphaCrousel, alphaLongCrousel, alphaShortCrousel, aminFireFighter, pami, puyaStory, smallPea, storyAlpha1, storyAlpha2, storyAlpha3, storyAlpha4 } from './dataAlpha'
 import { TheStory } from '../story/TheStory'
 
 export const CarouselAlpha = ({dataCarousel,idCarouselAlpha}) => {
@@ -37,7 +37,6 @@ const AlphaStory =()=>{
         <>
             <Routes>
                 <Route path='/puyaStory1' element={<TheStory srcStory={puyaStory}/>}  />
-                <Route path='/ququlyQu' element={<TheStory srcStory={ququly}/>}  />
                 <Route path='/aminFireFighter1' element={<TheStory srcStory={aminFireFighter}/>}  />
                 <Route path='/worriedPami1' element={<TheStory srcStory={pami}/>}  />
                 <Route path='/smallPea1' element={<TheStory srcStory={smallPea}/>}  />
