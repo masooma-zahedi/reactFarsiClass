@@ -309,109 +309,167 @@ const categories = {
         ],
 
     "صبح هنگام": [
-    {
-      image: "https://png.pngtree.com/png-clipart/20250119/original/pngtree-happy-child-sits-up-on-bed-to-start-the-day-png-image_19692945.png",
-      question: "صبح بخیر! خوبی؟",
-      answer: "صبح بخیر! من خوبم، ممنون."
-    },
-    {
-      image: "https://previews.123rf.com/images/mickallnice/mickallnice1706/mickallnice170600010/79736943-kid-wake-up-in-the-morning-vector-and-illustration.jpg",
-      question: "کی بیدار شدی؟",
-      answer: "من ساعت هفت بیدار شدم."
-    },
-    {
-      image: "https://www.shutterstock.com/shutterstock/photos/1151499506/display_1500/stock-vector-vector-illustration-kid-eating-breakfast-cartoon-concept-1151499506.jpg",
-      question: "چی صبحانه خوردی؟",
-      answer: "من نان و مربا خوردم."
-    },
-    {
-      image: "https://c8.alamy.com/comp/2EMDHWB/vector-illustration-of-cute-boy-brushing-teeth-2EMDHWB.jpg",
-      question: "مسواک زدی؟",
-      answer: "بله، دندان‌هایم را مسواک زدم."
-    },
-    {
-      image: "https://img.freepik.com/premium-vector/happy-cute-little-kid-girl-preparing-uniform-school_97632-2212.jpg",
-      question: "آماده‌ای برای مدرسه؟",
-      answer: "بله، کیفم را آماده کردم."
-    }
-  ],
+        {
+          "image": "https://png.pngtree.com/png-clipart/20250119/original/pngtree-happy-child-sits-up-on-bed-to-start-the-day-png-image_19692945.png",
+          "question": "صبح بخیر! خوبی؟",
+          "answer": "صبح بخیر! من خوبم، ممنون."
+        },
+        {
+          "image": "https://previews.123rf.com/images/mickallnice/mickallnice1706/mickallnice170600010/79736943-kid-wake-up-in-the-morning-vector-and-illustration.jpg",
+          "question": "کی بیدار شدی؟",
+          "answer": "من ساعت هفت بیدار شدم."
+        },
+        {
+          "image": "https://www.shutterstock.com/shutterstock/photos/1151499506/display_1500/stock-vector-vector-illustration-kid-eating-breakfast-cartoon-concept-1151499506.jpg",
+          "question": "چی صبحانه خوردی؟",
+          "answer": "من نان و مربا خوردم."
+        },
+        {
+          "image": "https://c8.alamy.com/comp/2EMDHWB/vector-illustration-of-cute-boy-brushing-teeth-2EMDHWB.jpg",
+          "question": "مسواک زدی؟",
+          "answer": "بله، دندان‌هایم را مسواک زدم."
+        },
+        {
+          "image": "https://img.freepik.com/premium-vector/happy-cute-little-kid-girl-preparing-uniform-school_97632-2212.jpg",
+          "question": "آماده‌ای برای مدرسه؟",
+          "answer": "بله، کیفم را آماده کردم."
+        }
+      ],
     "در مدرسه": [
     {
-      image: "https://www.shutterstock.com/shutterstock/photos/682866226/display_1500/stock-vector-students-in-front-of-school-cartoon-vector-illustration-682866226.jpg",
-      question: "کجا هستی؟",
-      answer: "من در مدرسه هستم."
+      "image": "https://www.shutterstock.com/shutterstock/photos/682866226/display_1500/stock-vector-students-in-front-of-school-cartoon-vector-illustration-682866226.jpg",
+      "question": "کجا هستی؟",
+      "answer": "من در مدرسه هستم."
     },
     {
-      image: "https://us.123rf.com/450wm/yusufdemirci/yusufdemirci2307/yusufdemirci230700008/209891892-kids-and-teacher-at-kindergarten.jpg?ver=6",
-      question: "در کدام کلاس هستی؟",
-      answer: "من در کلاس اول هستم."
+      "image": "https://us.123rf.com/450wm/yusufdemirci/yusufdemirci2307/yusufdemirci230700008/209891892-kids-and-teacher-at-kindergarten.jpg?ver=6",
+      "question": "در کدام کلاس هستی؟",
+      "answer": "من در کلاس اول هستم."
     },
     {
-      image: "https://img.freepik.com/free-vector/teacher-teaching-students-classroom-scene_1308-67531.jpg",
-      question: "معلم تو کیست؟",
-      answer: "خانم .... معلم من است."
+      "image": "https://img.freepik.com/free-vector/teacher-teaching-students-classroom-scene_1308-67531.jpg",
+      "question": "معلم تو کیست؟",
+      "answer": "خانم .... معلم من است."
     },
     {
-      image: "https://classroomclipart.com/image/static7/preview2/three-school-friends-in-the-classroom-cartoon-style-60049.jpg",
-      question: "دوستت در مدرسه کیست؟",
-      answer: "دوست من .... است."
+      "image": "https://classroomclipart.com/image/static7/preview2/three-school-friends-in-the-classroom-cartoon-style-60049.jpg",
+      "question": "دوستت در مدرسه کیست؟",
+      "answer": "دوست من .... است."
     },
     {
-      image: "https://static.vecteezy.com/system/resources/previews/001/436/916/non_2x/student-at-school-playground-free-vector.jpg",
-      question: "در زنگ تفریح چه می‌کنی؟",
-      answer: "با دوستانم بازی می‌کنم."
+      "image": "https://static.vecteezy.com/system/resources/previews/001/436/916/non_2x/student-at-school-playground-free-vector.jpg",
+      "question": "در زنگ تفریح چه می‌کنی؟",
+      "answer": "با دوستانم بازی می‌کنم."
     },
     {
-      image: "https://thumbs.dreamstime.com/b/cartoon-school-children-book-isolated-illustration-60524736.jpg",
-      question: "چه کتابی دوست داری بخونی؟",
-      answer: "من کتاب ... دوست دارم بخونم."
+      "image": "https://thumbs.dreamstime.com/b/cartoon-school-children-book-isolated-illustration-60524736.jpg",
+      "question": "چه کتابی دوست داری بخونی؟",
+      "answer": "من کتاب ... دوست دارم بخونم."
     },
     {
-      image: "https://thumbs.dreamstime.com/b/schoolboy-interactive-whiteboard-elementary-school-student-writing-39631129.jpg",
-      question: "روی تخته چه نوشته؟",
-      answer: "روی تخته .... نوشته است."
+      "image": "https://thumbs.dreamstime.com/b/schoolboy-interactive-whiteboard-elementary-school-student-writing-39631129.jpg",
+      "question": "روی تخته چه نوشته؟",
+      "answer": "روی تخته .... نوشته است."
     },
     {
-      image: "https://media.istockphoto.com/id/578573356/vector/child-writing-big-pencil.jpg?s=612x612&w=0&k=20&c=dyolE5RMA6f9n-CW5VmogJ2LFwH52sy0mTJ1j8aYJjY=",
-      question: "با چی می‌نویسی؟",
-      answer: "با مداد می‌نویسم."
+      "image": "https://media.istockphoto.com/id/578573356/vector/child-writing-big-pencil.jpg?s=612x612&w=0&k=20&c=dyolE5RMA6f9n-CW5VmogJ2LFwH52sy0mTJ1j8aYJjY=",
+      "question": "با چی می‌نویسی؟",
+      "answer": "با مداد می‌نویسم."
     },
     {
-      image: "https://static7.depositphotos.com/1007989/750/i/950/depositphotos_7507486-stock-illustration-kids-drawing.jpg",
-      question: "در کلاس هنر چه کار می‌کنی؟",
-      answer: "من نقاشی می‌کشم."
+      "image": "https://static7.depositphotos.com/1007989/750/i/950/depositphotos_7507486-stock-illustration-kids-drawing.jpg",
+      "question": "در کلاس هنر چه کار می‌کنی؟",
+      "answer": "من نقاشی می‌کشم."
     },
     {
-      image: "https://img.favpng.com/20/17/15/physical-education-clip-art-png-favpng-sqVb9fT8SyhYCZRRdBndDy0F1.jpg",
-      question: "کلاس ورزش را دوست داری؟",
-      answer: "بله، کلاس ورزش را خیلی دوست دارم."
+      "image": "https://img.favpng.com/20/17/15/physical-education-clip-art-png-favpng-sqVb9fT8SyhYCZRRdBndDy0F1.jpg",
+      "question": "کلاس ورزش را دوست داری؟",
+      "answer": "بله، کلاس ورزش را خیلی دوست دارم."
     },
     {
-      image: "https://static.vecteezy.com/system/resources/previews/000/300/516/non_2x/vector-many-kids-reading-books-in-library.jpg",
-      question: "کتابخانه کجاست؟",
-      answer: "کتابخانه کنار دفتر است."
+      "image": "https://static.vecteezy.com/system/resources/previews/000/300/516/non_2x/vector-many-kids-reading-books-in-library.jpg",
+      "question": "کتابخانه کجاست؟",
+      "answer": "کتابخانه کنار دفتر است."
     },
     {
-      image: "https://media.istockphoto.com/id/466565297/vector/elementary-students-eating-lunch-in-cafeteria.jpg?s=612x612&w=0&k=20&c=HRSLck8pqadx2WUf1B8tmd1nZGchf1Pa4n9-2cbDIoY=",
-      question: "نهار را کجا می‌خوری؟",
-      answer: "در سالن غذاخوری نهار می‌خورم."
+      "image": "https://media.istockphoto.com/id/466565297/vector/elementary-students-eating-lunch-in-cafeteria.jpg?s=612x612&w=0&k=20&c=HRSLck8pqadx2WUf1B8tmd1nZGchf1Pa4n9-2cbDIoY=",
+      "question": "نهار را کجا می‌خوری؟",
+      "answer": "در سالن غذاخوری نهار می‌خورم."
     },
     {
-      image: "https://i.pinimg.com/736x/63/25/fa/6325faac6d388d8b2ca7679a7edbefab.jpg",
-      question: "دفتر مشقت کجاست؟",
-      answer: "در کیفم است."
+      "image": "https://i.pinimg.com/736x/63/25/fa/6325faac6d388d8b2ca7679a7edbefab.jpg",
+      "question": "دفتر مشقت کجاست؟",
+      "answer": "در کیفم است."
     },
     {
-      image: "https://static7.depositphotos.com/1007989/773/i/950/depositphotos_7734154-stock-illustration-packing-school-bag.jpg",
-      question: "چه چیزی در کیفت هست؟",
-      answer: "در کیفم کتاب، دفتر و مداد است."
+      "image": "https://static7.depositphotos.com/1007989/773/i/950/depositphotos_7734154-stock-illustration-packing-school-bag.jpg",
+      "question": "چه چیزی در کیفت هست؟",
+      "answer": "در کیفم کتاب، دفتر و مداد است."
     },
     {
-      image: "https://core-docs.s3.amazonaws.com/somerville_isd_ar/article/image/large_ec563ba0-55ff-4f1e-8278-272e394d2a14.png",
-      question: "چه موقع به خانه می‌روی؟",
-      answer: "بعد از زنگ آخر به خانه می‌روم."
+      "image": "https://core-docs.s3.amazonaws.com/somerville_isd_ar/article/image/large_ec563ba0-55ff-4f1e-8278-272e394d2a14.png",
+      "question": "چه موقع به خانه می‌روی؟",
+      "answer": "بعد از زنگ آخر به خانه می‌روم."
     }
   ],
+  "لباس مهمانی": [ 
+    {
+      "image": "https://thumbs.dreamstime.com/z/cartoon-doll-red-dress-red-shoes-white-background-cute-doll-red-dress-cartoon-style-273770712.jpg",
+      "question": "دُختَر چی پُوشیده است؟",
+      "answer": "او پیراهَنِ قِرمَز پُوشیده است."
+    },
+    {
+      "image": "https://images.fun.com/products/6562/1-1/kids-white-tights.jpg",
+      "question": "او چه چیزی به پایش دارد؟",
+      "answer": "او جوراب‌شَلواریِ سِفید دارد."
+    },
+    {
+      "image": "https://www.shutterstock.com/image-photo/cute-character-3d-image-african-260nw-2502546437.jpg",
+      "question": "کَفشِ دختر چه رنگی است؟",
+      "answer": "کفشِ او سیاه است."
+    },
+    {
+      "image": "https://thumbs.dreamstime.com/b/cute-girl-skincare-activity-routine-pink-headband-kawaii-chibi-flat-character-pink-cute-girl-skincare-345519725.jpg",
+      "question": "روی سَرِ دختر چیست؟",
+      "answer": "او هِدبَندِ صورَتی دارد."
+    },
+    {
+      "image": "https://img.favpng.com/24/14/25/baby-girl-with-bow-adorable-cartoon-girl-with-pigtails-LuWargSZ_t.jpg",
+      "question": "هدبند چه شکلی دارد؟",
+      "answer": "او هِدبَند با پاپیون دارد."
+    },
+    {
+      "image": "https://thumbs.dreamstime.com/b/young-boy-big-eyed-little-clad-blue-jeans-casual-shirt-41099927.jpg",
+      "question": "پسر چه پیراهَنی دارد؟",
+      "answer": "او پیراهَنِ آبیِ روشن دارد."
+    },
+    {
+      "image": "https://thumbs.dreamstime.com/b/cheerful-cartoon-boy-presenting-four-colorful-buttons-isolated-white-background-flat-style-illustration-happy-vertical-381289953.jpg",
+      "question": "دکمه‌های پیراهَن چه رنگی‌اند؟",
+      "answer": "دُکمه‌ها بَنَفش، قِرمز، سَبز، نارِنجی هستند."
+    },
+    {
+      "image": "https://c8.alamy.com/comp/T5W6TK/a-boy-in-a-gray-colored-hat-with-rosy-cheeks-wearing-a-blue-shirt-bow-tie-and-a-gray-jumper-pants-cartoon-vector-color-drawing-or-illustration-T5W6TK.jpg",
+      "question": "شلوار پسر چه رنگی است؟",
+      "answer": "شلوارِ او خاکستری است."
+    },
+    {
+      "image": "https://thumbs.dreamstime.com/b/small-boy-wearing-tie-fathers-shoes-pretending-s-businessman-flat-style-vector-illustration-white-background-67846348.jpg",
+      "question": "کفشِ پسر به چه رنگ است؟",
+      "answer": "کفشِ او قَهوه‌ای است."
+    },
+    {
+      "image": "https://img.freepik.com/premium-photo/cute-little-boy-with-blue-shirt-yellow-tie-3d-rendering_994418-83440.jpg",
+      "question": "پسر کراوات چه رنگی بسته؟",
+      "answer": "او کراواتِ زَرد بسته است."
+    },
+    {
+      "image": "https://thumbs.dreamstime.com/b/cartoon-girl-waving-hello-blonde-hair-floral-dress-cute-wearing-380021668.jpg",
+      "question": "پیراهَن دختر چه شکلی هست؟",
+      "answer": "پیراهَن گل‌دارِ بَنَفش دارد."
+    },
+  ],
+
 
 };
 

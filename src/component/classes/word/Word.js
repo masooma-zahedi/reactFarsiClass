@@ -14,13 +14,11 @@ import TypingQAImageSlider from './TypingQAImageSlider.js';
 export const Word = () => {
   return (
     <>
-        {/* <div className = "container mt-4">
-        </div> */}
         <div className='row'>
-          <div className="col-s-0 col-lg-2  ps-5">
-                    <SidebarWord />
+          <div className="col col-md-12 col-lg-2  ps-5">
+            <SidebarWord />
           </div>
-          <div className="col-s-12 col-lg-9">
+          <div className="col col-md-12 col-lg-9">
 
             <Routes>
               <Route path='/sentenceCarousel-1' element={<SentenceCarousel carouselName={sentenceCarousel.carouselInfo} carouselData={sentenceCarousel.contentCarousel}/>}  />
