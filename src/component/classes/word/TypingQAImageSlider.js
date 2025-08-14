@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import TypingImageText from './TypingImageText';
 
 // ✅ داده‌های دسته‌بندی‌شده
 const categories = {
@@ -506,76 +507,81 @@ const typeText = (fullText, callback) => {
   }, [currentIndex, showQuestion, showAnswer, isTyping]);
 
   return (
-    <div className="container ">
-      {/* 🔷 لیست موضوعات */}
-      <div className="my-5 text-center">
-        <h4 className="mb-3">موضوع را انتخاب کنید</h4>
-        {categoryNames.map((name) => (
-          <button
-            key={name}
-            className={`btn btn-outline-primary mx-2 ${name === selectedCategory ? 'active' : ''}`}
-            onClick={() => handleCategoryChange(name)}
-            disabled={isTyping}
-          >
-            {name}
-          </button>
-        ))}
-      </div>
-        <br /><br /><br /> 
-      {/* 🔷 تصویر و متن سوال */}
-      <div className="row mt-4 align-items-center justify-content-center">
-        <div className="col-md-6 text-center mb-4">
-          <img
-            src={current.image}
-            alt="تصویر"
-            className="img-fluid rounded shadow"
-            style={{ maxHeight: '300px' }}
-          />
+    <>
+      <div className="container bg-light p-4 my-4 rounded-3 " style={{height:'100vh'}}>
+        {/* 🔷 لیست موضوعات */}
+        <div className="my-5 text-center">
+          <h4 className="mb-3">موضوع را انتخاب کنید</h4>
+          {categoryNames.map((name) => (
+            <button
+              key={name}
+              className={`btn btn-outline-primary mx-2 ${name === selectedCategory ? 'active' : ''}`}
+              onClick={() => handleCategoryChange(name)}
+              disabled={isTyping}
+            >
+              {name}
+            </button>
+          ))}
         </div>
+          <br /><br /><br /> 
+        {/* 🔷 تصویر و متن سوال */}
+        <div className="row mt-4 align-items-center justify-content-center " >
+          <div className="col-md-6 text-center mb-4">
+            <img
+              src={current.image}
+              alt="تصویر"
+              className="img-fluid rounded shadow"
+              style={{ maxHeight: '300px' }}
+            />
+          </div>
 
-        <div className="col-md-6">
-          <div className="bg-light p-4 rounded shadow" >
-            {/* <h5 className="text-primary mb-3">سؤال و جواب</h5> */}
-            <div className='mt-5 text-center' style={{minHeight:'65px'}}>
-                {showQuestion && (
-                <p className="mb-3 h3">
-                    <strong className='text-info'>سؤال: </strong>
-                    {currentTyping === 'question' ? typedText : current.question}
-                </p>
-                )}
+          <div className="col-md-6">
+            <div className="bg-light p-4 rounded shadow" >
+              {/* <h5 className="text-primary mb-3">سؤال و جواب</h5> */}
+              <div className='mt-5 text-center' style={{minHeight:'65px'}}>
+                  {showQuestion && (
+                  <p className="mb-3 h3">
+                      <strong className='text-info'>سؤال: </strong>
+                      {currentTyping === 'question' ? typedText : current.question}
+                  </p>
+                  )}
 
-                {showAnswer && (
-                <p className='h3'>
-                    <strong className='text-warning'>  جواب :  </strong>
-                    {currentTyping === 'answer' ? typedText : current.answer}
-                </p>
-                )}
+                  {showAnswer && (
+                  <p className='h3'>
+                      <strong className='text-warning'>  جواب :  </strong>
+                      {currentTyping === 'answer' ? typedText : current.answer}
+                  </p>
+                  )}
 
+              </div>
+
+              <div className="d-flex  gap-2  mt-5">
+                <button
+                  className="btn btn-secondary mt-5"
+                  onClick={handleBack}
+                  disabled={isTyping || currentIndex === 0}
+                >
+                  ⬅️ قبلی
+                </button>
+                <button
+                  className="btn-sm btn-primary mt-5"
+                  onClick={handleStep}
+                  disabled={isTyping}
+                >
+                  {showAnswer ? 'مرحله بعدی ⏭' : 'نمایش ⏵'}
+                </button>
+              </div>
+              {/* <small className="d-block mt-2 text-muted">
+                با زدن Space هم می‌توانید پیش بروید.
+              </small> */}
             </div>
-
-            <div className="d-flex  gap-2  mt-5">
-              <button
-                className="btn btn-secondary mt-5"
-                onClick={handleBack}
-                disabled={isTyping || currentIndex === 0}
-              >
-                ⬅️ قبلی
-              </button>
-              <button
-                className="btn-sm btn-primary mt-5"
-                onClick={handleStep}
-                disabled={isTyping}
-              >
-                {showAnswer ? 'مرحله بعدی ⏭' : 'نمایش ⏵'}
-              </button>
-            </div>
-            {/* <small className="d-block mt-2 text-muted">
-              با زدن Space هم می‌توانید پیش بروید.
-            </small> */}
           </div>
         </div>
       </div>
-    </div>
+      <div className="container">
+        <TypingImageText/>
+      </div>
+    </>
   );
 };
 
