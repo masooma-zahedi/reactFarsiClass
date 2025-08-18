@@ -366,14 +366,14 @@ const weather = [
   {
     image: 'https://t3.ftcdn.net/jpg/03/22/97/22/360_F_322972200_yN6Lz4k7uLZAnOs3pt3ODmLL0vHgBUJ0.jpg',
     correct: '.توفان آمدِه اَست',
-    options: ['.توفان آمدِه اَست', '.باران نِیامده اَست', '.خورشید دَر آسمان اَست'],
+    options: ['.توفان آمدِه اَست', 'هَوا بَرفی اَست.', '.خورشید دَر آسمان اَست'],
     word: 'توفان',
     meaning: 'storm'
   },
   {
     image: 'https://st4.depositphotos.com/31862216/38693/v/450/depositphotos_386930238-stock-illustration-beautiful-rainbow-sky-paper-art.jpg',
     correct: '.رَنگین‌کَمان در آسمان اَست',
-    options: ['.اَبَر در آسمان اَست', '.رَنگین‌کَمان در آسمان اَست', '.خورشید پُشت کوه اَست'],
+    options: ['.اَبَر در آسمان نیست', '.رَنگین‌کَمان در آسمان اَست', '.خورشید پُشت کوه اَست'],
     word: 'رَنگین‌کَمان',
     meaning: 'rainbow'
   },
