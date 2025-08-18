@@ -2,7 +2,7 @@
 
 // Import پایه‌ای از SDK
 import { initializeApp } from "firebase/app";
-import { getDatabase, ref, set, onValue, remove } from "firebase/database";
+import { getDatabase, ref, set, onValue, remove , push} from "firebase/database";
 import { getStorage, ref as storageRef, uploadBytes, getDownloadURL } from "firebase/storage";
 
 
@@ -26,4 +26,4 @@ const database = getDatabase(app);
 const storage = getStorage(app);
 
 // خروجی توابع مورد نیاز
-export { database, ref, set, onValue, remove, storage, storageRef, uploadBytes, getDownloadURL }; 
+export { database, ref, set, onValue, remove, storage, push, storageRef, uploadBytes, getDownloadURL }; 

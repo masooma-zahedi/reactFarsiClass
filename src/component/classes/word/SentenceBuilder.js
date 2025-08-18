@@ -31,13 +31,13 @@ const SentenceBuilder = () => {
       en: "One day a rainbow came"
     },
     {
-      fa: ["روباه", "گفت", "چه", "رنگ‌های", "زیبا"],
-      correctFa: ["روباه", "گفت", "چه", "رنگ‌های", "زیبا"],
+      fa: ["روباه", "گفت", "چه", "رنگ‌های", "زیبایی"],
+      correctFa: ["روباه", "گفت", "چه", "رنگ‌های", "زیبایی"],
       en: "The fox said what beautiful colors"
     },
     {
-      fa: ["روباه", "خواست", "رنگین‌کمان", "ببیند"],
-      correctFa: ["روباه", "خواست", "رنگین‌کمان", "ببیند"],
+      fa: ["روباه", "خواست", "رنگین‌کمان","را", "ببیند"],
+      correctFa: ["روباه", "خواست", "رنگین‌کمان","را", "ببیند"],
       en: "The fox wanted to see the rainbow"
     },
     {
@@ -56,8 +56,8 @@ const SentenceBuilder = () => {
       en: "The fox said I must go over the bridge"
     },
     {
-      fa: ["روباه", "پل", "پیدا", "کرد"],
-      correctFa: ["روباه", "پل", "پیدا", "کرد"],
+      fa: ["روباه", "پل","را", "پیدا", "کرد"],
+      correctFa: ["روباه", "پل","را", "پیدا", "کرد"],
       en: "The fox found the bridge"
     },
     {
@@ -66,8 +66,8 @@ const SentenceBuilder = () => {
       en: "The fox crossed the bridge"
     },
     {
-      fa: ["روباه", "رنگین‌کمان", "دید"],
-      correctFa: ["روباه", "رنگین‌کمان", "دید"],
+      fa: ["روباه", "رنگین‌کمان","را", "دید"],
+      correctFa: ["روباه", "رنگین‌کمان","را", "دید"],
       en: "The fox saw the rainbow"
     },
     {
@@ -81,8 +81,8 @@ const SentenceBuilder = () => {
       en: "The fox said I am clever"
     },
     {
-      fa: ["روباه", "هر", "روز", "رود", "می‌رود"],
-      correctFa: ["روباه", "هر", "روز", "رود", "می‌رود"],
+      fa: ["روباه", "هر", "روز","به طَرَفِ", "رود", "می‌رود"],
+      correctFa: ["روباه", "هر", "روز","به طَرَفِ", "رود", "می‌رود"],
       en: "The fox goes to the river every day"
     },
     {
@@ -315,14 +315,14 @@ const SentenceBuilder = () => {
 
   return (
     <div
-      className="container mt-4 p-4 rounded shadow"
-      style={{ fontFamily: "Vazir" }}
+      className="container mt-4 p-5 rounded shadow"
+      style={{ fontFamily: "Vazir" , width: '90%'}}
       dir="rtl"
     >
       <h4 className="mb-3">🧩 جمله‌سازی فارسی</h4>
 
       {/* دکمه باز/بسته کردن فهرست */}
-      <div className="mb-2">
+      <div className="mb-2 ">
         <button
           className="btn btn-sm btn-secondary"
           onClick={() => setShowCategories((prev) => !prev)}
@@ -413,6 +413,7 @@ const SentenceBuilder = () => {
       <style>{`
         @import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css');
       `}</style>
+      <div className="text-end text-muted fs-6">SentenceBuilder</div>
     </div>
   );
 };

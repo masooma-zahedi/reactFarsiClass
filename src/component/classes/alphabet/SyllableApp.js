@@ -11,6 +11,9 @@ import {
 } from "react-bootstrap";
 import SentenceApp2 from "./SentenceApp2";
 
+// 📌 Firebase
+import { database, ref, set, onValue, remove, push } from ".././firebase";
+
 const SyllableApp = () => {
   const inputRef = useRef(null);
   const [showDelete, setShowDelete] = useState(false);
@@ -31,10 +34,24 @@ const SyllableApp = () => {
   const [syllables, setSyllables] = useState("");
   const [category, setCategory] = useState("");
 
-  const firstLoad = useRef(true);
+  // 🌱 داده‌های ثابت اولیه (فقط داخل کد)
+  // const initialWords = [
+  //   { word: "باد", syllables: ["با", "د"], category: "د" },
+  //   { word: "داد", syllables: ["دا", "د"], category: "د" },
+  //   { word: "بد", syllables: ["بَ", "د"], category: "د" },
+  //   { word: "دادی", syllables: ["دا", "دی"], category: "د" },
+  //   { word: "داود", syllables: ["دا", "وُد"], category: "د" },
+  //   { word: "دید", syllables: ["دی", "د"], category: "د" },
+  //   { word: "دیو", syllables: ["دی", "و"], category: "د" },
+  //   { word: "دادو", syllables: ["دا", "دو"], category: "د" },
+  //   { word: "داب", syllables: ["دا", "ب"], category: "د" },
+  //   { word: "بید", syllables: ["بی", "د"], category: "د" },
+  //   { word: "پد", syllables: ["پَ", "د"], category: "د" },
+  //   { word: "دود", syllables: ["دو", "د"], category: "د" },
+  // ];
 
-// Initial static words
-const initialWords = [
+
+  const initialWords = [
   // *************** حرف د *******************************
   { word: "باد", syllables: ["با", "د"], category: "د" },
   { word: "داد", syllables: ["دا", "د"], category: "د" },
@@ -117,7 +134,7 @@ const initialWords = [
   { word: "سوز", syllables: ["سو", "ز"], category: "س" },
   { word: "سوت", syllables: ["سو", "ت"], category: "س" },
   { word: "سور", syllables: ["سو", "ر"], category: "س" },
-  { word: "سوار", syllables: ["سو", "ار"], category: "س" },
+  { word: "سوار", syllables: ["سَ","وار"], category: "س" },
   { word: "سپید", syllables: ["سِ", "پید"], category: "س" },
   { word: "سپر", syllables: ["سِ", "پَر"], category: "س" },
   { word: "ساز", syllables: ["سا", "ز"], category: "س" },
@@ -138,496 +155,158 @@ const initialWords = [
   { word: "قُرص", syllables: ["قُ", "رص"], category: "ق" },
   { word: "قُفل", syllables: ["قُ", "فل"], category: "ق" },
   //*************** */ حرف و****************************************
-  {
-    word: "وَطن",
-    syllables: ["وَ", "طن"],
-    category: "و"
-  },
-  {
-    word: "وَقت",
-    syllables: ["وَ", "قت"],
-    category: "و"
-  },
-  {
-    word: "وَسَط",
-    syllables: ["وَ", "سَط"],
-    category: "و"
-  },
-  {
-    word: "وَکیل",
-    syllables: ["وَ", "کیل"],
-    category: "و"
-  },
-  {
-    word: "وَرد",
-    syllables: ["وَ", "رد"],
-    category: "و"
-  },
-  {
-    word: "وَعده",
-    syllables: ["وَ", "عد", "ه"],
-    category: "و"
-  },
-  {
-    word: "وَزن",
-    syllables: ["وَ", "زن"],
-    category: "و"
-  },
-  {
-    word: "وَجه",
-    syllables: ["وَ", "جه"],
-    category: "و"
-  },
-  {
-    word: "دوست " ,
-    syllables: ["دو", "ست"],
-    category: "و"
-  },
-  {
-    word: " سَوار " ,
-    syllables: ["سَ", "وار"],
-    category: "و"
-  },
-  {
-    word: "نَوَرد ",
-    syllables: ["نَ", "وَرد"],
-    category: "و"
-  },
-  {
-    word: "کوتاه ",
-    syllables: ["کو", "تا", "ه"],
-    category: "و"
-  },
-  {
-    word: "نِوِشتن ",
-    syllables: ["نِ", "وِش", "تن"],
-    category: "و"
-  },
-  {
-    word: "پَروَنده ",
-    syllables: ["پَ", "رو", "ن", "ده"],
-    category: "و"
-  },
-  {
-    word: "شَورا ",
-    syllables: ["شَو", "را"],
-    category: "و"
-  },
-  {
-    word: "خَوابگاه " ,
-    syllables: ["خَواب", "گاه"],
-    category: "و"
-  },
-  {
-    word: "توانا ",
-    syllables: ["تَ", "وا", "نا"],
-    category: "و"
-  },
-  {
-    word: "هیزم",
-    syllables: ["هی", "زُم"],
-    category: "ه"
-  },
-  {
-    word: "همکار",
-    syllables: ["هَم", "کار"],
-    category: "ه"
-  },
-  {
-    word: "همراه",
-    syllables: ["هَم", "راه"],
-    category: "ه"
-  },
-  {
-    word: "هفته",
-    syllables: ["هَف", "ته"],
-    category: "ه"
-  },
-  {
-    word: "هال",
-    syllables: ["هال"],
-    category: "ه"
-  },
-  {
-    word: "هشتم",
-    syllables: ["هَش", "تُم"],
-    category: "ه"
-  },
-  {
-    word: "هوش",
-    syllables: ["هوش"],
-    category: "ه"
-  },
-  {
-    word: "هزارپا",
-    syllables: ["هِ", "زار", "پا"],
-    category: "ه"
-  },
-  {
-    word: "همه",
-    syllables: ["هَ", "مه"],
-    category: "ه"
-  },
-  {
-    word: "کوه",
-    syllables: ["کوه"],
-    category: "ه"
-  },
-  {
-    word: "چاه",
-    syllables: ["چاه"],
-    category: "ه"
-  },
-  {
-    word: "راه",
-    syllables: ["راه"],
-    category: "ه"
-  },
-  {
-    word: "نامه",
-    syllables: ["نا", "مه"],
-    category: "ه"
-  },
-  {
-    word: "خانه",
-    syllables: ["خا", "نه"],
-    category: "ه"
-  },
-  {
-    word: "شانه",
-    syllables: ["شا", "نه"],
-    category: "ه"
-  },
-  {
-    word: "کاه",
-    syllables: ["کاه"],
-    category: "ه"
-  },
-  {
-    word: "گیاه",
-    syllables: ["گِ", "یاه"],
-    category: "ه"
-  },
-  {
-    word: "توبه",
-    syllables: ["تو", "به"],
-    category: "ه"
-  },
-  {
-    word: "دانه",
-    syllables: ["دا", "نه"],
-    category: "ه"
-  },
-  {
-    word: "ماه",
-    syllables: ["ماه"],
-    category: "ه"
-  },
-  {
-    word: "سپیده",
-    syllables: ["سِ", "پی", "ده"],
-    category: "ه"
-  },
-  {
-    word: "آهو",
-    syllables: ["آ", "هو"],
-    category: "ه"
-  },
-  {
-    word: "شیشه",
-    syllables: ["شی", "شه"],
-    category: "ه"
-  },
-  {
-    word: "کلاه",
-    syllables: ["کُ", "لاه"],
-    category: "ه"
-  },
-  {
-    word: "زیبارو",
-    syllables: ["زی", "با", "رو"],
-    category: "ه"
-  },
-  {
-    word: "آگاه",
-    syllables: ["آ", "گاه"],
-    category: "ه"
-  },
-  {
-    word: "قهوه",
-    syllables: ["قَه-وه"],
-    category: "ه"
-  },
-  {
-    word: "شجاعانه",
-    syllables: ["شُ", "جا", "عا", "نه"],
-    category: "ه"
-  },
-  //************* */ حرف ع**********************
-  {
-    word: "باعِث",
-    syllables: ["با", "عِث"],
-    category: "ع"
-  },
-  {
-    word: "طَبعی",
-    syllables: ["طَب","عی"],
-    category: "ع"
-  },
-  {
-    word: "ضَعیف",
-    syllables: ["ضَ", "عیف"],
-    category: "ع"
-  },
-  {
-    word: "بَعید",
-    syllables: ["بَ", "عید"],
-    category: "ع"
-  },
-  {
-    word: "عَزیز",
-    syllables: ["عَ", "زیز"],
-    category: "ع"
-  },
-  {
-    word: "عَروس",
-    syllables: ["عَ", "روس"],
-    category: "ع"
-  },
-  {
-    word: "عَرضه",
-    syllables: ["عَر","ضِه"],
-    category: "ع"
-  },
-  {
-    word: "عَذاب",
-    syllables: ["عَ", "ذاب"],
-    category: "ع"
-  },
-  {
-    word: "عُضو",
-    syllables: ["عَضو"],
-    category: "ع"
-  },
-  {
-    word: "عَصا",
-    syllables: ["عَ", "صا"],
-    category: "ع"
-  },
-  {
-    word: "عُبور",
-    syllables: ["عُ", "بور"],
-    category: "ع"
-  },
-  {
-    word: "عَجَب",
-    syllables: ["عَ", "جَب"],
-    category: "ع"
-  },
-  {
-    word: "عُذر",
-    syllables: ["عُذر"],
-    category: "ع"
-  },
-  {
-    word: "عُروج",
-    syllables: ["عُ", "روج"],
-    category: "ع"
-  },
-  {
-    word: "عَطر",
-    syllables: ["عَطر"],
-    category: "ع"
-  },
-  {
-    word: "عُرف",
-    syllables: ["عُرف"],
-    category: "ع"
-  },
-  {
-    word: "عَصر",
-    syllables: ["عَصر"],
-    category: "ع"
-  },
-  {
-    word: "عِشق",
-    syllables: ["عِشق"],
-    category: "ع"
-  },
-  {
-    word: "باعِث",
-    syllables: ["با", "عِث"],
-    category: "ع"
-  },
-  {
-    word: "ضَعیف ",
-    syllables: ["ضَ", "عی", "ف"],
-    category: "ع"
-  },
-  {
-    word: "بَعید ",
-    syllables: ["بَ", "عید"],
-    category: "ع"
-  },
-  {
-    word: "مَنع ",
-    syllables: ["مَنع"],
-    category: "ع"
-  },
-  {
-    word: "طَبع ",
-    syllables: ["طَبع"],
-    category: "ع"
-  },
-  {
-    word: "وَضع ",
-    syllables: ["وَضع"],
-    category: "ع"
-  },
-  {
-    word: "یِک",
-    syllables: ["یِ", "ک"],
-    category: "ی"
-  },
-  {
-    word: "یِک‌تا",
-    syllables: ["یِک","تا"],
-    category: "ی"
-  },
-  {
-    word: "یار",
-    syllables: ["یار"],
-    category: "ی"
-  },
-  {
-    word: "یاد",
-    syllables: ["یاد"],
-    category: "ی"
-  },
-  {
-    word: "یاس",
-    syllables: ["یاس"],
-    category: "ی"
-  },
-  {
-    word: "یارو",
-    syllables: ["یا", "رو"],
-    category: "ی"
-  },
-  {
-    word: "یاری",
-    syllables: ["یا", "ری"],
-    category: "ی"
-  },
-  {
-    word: "یاغی",
-    syllables: ["یا", "غی"],
-    category: "ی"
-  },
-  {
-    word: "یِک‌روز",
-    syllables: ["یِک", "روز"],
-    category: "ی"
-  },
-  {
-    word: "یِک‌دَفِه",
-    syllables: ["یِک", "دَ", "فِه"],
-    category: "ی"
-  }
-
+  {word:"وَطن",syllables:["وَ","طن"],category:"و"},
+    {word:"وَقت",syllables:["وَ","قت"],category:"و"},
+    {word:"وَسَط",syllables:["وَ","سَط"],category:"و"},
+    {word:"وَکیل",syllables:["وَ","کیل"],category:"و"},
+    {word:"وَرد",syllables:["وَ","رد"],category:"و"},
+    {word:"وَعده",syllables:["وَ","عد","ه"],category:"و"},
+    {word:"وَزن",syllables:["وَ","زن"],category:"و"},
+    {word:"وَجه",syllables:["وَ","جه"],category:"و"},
+    {word:"دوست",syllables:["دو","ست"],category:"و"},
+    {word:"سَوار",syllables:["سَ","وار"],category:"و"},
+    {word:"نَوَرد",syllables:["نَ","وَرد"],category:"و"},
+    {word:"کوتاه",syllables:["کو","تا","ه"],category:"و"},
+    {word:"نِوِشتن",syllables:["نِ","وِش","تن"],category:"و"},
+    {word:"پَروَنده",syllables:["پَ","رو","ن","ده"],category:"و"},
+    {word:"شَورا",syllables:["شَو","را"],category:"و"},
+    {word:"خَوابگاه",syllables:["خَواب","گاه"],category:"و"},
+    {word:"توانا",syllables:["تَ","وا","نا"],category:"و"},
+    // ************************** حرف ه*******************************
+    {word:"هیزم",syllables:["هی","زُم"],category:"ه"},
+    {word:"همکار",syllables:["هَم","کار"],category:"ه"},
+    {word:"همراه",syllables:["هَم","راه"],category:"ه"},
+    {word:"هفته",syllables:["هَف","ته"],category:"ه"},
+    {word:"هال",syllables:["هال"],category:"ه"},
+    {word:"هشتم",syllables:["هَش","تُم"],category:"ه"},
+    {word:"هوش",syllables:["هوش"],category:"ه"},
+    {word:"هزارپا",syllables:["هِ","زار","پا"],category:"ه"},
+    {word:"همه",syllables:["هَ","مه"],category:"ه"},
+    {word:"کوه",syllables:["کوه"],category:"ه"},
+    {word:"چاه",syllables:["چاه"],category:"ه"},
+    {word:"راه",syllables:["راه"],category:"ه"},
+    {word:"نامه",syllables:["نا","مه"],category:"ه"},
+    {word:"خانه",syllables:["خا","نه"],category:"ه"},
+    {word:"شانه",syllables:["شا","نه"],category:"ه"},
+    {word:"کاه",syllables:["کاه"],category:"ه"},
+    {word:"گیاه",syllables:["گِ","یاه"],category:"ه"},
+    {word:"توبه",syllables:["تو","به"],category:"ه"},
+    {word:"دانه",syllables:["دا","نه"],category:"ه"},
+    {word:"ماه",syllables:["ماه"],category:"ه"},
+    {word:"سپیده",syllables:["سِ","پی","ده"],category:"ه"},
+    {word:"آهو",syllables:["آ","هو"],category:"ه"},
+    {word:"شیشه",syllables:["شی","شه"],category:"ه"},
+    {word:"کلاه",syllables:["کُ","لاه"],category:"ه"},
+    {word:"زیبارو",syllables:["زی","با","رو"],category:"ه"},
+    {word:"آگاه",syllables:["آ","گاه"],category:"ه"},
+    {word:"قهوه",syllables:["قَه-وه"],category:"ه"},
+    {word:"شجاعانه",syllables:["شُ","جا","عا","نه"],category:"ه"},
+    // ******************************** حرف ع *****************************
+    {word:"باعِث",syllables:["با","عِث"],category:"ع"},
+    {word:"طَبعی",syllables:["طَب","عی"],category:"ع"},
+    {word:"ضَعیف",syllables:["ضَ","عیف"],category:"ع"},
+    {word:"بَعید",syllables:["بَ","عید"],category:"ع"},
+    {word:"عَزیز",syllables:["عَ","زیز"],category:"ع"},
+    {word:"عَروس",syllables:["عَ","روس"],category:"ع"},
+    {word:"عَرضه",syllables:["عَر","ضِه"],category:"ع"},
+    {word:"عَذاب",syllables:["عَ","ذاب"],category:"ع"},
+    {word:"عُضو",syllables:["عَضو"],category:"ع"},
+    {word:"عَصا",syllables:["عَ","صا"],category:"ع"},
+    {word:"عُبور",syllables:["عُ","بور"],category:"ع"},
+    {word:"عَجَب",syllables:["عَ","جَب"],category:"ع"},
+    {word:"عُذر",syllables:["عُذر"],category:"ع"},
+    {word:"عُروج",syllables:["عُ","روج"],category:"ع"},
+    {word:"عَطر",syllables:["عَطر"],category:"ع"},
+    {word:"عُرف",syllables:["عُرف"],category:"ع"},
+    {word:"عَصر",syllables:["عَصر"],category:"ع"},
+    {word:"عِشق",syllables:["عِشق"],category:"ع"},
+    {word:"مَنع",syllables:["مَنع"],category:"ع"},
+    {word:"طَبع",syllables:["طَبع"],category:"ع"},
+    {word:"وَضع",syllables:["وَضع"],category:"ع"},
+    // ******************************** حرف ی***************************
+    {word:"یِک",syllables:["یِ","ک"],category:"ی"},
+    {word:"یِک‌تا",syllables:["یِک","تا"],category:"ی"},
+    {word:"یار",syllables:["یار"],category:"ی"},
+    {word:"یاد",syllables:["یاد"],category:"ی"},
+    {word:"یاس",syllables:["یاس"],category:"ی"},
+    {word:"یارو",syllables:["یا","رو"],category:"ی"},
+    {word:"یاری",syllables:["یا","ری"],category:"ی"},
+    {word:"یاغی",syllables:["یا","غی"],category:"ی"},
+    {word:"یِک‌روز",syllables:["یِک","روز"],category:"ی"},
+    {word:"یِک‌دَفِه",syllables:["یِک","دَ","فِه"],category:"ی"}
 
 
 
 ];
 
+  // ⬇️ خواندن داده‌ها از Firebase + ادغام با initialWords
+  useEffect(() => {
+    const wordsRef = ref(database, "syllableWords");
+    onValue(wordsRef, (snapshot) => {
+      const data = snapshot.val() || {};
+      const firebaseWords = Object.keys(data).map((key) => ({
+        id: key,
+        ...data[key],
+      }));
 
-// Load from localStorage or use initial
-useEffect(() => {
-  const saved = localStorage.getItem("syllableWords");
-  let finalWords = [...initialWords];
+      // ادغام: اول داده‌های firebase، بعد اضافه کردن initialWords که وجود ندارند
+      const merged = [...firebaseWords];
+      initialWords.forEach((item) => {
+        const exists = firebaseWords.some((w) => w.word === item.word);
+        if (!exists) merged.push(item);
+      });
 
-  if (saved) {
-    try {
-      const parsed = JSON.parse(saved);
-      if (Array.isArray(parsed)) {
-        // ادغام بدون تکرار
-        const merged = [...parsed];
-        initialWords.forEach((item) => {
-          const exists = parsed.some((w) => w.word === item.word);
-          if (!exists) merged.push(item);
-        });
-        finalWords = merged;
-      }
-    } catch (e) {
-      console.error("Error parsing localStorage data:", e);
-    }
-  }
-
-  setWords(finalWords);
-}, []);
-
-
-useEffect(() => {
-  if (!firstLoad.current) {
-    localStorage.setItem("syllableWords", JSON.stringify(words));
-  } else {
-    firstLoad.current = false;
-  }
-}, [words]);
-
+      setWords(merged);
+    });
+  }, []);
 
   useEffect(() => {
-    if (selectedWord && inputRef.current) {
+    if (inputRef.current) {
       inputRef.current.focus();
     }
-  }, [selectedWord]);
+  }, [selectedWord]); // یا هر زمانی که باید فوکوس انجام بشه
+  
 
+  // ⬇️ افزودن کلمه به Firebase
   const handleAddWord = (e) => {
     e.preventDefault();
     if (!newWord || !syllables || !category) return;
 
-    const wordObj = {
+    const newWordObj = {
       word: newWord,
       syllables: syllables.split("-"),
       category,
     };
-    const updatedWords = [...words, wordObj];
-    setWords(updatedWords);
+
+    const newRef = push(ref(database, "syllableWords"));
+    set(newRef, newWordObj);
+
     setNewWord("");
     setSyllables("");
     setCategory("");
     setSelectedCategory(category);
   };
 
-  // const handleDeleteWord = (index) => {
-  //   const updated = words.filter((_, i) => i !== index);
-  //   setWords(updated);
-  //   setSelectedWord(null);
-  // };
-const handleDeleteWord = (index) => {
-  const wordToDelete = words[index];
-  const updated = words.filter((_, i) => i !== index);
-  setWords(updated);
+  // ⬇️ حذف یک کلمه از Firebase
+  const handleDeleteWord = (index) => {
+    const wordToDelete = words[index];
+    if (wordToDelete.id) {
+      remove(ref(database, `syllableWords/${wordToDelete.id}`));
+    }
+  };
 
-  // بررسی آیا دسته خالی شد؟
-  const stillHasWords = updated.some(w => w.category === wordToDelete.category);
-  if (!stillHasWords) {
-    setSelectedCategory(null);
-  }
-
-  // اگر کلمه‌ای که حذف شد همان کلمه‌ی انتخاب شده بود، آن را پاک کن
-  if (selectedWord && selectedWord.word === wordToDelete.word) {
-    setSelectedWord(null);
-  }
-};
-
+  // ⬇️ حذف کل دسته از Firebase
   const handleDeleteCategory = (cat) => {
-    const updated = words.filter((w) => w.category !== cat);
-    setWords(updated);
+    words.forEach((w) => {
+      if (w.category === cat && w.id) {
+        remove(ref(database, `syllableWords/${w.id}`));
+      }
+    });
     setSelectedCategory(null);
     setSelectedWord(null);
   };
 
+  // ⬇️ ویرایش
   const openEditModal = (index) => {
     const word = words[index];
     setEditIndex(index);
@@ -638,18 +317,15 @@ const handleDeleteWord = (index) => {
   };
 
   const handleEditSave = () => {
-    const updated = [...words];
-    updated[editIndex] = {
-      word: editWord,
-      syllables: editSyllables.split("-"),
-      category: editCategory,
-    };
-    setWords(updated);
-    setEditModal(false);
-    setSelectedCategory(editCategory);
-    if (selectedWord && selectedWord.word === words[editIndex].word) {
-      setSelectedWord(updated[editIndex]);
+    const wordToEdit = words[editIndex];
+    if (wordToEdit.id) {
+      set(ref(database, `syllableWords/${wordToEdit.id}`), {
+        word: editWord,
+        syllables: editSyllables.split("-"),
+        category: editCategory,
+      });
     }
+    setEditModal(false);
   };
 
   const groupedWords = words.reduce((acc, item, index) => {
@@ -680,9 +356,17 @@ const handleDeleteWord = (index) => {
 
   return (
     <>
+      {/* 🔹 بخش کلمات */}
       <section>
-        <h2 className="text-center m-3 border border-secondary rounded p-4 shadow text-light" style={{backgroundColor:'rgba(96, 18, 120, 0.56)'}}>کلمات زیر را با هم بخوانیم</h2>
-        <div className="container mt-4  p-5 rounded text-end" style={{ direction: "rtl", border:'2px dashed #782387' }}>
+        <h2 className="text-center m-3 border border-secondary rounded p-4 shadow text-light"
+          style={{ backgroundColor: "rgba(96, 18, 120, 0.56)" }}>
+          کلمات زیر را با هم بخوانیم
+        </h2>
+
+        <div className="container mt-4  p-5 rounded text-end"
+          style={{ direction: "rtl", border: "2px dashed #782387" }}>
+          
+          {/* دکمه‌ها */}
           <div className="mb-3 d-flex justify-content-between">
             <Button variant="primary" onClick={() => setFormVisible(!formVisible)}>
               {formVisible ? "بستن فرم افزودن" : "افزودن کلمه"}
@@ -692,6 +376,7 @@ const handleDeleteWord = (index) => {
             </Button>
           </div>
 
+          {/* فرم افزودن */}
           <Collapse in={formVisible}>
             <div>
               <Card className="mb-4">
@@ -715,7 +400,7 @@ const handleDeleteWord = (index) => {
                       />
                     </Form.Group>
                     <Form.Group className="mb-3">
-                      <Form.Label>دسته (مثلاً: ط)</Form.Label>
+                      <Form.Label>دسته</Form.Label>
                       <Form.Control
                         type="text"
                         value={category}
@@ -725,15 +410,13 @@ const handleDeleteWord = (index) => {
                     <Button variant="success" type="submit">
                       افزودن
                     </Button>
-                    <Button className="mx-2" variant="secondary" onClick={() => setShowDelete(!showDelete)}>
-                      حذف -ویرایش
-                    </Button>
                   </Form>
                 </Card.Body>
               </Card>
             </div>
           </Collapse>
 
+          {/* لیست دسته‌ها */}
           <Row>
             <Col md={4}>
               <Collapse in={listVisible}>
@@ -773,6 +456,7 @@ const handleDeleteWord = (index) => {
               </Collapse>
             </Col>
 
+            {/* کلمات هر دسته */}
             <Col md={8}>
               {selectedCategory && (
                 <Card className="mb-4">
@@ -817,6 +501,7 @@ const handleDeleteWord = (index) => {
                 </Card>
               )}
 
+              {/* نمایش سیلاب‌ها */}
               {selectedWord && (
                 <Card>
                   <Card.Body className="text-center">
@@ -843,6 +528,7 @@ const handleDeleteWord = (index) => {
             </Col>
           </Row>
 
+          {/* ویرایش */}
           <Modal show={editModal} onHide={() => setEditModal(false)}>
             <Modal.Header closeButton>
               <Modal.Title>ویرایش کلمه</Modal.Title>
@@ -858,7 +544,7 @@ const handleDeleteWord = (index) => {
                   />
                 </Form.Group>
                 <Form.Group className="mb-3">
-                  <Form.Label>سیلاب‌ها (با خط فاصله)</Form.Label>
+                  <Form.Label>سیلاب‌ها</Form.Label>
                   <Form.Control
                     type="text"
                     value={editSyllables}
@@ -886,14 +572,19 @@ const handleDeleteWord = (index) => {
           </Modal>
         </div>
       </section>
+
+      {/* 🔹 بخش جملات */}
       <section>
-        <div className="" style={{height:'250px'}}></div>
-        <h2 className="text-center m-3 border border-secondary rounded p-4 shadow text-light" style={{backgroundColor:'rgba(18, 42, 120, 0.56)'}}>جملات زیر را با هم بخوانیم</h2>
-        <div className="container mt-4  p-5 rounded text-end" style={{ direction: "rtl", border:'2px dashed rgb(52, 135, 35)' }}>
-        <SentenceApp2/>
+        <div className="" style={{ height: "250px" }}></div>
+        <h2 className="text-center m-3 border border-secondary rounded p-4 shadow text-light"
+          style={{ backgroundColor: "rgba(18, 42, 120, 0.56)" }}>
+          جملات زیر را با هم بخوانیم
+        </h2>
+        <div className="container mt-4  p-5 rounded text-end"
+          style={{ direction: "rtl", border: "2px dashed rgb(52, 135, 35)" }}>
+          <SentenceApp2 />
         </div>
       </section>
-
     </>
   );
 };

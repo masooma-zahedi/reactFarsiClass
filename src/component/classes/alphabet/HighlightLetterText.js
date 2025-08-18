@@ -26,7 +26,7 @@ const HighlightLetterText = () => {
   };
 
   return (
-    <div className="container my-5">
+    <div className="container my-5 bg-light p-5 text-center">
       <div className="d-flex justify-content-between align-items-center mb-3">
         <h3 className="mb-0">نمایش متن با هایلایت</h3>
         <button
