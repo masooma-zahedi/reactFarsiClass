@@ -56,8 +56,8 @@ const SentenceBuilder = () => {
       en: "The fox said I must go over the bridge"
     },
     {
-      fa: ["روباه", "پل", "پیدا", "کرد"],
-      correctFa: ["روباه", "پل", "پیدا", "کرد"],
+      fa: ["روباه", "پل","را", "پیدا", "کرد"],
+      correctFa: ["روباه", "پل","را", "پیدا", "کرد"],
       en: "The fox found the bridge"
     },
     {
@@ -66,8 +66,8 @@ const SentenceBuilder = () => {
       en: "The fox crossed the bridge"
     },
     {
-      fa: ["روباه", "رنگین‌کمان", "دید"],
-      correctFa: ["روباه", "رنگین‌کمان", "دید"],
+      fa: ["روباه", "رنگین‌کمان","را", "دید"],
+      correctFa: ["روباه", "رنگین‌کمان","را", "دید"],
       en: "The fox saw the rainbow"
     },
     {
@@ -81,8 +81,8 @@ const SentenceBuilder = () => {
       en: "The fox said I am clever"
     },
     {
-      fa: ["روباه", "هر", "روز", "رود", "می‌رود"],
-      correctFa: ["روباه", "هر", "روز", "رود", "می‌رود"],
+      fa: ["روباه", "هر", "روز","به طَرَفِ", "رود", "می‌رود"],
+      correctFa: ["روباه", "هر", "روز","به طَرَفِ", "رود", "می‌رود"],
       en: "The fox goes to the river every day"
     },
     {
