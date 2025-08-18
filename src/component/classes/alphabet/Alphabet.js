@@ -21,8 +21,11 @@ import StoryPage3 from "../story/StoryPage3.js";
 import WordGameWithCategories from "./WordGameWithCategories.js";
 import HighlightLetterText from "./HighlightLetterText.js";
 
+
+
 export const Alphabet = () => {
   const [showShort, setShowShort] = useState(false)
+  
   return (
     <>
         <div className = " mt-4">
@@ -34,6 +37,7 @@ export const Alphabet = () => {
                 <FlipButton frontText="Click Me masooma" backText="Thanks!" />
               <CarouselAlpha dataCarousel={alphaCrousel}/>
                {/* <CardAlphaCompo/>  */}
+
               <Routes>
                 <Route path='/' element={<CardAlphaCompo/>}  />
                 <Route path='/objectSentenceGame' element={<ObjectSentenceGame/>}  />
@@ -54,11 +58,13 @@ export const Alphabet = () => {
               <WordCarousel/>
               <GameWord />
             </div>
-            <div>
+              <div>
               {/* test */}
+                  
+              </div>
             </div>
           </div>
-        </div>
+        
 
 
     </>
