@@ -65,12 +65,10 @@ export const SidebarAlpha = ({setShowShort,idCarouselAlpha}) => {
           <li className="nav-item">
             <NavLink className="nav-link text-success h6" to="/HighlightLetterText">حرف قرمز کلمه</NavLink>
           </li>
-
-          <li className="nav-item d-grid  ">
-            <button type="button" className="border-0 text-success h6 nav-link" data-bs-toggle="modal" data-bs-target={`#${contentListAlpha.readTogether.idModal}`}>
-             با هم بخوانیم 
-            </button>
+          <li className="nav-item">
+            <NavLink className="nav-link text-success h6" to="/sylabeWords"> با هم بخوانیم </NavLink>
           </li>
+
           <li className="nav-item d-grid  ">
             <button type="button" className="border-0 text-success h6 nav-link" data-bs-toggle="modal" data-bs-target={`#${contentListAlpha.storyAlpha.idModal}`}>
              داستان الفبا
@@ -101,7 +99,6 @@ export const SidebarAlpha = ({setShowShort,idCarouselAlpha}) => {
     {/* modal */}
 
     <Modal id={`${contentListAlpha.newword.idModal}`} data={contentListAlpha.newword.infoWords}/>
-    <Modal id={`${contentListAlpha.readTogether.idModal}`} data={contentListAlpha.readTogether.infoWords}/>
     <Modal id={`${contentListAlpha.brokenWords.idModal}`} data={contentListAlpha.brokenWords.infoWords}/>
     <Modal id={`${contentListAlpha.gameTable.idModal}`} data={contentListAlpha.gameTable.infoWords}/>
     <Modal id={`${contentListAlpha.storyAlpha.idModal}`} data={contentListAlpha.storyAlpha.infoWords}/>

@@ -228,19 +228,6 @@ export let contentListAlpha = {
             {id:nanoid(4),title:"حَشَرات",targetHref :"insectA-2",idLetter:"insectA-1"},
             ],
         },
-        readTogether :{
-            idModal:"readTo1",
-            infoWords:[
-            {id:nanoid(4),title:"با هم بخوانیم-1(س)",targetHref:"reading/read-1",idLetter:"readtogether-1"},
-            {id:nanoid(4),title:"با هم بخوانیم-2",targetHref:"reading/read-2",idLetter:"readtogether-2"},
-            {id:nanoid(4),title:"با هم بخوانیم-3",targetHref:"reading/read-3",idLetter:"readtogether-3"},
-            {id:nanoid(4),title:"با هم بخوانیم-4(ش)",targetHref:"reading/read-4",idLetter:"readtogether-4"},
-            {id:nanoid(4),title:"با هم بخوانیم-5(ع)",targetHref:"reading/read-5",idLetter:"readtogether-5"},
-            {id:nanoid(4),title:"با هم بخوانیم-6(ق)",targetHref:"reading/read-6",idLetter:"readtogether-6"},
-            {id:nanoid(4),title:"با هم بخوانیم-7(ن)",targetHref:"reading/read-7",idLetter:"readtogether-7"},
-            {id:nanoid(4),title:"با هم بخوانیم-8 (ذ)",targetHref:"reading/read-8",idLetter:"readtogether-8"},
-            ],
-        },
         brokenWords :{
             idModal:"brokenWords11",
             infoWords:[
@@ -449,7 +436,8 @@ export let sylabelWord1={
 // ########## برای حرف ت <--########
 
 // ##########-->برای حرف  (ا - و - ی - ر - س - ض - ش - ب)  ########
-export let sylabelWord2={
+export let sylabelWord2=
+{
     buttonTargetId:"testSylabe2",
     titleHead:"با هم بخوانیم",
     titleColor:"rgb(58, 86, 210)",
@@ -669,7 +657,8 @@ export let sylabelWord2={
 }
 // ##########-->برای حرف  (ا - و - ی - ر - س - ض - ش - ب)  ########
 // ##########-->برای حرف  (از اول تا حرف ظ)  ########
-export let sylabelWord3={
+export let sylabelWord3=
+{
     buttonTargetId:"testSylabe3",
     titleHead:"با هم بخوانیم",
     titleColor:"rgb(88, 191, 57)",
@@ -847,211 +836,211 @@ export let sylabelWord3={
 // ##########-->برای حرف  (از اول تا حرف ظ)  ########
 // ##########-->برای حرف  (از اول تا حرف خ)  ########
 export let sylabelWord4={
-    buttonTargetId:"testSylabe4",
-    titleHead:"با هم بخوانیم",
-    titleColor:"rgb(89, 108, 19)",
-    sylabelBg:"rgb(100, 190, 36)",
-    sentenceRow:[
-        // each arrow is one sentence
-        [
-            {
-            word:"آب",
-            syla:""
-            },
-            {
-            word:"پیچ",
-            syla:""
-            },
-            {
-            word:"چاپ",
-            syla:""
-            },
-            {
-            word:"خوب",
-            syla:""
-            },
-            {
-            word:"بَحر",
-            syla:""
-            },
-        ],
-        [
-            {
-            word:"پُخت",
-            syla:""
-            },
-            {
-            word:"چوب",
-            syla:""
-            },
-            {
-            word:"چُرت",
-            syla:""
-            },
-            {
-            word:"تاب",
-            syla:""
-            },
-            {
-            word:"بَخت",
-            syla:""
-            },
-        ],
-        [
-            {
-            word:"توپ",
-            syla:""
-            },
-            {
-            word:"بیخ",
-            syla:""
-            },
-            {
-            word:"تیپ",
-            syla:""
-            },
-            {
-            word:"بِتا",
-            syla:""
-            },
-            {
-            word:"پَتو",
-            syla:""
-            },
-        ],
-        [
-            {
-            word:"تاج",
-            syla:""
-            },
-            {
-            word:"ثَبت",
-            syla:""
-            },
-            {
-            word:"جیب",
-            syla:""
-            },
-            {
-            word:"باج",
-            syla:""
-            },
-            {
-            word:"اُتو",
-            syla:""
-            },
-        ],
-        [
-            {
-            word:"چَتر",
-            syla:""
-            },
-            {
-            word:"حاج",
-            syla:""
-            },
-            {
-            word:"پوچ",
-            syla:""
-            },
-            {
-            word:"ثابِت",
-            syla:"ثا + بِت"
-            },
-            {
-            word:"تابو",
-            syla:"تا + بو"
-            },
-        ],
-        [
-            {
-            word:"بُطری",
-            syla:"بُط + ری"
-            },
-            {
-            word:"دَر",
-            syla:""
-            },
-            {
-            word:"سَبَد",
-            syla:"سَ + بَد"
-            },
-            {
-            word:"اَست.",
-            syla:""
-            },
-        ],
-        [
-            {
-            word:"شَب",
-            syla:""
-            },
-            {
-            word:"باد",
-            syla:""
-            },
-            {
-            word:"آمَد.",
-            syla:"آ + مَد"
-            },
-        ],
-        [
-            {
-            word:"آرِزو",
-            syla:"آ + رِ + زو"
-            },
-            {
-            word:"دَست",
-            syla:""
-            },
-            {
-            word:"پِدَر",
-            syla:"پِ + دَر"
-            },
-            {
-            word:"را",
-            syla:""
-            },
-            {
-            word:"بوسید.",
-            syla:"بو + سید"
-            },
-        ],
-        [
-            {
-            word:"شَب",
-            syla:""
-            },
-            {
-            word:"سَرد",
-            syla:""
-            },
-            {
-            word:"شُد.",
-            syla:""
-            },
-        ],
-        [
-            {
-            word:"او",
-            syla:""
-            },    
-            {
-            word:"سیب",
-            syla:""
-            },
-            {
-            word:"سُرخ",
-            syla:""
-            },
-            {
-            word:"دارَد.",
-            syla:"دا + رَد"
-            },
-        ],
+buttonTargetId:"testSylabe4",
+titleHead:"با هم بخوانیم",
+titleColor:"rgb(89, 108, 19)",
+sylabelBg:"rgb(100, 190, 36)",
+sentenceRow:[
+// each arrow is one sentence
+[
+    {
+    word:"آب",
+    syla:""
+    },
+    {
+    word:"پیچ",
+    syla:""
+    },
+    {
+    word:"چاپ",
+    syla:""
+    },
+    {
+    word:"خوب",
+    syla:""
+    },
+    {
+    word:"بَحر",
+    syla:""
+    },
+],
+[
+    {
+    word:"پُخت",
+    syla:""
+    },
+    {
+    word:"چوب",
+    syla:""
+    },
+    {
+    word:"چُرت",
+    syla:""
+    },
+    {
+    word:"تاب",
+    syla:""
+    },
+    {
+    word:"بَخت",
+    syla:""
+    },
+],
+[
+    {
+    word:"توپ",
+    syla:""
+    },
+    {
+    word:"بیخ",
+    syla:""
+    },
+    {
+    word:"تیپ",
+    syla:""
+    },
+    {
+    word:"بِتا",
+    syla:""
+    },
+    {
+    word:"پَتو",
+    syla:""
+    },
+],
+[
+    {
+    word:"تاج",
+    syla:""
+    },
+    {
+    word:"ثَبت",
+    syla:""
+    },
+    {
+    word:"جیب",
+    syla:""
+    },
+    {
+    word:"باج",
+    syla:""
+    },
+    {
+    word:"اُتو",
+    syla:""
+    },
+],
+[
+    {
+    word:"چَتر",
+    syla:""
+    },
+    {
+    word:"حاج",
+    syla:""
+    },
+    {
+    word:"پوچ",
+    syla:""
+    },
+    {
+    word:"ثابِت",
+    syla:"ثا + بِت"
+    },
+    {
+    word:"تابو",
+    syla:"تا + بو"
+    },
+],
+[
+    {
+    word:"بُطری",
+    syla:"بُط + ری"
+    },
+    {
+    word:"دَر",
+    syla:""
+    },
+    {
+    word:"سَبَد",
+    syla:"سَ + بَد"
+    },
+    {
+    word:"اَست.",
+    syla:""
+    },
+],
+[
+    {
+    word:"شَب",
+    syla:""
+    },
+    {
+    word:"باد",
+    syla:""
+    },
+    {
+    word:"آمَد.",
+    syla:"آ + مَد"
+    },
+],
+[
+    {
+    word:"آرِزو",
+    syla:"آ + رِ + زو"
+    },
+    {
+    word:"دَست",
+    syla:""
+    },
+    {
+    word:"پِدَر",
+    syla:"پِ + دَر"
+    },
+    {
+    word:"را",
+    syla:""
+    },
+    {
+    word:"بوسید.",
+    syla:"بو + سید"
+    },
+],
+[
+    {
+    word:"شَب",
+    syla:""
+    },
+    {
+    word:"سَرد",
+    syla:""
+    },
+    {
+    word:"شُد.",
+    syla:""
+    },
+],
+[
+    {
+    word:"او",
+    syla:""
+    },    
+    {
+    word:"سیب",
+    syla:""
+    },
+    {
+    word:"سُرخ",
+    syla:""
+    },
+    {
+    word:"دارَد.",
+    syla:"دا + رَد"
+    },
+],
 
 
-    ]
+]
 }
 // ############################# تا حرف ذ #################
 export let sylabelWordOnlyTaughtLetters = {
@@ -1366,7 +1355,7 @@ export let sylabelWord5={
     ]
 }
 // ##########-->برای حرف  (از اول تا حرف ع)  ########
-// ##########-->برای حرف  (از اول تا حرف ق)  ########************************ فعلا تغییر دادم درستش کن!!!!!!
+// ##########-->برای حرف  (از اول تا حرف ق)  ########***********************!!!!
 export let sylabelWord6={
     buttonTargetId:"testSylabe6",
     titleHead:"( تا حرف ق ) با هم بخوانیم",
