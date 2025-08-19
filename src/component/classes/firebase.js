@@ -26,4 +26,4 @@ const database = getDatabase(app);
 const storage = getStorage(app);
 
 // خروجی توابع مورد نیاز
-export { database, ref, set, onValue, remove, storage, push, storageRef, uploadBytes, getDownloadURL }; 
+export { database, ref, set, onValue, remove, storage, push, storageRef, uploadBytes, getDownloadURL,app }; 

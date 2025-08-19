@@ -10,7 +10,6 @@ import FlippingTable from "./FlippingTable/FlippingTable.js";
 import { Route, Routes } from "react-router-dom";
 import WordTable from "./WordTable.js";
 import { TheStory } from "../story/TheStory.js";
-import Reading from "./Reading.js";
 import GameWord from "./GameWord.js";
 import ObjectSentenceGame from "./ObjectSentenceGame.js";
 import MatchGame from "./MatchGame.js";
@@ -43,7 +42,8 @@ export const Alphabet = () => {
                 <Route path='/objectSentenceGame' element={<ObjectSentenceGame/>}  />
                 <Route path='/matchGameWord' element={<MatchGame/>}  />
                 <Route path='/CarouselAlphaExp/*' element={<CarouselAlphaExp/>}  />
-                <Route path='/reading/*' element={<Reading />}  />
+                <Route path='/sylabeWords' element={<SylabeWords/>}  />
+                {/* <Route path='/reading/*' element={<Reading />}  /> */}
                 <Route path='/numberGame' element={<FlippingTable idTablePlay="play1" tableData={tableDataNum.photoData} bgTable={tableDataNum.bgTable} showBack1={false} />}  />
                 <Route path='/kitchenGame' element={<FlippingTable idTablePlay="kitU1" tableData={kitchenDataTable.photoData} bgTable={kitchenDataTable.bgTable} showBack1={true} />}  />
                 <Route path='/professions' element={<FlippingTable idTablePlay="prof1" tableData={tableProfessions.photoData} bgTable={tableProfessions.bgTable} showBack1={true} />}  />
