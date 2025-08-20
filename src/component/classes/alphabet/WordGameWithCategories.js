@@ -1,23 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { database, ref, set, onValue, remove } from "../firebase";
-import { v4 as uuidv4 } from "uuid";
+import { database, ref, onValue } from "../firebase";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function WordGameWithCategories() {
   const [words, setWords] = useState([]);
-  const [showForm, setShowForm] = useState(false);
-  const [showCategories, setShowCategories] = useState(true);
+  const [selectedCard, setSelectedCard] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState("همه");
-
-  // Form fields
-  const [word, setWord] = useState("");
-  const [syllables, setSyllables] = useState("");
-  const [english, setEnglish] = useState("");
-  const [imageUrl, setImageUrl] = useState("");
-  const [category, setCategory] = useState("");
-  const [editId, setEditId] = useState(null);
-  const [showEdit, setShowEdit] = useState(false)
-  const [showSylable, setShowSylable] = useState(true)
 
   useEffect(() => {
     const wordsRef = ref(database, "words");
@@ -29,123 +17,44 @@ export default function WordGameWithCategories() {
     return () => unsubscribe();
   }, []);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (!word || !syllables || !english || !imageUrl || !category) {
-      alert("همه فیلدها الزامی هستند");
-      return;
-    }
-    const id = editId || uuidv4();
-    await set(ref(database, "words/" + id), {
-      id,
-      word,
-      syllables: syllables.split("-"),
-      english,
-      image: imageUrl,
-      category,
-    });
-    resetForm();
-  };
-
-  const resetForm = () => {
-    setWord("");
-    setSyllables("");
-    setEnglish("");
-    setImageUrl("");
-    setCategory("");
-    setEditId(null);
-    setShowForm(false);
-  };
-
-  const handleDelete = async (id) => {
-    if (window.confirm("آیا از حذف این واژه مطمئن هستید؟")) {
-      await remove(ref(database, "words/" + id));
-    }
-  };
-
-  const handleEdit = (word) => {
-    setWord(word.word);
-    setSyllables(word.syllables.join("-"));
-    setEnglish(word.english);
-    setImageUrl(word.image);
-    setCategory(word.category);
-    setEditId(word.id);
-    setShowForm(true);
-  };
-
-  const categories = ["همه", ...Array.from(new Set(words.map(w => w.category)))];
-  const filteredWords = selectedCategory === "همه" ? words : words.filter(w => w.category === selectedCategory);
+  const categories = ["همه", ...Array.from(new Set(words.map((w) => w.category)))];
+  const filteredWords =
+    selectedCategory === "همه"
+      ? words
+      : words.filter((w) => w.category === selectedCategory);
 
   return (
     <div className="container-fluid mt-4">
       <div className="row">
-        {/* Sidebar for Categories */}
+        {/* دسته‌بندی‌ها */}
         <div className="col-md-2 mb-3">
-          <button className="btn btn-secondary w-100 mb-2" onClick={() => setShowCategories(!showCategories)}>
-            {showCategories ? "پنهان کردن دسته‌ها" : "نمایش دسته‌ها"}
-          </button>
-          {showCategories && (
-          <div>
-            {/* <button>show Edit</button> */}
-
-            <ul className="list-group" dir="rtl">
-                
-              {categories.map((cat, idx) => (
-                <li
-                  key={idx}
-                  className={`list-group-item  ${selectedCategory === cat ? "active" : ""}`}
-                  style={{ cursor: "pointer" }}
-                  onClick={() => setSelectedCategory(cat)}
-                >
-                  {cat}
-                </li>
-              ))}
-            </ul>
-            </div>
-          )}
+          <ul className="list-group" dir="rtl">
+            {categories.map((cat, idx) => (
+              <li
+                key={idx}
+                className={`list-group-item ${selectedCategory === cat ? "active" : ""}`}
+                style={{ cursor: "pointer" }}
+                onClick={() => setSelectedCategory(cat)}
+              >
+                {cat}
+              </li>
+            ))}
+          </ul>
         </div>
 
-        {/* Main Content */}
+        {/* کارت‌ها */}
         <div className="col-md-10">
-          <button className="btn btn-primary mb-3" onClick={() => setShowForm(!showForm)}>
-            {showForm ? "پنهان کردن فرم افزودن" : "نمایش فرم افزودن"}
-          </button>
-
-          {showForm && (
-            <>
-            <button className="btn-sm rounded  btn-outline-secondary mx-3 m" onClick={()=>{setShowEdit(!showEdit)}}>{showEdit ? 'Hide Edit' : 'Show Edit'}</button>
-            <form onSubmit={handleSubmit} dir="rtl" className="border p-4 mb-4 rounded bg-light">
-              <div className="mb-3">
-                <label className="form-label">واژه فارسی:</label>
-                <input className="form-control" value={word} onChange={(e) => setWord(e.target.value)} />
-              </div>
-              <div className="mb-3">
-                <label className="form-label">سیلاب‌ها (با - جدا شود):</label>
-                <input className="form-control" value={syllables} onChange={(e) => setSyllables(e.target.value)} />
-              </div>
-              <div className="mb-3">
-                <label className="form-label">معنی انگلیسی:</label>
-                <input className="form-control" value={english} onChange={(e) => setEnglish(e.target.value)} />
-              </div>
-              <div className="mb-3">
-                <label className="form-label">آدرس تصویر:</label>
-                <input className="form-control" value={imageUrl} onChange={(e) => setImageUrl(e.target.value)} />
-              </div>
-              <div className="mb-3">
-                <label className="form-label">دسته‌بندی:</label>
-                <input className="form-control" value={category} onChange={(e) => setCategory(e.target.value)} />
-              </div>
-              <button className="btn btn-success" type="submit">
-                {editId ? "ویرایش واژه" : "افزودن واژه"}
-              </button>
-            </form>
-            </>
-          )}
-
           <div className="row" dir="rtl">
             {filteredWords.map((w) => (
               <div className="col-md-4 mb-4" key={w.id}>
-                <div className="card h-100">
+                <div
+                  className={`card word-card h-100 ${
+                    selectedCard === w.id ? "active bounce" : ""
+                  }`}
+                  onClick={() =>
+                    setSelectedCard(selectedCard === w.id ? null : w.id)
+                  }
+                >
                   <img
                     src={w.image}
                     alt={w.word}
@@ -153,26 +62,23 @@ export default function WordGameWithCategories() {
                     style={{ height: 160, objectFit: "contain" }}
                   />
                   <div className="card-body text-center">
-                    <h5 onClick={()=>setShowSylable(!showSylable)} className="card-title">{w.word}</h5>
-                    <p className="card-text text-muted">( {w.english} )</p>
-                    {showSylable &&
-                    <div className="mb-3 h3">
-                      {w.syllables.map((s, i) => (
-                        <span key={i} className="badge bg-info text-dark me-1">
-                          {s}
-                        </span>
-                      ))}
-                    </div>
-                    }
-                    {showEdit && (<>
-                    <button className="btn btn-outline-primary btn-sm mx-2" onClick={() => handleEdit(w)}>
-                      ✏️ ویرایش
-                    </button>
-                    <button className="btn btn-outline-danger btn-sm" onClick={() => handleDelete(w.id)}>
-                      ❌ حذف
-                    </button>
-                    
-                    </>)}
+                    <h5 className="card-title">{w.word}</h5>
+                    {selectedCard === w.id && (
+                      <>
+                        <p className="card-text text-muted">( {w.english} )</p>
+                        <div className="mb-3 h4 syllables">
+                          {w.syllables.map((s, i) => (
+                            <span
+                              key={i}
+                              className="badge bg-warning text-dark me-1 syllable-badge"
+                              style={{ animationDelay: `${i * 0.2}s` }}
+                            >
+                              {s}
+                            </span>
+                          ))}
+                        </div>
+                      </>
+                    )}
                   </div>
                 </div>
               </div>
@@ -180,6 +86,52 @@ export default function WordGameWithCategories() {
           </div>
         </div>
       </div>
+
+      {/* استایل‌ها */}
+      <style>{`
+        .word-card {
+          transition: transform 0.4s ease, box-shadow 0.4s ease;
+          cursor: pointer;
+        }
+
+        .word-card:hover {
+          transform: scale(1.05);
+        }
+
+        .word-card.active {
+          transform: scale(1.1) rotate(-2deg);
+          box-shadow: 0 10px 25px rgba(255, 200, 0, 0.6);
+          border: 3px solid #ffcc00;
+          background: linear-gradient(145deg, #fffbea, #fff3c4);
+        }
+
+        /* افکت بپر بپر */
+        .bounce {
+          animation: bounce 0.6s ease;
+        }
+
+        @keyframes bounce {
+          0%   { transform: scale(1) rotate(0deg); }
+          30%  { transform: scale(1.15) rotate(-3deg); }
+          50%  { transform: scale(0.95) rotate(2deg); }
+          70%  { transform: scale(1.05) rotate(-1deg); }
+          100% { transform: scale(1.1) rotate(-2deg); }
+        }
+
+        /* سیلاب‌ها یکی یکی ظاهر بشن */
+        .syllable-badge {
+          opacity: 0;
+          transform: translateY(10px);
+          animation: fadeInUp 0.5s forwards;
+        }
+
+        @keyframes fadeInUp {
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      `}</style>
     </div>
   );
 }
