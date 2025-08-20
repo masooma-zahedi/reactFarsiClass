@@ -19,6 +19,7 @@ import SyllableApp from "./SyllableApp.js";
 import StoryPage3 from "../story/StoryPage3.js";
 import WordGameWithCategories from "./WordGameWithCategories.js";
 import HighlightLetterText from "./HighlightLetterText.js";
+import TestApp from "./TestApp.js";
 
 
 
@@ -60,7 +61,7 @@ export const Alphabet = () => {
             </div>
               <div>
               {/* test */}
-                  
+                  <TestApp/>
               </div>
             </div>
           </div>
