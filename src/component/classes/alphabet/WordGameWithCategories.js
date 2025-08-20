@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { database, ref, onValue } from "../firebase";
+import { database, ref, onValue, set, remove } from "../firebase";
+import { v4 as uuidv4 } from "uuid";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function WordGameWithCategories() {
@@ -7,6 +8,16 @@ export default function WordGameWithCategories() {
   const [selectedCard, setSelectedCard] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState("همه");
 
+  // --- فرم ---
+  const [showForm, setShowForm] = useState(false);
+  const [word, setWord] = useState("");
+  const [syllables, setSyllables] = useState("");
+  const [english, setEnglish] = useState("");
+  const [imageUrl, setImageUrl] = useState("");
+  const [category, setCategory] = useState("");
+  const [editId, setEditId] = useState(null);
+
+  // دریافت داده‌ها
   useEffect(() => {
     const wordsRef = ref(database, "words");
     const unsubscribe = onValue(wordsRef, (snapshot) => {
@@ -17,6 +28,55 @@ export default function WordGameWithCategories() {
     return () => unsubscribe();
   }, []);
 
+  // ذخیره (افزودن / ویرایش)
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (!word || !syllables || !english || !imageUrl || !category) {
+      alert("همه فیلدها الزامی هستند");
+      return;
+    }
+    const id = editId || uuidv4();
+    await set(ref(database, "words/" + id), {
+      id,
+      word,
+      syllables: syllables.split("-"),
+      english,
+      image: imageUrl,
+      category,
+    });
+    resetForm();
+  };
+
+  // حذف
+  const handleDelete = async (id) => {
+    if (window.confirm("آیا از حذف مطمئن هستید؟")) {
+      await remove(ref(database, "words/" + id));
+    }
+  };
+
+  // پر کردن فرم برای ویرایش
+  const handleEdit = (w) => {
+    setWord(w.word);
+    setSyllables(w.syllables.join("-"));
+    setEnglish(w.english);
+    setImageUrl(w.image);
+    setCategory(w.category);
+    setEditId(w.id);
+    setShowForm(true);
+  };
+
+  // ریست فرم
+  const resetForm = () => {
+    setWord("");
+    setSyllables("");
+    setEnglish("");
+    setImageUrl("");
+    setCategory("");
+    setEditId(null);
+    setShowForm(false);
+  };
+
+  // دسته‌بندی‌ها
   const categories = ["همه", ...Array.from(new Set(words.map((w) => w.category)))];
   const filteredWords =
     selectedCategory === "همه"
@@ -32,7 +92,9 @@ export default function WordGameWithCategories() {
             {categories.map((cat, idx) => (
               <li
                 key={idx}
-                className={`list-group-item ${selectedCategory === cat ? "active" : ""}`}
+                className={`list-group-item ${
+                  selectedCategory === cat ? "active" : ""
+                }`}
                 style={{ cursor: "pointer" }}
                 onClick={() => setSelectedCategory(cat)}
               >
@@ -44,6 +106,74 @@ export default function WordGameWithCategories() {
 
         {/* کارت‌ها */}
         <div className="col-md-10">
+          <button
+            className="btn btn-primary mb-3"
+            onClick={() => setShowForm(!showForm)}
+          >
+            {showForm ? "بستن فرم" : "افزودن واژه جدید"}
+          </button>
+
+          {showForm && (
+            <form
+              onSubmit={handleSubmit}
+              dir="rtl"
+              className="border p-4 mb-4 rounded bg-light"
+            >
+              <div className="mb-3">
+                <label className="form-label">واژه فارسی:</label>
+                <input
+                  className="form-control"
+                  value={word}
+                  onChange={(e) => setWord(e.target.value)}
+                />
+              </div>
+              <div className="mb-3">
+                <label className="form-label">سیلاب‌ها (با - جدا شوند):</label>
+                <input
+                  className="form-control"
+                  value={syllables}
+                  onChange={(e) => setSyllables(e.target.value)}
+                />
+              </div>
+              <div className="mb-3">
+                <label className="form-label">معنی انگلیسی:</label>
+                <input
+                  className="form-control"
+                  value={english}
+                  onChange={(e) => setEnglish(e.target.value)}
+                />
+              </div>
+              <div className="mb-3">
+                <label className="form-label">آدرس تصویر:</label>
+                <input
+                  className="form-control"
+                  value={imageUrl}
+                  onChange={(e) => setImageUrl(e.target.value)}
+                />
+              </div>
+              <div className="mb-3">
+                <label className="form-label">دسته‌بندی:</label>
+                <input
+                  className="form-control"
+                  value={category}
+                  onChange={(e) => setCategory(e.target.value)}
+                />
+              </div>
+              <button className="btn btn-success" type="submit">
+                {editId ? "ویرایش واژه" : "افزودن واژه"}
+              </button>
+              {editId && (
+                <button
+                  type="button"
+                  className="btn btn-secondary ms-2"
+                  onClick={resetForm}
+                >
+                  لغو
+                </button>
+              )}
+            </form>
+          )}
+
           <div className="row" dir="rtl">
             {filteredWords.map((w) => (
               <div className="col-md-4 mb-4" key={w.id}>
@@ -77,6 +207,18 @@ export default function WordGameWithCategories() {
                             </span>
                           ))}
                         </div>
+                        <button
+                          className="btn btn-outline-primary btn-sm mx-1"
+                          onClick={() => handleEdit(w)}
+                        >
+                          ✏️ ویرایش
+                        </button>
+                        <button
+                          className="btn btn-outline-danger btn-sm mx-1"
+                          onClick={() => handleDelete(w.id)}
+                        >
+                          ❌ حذف
+                        </button>
                       </>
                     )}
                   </div>
@@ -105,7 +247,6 @@ export default function WordGameWithCategories() {
           background: linear-gradient(145deg, #fffbea, #fff3c4);
         }
 
-        /* افکت بپر بپر */
         .bounce {
           animation: bounce 0.6s ease;
         }
@@ -118,7 +259,6 @@ export default function WordGameWithCategories() {
           100% { transform: scale(1.1) rotate(-2deg); }
         }
 
-        /* سیلاب‌ها یکی یکی ظاهر بشن */
         .syllable-badge {
           opacity: 0;
           transform: translateY(10px);
