@@ -19,7 +19,7 @@ import SyllableApp from "./SyllableApp.js";
 import StoryPage3 from "../story/StoryPage3.js";
 import WordGameWithCategories from "./WordGameWithCategories.js";
 import HighlightLetterText from "./HighlightLetterText.js";
-import TestApp from "./TestApp.js";
+import LearnNewWords from "./LearnNewWords.js";
 
 
 
@@ -55,13 +55,14 @@ export const Alphabet = () => {
                 <Route path='/wordGameWithCategories' element={<WordGameWithCategories/>}  />
                 <Route path='moreStoryWordsAlpha' element={<StoryPage3 groupKey="alefba" />}  />
                 <Route path='HighlightLetterText' element={<HighlightLetterText />}  />
+                <Route path='LearnNewWords' element={<LearnNewWords />}  />
               </Routes>
               <WordCarousel/>
               <GameWord />
             </div>
               <div>
               {/* test */}
-                  <TestApp/>
+                  {/* <LearnNewWords/> */}
               </div>
             </div>
           </div>

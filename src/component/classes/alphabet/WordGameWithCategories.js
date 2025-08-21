@@ -16,6 +16,8 @@ export default function WordGameWithCategories() {
   const [imageUrl, setImageUrl] = useState("");
   const [category, setCategory] = useState("");
   const [editId, setEditId] = useState(null);
+  const [showEditDelete, setShowEditDelete] = useState(false);
+
 
   // دریافت داده‌ها
   useEffect(() => {
@@ -162,6 +164,7 @@ export default function WordGameWithCategories() {
               <button className="btn btn-success" type="submit">
                 {editId ? "ویرایش واژه" : "افزودن واژه"}
               </button>
+                      
               {editId && (
                 <button
                   type="button"
@@ -171,6 +174,13 @@ export default function WordGameWithCategories() {
                   لغو
                 </button>
               )}
+              <button
+                type="button"
+                className="btn btn-warning me-2"
+                onClick={() => setShowEditDelete(!showEditDelete)}
+              >
+                {showEditDelete ? "پنهان ویرایش/حذف" : "نمایش ویرایش/حذف"}
+              </button>
             </form>
           )}
 
@@ -207,20 +217,26 @@ export default function WordGameWithCategories() {
                             </span>
                           ))}
                         </div>
-                        <button
-                          className="btn btn-outline-primary btn-sm mx-1"
-                          onClick={() => handleEdit(w)}
-                        >
-                          ✏️ ویرایش
-                        </button>
-                        <button
-                          className="btn btn-outline-danger btn-sm mx-1"
-                          onClick={() => handleDelete(w.id)}
-                        >
-                          ❌ حذف
-                        </button>
+
+                        {showEditDelete && (
+                          <>
+                            <button
+                              className="btn btn-outline-primary btn-sm mx-1"
+                              onClick={() => handleEdit(w)}
+                            >
+                              ✏️ ویرایش
+                            </button>
+                            <button
+                              className="btn btn-outline-danger btn-sm mx-1"
+                              onClick={() => handleDelete(w.id)}
+                            >
+                              ❌ حذف
+                            </button>
+                          </>
+                        )}
                       </>
                     )}
+
                   </div>
                 </div>
               </div>
