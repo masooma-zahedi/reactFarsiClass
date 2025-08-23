@@ -20,6 +20,7 @@ import StoryPage3 from "../story/StoryPage3.js";
 import WordGameWithCategories from "./WordGameWithCategories.js";
 import HighlightLetterText from "./HighlightLetterText.js";
 import LearnNewWords from "./LearnNewWords.js";
+import BouncingBalls from "./BouncingBalls.js";
 
 
 
@@ -55,14 +56,15 @@ export const Alphabet = () => {
                 <Route path='/wordGameWithCategories' element={<WordGameWithCategories/>}  />
                 <Route path='moreStoryWordsAlpha' element={<StoryPage3 groupKey="alefba" />}  />
                 <Route path='HighlightLetterText' element={<HighlightLetterText />}  />
-                <Route path='LearnNewWords' element={<LearnNewWords />}  />
+                <Route path='learnNewWords' element={<LearnNewWords />}  />
+                <Route path='bouncingBalls' element={<BouncingBalls />}  />
               </Routes>
               <WordCarousel/>
               <GameWord />
             </div>
               <div>
               {/* test */}
-                  {/* <LearnNewWords/> */}
+                  {/* <BouncingBalls/> */}
               </div>
             </div>
           </div>

@@ -30,19 +30,28 @@ document.head.appendChild(style);
 const LearnNewWords = () => {
 
   const [cards] = useState([
-    { id: 1, image: 'https://picsum.photos/200/300', englishWord: 'Apple', persianWord: 'سیب', category: 'میوه‌ها' },
-    { id: 2, image: 'https://picsum.photos/200/301', englishWord: 'Banana', persianWord: 'موز', category: 'میوه‌ها' },
-    { id: 3, image: 'https://picsum.photos/200/302', englishWord: 'Dog', persianWord: 'سگ', category: 'حیوانات' },
-    { id: 4, image: 'https://picsum.photos/200/303', englishWord: 'Cat', persianWord: 'گربه', category: 'حیوانات' },
-    { id: nanoid(), image: 'https://static.vecteezy.com/system/resources/thumbnails/053/472/166/small/a-cartoon-hand-reaching-out-to-someone-vector.jpg', englishWord: 'Hand', persianWord: 'دست', category: 'اعضای بدن' },
+    // { id: 1, image: 'https://picsum.photos/200/300', englishWord: 'Apple', persianWord: 'سیب', category: 'میوه‌ها' },
+    // { id: 2, image: 'https://picsum.photos/200/301', englishWord: 'Banana', persianWord: 'موز', category: 'میوه‌ها' },
+    // { id: 3, image: 'https://picsum.photos/200/302', englishWord: 'Dog', persianWord: 'سگ', category: 'حیوانات' },
+    // { id: 4, image: 'https://picsum.photos/200/303', englishWord: 'Cat', persianWord: 'گربه', category: 'حیوانات' },
+    { id: nanoid(), image: 'https://static.vecteezy.com/system/resources/thumbnails/053/472/166/small/a-cartoon-hand-reaching-out-to-someone-vector.jpg', englishWord: 'Hand', persianWord: 'دَست', category: 'اعضای بدن' },
     { id: nanoid(), image: 'https://img.freepik.com/free-vector/hand-drawn-foot-cartoon-illustration_23-2151063042.jpg', englishWord: 'Leg', persianWord: 'پا', category: 'اعضای بدن' },
-    { id:nanoid(), image: 'https://t4.ftcdn.net/jpg/01/98/79/13/360_F_198791315_ARwzfFRtHEdWy4bjPHs0UeKYr9GlsK9s.jpg', englishWord: 'Head', persianWord: 'سر', category: 'اعضای بدن' },
-    { id:nanoid(), image: 'https://img.freepik.com/premium-vector/blue-eye-cartoon-drawing-vector-illustration_1316704-4630.jpg', englishWord: 'Eye', persianWord: 'چشم', category: 'اعضای بدن' },
+    { id:nanoid(), image: 'https://t4.ftcdn.net/jpg/01/98/79/13/360_F_198791315_ARwzfFRtHEdWy4bjPHs0UeKYr9GlsK9s.jpg', englishWord: 'Head', persianWord: 'سَر', category: 'اعضای بدن' },
+    { id:nanoid(), image: 'https://img.freepik.com/premium-vector/blue-eye-cartoon-drawing-vector-illustration_1316704-4630.jpg', englishWord: 'Eye', persianWord: 'چِشم', category: 'اعضای بدن' },
     { id:nanoid(), image: 'https://c8.alamy.com/comp/E99GD8/cartoon-character-of-ear-with-teasing-pose-E99GD8.jpg', englishWord: 'Ear', persianWord: 'گوش', category: 'اعضای بدن' },
     { id:nanoid(), image: 'https://www.clipartmax.com/png/middle/20-200133_cartoon-nose-profile-clip-art-clipart-nose-cartoon.png', englishWord: 'Nose', persianWord: 'بینی', category: 'اعضای بدن' },
     { id:nanoid(), image: 'https://i.fbcd.co/products/resized/resized-750-500/1805-m10-i005-n012-e16p-3180b0468acc74a0cf98e7e08f07ceb3266f1c8bf90372060aa9a92f0ee50299.jpg', englishWord: 'Mouth', persianWord: 'دهان', category: 'اعضای بدن' },
-    { id: 15, image: 'https://www.shutterstock.com/image-vector/hand-palm-count-one-five-260nw-1820954252.jpg', englishWord: 'Finger', persianWord: 'انگشت', category: 'اعضای بدن' },
-    { id: 16, image: 'https://img.freepik.com/premium-photo/hair-2d-cartoon-vector-illustration-white-background-hi_889056-24441.jpg', englishWord: 'Hair', persianWord: 'مو', category: 'اعضای بدن' },
+    { id:nanoid(), image: 'https://www.shutterstock.com/image-vector/hand-palm-count-one-five-260nw-1820954252.jpg', englishWord: 'Finger', persianWord: 'اَنگُشت', category: 'اعضای بدن' },
+    { id:nanoid(), image: 'https://img.freepik.com/premium-photo/hair-2d-cartoon-vector-illustration-white-background-hi_889056-24441.jpg', englishWord: 'Hair', persianWord: 'مو', category: 'اعضای بدن' },
+    { id:nanoid(), image: 'https://st4.depositphotos.com/11506542/21430/v/450/depositphotos_214304728-stock-illustration-eyebrow-perfectly-shaped-permanent-make.jpg', englishWord: 'Eyebrows', persianWord: 'اَبرو', category: 'اعضای بدن' },
+    { id:nanoid(), image: 'https://t3.ftcdn.net/jpg/00/77/37/14/360_F_77371454_u18ZNypO3RvJgHXQD9jfY0gheZTwmSIW.jpg', englishWord: 'Lip', persianWord: 'لَب', category: 'اعضای بدن' },
+    { id:nanoid(), image: 'https://www.shutterstock.com/image-vector/dental-cartoon-character-healthy-teeth-260nw-2295876705.jpg', englishWord: 'Teeth', persianWord: 'دَندان', category: 'اعضای بدن' },
+    { id:nanoid(), image: 'https://previews.123rf.com/images/alekseymartynov/alekseymartynov1907/alekseymartynov190700001/127958317-cartoon-screaming-knee-in-shorts-and-sock.jpg', englishWord: 'Knee', persianWord: 'زانو', category: 'اعضای بدن' },
+    { id:nanoid(), image: 'https://cdn.vectorstock.com/i/500p/58/20/pop-art-tongue-out-mouth-vector-5175820.jpg', englishWord: 'Tongue', persianWord: 'زَبان', category: 'اعضای بدن' },
+    { id:nanoid(), image: 'https://png.pngtree.com/png-vector/20191123/ourmid/pngtree-neck-plastic-correction-icon-cartoon-style-png-image_2007449.jpg', englishWord: 'Neck', persianWord: 'گَردَن', category: 'اعضای بدن' },
+    { id:nanoid(), image: 'https://thumbs.dreamstime.com/b/overweight-man-body-big-belly-fat-chubby-illustration-cartoon-drawing-white-background-over-cloth-388530887.jpg', englishWord: 'Tummy - Abdomen', persianWord: 'شِکَم', category: 'اعضای بدن'},
+    { id:nanoid(), image: 'https://www.shutterstock.com/image-vector/female-hand-completed-manicure-painted-600nw-1953009004.jpg', englishWord: 'Nail', persianWord: 'ناخُن', category: 'اعضای بدن'},
+    { id:nanoid(), image: 'https://img.freepik.com/free-vector/southeast-asian-man-cartoon-illustration-vibrant-vector-portrait_1308-153741.jpg?semt=ais_hybrid&w=740', englishWord: 'Face', persianWord: 'صورَت', category: 'اعضای بدن'},
   ]);
 
   const categories = [...new Set(cards.map(card => card.category))]; // استخراج دسته‌ها
