@@ -30,6 +30,7 @@ document.head.appendChild(style);
 const LearnNewWords = () => {
 
   const [cards] = useState([
+    // ********** اعضای بدن
     { id: nanoid(), image: 'https://static.vecteezy.com/system/resources/thumbnails/053/472/166/small/a-cartoon-hand-reaching-out-to-someone-vector.jpg', englishWord: 'Hand', persianWord: 'دَست', category: 'اعضای بدن' },
     { id: nanoid(), image: 'https://img.freepik.com/free-vector/hand-drawn-foot-cartoon-illustration_23-2151063042.jpg', englishWord: 'Leg', persianWord: 'پا', category: 'اعضای بدن' },
     { id:nanoid(), image: 'https://t4.ftcdn.net/jpg/01/98/79/13/360_F_198791315_ARwzfFRtHEdWy4bjPHs0UeKYr9GlsK9s.jpg', englishWord: 'Head', persianWord: 'سَر', category: 'اعضای بدن' },
@@ -48,23 +49,20 @@ const LearnNewWords = () => {
     { id:nanoid(), image: 'https://thumbs.dreamstime.com/b/overweight-man-body-big-belly-fat-chubby-illustration-cartoon-drawing-white-background-over-cloth-388530887.jpg', englishWord: 'Tummy - Abdomen', persianWord: 'شِکَم', category: 'اعضای بدن'},
     { id:nanoid(), image: 'https://www.shutterstock.com/image-vector/female-hand-completed-manicure-painted-600nw-1953009004.jpg', englishWord: 'Nail', persianWord: 'ناخُن', category: 'اعضای بدن'},
     { id:nanoid(), image: 'https://img.freepik.com/free-vector/southeast-asian-man-cartoon-illustration-vibrant-vector-portrait_1308-153741.jpg?semt=ais_hybrid&w=740', englishWord: 'Face', persianWord: 'صورَت', category: 'اعضای بدن'},
-        // { id: 1, image: 'https://picsum.photos/200/300', englishWord: 'Apple', persianWord: 'سیب', category: 'میوه‌ها' },
-    // { id: 2, image: 'https://picsum.photos/200/301', englishWord: 'Banana', persianWord: 'موز', category: 'میوه‌ها' },
-    // { id: 3, image: 'https://picsum.photos/200/302', englishWord: 'Dog', persianWord: 'سگ', category: 'حیوانات' },
-    // { id: 4, image: 'https://picsum.photos/200/303', englishWord: 'Cat', persianWord: 'گربه', category: 'حیوانات' },
-     { id: nanoid(), image: 'https://www.sugarspicenmore.com/wp-content/uploads/2021/06/Afghani-Pulao-4-scaled-500x375.jpg', englishWord: 'Kabuli Pulao', persianWord: 'قابُلی پَلو', category: 'غذاها' },
-  { id: nanoid(), image: 'https://i.ytimg.com/vi/hCtTBwgLlCE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCCoRribxgJM_nj5mNWH0siOalgDQ', englishWord: 'Mantu (Dumplings)', persianWord: 'مَنتو', category: 'غذاها' },
-  { id: nanoid(), image: 'https://talaangor.ir/wp-content/uploads/2023/08/%D8%B7%D8%B1%D8%B2-%D8%AA%D9%87%DB%8C%D9%87-%D8%A8%D9%88%D9%84%D8%A7%D9%86%DB%8C-%D8%A7%D9%81%D8%BA%D8%A7%D9%86%DB%8C-%D8%A8%D8%A7-%D8%AA%D8%B1%D9%87.jpeg', englishWord: 'Bolani', persianWord: 'بولانی', category: 'غذاها' },
-  { id: nanoid(), image: 'https://i.ytimg.com/vi/2gB4Q4BPdhY/maxresdefault.jpg', englishWord: 'Shorwa (Soup)', persianWord: 'شوروا', category: 'غذاها' },
-  { id: nanoid(), image: 'https://app.akharinkhabar.ir/images/2021/08/02/5eb3ad28-1157-4332-92c1-866361613110.jpeg', englishWord: 'Chaply Kabob', persianWord: 'چَپلی کَباب', category: 'غذاها' },
-  { id: nanoid(), image: 'https://afghancooking.typepad.com/.a/6a01157090fab6970b0115710e82f6970c-600wi', englishWord: 'Sabzi (Spinach Stew)', persianWord: 'سَبزی', category: 'غذاها' },
-  { id: nanoid(), image: 'https://i.ytimg.com/vi/GhfJY7kJcJs/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLC_UevRZ7bZTt-rrYosM1wCJlfLbg', englishWord: 'Borani Badenjan (Eggplant Dish)', persianWord: 'بورانی بادنجان', category: 'غذاها' },
-   { id: nanoid(), image: 'https://i.ytimg.com/vi/AxjMHPbmy9M/hqdefault.jpg', englishWord: 'Jalebi', persianWord: 'جَلبی', category: 'غذاها' },
-  { id: nanoid(), image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRccnH7OQdVddji6-fseBBoSzscFvspK27cPw&s', englishWord: 'Baklava', persianWord: 'باقلَوا', category: 'غذاها' },
-  { id: nanoid(), image: 'https://i.ytimg.com/vi/DV4MykGa9cA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDHxUDr78_LxCWLg5U3neEOHv6i3A', englishWord: 'Firnee (Milk Pudding)', persianWord: 'فِرنی', category: 'غذاها' },
-  { id: nanoid(), image: 'https://cdn.yjc.ir/files/fa/news/1400/11/8/15550035_360.jpg', englishWord: 'Sheer Pira', persianWord: 'شیرپَره', category: 'غذاها' },
-  { id: nanoid(), image: 'https://i.ytimg.com/vi/ttWQn8-StKQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA8_zEuU_7vEKOkZ3sFfme-1oQWog', englishWord: 'Haft Mewa (Seven Fruits)', persianWord: 'هَفت‌میوه', category: 'غذاها' },
-  { id: nanoid(), image: 'https://kalleh.com/book/wp-content/uploads/sites/2/2025/01/recepie-of-making-nazok-gooshe-fil.jpg', englishWord: 'Gosh-e Feel (Elephant Ear Pastry)', persianWord: 'گوش‌فیِل', category: 'غذاها' },
+    // ********** غذا ها
+    { id: nanoid(), image: 'https://www.sugarspicenmore.com/wp-content/uploads/2021/06/Afghani-Pulao-4-scaled-500x375.jpg', englishWord: 'Kabuli Pulao', persianWord: 'قابُلی پَلو', category: 'غذاها' },
+    { id: nanoid(), image: 'https://i.ytimg.com/vi/hCtTBwgLlCE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCCoRribxgJM_nj5mNWH0siOalgDQ', englishWord: 'Mantu (Dumplings)', persianWord: 'مَنتو', category: 'غذاها' },
+    { id: nanoid(), image: 'https://talaangor.ir/wp-content/uploads/2023/08/%D8%B7%D8%B1%D8%B2-%D8%AA%D9%87%DB%8C%D9%87-%D8%A8%D9%88%D9%84%D8%A7%D9%86%DB%8C-%D8%A7%D9%81%D8%BA%D8%A7%D9%86%DB%8C-%D8%A8%D8%A7-%D8%AA%D8%B1%D9%87.jpeg', englishWord: 'Bolani', persianWord: 'بولانی', category: 'غذاها' },
+    { id: nanoid(), image: 'https://i.ytimg.com/vi/2gB4Q4BPdhY/maxresdefault.jpg', englishWord: 'Shorwa (Soup)', persianWord: 'شوروا', category: 'غذاها' },
+    { id: nanoid(), image: 'https://app.akharinkhabar.ir/images/2021/08/02/5eb3ad28-1157-4332-92c1-866361613110.jpeg', englishWord: 'Chaply Kabob', persianWord: 'چَپلی کَباب', category: 'غذاها' },
+    { id: nanoid(), image: 'https://afghancooking.typepad.com/.a/6a01157090fab6970b0115710e82f6970c-600wi', englishWord: 'Sabzi (Spinach Stew)', persianWord: 'سَبزی', category: 'غذاها' },
+    { id: nanoid(), image: 'https://i.ytimg.com/vi/GhfJY7kJcJs/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLC_UevRZ7bZTt-rrYosM1wCJlfLbg', englishWord: 'Borani Badenjan (Eggplant Dish)', persianWord: 'بورانی بادنجان', category: 'غذاها' },
+    { id: nanoid(), image: 'https://i.ytimg.com/vi/AxjMHPbmy9M/hqdefault.jpg', englishWord: 'Jalebi', persianWord: 'جَلبی', category: 'غذاها' },
+    { id: nanoid(), image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRccnH7OQdVddji6-fseBBoSzscFvspK27cPw&s', englishWord: 'Baklava', persianWord: 'باقلَوا', category: 'غذاها' },
+    { id: nanoid(), image: 'https://i.ytimg.com/vi/DV4MykGa9cA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDHxUDr78_LxCWLg5U3neEOHv6i3A', englishWord: 'Firnee (Milk Pudding)', persianWord: 'فِرنی', category: 'غذاها' },
+    { id: nanoid(), image: 'https://cdn.yjc.ir/files/fa/news/1400/11/8/15550035_360.jpg', englishWord: 'Sheer Pira', persianWord: 'شیرپَره', category: 'غذاها' },
+    { id: nanoid(), image: 'https://i.ytimg.com/vi/ttWQn8-StKQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA8_zEuU_7vEKOkZ3sFfme-1oQWog', englishWord: 'Haft Mewa (Seven Fruits)', persianWord: 'هَفت‌میوه', category: 'غذاها' },
+    { id: nanoid(), image: 'https://kalleh.com/book/wp-content/uploads/sites/2/2025/01/recepie-of-making-nazok-gooshe-fil.jpg', englishWord: 'Gosh-e Feel (Elephant Ear Pastry)', persianWord: 'گوش‌فیِل', category: 'غذاها' },
 
   ]);
 
@@ -88,8 +86,8 @@ const LearnNewWords = () => {
   const categoryColors = {
     'اعضای بدن': '#FF6961',
     'غذاها': " #fd7b57ff",
-    'میوه‌ها': '#577bd0ff',
-    'حیوانات': '#77DD77',
+    // 'میوه‌ها': '#577bd0ff',
+    // 'حیوانات': '#77DD77',
   };
 
   return (
@@ -161,9 +159,7 @@ const LearnNewWords = () => {
                 height: '100%',
                 objectFit: 'contain'
               }} />
-
             </div>
-
             <div style={{ padding: '15px', textAlign: 'center',background: bgColor , }}>
               <div className='h1' style={{ fontSize: '', marginTop: '5px' }}>{card.persianWord}</div>
               <div className='h6' style={{ fontSize: '20px', fontWeight: 'bold' }}>{card.englishWord}</div>
