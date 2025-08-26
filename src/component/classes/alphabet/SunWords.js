@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from "react";
 
 export default function SunWords() {
-  // 📂 دسته‌بندی‌ها
   const categories = {
-    حیوانات: ["گربه", "سگ", "اسب", "پرنده", "ماهی", "خرگوش"],
-    اشیاء: ["کتاب", "میز", "صندلی", "خودکار", "کیف", "تلفن"],
-    غذاها: ["کباب", "آش", "برنج", "نان", "قیمه", "بورانی"],
-    می : ["خوانم", "خوانی", "خواند", "خوانیم", "خوانید", "خوانند"],
-     کوتاه: ["بَ","اِ","رَ","اُ","رُ","اَ","بُ","بِ","رِ",]
+    تست: {
+      circle: "معصومه",
+      boxes: ["mujtaba", "fatima", "zahra"]
+    },
+    ریست: {
+      circle: "2معصومه",
+      boxes: ["mujtaba2", "fatima2", "zahra2"]
+    }
   };
 
   const colors = [
@@ -15,22 +17,24 @@ export default function SunWords() {
     "#009688", "#4caf50", "#ff9800", "#795548", "#607d8b"
   ];
 
-  const [category, setCategory] = useState("حیوانات"); // دسته انتخابی
-  const [words, setWords] = useState(categories["حیوانات"]);
+  const [category, setCategory] = useState("تست"); // دسته انتخابی
+  const [words, setWords] = useState(categories["تست"].boxes);
+  const [circleText, setCircleText] = useState(categories["تست"].circle);
   const [rotationDeg, setRotationDeg] = useState(0);
   const [rotating, setRotating] = useState(false);
   const [selected, setSelected] = useState(null);
-  const [circleColor, setCircleColor] = useState("#ed7f3acc");
+  const [circleColor, setCircleColor] = useState("#ffd54f");
   const [finished, setFinished] = useState(false);
+  const [showListSun, setShowListSun] = useState(false);
 
   const norm = (x) => ((x % 360) + 360) % 360;
 
   const handleClick = () => {
     if (finished) {
-      setWords(categories[category]);
+      setWords(categories[category].boxes);
       setRotationDeg(0);
       setSelected(null);
-      setCircleColor("#ed7f3acc");
+      setCircleColor("#ffd54f");
       setFinished(false);
       return;
     }
@@ -39,7 +43,7 @@ export default function SunWords() {
       const newWords = words.filter((_, i) => i !== selected);
       setWords(newWords);
       setSelected(null);
-      setCircleColor("#ed7f3acc");
+      setCircleColor("#ffd54f");
 
       if (newWords.length === 0) {
         setFinished(true);
@@ -70,7 +74,6 @@ export default function SunWords() {
     }, durationMs);
   };
 
-  // لیسنر Space
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.code === "Space") {
@@ -85,37 +88,40 @@ export default function SunWords() {
   const radius = 160;
 
   return (
-    <div style={{ display: "flex", gap: "20px" }}>
+    <div className="border border-danger container" style={{ display: "flex", gap: "20px" }}>
       {/* فهرست دسته‌ها */}
-      <div style={styles.sidebar}>
-        <h3>📂 دسته‌بندی‌ها</h3>
-        <ul>
-          {Object.keys(categories).map((cat) => (
-            <li key={cat} style={{ marginBottom: "10px" }}>
-              <button
-                style={{
-                  padding: "8px 12px",
-                  borderRadius: "8px",
-                  border: "none",
-                  cursor: "pointer",
-                  background: category === cat ? "#4caf50" : "#ddd",
-                  color: category === cat ? "#fff" : "#000",
-                  width: "100%",
-                }}
-                onClick={() => {
-                  setCategory(cat);
-                  setWords(categories[cat]);
-                  setSelected(null);
-                  setRotationDeg(0);
-                  setFinished(false);
-                  setCircleColor("#ed7f3acc");
-                }}
-              >
-                {cat}
-              </button>
-            </li>
-          ))}
-        </ul>
+        <div style={styles.sidebar}>
+          <h3 className="btn btn-success" onClick={()=>setShowListSun(!showListSun)}>دسته‌بندی‌ها</h3>
+      {showListSun && 
+          <ul>
+            {Object.keys(categories).map((cat) => (
+              <li key={cat} style={{ marginBottom: "10px" }}>
+                <button
+                  style={{
+                    padding: "8px 12px",
+                    borderRadius: "8px",
+                    border: "none",
+                    cursor: "pointer",
+                    background: category === cat ? "#4caf50" : "#ddd",
+                    color: category === cat ? "#fff" : "#000",
+                    width: "100%",
+                  }}
+                  onClick={() => {
+                    setCategory(cat);
+                    setWords(categories[cat].boxes);
+                    setCircleText(categories[cat].circle);
+                    setSelected(null);
+                    setRotationDeg(0);
+                    setFinished(false);
+                    setCircleColor("#ffd54f");
+                  }}
+                >
+                  {cat}
+                </button>
+              </li>
+            ))}
+          </ul>
+      }
       </div>
 
       {/* بخش اصلی */}
@@ -159,10 +165,10 @@ export default function SunWords() {
         </div>
 
         <div
-          style={{ ...styles.center, background: circleColor , color:' #faf6f6ff'}}
+          style={{ ...styles.center, background: circleColor }}
           onClick={handleClick}
         >
-          {finished ? "آفرین! 🎉" : category}
+          {finished ? "آفرین! 🎉" : circleText}
         </div>
       </div>
     </div>
