@@ -5,6 +5,7 @@ import { words1, words10, words11, words12, words13, words14, words15, words16, 
 import WordBox from './WordBox.js';
 import WordGameGrid from './WordGameGrid.js';
 import WordFlipBox from './WordFlipBox.js';
+import SunWords from './SunWords.js';
 
 
 export default function WordTable() {
@@ -30,6 +31,7 @@ export default function WordTable() {
                 <Route path='/wordBox-7' element={<WordBox wordB={words15} />}  />
                 <Route path='/wordGameGride' element={<WordGameGrid />}  />
                 <Route path='/wordFlipBox' element={<WordFlipBox />}  />
+                <Route path='/sunWords' element={<SunWords />}  />
             </Routes>
                 
     </>

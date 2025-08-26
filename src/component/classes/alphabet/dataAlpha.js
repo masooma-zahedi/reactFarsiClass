@@ -249,6 +249,7 @@ export let contentListAlpha = {
             {id:nanoid(4),title:"حرف ض",targetHref:"wordTable/brokenW-10",idLetter:"broken-10"},
             {id:nanoid(4),title:"مسابقه کلمات",targetHref:"wordTable/wordGameGride",idLetter:"broken-11"},
             {id:nanoid(4),title:"چرخش کلمات",targetHref:"wordTable/wordFlipBox",idLetter:"broken-12"},
+            {id:nanoid(4),title:"کلمات آفتابگردان",targetHref:"wordTable/sunWords",idLetter:"broken-13"},
             ],
         },
         gameTable :{

@@ -13,15 +13,12 @@ import { TheStory } from "../story/TheStory.js";
 import GameWord from "./GameWord.js";
 import ObjectSentenceGame from "./ObjectSentenceGame.js";
 import MatchGame from "./MatchGame.js";
-// import SyllableManager from "./SyllableApp.js";
 import SyllableApp from "./SyllableApp.js";
-// import SentenceApp2 from "./SentenceApp2.js";
 import StoryPage3 from "../story/StoryPage3.js";
 import WordGameWithCategories from "./WordGameWithCategories.js";
 import HighlightLetterText from "./HighlightLetterText.js";
 import LearnNewWords from "./LearnNewWords.js";
 import BouncingBalls from "./BouncingBalls.js";
-import SunWords from "./SunWords.js";
 
 
 
@@ -65,7 +62,6 @@ export const Alphabet = () => {
             </div>
               <div>
               {/* test */}
-                  <SunWords/>
               </div>
             </div>
           </div>

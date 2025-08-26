@@ -2,9 +2,13 @@ import React, { useState, useEffect } from "react";
 
 export default function SunWords() {
   const categories = {
-    تست: {
-      circle: "معصومه",
-      boxes: ["mujtaba", "fatima", "zahra"]
+    صداکوتاه: {
+      circle: "-ُ -ِ -َ",
+      boxes: ["بَ", "رِ", "اُ","بِ","رَ","اِ","بُ","رُ","اُ",]
+    },
+    صداکوتاه2: {
+      circle: "-ُ -ِ -َ",
+      boxes: ["بَ", "رِ","نُ", "اُ","بِ","نَ","رَ","اِ","بُ","رُ","نِ","اُ",]
     },
     ریست: {
       circle: "2معصومه",
@@ -17,15 +21,19 @@ export default function SunWords() {
     "#009688", "#4caf50", "#ff9800", "#795548", "#607d8b"
   ];
 
-  const [category, setCategory] = useState("تست"); // دسته انتخابی
-  const [words, setWords] = useState(categories["تست"].boxes);
-  const [circleText, setCircleText] = useState(categories["تست"].circle);
+  const [category, setCategory] = useState("صداکوتاه"); // دسته انتخابی
+  const [words, setWords] = useState(categories["صداکوتاه"].boxes);
+  const [circleText, setCircleText] = useState(categories["صداکوتاه"].circle);
   const [rotationDeg, setRotationDeg] = useState(0);
   const [rotating, setRotating] = useState(false);
   const [selected, setSelected] = useState(null);
   const [circleColor, setCircleColor] = useState("#ffd54f");
   const [finished, setFinished] = useState(false);
   const [showListSun, setShowListSun] = useState(false);
+
+    const popSound = new Audio("/sounds/pop-1.wav");
+    popSound.volume = 0.5;
+
 
   const norm = (x) => ((x % 360) + 360) % 360;
 
@@ -88,7 +96,7 @@ export default function SunWords() {
   const radius = 160;
 
   return (
-    <div className="border border-danger container" style={{ display: "flex", gap: "20px" }}>
+    <div className=" container rounded-3" style={{ display: "flex", gap: "20px", backgroundColor: " #ebf4dd99" }}>
       {/* فهرست دسته‌ها */}
         <div style={styles.sidebar}>
           <h3 className="btn btn-success" onClick={()=>setShowListSun(!showListSun)}>دسته‌بندی‌ها</h3>
@@ -144,11 +152,14 @@ export default function SunWords() {
             `;
 
             const finalTransform = isSel
-              ? `${baseTransform} translate(0,-18px) scale(2.5)`
+              ? `${baseTransform}  translate(0,-18px) scale(2.5) `
               : baseTransform;
 
+              if(isSel ) {  popSound.play()}
+            
             return (
               <div
+              id="hi"
                 key={i}
                 style={{
                   ...styles.wordBox,
