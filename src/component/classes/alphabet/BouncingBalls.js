@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export default function BouncingBalls() {
   // ✅ دسته‌های مختلف
   const categories = {
-    "میوه‌ها": ["سیب", "موز", "انار", "پرتقال", "هندوانه", "انگور"],
+    "میوه‌ها": ["سیب", "موز", "انار",],
     "غذاها": ["پلو", "خورشت", "سوپ", "کباب", "ساندویچ", "پیتزا"],
     "حیوانات": ["گربه", "سگ", "اسب", "پرنده", "ماهی", "خرگوش"],
     "حرف ن":["نان","اَنار","نارنج","نیش","نَرم","نَقاش","سَنگ","رَنگ","بَنَفش","دَندان","آب نَبات","نَسیم","کَمان","تَکان","نارِنگی","کَفَن","آتَش نِشان","نِگران","نَرگِس","نَوَسان","نازُک","ناقوس","نَعل","ناحَق","نِجات","ناخُن","نازَنین","نَردِبان","نارَس","نازِل","نیکو","دانِش","سَنجاق","نَمَد",],
@@ -30,6 +30,12 @@ export default function BouncingBalls() {
     setGameOver(false);
   };
 
+   // ✅ صداها
+  const popSound = new Audio("/sounds/pop-1.wav");
+  const wooshSound = new Audio("/sounds/pop-2.wav");
+  const clapSound = new Audio("/sounds/clap-1.mp3");
+  // const softSound = new Audio("/sounds/soft-1.mp3");
+
   // ✅ انتخاب با کیبورد 1 تا 6
   useEffect(() => {
     const handleKeyDown = (e) => {
@@ -39,9 +45,19 @@ export default function BouncingBalls() {
       }
     };
     window.addEventListener("keydown", handleKeyDown);
+
     return () => window.removeEventListener("keydown", handleKeyDown);
   });
+  // useEffect(()=>{
+  //   softSound.volume = 0.1;
+  //   softSound.play();
+  //   setTimeout(() => {
+  //       softSound.volume = 0.1;
+  //     softSound.play();
+  //     }, 335000);
 
+  // },[])
+   
   const handleClick = (index) => {
     if (gameOver) return;
 
@@ -50,6 +66,8 @@ export default function BouncingBalls() {
       const updatedUsedWords = { ...usedWords };
       delete updatedUsedWords[index];
       setUsedWords(updatedUsedWords);
+
+       wooshSound.play(); // 🔊 صدای محو شدن
 
       if (words.length === 0) {
         setGameOver(true);
@@ -64,6 +82,7 @@ export default function BouncingBalls() {
         setWords(words.filter((w) => w !== randomWord));
         setActiveIndex(index);
         setPaused(true);
+        popSound.play(); // 🔊 صدای انتخاب توپ
       } else {
         setGameOver(true);
         setActiveIndex(index);
@@ -79,8 +98,23 @@ export default function BouncingBalls() {
     setGameOver(false);
   };
 
+  if (gameOver === true ) {
+    console.log('hi');
+    
+  clapSound.play();
+}
+
+  const softSoundPlay = ()=>{
+    document.getElementById("myAudio").volume = 0.1;
+    document.getElementById("myAudio").play()
+  }
+
   return (
     <div className="position-relative p-3 rounded-3 my-5 container" style={{ height: "70vh", background:"linear-gradient(135deg, #FFDEE9, #B5FFFC)"}}>
+      <audio id="myAudio" src="/sounds/soft-1.mp3" preload="auto"></audio>
+      <button className="btn btn-info" onClick={softSoundPlay}>
+        Play Sound
+      </button>
       {/* ✅ منوی انتخاب دسته */}
       <div className="d-flex justify-content-start mt-3">
         <button className="btn btn-warning outLine-none mx-2" onClick={()=>setShowList(!showList)}>فهرست</button>
@@ -111,6 +145,7 @@ export default function BouncingBalls() {
                 height: activeIndex === index ? (gameOver ? 180 : 120) : randomSize,
                 animationDelay: `${index * 0.3}s`,
                 animationPlayState: paused && !gameOver ? "paused" : "running",
+                
               }}
             >
               {usedWords[index] ? (
@@ -154,7 +189,7 @@ export default function BouncingBalls() {
 
         .word {
           font-size: 22px;
-          color: #fff;
+          color: #8b2c2cff;
           opacity: 0;
           animation: fadeIn 0.6s forwards;
           text-shadow: 1px 1px 2px rgba(0,0,0,0.3);

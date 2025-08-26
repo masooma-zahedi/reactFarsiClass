@@ -21,6 +21,7 @@ import WordGameWithCategories from "./WordGameWithCategories.js";
 import HighlightLetterText from "./HighlightLetterText.js";
 import LearnNewWords from "./LearnNewWords.js";
 import BouncingBalls from "./BouncingBalls.js";
+import SunWords from "./SunWords.js";
 
 
 
@@ -64,7 +65,7 @@ export const Alphabet = () => {
             </div>
               <div>
               {/* test */}
-                  {/* <BouncingBalls/> */}
+                  <SunWords/>
               </div>
             </div>
           </div>
