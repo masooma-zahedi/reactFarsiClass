@@ -57,13 +57,13 @@ export const Alphabet = () => {
                 <Route path='HighlightLetterText' element={<HighlightLetterText />}  />
                 <Route path='learnNewWords' element={<LearnNewWords />}  />
                 <Route path='bouncingBalls' element={<BouncingBalls />}  />
+                <Route path='cupGame' element={<CupGame />}  />
               </Routes>
               <WordCarousel/>
               <GameWord />
             </div>
               <div>
               {/* test */}
-                <CupGame />
               </div>
             </div>
           </div>

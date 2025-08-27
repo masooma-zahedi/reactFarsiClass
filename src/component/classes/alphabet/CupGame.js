@@ -130,7 +130,7 @@ export default function CupGame() {
   };
 
   return (
-    <div className="text-center container  rounded-3 p-5 mt-5" style={{backgroundColor:" #d82f1f26"}}>
+    <div className="text-center container  rounded-3 p-5 mt-5"  style={{backgroundColor:" #bded989e"}}>
         <div className="">
             {/* 🎚️ سختی */}
             <div className="mb-2 text-start" style={{opacity:"0.4"}}>
@@ -163,30 +163,42 @@ export default function CupGame() {
       {/* 🎩 ناحیه لیوان‌ها */}
       <div className="container text-center d-flex justify-content-center mt-5 ">
         <div className="my-5" style={{width:"600px"}}>
-            <div className="cups-area">
-            {[0, 1, 2].map((pos) => {
-                const index = positions.indexOf(pos);     // ستون فعلی این لیوان
-                const isBallHere = ballPos === pos;       // آیا توپ زیر این لیوان است؟
-                const isSelected = selected === index;    // آیا کاربر همین لیوان را انتخاب کرده؟
+<div className="cups-area">
+  {[0, 1, 2].map((pos) => {
+    const index = positions.indexOf(pos);
+    const isBallHere = ballPos === pos;
+    const isSelected = selected === index;
 
-                return (
-                <div
-                    key={pos}
-                    className={`cup bg-info  ${isSelected ? "lift" : ""} ${movingCup === index ? "moving" : ""}`}
-                    style={{ left: `${index * 260}px` }}
-                    onClick={() => handleChoice(index)}
-                >
-                    {/* توپ فقط وقتی که باید دیده شود */}
-                    {showBall && isBallHere && <div className="ball"></div>}
+    return (
+      <div
+        key={pos}
+        className={`cup-wrapper ${isSelected ? "lift" : ""} ${movingCup === index ? "moving" : ""}`}
+        style={{ left: `${index * 210}px` }}
+        onClick={() => handleChoice(index)}
+      >
+        {/* کلمه همیشه روی لیوان باشد */}
+  {isSelected && wrongWord && !showBall && (
+    <span className="word" style={{color:' #0b46aaff'}}>{wrongWord}</span>
+  )}
 
-                    {/* کلمه فقط وقتی اشتباه و توپ پنهان باشد */}
-                    {isSelected && wrongWord && !showBall && (
-                    <span className="word ">{wrongWord}</span>
-                    )}
-                </div>
-                );
-            })}
-            </div>
+  {/* توپ بالای لیوان */}
+  {showBall && isBallHere && <div className="ball"></div>}
+        <img
+          src="/images/assetAlpha/gamePage/cupGame-1.png"
+          alt="cup"
+          style={{ width: "200px", height: "220px", pointerEvents: "none" , zIndex: 1}}
+        />
+        {/* توپ فقط وقتی که باید دیده شود */}
+        {/* {showBall && isBallHere && <div className="ball"></div>} */}
+        {/* کلمه فقط وقتی اشتباه و توپ پنهان باشد */}
+        {/* {isSelected && wrongWord && !showBall && (
+          <span className="word">{wrongWord}</span>
+        )} */}
+      </div>
+    );
+  })}
+</div>
+
 
         </div>
       </div>
@@ -248,49 +260,69 @@ export default function CupGame() {
           width: 30px;
           height: 30px;
           border-radius: 50%;
-          background: red;
+          background-color: #b330c5ff;
           position: absolute;
           bottom: -35px;
         }
         .word {
-          color: black;
-          font-size: 40px;
-          font-weight: bold;
+        position: absolute;
+        top: 220px; /* بالای لیوان */
+        font-size: 40px;
+        font-weight: bold;
+        z-index: 2; /* روی تصویر قرار گیرد */
         }
 
         .wave-box {
-  position: relative;
-  width: 300px;
-  height: 100px;
-  border-radius: 20px;
-  overflow: hidden;
-  background: #f6bb3bff;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+        position: relative;
+        width: 300px;
+        height: 100px;
+        border-radius: 20px;
+        overflow: hidden;
+        background: #f6bb3bff;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
 
-.wave {
-  position: absolute;
-  width: 300%;
-  height: 700%;
-  background: rgba(231, 157, 46, 0.3);
-  top: 50%;
-  left: -50%;
-  border-radius: 50%;
-  animation: wave 8s infinite linear;
-}
+        .wave {
+        position: absolute;
+        width: 300%;
+        height: 700%;
+        background: rgba(231, 157, 46, 0.3);
+        top: 50%;
+        left: -50%;
+        border-radius: 50%;
+        animation: wave 8s infinite linear;
+        }
 
-.wave:nth-child(2) {
-  animation-duration: 4s;
-  opacity: 0.5;
-}
+        .wave:nth-child(2) {
+        animation-duration: 4s;
+        opacity: 0.5;
+        }
 
-@keyframes wave {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+        @keyframes wave {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+        }
+
+
+        .cup-wrapper {
+        position: absolute;
+        bottom: 0;
+        transition: left 0.6s ease, transform 0.3s ease;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        }
+
+        .cup-wrapper.lift {
+        transform: translateY(-70px);
+        }
+
+        .cup-wrapper.moving {
+        transform: translateY(-120px);
+        }
 
 
       `}</style>

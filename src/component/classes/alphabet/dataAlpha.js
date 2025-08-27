@@ -263,6 +263,7 @@ export let contentListAlpha = {
             {id:nanoid(4),title:" جمله سازی با تصویر",targetHref:"objectSentenceGame",idLetter:"objectS-1"},
             {id:nanoid(4),title:" جفت سازی کلمه ها",targetHref:"matchGameWord",idLetter:"matchG-1"},
             {id:nanoid(4),title:" بالانس کلمه ها",targetHref:"BouncingBalls",idLetter:"balance-1"},
+            {id:nanoid(4),title:" توپ و لیوان",targetHref:"cupGame",idLetter:"cupGam-1"},
             ],
         },
         storyAlpha:{
