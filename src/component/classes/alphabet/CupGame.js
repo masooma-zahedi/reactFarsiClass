@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function CupGame() {
   const wordList = [
-    "سیب", "درخت", "مدرسه", 
+    "سیب", "درخت", "مدرسه", "خورشید",
   ];
 
   const [positions, setPositions] = useState([0, 1, 2]);
@@ -54,38 +54,36 @@ export default function CupGame() {
     }, difficulty);
   };
 
-const handleChoice = (index) => {
-  if (isShuffling || !gameStarted) return;
+  const handleChoice = (index) => {
+    if (isShuffling || !gameStarted) return;
 
-  setSelected(index);
-  const ballIndex = positions.indexOf(ballPos);
+    setSelected(index);
+    const ballIndex = positions.indexOf(ballPos);
 
-  if (index === ballIndex) {
-    // جواب درست → توپ را نشان بده
-    setShowBall(true);
-    setTimeout(() => {
-      handleNextWord();
-    }, 1500);
-  } else {
-    const newAttempts = attempts + 1;
-    setAttempts(newAttempts);
-
-    if (newAttempts === 1) {
-      // بار اول اشتباه → کلمه‌ی اول را نشان بده
-      if (words.length > 0) {
-        setWrongWord(words[0]);
-      }
-    } else if (newAttempts >= 2) {
-      // بار دوم اشتباه → توپ را نشان بده و برو کلمه بعدی
+    if (index === ballIndex) {
+      // ✅ جواب درست → توپ را نشان بده
       setShowBall(true);
       setTimeout(() => {
         handleNextWord();
       }, 1500);
+    } else {
+      const newAttempts = attempts + 1;
+      setAttempts(newAttempts);
+
+      if (newAttempts === 1) {
+        // ✅ بار اول اشتباه → کلمه را نشان بده
+        if (words.length > 0) {
+          setWrongWord(words[0]);
+        }
+      } else if (newAttempts >= 2) {
+        // ✅ بار دوم اشتباه → توپ را نشان بده و برو بعدی
+        setShowBall(true);
+        setTimeout(() => {
+          handleNextWord();
+        }, 1500);
+      }
     }
-  }
-};
-
-
+  };
 
   const handleNextWord = () => {
     const newWords = words.slice(1);
@@ -115,7 +113,7 @@ const handleChoice = (index) => {
 
   return (
     <div className="text-center mt-5">
-      {/* Slider سختی */}
+      {/* 🎚️ اسلایدر سختی */}
       <div className="mb-3">
         <label>سختی بازی: </label>
         <input
@@ -130,6 +128,7 @@ const handleChoice = (index) => {
         <span style={{ marginLeft: "10px" }}>{difficulty} ms</span>
       </div>
 
+      {/* 🎩 لیوان‌ها */}
       <div className="text-center d-flex justify-content-center border border-danger">
         <div className="cups-area">
           {[0, 1, 2].map((pos) => {
@@ -146,8 +145,11 @@ const handleChoice = (index) => {
                 style={{ left: `${index * 140}px` }}
                 onClick={() => handleChoice(index)}
               >
+                {/* ✅ توپ فقط وقتی باید نشون داده بشه */}
                 {showBall && isBallHere && <div className="ball"></div>}
-                {isSelected && wrongWord && (
+
+                {/* ✅ کلمه فقط وقتی اشتباه و توپ پنهان باشه */}
+                {isSelected && wrongWord && !showBall && (
                   <span className="word">{wrongWord}</span>
                 )}
               </div>
@@ -156,6 +158,7 @@ const handleChoice = (index) => {
         </div>
       </div>
 
+      {/* 🎮 دکمه‌ها */}
       <div className="mt-4">
         {!gameStarted && words.length > 0 && (
           <button className="btn btn-primary" onClick={startGame}>
@@ -179,6 +182,7 @@ const handleChoice = (index) => {
         )}
       </div>
 
+      {/* 🎨 استایل */}
       <style>{`
         .cups-area {
           position: relative;
