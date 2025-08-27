@@ -781,7 +781,7 @@ export const SylabeWords = () => {
     sentenceRow: [
         [
         { word: "پِدَر", syla: "پِ + دَر" },
-        { word: "باد", syla: "با + د" },
+        { word: "اَبر", syla: "اَب+ر" },
         { word: "را", syla: "را" },
         { word: "دید.", syla: "دی + د" }
         ],

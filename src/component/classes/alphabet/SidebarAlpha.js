@@ -90,6 +90,9 @@ export const SidebarAlpha = ({setShowShort,idCarouselAlpha}) => {
              معنی لغات تازه 
             </button>
           </li>
+          <li className="nav-item">
+            <NavLink className="nav-link text-success h6" to="/learnNewWords"> معنی لغات تازه 2</NavLink>
+          </li>
         </ul>
         <div className="sidebar-footer border-top d-flex">
           <button className="sidebar-toggler" type="button"></button>

@@ -13,13 +13,13 @@ import { TheStory } from "../story/TheStory.js";
 import GameWord from "./GameWord.js";
 import ObjectSentenceGame from "./ObjectSentenceGame.js";
 import MatchGame from "./MatchGame.js";
-// import SyllableManager from "./SyllableApp.js";
 import SyllableApp from "./SyllableApp.js";
-// import SentenceApp2 from "./SentenceApp2.js";
 import StoryPage3 from "../story/StoryPage3.js";
 import WordGameWithCategories from "./WordGameWithCategories.js";
 import HighlightLetterText from "./HighlightLetterText.js";
-import TestApp from "./TestApp.js";
+import LearnNewWords from "./LearnNewWords.js";
+import BouncingBalls from "./BouncingBalls.js";
+import CupGame from "./CupGame.js";
 
 
 
@@ -55,13 +55,15 @@ export const Alphabet = () => {
                 <Route path='/wordGameWithCategories' element={<WordGameWithCategories/>}  />
                 <Route path='moreStoryWordsAlpha' element={<StoryPage3 groupKey="alefba" />}  />
                 <Route path='HighlightLetterText' element={<HighlightLetterText />}  />
+                <Route path='learnNewWords' element={<LearnNewWords />}  />
+                <Route path='bouncingBalls' element={<BouncingBalls />}  />
+                <Route path='cupGame' element={<CupGame />}  />
               </Routes>
               <WordCarousel/>
               <GameWord />
             </div>
               <div>
               {/* test */}
-                  <TestApp/>
               </div>
             </div>
           </div>
