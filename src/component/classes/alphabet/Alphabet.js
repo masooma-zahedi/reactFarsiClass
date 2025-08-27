@@ -19,6 +19,7 @@ import WordGameWithCategories from "./WordGameWithCategories.js";
 import HighlightLetterText from "./HighlightLetterText.js";
 import LearnNewWords from "./LearnNewWords.js";
 import BouncingBalls from "./BouncingBalls.js";
+import CupGame from "./CupGame.js";
 
 
 
@@ -62,6 +63,7 @@ export const Alphabet = () => {
             </div>
               <div>
               {/* test */}
+                <CupGame />
               </div>
             </div>
           </div>
