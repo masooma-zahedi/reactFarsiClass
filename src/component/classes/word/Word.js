@@ -9,6 +9,7 @@ import WordToSentence from './wordToSentence.js';
 import LetterPuzzle from './LetterPuzzle.js';
 import StoryPage3 from '../story/StoryPage3.js';
 import SentenceObject from './SentenceObject.js';
+import SunWordsWord from './SunWordsWord.js';
 import TypingQAImageSlider from './TypingQAImageSlider.js';
 
 export const Word = () => {
@@ -39,10 +40,15 @@ export const Word = () => {
               <Route path='/wordSentence' element={<WordToSentence />}  />
               <Route path='/letterPuzzle' element={<LetterPuzzle />}  />
               <Route path='/sentenceObject' element={<SentenceObject />}  />
+              <Route path='/sunWordsWord' element={<SunWordsWord />}  />
               <Route path='/typingQAImageSlider' element={<TypingQAImageSlider />}  />
               <Route path='moreStoryWords' element={<StoryPage3 groupKey="kalemat" />}  />
 
             </Routes>
+          </div>
+          <div>
+            {/* test */}
+            {/* <SunWordsWords /> */}
           </div>
         </div>
               

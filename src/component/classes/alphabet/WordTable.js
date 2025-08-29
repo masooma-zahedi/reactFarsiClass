@@ -31,7 +31,7 @@ export default function WordTable() {
                 <Route path='/wordBox-7' element={<WordBox wordB={words15} />}  />
                 <Route path='/wordGameGride' element={<WordGameGrid />}  />
                 <Route path='/wordFlipBox' element={<WordFlipBox />}  />
-                <Route path='/sunWords' element={<SunWords />}  />
+                <Route path='/sunWords' element={<SunWords idPage='alphaPage' />}  />
             </Routes>
                 
     </>
