@@ -1,25 +1,18 @@
 import React, { useState, useEffect } from "react";
 
-export default function SunWords({idPage}) {
+export default function SunWordsWords() {
   const categories = {
-    صداکوتاه: {
-      circle: "-ُ -ِ -َ",
-      boxes: ["بَ", "رِ", "اُ","بِ","رَ","اِ","بُ","رُ","اُ",]
+    خوا: {
+      circle: "خوا",
+      boxes : ["خواهَر","خواب","خواستَن","خواهِش","خواجِه","خوانا","خواندَن","خواستِگار","خواهی","خواهَرزادِه","تَختِخواب","خواهان","دَرخواست","خواستِه","خواهرَم","خوابیدَن"]
     },
-    صداکوتاه2: {
+    خوا2: {
       circle: "-ُ -ِ -َ",
       boxes: ["بَ", "رِ","نُ", "اُ","بِ","نَ","رَ","اِ","بُ","رُ","نِ","اُ",]
     },
-    ه: {
-      circle: "کلمات ه",
-      boxes: [
-  "هیزُم","هَمکار","هَمر اه","هَفته","حال","هَشتُم","هُوش",
-  "هِزارپا","هَمه","کُوه","چاه","راه","نامِه","خانِه","شانِه",
-  "کاه","گِیاه","دانِه","ماه","سِپیدِه","آهُو","شیشِه",
-  "کُلاه","آگاه","قَهوه","شُجاعانِه"
-]
-
-
+    ریست: {
+      circle: "2معصومه",
+      boxes: ["mujtaba2", "fatima2", "zahra2"]
     }
   };
 
@@ -28,9 +21,9 @@ export default function SunWords({idPage}) {
     "#009688", "#4caf50", "#ff9800", "#795548", "#607d8b"
   ];
 
-  const [category, setCategory] = useState("صداکوتاه"); // دسته انتخابی
-  const [words, setWords] = useState(categories["صداکوتاه"].boxes);
-  const [circleText, setCircleText] = useState(categories["صداکوتاه"].circle);
+  const [category, setCategory] = useState("خوا"); // دسته انتخابی
+  const [words, setWords] = useState(categories["خوا"].boxes);
+  const [circleText, setCircleText] = useState(categories["خوا"].circle);
   const [rotationDeg, setRotationDeg] = useState(0);
   const [rotating, setRotating] = useState(false);
   const [selected, setSelected] = useState(null);
@@ -39,7 +32,7 @@ export default function SunWords({idPage}) {
   const [showListSun, setShowListSun] = useState(false);
 
     const popSound = new Audio("/sounds/pop-1.wav");
-    popSound.volume = 0.5;
+    popSound.volume = 0.3;
 
 
   const norm = (x) => ((x % 360) + 360) % 360;
@@ -103,7 +96,7 @@ export default function SunWords({idPage}) {
   const radius = 160;
 
   return (
-    <div className=" container rounded-3" idPage={idPage}  style={{ display: "flex", gap: "20px", backgroundColor: " #ebf4dd99" }}>
+    <div className=" container rounded-3 mt-5"   style={{ display: "flex", gap: "20px", backgroundColor: " #ebf4dd99" }}>
       {/* فهرست دسته‌ها */}
         <div style={styles.sidebar}>
           <h3 className="btn btn-success" onClick={()=>setShowListSun(!showListSun)}>دسته‌بندی‌ها</h3>

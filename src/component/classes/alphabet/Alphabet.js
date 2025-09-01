@@ -20,6 +20,7 @@ import HighlightLetterText from "./HighlightLetterText.js";
 import LearnNewWords from "./LearnNewWords.js";
 import BouncingBalls from "./BouncingBalls.js";
 import CupGame from "./CupGame.js";
+import AngryWordSlingFull from "./AngryWordSlingFull.js";
 
 
 
@@ -64,8 +65,14 @@ export const Alphabet = () => {
             </div>
               <div>
               {/* test */}
+                
+              <div className="container">
+              {/* <AngryWordGame/> */}
+              <AngryWordSlingFull/>
+              </div>
               </div>
             </div>
+            
           </div>
         
 

@@ -55,7 +55,7 @@ const LearnNewWords = () => {
     { id: nanoid(), image: 'https://talaangor.ir/wp-content/uploads/2023/08/%D8%B7%D8%B1%D8%B2-%D8%AA%D9%87%DB%8C%D9%87-%D8%A8%D9%88%D9%84%D8%A7%D9%86%DB%8C-%D8%A7%D9%81%D8%BA%D8%A7%D9%86%DB%8C-%D8%A8%D8%A7-%D8%AA%D8%B1%D9%87.jpeg', englishWord: 'Bolani', persianWord: 'بولانی', category: 'غذاها' },
     { id: nanoid(), image: 'https://i.ytimg.com/vi/2gB4Q4BPdhY/maxresdefault.jpg', englishWord: 'Shorwa (Soup)', persianWord: 'شوروا', category: 'غذاها' },
     { id: nanoid(), image: 'https://app.akharinkhabar.ir/images/2021/08/02/5eb3ad28-1157-4332-92c1-866361613110.jpeg', englishWord: 'Chaply Kabob', persianWord: 'چَپلی کَباب', category: 'غذاها' },
-    { id: nanoid(), image: 'https://afghancooking.typepad.com/.a/6a01157090fab6970b0115710e82f6970c-600wi', englishWord: 'Sabzi (Spinach Stew)', persianWord: 'سَبزی', category: 'غذاها' },
+    { id: nanoid(), image: 'https://images.saymedia-content.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:eco%2Cw_1200/MTc2MjcyMDAyNTUyNzY3NjYx/sabzi-afghan-spinach-recipe.jpg', englishWord: 'Sabzi (Spinach Stew)', persianWord: 'سَبزی', category: 'غذاها' },
     { id: nanoid(), image: 'https://i.ytimg.com/vi/GhfJY7kJcJs/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLC_UevRZ7bZTt-rrYosM1wCJlfLbg', englishWord: 'Borani Badenjan (Eggplant Dish)', persianWord: 'بورانی بادنجان', category: 'غذاها' },
     { id: nanoid(), image: 'https://i.ytimg.com/vi/AxjMHPbmy9M/hqdefault.jpg', englishWord: 'Jalebi', persianWord: 'جَلبی', category: 'غذاها' },
     { id: nanoid(), image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRccnH7OQdVddji6-fseBBoSzscFvspK27cPw&s', englishWord: 'Baklava', persianWord: 'باقلَوا', category: 'غذاها' },

@@ -358,8 +358,8 @@ const SyllableApp = () => {
     <>
       {/* 🔹 بخش کلمات */}
       <section>
-        <h2 className="text-center m-3 border border-secondary rounded p-4 shadow text-light"
-          style={{ backgroundColor: "rgba(96, 18, 120, 0.56)" }}>
+        <h2 className="header-section container"
+          >
           کلمات زیر را با هم بخوانیم
         </h2>
 
@@ -433,7 +433,7 @@ const SyllableApp = () => {
                             setSelectedCategory(cat);
                             setSelectedWord(null);
                           }}
-                          className="d-flex justify-content-between align-items-center"
+                          className="d-flex justify-content-between align-items-center btn-gradient"
                         >
                           <span>حرف «{cat}»</span>
                           {showDelete && (
@@ -464,10 +464,10 @@ const SyllableApp = () => {
                   <Card.Body>
                     <div className="d-flex flex-wrap gap-2 justify-content-end">
                       {groupedWords[selectedCategory].map((item, idx) => (
-                        <div key={idx} className="border rounded p-2 bg-light">
+                        <div key={idx} className=" px-3 card-custom">
                           <Button
                             variant="link"
-                            className="text-decoration-none text-dark"
+                            className="text-decoration-none text-dark "
                             onClick={() => {
                               setSelectedWord(item);
                               setCurrentSyllable(0);
@@ -504,7 +504,7 @@ const SyllableApp = () => {
               {/* نمایش سیلاب‌ها */}
               {selectedWord && (
                 <Card>
-                  <Card.Body className="text-center">
+                  <Card.Body className="text-center myCard">
                     <h5>نمایش سیلاب‌های کلمه: {selectedWord.word}</h5>
                     {renderWordWithSyllableHighlight(
                       selectedWord.syllables,
@@ -585,6 +585,50 @@ const SyllableApp = () => {
           <SentenceApp2 />
         </div>
       </section>
+      <style>
+        {`
+        .header-section {
+  background: linear-gradient(135deg, #6a1b9a, #ab47bc);
+  color: white;
+  border-radius: 12px;
+  padding: 20px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+  font-weight: bold;
+  font-size: 24px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  text-align: center
+}
+  .card-custom {
+  border-radius: 12px;
+  box-shadow: 0 6px 10px rgba(70, 51, 51, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-custom:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 7px 5px rgba(221, 194, 57, 0.72);
+}
+  .myCard{
+  box-shadow: 0 7px 5px rgba(221, 194, 57, 0.72);
+  }
+  .btn-gradient {
+  background: linear-gradient(45deg, #eaed8f53, #d89f1bb2);
+  color: white;
+  font-weight: bold;
+  border: none;
+  transition: transform 0.2s ease;
+  
+}
+
+.btn-gradient:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  border-radius:10px;
+}
+
+
+        `}
+      </style>
     </>
   );
 };

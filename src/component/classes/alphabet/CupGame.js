@@ -2,10 +2,25 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function CupGame() {
-  const wordList = [
-    "سیب","درخت","مدرسه","خورشید","دوست",
-    "معصومه","مجتبی","فاطمه","زهرا","ثنا","هلیا","ملیکا","الناز",
-  ];
+
+// const wordList = ["گُلدان","باغچِه","دانِه","لَبخَند","ساقِه","رُشد","مُشت","آواز","نِگاه","گُذَشت"];
+// کلمات داستان مهمانی شادی
+// const wordList = ["مِهمانی","شاد","بادکُنَک","چِراغ","رَنگی","دوست","بازی","کِیک","شُکُلاتی","آب‌میوِه","خُوشحال","لَذَت","تَشَكُر"];
+
+// کلمات سفر با کشتی
+// const wordList = ["سَفَر","کَشتی","دَریا","آب","ماهی","خُوشحال","مُرغِ دَریایی","پَرَنده","جَزیره","نارگِیل","دَرَخت","شَب","سِتاره","آسمان","خـانِه"];
+
+// کلمات داستان لیلا و درخت جادویی
+// const wordList = ["دِه","لِیلا","بِن","دِرَخت","زَمین","دانِه","باغ","آب","مُراقِبَت","رُشد","جادویی","هَوا","شاد","دُنیا","بِهتَر"];
+
+const wordList = [
+  "هیزُم","هَمکار","هَمر اه","هَفته","حال","هَشتُم","هوش",
+  "هِزارپا","هَمه","کُوه","چاه","راه","نامِه","خانِه","شانِه",
+  "کاه","گِیاه","دانِه","ماه","سِپیدِه","آهو","شیشِه",
+  "کِلاه","آگاه","قَهوه","شُجاعانِه"
+]
+
+
 
   // positions: آرایه‌ای از [0,1,2] که با جابه‌جایی اعضا، محل ستون هر لیوان را تعیین می‌کند
   const [positions, setPositions] = useState([0, 1, 2]);
@@ -55,7 +70,7 @@ export default function CupGame() {
       });
 
       count++;
-      if (count > 5) {
+      if (count > 6) {
         clearInterval(interval);
         setIsShuffling(false);
       }
@@ -137,12 +152,12 @@ export default function CupGame() {
                 <label>سختی بازی: </label>
                 <input
                 type="range"
-                min="200"
+                min="100"
                 max="1200"
                 step="50"
                 value={difficulty}
                 onChange={(e) => setDifficulty(Number(e.target.value))}
-                style={{ width: "200px", marginLeft: 10 }}
+                style={{ width: "300px", marginLeft: 10 }}
                 />
                 <span style={{ marginLeft: 10 }}>{difficulty} ms</span>
                 <div style={{ fontSize: 12 }}>

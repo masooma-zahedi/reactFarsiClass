@@ -775,7 +775,7 @@ export const SylabeWords = () => {
     {
     // buttonTargetId: "taughtLettersSet1",
     id:5,
-    titleHead: "تا حرف ذ بخوانیم ",
+    titleHead: "(ذ)با هم بخوانیم ",
     titleColor: "rgb(19, 108, 107)",
     sylabelBg: "rgb(212, 137, 235)",
     sentenceRow: [
@@ -811,13 +811,14 @@ export const SylabeWords = () => {
         { word: "بود.", syla: "بو + د" }
         ],
         [
-        { word: "اَبر", syla: "اَ + بر" },
-        { word: "چوبی", syla: "چو + بی" },
+        { word: "اَبر", syla: "اَب + ر" },
+        { word: "زیبا", syla: "زی + با" },
         { word: "دیدَم!", syla: "دی + دَ + م" }
         ],
         [
+        { word: "سارا", syla: "سا + را" },
         { word: "بی‌تاب", syla: "بی + تاب" },
-        { word: "بودَم.", syla: "بو + دَ + م" }
+        { word: "بود.", syla: "بود" }
         ],
         [
         { word: "باد", syla: "با + د" },
@@ -1669,29 +1670,26 @@ export const SylabeWords = () => {
             {currentDataset.sentenceRow.map((sentence, rowIndex) => (
               <div
                 key={rowIndex}
-                className="d-flex flex-wrap justify-content-start gap-3"
+                className="d-flex flex-wrap justify-content-start gap-3 "
               >
                 {sentence.map((item, wordIndex) => (
                   <div
                     key={wordIndex}
-                    className="card text-center shadow border-0"
+                    className="card text-center shadow border-0 myword"
                     style={{
                       width: "120px",
                       cursor: "pointer",
                       borderRadius: "20px",
-                      background: "linear-gradient(135deg, #74b9ff, #81ecec)",
+                    //   background: "linear-gradient(135deg, #74b9ff, #81ecec)",
                     }}
-                    onMouseOver={(e)=>{e.target.style.background="linear-gradient(135deg, #74b9ffff, #e184f3ff)"
-                        e.target.style.borderRadius='20px'
-                    }}
-                    onMouseLeave={(e)=>{e.target.style.background="linear-gradient(135deg, #74b9ffff,  #84f3f3ff )"}}
+                   
                     onClick={() => {
                         
                         handleSelect(item.syla || item.word)}
                     }
                   >
                     <div className="card-body d-flex justify-content-center align-items-center  p-3" dir="rtl">
-                      <h4 className="fw-bold text-white" onMouseLeave={(e)=>{e.target.style.background="transparent"}} onMouseOver={(e)=>{e.target.style.background="transparent"}} >{item.word}</h4>
+                      <h4 className="fw-bold text-white" >{item.word}</h4>
                     </div>
                   </div>
                 ))}
@@ -1725,6 +1723,18 @@ export const SylabeWords = () => {
           </div>
         </div>
       </div>
+      <style>
+        {`
+        .myword{
+            background: linear-gradient(135deg, #74b9ffff,  #84f3f3ff );
+            border-radius: 20px;
+        }
+            .myword:hover{
+                background:"linear-gradient(135deg, #74b9ffff, #e184f3ff);
+                border-radius: 20px;
+            }
+        `}
+      </style>
     </section>
   );
 };

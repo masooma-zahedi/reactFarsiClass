@@ -227,12 +227,12 @@ useEffect(() => {
                   {groupedSentences[selectedCategory].map((item) => (
                     <div
                       key={item.id}
-                      className="border rounded p-2 bg-light"
+                      className="border rounded p-2 bg-light card-custom2"
                       style={{ cursor: "pointer" }}
                     >
                       <Button
                         variant="link"
-                        className="text-decoration-none text-dark p-0"
+                        className="text-decoration-none text-dark p-0 "
                         onClick={() => {
                           setSelectedSentence(item);
                           setCurrentWordIndex(0);
@@ -268,7 +268,7 @@ useEffect(() => {
 
           {selectedSentence && (
             <Card>
-              <Card.Body className="text-center">
+              <Card.Body className="text-center myCard2">
                 <h5>نمایش کلمات:</h5>
                 {renderSentenceWithWordHighlight(
                   selectedSentence.words,
@@ -325,6 +325,50 @@ useEffect(() => {
           </Button>
         </Modal.Footer>
       </Modal>
+            <style>
+        {`
+        .header-section {
+  background: linear-gradient(135deg, #6a1b9a, #ab47bc);
+  color: white;
+  border-radius: 12px;
+  padding: 20px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+  font-weight: bold;
+  font-size: 24px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  text-align: center
+}
+  .card-custom2 {
+  border-radius: 12px;
+  box-shadow: 0 6px 10px rgba(70, 51, 51, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-custom2:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 7px 5px rgba(221, 57, 131, 0.72);
+}
+  .myCard2{
+  box-shadow: 0 7px 5px rgba(221, 57, 153, 0.72);
+  }
+  .btn-gradient {
+  background: linear-gradient(45deg, #eaed8f53, #d89f1bb2);
+  color: white;
+  font-weight: bold;
+  border: none;
+  transition: transform 0.2s ease;
+  
+}
+
+.btn-gradient:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  border-radius:10px;
+}
+
+
+        `}
+      </style>
     </div>
   );
 };
