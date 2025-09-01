@@ -53,6 +53,16 @@ useEffect(() => {
   ballImgRef.current = img;
 }, []);
 
+//for background game
+const bgImgRef = useRef(null);
+
+useEffect(() => {
+  const img = new Image();
+  img.src = "/images/assetAlpha/gamePage/angryBackground-2.webp";// مسیر عکس بک‌گراند
+  bgImgRef.current = img;
+}, []);
+
+
 
   const sling = useRef({ ax: 120, ay: HEIGHT - 110, r: 10 });
 
@@ -160,12 +170,19 @@ useEffect(() => {
     randomizeTarget();
     resetBird();
 
-    function drawBackground() {
-      ctx.fillStyle = "#eaf6ff";
-      ctx.fillRect(0, 0, WIDTH, HEIGHT);
-      ctx.fillStyle = "#d7f1c9";
-      ctx.fillRect(0, HEIGHT - 48, WIDTH, 48);
-    }
+function drawBackground() {
+  const img = bgImgRef.current;
+  if (img && img.complete) {
+    ctx.drawImage(img, 0, 0, WIDTH, HEIGHT); // کشیدن بک‌گراند
+  } else {
+    // حالت fallback اگر عکس هنوز لود نشده باشه
+    ctx.fillStyle = "#eaf6ff";
+    ctx.fillRect(0, 0, WIDTH, HEIGHT);
+    ctx.fillStyle = "#d7f1c9";
+    ctx.fillRect(0, HEIGHT - 48, WIDTH, 48);
+  }
+}
+
 
     function drawSling() {
       const s = sling.current;
