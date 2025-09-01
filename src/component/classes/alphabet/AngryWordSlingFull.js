@@ -49,7 +49,7 @@ export default function AngryWordSlingFull({ initialWords }) {
 
 useEffect(() => {
   const img = new Image();
-  img.src = "/images/assetAlpha/gamePage/angryBird-2.png"; // مسیر عکس توپ (داخل public/images بزار)
+  img.src = "/images/assetAlpha/gamePage/angryBird-3.webp"; // مسیر عکس توپ (داخل public/images بزار)
   ballImgRef.current = img;
 }, []);
 
