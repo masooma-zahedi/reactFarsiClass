@@ -21,6 +21,7 @@ import LearnNewWords from "./LearnNewWords.js";
 import BouncingBalls from "./BouncingBalls.js";
 import CupGame from "./CupGame.js";
 import AngryWordSlingFull from "./AngryWordSlingFull.js";
+import PoolWordGame from "./PoolWordGame.js";
 
 
 
@@ -69,6 +70,7 @@ export const Alphabet = () => {
               <div className="container">
               {/* <AngryWordGame/> */}
               <AngryWordSlingFull/>
+              <PoolWordGame/>
               </div>
               </div>
             </div>
