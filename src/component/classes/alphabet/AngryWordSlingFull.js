@@ -16,18 +16,8 @@ export default function AngryWordSlingFull({ initialWords }) {
   const WIDTH = 900;
   const HEIGHT = 480;
 
-  const defaultWords = [
-    "بَز",
-    "سِیب",
-    "دُوست",
-    "گُل",
-    "مِیز",
-    "خورشِید",
-    "دَفتر",
-    "نُون",
-    "مَدرَسه",
-    "دَریا",
-  ];
+  // const defaultWords = ["مِهمانی","شاد","بادکُنَک","چِراغ","رَنگی","دوست","بازی","کِیک","شُکُلاتی","آب‌میوِه","خُوشحال","لَذَت","تَشَكُر"]
+  const defaultWords = ['قابلَمه','بویِ','بابا','خوشمَزه','کُمَک','آفَرین','هَمِه','خَندیدیم','خوردیم']
   const words = initialWords && initialWords.length ? initialWords : defaultWords;
 
   // --- UI state

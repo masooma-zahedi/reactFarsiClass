@@ -444,7 +444,7 @@ const prevQuestion = () => {
         )}
       </div>
 
-      <div className="d-flex gap-2 flex-wrap flex-row-reverse mx-4">
+      <div className="d-flex gap-2 mt-5 flex-wrap flex-row-reverse mx-4">
   <button className="btn btn-success" onClick={checkAnswer} disabled={!droppedWord}>
     بررسی پاسخ ✅
   </button>
@@ -453,11 +453,11 @@ const prevQuestion = () => {
     پاک کردن پاسخ 🔄
   </button>
 
-  {currentIndex > 0 && (
+  {/* {currentIndex > 0 && (
     <button className="btn btn-outline-secondary" onClick={prevQuestion}>
       سوال قبلی ⬅️
     </button>
-  )}
+  )} */}
 
   {isCorrect && currentIndex < questions.length - 1 && (
     <button className="btn btn-primary" onClick={nextQuestion}>

@@ -69,16 +69,14 @@ export const Alphabet = () => {
                 
               <div className="container">
               {/* <AngryWordGame/> */}
-              <AngryWordSlingFull/>
-              <PoolWordGame/>
+               <AngryWordSlingFull/> 
+              {/* <PoolWordGame/> */}
               </div>
               </div>
             </div>
             
           </div>
         
-
-
     </>
   )
 }

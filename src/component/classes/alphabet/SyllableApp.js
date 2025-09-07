@@ -155,21 +155,20 @@ const SyllableApp = () => {
   { word: "قُرص", syllables: ["قُ", "رص"], category: "ق" },
   { word: "قُفل", syllables: ["قُ", "فل"], category: "ق" },
   //*************** */ حرف و****************************************
-  {word:"وَطن",syllables:["وَ","طن"],category:"و"},
-    {word:"وَقت",syllables:["وَ","قت"],category:"و"},
+  {word:"وَطن",syllables:["وَ","طَن"],category:"و"},
+    {word:"وَقت",syllables:["وَق","ت"],category:"و"},
     {word:"وَسَط",syllables:["وَ","سَط"],category:"و"},
     {word:"وَکیل",syllables:["وَ","کیل"],category:"و"},
-    {word:"وَرد",syllables:["وَ","رد"],category:"و"},
-    {word:"وَعده",syllables:["وَ","عد","ه"],category:"و"},
-    {word:"وَزن",syllables:["وَ","زن"],category:"و"},
-    {word:"وَجه",syllables:["وَ","جه"],category:"و"},
-    {word:"دوست",syllables:["دو","ست"],category:"و"},
+    {word:"وَعده",syllables:["وَع","دِه"],category:"و"},
+    {word:"وَزن",syllables:["وَز","ن"],category:"و"},
+    {word:"وَجه",syllables:["وَج","ه"],category:"و"},
+    {word:"دوست",syllables:["دوس","ت"],category:"و"},
     {word:"سَوار",syllables:["سَ","وار"],category:"و"},
     {word:"نَوَرد",syllables:["نَ","وَرد"],category:"و"},
     {word:"کوتاه",syllables:["کو","تا","ه"],category:"و"},
-    {word:"نِوِشتن",syllables:["نِ","وِش","تن"],category:"و"},
-    {word:"پَروَنده",syllables:["پَ","رو","ن","ده"],category:"و"},
-    {word:"شَورا",syllables:["شَو","را"],category:"و"},
+    {word:"نِوِشتن",syllables:["نِ","وِش","تَن"],category:"و"},
+    {word:"پَروَنده",syllables:["پَر","وَن","دِه",],category:"و"},
+    {word:"شورا",syllables:["شو","را"],category:"و"},
     {word:"خَوابگاه",syllables:["خَواب","گاه"],category:"و"},
     {word:"توانا",syllables:["تَ","وا","نا"],category:"و"},
     // ************************** حرف ه*******************************
@@ -409,6 +408,9 @@ const SyllableApp = () => {
                     </Form.Group>
                     <Button variant="success" type="submit">
                       افزودن
+                    </Button>
+                    <Button variant="success" type="button" onClick={()=>setShowDelete(!showDelete)}>
+                      ویرایش و حذف
                     </Button>
                   </Form>
                 </Card.Body>
