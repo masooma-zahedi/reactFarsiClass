@@ -1,37 +1,68 @@
 import React, { useState } from "react";
 import WordGameGrid from "./alphabet/WordGameGrid";
-// import "bootstrap/dist/css/bootstrap.min.css";
 
 const BrokenGlass = ({ words }) => {
-  const [visiblePieces, setVisiblePieces] = useState(
-    words.map(() => true) // وضعیت نمایش تکه‌های شیشه
-  );
+  const [visiblePieces, setVisiblePieces] = useState(words.map(() => true));
+  const [searchLetter, setSearchLetter] = useState(""); // نگه داشتن حرف ورودی
 
   const handleClick = (index) => {
     setVisiblePieces((prev) => {
       const newVisiblePieces = [...prev];
-      newVisiblePieces[index] = false; // تکه شیشه محو می‌شود
+      newVisiblePieces[index] = false;
       return newVisiblePieces;
     });
   };
 
+  // تابعی برای رنگی کردن حرف مورد نظر
+  const highlightLetter = (word) => {
+    if (!searchLetter) return word;
+
+    return word.split("").map((char, i) => (
+      <span
+        key={i}
+        style={{
+          color: char === searchLetter ? " #f426aff2" : "black", // فقط حرف ورودی قرمز می‌شود
+          fontWeight: "bold",
+        }}
+      >
+        {char}
+      </span>
+    ));
+  };
+
   return (
     <>
-      <section className="" >
-        <div style={{height:'200vh'}}>
+      {/* بخش input */}
+      <div className="mb-3 text-center">
+        <label className="form-label">حرف مورد نظر:</label>
+        <input
+          type="text"
+          maxLength="1"
+          className="form-control w-25 mx-auto text-center"
+          value={searchLetter}
+          onChange={(e) => setSearchLetter(e.target.value)}
+        />
+      </div>
+
+      <section>
+        <div style={{ height: "200vh" }}>
           <div
             className="d-flex flex-wrap mb-5"
-            style={{ height: "300px", position: "relative" ,backgroundColor:"transparent"}}
+            style={{
+              height: "300px",
+              position: "relative",
+              backgroundColor: "transparent",
+            }}
           >
             {words.map((word, index) => (
               <div
-              className="border border-success"
+                className="border border-success"
                 key={index}
                 onClick={() => handleClick(index)}
                 style={{
-                  minWidth:'25%',
+                  minWidth: "25%",
                   height: "50%",
-                  border: "1px solidrgb(46, 95, 13)",
+                  border: "1px solid rgb(46, 95, 13)",
                   boxSizing: "border-box",
                   display: "flex",
                   justifyContent: "center",
@@ -40,8 +71,8 @@ const BrokenGlass = ({ words }) => {
                   backgroundColor: visiblePieces[index]
                     ? `rgba(${Math.random() * 255}, ${Math.random() * 255}, ${
                         Math.random() * 255
-                      }, 0.8)` // رنگ تصادفی برای تکه‌های شیشه
-                    : "rgb(241, 239, 189)", // اگر تکه محو شد، پس‌زمینه شفاف
+                      }, 0.8)`
+                    : "rgb(241, 239, 189)",
                   transition: "background-color 0.9s",
                 }}
               >
@@ -50,33 +81,32 @@ const BrokenGlass = ({ words }) => {
                     style={{
                       color: "rgb(9, 17, 90)",
                       fontWeight: "bold",
-                      padding: "15px", // padding تنظیم شده به 15px
-                      fontSize: "36px", // font-size بزرگ‌تر
+                      padding: "15px",
+                      fontSize: "36px",
                     }}
                   >
                     {index + 1}
-                  </span> // نمایش عدد روی تکه‌ها با padding و font-size بزرگ‌تر
+                  </span>
                 ) : (
                   <span
                     style={{
-                      color: "rgb(124, 18, 32)",
                       fontWeight: "bold",
-                      padding: "20px", // padding تنظیم شده به 15px
-                      fontSize: "50px", // font-size بزرگ‌تر
-                      marginBottom:"10px",
-                      
+                      padding: "20px",
+                      fontSize: "50px",
+                      marginBottom: "10px",
                     }}
                   >
-                    {word}
-                  </span> // نمایش کلمه پس از کلیک با padding و font-size بزرگ‌تر
+                    {highlightLetter(word)}
+                  </span>
                 )}
               </div>
             ))}
           </div>
         </div>
       </section>
+
       <section>
-        <WordGameGrid/>
+        <WordGameGrid />
       </section>
     </>
   );
