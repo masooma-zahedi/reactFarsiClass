@@ -63,8 +63,67 @@ const LearnNewWords = () => {
     { id: nanoid(), image: 'https://cdn.yjc.ir/files/fa/news/1400/11/8/15550035_360.jpg', englishWord: 'Sheer Pira', persianWord: 'شیرپَره', category: 'غذاها' },
     { id: nanoid(), image: 'https://i.ytimg.com/vi/ttWQn8-StKQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLA8_zEuU_7vEKOkZ3sFfme-1oQWog', englishWord: 'Haft Mewa (Seven Fruits)', persianWord: 'هَفت‌میوه', category: 'غذاها' },
     { id: nanoid(), image: 'https://kalleh.com/book/wp-content/uploads/sites/2/2025/01/recepie-of-making-nazok-gooshe-fil.jpg', englishWord: 'Gosh-e Feel (Elephant Ear Pastry)', persianWord: 'گوش‌فیِل', category: 'غذاها' },
-
+    // ****************** حیوانات
+     { id: nanoid(), image: "./images/assetAlpha/animals/anim-28.png", englishWord: "Polar bear", persianWord: "خرسِ قُطبی", category: "حیوانات" },
+    { id: nanoid(), image: "./images/assetAlpha/animals/anim-29.png", englishWord: "Deer", persianWord: "آهُو", category: "حیوانات" },
+    { id: nanoid(), image: "./images/assetAlpha/animals/anim-30.png", englishWord: "Crocodile", persianWord: "تِمساح", category: "حیوانات" },
+    { id: nanoid(), image: "./images/assetAlpha/animals/anim-31.png", englishWord: "Fox", persianWord: "روباه", category: "حیوانات" },
+    { id: nanoid(), image: "./images/assetAlpha/animals/anim-32.png", englishWord: "Ostrich", persianWord: "شُترمُرغ", category: "حیوانات" },
+    { id: nanoid(), image: "./images/assetAlpha/animals/anim-33.png", englishWord: "Woodpecker", persianWord: "دارکوب", category: "حیوانات" },
+    { id: nanoid(), image: "./images/assetAlpha/animals/anim-34.png", englishWord: "Cat", persianWord: "گُربه", category: "حیوانات" },
+    { id: nanoid(), image: "./images/assetAlpha/animals/anim-35.png", englishWord: "Chimpanzee", persianWord: "شِمپانزه", category: "حیوانات" },
+    { id: nanoid(), image: "./images/assetAlpha/animals/anim-36.png", englishWord: "Frog", persianWord: "قورباغه", category: "حیوانات" },
+    { id: nanoid(), image: "./images/assetAlpha/animals/anim-37.png", englishWord: "Kangaroo", persianWord: "کانگورو", category: "حیوانات" },
+    { id: nanoid(), image: "./images/assetAlpha/animals/anim-38.png", englishWord: "Hamster", persianWord: "هَمستِر", category: "حیوانات" },
+    { id: nanoid(), image: "./images/assetAlpha/animals/anim-39.png", englishWord: "Squirrel", persianWord: "سنجاب", category: "حیوانات" },
+    { id: nanoid(), image: "./images/assetAlpha/animals/anim-40.png", englishWord: "Bear", persianWord: "خرس", category: "حیوانات" },
+    { id: nanoid(), image: "./images/assetAlpha/animals/anim-41.png", englishWord: "Horse", persianWord: "اسب", category: "حیوانات" },
+    { id: nanoid(), image: "./images/assetAlpha/animals/anim-42.png", englishWord: "Monkey", persianWord: "میمون", category: "حیوانات" },
+    { id: nanoid(), image: "./images/assetAlpha/animals/anim-43.png", englishWord: "Zebra", persianWord: "گورخَر", category: "حیوانات" },
+    { id: nanoid(), image: "./images/assetAlpha/animals/anim-44.png", englishWord: "Gorilla", persianWord: "گوریل", category: "حیوانات" },
+    { id: nanoid(), image: "./images/assetAlpha/animals/anim-45.png", englishWord: "Hippopotamus", persianWord: "اَسبِ آبی", category: "حیوانات 2" },
+    { id: nanoid(), image: "./images/assetAlpha/animals/anim-46.png", englishWord: "Shrimp", persianWord: "میگو", category: "حیوانات 2" },
+    { id: nanoid(), image: "./images/assetAlpha/animals/anim-47.png", englishWord: "Wolf", persianWord: "گُرگ", category: "حیوانات 2" },
+    { id: nanoid(), image: "./images/assetAlpha/animals/anim-48.png", englishWord: "Koala", persianWord: "کوالا", category: "حیوانات 2" },
+    { id: nanoid(), image: "./images/assetAlpha/animals/anim-49.png", englishWord: "Killer whale", persianWord: "نَهنگِ قاتِل", category: "حیوانات 2" },
+    { id: nanoid(), image: "./images/assetAlpha/animals/anim-50.png", englishWord: "Lemur", persianWord: "لِمور", category: "حیوانات 2" },
+    { id: nanoid(), image: "./images/assetAlpha/animals/anim-51.png", englishWord: "Panda", persianWord: "پاندا", category: "حیوانات 2" },
+    { id: nanoid(), image: "./images/assetAlpha/animals/anim-52.png", englishWord: "Octopus", persianWord: "اختاپوس", category: "حیوانات 2" },
+    { id: nanoid(), image: "./images/assetAlpha/animals/anim-53.png", englishWord: "Giraffe", persianWord: "زَرافه", category: "حیوانات 2" },
+    { id: nanoid(), image: "./images/assetAlpha/animals/anim-54.png", englishWord: "Cheetah", persianWord: "یوزپلنگ", category: "حیوانات 2" },
+    { id: nanoid(), image: "./images/assetAlpha/animals/anim-55.png", englishWord: "Hyena", persianWord: "کفتار", category: "حیوانات 2" },
+    { id: nanoid(), image: "./images/assetAlpha/animals/anim-56.png", englishWord: "Sea lion", persianWord: "شیرِ دَریا", category: "حیوانات 2" },
+    { id: nanoid(), image: "./images/assetAlpha/animals/anim-57.png", englishWord: "Eagle", persianWord: "عُقاب", category: "حیوانات 2" },
+    { id: nanoid(), image: "./images/assetAlpha/animals/anim-58.png", englishWord: "Peacock", persianWord: "طاووس", category: "حیوانات 2" },
+    { id: nanoid(), image: "./images/assetAlpha/animals/anim-59.png", englishWord: "Tiger", persianWord: "بَبْر", category: "حیوانات 2" },
+    { id: nanoid(), image: "./images/assetAlpha/animals/anim-60.png", englishWord: "Elephant", persianWord: "فیل", category: "حیوانات 2" },
+    { id: nanoid(), image: "./images/assetAlpha/animals/anim-61.png", englishWord: "Lion", persianWord: "شیر", category: "حیوانات 2" },
+    // *********** نشانه های بیماری
+    { id: nanoid(), image: "/images/assetAlpha/problemHealth/New folder/health-1.jpg", englishWord: "Coughing", persianWord: "سُرفه کَردَن", category: "سلامتی" },
+    { id: nanoid(), image: "/images/assetAlpha/problemHealth/New folder/health-2.jpg", englishWord: "Toothache", persianWord: "دَندان دَرد", category: "سلامتی" },
+    { id: nanoid(), image: "/images/assetAlpha/problemHealth/New folder/health-3.jpg", englishWord: "Stomachache", persianWord: "دِل دَرد", category: "سلامتی" },
+    { id: nanoid(), image: "/images/assetAlpha/problemHealth/New folder/health-4.jpg", englishWord: "Sore throat", persianWord: "گَلودَرد", category: "سلامتی" },
+    { id: nanoid(), image: "/images/assetAlpha/problemHealth/New folder/health-5.jpg", englishWord: "Fever", persianWord: "تَب", category: "سلامتی" },
+    { id: nanoid(), image: "/images/assetAlpha/problemHealth/New folder/health-6.jpg", englishWord: "Headache", persianWord: "سَردَرد", category: "سلامتی" },
+    { id: nanoid(), image: "/images/assetAlpha/problemHealth/New folder/health-7.jpg", englishWord: "Runny nose", persianWord: "آبریزش بینی", category: "سلامتی" },
+    { id: nanoid(), image: "/images/assetAlpha/problemHealth/New folder/health-8.jpg", englishWord: "Cold", persianWord: "سَرماخوردِگی", category: "سلامتی" },
+    { id: nanoid(), image: "/images/assetAlpha/problemHealth/New folder/health-12.jpg", englishWord: "Broken arm", persianWord: "دَست شِکَسته", category: "سلامتی" },
+    { id: nanoid(), image: "/images/assetAlpha/problemHealth/New folder/health-13.jpg", englishWord: "Cut finger", persianWord: "اَنگِشت بُریده", category: "سلامتی" },
+    //  ************ حشرات
+    { id: nanoid(), image: "/images/assetAlpha/insects/insect-1.jpg", englishWord: "Butterfly", persianWord: "پَروانه", category: "حشرات" },
+    { id: nanoid(), image: "/images/assetAlpha/insects/insect-2.jpg", englishWord: "Spider", persianWord: "عَنکَبوت", category: "حشرات" },
+    { id: nanoid(), image: "/images/assetAlpha/insects/insect-3.jpg", englishWord: "Bee", persianWord: "زَنبورِ عَسَل", category: "حشرات" },
+    { id: nanoid(), image: "/images/assetAlpha/insects/insect-4.jpg", englishWord: "Mosquito", persianWord: "مَگَس", category: "حشرات" },
+    { id: nanoid(), image: "/images/assetAlpha/insects/insect-5.jpg", englishWord: "Fly", persianWord: "پَشه", category: "حشرات" },
+    { id: nanoid(), image: "/images/assetAlpha/insects/insect-6.jpg", englishWord: "Ladybug", persianWord: "کَفش دوزَک", category: "حشرات" },
+    { id: nanoid(), image: "/images/assetAlpha/insects/insect-7.jpg", englishWord: "Glowworm", persianWord: "کِرمِ شَب تاب", category: "حشرات" },
+    { id: nanoid(), image: "/images/assetAlpha/insects/insect-8.jpg", englishWord: "Dragonfly", persianWord: "سَنجاقَک", category: "حشرات" },
+    { id: nanoid(), image: "/images/assetAlpha/insects/insect-10.jpg", englishWord: "Ant", persianWord: "مورچه", category: "حشرات" },
+    { id: nanoid(), image: "/images/assetAlpha/insects/insect-11.jpg", englishWord: "Locust", persianWord: "مَلَخ", category: "حشرات" },
+    { id: nanoid(), image: "/images/assetAlpha/insects/insect-12.jpg", englishWord: "Cricket", persianWord: "جیرجیرَک", category: "حشرات" },
+    { id: nanoid(), image: "/images/assetAlpha/insects/insect-13.jpg", englishWord: "Beetle", persianWord: "سوسک", category: "حشرات" },
   ]);
+  
 
   const categories = [...new Set(cards.map(card => card.category))]; // استخراج دسته‌ها
   const [selectedCategory, setSelectedCategory] = useState(categories[0]); // دسته پیش‌فرض
@@ -85,9 +144,11 @@ const LearnNewWords = () => {
   // رنگ‌های جذاب برای کودکان
   const categoryColors = {
     'اعضای بدن': '#FF6961',
-    'غذاها': " #fd7b57ff",
-    // 'میوه‌ها': '#577bd0ff',
-    // 'حیوانات': '#77DD77',
+    'غذاها': " #2b0ca8c1",
+    'حیوانات': '#559821ff',
+    'حیوانات 2': '#77DD77',
+    'سلامتی': '#577bd0ff',
+    'حشرات': '#d057acff',
   };
 
   return (

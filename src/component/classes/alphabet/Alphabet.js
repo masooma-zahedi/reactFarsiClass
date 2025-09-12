@@ -69,8 +69,9 @@ export const Alphabet = () => {
               {/* test */}
                 
               <div className="container">
-              {/* <AngryWordGame/> */}
                {/* <AngryWordSlingFull/>  */}
+
+
               {/* <PoolWordGame/> */}
 
 

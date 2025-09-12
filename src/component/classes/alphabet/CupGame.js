@@ -2,50 +2,41 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function CupGame() {
-  // صدا های کوتاه کلاس G
-  const wordList = ["دَر","بَر","پَر","بَد","پَد","تاب","رَد","اَد","باد","بار","پا","را","دار"]
-  // const wordList =  ["بَ", "رِ","پُ","دَ", "اُ","بِ","پِ","رَ","دِ","اِ","بُ","رُ","پَ","اُ","دُ",]
+  // 📌 دسته‌های کلمات مختلف
+  const categories = {
+    "کلاس G": ["دَر","بَر","پَر","بَد","پَد","تاب","رَد","اَد","باد","بار","پا","را","دار"],
+    "گلدان نازنین": ["گُلدان","باغچِه","دانِه","لَبخَند","ساقِه","رُشد","مُشت","آواز","نِگاه","گُذَشت"],
+    "مهمانی شادی": ["مِهمانی","شاد","بادکُنَک","چِراغ","رَنگی","دوست","بازی","کِیک","شُکُلاتی","آب‌میوِه","خُوشحال","لَذَت","تَشَكُر"],
+    "سفر با کشتی": ["سَفَر","کَشتی","دَریا","آب","ماهی","خُوشحال","مُرغِ دَریایی","پَرَنده","جَزیره","نارگِیل","دَرَخت","شَب","سِتاره","آسمان","خـانِه"],
+    "لیلا و درخت جادویی": ["دِه","لِیلا","بِن","دِرَخت","زَمین","دانِه","باغ","آب","مُراقِبَت","رُشد","جادویی","هَوا","شاد","دُنیا","بِهتَر"],
+    "من و ماکارونی": ['مَن','ماکارونی','مادَر','نورا','شام','گُفتَم','باشِه','دُرُست','قابلَمه','بویِ','بابا','خوشمَزه','کُمَک','آفَرین','هَمِه','خَندیدیم','خوردیم'],
+    "طوفان بزرگ" :  ['آسمان','باد','بَرق','مادَر','طوفان','شَمع','صُبح','دِرَخت','بابا','کُمَک','هَمسایه','زُبالِه','هَمدِلی'],
+  };
 
+  // 📌 حالت انتخابی
+  const [selectedCategory, setSelectedCategory] = useState("کلاس G");
+  const [words, setWords] = useState(categories[selectedCategory]);
 
-    // گلدان نازنین
-// const wordList = ["گُلدان","باغچِه","دانِه","لَبخَند","ساقِه","رُشد","مُشت","آواز","نِگاه","گُذَشت"];
+  // تغییر دسته → کلمات جدید
+  const handleCategoryChange = (e) => {
+    const cat = e.target.value;
+    setSelectedCategory(cat);
+    handleResetGame(categories[cat]); // ریست بازی با لیست جدید
+  };
 
-// کلمات داستان مهمانی شادی
-// const wordList = ["مِهمانی","شاد","بادکُنَک","چِراغ","رَنگی","دوست","بازی","کِیک","شُکُلاتی","آب‌میوِه","خُوشحال","لَذَت","تَشَكُر"];
-
-// کلمات سفر با کشتی
-// const wordList = ["سَفَر","کَشتی","دَریا","آب","ماهی","خُوشحال","مُرغِ دَریایی","پَرَنده","جَزیره","نارگِیل","دَرَخت","شَب","سِتاره","آسمان","خـانِه"];
-
-// کلمات داستان لیلا و درخت جادویی
-// const wordList = ["دِه","لِیلا","بِن","دِرَخت","زَمین","دانِه","باغ","آب","مُراقِبَت","رُشد","جادویی","هَوا","شاد","دُنیا","بِهتَر"];
-
-// const wordList = [
-//   "هیزُم","هَمکار","هَمر اه","هَفته","حال","هَشتُم","هوش",
-//   "هِزارپا","هَمه","کُوه","چاه","راه","نامِه","خانِه","شانِه",
-//   "کاه","گِیاه","دانِه","ماه","سِپیدِه","آهو","شیشِه",
-//   "کِلاه","آگاه","قَهوه","شُجاعانِه"
-// ]
-
-// داستان من و ماکارانی
-// const wordList = ['مَن','ماکارونی','مادَر','نورا','شام','گُفتَم','باشِه','دُرُست','قابلَمه','بویِ','بابا','خوشمَزه','کُمَک','آفَرین','هَمِه','خَندیدیم','خوردیم'];
-
-
-
-
-  // positions: آرایه‌ای از [0,1,2] که با جابه‌جایی اعضا، محل ستون هر لیوان را تعیین می‌کند
+  // 🎮 stateهای بازی
   const [positions, setPositions] = useState([0, 1, 2]);
-  const [ballPos, setBallPos] = useState(Math.floor(Math.random() * 3)); // موقعیت واقعی توپ (0..2)
-  const [selected, setSelected] = useState(null);        // اندیسی که کودک کلیک کرده (0..2)
-  const [wrongWord, setWrongWord] = useState(null);      // کلمه‌ای که هنگام اشتباه نمایش می‌دهیم
-  const [words, setWords] = useState(wordList);          // لیست کلمات باقی‌مانده برای نمایش هنگام اشتباه
-  const [isShuffling, setIsShuffling] = useState(false); // آیا در حال جابه‌جایی لیوان‌ها هستیم
-  const [showBall, setShowBall] = useState(true);        // نمایش توپ (برای نشان‌دادن درست/اشتباه)
-  const [movingCup, setMovingCup] = useState(null);      // برای افکت حرکت عمودی یک لیوان
+  const [ballPos, setBallPos] = useState(Math.floor(Math.random() * 3));
+  const [selected, setSelected] = useState(null);
+  const [wrongWord, setWrongWord] = useState(null);
+  const [isShuffling, setIsShuffling] = useState(false);
+  const [showBall, setShowBall] = useState(true);
+  const [movingCup, setMovingCup] = useState(null);
   const [gameStarted, setGameStarted] = useState(false);
-  const [attempts, setAttempts] = useState(0);           // تعداد اشتباه‌های این راند (0,1,2)
-  const [difficulty, setDifficulty] = useState(800);     // سرعت جابه‌جایی
+  const [attempts, setAttempts] = useState(0);
+  const [difficulty, setDifficulty] = useState(800);
 
-  // شروع یک راند: اول توپ را زیر لیوان درست نشان می‌دهیم، بعد جابه‌جایی شروع می‌شود
+  // شروع یک راند
   const startGame = () => {
     setGameStarted(true);
     setShowBall(true);
@@ -65,7 +56,6 @@ export default function CupGame() {
     let count = 0;
 
     const interval = setInterval(() => {
-      // از مقدار قبلی positions استفاده کن تا مشکل "state کهنه" پیش نیاد
       setPositions((prev) => {
         const newPositions = [...prev];
         const i = Math.floor(Math.random() * 3);
@@ -88,10 +78,7 @@ export default function CupGame() {
   };
 
   // شروع راند بعدی
-  // consumeWord = true یعنی کلمه‌ی نمایش‌داده‌شده را از لیست حذف کن (فقط وقتی اشتباه داشته‌ایم/نمایش داده‌ایم)
   const startNextRound = (consumeWord = false) => {
-    const nextLen = consumeWord ? Math.max(0, words.length - 1) : words.length;
-
     if (consumeWord && words.length > 0) {
       setWords(words.slice(1));
     }
@@ -101,130 +88,115 @@ export default function CupGame() {
     setWrongWord(null);
     setShowBall(false);
     setBallPos(Math.floor(Math.random() * 3));
-    setPositions([0, 1, 2]); // برای نظم بصری، هر راند از چینش پایه شروع می‌کنیم
-    setGameStarted(false);   // دکمه‌ی "شروع بازی" دوباره نمایش داده شود
-
-    // اگر همه‌ی کلمات نمایش داده شده باشند، کاربر دکمه‌ی ریست را خواهد دید
-    // (nextLen === 0) → دکمه‌ی ریست ظاهر می‌شود
+    setPositions([0, 1, 2]);
+    setGameStarted(false);
   };
 
   const handleChoice = (index) => {
     if (isShuffling || !gameStarted) return;
 
     setSelected(index);
-    const ballIndex = positions.indexOf(ballPos); // ستون لیوانی که توپ واقعاً زیر آن است
+    const ballIndex = positions.indexOf(ballPos);
 
     if (index === ballIndex) {
-      // ✅ درست: توپ را نشان بده، ولی از لیست کلمات کم نکن
       setShowBall(true);
       setTimeout(() => {
-        startNextRound(false); // کلمه کم نشود
+        startNextRound(false);
       }, 1500);
     } else {
-      // ❌ اشتباه
       const newAttempts = attempts + 1;
       setAttempts(newAttempts);
 
       if (newAttempts === 1) {
-        // بار اول اشتباه → فقط کلمه‌ی اول را نمایش بده (فعلاً کم نکن)
         if (words.length > 0) setWrongWord(words[0]);
       } else if (newAttempts >= 2) {
-        // بار دوم اشتباه → توپ را نشان بده و بعد برو راند بعدی و همان یک کلمه را مصرف کن
         setShowBall(true);
         setTimeout(() => {
-          startNextRound(true); // فقط الآن از لیست کم می‌کنیم
+          startNextRound(true);
         }, 500);
       }
     }
   };
 
-  // وقتی معلم/کودک بعد از نمایش کلمه روی "ادامه" می‌زند، می‌رویم راند بعدی و همان کلمه را مصرف می‌کنیم
   const handleContinueAfterWrong = () => {
     startNextRound(true);
   };
 
-  const handleResetGame = () => {
-    setWords(wordList);
+  const handleResetGame = (newWords = words) => {
+    setWords(newWords);
     setBallPos(Math.floor(Math.random() * 3));
     setPositions([0, 1, 2]);
     setSelected(null);
     setWrongWord(null);
     setGameStarted(false);
     setAttempts(0);
-    setShowBall(true); // ابتدای بازی بعدی توپ را نشان بده
+    setShowBall(true);
   };
 
   return (
-    <div className="text-center container  rounded-3 p-5 mt-5"  style={{backgroundColor:" #bded989e"}}>
-        <div className="">
-            {/* 🎚️ سختی */}
-            <div className="mb-2 text-start" style={{opacity:"0.4"}}>
-                <label>سختی بازی: </label>
-                <input
-                type="range"
-                min="100"
-                max="1200"
-                step="50"
-                value={difficulty}
-                onChange={(e) => setDifficulty(Number(e.target.value))}
-                style={{ width: "300px", marginLeft: 10 }}
-                />
-                <span style={{ marginLeft: 10 }}>{difficulty} ms</span>
-                <div style={{ fontSize: 12 }}>
-                عدد کمتر → سریع‌تر و سخت‌تر | عدد بیشتر → کندتر و آسان‌تر
-                </div>
-            </div>
-            <div className="d-flex justify-content-center">
-                <div className="wave-box">
-                    <div className="wave"></div>
-                    <div className="wave"></div>
-                    <h3 className="m-4 mt-1 p-4   p-2 rounded-2 " >بازی توپ و لیوان</h3>
-                </div>
-            </div>
-            <br /><br /><br /><br />
+    <div className="text-center container rounded-3 p-5 mt-5" style={{backgroundColor:" #bded989e"}}>
 
+      {/* 📌 انتخاب دسته */}
+      <div className=" text-end">
+        <div className="mb-4">
+          <label className="fw-bold">انتخاب دسته کلمات: </label>
+          <select
+            className="form-select w-auto d-inline-block ms-2"
+            value={selectedCategory}
+            onChange={handleCategoryChange}
+          >
+            {Object.keys(categories).map((cat) => (
+              <option key={cat} value={cat}>{cat}</option>
+            ))}
+          </select>
         </div>
 
-      {/* 🎩 ناحیه لیوان‌ها */}
-      <div className="container text-center d-flex justify-content-center mt-5 ">
-        <div className="my-5" style={{width:"600px"}}>
-<div className="cups-area">
-  {[0, 1, 2].map((pos) => {
-    const index = positions.indexOf(pos);
-    const isBallHere = ballPos === pos;
-    const isSelected = selected === index;
-
-    return (
-      <div
-        key={pos}
-        className={`cup-wrapper ${isSelected ? "lift" : ""} ${movingCup === index ? "moving" : ""}`}
-        style={{ left: `${index * 210}px` }}
-        onClick={() => handleChoice(index)}
-      >
-        {/* کلمه همیشه روی لیوان باشد */}
-  {isSelected && wrongWord && !showBall && (
-    <span className="word" style={{color:' #0b46aaff'}}>{wrongWord}</span>
-  )}
-
-  {/* توپ بالای لیوان */}
-  {showBall && isBallHere && <div className="ball"></div>}
-        <img
-          src="/images/assetAlpha/gamePage/cupGame-1.png"
-          alt="cup"
-          style={{ width: "200px", height: "220px", pointerEvents: "none" , zIndex: 1}}
-        />
-        {/* توپ فقط وقتی که باید دیده شود */}
-        {/* {showBall && isBallHere && <div className="ball"></div>} */}
-        {/* کلمه فقط وقتی اشتباه و توپ پنهان باشد */}
-        {/* {isSelected && wrongWord && !showBall && (
-          <span className="word">{wrongWord}</span>
-        )} */}
       </div>
-    );
-  })}
-</div>
 
+      {/* 🎚️ سختی */}
+      <div className="mb-2 text-start" style={{opacity:"0.6"}}>
+        <label>سختی بازی: </label>
+        <input
+          type="range"
+          min="100"
+          max="1200"
+          step="50"
+          value={difficulty}
+          onChange={(e) => setDifficulty(Number(e.target.value))}
+          style={{ width: "300px", marginLeft: 10 }}
+        />
+        <span style={{ marginLeft: 10 }}>{difficulty} ms</span>
+      </div>
 
+      {/* 🎩 ناحیه لیوان‌ها */}
+      <div className="container text-center d-flex justify-content-center mt-5">
+        <div className="my-5" style={{width:"600px"}}>
+          <div className="cups-area">
+            {[0, 1, 2].map((pos) => {
+              const index = positions.indexOf(pos);
+              const isBallHere = ballPos === pos;
+              const isSelected = selected === index;
+
+              return (
+                <div
+                  key={pos}
+                  className={`cup-wrapper ${isSelected ? "lift" : ""} ${movingCup === index ? "moving" : ""}`}
+                  style={{ left: `${index * 210}px` }}
+                  onClick={() => handleChoice(index)}
+                >
+                  {isSelected && wrongWord && !showBall && (
+                    <span className="word" style={{color:' #0b46aaff'}}>{wrongWord}</span>
+                  )}
+                  {showBall && isBallHere && <div className="ball"></div>}
+                  <img
+                    src="/images/assetAlpha/gamePage/cupGame-1.png"
+                    alt="cup"
+                    style={{ width: "200px", height: "220px", pointerEvents: "none" , zIndex: 1}}
+                  />
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
 
@@ -242,17 +214,16 @@ export default function CupGame() {
             <button className="btn btn-success mt-2" onClick={handleContinueAfterWrong}>
               ادامه ▶
             </button>
-            <br /><br /><br /><br />
           </div>
         )}
 
         {!gameStarted && words.length === 0 && (
-          <button className="btn btn-danger" onClick={handleResetGame}>
+          <button className="btn btn-danger" onClick={() => handleResetGame(categories[selectedCategory])}>
             ریست بازی 🔄
           </button>
         )}
       </div>
-        <br /><br /><br /><br />
+
       {/* 🎨 استایل */}
       <style>{`
         .cups-area {
@@ -260,25 +231,18 @@ export default function CupGame() {
           height: 200px;
           margin-top: 40px;
         }
-        .cup {
-          width: 200px;
-          height: 220px;
-          border-radius: 10px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          font-size: 22px;
-          font-weight: bold;
-          color: white;
-          cursor: pointer;
+        .cup-wrapper {
           position: absolute;
           bottom: 0;
           transition: left 0.6s ease, transform 0.3s ease;
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
         }
-        .cup.lift {
+        .cup-wrapper.lift {
           transform: translateY(-70px);
         }
-        .cup.moving {
+        .cup-wrapper.moving {
           transform: translateY(-120px);
         }
         .ball {
@@ -290,66 +254,12 @@ export default function CupGame() {
           bottom: -35px;
         }
         .word {
-        position: absolute;
-        top: 220px; /* بالای لیوان */
-        font-size: 40px;
-        font-weight: bold;
-        z-index: 2; /* روی تصویر قرار گیرد */
+          position: absolute;
+          top: 220px;
+          font-size: 40px;
+          font-weight: bold;
+          z-index: 2;
         }
-
-        .wave-box {
-        position: relative;
-        width: 300px;
-        height: 100px;
-        border-radius: 20px;
-        overflow: hidden;
-        background: #f6bb3bff;
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        }
-
-        .wave {
-        position: absolute;
-        width: 300%;
-        height: 700%;
-        background: rgba(231, 157, 46, 0.3);
-        top: 50%;
-        left: -50%;
-        border-radius: 50%;
-        animation: wave 8s infinite linear;
-        }
-
-        .wave:nth-child(2) {
-        animation-duration: 4s;
-        opacity: 0.5;
-        }
-
-        @keyframes wave {
-        from { transform: rotate(0deg); }
-        to { transform: rotate(360deg); }
-        }
-
-
-        .cup-wrapper {
-        position: absolute;
-        bottom: 0;
-        transition: left 0.6s ease, transform 0.3s ease;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        }
-
-        .cup-wrapper.lift {
-        transform: translateY(-70px);
-        }
-
-        .cup-wrapper.moving {
-        transform: translateY(-120px);
-        }
-
-
       `}</style>
     </div>
   );
