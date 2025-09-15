@@ -21,6 +21,8 @@ import LearnNewWords from "./LearnNewWords.js";
 import BouncingBalls from "./BouncingBalls.js";
 import CupGame from "./CupGame.js";
 import AngryWordSlingFull from "./AngryWordSlingFull.js";
+import PoolWordGame from "./PoolWordGame.js";
+import CuckooClockGame2 from "./CuckooClockGame2.js";
 
 
 
@@ -67,16 +69,19 @@ export const Alphabet = () => {
               {/* test */}
                 
               <div className="container">
-              {/* <AngryWordGame/> */}
-              <AngryWordSlingFull/>
+               {/* <AngryWordSlingFull/>  */}
+
+
+              {/* <PoolWordGame/> */}
+
+
+              {/* <CuckooClockGame2/> */}
               </div>
               </div>
             </div>
             
           </div>
         
-
-
     </>
   )
 }

@@ -421,7 +421,7 @@ const categories = {
     {
       "image": "https://images.fun.com/products/6562/1-1/kids-white-tights.jpg",
       "question": "او چه چیزی به پایش دارد؟",
-      "answer": "او جوراب‌شَلواریِ سِفید دارد."
+      "answer": "او جوراب‌شَلواریِ سِفید پوشیده است."
     },
     {
       "image": "https://www.shutterstock.com/image-photo/cute-character-3d-image-african-260nw-2502546437.jpg",
@@ -431,12 +431,12 @@ const categories = {
     {
       "image": "https://thumbs.dreamstime.com/b/cute-girl-skincare-activity-routine-pink-headband-kawaii-chibi-flat-character-pink-cute-girl-skincare-345519725.jpg",
       "question": "روی سَرِ دختر چیست؟",
-      "answer": "او هِدبَندِ صورَتی دارد."
+      "answer": " هِدبَندِ صورَتی "
     },
     {
       "image": "https://img.favpng.com/24/14/25/baby-girl-with-bow-adorable-cartoon-girl-with-pigtails-LuWargSZ_t.jpg",
       "question": "هدبند چه شکلی دارد؟",
-      "answer": "او هِدبَند با پاپیون دارد."
+      "answer": " هِدبَند به شکل پاپیون است."
     },
     {
       "image": "https://thumbs.dreamstime.com/b/young-boy-big-eyed-little-clad-blue-jeans-casual-shirt-41099927.jpg",
@@ -466,7 +466,7 @@ const categories = {
     {
       "image": "https://thumbs.dreamstime.com/b/cartoon-girl-waving-hello-blonde-hair-floral-dress-cute-wearing-380021668.jpg",
       "question": "پیراهَن دختر چه شکلی هست؟",
-      "answer": "پیراهَن گل‌دارِ بَنَفش دارد."
+      "answer": "او پیراهَن گل‌دارِ بَنَفش دارد"
     },
   ],
 

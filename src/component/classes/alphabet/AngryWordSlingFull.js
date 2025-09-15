@@ -16,18 +16,25 @@ export default function AngryWordSlingFull({ initialWords }) {
   const WIDTH = 900;
   const HEIGHT = 480;
 
-  const defaultWords = [
-    "بَز",
-    "سِیب",
-    "دُوست",
-    "گُل",
-    "مِیز",
-    "خورشِید",
-    "دَفتر",
-    "نُون",
-    "مَدرَسه",
-    "دَریا",
-  ];
+  // داستان مهمانی شادی
+  // const defaultWords = ["مِهمانی","شاد","بادکُنَک","چِراغ","رَنگی","دوست","بازی","کِیک","شُکُلاتی","آب‌میوِه","خُوشحال","لَذَت","تَشَكُر"]
+
+  // داستان من و ماکارانی
+  // const defaultWords = ['قابلَمه','بویِ','بابا','خوشمَزه','کُمَک','آفَرین','هَمِه','خَندیدیم','خوردیم']
+
+  // داستان طوفان بزرگ
+  const defaultWords = ['آسمان','باد','بَرق','مادَر','طوفان','شَمع','صُبح','دِرَخت','بابا','کُمَک','هَمسایه','زُبالِه','هَمدِلی'];
+
+  // داستان پدر و سبد
+  // const defaultWords = ['پِدَر','چای','سارا','سَبَد','سِیب','شاد','خُورد','خُوشحال'];
+
+
+
+
+
+
+
+
   const words = initialWords && initialWords.length ? initialWords : defaultWords;
 
   // --- UI state
@@ -49,7 +56,7 @@ export default function AngryWordSlingFull({ initialWords }) {
 
 useEffect(() => {
   const img = new Image();
-  img.src = "/images/assetAlpha/gamePage/angryBird-2.png"; // مسیر عکس توپ (داخل public/images بزار)
+  img.src = "/images/assetAlpha/gamePage/angryBird-3.webp"; // مسیر عکس توپ (داخل public/images بزار)
   ballImgRef.current = img;
 }, []);
 

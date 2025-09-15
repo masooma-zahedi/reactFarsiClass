@@ -2,13 +2,13 @@ import React, { useState, useEffect } from "react";
 
 export default function SunWords({idPage}) {
   const categories = {
-    صداکوتاه: {
-      circle: "-ُ -ِ -َ",
-      boxes: ["بَ", "رِ", "اُ","بِ","رَ","اِ","بُ","رُ","اُ",]
+    صداآ: {
+      circle: "ا",
+      boxes: ["با","آ","تا","را","پا","دا","با","تا","دا","را","پا","آ","تا",]
     },
     صداکوتاه2: {
       circle: "-ُ -ِ -َ",
-      boxes: ["بَ", "رِ","نُ", "اُ","بِ","نَ","رَ","اِ","بُ","رُ","نِ","اُ",]
+      boxes: ["بَ", "رِ","تُ","پُ","دَ","تَ", "اُ","بِ","تِ","پِ","رَ","تِ","دِ","اِ","بُ","تَ","رُ","پَ","اُ","دُ","تُ",]
     },
     ه: {
       circle: "کلمات ه",
@@ -28,9 +28,9 @@ export default function SunWords({idPage}) {
     "#009688", "#4caf50", "#ff9800", "#795548", "#607d8b"
   ];
 
-  const [category, setCategory] = useState("صداکوتاه"); // دسته انتخابی
-  const [words, setWords] = useState(categories["صداکوتاه"].boxes);
-  const [circleText, setCircleText] = useState(categories["صداکوتاه"].circle);
+  const [category, setCategory] = useState("صداآ"); // دسته انتخابی
+  const [words, setWords] = useState(categories["صداآ"].boxes);
+  const [circleText, setCircleText] = useState(categories["صداآ"].circle);
   const [rotationDeg, setRotationDeg] = useState(0);
   const [rotating, setRotating] = useState(false);
   const [selected, setSelected] = useState(null);
