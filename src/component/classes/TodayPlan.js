@@ -95,9 +95,9 @@ const TodayPlan = () => {
         <button className="btn btn-success" onClick={addOrUpdatePlan}>
           افزودن
         </button>
-        <button className="btn btn-danger mx-2" onClick={resetPlan}>
+        {/* <button className="btn btn-danger mx-2" onClick={resetPlan}>
           پاک‌سازی همه
-        </button>
+        </button> */}
       </div>
 
       <h5 className='text-center mt-5'>🏆 لیست پلان‌ها:</h5>

@@ -183,59 +183,58 @@ const lessonGroups = [
       title: "جُملات حرف خ",
       slides: [
         {
-          sentence: "اُستاد با میخ و تَخته تَخت می سازَد.",
+          sentence: "اُستاد با میخ و تَخته، تَخت خواب می سازَد.",
           words: [
-            { text: "میخ", pronunciation: "mikh", image: "https://cdn-icons-png.flaticon.com/512/2933/2933827.png", translation: "Nail" },
-            { text: "تُخته", pronunciation: "takhte", image: "https://cdn-icons-png.flaticon.com/512/2830/2830308.png", translation: "Wood plank" },
-            { text: "تُخت", pronunciation: "takht", image: "https://cdn-icons-png.flaticon.com/512/1046/1046896.png", translation: "Bed" }
+            { text: "میخ", pronunciation: "mikh", image: "https://img.freepik.com/premium-vector/iron-nail_1083548-19164.jpg", translation: "Nail" },
+            { text: "تَخته", pronunciation: "takhte", image: "https://thumbs.dreamstime.com/b/wood-planks-illustration-white-background-53658968.jpg", translation: "Wood plank" },
+            { text: " تَخت خواب", pronunciation: "takht", image: "https://easydrawingguides.com/wp-content/uploads/2023/05/1807-how-to-draw-a-cartoon-bed-featured-image.png", translation: "Bed" }
           ]
         },
         {
-          sentence: "خانُواده‌ ی خانُم مُدیر به کِنار رودخانه رَفتَند.",
+          sentence: "خانِواده‌ ی خانُم خاوری به کِنار رودخانه رَفتَند.",
           words: [
-            { text: "خانُواده", pronunciation: "khānevāde", image: "https://cdn-icons-png.flaticon.com/512/2922/2922510.png", translation: "Family" },
-            { text: "خانُم مُدیر", pronunciation: "khānom modir", image: "https://cdn-icons-png.flaticon.com/512/4140/4140048.png", translation: "Mrs. Principal" },
-            { text: "رودخانه", pronunciation: "rudkhāne", image: "https://cdn-icons-png.flaticon.com/512/4150/4150947.png", translation: "River" }
+            { text: "خانواده", pronunciation: "khānevāde", image: "https://img.freepik.com/premium-vector/family-consisting-parents-children-is-fishing-together-river-silly-cartoon-featuring-family-monsters-getting-into-some-mischief-home_538213-58164.jpg", translation: "Family" },
+            { text: "رودخانه", pronunciation: "rudkhāne", image: "ng", translation: "River" }
           ]
         },
         {
           sentence: "خانه‌ ی خَرگوش زِیر دَرَخت اَست.",
           words: [
-            { text: "خانه", pronunciation: "khāne", image: "https://cdn-icons-png.flaticon.com/512/616/616408.png", translation: "House" },
-            { text: "خَرگوش", pronunciation: "khargush", image: "https://cdn-icons-png.flaticon.com/512/616/616408.png", translation: "Rabbit" },
-            { text: "دَرَخت", pronunciation: "derakht", image: "https://cdn-icons-png.flaticon.com/512/765/765481.png", translation: "Tree" }
+            { text: "خانه", pronunciation: "khāne", image: "", translation: "House" },
+            { text: "خَرگوش", pronunciation: "khargush", image: "", translation: "Rabbit" },
+            { text: "دَرَخت", pronunciation: "derakht", image: "", translation: "Tree" }
           ]
         },
         {
           sentence: "شاخِ گوزَن شِکَستِه اَست.",
           words: [
-            { text: "شاخ", pronunciation: "shākh", image: "https://cdn-icons-png.flaticon.com/512/3081/3081840.png", translation: "Horn" },
-            { text: "گوزَن", pronunciation: "gavazn", image: "https://cdn-icons-png.flaticon.com/512/616/616408.png", translation: "Deer" }
+            { text: "شاخ", pronunciation: "shākh", image: "ng", translation: "Horn" },
+            { text: "گوزَن", pronunciation: "gavazn", image: "", translation: "Deer" }
           ]
         },
         {
           sentence: "خُدا بَخشَندِه اَست.",
           words: [
-            { text: "خُدا", pronunciation: "khodā", image: "https://cdn-icons-png.flaticon.com/512/1998/1998749.png", translation: "God" },
-            { text: "بَخشَندِه", pronunciation: "bakhshande", image: "https://cdn-icons-png.flaticon.com/512/2917/2917242.png", translation: "Forgiving" }
+            { text: "خُدا", pronunciation: "khodā", image: "ng", translation: "God" },
+            { text: "بَخشَندِه", pronunciation: "bakhshande", image: "ng", translation: "Forgiving" }
           ]
         },
         {
           sentence: "مادَر با نَخ دامَنِ دُختَر را می دوزَد.",
           words: [
-            { text: "مادَر", pronunciation: "mādar", image: "https://cdn-icons-png.flaticon.com/512/921/921008.png", translation: "Mother" },
-            { text: "نَخ", pronunciation: "nakh", image: "https://cdn-icons-png.flaticon.com/512/1046/1046786.png", translation: "Thread" },
-            { text: "دامَن", pronunciation: "dāman", image: "https://cdn-icons-png.flaticon.com/512/3348/3348419.png", translation: "Skirt" },
-            { text: "دُختَر", pronunciation: "dokhtar", image: "https://cdn-icons-png.flaticon.com/512/921/921086.png", translation: "Girl" }
+            { text: "مادَر", pronunciation: "mādar", image: "", translation: "Mother" },
+            { text: "نَخ", pronunciation: "nakh", image: "ng", translation: "Thread" },
+            { text: "دامَن", pronunciation: "dāman", image: "ng", translation: "Skirt" },
+            { text: "دُختَر", pronunciation: "dokhtar", image: "", translation: "Girl" }
           ]
         },
         {
           sentence: "آب دَر گَرمـا آدَم را خُنُک می کُنَد.",
           words: [
-            { text: "آب", pronunciation: "āb", image: "https://cdn-icons-png.flaticon.com/512/3075/3075977.png", translation: "Water" },
-            { text: "گَرمـا", pronunciation: "garmā", image: "https://cdn-icons-png.flaticon.com/512/1684/1684375.png", translation: "Heat" },
-            { text: "آدَم", pronunciation: "ādam", image: "https://cdn-icons-png.flaticon.com/512/4140/4140048.png", translation: "Person" },
-            { text: "خُنُک", pronunciation: "khonok", image: "https://cdn-icons-png.flaticon.com/512/3075/3075928.png", translation: "Cool" }
+            { text: "آب", pronunciation: "āb", image: "ng", translation: "Water" },
+            { text: "گَرمـا", pronunciation: "garmā", image: "ng", translation: "Heat" },
+            { text: "آدَم", pronunciation: "ādam", image: "ng", translation: "Person" },
+            { text: "خُنُک", pronunciation: "khonok", image: "ng", translation: "Cool" }
           ]
         }
       ]
@@ -402,13 +401,13 @@ const SentenceObject = () => {
           >
             {currentSlides.map((slide, index) => (
               <Carousel.Item key={index}>
-                <h1
-                  className="py-5 mx-4 rounded text-center"
+                <div
+                  className="py-5 mx-4 rounded text-center h2"
                   style={{ backgroundColor: "rgba(135, 187, 239, 0.7)" }}
                 >
                   {/* sentence را با هایلایت رندر می‌کنیم */}
                   {highlightText(slide.sentence)}
-                </h1>
+                </div>
               </Carousel.Item>
             ))}
           </Carousel>
@@ -438,7 +437,7 @@ const SentenceObject = () => {
               <Row className="mt-4 justify-content-center text-center">
                 <Col md={5} className="bg-warning p-2 rounded" style={{ width: "400px" }}>
                   <Image className="w-100" src={selectedWord.image} fluid rounded />
-                  <p className="mt-2 h2 fs-2" style={{ color: "rgb(240, 19, 148)" }}>
+                  <p className="mt-2 h2 fs-1" style={{ color: "rgb(240, 19, 148)" }}>
                     {selectedWord.translation}
                   </p>
                 </Col>
