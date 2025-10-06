@@ -1,12 +1,110 @@
-// WordCardsSingleComponent.jsx
-import React, { useEffect, useState } from "react";
+import React, {useEffect, useState } from "react";
+// اگر WordCardsSingle نسخهٔ فعلی‌ت رو داری، آن را ایمپورت کن.
+// در این مثال فرض می‌کنیم WordCardsSingle یک prop به نام `initialWords` می‌پذیرد.
+// اگر کامپوننت فعلی‌ات از آرایهٔ داخلی استفاده می‌کند، لازم است آن را طوری تغییر دهی
+// که از prop استفاده کند (نمونه‌ای پایین می‌دهم).
 
-export default function WordCardsSingle({ onFinishedAll = () => {} }) {
-  const words = [
+const collections = {
+  "میوه‌ها": [
+    { id: 1, word: "سیب", image: "https://media.istockphoto.com/id/686309840/vector/sticker-red-apple-with-stem.jpg?s=612x612&w=0&k=20&c=4QPpObM-Ya-FtLxi3VPeQ-LTno8c0KgWrJknfLNhEro=", title: "Apple", direction: "horizontal", extraTiles: ["گ"] },
+    { id: 2, word: "عسل", image: "https://img.freepik.com/free-vector/cute-honey-bee-hug-honeycomb-cartoon-vector-icon-illustration-animal-nature-icon-concept-isolated_138676-6880.jpg?semt=ais_hybrid&w=740&q=80", title: "Honey", direction: "horizontal", extraTiles: ["ک","پ"] },
+  ],
+  "وسایل مدرسه": [
+    { id: "s1", word: "مداد", image: "https://img.freepik.com/.../pencil.jpg" },
+    { id: "s2", word: "کتاب", image: "https://img.freepik.com/.../book.jpg" },
+  ],
+};
+
+export default function SpellingGame() {
+
+// CollectionPicker.jsx
+
+/*
+Props:
+- collections: { [categoryName]: Array<{ id, word, image, title? }> }
+- onPlay: function(categoryKey, items) called when user clicks "شروع بازی"
+*/
+// ******************************* start CollectionPicker***************************
+ function CollectionPicker({ collections = {}, onPlay = () => {} }) {
+  const keys = Object.keys(collections);
+  const [selectedKey, setSelectedKey] = useState(keys.length ? keys[0] : null);
+
+  const selectKey = (k) => {
+    setSelectedKey(k);
+  };
+
+  const selectedItems = selectedKey ? collections[selectedKey] : [];
+
+  return (
+    <div className="container py-3" style={{ direction: "rtl" }}>
+      <h5 className="text-center mb-3" style={{ fontWeight: 800 }}>انتخاب مجموعه</h5>
+
+      {/* دکمه‌های دسته‌ها */}
+      <div className="d-flex flex-wrap justify-content-center gap-2 mb-3">
+        {keys.length === 0 && <div className="text-muted">مجموعه‌ای تعریف نشده است.</div>}
+        {keys.map((k) => (
+          <button
+            key={k}
+            onClick={() => selectKey(k)}
+            className={`btn ${selectedKey === k ? "btn-primary" : "btn-outline-primary"}`}
+            style={{ borderRadius: 999 }}
+          >
+            {k} <span className="badge bg-light text-dark ms-2">{collections[k].length}</span>
+          </button>
+        ))}
+      </div>
+
+      {/* منطقهٔ نمایش مجموعهٔ انتخاب‌شده */}
+      <div className="card p-3" style={{ borderRadius: 12 }}>
+        <div className="d-flex align-items-center justify-content-between mb-2">
+          <div style={{ fontWeight: 700 }}>{selectedKey || "هیچ مجموعه‌ای انتخاب نشده"}</div>
+          <div>
+            <button
+              className="btn btn-sm btn-success"
+              onClick={() => onPlay(selectedKey, selectedItems)}
+              disabled={!selectedKey || selectedItems.length === 0}
+            >
+              شروع بازی
+            </button>
+          </div>
+        </div>
+
+        {(!selectedKey || selectedItems.length === 0) ? (
+          <div className="text-center text-muted py-4">یکی از مجموعه‌ها را از بالا انتخاب کنید.</div>
+        ) : (
+          <div className="d-flex gap-3 flex-wrap justify-content-center">
+            {selectedItems.map((it) => (
+              <div key={it.id} className="card text-center p-2" style={{ width: 120, borderRadius: 10 }}>
+                <div style={{ height: 72, display: "flex", alignItems: "center", justifyContent: "center" }}>
+                  {it.image ? (
+                    <img src={it.image} alt={it.word} style={{ maxWidth: "100%", maxHeight: "100%", objectFit: "cover", borderRadius: 6 }} />
+                  ) : (
+                    <div style={{ fontSize: 24, fontWeight: 700 }}>{it.word}</div>
+                  )}
+                </div>
+                <div style={{ marginTop: 8, fontWeight: 700 }}>{it.word}</div>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+// ******************************* End CollectionPicker*****************************
+
+
+// WordCardSingle Start***********************************************************
+// WordCardsSingleComponent.jsx
+
+ function WordCardsSingle({ initialWords = null, onFinishedAll = () => {} }) {
+  const defaultWords  = [
     { id: 1, word: "سیب", image: "https://media.istockphoto.com/id/686309840/vector/sticker-red-apple-with-stem.jpg?s=612x612&w=0&k=20&c=4QPpObM-Ya-FtLxi3VPeQ-LTno8c0KgWrJknfLNhEro=", title: "Apple", direction: "horizontal", extraTiles: ["گ"] },
     { id: 2, word: "عسل", image: "https://img.freepik.com/free-vector/cute-honey-bee-hug-honeycomb-cartoon-vector-icon-illustration-animal-nature-icon-concept-isolated_138676-6880.jpg?semt=ais_hybrid&w=740&q=80", title: "Honey", direction: "horizontal", extraTiles: ["ک","پ"] },
     // ... اگر واژه‌های بیشتری داری اضافه کن
   ];
+
+  const words = Array.isArray(initialWords) && initialWords.length ? initialWords : defaultWords;
 
   // تنظیمات
   const SURPRISE_DELAY = 550; // ms
@@ -402,6 +500,8 @@ export default function WordCardsSingle({ onFinishedAll = () => {} }) {
     </div>
   );
 }
+// ************************************************* End WordCardSingle***********
+
 
 /* Confetti: افست افقی با left: calc(50% + offset) تا با transform تداخل نکند */
 function ConfettiSVG({ burst = "small" }) {
@@ -434,6 +534,52 @@ function ConfettiSVG({ burst = "small" }) {
           {it.icon}
         </div>
       ))}
+    </div>
+  );
+}
+
+// it is for Spelling Game componene
+  const [playingItems, setPlayingItems] = useState(null);
+  const [playingTitle, setPlayingTitle] = useState("");
+
+  const handlePlay = (key, items) => {
+    if (!key || !items || items.length === 0) return;
+    setPlayingTitle(key);
+    // تبدیل داده‌ها به فرمت مورد نیاز WordCardsSingle (در مثال کلمه فقط نیاز است)
+    // اگر WordCardsSingle نیاز به ساختار متفاوتی دارد آن را متناسب کن
+    const wordsForGame = items.map((it) => ({
+      id: it.id,
+      word: it.word,
+      image: it.image,
+      title: it.title,
+      direction: "horizontal", // یا بر اساس تنظیمات خود
+      extraTiles: it.extraTiles, // می‌توانی اینجا اضافه کنی
+    }));
+    setPlayingItems(wordsForGame);
+  };
+
+  const handleFinishedAll = () => {
+    // وقتی بازی تمام شد، به لیست برگرد
+    setPlayingItems(null);
+    setPlayingTitle("");
+  };
+
+  return (
+    <div>
+      {!playingItems ? (
+        <CollectionPicker collections={collections} onPlay={handlePlay} />
+      ) : (
+        <div style={{ direction: "rtl" }}>
+          <div className="d-flex align-items-center justify-content-between mb-2" style={{ maxWidth: 720, margin: "8px auto" }}>
+            <h5 style={{ margin: 0 }}>{playingTitle}</h5>
+            <button className="btn btn-sm btn-outline-secondary" onClick={() => { setPlayingItems(null); setPlayingTitle(""); }}>بازگشت</button>
+          </div>
+          <div style={{ maxWidth: 720, margin: "0 auto" }}>
+            {/* پاس دادن words به WordCardsSingle */}
+            <WordCardsSingle initialWords={playingItems} onFinishedAll={handleFinishedAll} />
+          </div>
+        </div>
+      )}
     </div>
   );
 }

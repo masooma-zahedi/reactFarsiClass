@@ -23,7 +23,7 @@ import CupGame from "./CupGame.js";
 import AngryWordSlingFull from "./AngryWordSlingFull.js";
 import PoolWordGame from "./PoolWordGame.js";
 import CuckooClockGame2 from "./CuckooClockGame2.js";
-import WordCardsSingle from "./WordCardsSingle.jsx";
+import CollectionPlayDemo from "./SpellingGame.js";
 
 
 
@@ -79,7 +79,9 @@ export const Alphabet = () => {
               <div className="container">
                {/* <AngryWordSlingFull/>  */}
 
-<WordCardsSingle  />
+{/* <WordCardsSingle  /> */}
+
+<CollectionPlayDemo/>
 
 
 
