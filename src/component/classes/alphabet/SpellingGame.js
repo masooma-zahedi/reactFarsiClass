@@ -1,4 +1,6 @@
+import { nanoid } from "nanoid";
 import React, {useEffect, useState } from "react";
+
 // اگر WordCardsSingle نسخهٔ فعلی‌ت رو داری، آن را ایمپورت کن.
 // در این مثال فرض می‌کنیم WordCardsSingle یک prop به نام `initialWords` می‌پذیرد.
 // اگر کامپوننت فعلی‌ات از آرایهٔ داخلی استفاده می‌کند، لازم است آن را طوری تغییر دهی
@@ -6,12 +8,25 @@ import React, {useEffect, useState } from "react";
 
 const collections = {
   "میوه‌ها": [
-    { id: 1, word: "سیب", image: "https://media.istockphoto.com/id/686309840/vector/sticker-red-apple-with-stem.jpg?s=612x612&w=0&k=20&c=4QPpObM-Ya-FtLxi3VPeQ-LTno8c0KgWrJknfLNhEro=", title: "Apple", direction: "horizontal", extraTiles: ["گ"] },
-    { id: 2, word: "عسل", image: "https://img.freepik.com/free-vector/cute-honey-bee-hug-honeycomb-cartoon-vector-icon-illustration-animal-nature-icon-concept-isolated_138676-6880.jpg?semt=ais_hybrid&w=740&q=80", title: "Honey", direction: "horizontal", extraTiles: ["ک","پ"] },
+    { id: nanoid(), word: "سیب", image: "https://media.istockphoto.com/id/686309840/vector/sticker-red-apple-with-stem.jpg?s=612x612&w=0&k=20&c=4QPpObM-Ya-FtLxi3VPeQ-LTno8c0KgWrJknfLNhEro=", title: "Apple", direction: "horizontal", extraTiles: ["گ"] },
+    { id: nanoid(), word: "عسل", image: "https://img.freepik.com/free-vector/cute-honey-bee-hug-honeycomb-cartoon-vector-icon-illustration-animal-nature-icon-concept-isolated_138676-6880.jpg?semt=ais_hybrid&w=740&q=80", title: "Honey", direction: "horizontal", extraTiles: ["ک","پ"] },
   ],
   "وسایل مدرسه": [
-    { id: "s1", word: "مداد", image: "https://img.freepik.com/.../pencil.jpg" },
-    { id: "s2", word: "کتاب", image: "https://img.freepik.com/.../book.jpg" },
+    { id: nanoid(), word: "قیچی", image: "https://charatoon.com/photo/10081.png", title: "Scissors", direction: "horizontal", extraTiles: ["ل","م"] },
+    { id: nanoid(), word: "خط کش", image: "https://i.pinimg.com/736x/07/04/cd/0704cda084fddf29a8d40a447977d422.jpg", title: "Ruler", direction: "horizontal", extraTiles: ["ف","س","ا"] },
+    { id: nanoid(), word: "صندلی", image: "https://thumbs.dreamstime.com/b/d-rendering-school-chair-isolated-white-background-ideal-education-classroom-furniture-related-themes-cartoon-366915616.jpg", title: "Chair", direction: "horizontal", extraTiles: ["گ","ب"] },
+    { id: nanoid(), word: "کاغذ", image: "https://img.freepik.com/premium-vector/hand-drawn-paper-cartoon-illustration_23-2151474658.jpg", title: "Paper", direction: "horizontal", extraTiles: ["ش","ک"] },
+    { id: nanoid(), word: "چسب", image: "https://png.pngtree.com/png-clipart/20250531/original/pngtree-cute-cartoon-glue-bottle-school-supplies-adhesive-craft-png-image_21103651.png", title: "Glue", direction: "horizontal", extraTiles: ["ل","ر"] },
+    { id: nanoid(), word: "خودکار", image: "https://img.pixers.pics/pho_wat(s3:700/FO/24/26/87/32/700_FO24268732_c18e5e8a5fd6dafd334266cad5337614.jpg,358,700,cms:2018/10/5bd1b6b8d04b8_220x50-watermark.png,over,138,650,jpg)/wall-murals-pen-cartoon.jpg.jpg", title: "Pen", direction: "horizontal", extraTiles: ["ه","ن"] },
+    { id: nanoid(), word: "ماژیک", image: "https://cdn.vectorstock.com/i/500p/19/21/cheerful-cartoon-marker-pen-vector-51341921.jpg", title: "Whiteboard Marker", direction: "horizontal", extraTiles: ["ح","د"] },
+    { id: nanoid(), word: "پاک‌کن", image: "https://thumbs.dreamstime.com/z/cartoon-happy-eraser-illustration-53892555.jpg", title: "Eraser", direction: "horizontal", extraTiles: ["ز","ط"] },
+    { id: nanoid(), word: "کیف", image: "https://t4.ftcdn.net/jpg/15/14/49/97/360_F_1514499759_4ws45WRpsZvVJvGmbCP5iE5jNXoYgrbj.jpg", title: "Bag", direction: "horizontal", extraTiles: ["ض","و"] },
+    { id: nanoid(), word: "مداد", image: "https://i.etsystatic.com/40533556/r/il/b58af9/6112668721/il_1080xN.6112668721_qfn0.jpg", title: "Pencil", direction: "horizontal", extraTiles: ["ه","ص"] },
+    { id: nanoid(), word: "کتاب", image: "https://previews.123rf.com/images/dualororua/dualororua1707/dualororua170700423/83227038-vector-illustration-of-book-cartoon-on-pile-book.jpg", title: "Book", direction: "horizontal", extraTiles: ["ش","گ"] },
+    { id: nanoid(), word: "جامدادی", image: "https://previews.123rf.com/images/clairev/clairev1807/clairev180700082/114771248-pencil-case-theme-image-2-eps10-vector-illustration.jpg", title: "Pencil Case", direction: "horizontal", extraTiles: ["ط","پ"] },
+    { id: nanoid(), word: "دفتر", image: "https://charatoon.com/photo/3626.png", title: "Notebook", direction: "horizontal", extraTiles: ["ص","چ"] },
+    { id: nanoid(), word: "میز", image: "https://www.shutterstock.com/image-vector/school-desk-chair-260nw-613913594.jpg",title: "Desk / Table", direction: "horizontal", extraTiles: ["ط","ظ"] },
+    { id: nanoid(), word: "تراش", image: "https://thumbs.dreamstime.com/b/pencil-sharpener-15057545.jpg",title: "Sharpener", direction: "horizontal", extraTiles: ["ل","ی"] },
   ],
 };
 
@@ -235,19 +250,19 @@ Props:
     loadWord(index);
   };
 
-  const cellSize = 56;
+  const cellSize = 50;
   const w = words[index];
   if (!w) return <div className="container py-4">هیچ کلمه‌ای تعریف نشده است.</div>;
 
   return (
     <div className="container py-3" style={{ direction: "rtl" }}>
       <div style={{ maxWidth: 720, margin: "0 auto" }}>
-        <div style={{ display: "flex", gap: 12, alignItems: "center", background: "#fff", padding: 12, borderRadius: 12, boxShadow: "0 6px 18px rgba(0,0,0,0.06)" }}>
-          <div style={{ flexShrink: 0 }}>
+        <div className="row " style={{ display: "flex", gap: 12, alignItems: "center", background: "#fff", padding: 12, borderRadius: 12, boxShadow: "0 6px 18px rgba(0,0,0,0.06)" }}>
+          <div className="me-0 me-md-5 " style={{ flexShrink: 0 }}>
             {w.image ? (
               <img src={w.image} alt={w.title || w.word} style={{ width: 80, height: 80, objectFit: "cover", borderRadius: 10 }} />
             ) : (
-              <div style={{ width: 80, height: 80, borderRadius: 10, background: "#f3f4f6", display: "flex", alignItems: "center", justifyContent: "center" }}>{w.title || w.word}</div>
+              <div style={{ width: 80, height: 80, borderRadius: 10, background: "#f3f4f6", display: "flex", alignItems: "center", justifyContent: "center" }}>{w.title || w.word} </div>
             )}
           </div>
 
@@ -329,7 +344,7 @@ Props:
                   key={ti}
                   onClick={() => handleTileClick(ti)}
                   style={{
-                    minWidth: 48,
+                    minWidth: 40,
                     height: 48,
                     borderRadius: 8,
                     background: "#ffd57e",
@@ -569,7 +584,10 @@ function ConfettiSVG({ burst = "small" }) {
       {!playingItems ? (
         <CollectionPicker collections={collections} onPlay={handlePlay} />
       ) : (
-        <div style={{ direction: "rtl" }}>
+        <div className="my-5 rounded py-5" style={{ direction: "rtl", background:"linear-gradient(135deg, #84FAB0, #8FD3F4)",position:"relative" }}>
+            <div className="d-none  d-lg-block" style={{position:"absolute",width:"180px",top:"45%",right:"55px"}}>
+                <img className="w-100 " src="https://cdn-icons-png.flaticon.com/256/10774/10774986.png"  alt="" />
+            </div>
           <div className="d-flex align-items-center justify-content-between mb-2" style={{ maxWidth: 720, margin: "8px auto" }}>
             <h5 style={{ margin: 0 }}>{playingTitle}</h5>
             <button className="btn btn-sm btn-outline-secondary" onClick={() => { setPlayingItems(null); setPlayingTitle(""); }}>بازگشت</button>

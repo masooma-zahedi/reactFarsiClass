@@ -23,7 +23,7 @@ import CupGame from "./CupGame.js";
 import AngryWordSlingFull from "./AngryWordSlingFull.js";
 import PoolWordGame from "./PoolWordGame.js";
 import CuckooClockGame2 from "./CuckooClockGame2.js";
-import CollectionPlayDemo from "./SpellingGame.js";
+import SpellingGame from "./SpellingGame.js";
 
 
 
@@ -69,6 +69,8 @@ export const Alphabet = () => {
                 <Route path='learnNewWords' element={<LearnNewWords />}  />
                 <Route path='bouncingBalls' element={<BouncingBalls />}  />
                 <Route path='cupGame' element={<CupGame />}  />
+                <Route path='spellingGame' element={<SpellingGame />}  />
+                <Route path='angryWordSlingFull' element={<AngryWordSlingFull />}  />
               </Routes>
               <WordCarousel/>
               <GameWord />
@@ -77,11 +79,9 @@ export const Alphabet = () => {
               {/* test */}
                 
               <div className="container">
-               {/* <AngryWordSlingFull/>  */}
 
 {/* <WordCardsSingle  /> */}
 
-<CollectionPlayDemo/>
 
 
 
