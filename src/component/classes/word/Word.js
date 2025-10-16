@@ -11,6 +11,7 @@ import StoryPage3 from '../story/StoryPage3.js';
 import SentenceObject from './SentenceObject.js';
 import SunWordsWord from './SunWordsWord.js';
 import TypingQAImageSlider from './TypingQAImageSlider.js';
+import SortableSentencesApp from './SortableSentencesApp.js';
 
 export const Word = () => {
   return (
@@ -43,6 +44,7 @@ export const Word = () => {
               <Route path='/sunWordsWord' element={<SunWordsWord />}  />
               <Route path='/typingQAImageSlider' element={<TypingQAImageSlider />}  />
               <Route path='moreStoryWords' element={<StoryPage3 groupKey="kalemat" />}  />
+              <Route path='sortableSentencesApp' element={<SortableSentencesApp />}  />
 
             </Routes>
           </div>

@@ -185,7 +185,7 @@ export let smallPea ={
     
 }
 
-// ********************************* End Alpha Story***************
+// ********************************* start Short sound ***************
 // ************************************************* start short sound *************************
 let shortSoundExa = [];
 infoCard.map((item , index)=>{
@@ -264,6 +264,8 @@ export let contentListAlpha = {
             {id:nanoid(4),title:" جفت سازی کلمه ها",targetHref:"matchGameWord",idLetter:"matchG-1"},
             {id:nanoid(4),title:" بالانس کلمه ها",targetHref:"BouncingBalls",idLetter:"balance-1"},
             {id:nanoid(4),title:" توپ و لیوان",targetHref:"cupGame",idLetter:"cupGam-1"},
+            {id:nanoid(4),title:" هجی کلمات",targetHref:"spellingGame",idLetter:"spellingGame-1"},
+            {id:nanoid(4),title:" پرنده عصبانی",targetHref:"angryWordSlingFull",idLetter:"angryWordSlingFull-1"},
             ],
         },
         storyAlpha:{

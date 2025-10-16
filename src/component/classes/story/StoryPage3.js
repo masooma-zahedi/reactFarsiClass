@@ -220,17 +220,6 @@ function StoryPage3({ groupKey = 'dastan' }) {
     <div className="container mt-4">
       <div className="d-flex justify-content-between mb-3">
         <div className='d-flex justify-content-start'>
-        {/* <button className="btn btn-success"> */}
-          {/* <NavLink className="btn btn-outline-success  mx-1" to="/HighlightLetterText">test this</NavLink> */}
-        {/* </button> */}
-        <a
-          className="btn btn-outline-success mx-1"
-          href="/HighlightLetterText"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          test this
-        </a>         
          <button className="btn btn-outline-primary" onClick={() => setShowList(!showList)}>
             {showList ? 'پنهان کردن فهرست' : 'نمایش فهرست'}
           </button>
@@ -272,6 +261,15 @@ function StoryPage3({ groupKey = 'dastan' }) {
         {showForm && (
           <div className="col-md-3">
             <button className='btn mb-2 mx-2 btn-sm btn-outline-secondary' onClick={() => setShowEdit(!showEdit)}>تغییر حالت ویرایش</button>
+                        <a
+          className="btn mb-2 mx-2 btn-sm btn-outline-secondary"
+          href="https://console.firebase.google.com/u/0/project/persianstories-c0d1d/database/persianstories-c0d1d-default-rtdb/data"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Go to Firebase
+        </a>
+
             <form onSubmit={handleSubmit}>
               <h5 className="mb-3">{isEditing ? 'ویرایش داستان' : 'افزودن داستان جدید'}</h5>
               <div className="mb-3">
