@@ -11,7 +11,7 @@ import StoryPage3 from '../story/StoryPage3.js';
 import SentenceObject from './SentenceObject.js';
 import SunWordsWord from './SunWordsWord.js';
 import TypingQAImageSlider from './TypingQAImageSlider.js';
-import SortableSentencesAppFirebaseSimple from './SortableSentencesAppFirebaseSimple.js';
+import SortableSentencesApp from './SortableSentencesApp.js';
 
 export const Word = () => {
   return (
@@ -51,7 +51,7 @@ export const Word = () => {
             {/* test */}
             {/* <SunWordsWords /> */}
             {/* <SortableSentencesApp/> */}
-            <SortableSentencesAppFirebaseSimple/>
+            <SortableSentencesApp/>
           </div>
         </div>
               

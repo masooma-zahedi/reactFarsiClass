@@ -1,22 +1,30 @@
-// SortableSentencesApp.jsx
 import React, { useState, useEffect, useMemo, useRef } from "react";
 import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
 
 /**
- * SortableSentencesApp — نسخهٔ با رنگ‌بندی واضح بررسی
- * - همه در یک فایل
- * - هنگام بررسی: کارت‌ها سبز (درست) یا قرمز (نادرست) می‌شوند
- * - در حالت بررسی درگ غیرفعال است
- * - اسکرول خودکار به اولین نادرست
+ * SortableSentencesApp — نسخهٔ حذف شده: ذخیره در localStorage، افزودن جمله و خروجی (کپی)
+ * تغییرات جدید:
+ * - حذف دکمهٔ حذف (غیرفعال شده)
+ * - جملات از ابتدا به صورت تصادفی نمایش داده می‌شوند
+ * - دکمهٔ بازنشانی ترتیب‌ها را به ترتیب مرجع برمی‌گرداند (مرتب صحیح)
  */
-
-const STORAGE_KEY = "ss_app_state_v1_with_strong_colors";
 
 function makeId() {
   return `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 9)}`;
 }
 
 const defaultTopics = {
+  "سفر خانوادگی": [
+  "لیلا و مکس چمدان‌های خود را آماده کردند.",
+  "پدر ماشین را بنزین زد.",
+  "خوراکی و آب در ماشین گذاشتند.",
+  "همه سوار ماشین شدند.",
+  "ماشین از شهر بیرون رفت.",
+  "در راه، آن‌ها آواز خواندند و خندیدند.",
+  "به پارک سرسبز رسیدند.",
+  "همه روی علف‌ها نشستند و ناهار خوردند.",
+],
+
   "چرخه رشد سبزیجات": [
     "کشاورز بذرها را می‌کارد.",
     "باران شروع به باریدن می‌کند.",
@@ -46,10 +54,10 @@ function injectCSS() {
   const css = `
 /* ===== Strong visual check CSS ===== */
 .ss-app {
-  font-family: "Vazirmatn", "Tahoma", "Helvetica", sans-serif;
+  font-family:"Segoe UI","Tahoma", "Helvetica", sans-serif;
   min-height: 100vh;
   padding: 18px;
-  background: linear-gradient(180deg, #fbf1d6 0%, #fffaf0 100%);
+  background: linear-gradient(180deg, #f9da69ff 0%, #fffaf0 100%);
   box-sizing: border-box;
   color: #1d2b36;
 }
@@ -164,8 +172,8 @@ function injectCSS() {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 800;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+  font-weight: 900;
+  box-shadow: 0 9px 12px rgba(0,0,0,0.09);
   flex-shrink: 0;
   margin-left: 10px;
   font-size: 15px;
@@ -176,10 +184,24 @@ function injectCSS() {
   flex: 1 1 auto;
   margin: 0;
   text-align: center;
-  font-size: 18px;
-  color: #0f1720;
+  font-size: 25px;
+  font-weight:550;
+  color: #073f80ff;
   min-width: 0;
   line-height: 1.35;
+}
+  @media (max-width: 440px) {
+    .sentence-text{
+        font-size:15px;
+    }
+    .status-icon {
+        width: 20px;
+        height: 20px;
+    }
+    .ss-topics {
+        flex: 0 0 120px;
+    }
+
 }
 
 /* آیکون وضعیت */
@@ -257,7 +279,7 @@ function injectCSS() {
 /* واکنشگرایی */
 @media (max-width: 820px) {
   .ss-container { flex-direction: column; gap: 12px; padding-bottom: 30px; }
-  .ss-topics { width: 100%; order: 2; display: flex; gap: 8px; overflow-x: auto; padding: 10px; }
+  .ss-topics { width: 100%; order: 2; display: ; gap: 8px; overflow-x: auto; padding: 10px; }
   .topic-btn { flex: 0 0 auto; min-width: 160px; }
 }
   `;
@@ -273,7 +295,17 @@ function buildItemsFrom(arr) {
   return arr.map((t) => ({ id: makeId(), text: t }));
 }
 
+function shuffleArray(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
 export default function SortableSentencesApp({ initialTopics } = {}) {
+    const [showList , setShowList] = useState(true)
   useEffect(() => injectCSS(), []);
 
   const topicsSource = useMemo(
@@ -281,31 +313,21 @@ export default function SortableSentencesApp({ initialTopics } = {}) {
     [initialTopics]
   );
 
-  // state شامل: topics، reference، currentTopic، checkedResults
+  // STATE: now *does not* use localStorage. مقدار اولیه از topicsSource ساخته می‌شود.
+  // تغییر: از ابتدا هر موضوع به صورت تصادفی نمایش داده می‌شود (shuffle)
   const [state, setState] = useState(() => {
-    try {
-      const raw = localStorage.getItem(STORAGE_KEY);
-      if (raw) {
-        const parsed = JSON.parse(raw);
-        return parsed;
-      }
-    } catch (e) {}
     const topics = {};
     const ref = {};
     for (const [k, arr] of Object.entries(topicsSource)) {
-      topics[k] = buildItemsFrom(arr);
+      // مرجعِ صحیح به همان ترتیب اصلی ذخیره می‌شود
       ref[k] = arr.slice();
+      // اما برای نمایش اولیه، آیتم‌ها را بساز و سپس آنها را به صورت تصادفی بچین
+      const built = buildItemsFrom(arr);
+      topics[k] = shuffleArray(built);
     }
     const firstTopic = Object.keys(topics)[0] || "";
     return { topics, reference: ref, currentTopic: firstTopic, checkedResults: null };
   });
-
-  // ذخیره خودکار
-  useEffect(() => {
-    try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
-    } catch (e) {}
-  }, [state]);
 
   const topicNames = Object.keys(state.topics);
   const currentTopic = state.currentTopic;
@@ -337,17 +359,13 @@ export default function SortableSentencesApp({ initialTopics } = {}) {
   }
 
   function resetCurrentToOriginal() {
+    // بازنشانی به ترتیب مرجع (مرتبِ صحیح)
     const sourceArr = (initialTopics && initialTopics[currentTopic]) || defaultTopics[currentTopic] || [];
     setState((s) => ({ ...s, topics: { ...s.topics, [currentTopic]: buildItemsFrom(sourceArr) }, checkedResults: null }));
   }
 
-  function addSentenceToCurrent(text) {
-    if (!text || !text.trim()) return;
-    const newItem = { id: makeId(), text: text.trim() };
-    setState((s) => ({ ...s, topics: { ...s.topics, [currentTopic]: [...s.topics[currentTopic], newItem] } , checkedResults: null}));
-  }
-
   function removeSentence(topicName, index) {
+    // این تابع هنوز وجود دارد برای احتمال استفادهٔ بعدی، اما حذف را در UI غیرفعال کردیم.
     const arr = Array.from(state.topics[topicName]);
     arr.splice(index, 1);
     setState((s) => ({ ...s, topics: { ...s.topics, [topicName]: arr }, checkedResults: null }));
@@ -373,23 +391,12 @@ export default function SortableSentencesApp({ initialTopics } = {}) {
           itemRefs.current[item.id].scrollIntoView({ behavior: "smooth", block: "center" });
         }
       }
-    }, 180); // کمی تأخیر تا DOM آپدیت شود
+    }, 180);
   }
 
   function handleFix() {
     setState((s) => ({ ...s, checkedResults: null }));
   }
-
-  function exportCurrentOrder() {
-    const arr = state.topics[currentTopic].map((i) => i.text);
-    const txt = JSON.stringify(arr, null, 2);
-    navigator.clipboard?.writeText(txt).then(
-      () => alert("ترتیب کنونی کپی شد! (JSON)"),
-      () => alert("خروجی:\n\n" + txt)
-    );
-  }
-
-  const [newSentence, setNewSentence] = useState("");
 
   const score = useMemo(() => {
     if (!state.checkedResults) return null;
@@ -402,25 +409,28 @@ export default function SortableSentencesApp({ initialTopics } = {}) {
   const isChecked = Boolean(state.checkedResults);
 
   return (
-    <div className="ss-app" dir="rtl">
+    <div className="ss-app mt-5 rounded py-5 container" dir="rtl">
       <div className="ss-container">
         <aside className="ss-topics" aria-label="فهرست موضوعات">
-          <h3>موضوعات</h3>
-          {topicNames.map((t) => (
-            <button
-              key={t}
-              className={`topic-btn ${t === currentTopic ? "active" : ""}`}
-              onClick={() => handleTopicSelect(t)}
-            >
-              {t}
-            </button>
-          ))}
+          <h3 className="text-primary" onClick={()=>setShowList(!showList)}>موضوعات</h3>
+          {showList && 
+            topicNames.map((t) => (
+                <button
+                key={t}
+                className={`text-info topic-btn ${t === currentTopic ? "active" : ""}`}
+                onClick={() => handleTopicSelect(t)}
+                >
+                {t}
+                </button>
+          ))
+          }
+          
         </aside>
 
         <main className="ss-panel" aria-live="polite">
           <div className="panel-header">
             <div>
-              <div className="panel-title">{currentTopic}</div>
+              <div className="panel-title text-danger">{currentTopic}</div>
               <div style={{ color: "#666", fontSize: 13, marginTop: 6 }}>
                 تعداد جملات: {state.topics[currentTopic]?.length ?? 0}
               </div>
@@ -429,35 +439,14 @@ export default function SortableSentencesApp({ initialTopics } = {}) {
             <div className="controls" role="toolbar" aria-label="ابزارها">
               <button className="btn secondary" onClick={resetCurrentToOriginal} disabled={isChecked}>بازنشانی</button>
               <button className="btn secondary" onClick={shuffleCurrent} disabled={isChecked}>پخش تصادفی</button>
-              <button className="btn" onClick={exportCurrentOrder}>خروجی (کپی)</button>
             </div>
-          </div>
-
-          <div style={{ marginBottom: 10, display: "flex", gap: 8, alignItems: "center" }}>
-            <input
-              placeholder="افزودن جمله جدید به این موضوع..."
-              value={newSentence}
-              onChange={(e) => setNewSentence(e.target.value)}
-              style={{ flex: 1, padding: "8px 10px", borderRadius: 8, border: "1px solid #ddd" }}
-              disabled={isChecked}
-            />
-            <button
-              className="btn"
-              onClick={() => {
-                addSentenceToCurrent(newSentence);
-                setNewSentence("");
-              }}
-              disabled={isChecked}
-            >
-              اضافه
-            </button>
           </div>
 
           <DragDropContext onDragEnd={onDragEnd}>
             <Droppable droppableId={"droppable-" + currentTopic}>
               {(provided) => (
                 <div
-                  className="droppable-area"
+                  className="droppable-area "
                   ref={provided.innerRef}
                   {...provided.droppableProps}
                 >
@@ -511,29 +500,32 @@ export default function SortableSentencesApp({ initialTopics } = {}) {
                                 </div>
                               )}
 
-                              <button
+                              {/* دکمهٔ حذف غیرفعال شده — برای حفظ ساختار اما غیرقابل کلیک */}
+                              {/* <button
                                 onClick={() => removeSentence(currentTopic, index)}
                                 style={{
                                   marginLeft: 8,
                                   background: "transparent",
                                   border: "none",
                                   color: "#c0392b",
-                                  cursor: "pointer",
+                                  cursor: "not-allowed",
                                   fontSize: 16,
+                                  opacity: 0.35,
+                                  pointerEvents: "none",
                                 }}
                                 aria-label={`حذف جمله ${index + 1}`}
-                                title="حذف"
-                                disabled={isChecked}
+                                title="حذف (غیرفعال)"
+                                disabled={true}
                               >
                                 ✖
-                              </button>
+                              </button> */}
                             </div>
                           )}
                         </Draggable>
                       );
                     })
                   ) : (
-                    <div className="empty-placeholder">هیچ جمله‌ای وجود ندارد. یکی اضافه کن!</div>
+                    <div className="empty-placeholder">هیچ جمله‌ای وجود ندارد.</div>
                   )}
 
                   {provided.placeholder}
@@ -554,9 +546,8 @@ export default function SortableSentencesApp({ initialTopics } = {}) {
                 </button>
               )}
 
-              <button className="btn secondary" onClick={resetCurrentToOriginal} disabled={isChecked}>بازنشانی</button>
-              <button className="btn secondary" onClick={shuffleCurrent} disabled={isChecked}>پخش تصادفی</button>
-              <button className="btn" onClick={exportCurrentOrder}>خروجی (کپی)</button>
+              {/* <button className="btn secondary" onClick={resetCurrentToOriginal} disabled={isChecked}>بازنشانی</button> */}
+              {/* <button className="btn secondary" onClick={shuffleCurrent} disabled={isChecked}>پخش تصادفی</button> */}
             </div>
 
             <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
