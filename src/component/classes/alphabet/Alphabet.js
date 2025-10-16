@@ -24,6 +24,8 @@ import AngryWordSlingFull from "./AngryWordSlingFull.js";
 import PoolWordGame from "./PoolWordGame.js";
 import CuckooClockGame2 from "./CuckooClockGame2.js";
 import SpellingGame from "./SpellingGame.js";
+import { nanoid } from "nanoid";
+import MakeInferencePersianNoStorage from "./MakeInferencePersianNoStorage.js";
 
 
 
@@ -34,6 +36,21 @@ import SpellingGame from "./SpellingGame.js";
 
 export const Alphabet = () => {
   const [showShort, setShowShort] = useState(false)
+  const initial = [
+  { id: nanoid(), text: "کشاورز بذرها را می‌کارد." },
+  { id: nanoid(), text: "باران شروع به باریدن می‌کند." },
+  { id: nanoid(), text: "دانه‌ها شروع به جوانه زدن می‌کنند." },
+  { id: nanoid(), text: "خورشید بیرون می‌آید و می‌تابد." },
+  { id: nanoid(), text: "سبزیجات آماده‌ی برداشت هستند." },
+  { id: nanoid(), text: "کشاورز آن‌ها را از زمین بیرون می‌آورد." },
+  { id: nanoid(), text: "حالا وقت شکرگزاری است." },
+  { id: nanoid(), text: "حالا وقت خوردن است." },
+];
+
+  function handleOrderChange(newOrder){
+    console.log("ترتیب جدید:", newOrder.map(i => i.text));
+    // اینجا می‌تونی ذخیره در localStorage یا Firebase انجام بدی
+  }
 
 
   
@@ -83,12 +100,9 @@ export const Alphabet = () => {
 {/* <WordCardsSingle  /> */}
 
 
-
-
-
               {/* <PoolWordGame/> */}
 
-
+<MakeInferencePersianNoStorage/>
               {/* <CuckooClockGame2/> */}
               </div>
               </div>
