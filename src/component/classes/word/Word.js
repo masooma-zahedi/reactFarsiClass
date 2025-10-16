@@ -44,14 +44,13 @@ export const Word = () => {
               <Route path='/sunWordsWord' element={<SunWordsWord />}  />
               <Route path='/typingQAImageSlider' element={<TypingQAImageSlider />}  />
               <Route path='moreStoryWords' element={<StoryPage3 groupKey="kalemat" />}  />
+              <Route path='sortableSentencesApp' element={<SortableSentencesApp />}  />
 
             </Routes>
           </div>
           <div>
             {/* test */}
             {/* <SunWordsWords /> */}
-            {/* <SortableSentencesApp/> */}
-            <SortableSentencesApp/>
           </div>
         </div>
               
