@@ -26,6 +26,8 @@ import CuckooClockGame2 from "./CuckooClockGame2.js";
 import SpellingGame from "./SpellingGame.js";
 import { nanoid } from "nanoid";
 import MakeInferencePersianNoStorage from "./MakeInferencePersianNoStorage.js";
+import VideoWithCaptions from "./VideoWithCaptions.js";
+import MatchingLettersPicturs from "./MatchingLettersPicturs.js";
 
 
 
@@ -51,6 +53,7 @@ export const Alphabet = () => {
     console.log("ترتیب جدید:", newOrder.map(i => i.text));
     // اینجا می‌تونی ذخیره در localStorage یا Firebase انجام بدی
   }
+
 
 
   
@@ -88,6 +91,7 @@ export const Alphabet = () => {
                 <Route path='cupGame' element={<CupGame />}  />
                 <Route path='spellingGame' element={<SpellingGame />}  />
                 <Route path='angryWordSlingFull' element={<AngryWordSlingFull />}  />
+                <Route path='matchingLettersPicturs' element={<MatchingLettersPicturs />}  />
               </Routes>
               <WordCarousel/>
               <GameWord />
@@ -101,7 +105,7 @@ export const Alphabet = () => {
 
 
               {/* <PoolWordGame/> */}
-
+{/* <VideoWithCaptions videoSrc="/sounds/chick.mp4" videoName="duck"  /> */}
 <MakeInferencePersianNoStorage/>
               {/* <CuckooClockGame2/> */}
               </div>
